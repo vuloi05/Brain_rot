@@ -27,7 +27,7 @@
     componentsIndex: {},
     kanjiLookup: {}, // { '休': { l: 5, hv: 'HƯU', vi: '...' }, ... }
     currentLevel: 5,
-    currentView: 'atelier', // 'atelier' | 'dojo' | 'neuro'
+    currentView: 'atelier', // 'atelier' | 'reader' | 'exams' | 'dojo' | 'neuro'
     currentMode: 'anatomy', // 'anatomy' | 'guided' | 'blind' | 'typing'
     currentKanji: null,
     filteredList: [],
@@ -55,6 +55,22 @@
     dojoIndex: 0,
     dojoCurrent: null,
     dojoFrictionTimer: null,
+    // Module 3: Deep Reader
+    readingsLoaded: false,
+    readings: [],
+    readerFilter: 'all',
+    currentReading: null,
+    readerUnlockedIdx: 0,
+    readerAllUnlocked: false,
+    readerSelectedKanji: '',
+    readerQuestionTimers: [],
+    // Exam Studio (de_thi)
+    examsLoaded: false,
+    examCatalog: [],
+    examFilter: 'all',
+    examSearch: '',
+    currentExam: null,
+    examNoteTimer: null,
     // Progress object persisted to data/user-progress.json
     progress: createDefaultProgress(),
   };
@@ -81,6 +97,9 @@
         blindRecallTotalCount: 0,
       },
       kanji: {},
+      readingsDone: {},
+      customReadings: [],
+      examNotes: {},
       sessionLogs: [],
     };
   }
@@ -225,14 +244,23 @@
     } catch (_) {}
   }
 
-  function speakJapanese(entry) {
-    if (!entry || !('speechSynthesis' in window)) return;
-    const raw = (entry.kun[0] || entry.on[0] || entry.c).replace(/[-.]/g, '');
+  function encodeUrlPath(pathStr) {
+    return (pathStr || '').split('/').map((seg) => encodeURIComponent(seg)).join('/');
+  }
+
+  function speakJapaneseText(raw, rate = 0.86) {
+    if (!raw || !('speechSynthesis' in window)) return;
     const utt = new SpeechSynthesisUtterance(raw);
     utt.lang = 'ja-JP';
-    utt.rate = 0.85;
+    utt.rate = rate;
     window.speechSynthesis.cancel();
     window.speechSynthesis.speak(utt);
+  }
+
+  function speakJapanese(entry) {
+    if (!entry) return;
+    const raw = (entry.kun[0] || entry.on[0] || entry.c).replace(/[-.]/g, '');
+    speakJapaneseText(raw, 0.85);
   }
 
   // --- Persistence (Local Disk via server.js + localStorage fallback) ---
@@ -271,6 +299,9 @@
         settings: { ...base.settings, ...(loaded.settings || {}) },
         stats: { ...base.stats, ...(loaded.stats || {}) },
         kanji: loaded.kanji || {},
+        readingsDone: loaded.readingsDone || {},
+        customReadings: loaded.customReadings || [],
+        examNotes: loaded.examNotes || {},
         sessionLogs: loaded.sessionLogs || [],
       };
     }
@@ -1252,6 +1283,29 @@
       const target = state.filteredList.find((x) => !x._isLookup) || list[0];
       selectKanji(target);
     }
+    if (state.readingsLoaded) {
+      renderReaderList(true);
+    }
+    if (state.examsLoaded) {
+      renderExamList(true);
+    }
+  }
+
+  async function getFullKanjiEntry(ch) {
+    const meta = state.kanjiLookup[ch];
+    if (!meta) return null;
+    const list = await loadLevel(meta.l);
+    return list.find((k) => k.c === ch) || null;
+  }
+
+  function enqueueKanjiForSrs(ch) {
+    if (!state.kanjiLookup[ch]) return;
+    const prev = state.progress.kanji[ch] || { reps: 0, interval: 0, ease: 2.5, writePasses: 0, blindPasses: 0, note: '' };
+    prev.due = new Date().toISOString();
+    state.progress.kanji[ch] = prev;
+    scheduleSaveProgress(true);
+    updateDueBadge();
+    renderKanjiList('dots');
   }
 
   // --- Mode 4: Active Recall Typing Check ---
@@ -1299,13 +1353,608 @@
     });
 
     $('viewAtelier').classList.toggle('hidden', view !== 'atelier');
+    $('viewReader').classList.toggle('hidden', view !== 'reader');
+    $('viewExams').classList.toggle('hidden', view !== 'exams');
     $('viewDojo').classList.toggle('hidden', view !== 'dojo');
     $('viewNeuro').classList.toggle('hidden', view !== 'neuro');
 
-    if (view === 'neuro') {
+    if (view === 'reader') {
+      ensureReadingsLoaded().then(() => renderReaderList(!state.currentReading));
+    } else if (view === 'exams') {
+      ensureExamsLoaded().then(() => renderExamList(!state.currentExam));
+    } else if (view === 'neuro') {
       renderNeuroDashboard();
       refreshGitStatus();
     }
+  }
+
+  // =======================================================================
+  // MODULE 3: ANTI-SKIMMING DEEP READER
+  // =======================================================================
+  async function ensureReadingsLoaded() {
+    if (state.readingsLoaded) return;
+    const res = await fetch('data/readings.json');
+    state.readings = await res.json();
+    state.readingsLoaded = true;
+  }
+
+  function getAllReadings() {
+    return [...(state.progress.customReadings || []), ...state.readings];
+  }
+
+  function getReadingStatus(r) {
+    return state.progress.readingsDone && state.progress.readingsDone[r.id] ? 'done' : 'unread';
+  }
+
+  function renderReaderList(autoPick = false) {
+    const container = $('readerList');
+    const allForLevel = getAllReadings().filter((r) => r.level === state.currentLevel);
+    const filtered = allForLevel.filter((r) => state.readerFilter === 'all' || getReadingStatus(r) === state.readerFilter);
+
+    $('readerListMeta').textContent = `N${state.currentLevel}: ${filtered.length} / ${allForLevel.length} bài đọc`;
+    container.innerHTML = '';
+
+    if (!filtered.length) {
+      container.innerHTML = '<div class="rk-empty">Không có bài đọc khớp bộ lọc. Bạn có thể bấm "+ Dán bài đọc mới" ở trên.</div>';
+      return;
+    }
+
+    filtered.forEach((r) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'kanji-item';
+      if (state.currentReading && state.currentReading.id === r.id) btn.classList.add('active');
+      const done = getReadingStatus(r) === 'done';
+      btn.innerHTML = `
+        <span class="kanji-item-glyph" style="font-size:15px;">N${r.level}</span>
+        <span class="kanji-item-body">
+          <div class="kanji-item-hv">${r.title}</div>
+          <div class="kanji-item-vi">${r.paragraphs.length} đoạn · ${r.category || 'Đọc sâu'}</div>
+        </span>
+        <span class="kanji-item-dot ${done ? 'mastered' : ''}"></span>
+      `;
+      btn.addEventListener('click', () => selectReading(r));
+      container.appendChild(btn);
+    });
+
+    if (autoPick || !state.currentReading || state.currentReading.level !== state.currentLevel) {
+      selectReading(filtered[0]);
+    }
+  }
+
+  function extractKanjiChars(text) {
+    const seen = new Set();
+    const out = [];
+    for (const ch of text || '') {
+      if (state.kanjiLookup[ch] && !seen.has(ch)) {
+        seen.add(ch);
+        out.push(ch);
+      }
+    }
+    return out;
+  }
+
+  function buildInteractiveJpFragment(text) {
+    const frag = document.createDocumentFragment();
+    for (const ch of text) {
+      if (state.kanjiLookup[ch]) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'inline-kanji';
+        if (getKanjiStatus(ch) === 'due') btn.classList.add('srs-due');
+        if (state.readerSelectedKanji === ch) btn.classList.add('selected');
+        btn.textContent = ch;
+        btn.title = `Bấm giải phẫu chữ ${ch} (${state.kanjiLookup[ch].hv})`;
+        btn.addEventListener('click', () => inspectReaderKanji(ch));
+        frag.appendChild(btn);
+      } else {
+        frag.appendChild(document.createTextNode(ch));
+      }
+    }
+    return frag;
+  }
+
+  function selectReading(reading) {
+    state.currentReading = reading;
+    state.readerUnlockedIdx = 0;
+    state.readerAllUnlocked = false;
+    state.readerQuestionTimers.forEach(clearInterval);
+    state.readerQuestionTimers = [];
+
+    qsa('#readerList .kanji-item').forEach((el, idx) => {
+      // active state synced below via title match or re-render
+      el.classList.toggle('active', el.querySelector('.kanji-item-hv')?.textContent === reading.title);
+    });
+
+    $('readerLevelTag').textContent = `JLPT N${reading.level}`;
+    $('readerCategoryTag').textContent = reading.category || 'Đoản văn';
+    $('readerSourceTag').textContent = reading.source || '';
+    $('readerTitle').textContent = reading.title;
+
+    // Extract & render all Kanji inside this article
+    const fullJp = reading.paragraphs.map((p) => p.jp).join('\n');
+    const kanjiChars = extractKanjiChars(fullJp);
+    $('readerKanjiCount').textContent = `${kanjiChars.length} chữ`;
+    const chipsEl = $('readerKanjiChips');
+    chipsEl.innerHTML = '';
+    kanjiChars.forEach((ch) => {
+      const meta = state.kanjiLookup[ch];
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'related-chip';
+      chip.innerHTML = `<span class="related-chip-glyph">${ch}</span><span>${meta.hv}</span><span class="related-chip-lvl">N${meta.l}</span>`;
+      chip.addEventListener('click', () => inspectReaderKanji(ch));
+      chipsEl.appendChild(chip);
+    });
+    if (kanjiChars.length) {
+      inspectReaderKanji(kanjiChars[0]);
+    } else {
+      $('rkEmptyHint').classList.remove('hidden');
+      $('rkBody').classList.add('hidden');
+    }
+
+    renderReadingParagraphs();
+    renderReadingQuestions();
+    renderReadingSummaryBox();
+  }
+
+  function renderReadingParagraphs() {
+    const reading = state.currentReading;
+    if (!reading) return;
+    const container = $('readerParagraphs');
+    container.innerHTML = '';
+
+    reading.paragraphs.forEach((para, idx) => {
+      const isLocked = !state.readerAllUnlocked && idx > state.readerUnlockedIdx;
+      const isCurrent = !state.readerAllUnlocked && idx === state.readerUnlockedIdx;
+
+      const card = document.createElement('article');
+      card.className = `para-card${isCurrent ? ' active' : ''}${isLocked ? ' blurred' : ''}`;
+
+      const head = document.createElement('div');
+      head.className = 'para-head';
+      head.innerHTML = `<span class="mono">Đoạn ${idx + 1} / ${reading.paragraphs.length}</span><span>${isLocked ? 'Đang khóa chống đọc lướt' : isCurrent ? 'Đoạn đang đọc' : 'Đã mở'}</span>`;
+      card.appendChild(head);
+
+      const jpDiv = document.createElement('div');
+      jpDiv.className = 'para-jp';
+      jpDiv.appendChild(buildInteractiveJpFragment(para.jp));
+      card.appendChild(jpDiv);
+
+      if (para.vocab && para.vocab.length) {
+        const vRow = document.createElement('div');
+        vRow.className = 'para-vocab-row';
+        para.vocab.forEach(([word, read, meaning]) => {
+          const vBtn = document.createElement('button');
+          vBtn.type = 'button';
+          vBtn.className = 'vocab-friction-chip';
+          vBtn.title = 'Giữ chuột 0,5s hoặc bấm để hiện cách đọc & nghĩa';
+          vBtn.innerHTML = `<span class="vf-word">${word}</span><span class="vf-secret">Giữ 0,5s để xem</span>`;
+
+          let holdTimer = null;
+          const reveal = () => {
+            vBtn.classList.add('revealed');
+            vBtn.querySelector('.vf-secret').textContent = `${read} · ${meaning}`;
+          };
+          vBtn.addEventListener('pointerdown', () => {
+            clearTimeout(holdTimer);
+            holdTimer = setTimeout(reveal, 450);
+          });
+          vBtn.addEventListener('pointerup', () => clearTimeout(holdTimer));
+          vBtn.addEventListener('pointerleave', () => clearTimeout(holdTimer));
+          vBtn.addEventListener('click', () => {
+            if (!vBtn.classList.contains('revealed')) {
+              setTimeout(reveal, 400);
+            }
+          });
+          vRow.appendChild(vBtn);
+        });
+        card.appendChild(vRow);
+      }
+
+      if (para.vi) {
+        const viDiv = document.createElement('div');
+        viDiv.className = 'para-vi hidden';
+        viDiv.textContent = para.vi;
+
+        const actions = document.createElement('div');
+        actions.className = 'para-actions';
+
+        const leftBtns = document.createElement('div');
+        leftBtns.style.display = 'flex';
+        leftBtns.style.gap = '6px';
+
+        const speakBtn = document.createElement('button');
+        speakBtn.type = 'button';
+        speakBtn.className = 'btn-ghost-sm';
+        speakBtn.textContent = 'Nghe đoạn này';
+        speakBtn.addEventListener('click', () => speakJapaneseText(para.jp, 0.88));
+        leftBtns.appendChild(speakBtn);
+
+        const transBtn = document.createElement('button');
+        transBtn.type = 'button';
+        transBtn.className = 'btn-ghost-sm';
+        transBtn.textContent = 'Xem dịch đối chiếu';
+        transBtn.addEventListener('click', () => {
+          viDiv.classList.toggle('hidden');
+          transBtn.textContent = viDiv.classList.contains('hidden') ? 'Xem dịch đối chiếu' : 'Ẩn dịch';
+        });
+        leftBtns.appendChild(transBtn);
+        actions.appendChild(leftBtns);
+
+        if (isCurrent) {
+          const nextBtn = document.createElement('button');
+          nextBtn.type = 'button';
+          nextBtn.className = 'btn-primary-sm';
+          const isLast = idx === reading.paragraphs.length - 1;
+          nextBtn.textContent = isLast ? 'Mở câu hỏi hiểu sâu →' : 'Đã hiểu đoạn này → Mở đoạn tiếp';
+          nextBtn.addEventListener('click', () => {
+            if (isLast) {
+              state.readerAllUnlocked = true;
+            } else {
+              state.readerUnlockedIdx += 1;
+            }
+            renderReadingParagraphs();
+            renderReadingQuestions();
+            renderReadingSummaryBox();
+          });
+          actions.appendChild(nextBtn);
+        }
+
+        card.appendChild(actions);
+        card.appendChild(viDiv);
+      } else if (isCurrent) {
+        const actions = document.createElement('div');
+        actions.className = 'para-actions';
+        const speakBtn = document.createElement('button');
+        speakBtn.type = 'button';
+        speakBtn.className = 'btn-ghost-sm';
+        speakBtn.textContent = 'Nghe đoạn này';
+        speakBtn.addEventListener('click', () => speakJapaneseText(para.jp, 0.88));
+        actions.appendChild(speakBtn);
+
+        const nextBtn = document.createElement('button');
+        nextBtn.type = 'button';
+        nextBtn.className = 'btn-primary-sm';
+        const isLast = idx === reading.paragraphs.length - 1;
+        nextBtn.textContent = isLast ? 'Hoàn tất đọc đoạn → Tóm tắt' : 'Đã hiểu đoạn này → Mở đoạn tiếp';
+        nextBtn.addEventListener('click', () => {
+          if (isLast) state.readerAllUnlocked = true;
+          else state.readerUnlockedIdx += 1;
+          renderReadingParagraphs();
+          renderReadingQuestions();
+          renderReadingSummaryBox();
+        });
+        actions.appendChild(nextBtn);
+        card.appendChild(actions);
+      }
+
+      container.appendChild(card);
+    });
+  }
+
+  function renderReadingQuestions() {
+    const reading = state.currentReading;
+    const box = $('readerQuestionsBox');
+    const listEl = $('readerQuestionsList');
+    if (!reading || !state.readerAllUnlocked || !reading.questions || !reading.questions.length) {
+      box.classList.add('hidden');
+      return;
+    }
+
+    box.classList.remove('hidden');
+    listEl.innerHTML = '';
+
+    reading.questions.forEach((item, qIdx) => {
+      const qDiv = document.createElement('div');
+      qDiv.className = 'rq-item';
+
+      const prompt = document.createElement('div');
+      prompt.className = 'rq-prompt';
+      prompt.textContent = `Câu ${qIdx + 1}: ${item.q}`;
+      qDiv.appendChild(prompt);
+
+      const unlockBtn = document.createElement('button');
+      unlockBtn.type = 'button';
+      unlockBtn.className = 'btn-friction';
+      unlockBtn.style.marginBottom = '8px';
+      let sec = 5;
+      unlockBtn.disabled = true;
+      unlockBtn.textContent = `Tự suy nghĩ đáp án trước khi xem 4 lựa chọn (${sec}s)`;
+
+      const optsWrap = document.createElement('div');
+      optsWrap.className = 'rq-options locked';
+
+      const explainDiv = document.createElement('div');
+      explainDiv.className = 'rq-explain hidden';
+
+      item.options.forEach((optText, oIdx) => {
+        const optBtn = document.createElement('button');
+        optBtn.type = 'button';
+        optBtn.className = 'rq-opt-btn';
+        optBtn.textContent = `${oIdx + 1}. ${optText}`;
+        optBtn.addEventListener('click', () => {
+          optsWrap.querySelectorAll('.rq-opt-btn').forEach((b, bi) => {
+            b.classList.toggle('correct', bi === item.answer);
+            if (bi === oIdx && bi !== item.answer) b.classList.add('wrong');
+          });
+          playWoodTap(oIdx === item.answer);
+          explainDiv.textContent = (oIdx === item.answer ? 'Chính xác! ' : 'Chưa đúng. ') + (item.explanation || '');
+          explainDiv.classList.remove('hidden');
+        });
+        optsWrap.appendChild(optBtn);
+      });
+
+      const t = setInterval(() => {
+        sec -= 1;
+        if (sec <= 0) {
+          clearInterval(t);
+          unlockBtn.disabled = false;
+          unlockBtn.textContent = 'Mở khóa 4 lựa chọn';
+        } else {
+          unlockBtn.textContent = `Tự suy nghĩ đáp án trước khi xem 4 lựa chọn (${sec}s)`;
+        }
+      }, 1000);
+      state.readerQuestionTimers.push(t);
+
+      unlockBtn.addEventListener('click', () => {
+        optsWrap.classList.remove('locked');
+        unlockBtn.classList.add('hidden');
+      });
+
+      qDiv.appendChild(unlockBtn);
+      qDiv.appendChild(optsWrap);
+      qDiv.appendChild(explainDiv);
+      listEl.appendChild(qDiv);
+    });
+  }
+
+  function renderReadingSummaryBox() {
+    const reading = state.currentReading;
+    const box = $('readerSummaryBox');
+    if (!reading || !state.readerAllUnlocked) {
+      box.classList.add('hidden');
+      return;
+    }
+    box.classList.remove('hidden');
+    const saved = state.progress.readingsDone && state.progress.readingsDone[reading.id];
+    $('readerSummaryInput').value = saved?.summary || '';
+    $('readerDoneBadge').textContent = saved ? 'Đã hoàn thành bài đọc này' : 'Chưa hoàn thành';
+  }
+
+  async function inspectReaderKanji(ch) {
+    state.readerSelectedKanji = ch;
+    qsa('.inline-kanji').forEach((el) => el.classList.toggle('selected', el.textContent === ch));
+
+    const entry = await getFullKanjiEntry(ch);
+    if (!entry) return;
+
+    $('rkEmptyHint').classList.add('hidden');
+    $('rkBody').classList.remove('hidden');
+    $('rkLevelTag').classList.remove('hidden');
+    $('rkLevelTag').textContent = `N${entry.l} · ${entry.s} nét`;
+
+    const svg = $('rkMiniSvg');
+    svg.innerHTML = '';
+    entry.strokes.forEach((d) => {
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.setAttribute('d', d);
+      p.setAttribute('class', 'kvg-stroke-drawn');
+      svg.appendChild(p);
+    });
+
+    $('rkHv').textContent = `${entry.c} — ${entry.hv}`;
+    $('rkVi').textContent = entry.vi.slice(0, 4).join(' · ') || entry.en.slice(0, 3).join(' · ');
+    $('rkReadings').textContent = `On: ${entry.on.join(', ') || '—'} | Kun: ${entry.kun.join(', ') || '—'}`;
+    $('rkRadical').textContent = `Bộ thủ: ${entry.rad || '—'}`;
+
+    const partsBox = $('rkParts');
+    partsBox.innerHTML = '';
+    entry.parts.filter((p) => p.depth === 1).forEach((p) => {
+      const line = document.createElement('div');
+      line.className = 'sub-hint';
+      line.textContent = `• ${p.el} (${p.hv || 'Bộ phận'}): ${p.vi || ''}`;
+      partsBox.appendChild(line);
+    });
+  }
+
+  // =======================================================================
+  // EXAM & CHOUKAI STUDIO (de_thi/ 2010–2026)
+  // =======================================================================
+  async function ensureExamsLoaded() {
+    if (state.examsLoaded) return;
+    const res = await fetch('data/exam-catalog.json');
+    state.examCatalog = await res.json();
+    state.examsLoaded = true;
+  }
+
+  function isExamDone(examId) {
+    return Boolean(state.progress.examNotes && state.progress.examNotes[examId]?.done);
+  }
+
+  function renderExamList(autoPick = false) {
+    const container = $('examList');
+    const q = state.examSearch.trim().toLowerCase();
+    const allForLevel = state.examCatalog.filter((ex) => ex.level === state.currentLevel);
+    const filtered = allForLevel.filter((ex) => {
+      if (state.examFilter === 'done' && !isExamDone(ex.id)) return false;
+      if (state.examFilter === 'todo' && isExamDone(ex.id)) return false;
+      if (q && !ex.title.toLowerCase().includes(q) && !ex.period.toLowerCase().includes(q)) return false;
+      return true;
+    });
+
+    $('examListMeta').textContent = `N${state.currentLevel}: ${filtered.length} / ${allForLevel.length} kỳ thi`;
+    container.innerHTML = '';
+
+    if (!filtered.length) {
+      container.innerHTML = '<div class="rk-empty">Không tìm thấy kỳ thi phù hợp.</div>';
+      return;
+    }
+
+    filtered.forEach((ex) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'kanji-item';
+      if (state.currentExam && state.currentExam.id === ex.id) btn.classList.add('active');
+      const done = isExamDone(ex.id);
+      const tags = [];
+      if (ex.examPdfs.length) tags.push('Đề PDF');
+      if (ex.audioFiles.length) tags.push('Audio');
+      if (ex.scriptPdfs.length) tags.push('Script');
+      if (ex.answerFiles.length) tags.push('Đáp án');
+      btn.innerHTML = `
+        <span class="kanji-item-glyph" style="font-size:14px;">${ex.year || 'N' + ex.level}</span>
+        <span class="kanji-item-body">
+          <div class="kanji-item-hv">${ex.title}</div>
+          <div class="kanji-item-vi">${tags.join(' · ')}</div>
+        </span>
+        <span class="kanji-item-dot ${done ? 'mastered' : ''}"></span>
+      `;
+      btn.addEventListener('click', () => selectExam(ex));
+      container.appendChild(btn);
+    });
+
+    if (autoPick || !state.currentExam || state.currentExam.level !== state.currentLevel) {
+      selectExam(filtered[0]);
+    }
+  }
+
+  function openExamDoc(fileItem, isGuard) {
+    const pdfFrame = $('examPdfFrame');
+    const imgViewer = $('examImgViewer');
+    const emptyDoc = $('examEmptyDoc');
+    const newTabLink = $('examOpenNewTabLink');
+    $('examGuardBanner').classList.toggle('hidden', !isGuard);
+
+    if (!fileItem) {
+      pdfFrame.classList.add('hidden');
+      imgViewer.classList.add('hidden');
+      emptyDoc.classList.remove('hidden');
+      newTabLink.classList.add('hidden');
+      return;
+    }
+
+    const encodedUrl = encodeUrlPath(fileItem.url);
+    emptyDoc.classList.add('hidden');
+    newTabLink.href = encodedUrl;
+    newTabLink.classList.remove('hidden');
+
+    if (/\.(jpg|jpeg|jpge|png)$/i.test(fileItem.name)) {
+      pdfFrame.classList.add('hidden');
+      imgViewer.src = encodedUrl;
+      imgViewer.classList.remove('hidden');
+    } else {
+      imgViewer.classList.add('hidden');
+      pdfFrame.src = encodedUrl;
+      pdfFrame.classList.remove('hidden');
+    }
+  }
+
+  function selectExam(exam) {
+    state.currentExam = exam;
+    qsa('#examList .kanji-item').forEach((el) => {
+      el.classList.toggle('active', el.querySelector('.kanji-item-hv')?.textContent === exam.title);
+    });
+
+    $('examCurrentTitle').textContent = exam.title;
+    $('examCurrentSub').textContent = `Cấp độ JLPT N${exam.level} · Đang tải từ thư mục de_thi/ cục bộ`;
+
+    // Build document switch buttons
+    const tabsEl = $('examFileTabs');
+    tabsEl.innerHTML = '';
+    const docButtons = [];
+
+    exam.examPdfs.forEach((f, i) => docButtons.push({ label: exam.examPdfs.length > 1 ? `Đề thi ${i + 1}` : 'Đề thi PDF', file: f, guard: false }));
+    exam.scriptPdfs.forEach((f, i) => docButtons.push({ label: exam.scriptPdfs.length > 1 ? `Script Nghe ${i + 1}` : 'Script Nghe', file: f, guard: true }));
+    exam.answerFiles.forEach((f, i) => docButtons.push({ label: exam.answerFiles.length > 1 ? `Đáp án ${i + 1}` : 'Đáp án', file: f, guard: true }));
+
+    docButtons.forEach((item, idx) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = `exam-file-btn${item.guard ? ' guard' : ''}${idx === 0 ? ' active' : ''}`;
+      b.textContent = `${item.label} (${item.file.sizeMb} MB)`;
+      b.addEventListener('click', () => {
+        qsa('.exam-file-btn').forEach((x) => x.classList.remove('active'));
+        b.classList.add('active');
+        openExamDoc(item.file, item.guard);
+      });
+      tabsEl.appendChild(b);
+    });
+
+    openExamDoc(docButtons[0]?.file || null, docButtons[0]?.guard || false);
+
+    // Setup Audio Player
+    const audioBar = $('examAudioBar');
+    const audioEl = $('examAudioEl');
+    audioEl.pause();
+    if (exam.audioFiles.length) {
+      audioBar.classList.remove('hidden');
+      audioEl.src = encodeUrlPath(exam.audioFiles[0].url);
+      audioEl.playbackRate = Number($('examSpeedSelect').value) || 1;
+      $('examPlayPauseBtn').textContent = 'Nghe Audio';
+      $('examAudioTime').textContent = '00:00 / 00:00';
+      $('examAudioSeek').value = '0';
+    } else {
+      audioBar.classList.add('hidden');
+      audioEl.removeAttribute('src');
+    }
+
+    // Load saved exam note & done status
+    const saved = (state.progress.examNotes && state.progress.examNotes[exam.id]) || {};
+    $('examNoteInput').value = saved.note || '';
+    $('examNoteSaveHint').textContent = 'Tự lưu ổ đĩa';
+    $('examToggleDoneBtn').textContent = saved.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
+  }
+
+  async function renderExamQuickKanji(query) {
+    const container = $('examQuickKanjiResults');
+    const raw = (query || '').trim();
+    if (!raw) {
+      container.innerHTML = '<span class="sub-hint">Nhập chữ Kanji (hoặc cả từ ghép như 構造) để bóc tách từng chữ Hán.</span>';
+      return;
+    }
+
+    let chars = extractKanjiChars(raw);
+    if (!chars.length) {
+      const norm = stripVietnamese(raw);
+      for (const [ch, meta] of Object.entries(state.kanjiLookup)) {
+        if (stripVietnamese(meta.hv).includes(norm) || stripVietnamese(meta.vi).includes(norm)) {
+          chars.push(ch);
+          if (chars.length >= 10) break;
+        }
+      }
+    }
+
+    container.innerHTML = '';
+    if (!chars.length) {
+      container.innerHTML = '<span class="sub-hint">Không tìm thấy chữ Kanji khớp trong bộ 2.211 chữ N5–N1.</span>';
+      return;
+    }
+
+    chars.slice(0, 10).forEach((ch) => {
+      const meta = state.kanjiLookup[ch];
+      const card = document.createElement('div');
+      card.className = 'exam-quick-card';
+      card.innerHTML = `
+        <div class="exam-quick-left">
+          <span class="exam-quick-glyph">${ch}</span>
+          <div>
+            <div class="comp-name">${meta.hv} <span class="related-chip-lvl">N${meta.l}</span></div>
+            <div class="comp-meaning">${meta.vi}</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:4px;">
+          <button type="button" class="btn-ghost-sm eq-srs">+ SRS</button>
+          <button type="button" class="btn-ghost-sm eq-open">Viết</button>
+        </div>
+      `;
+      card.querySelector('.eq-srs').addEventListener('click', (e) => {
+        enqueueKanjiForSrs(ch);
+        e.target.textContent = 'Đã thêm';
+      });
+      card.querySelector('.eq-open').addEventListener('click', () => jumpToKanji(ch));
+      container.appendChild(card);
+    });
   }
 
   // --- Blind Recall Dojo ---
@@ -1630,10 +2279,10 @@
       btn.addEventListener('click', () => setMode(btn.dataset.mode));
     });
 
-    qsa('.filter-chip').forEach((btn) => {
+    qsa('.filter-chip[data-filter]').forEach((btn) => {
       btn.addEventListener('click', () => {
         state.filterStatus = btn.dataset.filter;
-        qsa('.filter-chip').forEach((c) => c.classList.toggle('active', c === btn));
+        qsa('.filter-chip[data-filter]').forEach((c) => c.classList.toggle('active', c === btn));
         applyFilterAndRender();
       });
     });
@@ -1840,6 +2489,167 @@
         $('gitStatusBox').textContent = `File JSON không hợp lệ: ${err.message}`;
       }
       e.target.value = '';
+    });
+
+    // Module 3: Deep Reader events
+    qsa('.reader-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.readerFilter = btn.dataset.rfilter;
+        qsa('.reader-filter').forEach((c) => c.classList.toggle('active', c === btn));
+        renderReaderList(true);
+      });
+    });
+
+    $('openCustomReadingBtn').addEventListener('click', () => {
+      $('customReadingForm').classList.toggle('hidden');
+    });
+    $('cancelCustomReadingBtn').addEventListener('click', () => {
+      $('customReadingForm').classList.add('hidden');
+    });
+    $('customReadingForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const title = $('customReadingTitle').value.trim();
+      const lvl = Number($('customReadingLevel').value) || 5;
+      const body = $('customReadingBody').value.trim();
+      if (!title || !body) return;
+      const rawBlocks = body.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean);
+      const blocks = rawBlocks.length > 1 ? rawBlocks : body.split(/\n+/).map((s) => s.trim()).filter(Boolean);
+      const custom = {
+        id: `custom-${Date.now()}`,
+        level: lvl,
+        title,
+        source: 'Bài đọc tự nhập (Cá nhân)',
+        category: 'Tự nhập',
+        paragraphs: blocks.map((jp) => ({ jp, vi: '', vocab: [] })),
+        questions: [],
+      };
+      state.progress.customReadings = state.progress.customReadings || [];
+      state.progress.customReadings.unshift(custom);
+      scheduleSaveProgress(true);
+      $('customReadingTitle').value = '';
+      $('customReadingBody').value = '';
+      $('customReadingForm').classList.add('hidden');
+      selectLevel(lvl, false).then(() => {
+        renderReaderList(false);
+        selectReading(custom);
+      });
+    });
+
+    $('readerSpeakBtn').addEventListener('click', () => {
+      if (!state.currentReading) return;
+      const fullText = state.currentReading.paragraphs
+        .slice(0, state.readerAllUnlocked ? undefined : state.readerUnlockedIdx + 1)
+        .map((p) => p.jp)
+        .join('。');
+      speakJapaneseText(fullText, 0.86);
+    });
+
+    $('readerResetBtn').addEventListener('click', () => {
+      if (!state.currentReading) return;
+      selectReading(state.currentReading);
+    });
+
+    $('readerCompleteBtn').addEventListener('click', () => {
+      if (!state.currentReading) return;
+      state.progress.readingsDone = state.progress.readingsDone || {};
+      state.progress.readingsDone[state.currentReading.id] = {
+        completedAt: new Date().toISOString(),
+        summary: $('readerSummaryInput').value.trim(),
+      };
+      scheduleSaveProgress(true);
+      $('readerDoneBadge').textContent = 'Đã hoàn thành & lưu ổ đĩa';
+      renderReaderList(false);
+    });
+
+    $('rkOpenAtelierBtn').addEventListener('click', () => {
+      if (state.readerSelectedKanji) jumpToKanji(state.readerSelectedKanji);
+    });
+    $('rkAddSrsBtn').addEventListener('click', () => {
+      if (!state.readerSelectedKanji) return;
+      enqueueKanjiForSrs(state.readerSelectedKanji);
+      $('rkAddSrsBtn').textContent = 'Đã đưa vào SRS!';
+      setTimeout(() => { $('rkAddSrsBtn').textContent = 'Đưa vào ôn SRS'; }, 1400);
+    });
+
+    // Exam Studio events
+    qsa('.exam-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.examFilter = btn.dataset.efilter;
+        qsa('.exam-filter').forEach((c) => c.classList.toggle('active', c === btn));
+        renderExamList(true);
+      });
+    });
+
+    $('examSearchInput').addEventListener('input', (e) => {
+      state.examSearch = e.target.value;
+      renderExamList(true);
+    });
+
+    const audioEl = $('examAudioEl');
+    $('examPlayPauseBtn').addEventListener('click', () => {
+      if (!audioEl.src) return;
+      if (audioEl.paused) {
+        audioEl.play();
+        $('examPlayPauseBtn').textContent = 'Tạm dừng';
+      } else {
+        audioEl.pause();
+        $('examPlayPauseBtn').textContent = 'Nghe tiếp';
+      }
+    });
+    $('examBack5Btn').addEventListener('click', () => {
+      if (audioEl.src) audioEl.currentTime = Math.max(0, audioEl.currentTime - 5);
+    });
+    $('examFwd5Btn').addEventListener('click', () => {
+      if (audioEl.src && audioEl.duration) audioEl.currentTime = Math.min(audioEl.duration, audioEl.currentTime + 5);
+    });
+    $('examSpeedSelect').addEventListener('change', (e) => {
+      audioEl.playbackRate = Number(e.target.value) || 1;
+    });
+    $('examAudioSeek').addEventListener('input', (e) => {
+      if (audioEl.duration) {
+        audioEl.currentTime = (Number(e.target.value) / 100) * audioEl.duration;
+      }
+    });
+    audioEl.addEventListener('timeupdate', () => {
+      const dur = audioEl.duration || 0;
+      const cur = audioEl.currentTime || 0;
+      $('examAudioTime').textContent = `${formatMMSS(Math.floor(cur))} / ${formatMMSS(Math.floor(dur))}`;
+      if (dur > 0) $('examAudioSeek').value = String((cur / dur) * 100);
+    });
+    audioEl.addEventListener('ended', () => {
+      $('examPlayPauseBtn').textContent = 'Nghe lại';
+    });
+
+    $('examQuickKanjiInput').addEventListener('input', (e) => {
+      renderExamQuickKanji(e.target.value);
+    });
+
+    $('examNoteInput').addEventListener('input', (e) => {
+      if (!state.currentExam) return;
+      const id = state.currentExam.id;
+      state.progress.examNotes = state.progress.examNotes || {};
+      const prev = state.progress.examNotes[id] || { done: false, note: '' };
+      prev.note = e.target.value;
+      state.progress.examNotes[id] = prev;
+      $('examNoteSaveHint').textContent = 'Đang lưu...';
+      clearTimeout(state.examNoteTimer);
+      state.examNoteTimer = setTimeout(() => {
+        scheduleSaveProgress(true);
+        $('examNoteSaveHint').textContent = 'Đã lưu ổ đĩa';
+      }, 450);
+    });
+
+    $('examToggleDoneBtn').addEventListener('click', () => {
+      if (!state.currentExam) return;
+      const id = state.currentExam.id;
+      state.progress.examNotes = state.progress.examNotes || {};
+      const prev = state.progress.examNotes[id] || { done: false, note: '' };
+      prev.done = !prev.done;
+      prev.updatedAt = new Date().toISOString();
+      state.progress.examNotes[id] = prev;
+      scheduleSaveProgress(true);
+      $('examToggleDoneBtn').textContent = prev.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
+      renderExamList(false);
     });
 
     // Keyboard shortcuts [ and ] to move between Kanji when not typing

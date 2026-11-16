@@ -30,6 +30,8 @@
 
     <div class="view-tabs" role="tablist" aria-label="Chế độ làm việc">
       <button class="view-btn active" data-view="atelier" role="tab" aria-selected="true">Xưởng chữ</button>
+      <button class="view-btn" data-view="reader" role="tab" aria-selected="false">Đọc sâu</button>
+      <button class="view-btn" data-view="exams" role="tab" aria-selected="false">Kho đề thi</button>
       <button class="view-btn" data-view="dojo" role="tab" aria-selected="false">
         Ôn tập mù <span class="due-pill" id="dueCountBadge">0</span>
       </button>
@@ -62,6 +64,7 @@
     <button class="btn-ghost-sm" id="focusBannerClose">Đã hiểu</button>
   </div>
 
+  <div class="app-body">
   <!-- MAIN VIEW 1: ATELIER (3-Column Deep Study Workspace) -->
   <main class="workspace" id="viewAtelier">
     <!-- Left Column: Kanji Index, Multi-Search & SRS Filter -->
@@ -308,7 +311,205 @@
     </aside>
   </main>
 
-  <!-- MAIN VIEW 2: BLIND RECALL DOJO (Focused SRS Review Queue) -->
+  <!-- MAIN VIEW 2: ANTI-SKIMMING DEEP READER (Module 3) -->
+  <section class="workspace hidden" id="viewReader">
+    <aside class="panel panel-left">
+      <div class="search-box">
+        <button class="btn-primary reader-add-btn" id="openCustomReadingBtn">+ Dán bài đọc mới</button>
+      </div>
+      <div class="filter-row" role="group" aria-label="Lọc trạng thái bài đọc">
+        <button class="filter-chip reader-filter active" data-rfilter="all">Tất cả</button>
+        <button class="filter-chip reader-filter" data-rfilter="unread">Chưa đọc</button>
+        <button class="filter-chip reader-filter" data-rfilter="done">Đã hoàn thành</button>
+      </div>
+      <div class="list-meta" id="readerListMeta">0 bài đọc</div>
+      <div class="kanji-list" id="readerList"></div>
+    </aside>
+
+    <section class="panel panel-center reader-center">
+      <!-- Custom Paste Form (hidden by default) -->
+      <form class="custom-reading-form hidden" id="customReadingForm">
+        <div class="section-head">
+          <h2>Nhập bài đọc chống đọc lướt</h2>
+          <button type="button" class="btn-ghost-sm" id="cancelCustomReadingBtn">Đóng</button>
+        </div>
+        <div class="field-group">
+          <label for="customReadingTitle">Tiêu đề bài đọc</label>
+          <input type="text" id="customReadingTitle" placeholder="Ví dụ: Bài đọc đề N2 07/2024 hoặc trích đoạn sách..." required />
+        </div>
+        <div class="field-group">
+          <label for="customReadingLevel">Cấp độ JLPT</label>
+          <select id="customReadingLevel">
+            <option value="5">JLPT N5</option>
+            <option value="4">JLPT N4</option>
+            <option value="3">JLPT N3</option>
+            <option value="2">JLPT N2</option>
+            <option value="1">JLPT N1</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="customReadingBody">Nội dung tiếng Nhật (mỗi đoạn cách nhau bởi 1 dòng trống hoặc xuống dòng)</label>
+          <textarea id="customReadingBody" rows="6" placeholder="Dán văn bản tiếng Nhật vào đây..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Tạo bài đọc &amp; Phân tích Kanji</button>
+      </form>
+
+      <div class="reader-article-wrap" id="readerArticleWrap">
+        <div class="reader-header">
+          <div>
+            <div class="reader-meta-line">
+              <span class="prompt-jlpt-tag" id="readerLevelTag">JLPT N5</span>
+              <span class="shape-tag" id="readerCategoryTag">Đoản văn</span>
+              <span class="sub-hint" id="readerSourceTag"></span>
+            </div>
+            <h1 class="reader-title" id="readerTitle">Chọn một bài đọc bên trái</h1>
+          </div>
+          <div class="reader-header-actions">
+            <button class="btn-ghost-sm" id="readerSpeakBtn">Đọc thành tiếng</button>
+            <button class="btn-ghost-sm" id="readerResetBtn">Đọc lại từ đoạn 1</button>
+          </div>
+        </div>
+
+        <div class="reader-tip-bar">
+          Mẹo chống đọc lướt: Các đoạn bên dưới được làm mờ. Hãy đọc kỹ từng đoạn, bấm vào <strong>chữ Kanji bất kỳ</strong> để giải phẫu ngay bên phải, và chạm/di chuột giữ vào thẻ từ vựng 0,5s khi thật sự cần xem cách đọc.
+        </div>
+
+        <div class="reader-paragraphs" id="readerParagraphs"></div>
+
+        <div class="reader-questions-box hidden" id="readerQuestionsBox">
+          <div class="section-head">
+            <h2>Câu hỏi kiểm tra hiểu sâu</h2>
+            <span class="sub-hint" id="readerQHint">Đọc kỹ câu hỏi trước khi mở khóa 4 lựa chọn</span>
+          </div>
+          <div id="readerQuestionsList"></div>
+        </div>
+
+        <div class="reader-summary-box hidden" id="readerSummaryBox">
+          <div class="section-head">
+            <h2>Tóm tắt truy xuất (Active Summary)</h2>
+            <span class="sub-hint" id="readerDoneBadge">Chưa hoàn thành</span>
+          </div>
+          <textarea id="readerSummaryInput" rows="2" placeholder="Viết 1–2 câu tóm tắt ý chính của bài đọc bằng lời của bạn..."></textarea>
+          <div class="reader-summary-actions">
+            <button class="btn-primary" id="readerCompleteBtn">Hoàn thành bài đọc &amp; Lưu tiến độ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel panel-right">
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Kanji xuất hiện trong bài</h2>
+          <span class="mono sub-hint" id="readerKanjiCount">0 chữ</span>
+        </div>
+        <div class="related-chips" id="readerKanjiChips"></div>
+      </div>
+
+      <div class="anatomy-section" id="readerKanjiInspector">
+        <div class="section-head">
+          <h2>Giải phẫu chữ đang chọn</h2>
+          <span class="prompt-jlpt-tag hidden" id="rkLevelTag">N5</span>
+        </div>
+        <div class="rk-empty" id="rkEmptyHint">
+          Bấm vào một chữ Kanji ngay trong đoạn văn hoặc danh sách bên trên để soi âm Hán-Việt, bộ thủ và nét viết.
+        </div>
+        <div class="rk-body hidden" id="rkBody">
+          <div class="rk-top-row">
+            <svg id="rkMiniSvg" class="rk-mini-svg" viewBox="0 0 109 109"></svg>
+            <div class="rk-info">
+              <div class="rk-hv" id="rkHv">NHẬT</div>
+              <div class="rk-vi" id="rkVi">Mặt Trời, ngày</div>
+              <div class="rk-readings mono" id="rkReadings">On: ニチ | Kun: ひ</div>
+              <div class="sub-hint" id="rkRadical">Bộ thủ: ...</div>
+            </div>
+          </div>
+          <div class="rk-parts" id="rkParts"></div>
+          <div class="rk-actions">
+            <button class="btn-primary-sm" id="rkOpenAtelierBtn">Mở trong Xưởng viết</button>
+            <button class="btn-ghost-sm" id="rkAddSrsBtn">Đưa vào ôn SRS</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- MAIN VIEW 3: JLPT EXAMS & CHOUKAI STUDIO (420 files from de_thi/) -->
+  <section class="workspace hidden" id="viewExams">
+    <aside class="panel panel-left">
+      <div class="search-box">
+        <input type="search" id="examSearchInput" placeholder="Tìm năm thi (ví dụ: 2024, 12-2023)..." autocomplete="off" />
+      </div>
+      <div class="filter-row" role="group" aria-label="Lọc trạng thái đề thi">
+        <button class="filter-chip exam-filter active" data-efilter="all">Tất cả</button>
+        <button class="filter-chip exam-filter" data-efilter="todo">Chưa giải</button>
+        <button class="filter-chip exam-filter" data-efilter="done">Đã giải</button>
+      </div>
+      <div class="list-meta" id="examListMeta">0 kỳ thi</div>
+      <div class="kanji-list" id="examList"></div>
+    </aside>
+
+    <section class="panel panel-center exam-viewer-center">
+      <div class="exam-toolbar">
+        <div class="exam-title-block">
+          <h1 id="examCurrentTitle">Chọn một kỳ thi bên trái</h1>
+          <span class="sub-hint" id="examCurrentSub">Đọc đề trực tiếp trên trình duyệt — Audio hỗ trợ tua 5s</span>
+        </div>
+        <div class="exam-file-tabs" id="examFileTabs"></div>
+      </div>
+
+      <div class="exam-audio-bar hidden" id="examAudioBar">
+        <audio id="examAudioEl" preload="metadata"></audio>
+        <button class="btn-primary-sm" id="examPlayPauseBtn">Nghe Audio</button>
+        <button class="btn-ghost-sm" id="examBack5Btn">−5s</button>
+        <button class="btn-ghost-sm" id="examFwd5Btn">+5s</button>
+        <input type="range" id="examAudioSeek" min="0" max="100" value="0" class="audio-seek" aria-label="Thanh tua âm thanh" />
+        <span class="mono audio-time" id="examAudioTime">00:00 / 00:00</span>
+        <select id="examSpeedSelect" class="focus-select" aria-label="Tốc độ phát">
+          <option value="0.85">0.85x</option>
+          <option value="1" selected>1.0x</option>
+          <option value="1.15">1.15x</option>
+        </select>
+      </div>
+
+      <div class="exam-guard-banner hidden" id="examGuardBanner">
+        Bạn đang mở Script Nghe hoặc Đáp án. Gợi ý: hãy nghe hết file Audio hoặc tự làm hết đề trước khi đối chiếu để rèn tư duy sâu.
+      </div>
+
+      <div class="exam-doc-frame-wrap" id="examDocWrap">
+        <div class="exam-empty-doc" id="examEmptyDoc">Chọn kỳ thi và bấm nút tài liệu (Đề thi / Script Nghe / Đáp án) để hiển thị tại đây.</div>
+        <iframe id="examPdfFrame" class="exam-pdf-frame hidden" title="Trình xem đề thi PDF"></iframe>
+        <img id="examImgViewer" class="exam-img-viewer hidden" alt="Ảnh đáp án đề thi" />
+      </div>
+    </section>
+
+    <aside class="panel panel-right">
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Tra cứu &amp; Bóc tách Kanji nhanh</h2>
+          <span class="sub-hint">Khi gặp chữ khó trong đề</span>
+        </div>
+        <input type="search" id="examQuickKanjiInput" class="exam-kanji-input" placeholder="Dán từ/chữ Kanji hoặc gõ Hán-Việt..." autocomplete="off" />
+        <div id="examQuickKanjiResults" class="exam-quick-results">
+          <span class="sub-hint">Nhập chữ Kanji (hoặc cả từ ghép như 構造) để bóc tách từng chữ Hán.</span>
+        </div>
+      </div>
+
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Phiếu làm bài &amp; Ghi chú kỳ thi</h2>
+          <span class="sub-hint" id="examNoteSaveHint">Tự lưu ổ đĩa</span>
+        </div>
+        <textarea id="examNoteInput" rows="10" placeholder="Ghi lại đáp án bạn chọn (1-4), câu sai cần rút kinh nghiệm hoặc từ vựng mới gặp trong đề này..."></textarea>
+        <div class="exam-done-row">
+          <button class="btn-primary" id="examToggleDoneBtn">Đánh dấu đã giải xong đề này</button>
+          <a class="btn-ghost-sm hidden" id="examOpenNewTabLink" target="_blank" rel="noopener">Mở file ở tab mới</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- MAIN VIEW 4: BLIND RECALL DOJO (Focused SRS Review Queue) -->
   <section class="dojo-view hidden" id="viewDojo">
     <div class="dojo-container">
       <div class="dojo-header">
@@ -438,6 +639,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <!-- DETOX BREATHING GATE MODAL (Optional Monk Mode Transition) -->
   <div class="detox-overlay hidden" id="detoxOverlay" role="dialog" aria-modal="true" aria-labelledby="detoxTitle">

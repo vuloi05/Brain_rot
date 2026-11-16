@@ -1,6 +1,7 @@
 node_modules/
 scripts/.cache/
 skills/
+de_thi/
 *.tmp
 .DS_Store
 Thumbs.db

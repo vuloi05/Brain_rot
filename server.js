@@ -15,8 +15,16 @@ const MIME_TYPES = {
   '.json': 'application/json; charset=utf-8',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.jpge': 'image/jpeg',
   '.ico': 'image/x-icon',
   '.txt': 'text/plain; charset=utf-8',
+  '.pdf': 'application/pdf',
+  '.mp3': 'audio/mpeg',
+  '.m4a': 'audio/mp4',
+  '.wav': 'audio/wav',
+  '.ogg': 'audio/ogg',
 };
 
 function createDefaultProgress() {
@@ -29,6 +37,7 @@ function createDefaultProgress() {
       defaultLevel: 5,
       focusDurationMin: 15,
       requireDetoxGate: true,
+      soundEnabled: false,
     },
     stats: {
       totalFocusSeconds: 0,
@@ -40,6 +49,9 @@ function createDefaultProgress() {
       blindRecallTotalCount: 0,
     },
     kanji: {},
+    readingsDone: {},
+    customReadings: [],
+    examNotes: {},
     sessionLogs: [],
   };
 }
@@ -209,7 +221,8 @@ async function handleGitSave(doPush, commitMessage) {
   };
 }
 
-function serveStatic(reqPath, res) {
+function serveStatic(req, res) {
+  const reqPath = req.url || '/';
   const cleanPath = reqPath === '/' ? '/index.html' : reqPath.split('?')[0];
   const decoded = decodeURIComponent(cleanPath);
   const absPath = path.normalize(path.join(ROOT_DIR, decoded));
@@ -235,10 +248,43 @@ function serveStatic(reqPath, res) {
 
     const ext = path.extname(absPath).toLowerCase();
     const mime = MIME_TYPES[ext] || 'application/octet-stream';
+    const cacheControl = ext === '.json' && absPath.includes('user-progress') ? 'no-store' : 'no-cache';
+    const total = stat.size;
+    const range = req.headers.range;
+
+    if (range) {
+      const m = /^bytes=(\d*)-(\d*)$/.exec(range);
+      if (!m) {
+        res.writeHead(416, { 'Content-Range': `bytes */${total}` });
+        res.end();
+        return;
+      }
+      const start = m[1] ? parseInt(m[1], 10) : Math.max(0, total - parseInt(m[2], 10));
+      const end = m[1] && m[2] ? Math.min(total - 1, parseInt(m[2], 10)) : total - 1;
+      if (Number.isNaN(start) || Number.isNaN(end) || start > end || start >= total) {
+        res.writeHead(416, { 'Content-Range': `bytes */${total}` });
+        res.end();
+        return;
+      }
+      res.writeHead(206, {
+        'Content-Range': `bytes ${start}-${end}/${total}`,
+        'Accept-Ranges': 'bytes',
+        'Content-Length': end - start + 1,
+        'Content-Type': mime,
+        'Cache-Control': cacheControl,
+      });
+      if (req.method === 'HEAD') return res.end();
+      fs.createReadStream(absPath, { start, end }).pipe(res);
+      return;
+    }
+
     res.writeHead(200, {
       'Content-Type': mime,
-      'Cache-Control': ext === '.json' && absPath.includes('user-progress') ? 'no-store' : 'no-cache',
+      'Content-Length': total,
+      'Accept-Ranges': 'bytes',
+      'Cache-Control': cacheControl,
     });
+    if (req.method === 'HEAD') return res.end();
     fs.createReadStream(absPath).pipe(res);
   });
 }
@@ -272,7 +318,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     if (req.method === 'GET' || req.method === 'HEAD') {
-      return serveStatic(req.url || '/', res);
+      return serveStatic(req, res);
     }
 
     res.writeHead(405);
