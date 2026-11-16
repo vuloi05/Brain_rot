@@ -1,7 +1,7 @@
 {
   "version": 1,
   "createdAt": "2026-11-16T22:05:00.000Z",
-  "updatedAt": "2026-11-16T15:58:09.965Z",
+  "updatedAt": "2026-11-16T16:03:33.930Z",
   "settings": {
     "theme": "hanshi",
     "defaultLevel": 5,
@@ -14,9 +14,9 @@
     "completedSessions": 0,
     "longestCleanSessionSec": 0,
     "tabSwitchCount": 0,
-    "totalStrokesDrawn": 56,
-    "blindRecallSuccessCount": 9,
-    "blindRecallTotalCount": 12
+    "totalStrokesDrawn": 78,
+    "blindRecallSuccessCount": 12,
+    "blindRecallTotalCount": 16
   },
   "kanji": {
     "日": {
@@ -158,6 +158,46 @@
       "note": "",
       "due": "2026-11-17T15:58:09.963Z",
       "lastReviewedAt": "2026-11-16T15:58:09.963Z"
+    },
+    "五": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 1,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-17T16:02:39.245Z",
+      "lastReviewedAt": "2026-11-16T16:02:39.245Z"
+    },
+    "上": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 1,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-17T16:03:14.646Z",
+      "lastReviewedAt": "2026-11-16T16:03:14.646Z"
+    },
+    "四": {
+      "reps": 1,
+      "interval": 4,
+      "ease": 2.62,
+      "writePasses": 1,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-20T16:03:22.923Z",
+      "lastReviewedAt": "2026-11-16T16:03:22.923Z"
+    },
+    "金": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 1,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-17T16:03:33.929Z",
+      "lastReviewedAt": "2026-11-16T16:03:33.929Z"
     }
   },
   "sessionLogs": []
