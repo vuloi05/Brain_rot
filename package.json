@@ -1,0 +1,13 @@
+{
+  "name": "bokuseki-anti-brainrot-kanji",
+  "version": "1.0.0",
+  "description": "BOKUSEKI - Web app giải phẫu & luyện tự Kanji N5-N1 chống thối não, lưu trữ trực tiếp và đồng bộ qua GitHub",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build:data": "python scripts/build_dataset.py"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

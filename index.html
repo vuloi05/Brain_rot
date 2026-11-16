@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="hanshi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOKUSEKI 墨跡 — Xưởng Giải Phẫu &amp; Luyện Tự Kanji N5–N1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Atelier Bar -->
+  <header class="topbar">
+    <div class="topbar-brand">
+      <div class="brand-seal" aria-hidden="true">墨</div>
+      <div class="brand-text">
+        <span class="brand-title">BOKUSEKI</span>
+        <span class="brand-sub">Giải phẫu &amp; Luyện tự Kanji N5–N1</span>
+      </div>
+    </div>
+
+    <nav class="level-tabs" aria-label="Chọn cấp độ JLPT">
+      <button class="level-btn active" data-level="5">N5 <span class="lvl-count">79</span></button>
+      <button class="level-btn" data-level="4">N4 <span class="lvl-count">166</span></button>
+      <button class="level-btn" data-level="3">N3 <span class="lvl-count">367</span></button>
+      <button class="level-btn" data-level="2">N2 <span class="lvl-count">367</span></button>
+      <button class="level-btn" data-level="1">N1 <span class="lvl-count">1232</span></button>
+    </nav>
+
+    <div class="view-tabs" role="tablist" aria-label="Chế độ làm việc">
+      <button class="view-btn active" data-view="atelier" role="tab" aria-selected="true">Xưởng chữ</button>
+      <button class="view-btn" data-view="dojo" role="tab" aria-selected="false">
+        Ôn tập mù <span class="due-pill" id="dueCountBadge">0</span>
+      </button>
+      <button class="view-btn" data-view="neuro" role="tab" aria-selected="false">Não bộ &amp; Git</button>
+    </div>
+
+    <div class="topbar-controls">
+      <div class="focus-widget" id="focusWidget">
+        <button class="btn-focus" id="focusStartBtn" title="Bắt đầu phiên tập trung sâu (Monk Mode)">
+          <span class="focus-dot"></span>
+          <span id="focusTimerText">Tập trung 15:00</span>
+        </button>
+        <select id="focusDurationSelect" class="focus-select" aria-label="Thời lượng phiên tập trung">
+          <option value="15">15p</option>
+          <option value="25">25p</option>
+          <option value="40">40p</option>
+        </select>
+      </div>
+
+      <span class="save-badge" id="saveStatusBadge" title="Trạng thái lưu đĩa">Đang tải...</span>
+
+      <button class="icon-btn" id="soundToggleBtn" title="Bật/tắt âm gõ mộc nhẹ khi viết xong nét" aria-pressed="false">Âm mộc: Tắt</button>
+      <button class="icon-btn" id="themeToggleBtn" title="Chuyển chế độ Giấy Hanshi / Mực Đêm Yoru">Đêm</button>
+    </div>
+  </header>
+
+  <!-- Reflection banner when user returns from tab-switch during Focus Session -->
+  <div class="focus-banner hidden" id="focusBanner" role="status">
+    <span id="focusBannerText">Bạn vừa chuyển sang tab khác trong phiên tập trung. Hãy hít một hơi chậm và quay lại nét bút.</span>
+    <button class="btn-ghost-sm" id="focusBannerClose">Đã hiểu</button>
+  </div>
+
+  <!-- MAIN VIEW 1: ATELIER (3-Column Deep Study Workspace) -->
+  <main class="workspace" id="viewAtelier">
+    <!-- Left Column: Kanji Index, Multi-Search & SRS Filter -->
+    <aside class="panel panel-left">
+      <div class="search-box">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Tìm Kanji, Hán-Việt, nghĩa, Kana hoặc bộ (木)..."
+          autocomplete="off"
+        />
+        <label class="global-search-toggle">
+          <input type="checkbox" id="globalSearchToggle" />
+          <span>Tìm cả 2.211 chữ (N5–N1)</span>
+        </label>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Lọc trạng thái học">
+        <button class="filter-chip active" data-filter="all">Tất cả</button>
+        <button class="filter-chip" data-filter="due">Cần ôn</button>
+        <button class="filter-chip" data-filter="new">Chưa học</button>
+        <button class="filter-chip" data-filter="learning">Đang luyện</button>
+        <button class="filter-chip" data-filter="mastered">Thuộc sâu</button>
+      </div>
+
+      <div class="list-meta" id="listMetaText">Hiển thị 0 chữ</div>
+
+      <div class="kanji-list" id="kanjiList" role="listbox" aria-label="Danh sách Kanji"></div>
+    </aside>
+
+    <!-- Center Column: Masume Calligraphy & Vector Dissection Board -->
+    <section class="panel panel-center">
+      <div class="center-header">
+        <div class="mode-switcher" role="tablist" aria-label="Chế độ luyện tập">
+          <button class="mode-btn active" data-mode="anatomy">1. Giải phẫu nét</button>
+          <button class="mode-btn" data-mode="guided">2. Tập viết chuẩn</button>
+          <button class="mode-btn" data-mode="blind">3. Viết mù</button>
+          <button class="mode-btn" data-mode="typing">4. Gõ truy xuất</button>
+        </div>
+
+        <div class="kanji-nav-arrows">
+          <button class="btn-ghost-sm" id="prevKanjiBtn" title="Chữ trước (Phím [ )">← Trước</button>
+          <button class="btn-ghost-sm" id="nextKanjiBtn" title="Chữ sau (Phím ] )">Sau →</button>
+        </div>
+      </div>
+
+      <!-- Prompt Header above Board (adapts for Blind Recall vs Normal) -->
+      <div class="prompt-strip" id="promptStrip">
+        <div class="prompt-main">
+          <span class="prompt-kanji" id="promptKanjiGlyph">休</span>
+          <div class="prompt-details">
+            <div class="prompt-hv-line">
+              <span class="prompt-hv" id="promptHv">HƯU</span>
+              <span class="prompt-jlpt-tag" id="promptJlptTag">JLPT N5 · 6 nét</span>
+            </div>
+            <div class="prompt-meaning" id="promptMeaning">nghỉ ngơi · thôi, dừng · tốt lành</div>
+            <div class="prompt-readings" id="promptReadings">On: キュウ &nbsp;|&nbsp; Kun: やす.む, やす.まる</div>
+          </div>
+        </div>
+        <button class="btn-speak" id="speakKanjiBtn" title="Đọc âm tiếng Nhật (Web Speech)">Phát âm</button>
+      </div>
+
+      <!-- Masume Calligraphy Square Board -->
+      <div class="board-stage" id="boardStage">
+        <div class="masume-frame" id="masumeFrame">
+          <!-- Crosshair & Diagonal Calligraphy Guides -->
+          <svg class="masume-grid" viewBox="0 0 109 109" aria-hidden="true">
+            <line x1="54.5" y1="0" x2="54.5" y2="109" class="grid-axis" />
+            <line x1="0" y1="54.5" x2="109" y2="54.5" class="grid-axis" />
+            <line x1="0" y1="0" x2="109" y2="109" class="grid-diag" />
+            <line x1="109" y1="0" x2="0" y2="109" class="grid-diag" />
+          </svg>
+
+          <!-- KanjiVG Vector Layer -->
+          <svg id="kanjiSvg" class="kanji-svg" viewBox="0 0 109 109" aria-label="Khung vector nét Kanji"></svg>
+
+          <!-- Interactive Drawing Canvas -->
+          <canvas id="drawCanvas" class="draw-canvas"></canvas>
+
+          <!-- Traditional Vermilion Hanko Seal on Completion -->
+          <div class="hanko-seal" id="hankoSeal" aria-hidden="true">
+            <span>済</span>
+          </div>
+
+          <!-- Stroke Counter Overlay inside Corner -->
+          <div class="board-corner-info" id="boardCornerInfo">Nét 0 / 6</div>
+        </div>
+
+        <!-- Feedback Strip below Canvas -->
+        <div class="board-feedback" id="boardFeedback">
+          Di chuột lên bộ phận bên phải để soi vị trí nét, hoặc bấm "Phát hoạt ảnh" để xem thứ tự viết.
+        </div>
+
+        <!-- Mode-specific Action Controls -->
+        <div class="board-controls" id="boardControls">
+          <!-- Anatomy Controls -->
+          <div class="control-group" data-for-mode="anatomy">
+            <button class="btn-primary-sm" id="playAnimBtn">Phát hoạt ảnh</button>
+            <button class="btn-ghost-sm" id="stepBackBtn">− 1 nét</button>
+            <button class="btn-ghost-sm" id="stepFwdBtn">+ 1 nét</button>
+            <button class="btn-ghost-sm" id="showAllStrokesBtn">Hiện đủ nét</button>
+            <label class="inline-check">
+              <input type="checkbox" id="colorPartsToggle" checked />
+              <span>Tô màu theo bộ phận</span>
+            </label>
+            <label class="inline-check">
+              <input type="checkbox" id="strokeNumberToggle" checked />
+              <span>Số thứ tự</span>
+            </label>
+          </div>
+
+          <!-- Guided Practice Controls -->
+          <div class="control-group hidden" data-for-mode="guided">
+            <button class="btn-ghost-sm" id="undoStrokeBtn">Hoàn tác 1 nét</button>
+            <button class="btn-ghost-sm" id="clearCanvasBtn">Xóa bảng viết lại</button>
+            <button class="btn-ghost-sm" id="peekNextStrokeBtn">Gợi ý nét tiếp theo</button>
+            <label class="inline-check">
+              <input type="checkbox" id="ghostGuideToggle" checked />
+              <span>Hiện bóng chữ mờ</span>
+            </label>
+          </div>
+
+          <!-- Blind Recall Controls (with 3-Second Friction Rule) -->
+          <div class="control-group hidden" data-for-mode="blind">
+            <button class="btn-ghost-sm" id="blindUndoBtn">Hoàn tác 1 nét</button>
+            <button class="btn-ghost-sm" id="blindClearBtn">Viết lại từ đầu</button>
+            <button class="btn-friction" id="blindHintBtn" disabled>Gợi ý 1 nét (3s)</button>
+            <button class="btn-ghost-sm" id="blindRevealBtn">Mở đáp án đối chiếu</button>
+          </div>
+        </div>
+
+        <!-- Mode 4: Active Recall Typing Panel (No Multiple Choice!) -->
+        <div class="typing-stage hidden" id="typingStage">
+          <div class="typing-prompt-card">
+            <div class="typing-kanji-big" id="typingKanjiBig">休</div>
+            <p class="typing-instruction">
+              Không dùng trắc nghiệm. Hãy tự nhớ và gõ trực tiếp âm Hán-Việt cùng cách đọc tiếng Nhật (có thể gõ Romaji, hệ thống tự chuyển sang Hiragana/Katakana).
+            </p>
+          </div>
+
+          <form class="typing-form" id="typingForm">
+            <div class="field-group">
+              <label for="inputHanViet">Âm Hán-Việt</label>
+              <input type="text" id="inputHanViet" placeholder="Ví dụ: huu hoặc hưu" autocomplete="off" />
+            </div>
+
+            <div class="field-group">
+              <label for="inputReading">Cách đọc On hoặc Kun (gõ Romaji tự đổi Kana)</label>
+              <div class="kana-input-wrap">
+                <input type="text" id="inputReading" placeholder="Ví dụ: yasumu hoặc kyuu" autocomplete="off" />
+                <span class="kana-preview" id="kanaPreviewBadge"></span>
+              </div>
+            </div>
+
+            <div class="typing-actions">
+              <button type="submit" class="btn-primary">Kiểm tra truy xuất</button>
+              <button type="button" class="btn-friction" id="typingHintBtn" disabled>Xem gợi ý (3s)</button>
+            </div>
+          </form>
+
+          <div class="typing-result hidden" id="typingResult"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: Anatomical Deconstruction, Related Network, Mnemonic & SRS -->
+    <aside class="panel panel-right">
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Giải phẫu chiết tự</h2>
+          <span class="shape-tag" id="shapeTag" title="Cấu trúc hình học chữ Hán">⿰ Trái – Phải</span>
+        </div>
+
+        <div class="identity-grid" id="identityGrid">
+          <div class="id-cell">
+            <span class="id-label">Âm Hán-Việt</span>
+            <span class="id-val id-hv" id="detailHv">HƯU</span>
+          </div>
+          <div class="id-cell">
+            <span class="id-label">Bộ thủ chính</span>
+            <span class="id-val" id="detailRadical">nhân 人 (+4 nét)</span>
+          </div>
+          <div class="id-cell">
+            <span class="id-label">Độ phổ biến / Cấp</span>
+            <span class="id-val mono" id="detailMeta">JLPT N5 · 6 nét</span>
+          </div>
+        </div>
+
+        <div class="meanings-box">
+          <div class="sub-label">Nghĩa tiếng Việt &amp; gốc Anh</div>
+          <ul class="meaning-list" id="detailMeanings"></ul>
+        </div>
+      </div>
+
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Cây bộ phận cấu thành</h2>
+          <span class="sub-hint">Di chuột để soi nét</span>
+        </div>
+        <div class="component-tree" id="componentTree"></div>
+
+        <div class="related-kanji-box" id="relatedKanjiBox">
+          <div class="sub-label" id="relatedLabel">Chữ Kanji cùng chứa bộ phận</div>
+          <div class="related-chips" id="relatedChips"></div>
+        </div>
+      </div>
+
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Sổ tay chiết tự cá nhân</h2>
+          <span class="sub-hint" id="noteSaveHint">Tự lưu vào ổ đĩa</span>
+        </div>
+        <textarea
+          id="mnemonicNoteInput"
+          rows="3"
+          placeholder="Tự viết câu chuyện hoặc logic ghi nhớ cho chữ này (ví dụ: Người 亻 tựa gốc cây 木 để nghỉ ngơi)..."
+        ></textarea>
+      </div>
+
+      <div class="anatomy-section srs-section">
+        <div class="section-head">
+          <h2>Đánh giá độ nhớ (SRS)</h2>
+          <span class="mono sub-hint" id="srsStatusLabel">Chưa ôn</span>
+        </div>
+        <div class="srs-grid">
+          <button class="srs-btn srs-again" data-quality="1">
+            <span class="srs-title">1. Quên</span>
+            <span class="srs-next" data-q="1">Ôn ngay</span>
+          </button>
+          <button class="srs-btn srs-hard" data-quality="2">
+            <span class="srs-title">2. Khó</span>
+            <span class="srs-next" data-q="2">1 ngày</span>
+          </button>
+          <button class="srs-btn srs-good" data-quality="3">
+            <span class="srs-title">3. Nhớ tốt</span>
+            <span class="srs-next" data-q="3">3 ngày</span>
+          </button>
+          <button class="srs-btn srs-easy" data-quality="4">
+            <span class="srs-title">4. Khắc cốt</span>
+            <span class="srs-next" data-q="4">7 ngày</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- MAIN VIEW 2: BLIND RECALL DOJO (Focused SRS Review Queue) -->
+  <section class="dojo-view hidden" id="viewDojo">
+    <div class="dojo-container">
+      <div class="dojo-header">
+        <div>
+          <h1>Đấu trường Truy xuất Mù (Blind Recall Dojo)</h1>
+          <p>Không gợi ý mặt chữ, không trắc nghiệm. Ép vỏ não trước trán tự dựng lại từng nét chữ từ âm Hán-Việt và nghĩa.</p>
+        </div>
+        <div class="dojo-queue-controls">
+          <select id="dojoScopeSelect">
+            <option value="due">Hàng đợi cần ôn hôm nay (SRS Due)</option>
+            <option value="level">Chữ chưa thuộc ở cấp đang chọn</option>
+          </select>
+          <button class="btn-primary" id="dojoStartBtn">Bắt đầu lượt ôn</button>
+        </div>
+      </div>
+
+      <div class="dojo-stage" id="dojoStage">
+        <div class="dojo-empty" id="dojoEmptyState">
+          <p>Chọn phạm vi ôn tập rồi bấm <strong>Bắt đầu lượt ôn</strong>, hoặc hoàn thành luyện viết thêm chữ mới ở Xưởng chữ để đưa vào lịch ôn SRS.</p>
+        </div>
+
+        <div class="dojo-card hidden" id="dojoCard">
+          <div class="dojo-card-meta">
+            <span class="mono" id="dojoProgressText">Thẻ 1 / 10</span>
+            <span class="prompt-jlpt-tag" id="dojoLevelTag">JLPT N5</span>
+          </div>
+
+          <div class="dojo-prompt">
+            <div class="dojo-hv" id="dojoHv">HƯU</div>
+            <div class="dojo-vi" id="dojoVi">nghỉ ngơi · thôi, dừng</div>
+            <div class="dojo-readings mono" id="dojoReadings">On: キュウ | Kun: やす.む</div>
+          </div>
+
+          <div class="dojo-board-wrap">
+            <div class="masume-frame dojo-frame" id="dojoMasumeFrame">
+              <svg class="masume-grid" viewBox="0 0 109 109" aria-hidden="true">
+                <line x1="54.5" y1="0" x2="54.5" y2="109" class="grid-axis" />
+                <line x1="0" y1="54.5" x2="109" y2="54.5" class="grid-axis" />
+                <line x1="0" y1="0" x2="109" y2="109" class="grid-diag" />
+                <line x1="109" y1="0" x2="0" y2="109" class="grid-diag" />
+              </svg>
+              <svg id="dojoSvg" class="kanji-svg" viewBox="0 0 109 109"></svg>
+              <canvas id="dojoCanvas" class="draw-canvas"></canvas>
+              <div class="hanko-seal" id="dojoHankoSeal"><span>済</span></div>
+              <div class="board-corner-info" id="dojoCornerInfo">Nét 0 / 0</div>
+            </div>
+
+            <div class="dojo-side-actions">
+              <div class="board-feedback" id="dojoFeedback">Tự hình dung hình dáng chữ trong đầu và viết nét đầu tiên.</div>
+              <div class="dojo-btn-row">
+                <button class="btn-ghost-sm" id="dojoUndoBtn">Hoàn tác nét</button>
+                <button class="btn-ghost-sm" id="dojoClearBtn">Xóa viết lại</button>
+                <button class="btn-friction" id="dojoHintBtn" disabled>Gợi ý 1 nét (3s)</button>
+                <button class="btn-ghost-sm" id="dojoRevealBtn">Mở đáp án</button>
+              </div>
+              <div class="dojo-mnemonic-preview" id="dojoMnemonicPreview"></div>
+              <div class="dojo-srs-row">
+                <button class="srs-btn srs-again" data-dojo-q="1">1. Quên</button>
+                <button class="srs-btn srs-hard" data-dojo-q="2">2. Khó</button>
+                <button class="srs-btn srs-good" data-dojo-q="3">3. Nhớ tốt</button>
+                <button class="srs-btn srs-easy" data-dojo-q="4">4. Khắc cốt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN VIEW 3: NEURO-STATS & GITHUB SYNC -->
+  <section class="neuro-view hidden" id="viewNeuro">
+    <div class="neuro-container">
+      <header class="neuro-header">
+        <h1>Hồ sơ Phục hồi Tập trung &amp; Đồng bộ GitHub</h1>
+        <p>Đo lường độ bền chú ý thực chất thay vì điểm ảo, và lưu trữ toàn bộ lịch sử học trực tiếp vào file JSON để đồng bộ giữa các máy tính qua GitHub.</p>
+      </header>
+
+      <div class="metrics-grid">
+        <div class="metric-box">
+          <div class="metric-label">Tổng thời gian tập trung sâu</div>
+          <div class="metric-value mono" id="statTotalFocus">0 phút</div>
+          <div class="metric-sub" id="statSessionsCount">0 phiên hoàn tất</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-label">Độ bền tập trung kỷ lục</div>
+          <div class="metric-value mono" id="statLongestSession">0 phút</div>
+          <div class="metric-sub" id="statTabSwitches">0 lần chuyển tab gây nhiễu</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-label">Tỷ lệ viết mù tự nhớ</div>
+          <div class="metric-value mono" id="statBlindAccuracy">—</div>
+          <div class="metric-sub" id="statTotalStrokes">0 nét chữ đã rèn</div>
+        </div>
+        <div class="metric-box">
+          <div class="metric-label">Số chữ đã thuộc / Đang học</div>
+          <div class="metric-value mono" id="statMasteredTotal">0 / 2211</div>
+          <div class="metric-sub" id="statDueToday">0 chữ cần ôn hôm nay</div>
+        </div>
+      </div>
+
+      <div class="neuro-two-col">
+        <div class="neuro-card">
+          <h2>Tiến độ Kanji toàn trình N5 → N1</h2>
+          <div class="jlpt-bars" id="jlptProgressBars"></div>
+        </div>
+
+        <div class="neuro-card">
+          <h2>Lưu trữ cục bộ &amp; Đồng bộ GitHub</h2>
+          <div class="git-status-box" id="gitStatusBox">Đang kiểm tra trạng thái Git...</div>
+
+          <div class="sync-actions">
+            <button class="btn-primary" id="gitCommitBtn">Commit tiến độ vào Git</button>
+            <button class="btn-ghost" id="gitPushBtn">Commit &amp; Push lên GitHub</button>
+            <button class="btn-ghost" id="refreshGitBtn">Làm mới trạng thái</button>
+          </div>
+
+          <div class="backup-divider"></div>
+          <div class="sub-label">Sao lưu thủ công (dùng khi mở tĩnh không qua Node server)</div>
+          <div class="sync-actions">
+            <button class="btn-ghost-sm" id="exportJsonBtn">Tải xuống user-progress.json</button>
+            <label class="btn-ghost-sm file-upload-label">
+              Nhập file user-progress.json
+              <input type="file" id="importJsonInput" accept="application/json,.json" hidden />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETOX BREATHING GATE MODAL (Optional Monk Mode Transition) -->
+  <div class="detox-overlay hidden" id="detoxOverlay" role="dialog" aria-modal="true" aria-labelledby="detoxTitle">
+    <div class="detox-card">
+      <div class="detox-circle" id="detoxCircle">
+        <span id="detoxPhaseText">Hít vào</span>
+      </div>
+      <h2 id="detoxTitle">Ngắt dòng kích thích nhanh</h2>
+      <p id="detoxDesc">Hít thở chậm 4–4–4 để hạ nhịp dopamine trước khi bước vào phiên luyện Kanji sâu.</p>
+      <div class="detox-timer mono" id="detoxCountdown">12s</div>
+      <div class="detox-actions">
+        <button class="btn-primary" id="detoxCompleteBtn">Bắt đầu phiên tập trung</button>
+        <button class="btn-ghost-sm" id="detoxSkipBtn">Bỏ qua nghi thức hôm nay</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

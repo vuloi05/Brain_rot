@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-16T22:05:00.000Z",
+  "updatedAt": "2026-11-16T15:52:18.104Z",
+  "settings": {
+    "theme": "hanshi",
+    "defaultLevel": 5,
+    "focusDurationMin": 15,
+    "requireDetoxGate": true,
+    "soundEnabled": false
+  },
+  "stats": {
+    "totalFocusSeconds": 0,
+    "completedSessions": 0,
+    "longestCleanSessionSec": 0,
+    "tabSwitchCount": 0,
+    "totalStrokesDrawn": 0,
+    "blindRecallSuccessCount": 0,
+    "blindRecallTotalCount": 0
+  },
+  "kanji": {},
+  "sessionLogs": []
+}
