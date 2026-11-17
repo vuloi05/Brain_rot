@@ -1,0 +1,1782 @@
+{
+  "id": "chukyu-e-ikou-2",
+  "title": "中級へ行こう 日本語の文型と表現55 (第2版)",
+  "subtitle": "Giáo trình Sơ–Trung cấp N4 → N3 · 10 Bài · 55 Mẫu câu · 169 Kanji",
+  "pdfUrl": "sach_pdf/Chukyu_e_ikou/（第二版）中級へ行こう.pdf",
+  "guidePdfUrl": "sach_pdf/Chukyu_e_ikou/audio/教師用ガイド.pdf",
+  "allKanji": [
+    "代",
+    "表",
+    "的",
+    "最",
+    "近",
+    "牛",
+    "発",
+    "兆",
+    "使",
+    "理",
+    "由",
+    "安",
+    "手",
+    "軽",
+    "利",
+    "店",
+    "明",
+    "物",
+    "活",
+    "始",
+    "地",
+    "起",
+    "机",
+    "次",
+    "消",
+    "閉",
+    "窓",
+    "開",
+    "場",
+    "合",
+    "番",
+    "切",
+    "多",
+    "料",
+    "用",
+    "意",
+    "家",
+    "考",
+    "族",
+    "所",
+    "調",
+    "査",
+    "持",
+    "自",
+    "専",
+    "町",
+    "着",
+    "服",
+    "価",
+    "親",
+    "数",
+    "減",
+    "様",
+    "増",
+    "訪",
+    "旅",
+    "者",
+    "実",
+    "際",
+    "海",
+    "礼",
+    "心",
+    "選",
+    "事",
+    "都",
+    "市",
+    "景",
+    "観",
+    "美",
+    "無",
+    "文",
+    "化",
+    "眠",
+    "晩",
+    "寝",
+    "夜",
+    "回",
+    "覚",
+    "医",
+    "相",
+    "談",
+    "遅",
+    "動",
+    "通",
+    "勤",
+    "原",
+    "因",
+    "体",
+    "不",
+    "疲",
+    "昼",
+    "質",
+    "世",
+    "界",
+    "広",
+    "病",
+    "院",
+    "池",
+    "当",
+    "飲",
+    "注",
+    "目",
+    "特",
+    "許",
+    "取",
+    "別",
+    "方",
+    "法",
+    "作",
+    "忘",
+    "球",
+    "温",
+    "暖",
+    "問",
+    "題",
+    "住",
+    "守",
+    "以",
+    "古",
+    "変",
+    "運",
+    "公",
+    "園",
+    "売",
+    "買",
+    "決",
+    "村",
+    "呼",
+    "言",
+    "伝",
+    "図",
+    "賛",
+    "成",
+    "確",
+    "誤",
+    "解",
+    "終",
+    "打",
+    "止",
+    "仕",
+    "性",
+    "職",
+    "働",
+    "育",
+    "反",
+    "対",
+    "建",
+    "転",
+    "区",
+    "少",
+    "庭",
+    "向",
+    "度",
+    "結",
+    "果",
+    "識",
+    "乱",
+    "感",
+    "激",
+    "例",
+    "皆",
+    "召",
+    "会",
+    "社",
+    "受",
+    "付",
+    "正",
+    "機",
+    "認"
+  ],
+  "lessons": [
+    {
+      "id": "chukyu-01",
+      "lessonNum": 1,
+      "titleJp": "ファストフード",
+      "titleVi": "Đồ ăn nhanh",
+      "level": 4,
+      "kanjiChars": [
+        "代",
+        "表",
+        "的",
+        "最",
+        "近",
+        "牛",
+        "発",
+        "兆",
+        "使",
+        "理",
+        "由",
+        "安",
+        "手",
+        "軽",
+        "利",
+        "店",
+        "明",
+        "物",
+        "活",
+        "始"
+      ],
+      "pages": {
+        "lesson": 13,
+        "honbun": 14,
+        "grammar": 16,
+        "listening": 23,
+        "kanji": 154,
+        "vocabVi": 213,
+        "answer": 196
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/01.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/02.mp3",
+      "paragraphs": [
+        {
+          "jp": "ファストフードのメニューで代表的な物といえば、ハンバーガーやフライドポテトなどです。最近は牛丼、スープなど、種類が増えています。ある発表によると、日本人は1年間に3兆円もファストフードにお金を使っています。理由は値段が安くて手軽に利用できること、時間がかからないこと、それにファストフードの店は明るくて入りやすいことなどです。",
+          "vi": "Nói đến các món tiêu biểu trong thực đơn đồ ăn nhanh thì phải kể đến hamburger hay khoai tây chiên. Gần đây, các chủng loại như cơm bò gyudon, súp... cũng đang tăng lên. Theo một công bố, người Nhật chi tới 3 nghìn tỷ yên mỗi năm cho đồ ăn nhanh. Lý do là giá rẻ và dễ dàng sử dụng tiện lợi, không mất thời gian, hơn nữa cửa hàng đồ ăn nhanh sáng sủa và dễ vào...",
+          "vocab": [
+            [
+              "代表的な",
+              "だいひょうてきな",
+              "tiêu biểu, đại diện"
+            ],
+            [
+              "種類",
+              "しゅるい",
+              "chủng loại"
+            ],
+            [
+              "3兆円",
+              "さんちょうえん",
+              "3 nghìn tỷ yên"
+            ],
+            [
+              "手軽に",
+              "てがるに",
+              "dễ dàng và thuận tiện"
+            ]
+          ]
+        },
+        {
+          "jp": "しかし、このような食べ物はカロリーが高いので、生活習慣病が増え始めた原因の一つだと言われています。それで、最近では健康を考えて、カロリーが低いメニューを増やしたり、カロリーを表示したりする店が増えています。",
+          "vi": "Tuy nhiên, vì những đồ ăn như thế này chứa lượng ca-lo cao nên được cho là một trong những nguyên nhân khiến bệnh do thói quen sinh hoạt bắt đầu gia tăng. Vì vậy, gần đây các cửa hàng suy nghĩ đến sức khỏe, tăng thêm thực đơn ít ca-lo hoặc ghi rõ lượng ca-lo đang ngày càng nhiều hơn.",
+          "vocab": [
+            [
+              "生活習慣病",
+              "せいかつしゅうかんびょう",
+              "bệnh do thói quen sinh hoạt"
+            ],
+            [
+              "増え始めた",
+              "ふえはじめた",
+              "bắt đầu tăng lên"
+            ],
+            [
+              "健康",
+              "けんこう",
+              "sức khỏe"
+            ],
+            [
+              "表示",
+              "ひょうじ",
+              "hiển thị, ghi rõ"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "日本人はファストフードの店で1年間にいくらぐらいお金を使っていますか。",
+          "options": [
+            "3億円ぐらい使っています。",
+            "3兆円ぐらい使っています。",
+            "30万円ぐらい使っています。",
+            "3千万円ぐらい使っています。"
+          ],
+          "answer": 1,
+          "explanation": "Bài đọc nêu rõ: 「日本人は1年間に3兆円もファストフードにお金を使っています。」"
+        },
+        {
+          "q": "日本人がファストフードに多くのお金を使っている理由ではないものはどれですか。",
+          "options": [
+            "値段が安くて手軽に利用できること",
+            "時間がかからないこと",
+            "店が明るくて入りやすいこと",
+            "カロリーがとても低いこと"
+          ],
+          "answer": 3,
+          "explanation": "Đoạn 2 nói ngược lại: đồ ăn nhanh vốn có lượng ca-lo cao (カロリーが高い)."
+        },
+        {
+          "q": "ファストフードの店は最近、健康を考えて何をしていますか。",
+          "options": [
+            "値段を高くしています。",
+            "カロリーが低いメニューを増やしたり、カロリーを表示したりしています。",
+            "牛丼やスープを作るのをやめました。",
+            "深夜の営業をやめました。"
+          ],
+          "answer": 1,
+          "explanation": "Câu cuối bài: 「カロリーが低いメニューを増やしたり、カロリーを表示したりする店が増えています。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "N1 といえば、N2 だ",
+          "descVi": "Nếu nói đến N1 thì phải nói đến N2 (ví dụ tiêu biểu của N1)",
+          "exampleJp": "日本の伝統的なスポーツといえば、相撲だ。",
+          "exampleVi": "Nói đến môn thể thao truyền thống của Nhật Bản thì là Sumo."
+        },
+        {
+          "pattern": "〜も (nhấn mạnh số lượng)",
+          "descVi": "Những ~, tới mức ~ (dùng kèm lượng từ đánh giá số lượng nhiều/lớn)",
+          "exampleJp": "日本人は1年間に3兆円もファストフードにお金を使っています。",
+          "exampleVi": "Người Nhật tiêu tới 3 nghìn tỷ yên mỗi năm cho đồ ăn nhanh."
+        },
+        {
+          "pattern": "N は 〜こと、〜ことだ",
+          "descVi": "N là vì ~, ~ (liệt kê loạt lý do, nguyên nhân)",
+          "exampleJp": "理由は値段が安くて手軽に利用できること、時間がかからないことだ。",
+          "exampleVi": "Lý do là giá rẻ dễ dùng và không tốn thời gian."
+        },
+        {
+          "pattern": "Vマス + 始める / 終わる",
+          "descVi": "Bắt đầu làm V / Làm xong V",
+          "exampleJp": "生活習慣病が増え始めた。",
+          "exampleVi": "Bệnh do thói quen sinh hoạt đã bắt đầu gia tăng."
+        },
+        {
+          "pattern": "N によると、〜そうだ / 〜ということだ",
+          "descVi": "Theo như N (báo cáo, công bố, thông tin) thì ~",
+          "exampleJp": "ある発表によると、日本人は1年間に3兆円もファストフードにお金を使っています。",
+          "exampleVi": "Theo một công bố, người Nhật chi tới 3 nghìn tỷ yên mỗi năm cho đồ ăn nhanh."
+        }
+      ],
+      "listeningCloze": "ファストフードのメニューで代表的な物｛といえば｝、ハンバーガーやフライドポテトなどです。最近は牛丼、スープなど、｛種類|しゅるい｝が増えています。ある発表によると、日本人は1年間に｛3兆円|３兆円|さんちょうえん｝もファストフードにお金を使っています。理由は値段が安くて手軽に｛利用できる|りようできる｝こと、時間がかからないこと、それにファストフードの店は明るくて｛入りやすい|はいりやすい｝ことなどです。\nしかし、このような食べ物はカロリーが高いので、生活習慣病が｛増え始めた|ふえはじめた｝原因の一つだと言われています。それで、最近では｛健康|けんこう｝を考えて、カロリーが低いメニューを増やしたり、カロリーを｛表示|ひょうじ｝したりする店が増えています。"
+    },
+    {
+      "id": "chukyu-02",
+      "lessonNum": 2,
+      "titleJp": "地震",
+      "titleVi": "Động đất",
+      "level": 4,
+      "kanjiChars": [
+        "地",
+        "起",
+        "机",
+        "次",
+        "消",
+        "閉",
+        "窓",
+        "開",
+        "場",
+        "合",
+        "番",
+        "切",
+        "多",
+        "料",
+        "用",
+        "意",
+        "家",
+        "考",
+        "族",
+        "所"
+      ],
+      "pages": {
+        "lesson": 25,
+        "honbun": 26,
+        "grammar": 28,
+        "listening": 35,
+        "kanji": 157,
+        "vocabVi": 215,
+        "answer": 197
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/03.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/04.mp3",
+      "paragraphs": [
+        {
+          "jp": "大きい地震が起きたら、どうすればいいのでしょうか。まず、テーブルや机の下に入ってください。次に、ストーブやガスコンロの火がついていたら、消しましょう。揺れがおさまったら、閉まっているドアや窓を開けてください。地震の後で、開けようとしても、開かない場合がありますから。地震が起きた時、もしビルの中にいたら、エレベーターは使わないでください。一番大切なのは慌てないことです。",
+          "vi": "Khi động đất lớn xảy ra, chúng ta nên làm gì? Trước tiên, hãy chui vào dưới bàn ăn hoặc bàn học. Tiếp theo, nếu lò sưởi hay bếp ga đang bật lửa thì hãy tắt đi. Khi sự rung lắc lắng xuống, hãy mở cửa ra vào và cửa sổ đang đóng. Bởi vì có trường hợp sau động đất dù định mở cũng không mở được. Lúc động đất xảy ra, nếu đang ở trong tòa nhà cao tầng, đừng sử dụng thang máy. Điều quan trọng nhất là không vội vã hoảng loạn.",
+          "vocab": [
+            [
+              "揺れ",
+              "ゆれ",
+              "(sự) rung lắc"
+            ],
+            [
+              "おさまる",
+              "おさまる",
+              "lắng xuống, ngừng"
+            ],
+            [
+              "慌てる",
+              "あわてる",
+              "vội vã hấp tấp"
+            ],
+            [
+              "場合",
+              "ばあい",
+              "trường hợp"
+            ]
+          ]
+        },
+        {
+          "jp": "日本は地震が多い国です。地震が起きても、困らないように、水や食料を用意しておきましょう。そして、背が高い家具が倒れないようにしておいてください。その他、万一の場合を考えて、家族との連絡方法や避難場所を決めておきましょう。",
+          "vi": "Nhật Bản là đất nước có nhiều động đất. Để không gặp rắc rối dù động đất xảy ra, hãy chuẩn bị sẵn nước và lương thực. Và hãy cố định sẵn để những đồ nội thất cao không bị đổ. Ngoài ra, hãy nghĩ tới trường hợp bất trắc để quyết định trước cách thức liên lạc với gia đình và địa điểm sơ tán.",
+          "vocab": [
+            [
+              "食料",
+              "しょくりょう",
+              "lương thực"
+            ],
+            [
+              "万一",
+              "まんいち",
+              "nhỡ có chuyện bất trắc"
+            ],
+            [
+              "連絡方法",
+              "れんらくほうほう",
+              "cách thức liên lạc"
+            ],
+            [
+              "避難場所",
+              "ひなんばしょ",
+              "địa điểm sơ tán"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "地震が起きたら、まず何をしなければなりませんか。",
+          "options": [
+            "エレベーターに乗ります。",
+            "テーブルや机の下に入ります。",
+            "外へ走って逃げます。",
+            "家族に電話をかけます。"
+          ],
+          "answer": 1,
+          "explanation": "Câu 2 đoạn 1: 「まず、テーブルや机の下に入ってください。」"
+        },
+        {
+          "q": "揺れがおさまったら、どうしてドアや窓を開けますか。",
+          "options": [
+            "空気を入れかえるためです。",
+            "地震の後で開けようとしても、開かない場合があるからです。",
+            "外の人を呼ぶためです。",
+            "部屋が暑くなるからです。"
+          ],
+          "answer": 1,
+          "explanation": "「地震の後で、開けようとしても、開かない場合がありますから。」"
+        },
+        {
+          "q": "地震が起きた時、一番大切なことは何ですか。",
+          "options": [
+            "食料を買うこと",
+            "荷物を全部持つこと",
+            "慌てないこと",
+            "エレベーターを使うこと"
+          ],
+          "answer": 2,
+          "explanation": "Câu cuối đoạn 1: 「一番大切なのは慌てないことです。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "〜のでしょうか",
+          "descVi": "Liệu ~ chăng? / Phải làm sao đây ạ? (hỏi nhẹ nhàng, lịch sự điều thắc mắc)",
+          "exampleJp": "大きい地震が起きたら、どうすればいいのでしょうか。",
+          "exampleVi": "Nếu xảy ra động đất lớn thì nên làm thế nào ạ?"
+        },
+        {
+          "pattern": "自動詞・他動詞 の整理",
+          "descVi": "Phân biệt Tự động từ (〜が) và Tha động từ (〜を) như 閉まる/閉める, つく/つける",
+          "exampleJp": "窓が閉まっています。／窓を閉めます。",
+          "exampleVi": "Cửa sổ đang đóng. / Tôi đóng cửa sổ."
+        },
+        {
+          "pattern": "Vようとしても、〜ない",
+          "descVi": "Dù cố định làm V nhưng vẫn không thể thực hiện được",
+          "exampleJp": "ドアを開けようとしても、開かない場合があります。",
+          "exampleVi": "Có trường hợp dù cố mở cửa cũng không mở được."
+        },
+        {
+          "pattern": "〜のは〜だ",
+          "descVi": "Cái quan trọng/khó khăn... là ~ (nhấn mạnh nội dung ở vế sau)",
+          "exampleJp": "一番大切なのは慌てないことです。",
+          "exampleVi": "Điều quan trọng nhất là không hoảng loạn."
+        },
+        {
+          "pattern": "〜ている・〜てある・〜ておく",
+          "descVi": "Hệ thống hóa trạng thái tự nhiên / kết quả hành động / chuẩn bị trước",
+          "exampleJp": "水や食料を用意しておきましょう。",
+          "exampleVi": "Hãy chuẩn bị sẵn nước và lương thực."
+        },
+        {
+          "pattern": "Vないように（する / しておく）",
+          "descVi": "Để không bị ~ / Chú ý giữ để không ~",
+          "exampleJp": "背が高い家具が倒れないようにしておいてください。",
+          "exampleVi": "Hãy cố định sẵn để đồ nội thất cao không bị đổ."
+        }
+      ],
+      "listeningCloze": "大きい地震が起きたら、どうすればいいのでしょうか。まず、｛テーブル|てーぶる｝や机の下に入ってください。次に、｛ストーブ|すとーぶ｝やガスコンロの火がついていたら、消しましょう。揺れがおさまったら、閉まっている｛ドア|どあ｝や窓を開けてください。地震の後で、開けようとしても、｛開かない|あかない｝場合がありますから。地震が起きた時、もし｛ビル|びる｝の中にいたら、｛エレベーター|えれべーたー｝は使わないでください。一番大切なのは慌てないことです。\n日本は地震が多い国です。地震が起きても、困らないように、水や食料を｛用意|ようい｝しておきましょう。そして、背が高い家具が倒れないようにしておいてください。その他、｛万一|まんいち｝の場合を考えて、家族との連絡方法や｛避難場所|ひなんばしょ｝を決めておきましょう。"
+    },
+    {
+      "id": "chukyu-03",
+      "lessonNum": 3,
+      "titleJp": "最近の子ども",
+      "titleVi": "Trẻ em thời nay",
+      "level": 3,
+      "kanjiChars": [
+        "調",
+        "査",
+        "持",
+        "自",
+        "専",
+        "町",
+        "着",
+        "服",
+        "価",
+        "親",
+        "数",
+        "減",
+        "様",
+        "増"
+      ],
+      "pages": {
+        "lesson": 36,
+        "honbun": 36,
+        "grammar": 38,
+        "listening": 47,
+        "kanji": 160,
+        "vocabVi": 217,
+        "answer": 198
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/05.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/06.mp3",
+      "paragraphs": [
+        {
+          "jp": "最近、携帯電話やスマートフォン（スマホ）で話している子どもをよく見ませんか。ある調査によると、小学生の36.6%、中学生の51.9%が携帯電話・スマホを持っているそうです。また、自分専用のパソコンやタブレットを持っている子どもも多いです。町で大人が着るようなブランドの服を着ている子どもを見かけたこともあるでしょう。これらはどれもお金がかかる物ばかりです。",
+          "vi": "Gần đây bạn có hay thấy trẻ em nói chuyện qua điện thoại di động hay smartphone không? Theo một khảo sát, 36,6% học sinh tiểu học và 51,9% học sinh THCS có điện thoại di động hoặc smartphone. Ngoài ra cũng có nhiều trẻ có máy tính cá nhân hay máy tính bảng dùng riêng. Có lẽ ngoài phố bạn cũng từng bắt gặp trẻ em mặc quần áo hàng hiệu giống như người lớn mặc. Tất cả những thứ này toàn là những món đồ tốn tiền.",
+          "vocab": [
+            [
+              "調査",
+              "ちょうさ",
+              "điều tra khảo sát"
+            ],
+            [
+              "専用",
+              "せんよう",
+              "dành riêng"
+            ],
+            [
+              "見かける",
+              "みかける",
+              "bắt gặp, nhìn thấy"
+            ],
+            [
+              "これら",
+              "これら",
+              "những thứ này"
+            ]
+          ]
+        },
+        {
+          "jp": "どうして子どもたちがこんなに高価な物を持っているのでしょうか。それは、子どもが欲しがる物を親がつい買ってしまうからかもしれません。子どもの数が年々減っていて、王様のような子どもが増えています。",
+          "vi": "Tại sao lũ trẻ lại có những món đồ đắt giá đến vậy? Có lẽ là vì bố mẹ vô tình lỡ mua cho những thứ mà trẻ muốn có. Số lượng trẻ em đang giảm từng năm, và những đứa trẻ được chiều như ông hoàng bà chúa đang tăng lên.",
+          "vocab": [
+            [
+              "高価な",
+              "こうかな",
+              "đắt giá"
+            ],
+            [
+              "親",
+              "おや",
+              "bố mẹ"
+            ],
+            [
+              "年々",
+              "ねんねん",
+              "hằng năm, từng năm"
+            ],
+            [
+              "王様",
+              "おうさま",
+              "vua chúa"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "携帯電話を持っている小学生の割合は何%ですか。",
+          "options": [
+            "51.9%です。",
+            "36.6%です。",
+            "15.3%です。",
+            "63.4%です。"
+          ],
+          "answer": 1,
+          "explanation": "Bài nêu: 「小学生の36.6%、中学生の51.9%が携帯電話・スマホを持っているそうです。」"
+        },
+        {
+          "q": "「これら」はどんな物ですか。",
+          "options": [
+            "安いおもちゃや本など",
+            "学校の文房具",
+            "携帯電話、自分専用のパソコン、ブランドの服などお金がかかる物",
+            "自転車やスポーツ用品"
+          ],
+          "answer": 2,
+          "explanation": "Đoạn 1 liệt kê: 携帯電話・スマホ, 自分専用のパソコンやタブレット, ブランドの服."
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "V[普通形] + ような N",
+          "descVi": "N như là V (biểu thị ví dụ minh họa)",
+          "exampleJp": "大人が着るようなブランドの服を着ている子どもがいる。",
+          "exampleVi": "Có những đứa trẻ mặc quần áo hàng hiệu giống như người lớn mặc."
+        },
+        {
+          "pattern": "N ばかり / Vテ + ばかりいる",
+          "descVi": "Chỉ toàn là N / Suốt ngày chỉ toàn làm V (thường mang sắc thái chê trách)",
+          "exampleJp": "テレビを見てばかりいる。",
+          "exampleVi": "Suốt ngày chỉ toàn xem tivi."
+        },
+        {
+          "pattern": "N を欲しがる / Vマス + たがる",
+          "descVi": "Người thứ ba muốn có N / muốn làm V",
+          "exampleJp": "子どもは新しいおもちゃを欲しがる。",
+          "exampleVi": "Trẻ con thích/muốn có đồ chơi mới."
+        },
+        {
+          "pattern": "つい + Vテ + しまう",
+          "descVi": "Vô tình lỡ làm V mất (việc mình nghĩ không nên làm, mang ý hối tiếc)",
+          "exampleJp": "子どもが欲しがる物を親がつい買ってしまう。",
+          "exampleVi": "Bố mẹ vô tình lỡ mua mất thứ mà con cái đòi."
+        },
+        {
+          "pattern": "〜（の）は 〜からだ",
+          "descVi": "Là vì ~ (giải thích lý do cho mệnh đề trước)",
+          "exampleJp": "高価な物を持っているのは、親がつい買ってしまうからだ。",
+          "exampleVi": "Việc có đồ đắt tiền là vì bố mẹ lỡ mua cho."
+        },
+        {
+          "pattern": "N のようだ / N のように / N1 のような N2",
+          "descVi": "Giống như N (so sánh, ví von với sự vật khác)",
+          "exampleJp": "王様のような子どもが増えている。",
+          "exampleVi": "Trẻ em được chiều như vua chúa ngày càng tăng."
+        }
+      ],
+      "listeningCloze": "最近、携帯電話や｛スマートフォン｝（スマホ）で話している子どもをよく見ませんか。ある調査によると、小学生の｛36.6|３６．６|36・6｝%、中学生の51.9%が携帯電話・スマホを持っているそうです。また、自分専用のパソコンや｛タブレット｝を持っている子どもも多いです。町で大人が着るような｛ブランド｝の服を着ている子どもを見かけたこともあるでしょう。これらはどれもお金がかかる物ばかりです。\nどうして子どもたちが｛こんなに｝高価な物を持っているのでしょうか。それは、子どもが｛欲しがる|ほしがる｝物を親がつい買って｛しまう｝からかもしれません。子どもの数が｛年々|ねんねん｝減っていて、王様のような子どもが増えています。"
+    },
+    {
+      "id": "chukyu-04",
+      "lessonNum": 4,
+      "titleJp": "日本のイメージ",
+      "titleVi": "Hình ảnh Nhật Bản",
+      "level": 3,
+      "kanjiChars": [
+        "訪",
+        "旅",
+        "者",
+        "実",
+        "際",
+        "海",
+        "礼",
+        "心",
+        "選",
+        "事",
+        "都",
+        "市",
+        "景",
+        "観",
+        "美",
+        "無",
+        "文",
+        "化"
+      ],
+      "pages": {
+        "lesson": 49,
+        "honbun": 50,
+        "grammar": 52,
+        "listening": 60,
+        "kanji": 163,
+        "vocabVi": 219,
+        "answer": 199
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/07.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/08.mp3",
+      "paragraphs": [
+        {
+          "jp": "日本を訪れる外国人旅行者の数は年々多くなってきました。実際に、来日した海外の人は日本にどんなイメージを持ったのでしょうか。",
+          "vi": "Số lượng du khách nước ngoài đến thăm Nhật Bản đã ngày càng đông hơn qua từng năm. Trên thực tế, những người nước ngoài đã đến Nhật mang ấn tượng như thế nào về Nhật Bản?",
+          "vocab": [
+            [
+              "訪れる",
+              "おとずれる",
+              "đến thăm"
+            ],
+            [
+              "旅行者",
+              "りょこうしゃ",
+              "khách du lịch"
+            ],
+            [
+              "実際に",
+              "じっさいに",
+              "trên thực tế"
+            ],
+            [
+              "来日する",
+              "らいにちする",
+              "đến Nhật Bản"
+            ]
+          ]
+        },
+        {
+          "jp": "表で見ると、「日本の人々が親切／礼儀正しい」のポイントが高いことがわかります。これに加えて、第4位に「サービスがいい」のような「おもてなしの心」が選ばれています。「食事がおいしい」は「都市の景観が美しい」ほどポイントは高くないです。しかし、「日本の食事（和食）」は2013年にユネスコ無形文化遺産に登録されたので、今後ポイントは高くなっていくでしょう。",
+          "vi": "Nhìn vào bảng biểu ta thấy số điểm cho mục \"Người Nhật thân thiện / lễ phép lịch sự\" rất cao. Thêm vào đó, ở vị trí thứ 4, những yếu tố như \"Dịch vụ tốt\" — tinh thần hiếu khách Omotenashi — cũng được bình chọn. Mục \"Đồ ăn ngon\" có số điểm không cao bằng \"Cảnh quan đô thị đẹp\". Tuy nhiên, do \"Ẩm thực Nhật Bản (Washoku)\" được UNESCO công nhận là Di sản văn hóa phi vật thể vào năm 2013 nên thời gian tới số điểm này có lẽ sẽ tăng lên.",
+          "vocab": [
+            [
+              "礼儀正しい",
+              "れいぎただしい",
+              "lễ phép, lịch sự"
+            ],
+            [
+              "おもてなしの心",
+              "おもてなしのこころ",
+              "lòng hiếu khách"
+            ],
+            [
+              "景観",
+              "けいかん",
+              "cảnh quan"
+            ],
+            [
+              "登録",
+              "とうろく",
+              "đăng ký, công nhận"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "日本のいいイメージで一番ポイントが高いのは何ですか。",
+          "options": [
+            "「都市の景観が美しい」",
+            "「食事がおいしい」",
+            "「日本の人々が親切／礼儀正しい」",
+            "「サービスがいい」"
+          ],
+          "answer": 2,
+          "explanation": "Trong bảng & bài đọc: mục 「日本の人々が親切／礼儀正しい」 đứng vị trí 1 với 37.8%."
+        },
+        {
+          "q": "「食事がおいしい」と「サービスがいい」とどちらがポイントが高いですか。",
+          "options": [
+            "「サービスがいい」のほうが高い",
+            "「食事がおいしい」のほうが高い",
+            "同じぐらいです",
+            "どちらも最下位です"
+          ],
+          "answer": 1,
+          "explanation": "Mục 「食事がおいしい」 đứng hạng 3 (18.3%), cao hơn hạng 4 「サービスがいい」 (17.7%)."
+        },
+        {
+          "q": "いつ「日本の食事（和食）」はユネスコ無形文化遺産に登録されましたか。",
+          "options": [
+            "2006年",
+            "2007年",
+            "2013年",
+            "2020年"
+          ],
+          "answer": 2,
+          "explanation": "Câu cuối bài: 「『日本の食事（和食）』は2013年にユネスコ無形文化遺産に登録されたので...」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "Vテ + いく / Vテ + きた",
+          "descVi": "Biến đổi tiếp diễn từ trước tới nay (〜てきた) và từ nay về sau (〜ていく)",
+          "exampleJp": "外国人旅行者の数は年々多くなってきました。",
+          "exampleVi": "Số lượng du khách nước ngoài ngày càng tăng lên từ trước đến nay."
+        },
+        {
+          "pattern": "[表／グラフ] で見ると、〜ことがわかる",
+          "descVi": "Nhìn vào bảng/đồ thị có thể thấy rằng ~",
+          "exampleJp": "表で見ると、ポイントが高いことがわかる。",
+          "exampleVi": "Nhìn vào bảng biểu có thể thấy số điểm cao."
+        },
+        {
+          "pattern": "N1 のような N2",
+          "descVi": "N2 ví dụ như N1 (lấy N1 làm ví dụ cho N2)",
+          "exampleJp": "「サービスがいい」のような「おもてなしの心」",
+          "exampleVi": "Tinh thần hiếu khách như là \"dịch vụ tốt\"."
+        },
+        {
+          "pattern": "X は Y ほど 〜ない",
+          "descVi": "X không ~ bằng Y (so sánh kém)",
+          "exampleJp": "「食事がおいしい」は「都市の景観が美しい」ほどポイントは高くないです。",
+          "exampleVi": "\"Đồ ăn ngon\" không có số điểm cao bằng \"Cảnh quan đô thị đẹp\"."
+        },
+        {
+          "pattern": "「比較」の整理",
+          "descVi": "Tổng hợp các câu so sánh 〜より〜, どちらが〜, 一番〜",
+          "exampleJp": "世界で一番高い山はチョモランマです。",
+          "exampleVi": "Ngọn núi cao nhất thế giới là Everest."
+        }
+      ],
+      "listeningCloze": "日本を訪れる外国人｛旅行者|りょこうしゃ｝の数は年々多くなってきました。｛実際に|じっさいに｝、来日した海外の人は日本にどんな｛イメージ|いめーじ｝を持ったのでしょうか。\n下の｛表|ひょう｝で見ると、「日本の人々が親切／礼儀正しい」の｛ポイント｝が高いことがわかります。これに加えて、第4位に「｛サービス｝がいい」のような「おもてなしの｛心|こころ｝」が選ばれています。「食事がおいしい」は「都市の景観が｛美しい|うつくしい｝」ほどポイントは高くないです。しかし、「日本の食事（和食）」は2013年に｛ユネスコ｝無形文化遺産に登録されたので、今後ポイントは｛高くなって|たかくなって｝いくでしょう。"
+    },
+    {
+      "id": "chukyu-05",
+      "lessonNum": 5,
+      "titleJp": "睡眠",
+      "titleVi": "Giấc ngủ",
+      "level": 3,
+      "kanjiChars": [
+        "眠",
+        "晩",
+        "寝",
+        "夜",
+        "回",
+        "覚",
+        "医",
+        "相",
+        "談",
+        "遅",
+        "動",
+        "通",
+        "勤",
+        "原",
+        "因",
+        "体",
+        "不",
+        "疲",
+        "昼",
+        "質"
+      ],
+      "pages": {
+        "lesson": 63,
+        "honbun": 64,
+        "grammar": 66,
+        "listening": 75,
+        "kanji": 166,
+        "vocabVi": 223,
+        "answer": 200
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/09.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/10.mp3",
+      "paragraphs": [
+        {
+          "jp": "あなたは毎晩よく寝られますか。夜なかなか寝られなかったり、夜中に何回も目が覚めたりして、医者に相談する人が多くなっています。また、夜遅くまで活動することや、通勤時間の長さなどが原因で睡眠時間が減少し、体の不調を訴える人も増えています。",
+          "vi": "Mỗi tối bạn có ngủ ngon được không? Những người tối mãi không ngủ được hoặc nửa đêm tỉnh giấc nhiều lần phải đi hỏi ý kiến bác sĩ đang ngày một nhiều hơn. Ngoài ra, do hoạt động đến khuya hay thời gian đi làm kéo dài mà thời gian ngủ giảm đi, số người kêu mệt mỏi trong cơ thể cũng đang tăng lên.",
+          "vocab": [
+            [
+              "夜中に",
+              "よなかに",
+              "vào nửa đêm"
+            ],
+            [
+              "目が覚める",
+              "めがさめる",
+              "tỉnh giấc"
+            ],
+            [
+              "減少する",
+              "げんしょうする",
+              "giảm đi"
+            ],
+            [
+              "不調を訴える",
+              "ふちょうをうったえる",
+              "than phiền cơ thể mệt mỏi"
+            ]
+          ]
+        },
+        {
+          "jp": "人は疲れれば、自然に眠くなるものです。よく寝られる一番いい方法は、昼間十分に体を動かすことです。ある医者の話によると、睡眠時間は5時間で十分だということです。ですから、睡眠に関して神経質になりすぎないほうがいいでしょう。",
+          "vi": "Con người hễ mệt thì tự nhiên sẽ buồn ngủ thôi. Cách tốt nhất để ngủ ngon là vận động cơ thể đầy đủ vào ban ngày. Theo lời một bác sĩ thì thời gian ngủ 5 tiếng là đã đủ rồi. Vì vậy, về vấn đề giấc ngủ có lẽ không nên quá lo lắng bận tâm quá mức.",
+          "vocab": [
+            [
+              "自然に",
+              "しぜんに",
+              "tự nhiên"
+            ],
+            [
+              "昼間",
+              "ひるま",
+              "ban ngày"
+            ],
+            [
+              "十分に",
+              "じゅうぶんに",
+              "đầy đủ"
+            ],
+            [
+              "神経質な",
+              "しんけいしつな",
+              "bận tâm, lo lắng quá mức"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "人々が医者に相談することは何ですか。",
+          "options": [
+            "昼間眠くなることです。",
+            "夜なかなか寝られなかったり、夜中に何回も目が覚めたりすることです。",
+            "通勤時間が長いことです。",
+            "食事が食べられないことです。"
+          ],
+          "answer": 1,
+          "explanation": "「夜なかなか寝られなかったり、夜中に何回も目が覚めたりして、医者に相談する人が多くなっています。」"
+        },
+        {
+          "q": "睡眠時間が減少している原因は何ですか。",
+          "options": [
+            "昼間運動しすぎること",
+            "夜遅くまで活動することや、通勤時間の長さなど",
+            "夜中に水を飲むこと",
+            "朝早く起きすぎること"
+          ],
+          "answer": 1,
+          "explanation": "「夜遅くまで活動することや、通勤時間の長さなどが原因で睡眠時間が減少し...」"
+        },
+        {
+          "q": "よく寝られる一番いい方法はどんなことですか。",
+          "options": [
+            "5時間以上絶対寝ないこと",
+            "毎日医者に薬をもらうこと",
+            "昼間十分に体を動かすこと",
+            "夜遅くまでテレビを見ること"
+          ],
+          "answer": 2,
+          "explanation": "「よく寝られる一番いい方法は、昼間十分に体を動かすことです。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "A / Na + さ",
+          "descVi": "Danh từ hóa tính từ (いい → よさ, 長い → 長さ, 便利だ → 便利さ)",
+          "exampleJp": "通勤時間の長さが原因で睡眠時間が減少している。",
+          "exampleVi": "Do thời gian đi làm dài nên thời gian ngủ giảm đi."
+        },
+        {
+          "pattern": "連用中止 (Vマス / Aいく、〜)",
+          "descVi": "Ngắt câu nối tiếp trang trọng trong văn viết (liệt kê hoặc nguyên nhân)",
+          "exampleJp": "睡眠時間が減少し、体の不調を訴える人も増えている。",
+          "exampleVi": "Thời gian ngủ giảm sút, và người kêu mệt mỏi cũng tăng lên."
+        },
+        {
+          "pattern": "〜ものだ (chân lý / lẽ thường)",
+          "descVi": "Vốn dĩ vẫn thế, theo lẽ tự nhiên thì là vậy",
+          "exampleJp": "人は疲れれば、自然に眠くなるものです。",
+          "exampleVi": "Con người hễ mệt thì tự nhiên sẽ buồn ngủ thôi."
+        },
+        {
+          "pattern": "「もの・こと」の整理",
+          "descVi": "Phân biệt danh từ 「もの」(vật/lẽ thường) và 「こと」(việc/kinh nghiệm)",
+          "exampleJp": "私の夢は世界中を旅行することです。",
+          "exampleVi": "Ước mơ của tôi là đi du lịch khắp thế giới."
+        },
+        {
+          "pattern": "〜ということだ",
+          "descVi": "Nghe nói rằng ~, theo thông tin thì ~ (truyền đạt lại trang trọng)",
+          "exampleJp": "ある医者の話によると、睡眠時間は5時間で十分だということです。",
+          "exampleVi": "Theo lời bác sĩ thì ngủ 5 tiếng là đủ rồi."
+        },
+        {
+          "pattern": "長い文の練習",
+          "descVi": "Luyện đọc hiểu câu dài nhiều mệnh đề ghép định ngữ",
+          "exampleJp": "夜遅くまで活動することや、通勤時間の長さが原因で...人が増えています。",
+          "exampleVi": "Do việc thức khuya hay thời gian đi làm dài mà số người... đang tăng."
+        }
+      ],
+      "listeningCloze": "あなたは毎晩よく寝られますか。夜｛なかなか｝寝られなかったり、｛夜中に|よなかに｝何回も目が覚めたりして、医者に相談する人が多くなっています。また、夜｛遅くまで|おそくまで｝活動することや、通勤時間の｛長さ|ながさ｝などが原因で睡眠時間が減少し、体の｛不調|ふちょう｝を訴える人も増えています。\n人は疲れれば、｛自然に|しぜんに｝眠くなるものです。よく寝られる一番いい方法は、昼間｛十分に|じゅうぶんに｝体を動かすことです。ある医者の話によると、睡眠時間は5時間で｛十分だ|じゅうぶんだ｝ということです。ですから、睡眠に関して｛神経質|しんけいしつ｝になりすぎないほうがいいでしょう。"
+    },
+    {
+      "id": "chukyu-06",
+      "lessonNum": 6,
+      "titleJp": "日本人の発明",
+      "titleVi": "Phát minh của người Nhật",
+      "level": 3,
+      "kanjiChars": [
+        "世",
+        "界",
+        "広",
+        "病",
+        "院",
+        "池",
+        "当",
+        "飲",
+        "注",
+        "目",
+        "特",
+        "許",
+        "取",
+        "別",
+        "方",
+        "法",
+        "作",
+        "忘"
+      ],
+      "pages": {
+        "lesson": 77,
+        "honbun": 78,
+        "grammar": 80,
+        "listening": 87,
+        "kanji": 169,
+        "vocabVi": 225,
+        "answer": 201
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/11.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/12.mp3",
+      "paragraphs": [
+        {
+          "jp": "世界で広く使われている物の中に、日本人が発明した物がたくさんある。病院の胃カメラ、毎日の生活でよく使われている乾電池、シャープペンシル、サインペン、せんすなどだ。インスタントコーヒーもその一つだ。",
+          "vi": "Trong những vật được sử dụng rộng rãi trên thế giới có rất nhiều món do người Nhật phát minh. Ví dụ như máy nội soi dạ dày ở bệnh viện, pin khô thường dùng hằng ngày, bút chì bấm, bút dạ, quạt nan gấp... Cà phê hòa tan cũng là một trong số đó.",
+          "vocab": [
+            [
+              "胃カメラ",
+              "いカメラ",
+              "máy nội soi dạ dày"
+            ],
+            [
+              "乾電池",
+              "かんでんち",
+              "pin khô"
+            ],
+            [
+              "せんす",
+              "せんす",
+              "quạt nan gấp"
+            ],
+            [
+              "インスタントコーヒー",
+              "インスタントコーヒー",
+              "cà phê hòa tan"
+            ]
+          ]
+        },
+        {
+          "jp": "インスタントコーヒーは1899年に日本人によって発明された。当時、コーヒーは日本ではあまり飲まれていなかったため、ほとんど注目されなかった。発明した日本人は特許を取らなかった。しかし、少し後で別の方法でインスタントコーヒーを作ったアメリカ人が特許を取った。そのため、この日本人の名前は忘れられたままになってしまった。",
+          "vi": "Cà phê hòa tan được phát minh bởi một người Nhật vào năm 1899. Khi đó, vì cà phê chưa được uống nhiều tại Nhật Bản nên hầu như chẳng được chú ý tới. Người Nhật phát minh ra nó đã không đăng ký bản quyền sáng chế. Nhưng một thời gian ngắn sau đó, một người Mỹ tạo ra cà phê hòa tan bằng phương pháp khác đã lấy bằng sáng chế. Vì vậy, tên tuổi của người Nhật này cứ mãi bị quên lãng.",
+          "vocab": [
+            [
+              "当時",
+              "とうじ",
+              "khi đó"
+            ],
+            [
+              "注目する",
+              "ちゅうもくする",
+              "chú ý, gây chú ý"
+            ],
+            [
+              "特許を取る",
+              "とっきょをとる",
+              "đăng ký bằng sáng chế"
+            ],
+            [
+              "別の",
+              "べつの",
+              "khác"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "日本人はどんな物を発明しましたか。",
+          "options": [
+            "テレビや冷蔵庫",
+            "胃カメラ、乾電池、シャープペンシル、サインペン、せんす、インスタントコーヒーなど",
+            "飛行機や自動車",
+            "時計やカメラだけ"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 1: 「胃カメラ...乾電池、シャープペンシル、サインペン、せんすなどだ。インスタントコーヒーもその一つだ。」"
+        },
+        {
+          "q": "インスタントコーヒーが発明されたのはいつですか。",
+          "options": [
+            "1989年",
+            "1889年",
+            "1899年",
+            "1999年"
+          ],
+          "answer": 2,
+          "explanation": "Đoạn 2: 「インスタントコーヒーは1899年に日本人によって発明された。」"
+        },
+        {
+          "q": "インスタントコーヒーの特許を取ったのは日本人ですか、アメリカ人ですか。",
+          "options": [
+            "日本人です。",
+            "アメリカ人です。",
+            "両方とも取りました。",
+            "だれも取りませんでした。"
+          ],
+          "answer": 1,
+          "explanation": "「別の方法でインスタントコーヒーを作ったアメリカ人が特許を取った。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "N によって [受身]",
+          "descVi": "Được phát minh/sáng tác/xây dựng bởi N (chủ thể tạo ra tác phẩm/phát minh)",
+          "exampleJp": "インスタントコーヒーは日本人によって発明された。",
+          "exampleVi": "Cà phê hòa tan đã được phát minh bởi người Nhật."
+        },
+        {
+          "pattern": "〜ため（に） [nguyên nhân]",
+          "descVi": "Vì ~, do ~ (biểu thị nguyên nhân, lý do khách quan)",
+          "exampleJp": "コーヒーはあまり飲まれていなかったため、注目されなかった。",
+          "exampleVi": "Vì cà phê chưa được uống nhiều nên đã không được chú ý."
+        },
+        {
+          "pattern": "「〜ため（に）」の整理",
+          "descVi": "Phân biệt 「〜ため」 chỉ Nguyên nhân (bị động/kết quả) và Mục đích (ý chí)",
+          "exampleJp": "病気のため、試験が受けられなかった。",
+          "exampleVi": "Vì bị bệnh nên không thể đi thi."
+        },
+        {
+          "pattern": "〜まま",
+          "descVi": "Vẫn giữ nguyên trạng thái ~ không thay đổi",
+          "exampleJp": "この日本人の名前は忘れられたままになってしまった。",
+          "exampleVi": "Tên của người Nhật này cứ thế bị lãng quên mãi."
+        },
+        {
+          "pattern": "〜てしまう / 〜てしまった",
+          "descVi": "Trót ~ mất rồi / Hoàn tất ~ (mang sắc thái tiếc nuối ngoài ý muốn)",
+          "exampleJp": "この日本人の名前は忘れられたままになってしまった。",
+          "exampleVi": "Tên của người Nhật này rốt cuộc đã cứ thế bị lãng quên mất."
+        }
+      ],
+      "listeningCloze": "世界で広く使われている物の中に、日本人が発明した物がたくさんある。病院の胃カメラ、毎日の生活でよく使われている｛乾電池|かんでんち｝、シャープペンシル、サインペン、せんすなどだ。｛インスタントコーヒー｝もその一つだ。\nインスタントコーヒーは1899年に日本人によって｛発明された|はつめいされた｝。当時、コーヒーは日本ではあまり飲まれていなかったため、ほとんど｛注目されなかった|ちゅうもくされなかった｝。発明した日本人は特許を｛取らなかった|とらなかった｝。しかし、少し後で別の方法でインスタントコーヒーを作ったアメリカ人が特許を取った。そのため、この日本人の名前は｛忘れられた|わすれられた｝ままになってしまった。"
+    },
+    {
+      "id": "chukyu-07",
+      "lessonNum": 7,
+      "titleJp": "リサイクルとフリーマーケット",
+      "titleVi": "Tái chế và Chợ đồ cũ",
+      "level": 3,
+      "kanjiChars": [
+        "球",
+        "温",
+        "暖",
+        "問",
+        "題",
+        "住",
+        "守",
+        "以",
+        "古",
+        "変",
+        "運",
+        "公",
+        "園",
+        "売",
+        "買",
+        "決",
+        "村",
+        "呼"
+      ],
+      "pages": {
+        "lesson": 89,
+        "honbun": 90,
+        "grammar": 92,
+        "listening": 102,
+        "kanji": 172,
+        "vocabVi": 227,
+        "answer": 202
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/13.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/14.mp3",
+      "paragraphs": [
+        {
+          "jp": "最近、地球の温暖化や砂漠化が問題になってきている。それで、自分たちが住む地球を守ろうという意識が生まれている。",
+          "vi": "Gần đây, hiện tượng Trái Đất ấm lên và sa mạc hóa đang trở thành vấn đề. Do đó, ý thức cùng nhau bảo vệ Trái Đất nơi chúng ta sinh sống đang được nhen nhóm.",
+          "vocab": [
+            [
+              "温暖化",
+              "おんだんか",
+              "sự nóng lên toàn cầu"
+            ],
+            [
+              "砂漠化",
+              "さばくか",
+              "sự sa mạc hóa"
+            ],
+            [
+              "守る",
+              "まもる",
+              "bảo vệ"
+            ],
+            [
+              "意識",
+              "いしき",
+              "ý thức"
+            ]
+          ]
+        },
+        {
+          "jp": "以前は古くなったり、壊れたりした物はすぐ捨てたものだ。しかし、今はできるだけ大切に使おうという考えに変わってきた。このようなリサイクル運動の一つとしてフリーマーケットがある。使わなくなった物や着られなくなった服を公園などで売るのだ。古いといっても、まだ十分使える物ばかりだ。店で買うよりここで買うほうがずっと安く買える。それで、物を買うなら、フリーマーケットと決めている人もいる。市町村でも「リサイクルできるし、安く買えるし、ぜひ利用して欲しい」と呼びかけている。",
+          "vi": "Trước đây những đồ bị cũ hay hỏng là người ta hay vứt đi ngay. Thế nhưng ngày nay suy nghĩ đã chuyển sang cố gắng sử dụng trân trọng hết mức có thể. Một trong những phong trào tái chế đó là chợ đồ cũ (Flea Market). Người ta bán những đồ không dùng nữa hoặc quần áo không mặc nữa tại công viên... Tuy nói là cũ nhưng toàn là những đồ vẫn còn dùng tốt chán. So với mua ở cửa hàng thì mua ở đây rẻ hơn nhiều. Chính quyền địa phương cũng kêu gọi \"Vì vừa tái chế được, vừa mua được rẻ nên rất mong mọi người hãy sử dụng\".",
+          "vocab": [
+            [
+              "以前",
+              "いぜん",
+              "trước đây"
+            ],
+            [
+              "〜といっても",
+              "といっても",
+              "tuy nói là ~ nhưng"
+            ],
+            [
+              "十分",
+              "じゅうぶん",
+              "đủ, vẫn còn tốt"
+            ],
+            [
+              "市町村",
+              "しちょうそん",
+              "đô thị, thị trấn và làng"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "最近、どういう意識が生まれていますか。",
+          "options": [
+            "物をすぐ捨てようという意識",
+            "自分たちが住む地球を守ろうという意識",
+            "新しい物だけ買おうという意識",
+            "車を増やそうという意識"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 1: 「自分たちが住む地球を守ろうという意識が生まれている。」"
+        },
+        {
+          "q": "フリーマーケットのいいところは、どんなところですか。",
+          "options": [
+            "店で買うより高く売れるところ",
+            "新品しか売っていないところ",
+            "まだ十分使える物が店で買うよりずっと安く買えるところ",
+            "毎日夜中に開かれているところ"
+          ],
+          "answer": 2,
+          "explanation": "「まだ十分使える物ばかりだ。店で買うよりここで買うほうがずっと安く買える。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "Vタ + ものだ",
+          "descVi": "Ngày xưa thường hay ~ (hồi tưởng trạng thái, thói quen trong quá khứ)",
+          "exampleJp": "以前は古くなった物はすぐ捨てたものだ。",
+          "exampleVi": "Trước đây những đồ cũ đi là hay vứt ngay."
+        },
+        {
+          "pattern": "〜として",
+          "descVi": "Với tư cách là ~, như là ~ (chỉ lập trường, tư cách, loại hình)",
+          "exampleJp": "リサイクル運動の一つとしてフリーマーケットがある。",
+          "exampleVi": "Như một trong các phong trào tái chế, có chợ đồ cũ."
+        },
+        {
+          "pattern": "〜といっても",
+          "descVi": "Tuy nói là ~ nhưng thực tế lại không như suy nghĩ thường thấy",
+          "exampleJp": "古いといっても、まだ十分使える物ばかりだ。",
+          "exampleVi": "Tuy nói là cũ nhưng toàn là đồ vẫn dùng tốt."
+        },
+        {
+          "pattern": "V1ル + より V2ル + ほうが 〜",
+          "descVi": "So với làm V1 thì làm V2 ~ hơn",
+          "exampleJp": "店で買うよりここで買うほうがずっと安く買える。",
+          "exampleVi": "So với mua ở cửa hàng thì mua ở đây rẻ hơn hẳn."
+        },
+        {
+          "pattern": "〜なら (và tổng hợp なら・と・ば・たら)",
+          "descVi": "Nếu nói đến chủ đề ~ thì (tiếp nhận lời/đề tài từ ngữ cảnh)",
+          "exampleJp": "物を買うなら、フリーマーケットと決めている人もいる。",
+          "exampleVi": "Có người quyết định hễ mua đồ là cứ ra chợ đồ cũ."
+        },
+        {
+          "pattern": "Vテ + 欲しい / Vナイないで欲しい",
+          "descVi": "Mong muốn ai đó làm gì / đừng làm gì cho mình",
+          "exampleJp": "ぜひ利用して欲しいと呼びかけている。",
+          "exampleVi": "Kêu gọi mọi người nhất định hãy sử dụng."
+        }
+      ],
+      "listeningCloze": "最近、地球の温暖化や｛砂漠化|さばくか｝が問題になってきている。それで、自分たちが住む地球を守ろうという｛意識|いしき｝が生まれている。\n以前は古くなったり、壊れたりした物はすぐ捨てたものだ。しかし、今は｛できるだけ｝大切に使おうという考えに変わってきた。このような｛リサイクル｝運動の一つとしてフリーマーケットがある。使わなくなった物や着られなくなった服を｛公園|こうえん｝などで売るのだ。古いといっても、まだ｛十分|じゅうぶん｝使える物ばかりだ。店で買うよりここで買うほうが｛ずっと｝安く買える。それで、物を買うなら、フリーマーケットと｛決めている|きめている｝人もいる。市町村でも「リサイクルできるし、安く買えるし、ぜひ｛利用して|りようして｝欲しい」と呼びかけている。"
+    },
+    {
+      "id": "chukyu-08",
+      "lessonNum": 8,
+      "titleJp": "あいづち",
+      "titleVi": "Cách đáp lời (Aizuchi)",
+      "level": 3,
+      "kanjiChars": [
+        "言",
+        "伝",
+        "図",
+        "賛",
+        "成",
+        "確",
+        "誤",
+        "解",
+        "終",
+        "打",
+        "止"
+      ],
+      "pages": {
+        "lesson": 105,
+        "honbun": 106,
+        "grammar": 108,
+        "listening": 116,
+        "kanji": 175,
+        "vocabVi": 231,
+        "answer": 203
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/15.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/16.mp3",
+      "paragraphs": [
+        {
+          "jp": "日本人は相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」とか「うん、うん」と言ったりする。これをあいづちという。これは「あなたの話を聞いていますよ。」ということを伝える合図だ。だから、うなずいたり、「うん、うん」と言っていても、相手の話に100%賛成しているわけではない。",
+          "vi": "Người Nhật trong lúc nghe đối phương nói chuyện thường gật đầu nhiều lần hoặc nói \"Vâng, vâng\" hay \"Ừ, ừ\". Việc này gọi là Aizuchi (nói đệm). Đây là tín hiệu truyền đạt rằng \"Tôi đang lắng nghe câu chuyện của bạn đấy\". Vì thế, dù có gật đầu hay nói \"ừ, ừ\" đi nữa, không có nghĩa là hoàn toàn tán thành 100% ý kiến đối phương.",
+          "vocab": [
+            [
+              "うなずく",
+              "うなずく",
+              "gật đầu"
+            ],
+            [
+              "あいづち",
+              "あいづち",
+              "lời đáp đệm (Aizuchi)"
+            ],
+            [
+              "合図",
+              "あいず",
+              "tín hiệu, dấu hiệu"
+            ],
+            [
+              "賛成する",
+              "さんせいする",
+              "tán thành"
+            ]
+          ]
+        },
+        {
+          "jp": "日本人は相手からあいづちがないと、不安になって、聞いているかどうか、つい確かめたくなる。また、聞いていないと誤解してしまうことがある。しかし、相手が話し終わるまで、黙って話を聞く国もある。外国人の中には、自分が話しているあいだに、日本人があいづちを打つと、話を止められたと誤解する人もいる。国によって話の聞き方はさまざまだ。",
+          "vi": "Người Nhật nếu không nhận được Aizuchi từ đối phương sẽ thấy bất an, và lỡ muốn kiểm tra lại xem người kia có đang nghe không. Cũng có khi hiểu nhầm rằng đối phương không lắng nghe. Tuy nhiên, có những nước giữ im lặng lắng nghe cho tới khi đối phương nói xong. Trong số người nước ngoài cũng có người hiểu nhầm là bị cắt lời khi thấy người Nhật nói đệm Aizuchi giữa lúc mình đang nói. Cách lắng nghe câu chuyện tùy theo từng nước mà rất đa dạng.",
+          "vocab": [
+            [
+              "不安な",
+              "ふあんな",
+              "bất an"
+            ],
+            [
+              "確かめる",
+              "たしかめる",
+              "xác nhận lại"
+            ],
+            [
+              "誤解する",
+              "ごかいする",
+              "hiểu nhầm"
+            ],
+            [
+              "黙る",
+              "だまる",
+              "im lặng"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "「あいづち」はどんなことをすることですか。",
+          "options": [
+            "相手の話を途中で止めること",
+            "相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」「うん、うん」と言ったりすること",
+            "ずっと黙って聞くこと",
+            "100%賛成すること"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 1: 「相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」とか「うん、うん」と言ったりする。」"
+        },
+        {
+          "q": "「あいづち」は何を伝えますか。",
+          "options": [
+            "100%賛成していること",
+            "早く話を終わってほしいこと",
+            "「あなたの話を聞いていますよ。」ということ",
+            "話がわからないこと"
+          ],
+          "answer": 2,
+          "explanation": "「これは『あなたの話を聞いていますよ。』ということを伝える合図だ。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "〜あいだ / 〜あいだに",
+          "descVi": "Trong suốt khoảng thời gian ~ (あいだ) / Tranh thủ trong khoảng ~ xảy ra 1 sự việc (あいだに)",
+          "exampleJp": "相手の話を聞いているあいだ、何回もうなずいたりする。",
+          "exampleVi": "Trong lúc nghe đối phương nói chuyện, người ta hay gật đầu nhiều lần."
+        },
+        {
+          "pattern": "〜わけではない",
+          "descVi": "Không hẳn là ~, không có nghĩa là ~ (phủ định một phần)",
+          "exampleJp": "うなずいていても、相手の話に100%賛成しているわけではない。",
+          "exampleVi": "Dù gật đầu cũng không hẳn là đồng ý 100% với lời đối phương."
+        },
+        {
+          "pattern": "Vル / Vナイ + ことがある",
+          "descVi": "Thỉnh thoảng / đôi lúc có trường hợp làm V",
+          "exampleJp": "聞いていないと誤解してしまうことがある。",
+          "exampleVi": "Đôi khi sẽ lỡ hiểu nhầm là không nghe."
+        },
+        {
+          "pattern": "V1ル + まで、V2",
+          "descVi": "Cho đến tận khi V1 xảy ra thì vẫn làm V2",
+          "exampleJp": "相手が話し終わるまで、黙って話を聞く国もある。",
+          "exampleVi": "Có nước cứ im lặng nghe cho đến khi đối phương nói xong."
+        },
+        {
+          "pattern": "N によって (tùy thuộc theo N)",
+          "descVi": "Tùy theo N mà khác nhau / đa dạng (phân biệt với として và について)",
+          "exampleJp": "国によって話の聞き方はさまざまだ。",
+          "exampleVi": "Cách nghe chuyện tùy theo từng nước mà rất khác nhau."
+        }
+      ],
+      "listeningCloze": "日本人は相手の話を聞いているあいだ、何回も｛うなずいたり｝、「はい、ええ」とか「うん、うん」と言ったりする。これを｛あいづち｝という。これは「あなたの話を聞いていますよ。」ということを伝える｛合図|あいず｝だ。だから、うなずいたり、「うん、うん」と言っていても、相手の話に｛100%|１００％|ひゃくパーセント｝賛成しているわけではない。\n日本人は相手からあいづちがないと、｛不安|ふあん｝になって、聞いているかどうか、つい確かめたくなる。また、聞いていないと｛誤解して|ごかいして｝しまうことがある。しかし、相手が話し終わるまで、｛黙って|だまって｝話を聞く国もある。外国人の中には、自分が話しているあいだに、日本人があいづちを｛打つ|うつ｝と、話を止められたと誤解する人もいる。国によって話の聞き方はさまざまだ。"
+    },
+    {
+      "id": "chukyu-09",
+      "lessonNum": 9,
+      "titleJp": "男の仕事・女の仕事",
+      "titleVi": "Công việc của nam & nữ",
+      "level": 3,
+      "kanjiChars": [
+        "仕",
+        "性",
+        "職",
+        "働",
+        "育",
+        "反",
+        "対",
+        "建",
+        "転",
+        "区",
+        "少",
+        "庭",
+        "向",
+        "度",
+        "結",
+        "果",
+        "識"
+      ],
+      "pages": {
+        "lesson": 119,
+        "honbun": 120,
+        "grammar": 122,
+        "listening": 132,
+        "kanji": 178,
+        "vocabVi": 233,
+        "answer": 204
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/17.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/18.mp3",
+      "paragraphs": [
+        {
+          "jp": "以前女性の職場と言われていた所で、男性も働くようになった。それにともなって、女性の仕事を表す「看護婦」や「保母」のような職業の名称は、「看護師」や「保育士」に変わった。反対に、男性が多かった建築の仕事とか運転手や車掌という仕事を女性もするようになった。つまり、職業は男女の区別が少なくなってきているのだ。",
+          "vi": "Tại những nơi trước đây vốn được coi là môi trường làm việc của phụ nữ, nam giới cũng đã bắt đầu làm việc. Đi kèm với sự thay đổi đó, tên gọi các nghề nghiệp chỉ công việc của phụ nữ như \"Nữ y tá (Kangofu)\" hay \"Bảo mẫu (Hobo)\" đã đổi thành tên trung tính là \"Điều dưỡng viên (Kangoshi)\" hay \"Nhân viên nuôi dạy trẻ (Hoikushi)\". Ngược lại, các công việc vốn nhiều nam giới như xây dựng hay lái xe, nhân viên phụ trách tàu xe thì phụ nữ cũng đã bắt đầu làm. Tức là, sự phân biệt nam nữ trong nghề nghiệp đang dần ít đi.",
+          "vocab": [
+            [
+              "職場",
+              "しょくば",
+              "nơi làm việc"
+            ],
+            [
+              "名称",
+              "めいしょう",
+              "tên gọi"
+            ],
+            [
+              "区別",
+              "くべつ",
+              "sự phân biệt"
+            ],
+            [
+              "建築",
+              "けんちく",
+              "xây dựng"
+            ]
+          ]
+        },
+        {
+          "jp": "一方、家庭に目を向けてみると、女性の家事労働は4時間53分（293分）であるが、男性は39分程度だという調査結果がある。男性も「家事をやらされる」ではなく、「すすんで家事を分担する」ような意識を持って欲しいものだ。",
+          "vi": "Mặt khác, nếu hướng ánh nhìn về phía gia đình thì có kết quả điều tra cho thấy lao động việc nhà của phụ nữ là 4 tiếng 53 phút (293 phút), trong khi nam giới chỉ khoảng 39 phút. Thật mong muốn nam giới cũng sẽ có ý thức không phải là \"bị bắt làm việc nhà\" mà là \"tích cực chủ động chia sẻ gánh vác việc nhà\".",
+          "vocab": [
+            [
+              "家事労働",
+              "かじろうどう",
+              "lao động việc nhà"
+            ],
+            [
+              "〜程度",
+              "ていど",
+              "khoảng chừng ~"
+            ],
+            [
+              "すすんで",
+              "すすんで",
+              "chủ động, tích cực"
+            ],
+            [
+              "分担する",
+              "ぶんたんする",
+              "đảm nhận, phân chia"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "「看護婦」や「保母」の名称は何に変わりましたか。",
+          "options": [
+            "運転手や車掌",
+            "看護師や保育士",
+            "先生や医者",
+            "建築士"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 1: 「『看護婦』や『保母』のような職業の名称は、『看護師』や『保育士』に変わった。」"
+        },
+        {
+          "q": "調査結果によると、男性は家事労働をよくしていますか。",
+          "options": [
+            "女性と同じぐらいしています。",
+            "いいえ、あまりしません（39分程度です）。",
+            "女性より長くしています。",
+            "まったく0分です。"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 2: 女性 là 4時間53分 (293分), trong khi 男性 chỉ khoảng 39分程度."
+        },
+        {
+          "q": "男性はどんな意識を持って欲しいと書いてありますか。",
+          "options": [
+            "家事をやらされる意識",
+            "仕事だけする意識",
+            "すすんで家事を分担するような意識",
+            "名前を変える意識"
+          ],
+          "answer": 2,
+          "explanation": "Câu cuối: 「『すすんで家事を分担する』ような意識を持って欲しいものだ。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "〜にともなって",
+          "descVi": "Kèm theo sự biến đổi của vế 1 thì vế 2 cũng thay đổi theo",
+          "exampleJp": "それにともなって、職業の名称は変わった。",
+          "exampleVi": "Cùng với việc đó, tên gọi các nghề nghiệp cũng thay đổi."
+        },
+        {
+          "pattern": "接続詞［つまり・一方］",
+          "descVi": "「つまり」(Tức là - tóm lại) và 「一方」(Mặt khác - đối lập)",
+          "exampleJp": "一方、男性は39分程度だという調査結果がある。",
+          "exampleVi": "Mặt khác, có kết quả điều tra rằng nam giới chỉ làm khoảng 39 phút."
+        },
+        {
+          "pattern": "Na / N である",
+          "descVi": "Thể văn viết trang trọng của 「〜だ／〜です」 trong báo cáo",
+          "exampleJp": "女性の家事労働は4時間53分である。",
+          "exampleVi": "Thời gian làm việc nhà của phụ nữ là 4 tiếng 53 phút."
+        },
+        {
+          "pattern": "使役受身 (Vさせられる / Vされる)",
+          "descVi": "Thể Sai khiến Bị động: bị bắt làm V, phải làm V ngoài ý muốn",
+          "exampleJp": "男性も「家事をやらされる」意識ではなく...",
+          "exampleVi": "Nam giới cũng không phải mang tâm thế \"bị ép làm việc nhà\"..."
+        },
+        {
+          "pattern": "Vテ + 欲しいものだ",
+          "descVi": "Thật mong muốn rằng ~ (nguyện vọng mang tính xã hội, chung)",
+          "exampleJp": "すすんで家事を分担するような意識を持って欲しいものだ。",
+          "exampleVi": "Thật mong nam giới có ý thức chủ động san sẻ việc nhà."
+        }
+      ],
+      "listeningCloze": "以前女性の｛職場|しょくば｝と言われていた所で、男性も働くようになった。それ｛にともなって｝、女性の仕事を表す「看護婦」や「保母」のような職業の｛名称|めいしょう｝は、「看護師」や「保育士」に変わった。反対に、男性が多かった建築の仕事とか｛運転手|うんてんしゅ｝や車掌という仕事を女性もするようになった。つまり、職業は｛男女|だんじょ｝の区別が少なくなってきているのだ。\n一方、家庭に目を向けてみると、女性の｛家事|かじ｝労働は4時間53分（293分）であるが、男性は39分程度だという調査結果がある。男性も「家事をやらされる」ではなく、「すすんで家事を｛分担|ぶんたん｝する」ような｛意識|いしき｝を持って欲しいものだ。"
+    },
+    {
+      "id": "chukyu-10",
+      "lessonNum": 10,
+      "titleJp": "ことばの使い方",
+      "titleVi": "Cách sử dụng từ ngữ & Kính ngữ",
+      "level": 3,
+      "kanjiChars": [
+        "乱",
+        "感",
+        "激",
+        "例",
+        "皆",
+        "召",
+        "会",
+        "社",
+        "受",
+        "付",
+        "正",
+        "機",
+        "認"
+      ],
+      "pages": {
+        "lesson": 135,
+        "honbun": 136,
+        "grammar": 138,
+        "listening": 146,
+        "kanji": 181,
+        "vocabVi": 237,
+        "answer": 207
+      },
+      "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/19.mp3",
+      "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/20.mp3",
+      "paragraphs": [
+        {
+          "jp": "最近のある調査によって、「ことばの使い方が乱れている」と感じている日本人が多いことがわかった。",
+          "vi": "Qua một cuộc điều tra gần đây, người ta thấy có rất nhiều người Nhật cảm thấy \"cách sử dụng ngôn từ đang bị hỗn loạn/sai lệch\".",
+          "vocab": [
+            [
+              "乱れる",
+              "みだれる",
+              "bị loạn, sai lệch"
+            ],
+            [
+              "感じる",
+              "かんじる",
+              "cảm thấy"
+            ]
+          ]
+        },
+        {
+          "jp": "以前から特に敬語のまちがいは多い。例えば、食事の場で「皆さん、いっしょにいただきましょう」と言う代わりに、まちがえて「皆さん、いっしょに召し上がりましょう」と言う。また、自分の会社を訪ねてきたお客さんに「受付でお聞きしてください」と言う。本来なら、「受付でお聞きになってください」と言うべきである。",
+          "vi": "Từ trước đến nay đặc biệt lỗi sai về kính ngữ rất nhiều. Ví dụ, trong bữa ăn thay vì nói \"Mọi người cùng ăn nào (itadakimashou)\", lại nói nhầm thành \"Mọi người cùng dùng bữa nhé (meshiagarimashou - kính ngữ của người nghe mà lại gộp bản thân)\". Hoặc nói với khách đến thăm công ty mình là \"Hãy hỏi ở quầy lễ tân giúp tôi (o-kiki shite - khiêm nhường ngữ sai đối tượng)\". Đúng ra thì phải nói tôn kính ngữ là \"o-kiki ni natte kudasai\".",
+          "vocab": [
+            [
+              "敬語",
+              "けいご",
+              "kính ngữ"
+            ],
+            [
+              "代わりに",
+              "かわりに",
+              "thay cho, thay vì"
+            ],
+            [
+              "本来",
+              "ほんらい",
+              "đáng lẽ ra, vốn dĩ"
+            ],
+            [
+              "〜べきである",
+              "べきである",
+              "nên, phải làm"
+            ]
+          ]
+        },
+        {
+          "jp": "ことばは変化していくものだ。しかし、使い方が正しいかどうか、気にせずにことばを使うのは問題だ。この機会に、一度自分のことばの使い方を確認してみよう。",
+          "vi": "Ngôn ngữ là thứ vốn dĩ luôn biến đổi theo thời gian. Tuy nhiên, việc dùng từ mà không thèm để tâm xem cách dùng có đúng hay không mới là vấn đề. Nhân cơ hội này, chúng ta hãy thử kiểm tra lại một lần cách dùng từ của bản thân mình xem sao.",
+          "vocab": [
+            [
+              "変化する",
+              "へんかする",
+              "thay đổi"
+            ],
+            [
+              "気にする",
+              "きにする",
+              "bận tâm, để ý"
+            ],
+            [
+              "この機会に",
+              "このきかいに",
+              "nhân cơ hội này"
+            ],
+            [
+              "確認する",
+              "かくにんする",
+              "xác nhận, kiểm tra lại"
+            ]
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "q": "調査によって、どんなことがわかりましたか。",
+          "options": [
+            "敬語を使う人が増えていること",
+            "「ことばの使い方が乱れている」と感じている日本人が多いこと",
+            "日本人が漢字を忘れたこと",
+            "食事の場でのマナーが良くなったこと"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 1: 「『ことばの使い方が乱れている』と感じている日本人が多いことがわかった。」"
+        },
+        {
+          "q": "お客さんに「受付でお聞きしてください」と言う代わりに、本来どう言うべきですか。",
+          "options": [
+            "受付でお聞きしましょう。",
+            "受付でお聞きになってください。",
+            "受付で聞いてくれますか。",
+            "受付で召し上がってください。"
+          ],
+          "answer": 1,
+          "explanation": "Đoạn 2: 「本来なら、『受付でお聞きになってください』と言うべきである。」"
+        },
+        {
+          "q": "何が問題だと書いてありますか。",
+          "options": [
+            "ことばが少しずつ変化していくこと",
+            "新しいことばが作られること",
+            "使い方が正しいかどうか、気にせずにことばを使うこと",
+            "敬語が難しすぎること"
+          ],
+          "answer": 2,
+          "explanation": "Đoạn 3: 「使い方が正しいかどうか、気にせずにことばを使うのは問題だ。」"
+        }
+      ],
+      "grammar": [
+        {
+          "pattern": "N によって [phương tiện / căn cứ]",
+          "descVi": "Nhờ vào N, thông qua N (chỉ phương pháp, căn cứ trong văn viết)",
+          "exampleJp": "最近のある調査によって、日本人が多いことがわかった。",
+          "exampleVi": "Thông qua một cuộc khảo sát gần đây, ta biết được có nhiều người Nhật..."
+        },
+        {
+          "pattern": "Vル / N の代わりに",
+          "descVi": "Thay vì làm V / Thay cho N",
+          "exampleJp": "「いただきましょう」と言う代わりに、まちがえて「召し上がりましょう」と言う。",
+          "exampleVi": "Thay vì nói \"itadakimashou\" lại nhầm sang \"meshiagarimashou\"."
+        },
+        {
+          "pattern": "Vテ + くる / Vテ + いく [không gian]",
+          "descVi": "Hướng hành động tiến lại gần người nói (〜てくる) / đi xa khỏi người nói (〜ていく)",
+          "exampleJp": "自分の会社を訪ねてきたお客さんに説明する。",
+          "exampleVi": "Giải thích cho vị khách từ ngoài đến thăm công ty mình."
+        },
+        {
+          "pattern": "Vル + べきだ / すべきだ",
+          "descVi": "Nên làm V, đương nhiên phải làm V (chuẩn mực xã hội)",
+          "exampleJp": "本来なら、「お聞きになってください」と言うべきである。",
+          "exampleVi": "Đáng lẽ ra nên nói \"o-kiki ni natte kudasai\"."
+        },
+        {
+          "pattern": "「敬語」の整理",
+          "descVi": "Hệ thống Kính ngữ: Tôn kính (おVになる / 召し上がる) vs Khiêm nhường (おVする / いただく)",
+          "exampleJp": "お客さんには尊敬語を使う。",
+          "exampleVi": "Dùng Tôn kính ngữ cho hành động của khách."
+        },
+        {
+          "pattern": "Vナイ + ずに (する → せずに)",
+          "descVi": "Không làm V mà cứ làm việc sau (= 〜ないで, văn phong cứng/viết)",
+          "exampleJp": "正しいかどうか、気にせずにことばを使うのは問題だ。",
+          "exampleVi": "Dùng từ mà không bận tâm xem có đúng hay không là điều đáng lo."
+        }
+      ],
+      "listeningCloze": "最近のある調査によって、「ことばの｛使い方|つかいかた｝が乱れている」と感じている日本人が多いことがわかった。\n以前から特に｛敬語|けいご｝のまちがいは多い。例えば、食事の｛場|ば｝で「皆さん、いっしょに｛いただき｝ましょう」と言う代わりに、｛まちがえて|間違えて｝「皆さん、いっしょに召し上がりましょう」と言う。また、自分の会社を訪ねてきたお客さんに「受付でお聞きしてください」と言う。本来なら、「受付で｛お聞きになって|おききになって｝ください」と言うべきである。\nことばは｛変化して|へんかして｝いくものだ。しかし、使い方が正しいかどうか、気にせずにことばを使うのは問題だ。この機会に、一度自分のことばの使い方を｛確認して|かくにんして｝みよう。"
+    }
+  ]
+}

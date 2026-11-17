@@ -235,7 +235,7 @@
           [
             "一日",
             "いちにち",
-            "một ngày (いちにち); ngày mồng 1 (ついたち)",
+            "ngày mồng 1; mùng một; ngày đầu tháng; đầu tháng; mười ngày đầu của tháng; một lớp; đơn lớp",
             "NHẤT NHẬT"
           ],
           [
@@ -3530,7 +3530,7 @@
             "畑",
             "はたけ",
             "ruộng; ruộng nương",
-            ""
+            "CHƯA RÕ"
           ],
           [
             "目",
@@ -5817,7 +5817,7 @@
           [
             "守る",
             "まもる",
-            "bảo vệ; giữ; tuân giữ; tuân theo; duy trì; giữ gìn; nghe theo",
+            "bảo vệ",
             "THỦ"
           ],
           [
@@ -6456,13 +6456,13 @@
             "固定的",
             "こていてき",
             "Cố định",
-            "CỐ ĐỊNH"
+            "CỐ ĐỊNH ĐÍCH"
           ],
           [
             "安定的",
             "あんていてき",
             "Ổn định",
-            "AN ĐỊNH"
+            "AN ĐỊNH ĐÍCH"
           ],
           [
             "組織内",
@@ -7266,7 +7266,7 @@
           [
             "以前",
             "いぜん",
-            "cách đây; dạo trước; hồi trước; lúc trước; thuở trước; trước đây; ngày trước; trước kia",
+            "trước đây",
             "DĨ TIỀN"
           ],
           [
@@ -9329,7 +9329,7 @@
             "不可欠",
             "ふかけつ",
             "không thể thiếu",
-            "BẤT KHIẾM"
+            "BẤT KHẢ KHIẾM"
           ],
           [
             "戸惑い",
@@ -9587,7 +9587,7 @@
             "偶然的",
             "ぐうぜんてき",
             "Ngẫu nhiên",
-            "NGẪU NHIÊN"
+            "NGẪU NHIÊN ĐÍCH"
           ],
           [
             "基礎的",
@@ -10067,6 +10067,3485 @@
         ],
         "answer": 3,
         "explanation": "Đoạn 3: Khi không còn con đường an bài sẵn (あらかじめ何も決まっていない), nếu không tự tìm ra điều mình muốn thì không thể trở thành gì cả."
+      }
+    ]
+  },
+  {
+    "id": "chukyu-01",
+    "level": 4,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 1,
+    "title": "第1課：ファストフード（Đồ ăn nhanh）",
+    "source": "Giáo trình 中級へ行こう · Bài 1 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/01.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/02.mp3",
+    "paragraphs": [
+      {
+        "jp": "ファストフードのメニューで代表的な物といえば、ハンバーガーやフライドポテトなどです。最近は牛丼、スープなど、種類が増えています。ある発表によると、日本人は1年間に3兆円もファストフードにお金を使っています。理由は値段が安くて手軽に利用できること、時間がかからないこと、それにファストフードの店は明るくて入りやすいことなどです。",
+        "vi": "Nói đến các món tiêu biểu trong thực đơn đồ ăn nhanh thì phải kể đến hamburger hay khoai tây chiên. Gần đây, các chủng loại như cơm bò gyudon, súp... cũng đang tăng lên. Theo một công bố, người Nhật chi tới 3 nghìn tỷ yên mỗi năm cho đồ ăn nhanh. Lý do là giá rẻ và dễ dàng sử dụng tiện lợi, không mất thời gian, hơn nữa cửa hàng đồ ăn nhanh sáng sủa và dễ vào...",
+        "vocab": [
+          [
+            "代表的な",
+            "だいひょうてきな",
+            "tiêu biểu, đại diện"
+          ],
+          [
+            "種類",
+            "しゅるい",
+            "chủng loại"
+          ],
+          [
+            "3兆円",
+            "さんちょうえん",
+            "3 nghìn tỷ yên"
+          ],
+          [
+            "手軽に",
+            "てがるに",
+            "dễ dàng và thuận tiện"
+          ]
+        ],
+        "words": [
+          [
+            "代表的な",
+            "だいひょうてきな",
+            "tiêu biểu, đại diện",
+            "ĐẠI BIỂU ĐÍCH"
+          ],
+          [
+            "3兆円",
+            "さんちょうえん",
+            "3 nghìn tỷ yên",
+            "TRIỆU VIÊN"
+          ],
+          [
+            "代表的",
+            "だいひょうてき",
+            "có tính chất làm mẫu; mang tính đại diện; mẫu mực",
+            "ĐẠI BIỂU ĐÍCH"
+          ],
+          [
+            "使って",
+            "つかって",
+            "Sử dụng",
+            "SỨ"
+          ],
+          [
+            "手軽に",
+            "てがるに",
+            "dễ dàng và thuận tiện",
+            "THỦ CHÍ"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "明るく",
+            "あかるく",
+            "tươi sáng; vui vẻ; sáng sủa; 法律に明るい:am hiểu pháp luật; xinh tươi (明るい)",
+            "MINH"
+          ],
+          [
+            "値段",
+            "ねだん",
+            "giá cả; giá tiền; giá trị",
+            "TRỊ ĐOẠN"
+          ],
+          [
+            "兆円",
+            "ちょうえん",
+            "Nghìn tỷ yên",
+            "TRIỆU VIÊN"
+          ],
+          [
+            "入り",
+            "いり",
+            "vào; sự thiết đặt mặt trời); thính giả; khả năng; thu nhập; bắt đầu",
+            "NHẬP"
+          ],
+          [
+            "利用",
+            "りよう",
+            "sự lợi dụng; sự áp dụng; sự sử dụng",
+            "LỢI DỤNG"
+          ],
+          [
+            "増え",
+            "ふえ",
+            "gia tăng; tăng lên (増える)",
+            "TĂNG"
+          ],
+          [
+            "安く",
+            "やすく",
+            "rẻ",
+            "AN"
+          ],
+          [
+            "年間",
+            "ねんかん",
+            "năm; niên khóa",
+            "NIÊN GIAN"
+          ],
+          [
+            "手軽",
+            "てがる",
+            "nhẹ nhàng; đơn giản; sự nhẹ nhàng; sự đơn giản; sự dễ dàng",
+            "THỦ KHINH"
+          ],
+          [
+            "時間",
+            "じかん",
+            "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+            "THÌ GIAN"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "牛丼",
+            "ぎゅうどん",
+            "món ăn gồm cơm với thịt bò",
+            "NGƯU"
+          ],
+          [
+            "理由",
+            "りゆう",
+            "nguyên do; nguyên nhân; lý do; lời biện hộ; cái cớ",
+            "LÍ DO"
+          ],
+          [
+            "発表",
+            "はっぴょう",
+            "công bố; sự phát biểu; sự công bố; thông báo",
+            "PHÁT BIỂU"
+          ],
+          [
+            "種類",
+            "しゅるい",
+            "chủng loại",
+            "CHỦNG LOẠI"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "物",
+            "もの",
+            "đồ vật; vật",
+            "VẬT"
+          ],
+          [
+            "金",
+            "かね",
+            "tiền; vàng; kim loại; vật liệu kim loại; tiền tệ; tiền bạc",
+            "KIM"
+          ]
+        ]
+      },
+      {
+        "jp": "しかし、このような食べ物はカロリーが高いので、生活習慣病が増え始めた原因の一つだと言われています。それで、最近では健康を考えて、カロリーが低いメニューを増やしたり、カロリーを表示したりする店が増えています。",
+        "vi": "Tuy nhiên, vì những đồ ăn như thế này chứa lượng ca-lo cao nên được cho là một trong những nguyên nhân khiến bệnh do thói quen sinh hoạt bắt đầu gia tăng. Vì vậy, gần đây các cửa hàng suy nghĩ đến sức khỏe, tăng thêm thực đơn ít ca-lo hoặc ghi rõ lượng ca-lo đang ngày càng nhiều hơn.",
+        "vocab": [
+          [
+            "生活習慣病",
+            "せいかつしゅうかんびょう",
+            "bệnh do thói quen sinh hoạt"
+          ],
+          [
+            "増え始めた",
+            "ふえはじめた",
+            "bắt đầu tăng lên"
+          ],
+          [
+            "健康",
+            "けんこう",
+            "sức khỏe"
+          ],
+          [
+            "表示",
+            "ひょうじ",
+            "hiển thị, ghi rõ"
+          ]
+        ],
+        "words": [
+          [
+            "増え始めた",
+            "ふえはじめた",
+            "bắt đầu tăng lên",
+            "TĂNG THUỶ"
+          ],
+          [
+            "生活習慣病",
+            "せいかつしゅうかんびょう",
+            "bệnh do thói quen sinh hoạt",
+            "SANH HOẠT TẬP QUÁN BỆNH"
+          ],
+          [
+            "生活習慣",
+            "せいかつしゅうかん",
+            "Lối sống",
+            "SANH HOẠT TẬP QUÁN"
+          ],
+          [
+            "増やし",
+            "ふやし",
+            "sự tăng; sự tăng thêm; số lượng tăng thêm",
+            "TĂNG"
+          ],
+          [
+            "表示し",
+            "ひょうじし",
+            "phô trương; vạch ra (表示する)",
+            "BIỂU KÌ"
+          ],
+          [
+            "食べ物",
+            "たべもの",
+            "đồ ăn",
+            "THỰC VẬT"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "低い",
+            "ひくい",
+            "lè tè; thấp",
+            "ĐÊ"
+          ],
+          [
+            "健康",
+            "けんこう",
+            "sức khỏe",
+            "KIỆN KHANG"
+          ],
+          [
+            "原因",
+            "げんいん",
+            "căn do; căn duyên; ngọn nguồn; nguyên do; nguyên nhân",
+            "NGUYÊN NHÂN"
+          ],
+          [
+            "増え",
+            "ふえ",
+            "gia tăng; tăng lên (増える)",
+            "TĂNG"
+          ],
+          [
+            "始め",
+            "はじめ",
+            "lúc đầu; đầu tiên; 開始",
+            "THỦY"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "表示",
+            "ひょうじ",
+            "hiển thị, ghi rõ",
+            "BIỂU KÌ"
+          ],
+          [
+            "言わ",
+            "いわ",
+            "nói (言う)",
+            "NGÔN"
+          ],
+          [
+            "高い",
+            "たかい",
+            "cao; đắt; đắt tiền",
+            "CAO"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "病",
+            "やまい",
+            "sự ốm; sự có bệnh",
+            "BỆNH"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "日本人はファストフードの店で1年間にいくらぐらいお金を使っていますか。",
+        "options": [
+          "3億円ぐらい使っています。",
+          "3兆円ぐらい使っています。",
+          "30万円ぐらい使っています。",
+          "3千万円ぐらい使っています。"
+        ],
+        "answer": 1,
+        "explanation": "Bài đọc nêu rõ: 「日本人は1年間に3兆円もファストフードにお金を使っています。」"
+      },
+      {
+        "q": "日本人がファストフードに多くのお金を使っている理由ではないものはどれですか。",
+        "options": [
+          "値段が安くて手軽に利用できること",
+          "時間がかからないこと",
+          "店が明るくて入りやすいこと",
+          "カロリーがとても低いこと"
+        ],
+        "answer": 3,
+        "explanation": "Đoạn 2 nói ngược lại: đồ ăn nhanh vốn có lượng ca-lo cao (カロリーが高い)."
+      },
+      {
+        "q": "ファストフードの店は最近、健康を考えて何をしていますか。",
+        "options": [
+          "値段を高くしています。",
+          "カロリーが低いメニューを増やしたり、カロリーを表示したりしています。",
+          "牛丼やスープを作るのをやめました。",
+          "深夜の営業をやめました。"
+        ],
+        "answer": 1,
+        "explanation": "Câu cuối bài: 「カロリーが低いメニューを増やしたり、カロリーを表示したりする店が増えています。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-02",
+    "level": 4,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 2,
+    "title": "第2課：地震（Động đất）",
+    "source": "Giáo trình 中級へ行こう · Bài 2 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/03.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/04.mp3",
+    "paragraphs": [
+      {
+        "jp": "大きい地震が起きたら、どうすればいいのでしょうか。まず、テーブルや机の下に入ってください。次に、ストーブやガスコンロの火がついていたら、消しましょう。揺れがおさまったら、閉まっているドアや窓を開けてください。地震の後で、開けようとしても、開かない場合がありますから。地震が起きた時、もしビルの中にいたら、エレベーターは使わないでください。一番大切なのは慌てないことです。",
+        "vi": "Khi động đất lớn xảy ra, chúng ta nên làm gì? Trước tiên, hãy chui vào dưới bàn ăn hoặc bàn học. Tiếp theo, nếu lò sưởi hay bếp ga đang bật lửa thì hãy tắt đi. Khi sự rung lắc lắng xuống, hãy mở cửa ra vào và cửa sổ đang đóng. Bởi vì có trường hợp sau động đất dù định mở cũng không mở được. Lúc động đất xảy ra, nếu đang ở trong tòa nhà cao tầng, đừng sử dụng thang máy. Điều quan trọng nhất là không vội vã hoảng loạn.",
+        "vocab": [
+          [
+            "揺れ",
+            "ゆれ",
+            "(sự) rung lắc"
+          ],
+          [
+            "おさまる",
+            "おさまる",
+            "lắng xuống, ngừng"
+          ],
+          [
+            "慌てる",
+            "あわてる",
+            "vội vã hấp tấp"
+          ],
+          [
+            "場合",
+            "ばあい",
+            "trường hợp"
+          ]
+        ],
+        "words": [
+          [
+            "一番大切",
+            "いちばんたいせつ",
+            "Quan trọng nhất",
+            "NHẤT BA ĐẠI THIẾT"
+          ],
+          [
+            "大きい",
+            "おおきい",
+            "bự; to lớn; to; lớn",
+            "ĐẠI"
+          ],
+          [
+            "慌てる",
+            "あわてる",
+            "vội vã hấp tấp",
+            "HOẢNG"
+          ],
+          [
+            "使わ",
+            "つかわ",
+            "dụng; sử dụng; dùng; xài (使う)",
+            "SỬ"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "地震",
+            "じしん",
+            "động đất; động đất hoặc cụm 地震ふる; có nghĩa là \"mặt đất rung chuyển\")",
+            "ĐỊA CHẤN"
+          ],
+          [
+            "場合",
+            "ばあい",
+            "trường hợp",
+            "TRÀNG HỢP"
+          ],
+          [
+            "慌て",
+            "あわて",
+            "trở nên lộn xộn; vội vàng; luống cuống; bối rối (慌てる)",
+            "HOẢNG"
+          ],
+          [
+            "揺れ",
+            "ゆれ",
+            "(sự) rung lắc",
+            "DAO"
+          ],
+          [
+            "消し",
+            "けし",
+            "dập; tắt; xóa; loại bỏ; làm biến mất; khử; phi tang; phủ nhận; bác bỏ; giết; trừ khử; thủ tiêu; giảm dần rồi dừng nhạc nền; dọn dẹp đạo cụ; chê bai; kinh hãi; hồn vía lên mây (消す)",
+            "TIÊU"
+          ],
+          [
+            "起き",
+            "おき",
+            "dấy; đứng dậy; ngồi dậy; bình phục; nhen nhúm; thức; thức dậy; dậy; xảy ra (起きる)",
+            "KHỞI"
+          ],
+          [
+            "閉ま",
+            "しま",
+            "Đóng",
+            "BẾ"
+          ],
+          [
+            "開か",
+            "ひらか",
+            "mở; mở cửa (開く)",
+            "KHAI"
+          ],
+          [
+            "開け",
+            "ひらけ",
+            "sự bắt đầu",
+            "KHAI"
+          ],
+          [
+            "下",
+            "した",
+            "dưới; phía dưới; bên dưới; phần dưới; phần sau; tập sau; dưới một trạng thái hoặc điều kiện nhất định; trong một phạm vi nhất định; hướng đi xuống; phần tiếp theo; thứ hạng thấp; mức độ thấp; địa vị xã hội thấp; dưới ảnh hưởng của; dưới sự kiểm soát của; thuộc thẩm quyền của; dưới quyền chỉ huy của; cấp dưới của; hậu tố tôn kính dùng sau chức danh của người có địa vị cao; hậu tố dùng sau tên trong thư từ để thể hiện sự tôn trọng; di chuyển từ trên xuống dưới; đi xuống; rơi; đi từ thủ đô về các tỉnh; đi về phía nam; ban cho; ban tặng; treo lơ lửng; rủ xuống; được treo; giảm; hạ xuống; lùi lại; rút lui; nghỉ hưu; di chuyển về phía nam; gốc; chân; bên cạnh ai đó; cùng với ai đó; gần ai đó; dưới sự cai trị của ai đó; dưới sự giám sát của ai đó; dưới một quy định; trong tình trạng; chỉ với một",
+            "HẠ"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "後",
+            "あと",
+            "sau đó; sau khi; kể từ đó; trong tương lai",
+            "HẬU"
+          ],
+          [
+            "時",
+            "とき",
+            "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+            "THÌ"
+          ],
+          [
+            "机",
+            "つくえ",
+            "bàn; bàn viết; bàn làm việc; bàn học",
+            "KY"
+          ],
+          [
+            "次",
+            "つぎ",
+            "lần sau; sau đây; tiếp đến; tiếp theo; kế tiếp; thứ hai; thứ tự; trình tự; sự nối tiếp; trên đường đi; dọc đường; giữa chặng đường; lần; lượt; hồi; nơi ở; chỗ trọ; nơi dừng chân; vị trí của sao; vị trí thiên thể; hypo-; bậc; cấp",
+            "THỨ"
+          ],
+          [
+            "火",
+            "ひ",
+            "lửa",
+            "HỎA"
+          ],
+          [
+            "窓",
+            "まど",
+            "cửa sổ; khoảng trống giá; khoảng trống",
+            "SONG"
+          ]
+        ]
+      },
+      {
+        "jp": "日本は地震が多い国です。地震が起きても、困らないように、水や食料を用意しておきましょう。そして、背が高い家具が倒れないようにしておいてください。その他、万一の場合を考えて、家族との連絡方法や避難場所を決めておきましょう。",
+        "vi": "Nhật Bản là đất nước có nhiều động đất. Để không gặp rắc rối dù động đất xảy ra, hãy chuẩn bị sẵn nước và lương thực. Và hãy cố định sẵn để những đồ nội thất cao không bị đổ. Ngoài ra, hãy nghĩ tới trường hợp bất trắc để quyết định trước cách thức liên lạc với gia đình và địa điểm sơ tán.",
+        "vocab": [
+          [
+            "食料",
+            "しょくりょう",
+            "lương thực"
+          ],
+          [
+            "万一",
+            "まんいち",
+            "nhỡ có chuyện bất trắc"
+          ],
+          [
+            "連絡方法",
+            "れんらくほうほう",
+            "cách thức liên lạc"
+          ],
+          [
+            "避難場所",
+            "ひなんばしょ",
+            "địa điểm sơ tán"
+          ]
+        ],
+        "words": [
+          [
+            "連絡方法",
+            "れんらくほうほう",
+            "cách thức liên lạc",
+            "LIÊN LẠC PHƯƠNG PHÁP"
+          ],
+          [
+            "避難場所",
+            "ひなんばしょ",
+            "địa điểm sơ tán",
+            "TỊ NAN TRÀNG SỞ"
+          ],
+          [
+            "用意し",
+            "よういし",
+            "dụng ý; trù liệu; xếp sẵn (用意する)",
+            "DỤNG Ý"
+          ],
+          [
+            "万一",
+            "まんいち",
+            "nhỡ có chuyện bất trắc",
+            "VẠN NHẤT"
+          ],
+          [
+            "倒れ",
+            "たおれ",
+            "ngã; đổ; phá sản; lụn bại; hữu danh vô thực; chỉ được cái mã ngoài; không xứng với danh tiếng",
+            "ĐẢO"
+          ],
+          [
+            "困ら",
+            "こまら",
+            "bối rối; khó khăn; lúng túng (困る)",
+            "KHỐN"
+          ],
+          [
+            "地震",
+            "じしん",
+            "động đất; động đất hoặc cụm 地震ふる; có nghĩa là \"mặt đất rung chuyển\")",
+            "ĐỊA CHẤN"
+          ],
+          [
+            "場合",
+            "ばあい",
+            "trường hợp",
+            "TRÀNG HỢP"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "家具",
+            "かぐ",
+            "bàn ghế; đồ gỗ; đồ đạc trong nhà",
+            "GIA CỤ"
+          ],
+          [
+            "家族",
+            "かぞく",
+            "gia đình",
+            "GIA TỘC"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "決め",
+            "きめ",
+            "thỏa thuận; quy định; sự sắp xếp; quyết định",
+            "QUYẾT"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "起き",
+            "おき",
+            "dấy; đứng dậy; ngồi dậy; bình phục; nhen nhúm; thức; thức dậy; dậy; xảy ra (起きる)",
+            "KHỞI"
+          ],
+          [
+            "食料",
+            "しょくりょう",
+            "lương thực",
+            "THỰC LIÊU"
+          ],
+          [
+            "高い",
+            "たかい",
+            "cao; đắt; đắt tiền",
+            "CAO"
+          ],
+          [
+            "他",
+            "た",
+            "ngoài; khác; người khác; lạ; xa lạ; thay lòng đổi dạ; không chung thủy; phù phiếm; nông nổi; dễ thay đổi",
+            "THA"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "水",
+            "みず",
+            "nước; vùng sông nước; sông; hồ; chất lỏng; dịch; hiđrô; thứ tư; đá bào siro; thủy; một trong bốn yếu tố; hành thứ năm trong ngũ hành",
+            "THỦY"
+          ],
+          [
+            "背",
+            "せ",
+            "lưng",
+            "BỐI"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "地震が起きたら、まず何をしなければなりませんか。",
+        "options": [
+          "エレベーターに乗ります。",
+          "テーブルや机の下に入ります。",
+          "外へ走って逃げます。",
+          "家族に電話をかけます。"
+        ],
+        "answer": 1,
+        "explanation": "Câu 2 đoạn 1: 「まず、テーブルや机の下に入ってください。」"
+      },
+      {
+        "q": "揺れがおさまったら、どうしてドアや窓を開けますか。",
+        "options": [
+          "空気を入れかえるためです。",
+          "地震の後で開けようとしても、開かない場合があるからです。",
+          "外の人を呼ぶためです。",
+          "部屋が暑くなるからです。"
+        ],
+        "answer": 1,
+        "explanation": "「地震の後で、開けようとしても、開かない場合がありますから。」"
+      },
+      {
+        "q": "地震が起きた時、一番大切なことは何ですか。",
+        "options": [
+          "食料を買うこと",
+          "荷物を全部持つこと",
+          "慌てないこと",
+          "エレベーターを使うこと"
+        ],
+        "answer": 2,
+        "explanation": "Câu cuối đoạn 1: 「一番大切なのは慌てないことです。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-03",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 3,
+    "title": "第3課：最近の子ども（Trẻ em thời nay）",
+    "source": "Giáo trình 中級へ行こう · Bài 3 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/05.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/06.mp3",
+    "paragraphs": [
+      {
+        "jp": "最近、携帯電話やスマートフォン（スマホ）で話している子どもをよく見ませんか。ある調査によると、小学生の36.6%、中学生の51.9%が携帯電話・スマホを持っているそうです。また、自分専用のパソコンやタブレットを持っている子どもも多いです。町で大人が着るようなブランドの服を着ている子どもを見かけたこともあるでしょう。これらはどれもお金がかかる物ばかりです。",
+        "vi": "Gần đây bạn có hay thấy trẻ em nói chuyện qua điện thoại di động hay smartphone không? Theo một khảo sát, 36,6% học sinh tiểu học và 51,9% học sinh THCS có điện thoại di động hoặc smartphone. Ngoài ra cũng có nhiều trẻ có máy tính cá nhân hay máy tính bảng dùng riêng. Có lẽ ngoài phố bạn cũng từng bắt gặp trẻ em mặc quần áo hàng hiệu giống như người lớn mặc. Tất cả những thứ này toàn là những món đồ tốn tiền.",
+        "vocab": [
+          [
+            "調査",
+            "ちょうさ",
+            "điều tra khảo sát"
+          ],
+          [
+            "専用",
+            "せんよう",
+            "dành riêng"
+          ],
+          [
+            "見かける",
+            "みかける",
+            "bắt gặp, nhìn thấy"
+          ],
+          [
+            "これら",
+            "これら",
+            "những thứ này"
+          ]
+        ],
+        "words": [
+          [
+            "携帯電話",
+            "けいたいでんわ",
+            "máy điện thoại di động; điện thoại di dộng; điện thoại di động; điện thoại cầm tay",
+            "HUỀ ĐỚI ĐIỆN THOẠI"
+          ],
+          [
+            "自分専用",
+            "じぶんせんよう",
+            "Dành riêng cho bản thân",
+            "TỰ PHÂN CHUYÊN DỤNG"
+          ],
+          [
+            "見かける",
+            "みかける",
+            "bắt gặp, nhìn thấy",
+            "KIẾN"
+          ],
+          [
+            "中学生",
+            "ちゅうがくせい",
+            "học sinh trung học",
+            "TRUNG HỌC SANH"
+          ],
+          [
+            "子ども",
+            "こども",
+            "trẻ em; trẻ con",
+            "TỬ"
+          ],
+          [
+            "小学生",
+            "しょうがくせい",
+            "học sinh tiểu học",
+            "TIỂU HỌC SANH"
+          ],
+          [
+            "見かけ",
+            "みかけ",
+            "vẻ bề ngoài; diện mạo",
+            "KIẾN"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "大人",
+            "おとな",
+            "người lớn; người trưởng thành",
+            "ĐẠI NHÂN"
+          ],
+          [
+            "専用",
+            "せんよう",
+            "dành riêng",
+            "CHUYÊN DỤNG"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "着て",
+            "きて",
+            "Cho nên...",
+            "TRƯỚC"
+          ],
+          [
+            "着る",
+            "きる",
+            "mặc; ướm",
+            "TRỨ"
+          ],
+          [
+            "見ま",
+            "みま",
+            "Nhìn",
+            "HIỆN"
+          ],
+          [
+            "話し",
+            "はなし",
+            "nói; lời nói; tán gẫu; câu chuyện; cuộc nói chuyện",
+            "THOẠI"
+          ],
+          [
+            "調査",
+            "ちょうさ",
+            "điều tra khảo sát",
+            "ĐIỀU TRA"
+          ],
+          [
+            "服",
+            "ふく",
+            "quần áo; bộ; đồ tang; tang phục; sự để tang; thời gian để tang",
+            "PHỤC"
+          ],
+          [
+            "物",
+            "もの",
+            "đồ vật; vật",
+            "VẬT"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ],
+          [
+            "金",
+            "かね",
+            "tiền; vàng; kim loại; vật liệu kim loại; tiền tệ; tiền bạc",
+            "KIM"
+          ]
+        ]
+      },
+      {
+        "jp": "どうして子どもたちがこんなに高価な物を持っているのでしょうか。それは、子どもが欲しがる物を親がつい買ってしまうからかもしれません。子どもの数が年々減っていて、王様のような子どもが増えています。",
+        "vi": "Tại sao lũ trẻ lại có những món đồ đắt giá đến vậy? Có lẽ là vì bố mẹ vô tình lỡ mua cho những thứ mà trẻ muốn có. Số lượng trẻ em đang giảm từng năm, và những đứa trẻ được chiều như ông hoàng bà chúa đang tăng lên.",
+        "vocab": [
+          [
+            "高価な",
+            "こうかな",
+            "đắt giá"
+          ],
+          [
+            "親",
+            "おや",
+            "bố mẹ"
+          ],
+          [
+            "年々",
+            "ねんねん",
+            "hằng năm, từng năm"
+          ],
+          [
+            "王様",
+            "おうさま",
+            "vua chúa"
+          ]
+        ],
+        "words": [
+          [
+            "子ども",
+            "こども",
+            "trẻ em; trẻ con",
+            "TỬ"
+          ],
+          [
+            "高価な",
+            "こうかな",
+            "đắt giá",
+            "CAO GIÁ"
+          ],
+          [
+            "増え",
+            "ふえ",
+            "gia tăng; tăng lên (増える)",
+            "TĂNG"
+          ],
+          [
+            "年々",
+            "ねんねん",
+            "hằng năm, từng năm",
+            "NIÊN"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "欲し",
+            "ほっし",
+            "mong muốn; khát khao (欲す)",
+            "DỤC"
+          ],
+          [
+            "減っ",
+            "へっ",
+            "giảm; suy giảm; giảm bớt; bị mòn; bị hao mòn; đói; đói bụng; suy yếu; kiệt sức (減る)",
+            "GIẢM"
+          ],
+          [
+            "王様",
+            "おうさま",
+            "vua chúa",
+            "VƯƠNG DẠNG"
+          ],
+          [
+            "買っ",
+            "かっ",
+            "mua; sắm; chuốc lấy; gặp phải; đánh giá cao (買う)",
+            "MÃI"
+          ],
+          [
+            "高価",
+            "こうか",
+            "đắt; đắt đỏ; đắt giá; giá cao",
+            "CAO GIÁ"
+          ],
+          [
+            "数",
+            "かず",
+            "số; chữ số; thường xuyên; hay; nhiều lần; luôn luôn",
+            "SỔ"
+          ],
+          [
+            "物",
+            "もの",
+            "đồ vật; vật",
+            "VẬT"
+          ],
+          [
+            "親",
+            "おや",
+            "bố mẹ",
+            "THÂN"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "携帯電話を持っている小学生の割合は何%ですか。",
+        "options": [
+          "51.9%です。",
+          "36.6%です。",
+          "15.3%です。",
+          "63.4%です。"
+        ],
+        "answer": 1,
+        "explanation": "Bài nêu: 「小学生の36.6%、中学生の51.9%が携帯電話・スマホを持っているそうです。」"
+      },
+      {
+        "q": "「これら」はどんな物ですか。",
+        "options": [
+          "安いおもちゃや本など",
+          "学校の文房具",
+          "携帯電話、自分専用のパソコン、ブランドの服などお金がかかる物",
+          "自転車やスポーツ用品"
+        ],
+        "answer": 2,
+        "explanation": "Đoạn 1 liệt kê: 携帯電話・スマホ, 自分専用のパソコンやタブレット, ブランドの服."
+      }
+    ]
+  },
+  {
+    "id": "chukyu-04",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 4,
+    "title": "第4課：日本のイメージ（Hình ảnh Nhật Bản）",
+    "source": "Giáo trình 中級へ行こう · Bài 4 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/07.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/08.mp3",
+    "paragraphs": [
+      {
+        "jp": "日本を訪れる外国人旅行者の数は年々多くなってきました。実際に、来日した海外の人は日本にどんなイメージを持ったのでしょうか。",
+        "vi": "Số lượng du khách nước ngoài đến thăm Nhật Bản đã ngày càng đông hơn qua từng năm. Trên thực tế, những người nước ngoài đã đến Nhật mang ấn tượng như thế nào về Nhật Bản?",
+        "vocab": [
+          [
+            "訪れる",
+            "おとずれる",
+            "đến thăm"
+          ],
+          [
+            "旅行者",
+            "りょこうしゃ",
+            "khách du lịch"
+          ],
+          [
+            "実際に",
+            "じっさいに",
+            "trên thực tế"
+          ],
+          [
+            "来日する",
+            "らいにちする",
+            "đến Nhật Bản"
+          ]
+        ],
+        "words": [
+          [
+            "外国人旅行者",
+            "がいこくじんりょこうしゃ",
+            "khách du lịch nước ngoài",
+            "NGOẠI QUỐC NHÂN LỮ HÀNH GIẢ"
+          ],
+          [
+            "来日する",
+            "らいにちする",
+            "đến Nhật Bản",
+            "LAI NHẬT"
+          ],
+          [
+            "実際に",
+            "じっさいに",
+            "trên thực tế",
+            "THỰC TẾ"
+          ],
+          [
+            "旅行者",
+            "りょこうしゃ",
+            "khách du lịch",
+            "LỮ HÀNH GIẢ"
+          ],
+          [
+            "訪れる",
+            "おとずれる",
+            "đến thăm",
+            "PHÓNG"
+          ],
+          [
+            "多く",
+            "おおく",
+            "nhiều; đa số; phần lớn; thường",
+            "ĐA"
+          ],
+          [
+            "実際",
+            "じっさい",
+            "sự thực; thật; thực tế; chân chính",
+            "THỰC TẾ"
+          ],
+          [
+            "年々",
+            "ねんねん",
+            "hằng năm, từng năm",
+            "NIÊN"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "来日",
+            "らいにち",
+            "việc đến nhật bản; ngày hôm sau; một ngày trong tương lai",
+            "LAI NHẬT"
+          ],
+          [
+            "海外",
+            "かいがい",
+            "hải ngoại; nước ngoài",
+            "HẢI NGOẠI"
+          ],
+          [
+            "訪れ",
+            "おとずれ",
+            "sự thăm hỏi; sự viếng thăm; sự đến nơi; sự sắp đến; tin tức",
+            "PHÓNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "数",
+            "かず",
+            "số; chữ số; thường xuyên; hay; nhiều lần; luôn luôn",
+            "SỔ"
+          ]
+        ]
+      },
+      {
+        "jp": "表で見ると、「日本の人々が親切／礼儀正しい」のポイントが高いことがわかります。これに加えて、第4位に「サービスがいい」のような「おもてなしの心」が選ばれています。「食事がおいしい」は「都市の景観が美しい」ほどポイントは高くないです。しかし、「日本の食事（和食）」は2013年にユネスコ無形文化遺産に登録されたので、今後ポイントは高くなっていくでしょう。",
+        "vi": "Nhìn vào bảng biểu ta thấy số điểm cho mục \"Người Nhật thân thiện / lễ phép lịch sự\" rất cao. Thêm vào đó, ở vị trí thứ 4, những yếu tố như \"Dịch vụ tốt\" — tinh thần hiếu khách Omotenashi — cũng được bình chọn. Mục \"Đồ ăn ngon\" có số điểm không cao bằng \"Cảnh quan đô thị đẹp\". Tuy nhiên, do \"Ẩm thực Nhật Bản (Washoku)\" được UNESCO công nhận là Di sản văn hóa phi vật thể vào năm 2013 nên thời gian tới số điểm này có lẽ sẽ tăng lên.",
+        "vocab": [
+          [
+            "礼儀正しい",
+            "れいぎただしい",
+            "lễ phép, lịch sự"
+          ],
+          [
+            "おもてなしの心",
+            "おもてなしのこころ",
+            "lòng hiếu khách"
+          ],
+          [
+            "景観",
+            "けいかん",
+            "cảnh quan"
+          ],
+          [
+            "登録",
+            "とうろく",
+            "đăng ký, công nhận"
+          ]
+        ],
+        "words": [
+          [
+            "おもてなしの心",
+            "おもてなしのこころ",
+            "lòng hiếu khách",
+            "TÂM"
+          ],
+          [
+            "礼儀正しい",
+            "れいぎただしい",
+            "lễ phép, lịch sự",
+            "LỄ NGHI CHÁNH"
+          ],
+          [
+            "礼儀正し",
+            "れいぎただし",
+            "Lịch sự",
+            "LỄ NGHI CHÁNH"
+          ],
+          [
+            "美しい",
+            "うつくしい",
+            "đẹp đẽ; đẹp; ưa nhìn; có duyên; xinh; diễm; mỹ; mỹ lệ; thích mắt; tươi đẹp; xinh đẹp; uyển",
+            "MĨ"
+          ],
+          [
+            "人々",
+            "ひとびと",
+            "con nhỏ; mỗi người; mọi người; con người",
+            "NHÂN"
+          ],
+          [
+            "今後",
+            "こんご",
+            "sau này; trong tương lai; từ nay; từ nay trở đi; từ nay về sau",
+            "KIM HẬU"
+          ],
+          [
+            "加え",
+            "くわえ",
+            "thêm vào; tính cả vào; gia tăng; làm cho tăng lên (加える)",
+            "GIA"
+          ],
+          [
+            "和食",
+            "わしょく",
+            "món ăn nhật; đồ ăn nhật",
+            "HÒA THỰC"
+          ],
+          [
+            "文化",
+            "ぶんか",
+            "văn hóa",
+            "VĂN HÓA"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "景観",
+            "けいかん",
+            "cảnh quan",
+            "CẢNH QUAN"
+          ],
+          [
+            "無形",
+            "むけい",
+            "sự vô hình; vô hình",
+            "VÔ HÌNH"
+          ],
+          [
+            "登録",
+            "とうろく",
+            "đăng ký, công nhận",
+            "ĐĂNG LỤC"
+          ],
+          [
+            "見る",
+            "みる",
+            "coi; ngắm; ngó; nhìn thấy; nhìn xem; nhìn; xem; nhòm; nhòm ngó",
+            "KIẾN"
+          ],
+          [
+            "親切",
+            "しんせつ",
+            "sự tốt bụng; sự tử tế; tốt bụng; tử tế",
+            "THÂN THIẾT"
+          ],
+          [
+            "選ば",
+            "えらば",
+            "bầu; chấm; chọn; chọn lựa; kén; lựa chọn; tuyển; tuyển chọn (選ぶ)",
+            "TUYỂN"
+          ],
+          [
+            "遺産",
+            "いさん",
+            "tài sản để lại; di sản",
+            "DI SẢN"
+          ],
+          [
+            "都市",
+            "とし",
+            "đô thị; thành; thành phố; thành thị; thị thành",
+            "ĐÔ THỊ"
+          ],
+          [
+            "食事",
+            "しょくじ",
+            "bữa ăn; bữa cơm; buổi ăn; dùng bữa",
+            "THỰC SỰ"
+          ],
+          [
+            "高い",
+            "たかい",
+            "cao; đắt; đắt tiền",
+            "CAO"
+          ],
+          [
+            "高く",
+            "たかく",
+            "cao; đắt; đắt tiền (高い)",
+            "CAO"
+          ],
+          [
+            "位",
+            "い",
+            "khoảng; chừng; cỡ độ; xấp xỉ; mức; vị trí; chỗ đặt; tình thế; địa vị; vị thế xã hội; chức vụ; đơn vị; tiêu chuẩn đo lường; thứ hạng; cấp bậc; trình độ; tước hiệu; danh hiệu tôn xưng; đơn vị đếm thứ hạng hoặc cấp bậc; đơn vị đếm linh hồn người đã khuất; hàng chữ số; vị trí thập phân; phẩm cấp trong triều đình",
+            "VỊ"
+          ],
+          [
+            "年",
+            "とし",
+            "năm; tuổi; năm tháng",
+            "NIÊN"
+          ],
+          [
+            "心",
+            "こころ",
+            "trái tim",
+            "TÂM"
+          ],
+          [
+            "第",
+            "だい",
+            "thứ",
+            "ĐỆ"
+          ],
+          [
+            "表",
+            "ひょう",
+            "bề phải; biểu; bảng; bảng biểu; phiếu",
+            "BIỂU"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "日本のいいイメージで一番ポイントが高いのは何ですか。",
+        "options": [
+          "「都市の景観が美しい」",
+          "「食事がおいしい」",
+          "「日本の人々が親切／礼儀正しい」",
+          "「サービスがいい」"
+        ],
+        "answer": 2,
+        "explanation": "Trong bảng & bài đọc: mục 「日本の人々が親切／礼儀正しい」 đứng vị trí 1 với 37.8%."
+      },
+      {
+        "q": "「食事がおいしい」と「サービスがいい」とどちらがポイントが高いですか。",
+        "options": [
+          "「サービスがいい」のほうが高い",
+          "「食事がおいしい」のほうが高い",
+          "同じぐらいです",
+          "どちらも最下位です"
+        ],
+        "answer": 1,
+        "explanation": "Mục 「食事がおいしい」 đứng hạng 3 (18.3%), cao hơn hạng 4 「サービスがいい」 (17.7%)."
+      },
+      {
+        "q": "いつ「日本の食事（和食）」はユネスコ無形文化遺産に登録されましたか。",
+        "options": [
+          "2006年",
+          "2007年",
+          "2013年",
+          "2020年"
+        ],
+        "answer": 2,
+        "explanation": "Câu cuối bài: 「『日本の食事（和食）』は2013年にユネスコ無形文化遺産に登録されたので...」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-05",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 5,
+    "title": "第5課：睡眠（Giấc ngủ）",
+    "source": "Giáo trình 中級へ行こう · Bài 5 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/09.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/10.mp3",
+    "paragraphs": [
+      {
+        "jp": "あなたは毎晩よく寝られますか。夜なかなか寝られなかったり、夜中に何回も目が覚めたりして、医者に相談する人が多くなっています。また、夜遅くまで活動することや、通勤時間の長さなどが原因で睡眠時間が減少し、体の不調を訴える人も増えています。",
+        "vi": "Mỗi tối bạn có ngủ ngon được không? Những người tối mãi không ngủ được hoặc nửa đêm tỉnh giấc nhiều lần phải đi hỏi ý kiến bác sĩ đang ngày một nhiều hơn. Ngoài ra, do hoạt động đến khuya hay thời gian đi làm kéo dài mà thời gian ngủ giảm đi, số người kêu mệt mỏi trong cơ thể cũng đang tăng lên.",
+        "vocab": [
+          [
+            "夜中に",
+            "よなかに",
+            "vào nửa đêm"
+          ],
+          [
+            "目が覚める",
+            "めがさめる",
+            "tỉnh giấc"
+          ],
+          [
+            "減少する",
+            "げんしょうする",
+            "giảm đi"
+          ],
+          [
+            "不調を訴える",
+            "ふちょうをうったえる",
+            "than phiền cơ thể mệt mỏi"
+          ]
+        ],
+        "words": [
+          [
+            "不調を訴える",
+            "ふちょうをうったえる",
+            "than phiền cơ thể mệt mỏi",
+            "BẤT ĐIỀU TỐ"
+          ],
+          [
+            "目が覚める",
+            "めがさめる",
+            "tỉnh giấc",
+            "MỤC GIÁC"
+          ],
+          [
+            "減少する",
+            "げんしょうする",
+            "giảm đi",
+            "GIẢM THIỂU"
+          ],
+          [
+            "睡眠時間",
+            "すいみんじかん",
+            "cung cấp chỗ ngủ cho những giờ; những giờ giấc ngủ",
+            "THỤY MIÊN THÌ GIAN"
+          ],
+          [
+            "通勤時間",
+            "つうきんじかん",
+            "thời gian đi làm",
+            "THÔNG CẦN THÌ GIAN"
+          ],
+          [
+            "夜中に",
+            "よなかに",
+            "vào nửa đêm",
+            "DẠ TRUNG"
+          ],
+          [
+            "夜遅く",
+            "よるおそく",
+            "muộn vào ban đêm; vào một giờ muộn",
+            "DẠ TRÌ"
+          ],
+          [
+            "不調",
+            "ふちょう",
+            "vận đen; tình trạng cơ thể",
+            "BẤT ĐIỀU"
+          ],
+          [
+            "何回",
+            "なんかい",
+            "bao lần",
+            "HÀ HỒI"
+          ],
+          [
+            "医者",
+            "いしゃ",
+            "bác sĩ; đại phu; thầy lang; thầy thuốc; y",
+            "Y GIẢ"
+          ],
+          [
+            "原因",
+            "げんいん",
+            "căn do; căn duyên; ngọn nguồn; nguyên do; nguyên nhân",
+            "NGUYÊN NHÂN"
+          ],
+          [
+            "増え",
+            "ふえ",
+            "gia tăng; tăng lên (増える)",
+            "TĂNG"
+          ],
+          [
+            "多く",
+            "おおく",
+            "nhiều; đa số; phần lớn; thường",
+            "ĐA"
+          ],
+          [
+            "夜中",
+            "よなか",
+            "nửa đêm; ban đêm; suốt đêm; cả đêm; thâu đêm; suốt cả đêm",
+            "DẠ TRUNG"
+          ],
+          [
+            "寝ら",
+            "ねら",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ (寝る)",
+            "TẨM"
+          ],
+          [
+            "毎晩",
+            "まいばん",
+            "đêm đêm; hàng tối; tối tối",
+            "MỖI VÃN"
+          ],
+          [
+            "活動",
+            "かつどう",
+            "hoạt động; sự hoạt động",
+            "HOẠT ĐỘNG"
+          ],
+          [
+            "減少",
+            "げんしょう",
+            "hao; sự giảm; suy giảm; giảm bớt; giảm",
+            "GIẢM THIỂU"
+          ],
+          [
+            "相談",
+            "そうだん",
+            "cuộc trao đổi; sự trao đổi",
+            "TƯƠNG ĐÀM"
+          ],
+          [
+            "覚め",
+            "さめ",
+            "tỉnh dậy; tỉnh giấc (覚める)",
+            "GIÁC"
+          ],
+          [
+            "訴え",
+            "うったえ",
+            "việc kiện cáo; việc tố tụng; đơn kiện; yêu cầu; khiếu nại; kiện tụng; khiếu kiện",
+            "TỐ"
+          ],
+          [
+            "長さ",
+            "ながさ",
+            "bề dài; dọc; chiều dài",
+            "TRƯỜNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "夜",
+            "よる",
+            "ban tối; buổi tối; đêm; tối; ban đêm",
+            "DẠ"
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
+          ]
+        ]
+      },
+      {
+        "jp": "人は疲れれば、自然に眠くなるものです。よく寝られる一番いい方法は、昼間十分に体を動かすことです。ある医者の話によると、睡眠時間は5時間で十分だということです。ですから、睡眠に関して神経質になりすぎないほうがいいでしょう。",
+        "vi": "Con người hễ mệt thì tự nhiên sẽ buồn ngủ thôi. Cách tốt nhất để ngủ ngon là vận động cơ thể đầy đủ vào ban ngày. Theo lời một bác sĩ thì thời gian ngủ 5 tiếng là đã đủ rồi. Vì vậy, về vấn đề giấc ngủ có lẽ không nên quá lo lắng bận tâm quá mức.",
+        "vocab": [
+          [
+            "自然に",
+            "しぜんに",
+            "tự nhiên"
+          ],
+          [
+            "昼間",
+            "ひるま",
+            "ban ngày"
+          ],
+          [
+            "十分に",
+            "じゅうぶんに",
+            "đầy đủ"
+          ],
+          [
+            "神経質な",
+            "しんけいしつな",
+            "bận tâm, lo lắng quá mức"
+          ]
+        ],
+        "words": [
+          [
+            "睡眠時間",
+            "すいみんじかん",
+            "cung cấp chỗ ngủ cho những giờ; những giờ giấc ngủ",
+            "THỤY MIÊN THÌ GIAN"
+          ],
+          [
+            "神経質な",
+            "しんけいしつな",
+            "bận tâm, lo lắng quá mức",
+            "THẦN KINH CHẤT"
+          ],
+          [
+            "十分に",
+            "じゅうぶんに",
+            "đầy đủ",
+            "THẬP PHÂN"
+          ],
+          [
+            "神経質",
+            "しんけいしつ",
+            "tính chất của dây thần kinh nhạy cảm với các kích thích và thay đổi; sự nhạy cảm với cả những điều nhỏ nhặt; lo lắng; căng thẳng; rất nhạy cảm",
+            "THẦN KINH CHẤT"
+          ],
+          [
+            "自然に",
+            "しぜんに",
+            "tự nhiên",
+            "TỰ NHIÊN"
+          ],
+          [
+            "一番",
+            "いちばん",
+            "nhất; tốt nhất; số một; đầu tiên; number one; một cặp; một đôi",
+            "NHẤT PHIÊN"
+          ],
+          [
+            "動か",
+            "うごか",
+            "bị lay động; di chuyển; chạy; hoạt động; nhúc nhích; biến đổi; chuyển động; thay đổi (動く)",
+            "ĐỘNG"
+          ],
+          [
+            "医者",
+            "いしゃ",
+            "bác sĩ; đại phu; thầy lang; thầy thuốc; y",
+            "Y GIẢ"
+          ],
+          [
+            "十分",
+            "じゅうぶん",
+            "đủ, vẫn còn tốt",
+            "THẬP PHẦN"
+          ],
+          [
+            "寝ら",
+            "ねら",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ (寝る)",
+            "TẨM"
+          ],
+          [
+            "方法",
+            "ほうほう",
+            "phương pháp",
+            "PHƯƠNG PHÁP"
+          ],
+          [
+            "昼間",
+            "ひるま",
+            "ban ngày",
+            "TRÚ GIAN"
+          ],
+          [
+            "時間",
+            "じかん",
+            "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+            "THÌ GIAN"
+          ],
+          [
+            "疲れ",
+            "つかれ",
+            "sự mệt mỏi; sự uể oải; sự kiệt sức",
+            "BÌ"
+          ],
+          [
+            "眠く",
+            "ねむく",
+            "buồn ngủ (眠い)",
+            "MIÊN"
+          ],
+          [
+            "睡眠",
+            "すいみん",
+            "việc ngủ; giấc ngủ",
+            "THỤY MIÊN"
+          ],
+          [
+            "自然",
+            "しぜん",
+            "giới tự nhiên; thiên nhiên; tự nhiên",
+            "TỰ NHIÊN"
+          ],
+          [
+            "関し",
+            "かんし",
+            "liên quan đến; về (関する)",
+            "QUAN"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "人々が医者に相談することは何ですか。",
+        "options": [
+          "昼間眠くなることです。",
+          "夜なかなか寝られなかったり、夜中に何回も目が覚めたりすることです。",
+          "通勤時間が長いことです。",
+          "食事が食べられないことです。"
+        ],
+        "answer": 1,
+        "explanation": "「夜なかなか寝られなかったり、夜中に何回も目が覚めたりして、医者に相談する人が多くなっています。」"
+      },
+      {
+        "q": "睡眠時間が減少している原因は何ですか。",
+        "options": [
+          "昼間運動しすぎること",
+          "夜遅くまで活動することや、通勤時間の長さなど",
+          "夜中に水を飲むこと",
+          "朝早く起きすぎること"
+        ],
+        "answer": 1,
+        "explanation": "「夜遅くまで活動することや、通勤時間の長さなどが原因で睡眠時間が減少し...」"
+      },
+      {
+        "q": "よく寝られる一番いい方法はどんなことですか。",
+        "options": [
+          "5時間以上絶対寝ないこと",
+          "毎日医者に薬をもらうこと",
+          "昼間十分に体を動かすこと",
+          "夜遅くまでテレビを見ること"
+        ],
+        "answer": 2,
+        "explanation": "「よく寝られる一番いい方法は、昼間十分に体を動かすことです。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-06",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 6,
+    "title": "第6課：日本人の発明（Phát minh của người Nhật）",
+    "source": "Giáo trình 中級へ行こう · Bài 6 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/11.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/12.mp3",
+    "paragraphs": [
+      {
+        "jp": "世界で広く使われている物の中に、日本人が発明した物がたくさんある。病院の胃カメラ、毎日の生活でよく使われている乾電池、シャープペンシル、サインペン、せんすなどだ。インスタントコーヒーもその一つだ。",
+        "vi": "Trong những vật được sử dụng rộng rãi trên thế giới có rất nhiều món do người Nhật phát minh. Ví dụ như máy nội soi dạ dày ở bệnh viện, pin khô thường dùng hằng ngày, bút chì bấm, bút dạ, quạt nan gấp... Cà phê hòa tan cũng là một trong số đó.",
+        "vocab": [
+          [
+            "胃カメラ",
+            "いカメラ",
+            "máy nội soi dạ dày"
+          ],
+          [
+            "乾電池",
+            "かんでんち",
+            "pin khô"
+          ],
+          [
+            "せんす",
+            "せんす",
+            "quạt nan gấp"
+          ],
+          [
+            "インスタントコーヒー",
+            "インスタントコーヒー",
+            "cà phê hòa tan"
+          ]
+        ],
+        "words": [
+          [
+            "物がたく",
+            "ものがたく",
+            "Nhiều đồ đạc",
+            "VẬT"
+          ],
+          [
+            "胃カメラ",
+            "いカメラ",
+            "máy nội soi dạ dày",
+            "VỊ"
+          ],
+          [
+            "乾電池",
+            "かんでんち",
+            "pin khô",
+            "KIỀN ĐIỆN TRÌ"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "世界",
+            "せかい",
+            "thế giới; xã hội; vũ trụ; giới",
+            "THẾ GIỚI"
+          ],
+          [
+            "使わ",
+            "つかわ",
+            "dụng; sử dụng; dùng; xài (使う)",
+            "SỬ"
+          ],
+          [
+            "広く",
+            "ひろく",
+            "nhiều; xa; rộng rãi; khắp nơi; bao quát; cùng khắp",
+            "QUẢNG"
+          ],
+          [
+            "毎日",
+            "まいにち",
+            "hàng ngày; mỗi ngày; mọi ngày; ngày ngày; thường ngày",
+            "MỖI NHẬT"
+          ],
+          [
+            "生活",
+            "せいかつ",
+            "sinh hoạt, cuộc sống",
+            "SANH HOẠT"
+          ],
+          [
+            "病院",
+            "びょういん",
+            "nhà thương; sinh bệnh; bệnh viện",
+            "BỆNH VIỆN"
+          ],
+          [
+            "発明",
+            "はつめい",
+            "sự phát minh",
+            "PHÁT MINH"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "物",
+            "もの",
+            "đồ vật; vật",
+            "VẬT"
+          ],
+          [
+            "胃",
+            "い",
+            "dạ dày; bao tử; vị thổ trĩ; sao vị",
+            "VỊ"
+          ]
+        ]
+      },
+      {
+        "jp": "インスタントコーヒーは1899年に日本人によって発明された。当時、コーヒーは日本ではあまり飲まれていなかったため、ほとんど注目されなかった。発明した日本人は特許を取らなかった。しかし、少し後で別の方法でインスタントコーヒーを作ったアメリカ人が特許を取った。そのため、この日本人の名前は忘れられたままになってしまった。",
+        "vi": "Cà phê hòa tan được phát minh bởi một người Nhật vào năm 1899. Khi đó, vì cà phê chưa được uống nhiều tại Nhật Bản nên hầu như chẳng được chú ý tới. Người Nhật phát minh ra nó đã không đăng ký bản quyền sáng chế. Nhưng một thời gian ngắn sau đó, một người Mỹ tạo ra cà phê hòa tan bằng phương pháp khác đã lấy bằng sáng chế. Vì vậy, tên tuổi của người Nhật này cứ mãi bị quên lãng.",
+        "vocab": [
+          [
+            "当時",
+            "とうじ",
+            "khi đó"
+          ],
+          [
+            "注目する",
+            "ちゅうもくする",
+            "chú ý, gây chú ý"
+          ],
+          [
+            "特許を取る",
+            "とっきょをとる",
+            "đăng ký bằng sáng chế"
+          ],
+          [
+            "別の",
+            "べつの",
+            "khác"
+          ]
+        ],
+        "words": [
+          [
+            "特許を取る",
+            "とっきょをとる",
+            "đăng ký bằng sáng chế",
+            "ĐẶC HỨA THỦ"
+          ],
+          [
+            "注目する",
+            "ちゅうもくする",
+            "chú ý, gây chú ý",
+            "CHÚ MỤC"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "作っ",
+            "つくっ",
+            "chế biến; làm; tạo; sáng tác; xây dựng; nấu (作る)",
+            "TÁC"
+          ],
+          [
+            "別の",
+            "べつの",
+            "khác",
+            "BIỆT"
+          ],
+          [
+            "取っ",
+            "とっ",
+            "tiền tố nhấn mạnh",
+            "THỦ"
+          ],
+          [
+            "取ら",
+            "とら",
+            "bắt giữ; biểu thị; biểu quyết; cầm lấy; cầm; nắm; giữ; kéo; cao tuổi; chiếm; dùng; sử dụng; hao phí; đảm nhiệm; đo; hấp thu; ăn; kiểm tra; ký lục; sao chép; lấy; lấy được; thu được; lí giải; giải thích; mua; thoát khỏi; bỏ ra; thu hồi; thu thập; thu; tiến hành; chơi; trộm cắp; trừ; giải trừ; ước tính; xem; đếm; bắt; xử lý (取る)",
+            "THỦ"
+          ],
+          [
+            "名前",
+            "なまえ",
+            "tên; họ tên",
+            "DANH TIỀN"
+          ],
+          [
+            "少し",
+            "すこし",
+            "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+            "THIỂU"
+          ],
+          [
+            "当時",
+            "とうじ",
+            "khi đó",
+            "ĐƯƠNG THÌ"
+          ],
+          [
+            "忘れ",
+            "わすれ",
+            "bỏ lại; đãng; quên bẵng; quên; lãng quên; vong (忘れる)",
+            "VONG"
+          ],
+          [
+            "方法",
+            "ほうほう",
+            "phương pháp",
+            "PHƯƠNG PHÁP"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "注目",
+            "ちゅうもく",
+            "sự chú ý",
+            "CHÚ MỤC"
+          ],
+          [
+            "特許",
+            "とっきょ",
+            "sự cho phép đặc biệt; bằng sáng chế",
+            "ĐẶC HỨA"
+          ],
+          [
+            "発明",
+            "はつめい",
+            "sự phát minh",
+            "PHÁT MINH"
+          ],
+          [
+            "飲ま",
+            "のま",
+            "húp; uống (飲む)",
+            "ẨM"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "別",
+            "べつ",
+            "đặc biệt; trừ ra; ngoài ra; phân biệt; riêng biệt; riêng; sự đặc biệt; sự phân biệt; sự khác biệt; sự khác nhau; khác; cái khác; ngoại lệ; phi thường; wake; tước hiệu cha truyền con nối cổ xưa dành cho hậu duệ hoàng gia cai trị các vùng địa phương",
+            "BIỆT"
+          ],
+          [
+            "年",
+            "とし",
+            "năm; tuổi; năm tháng",
+            "NIÊN"
+          ],
+          [
+            "後",
+            "あと",
+            "sau đó; sau khi; kể từ đó; trong tương lai",
+            "HẬU"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "日本人はどんな物を発明しましたか。",
+        "options": [
+          "テレビや冷蔵庫",
+          "胃カメラ、乾電池、シャープペンシル、サインペン、せんす、インスタントコーヒーなど",
+          "飛行機や自動車",
+          "時計やカメラだけ"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 1: 「胃カメラ...乾電池、シャープペンシル、サインペン、せんすなどだ。インスタントコーヒーもその一つだ。」"
+      },
+      {
+        "q": "インスタントコーヒーが発明されたのはいつですか。",
+        "options": [
+          "1989年",
+          "1889年",
+          "1899年",
+          "1999年"
+        ],
+        "answer": 2,
+        "explanation": "Đoạn 2: 「インスタントコーヒーは1899年に日本人によって発明された。」"
+      },
+      {
+        "q": "インスタントコーヒーの特許を取ったのは日本人ですか、アメリカ人ですか。",
+        "options": [
+          "日本人です。",
+          "アメリカ人です。",
+          "両方とも取りました。",
+          "だれも取りませんでした。"
+        ],
+        "answer": 1,
+        "explanation": "「別の方法でインスタントコーヒーを作ったアメリカ人が特許を取った。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-07",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 7,
+    "title": "第7課：リサイクルとフリーマーケット（Tái chế và Chợ đồ cũ）",
+    "source": "Giáo trình 中級へ行こう · Bài 7 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/13.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/14.mp3",
+    "paragraphs": [
+      {
+        "jp": "最近、地球の温暖化や砂漠化が問題になってきている。それで、自分たちが住む地球を守ろうという意識が生まれている。",
+        "vi": "Gần đây, hiện tượng Trái Đất ấm lên và sa mạc hóa đang trở thành vấn đề. Do đó, ý thức cùng nhau bảo vệ Trái Đất nơi chúng ta sinh sống đang được nhen nhóm.",
+        "vocab": [
+          [
+            "温暖化",
+            "おんだんか",
+            "sự nóng lên toàn cầu"
+          ],
+          [
+            "砂漠化",
+            "さばくか",
+            "sự sa mạc hóa"
+          ],
+          [
+            "守る",
+            "まもる",
+            "bảo vệ"
+          ],
+          [
+            "意識",
+            "いしき",
+            "ý thức"
+          ]
+        ],
+        "words": [
+          [
+            "自分たち",
+            "じぶんたち",
+            "Bản thân họ",
+            "TỰ PHÂN"
+          ],
+          [
+            "温暖化",
+            "おんだんか",
+            "sự nóng lên toàn cầu",
+            "ÔN NOÃN HÓA"
+          ],
+          [
+            "生まれ",
+            "うまれ",
+            "sự ra đời; nơi sinh; nơi ra đời",
+            "SANH"
+          ],
+          [
+            "砂漠化",
+            "さばくか",
+            "sự sa mạc hóa",
+            "SA MẠC HÓA"
+          ],
+          [
+            "住む",
+            "すむ",
+            "có thể giải quyết; có thể đối phó được; cư trú; ở; trả nợ; trả xong; trú; trú ngụ",
+            "TRỤ"
+          ],
+          [
+            "問題",
+            "もんだい",
+            "vấn đề",
+            "VẤN ĐỀ"
+          ],
+          [
+            "地球",
+            "ちきゅう",
+            "quả đất; trái đất; địa cầu",
+            "ĐỊA CẦU"
+          ],
+          [
+            "守る",
+            "まもる",
+            "bảo vệ",
+            "THỦ"
+          ],
+          [
+            "守ろ",
+            "まもろ",
+            "Hãy bảo vệ",
+            "THÚ"
+          ],
+          [
+            "意識",
+            "いしき",
+            "ý thức",
+            "Ý THỨC"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "砂漠",
+            "さばく",
+            "sa mạc",
+            "SA MẠC"
+          ],
+          [
+            "化",
+            "か",
+            "hành động làm một cái gì đó",
+            "HÓA"
+          ]
+        ]
+      },
+      {
+        "jp": "以前は古くなったり、壊れたりした物はすぐ捨てたものだ。しかし、今はできるだけ大切に使おうという考えに変わってきた。このようなリサイクル運動の一つとしてフリーマーケットがある。使わなくなった物や着られなくなった服を公園などで売るのだ。古いといっても、まだ十分使える物ばかりだ。店で買うよりここで買うほうがずっと安く買える。それで、物を買うなら、フリーマーケットと決めている人もいる。市町村でも「リサイクルできるし、安く買えるし、ぜひ利用して欲しい」と呼びかけている。",
+        "vi": "Trước đây những đồ bị cũ hay hỏng là người ta hay vứt đi ngay. Thế nhưng ngày nay suy nghĩ đã chuyển sang cố gắng sử dụng trân trọng hết mức có thể. Một trong những phong trào tái chế đó là chợ đồ cũ (Flea Market). Người ta bán những đồ không dùng nữa hoặc quần áo không mặc nữa tại công viên... Tuy nói là cũ nhưng toàn là những đồ vẫn còn dùng tốt chán. So với mua ở cửa hàng thì mua ở đây rẻ hơn nhiều. Chính quyền địa phương cũng kêu gọi \"Vì vừa tái chế được, vừa mua được rẻ nên rất mong mọi người hãy sử dụng\".",
+        "vocab": [
+          [
+            "以前",
+            "いぜん",
+            "trước đây"
+          ],
+          [
+            "〜といっても",
+            "といっても",
+            "tuy nói là ~ nhưng"
+          ],
+          [
+            "十分",
+            "じゅうぶん",
+            "đủ, vẫn còn tốt"
+          ],
+          [
+            "市町村",
+            "しちょうそん",
+            "đô thị, thị trấn và làng"
+          ]
+        ],
+        "words": [
+          [
+            "市町村",
+            "しちょうそん",
+            "đô thị, thị trấn và làng",
+            "THỊ ĐINH THÔN"
+          ],
+          [
+            "欲しい",
+            "ほしい",
+            "muốn; mong muốn",
+            "DỤC"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "以前",
+            "いぜん",
+            "trước đây",
+            "DĨ TIỀN"
+          ],
+          [
+            "使え",
+            "つかえ",
+            "để hữu ích; để có ích (使える)",
+            "SỬ"
+          ],
+          [
+            "使お",
+            "つかお",
+            "Dùng đi.",
+            "SỨ"
+          ],
+          [
+            "使わ",
+            "つかわ",
+            "dụng; sử dụng; dùng; xài (使う)",
+            "SỬ"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "利用",
+            "りよう",
+            "sự lợi dụng; sự áp dụng; sự sử dụng",
+            "LỢI DỤNG"
+          ],
+          [
+            "十分",
+            "じゅうぶん",
+            "đủ, vẫn còn tốt",
+            "THẬP PHẦN"
+          ],
+          [
+            "古い",
+            "ふるい",
+            "cũ",
+            "CỔ"
+          ],
+          [
+            "古く",
+            "ふるく",
+            "xem ancient; trước đây; thuở xưa",
+            "CỔ"
+          ],
+          [
+            "呼び",
+            "よび",
+            "gọi là; được gọi là; khuôn khổ ấn định; kích thước danh định",
+            "HÔ"
+          ],
+          [
+            "壊れ",
+            "こわれ",
+            "đổ vỡ; hỏng; bị hỏng; bị phá huỷ; nứt nẻ; vỡ (壊れる)",
+            "HOẠI"
+          ],
+          [
+            "売る",
+            "うる",
+            "bán; bán hàng",
+            "MẠI"
+          ],
+          [
+            "変わ",
+            "かわ",
+            "Thay đổi",
+            "BIẾN"
+          ],
+          [
+            "大切",
+            "たいせつ",
+            "quan trọng; sự quan trọng; thái miếng to; lát thịt hoặc cá lớn; màn cuối của buổi biểu diễn trong ngày; hồi cuối của vở kịch thứ hai; vở kịch ngắn một hồi sau vở kịch chính; tiết mục cuối của buổi diễn; màn trình diễn tập thể của toàn bộ dàn diễn viên; kết thúc của một sự việc; phần kết; đoạn kết",
+            "ĐẠI THIẾT"
+          ],
+          [
+            "安く",
+            "やすく",
+            "rẻ",
+            "AN"
+          ],
+          [
+            "捨て",
+            "すて",
+            "bỏ; từ bỏ; chẳng đoái hoài; liệng; ném; ném đi; vất; vứt; vứt bỏ (捨てる)",
+            "XÁ"
+          ],
+          [
+            "決め",
+            "きめ",
+            "thỏa thuận; quy định; sự sắp xếp; quyết định",
+            "QUYẾT"
+          ],
+          [
+            "着ら",
+            "きら",
+            "mặc; ướm (着る)",
+            "TRỨ"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "買う",
+            "かう",
+            "mua; sắm; chuốc lấy; gặp phải; đánh giá cao",
+            "MÃI"
+          ],
+          [
+            "買え",
+            "かえ",
+            "Mua đi",
+            "MÃI"
+          ],
+          [
+            "運動",
+            "うんどう",
+            "vận động",
+            "VẬN ĐỘNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "服",
+            "ふく",
+            "quần áo; bộ; đồ tang; tang phục; sự để tang; thời gian để tang",
+            "PHỤC"
+          ],
+          [
+            "物",
+            "もの",
+            "đồ vật; vật",
+            "VẬT"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "最近、どういう意識が生まれていますか。",
+        "options": [
+          "物をすぐ捨てようという意識",
+          "自分たちが住む地球を守ろうという意識",
+          "新しい物だけ買おうという意識",
+          "車を増やそうという意識"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 1: 「自分たちが住む地球を守ろうという意識が生まれている。」"
+      },
+      {
+        "q": "フリーマーケットのいいところは、どんなところですか。",
+        "options": [
+          "店で買うより高く売れるところ",
+          "新品しか売っていないところ",
+          "まだ十分使える物が店で買うよりずっと安く買えるところ",
+          "毎日夜中に開かれているところ"
+        ],
+        "answer": 2,
+        "explanation": "「まだ十分使える物ばかりだ。店で買うよりここで買うほうがずっと安く買える。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-08",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 8,
+    "title": "第8課：あいづち（Cách đáp lời (Aizuchi)）",
+    "source": "Giáo trình 中級へ行こう · Bài 8 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/15.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/16.mp3",
+    "paragraphs": [
+      {
+        "jp": "日本人は相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」とか「うん、うん」と言ったりする。これをあいづちという。これは「あなたの話を聞いていますよ。」ということを伝える合図だ。だから、うなずいたり、「うん、うん」と言っていても、相手の話に100%賛成しているわけではない。",
+        "vi": "Người Nhật trong lúc nghe đối phương nói chuyện thường gật đầu nhiều lần hoặc nói \"Vâng, vâng\" hay \"Ừ, ừ\". Việc này gọi là Aizuchi (nói đệm). Đây là tín hiệu truyền đạt rằng \"Tôi đang lắng nghe câu chuyện của bạn đấy\". Vì thế, dù có gật đầu hay nói \"ừ, ừ\" đi nữa, không có nghĩa là hoàn toàn tán thành 100% ý kiến đối phương.",
+        "vocab": [
+          [
+            "うなずく",
+            "うなずく",
+            "gật đầu"
+          ],
+          [
+            "あいづち",
+            "あいづち",
+            "lời đáp đệm (Aizuchi)"
+          ],
+          [
+            "合図",
+            "あいず",
+            "tín hiệu, dấu hiệu"
+          ],
+          [
+            "賛成する",
+            "さんせいする",
+            "tán thành"
+          ]
+        ],
+        "words": [
+          [
+            "賛成する",
+            "さんせいする",
+            "tán thành",
+            "TÁN THÀNH"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "言った",
+            "いった",
+            "- Ông đã nói \"Bí quyết của hạnh phúc là... và sau đó mặt trời lên ông bị đông cứng.",
+            "NGÔN"
+          ],
+          [
+            "言って",
+            "いって",
+            "Anh có thể...",
+            "NGÔN"
+          ],
+          [
+            "伝え",
+            "つたえ",
+            "sự truyền đạt; sự truyền miệng; truyền thuyết; truyền thống",
+            "TRUYỀN"
+          ],
+          [
+            "何回",
+            "なんかい",
+            "bao lần",
+            "HÀ HỒI"
+          ],
+          [
+            "合図",
+            "あいず",
+            "tín hiệu, dấu hiệu",
+            "HỢP ĐỒ"
+          ],
+          [
+            "相手",
+            "あいて",
+            "đối phương; người đối diện",
+            "TƯƠNG THỦ"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "賛成",
+            "さんせい",
+            "sự tán thành",
+            "TÁN THÀNH"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
+          ]
+        ]
+      },
+      {
+        "jp": "日本人は相手からあいづちがないと、不安になって、聞いているかどうか、つい確かめたくなる。また、聞いていないと誤解してしまうことがある。しかし、相手が話し終わるまで、黙って話を聞く国もある。外国人の中には、自分が話しているあいだに、日本人があいづちを打つと、話を止められたと誤解する人もいる。国によって話の聞き方はさまざまだ。",
+        "vi": "Người Nhật nếu không nhận được Aizuchi từ đối phương sẽ thấy bất an, và lỡ muốn kiểm tra lại xem người kia có đang nghe không. Cũng có khi hiểu nhầm rằng đối phương không lắng nghe. Tuy nhiên, có những nước giữ im lặng lắng nghe cho tới khi đối phương nói xong. Trong số người nước ngoài cũng có người hiểu nhầm là bị cắt lời khi thấy người Nhật nói đệm Aizuchi giữa lúc mình đang nói. Cách lắng nghe câu chuyện tùy theo từng nước mà rất đa dạng.",
+        "vocab": [
+          [
+            "不安な",
+            "ふあんな",
+            "bất an"
+          ],
+          [
+            "確かめる",
+            "たしかめる",
+            "xác nhận lại"
+          ],
+          [
+            "誤解する",
+            "ごかいする",
+            "hiểu nhầm"
+          ],
+          [
+            "黙る",
+            "だまる",
+            "im lặng"
+          ]
+        ],
+        "words": [
+          [
+            "確かめる",
+            "たしかめる",
+            "xác nhận lại",
+            "XÁC"
+          ],
+          [
+            "誤解する",
+            "ごかいする",
+            "hiểu nhầm",
+            "NGỘ GIẢI"
+          ],
+          [
+            "不安な",
+            "ふあんな",
+            "bất an",
+            "BẤT AN"
+          ],
+          [
+            "外国人",
+            "がいこくじん",
+            "ngoại nhân; người nước ngoài; người ngoại quốc",
+            "NGOẠI QUỐC NHÂN"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "止めら",
+            "やめら",
+            "dừng; ngừng; bỏ; cai; thôi; kiêng; giữ lại; ngăn lại; cầm chân; giữ chân; duy trì; bảo tồn; giữ nguyên trạng; để lại; giới hạn; hạn chế; kìm hãm trong một phạm vi nhất định; để mắt tới; chú ý đến; lọt vào mắt xanh; hạ gục; tiêu diệt (止める)",
+            "CHỈ"
+          ],
+          [
+            "不安",
+            "ふあん",
+            "bất an, lo lắng",
+            "BẤT AN"
+          ],
+          [
+            "打つ",
+            "うつ",
+            "đánh",
+            "ĐẢ"
+          ],
+          [
+            "相手",
+            "あいて",
+            "đối phương; người đối diện",
+            "TƯƠNG THỦ"
+          ],
+          [
+            "確か",
+            "たしか",
+            "chắc là; hình như là; nếu không nhầm",
+            "XÁC"
+          ],
+          [
+            "終わ",
+            "おわ",
+            "Kết thúc",
+            "CHUNG"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "聞き",
+            "きき",
+            "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+            "VĂN"
+          ],
+          [
+            "聞く",
+            "きく",
+            "nghe; hỏi",
+            "VĂN"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "話し",
+            "はなし",
+            "nói; lời nói; tán gẫu; câu chuyện; cuộc nói chuyện",
+            "THOẠI"
+          ],
+          [
+            "誤解",
+            "ごかい",
+            "sự hiểu lầm; sự hiểu sai; hiểu lầm; hiểu sai",
+            "NGỘ GIẢI"
+          ],
+          [
+            "黙っ",
+            "だまっ",
+            "câm; im; im lặng; làm thinh; lặng im; nín (黙る)",
+            "MẶC"
+          ],
+          [
+            "黙る",
+            "だまる",
+            "im lặng",
+            "MẶC"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "方",
+            "かた",
+            "phương diện; phương hướng; phía; phương; hậu tố số nhiều dùng cho người một cách kính trọng; khoảng; tầm; vào lúc; một phía; người thuộc về một phía cụ thể; người phụ trách một nhiệm vụ hoặc vai trò cụ thể; xấp xỉ; trạng thái; diện mạo; tình trạng; tình hình; dáng vẻ; hình dáng; hình thức; vẻ ngoài chỉnh tề; phương pháp; phương thức; cách thức; lý do; hoàn cảnh; câu chuyện; phong cách; thiết kế; vẻ ngoài; hậu tố kính ngữ dùng cho người; tên hoặc chức danh; hậu tố lịch sự thêm vào danh từ hoặc tính từ để bày tỏ lòng biết ơn hoặc sự đồng cảm; hướng; ngay lúc; trong khi; khi; cách thức hành động; cách làm; ngài; quý khách; người đó; vùng lân cận; nơi gần đây; bờ biển; bãi biển; ven biển; hậu tố chỉ hướng hoặc khu vực chung; hậu tố chỉ thời gian hoặc giai đoạn xấp xỉ; về một phía nhất định; cách thức di chuyển; trạng thái của hành động; sự giải quyết; kết cục; sự kết thúc của một vấn đề; thời điểm; thời kỳ; mùa; vị; người; phương tiện; một bên của một cặp; một nhóm người; lĩnh vực; khía cạnh; mối quan hệ; việc thực hiện; chuyển cho; gửi tại nhà của; người thuộc về một phía; người phụ trách một nhiệm vụ; nhân viên; điều phối viên; đại khái; về phía",
+            "PHƯƠNG"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "「あいづち」はどんなことをすることですか。",
+        "options": [
+          "相手の話を途中で止めること",
+          "相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」「うん、うん」と言ったりすること",
+          "ずっと黙って聞くこと",
+          "100%賛成すること"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 1: 「相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」とか「うん、うん」と言ったりする。」"
+      },
+      {
+        "q": "「あいづち」は何を伝えますか。",
+        "options": [
+          "100%賛成していること",
+          "早く話を終わってほしいこと",
+          "「あなたの話を聞いていますよ。」ということ",
+          "話がわからないこと"
+        ],
+        "answer": 2,
+        "explanation": "「これは『あなたの話を聞いていますよ。』ということを伝える合図だ。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-09",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 9,
+    "title": "第9課：男の仕事・女の仕事（Công việc của nam & nữ）",
+    "source": "Giáo trình 中級へ行こう · Bài 9 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/17.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/18.mp3",
+    "paragraphs": [
+      {
+        "jp": "以前女性の職場と言われていた所で、男性も働くようになった。それにともなって、女性の仕事を表す「看護婦」や「保母」のような職業の名称は、「看護師」や「保育士」に変わった。反対に、男性が多かった建築の仕事とか運転手や車掌という仕事を女性もするようになった。つまり、職業は男女の区別が少なくなってきているのだ。",
+        "vi": "Tại những nơi trước đây vốn được coi là môi trường làm việc của phụ nữ, nam giới cũng đã bắt đầu làm việc. Đi kèm với sự thay đổi đó, tên gọi các nghề nghiệp chỉ công việc của phụ nữ như \"Nữ y tá (Kangofu)\" hay \"Bảo mẫu (Hobo)\" đã đổi thành tên trung tính là \"Điều dưỡng viên (Kangoshi)\" hay \"Nhân viên nuôi dạy trẻ (Hoikushi)\". Ngược lại, các công việc vốn nhiều nam giới như xây dựng hay lái xe, nhân viên phụ trách tàu xe thì phụ nữ cũng đã bắt đầu làm. Tức là, sự phân biệt nam nữ trong nghề nghiệp đang dần ít đi.",
+        "vocab": [
+          [
+            "職場",
+            "しょくば",
+            "nơi làm việc"
+          ],
+          [
+            "名称",
+            "めいしょう",
+            "tên gọi"
+          ],
+          [
+            "区別",
+            "くべつ",
+            "sự phân biệt"
+          ],
+          [
+            "建築",
+            "けんちく",
+            "xây dựng"
+          ]
+        ],
+        "words": [
+          [
+            "少なく",
+            "すくなく",
+            "ít; ít ỏi (少ない)",
+            "THIỂU"
+          ],
+          [
+            "看護婦",
+            "かんごふ",
+            "hộ lý; nữ khán hộ; nữ y tá; y tá",
+            "KHÁN HỘ PHỤ"
+          ],
+          [
+            "運転手",
+            "うんてんしゅ",
+            "người lái xe; tài xế",
+            "VẬN CHUYỂN THỦ"
+          ],
+          [
+            "仕事",
+            "しごと",
+            "công việc; sự làm việc; sự tác nghiệp; sự thực hiện; sự làm; sự hành động; sự bày trò; sự giở thủ đoạn; thành tựu; thành quả; kết quả; công việc may vá; việc may vá; công; công của lực",
+            "SĨ SỰ"
+          ],
+          [
+            "以前",
+            "いぜん",
+            "trước đây",
+            "DĨ TIỀN"
+          ],
+          [
+            "保母",
+            "ほぼ",
+            "bảo mẫu",
+            "BẢO MẪU"
+          ],
+          [
+            "保育",
+            "ほいく",
+            "sự nuôi dạy",
+            "BẢO DỤC"
+          ],
+          [
+            "働く",
+            "はたらく",
+            "làm lụng; lao động; hoạt động; phạm; làm việc; làm",
+            "ĐỘNG"
+          ],
+          [
+            "区別",
+            "くべつ",
+            "sự phân biệt",
+            "KHU BIỆT"
+          ],
+          [
+            "反対",
+            "はんたい",
+            "đối; mặt đối diện; mặt bên; ngược lại",
+            "PHẢN ĐỐI"
+          ],
+          [
+            "名称",
+            "めいしょう",
+            "tên gọi",
+            "DANH XƯNG"
+          ],
+          [
+            "変わ",
+            "かわ",
+            "Thay đổi",
+            "BIẾN"
+          ],
+          [
+            "多か",
+            "おおか",
+            "nhiều; đa số; phần lớn; thường (多く)",
+            "ĐA"
+          ],
+          [
+            "女性",
+            "じょせい",
+            "gái; nữ; phụ nữ; nữ giới; đàn bà",
+            "NỮ TÍNH"
+          ],
+          [
+            "建築",
+            "けんちく",
+            "xây dựng",
+            "KIẾN TRÚC"
+          ],
+          [
+            "男女",
+            "だんじょ",
+            "nam và nữ; đàn ông và phụ nữ; người đàn ông có nét nữ tính hoặc người phụ nữ có nét nam tính",
+            "NAM NỮ"
+          ],
+          [
+            "男性",
+            "だんせい",
+            "đàn ông",
+            "NAM TÍNH"
+          ],
+          [
+            "看護",
+            "かんご",
+            "sự chăm sóc; sự chăm nom; sự trông nom; sự săn sóc",
+            "KHÁN HỘ"
+          ],
+          [
+            "職場",
+            "しょくば",
+            "nơi làm việc",
+            "CHỨC TRÀNG"
+          ],
+          [
+            "職業",
+            "しょくぎょう",
+            "chức nghiệp; nghề; nghề nghiệp",
+            "CHỨC NGHIỆP"
+          ],
+          [
+            "表す",
+            "あらわす",
+            "biểu thị; biểu hiện; lộ rõ; xuất hiện",
+            "BIỂU"
+          ],
+          [
+            "言わ",
+            "いわ",
+            "nói (言う)",
+            "NGÔN"
+          ],
+          [
+            "車掌",
+            "しゃしょう",
+            "người phục vụ; người bán vé",
+            "XA CHƯỞNG"
+          ],
+          [
+            "士",
+            "し",
+            "người đàn ông; samurai; người; thành viên",
+            "SĨ"
+          ],
+          [
+            "師",
+            "し",
+            "giáo viên; người chủ; một có người cố vấn; đáng tôn kính",
+            "SƯ"
+          ],
+          [
+            "所",
+            "ところ",
+            "nơi; chỗ; vùng nổi tiếng về một sản phẩm nào đó; trung tâm; khu vực; nơi hoặc bộ phận xảy ra hành động; đối tượng của hành động; nơi đáng để làm gì đó; điểm đáng làm gì đó; những người thuộc một tầng lớp hoặc địa vị nhất định; địa điểm; điểm; cơ sở; văn phòng; trụ sở; cơ quan; viện; điều được...; cái được...; những gì..; đơn vị đếm địa điểm",
+            "SỞ"
+          ]
+        ]
+      },
+      {
+        "jp": "一方、家庭に目を向けてみると、女性の家事労働は4時間53分（293分）であるが、男性は39分程度だという調査結果がある。男性も「家事をやらされる」ではなく、「すすんで家事を分担する」ような意識を持って欲しいものだ。",
+        "vi": "Mặt khác, nếu hướng ánh nhìn về phía gia đình thì có kết quả điều tra cho thấy lao động việc nhà của phụ nữ là 4 tiếng 53 phút (293 phút), trong khi nam giới chỉ khoảng 39 phút. Thật mong muốn nam giới cũng sẽ có ý thức không phải là \"bị bắt làm việc nhà\" mà là \"tích cực chủ động chia sẻ gánh vác việc nhà\".",
+        "vocab": [
+          [
+            "家事労働",
+            "かじろうどう",
+            "lao động việc nhà"
+          ],
+          [
+            "〜程度",
+            "ていど",
+            "khoảng chừng ~"
+          ],
+          [
+            "すすんで",
+            "すすんで",
+            "chủ động, tích cực"
+          ],
+          [
+            "分担する",
+            "ぶんたんする",
+            "đảm nhận, phân chia"
+          ]
+        ],
+        "words": [
+          [
+            "分担する",
+            "ぶんたんする",
+            "đảm nhận, phân chia",
+            "PHÂN ĐAM"
+          ],
+          [
+            "家事労働",
+            "かじろうどう",
+            "lao động việc nhà",
+            "GIA SỰ LAO ĐỘNG"
+          ],
+          [
+            "調査結果",
+            "ちょうさけっか",
+            "kết quả điều tra",
+            "ĐIỀU TRA KẾT QUẢ"
+          ],
+          [
+            "〜程度",
+            "ていど",
+            "khoảng chừng ~",
+            "TRÌNH ĐẠC"
+          ],
+          [
+            "欲しい",
+            "ほしい",
+            "muốn; mong muốn",
+            "DỤC"
+          ],
+          [
+            "一方",
+            "いっぽう",
+            "đơn phương; một chiều; mặt khác; một bên; một mặt; một hướng; ngày càng; trái lại; trong khi đó; một phía; một trong hai bên; một người; vị đó; người đó; một phương; bình thường; tầm thường; thông thường; phiến diện; thiên lệch",
+            "NHẤT PHƯƠNG"
+          ],
+          [
+            "分担",
+            "ぶんたん",
+            "sự gánh vác",
+            "PHÂN ĐAM"
+          ],
+          [
+            "向け",
+            "むけ",
+            "dành cho; thích hợp với",
+            "HƯỚNG"
+          ],
+          [
+            "女性",
+            "じょせい",
+            "gái; nữ; phụ nữ; nữ giới; đàn bà",
+            "NỮ TÍNH"
+          ],
+          [
+            "家事",
+            "かじ",
+            "công việc gia đình; việc nội trợ; việc gia đình; việc nhà",
+            "GIA SỰ"
+          ],
+          [
+            "家庭",
+            "かてい",
+            "gia đình; hộ gia đình",
+            "GIA ĐÌNH"
+          ],
+          [
+            "意識",
+            "いしき",
+            "ý thức",
+            "Ý THỨC"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "時間",
+            "じかん",
+            "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+            "THÌ GIAN"
+          ],
+          [
+            "男性",
+            "だんせい",
+            "đàn ông",
+            "NAM TÍNH"
+          ],
+          [
+            "程度",
+            "ていど",
+            "chừng; mức; mức độ; trình độ; tầm",
+            "TRÌNH ĐỘ"
+          ],
+          [
+            "分",
+            "ぶん",
+            "địa vị; thân phận; phần việc; trình độ; trạng thái; phần; từng phần; phút",
+            "PHÂN"
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "「看護婦」や「保母」の名称は何に変わりましたか。",
+        "options": [
+          "運転手や車掌",
+          "看護師や保育士",
+          "先生や医者",
+          "建築士"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 1: 「『看護婦』や『保母』のような職業の名称は、『看護師』や『保育士』に変わった。」"
+      },
+      {
+        "q": "調査結果によると、男性は家事労働をよくしていますか。",
+        "options": [
+          "女性と同じぐらいしています。",
+          "いいえ、あまりしません（39分程度です）。",
+          "女性より長くしています。",
+          "まったく0分です。"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 2: 女性 là 4時間53分 (293分), trong khi 男性 chỉ khoảng 39分程度."
+      },
+      {
+        "q": "男性はどんな意識を持って欲しいと書いてありますか。",
+        "options": [
+          "家事をやらされる意識",
+          "仕事だけする意識",
+          "すすんで家事を分担するような意識",
+          "名前を変える意識"
+        ],
+        "answer": 2,
+        "explanation": "Câu cuối: 「『すすんで家事を分担する』ような意識を持って欲しいものだ。」"
+      }
+    ]
+  },
+  {
+    "id": "chukyu-10",
+    "level": 3,
+    "textbook": "chukyu-e-ikou-2",
+    "lessonNum": 10,
+    "title": "第10課：ことばの使い方（Cách sử dụng từ ngữ & Kính ngữ）",
+    "source": "Giáo trình 中級へ行こう · Bài 10 (CD Chậm & Tự nhiên)",
+    "category": "Giáo trình N4→N3",
+    "audioSlow": "sach_pdf/Chukyu_e_ikou/audio/19.mp3",
+    "audioNatural": "sach_pdf/Chukyu_e_ikou/audio/20.mp3",
+    "paragraphs": [
+      {
+        "jp": "最近のある調査によって、「ことばの使い方が乱れている」と感じている日本人が多いことがわかった。",
+        "vi": "Qua một cuộc điều tra gần đây, người ta thấy có rất nhiều người Nhật cảm thấy \"cách sử dụng ngôn từ đang bị hỗn loạn/sai lệch\".",
+        "vocab": [
+          [
+            "乱れる",
+            "みだれる",
+            "bị loạn, sai lệch"
+          ],
+          [
+            "感じる",
+            "かんじる",
+            "cảm thấy"
+          ]
+        ],
+        "words": [
+          [
+            "乱れる",
+            "みだれる",
+            "bị loạn, sai lệch",
+            "LOẠN"
+          ],
+          [
+            "使い方",
+            "つかいかた",
+            "cách dùng; cách sử dụng",
+            "SỬ PHƯƠNG"
+          ],
+          [
+            "感じる",
+            "かんじる",
+            "cảm thấy",
+            "CẢM"
+          ],
+          [
+            "日本人",
+            "にほんじん",
+            "người nhật",
+            "NHẬT BỔN NHÂN"
+          ],
+          [
+            "乱れ",
+            "みだれ",
+            "lộn xộn; sự rối loạn; tình trạng náo động; sự hỗn loạn; sự nhiễu loạn",
+            "LOẠN"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "調査",
+            "ちょうさ",
+            "điều tra khảo sát",
+            "ĐIỀU TRA"
+          ]
+        ]
+      },
+      {
+        "jp": "以前から特に敬語のまちがいは多い。例えば、食事の場で「皆さん、いっしょにいただきましょう」と言う代わりに、まちがえて「皆さん、いっしょに召し上がりましょう」と言う。また、自分の会社を訪ねてきたお客さんに「受付でお聞きしてください」と言う。本来なら、「受付でお聞きになってください」と言うべきである。",
+        "vi": "Từ trước đến nay đặc biệt lỗi sai về kính ngữ rất nhiều. Ví dụ, trong bữa ăn thay vì nói \"Mọi người cùng ăn nào (itadakimashou)\", lại nói nhầm thành \"Mọi người cùng dùng bữa nhé (meshiagarimashou - kính ngữ của người nghe mà lại gộp bản thân)\". Hoặc nói với khách đến thăm công ty mình là \"Hãy hỏi ở quầy lễ tân giúp tôi (o-kiki shite - khiêm nhường ngữ sai đối tượng)\". Đúng ra thì phải nói tôn kính ngữ là \"o-kiki ni natte kudasai\".",
+        "vocab": [
+          [
+            "敬語",
+            "けいご",
+            "kính ngữ"
+          ],
+          [
+            "代わりに",
+            "かわりに",
+            "thay cho, thay vì"
+          ],
+          [
+            "本来",
+            "ほんらい",
+            "đáng lẽ ra, vốn dĩ"
+          ],
+          [
+            "〜べきである",
+            "べきである",
+            "nên, phải làm"
+          ]
+        ],
+        "words": [
+          [
+            "代わりに",
+            "かわりに",
+            "thay cho, thay vì",
+            "ĐẠI"
+          ],
+          [
+            "代わり",
+            "かわり",
+            "phần thức ăn đưa mời lần thứ hai; sự đền bù; vật đền bù; vật thay thế; hộ; thay; thay thế; đổi lại; đền; sự được ủy nhiệm; sự được ủy quyền; đại diện; thay phiên; dùng thay cho",
+            "ĐẠI"
+          ],
+          [
+            "例えば",
+            "たとえば",
+            "chẳng hạn như; thí dụ; tỷ dụ; ví dụ",
+            "LỆ"
+          ],
+          [
+            "皆さん",
+            "みなさん",
+            "mọi người",
+            "GIAI"
+          ],
+          [
+            "以前",
+            "いぜん",
+            "trước đây",
+            "DĨ TIỀN"
+          ],
+          [
+            "会社",
+            "かいしゃ",
+            "công ty",
+            "HỘI XÃ"
+          ],
+          [
+            "受付",
+            "うけつけ",
+            "nhân viên thường trực; tiếp tân; nhân viên tiếp tân; nhân viên lễ tân; thường trực; lễ tân; sự tiếp thu; sự tiếp nhận; tiếp nhận; quầy lễ tân; quầy thường trực; quầy tiếp tân",
+            "THỤ PHÓ"
+          ],
+          [
+            "召し",
+            "めし",
+            "đòi ra hầu tòa; gọi",
+            "TRIỆU"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "敬語",
+            "けいご",
+            "kính ngữ",
+            "KÍNH NGỮ"
+          ],
+          [
+            "本来",
+            "ほんらい",
+            "đáng lẽ ra, vốn dĩ",
+            "BỔN LAI"
+          ],
+          [
+            "聞き",
+            "きき",
+            "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+            "VĂN"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "言う",
+            "いう",
+            "nói",
+            "NGÔN"
+          ],
+          [
+            "訪ね",
+            "たずね",
+            "thăm; ghé thăm; viếng thăm (訪ねる)",
+            "PHÓNG"
+          ],
+          [
+            "食事",
+            "しょくじ",
+            "bữa ăn; bữa cơm; buổi ăn; dùng bữa",
+            "THỰC SỰ"
+          ],
+          [
+            "上",
+            "うえ",
+            "trên; phía trên; phía cao hơn; bên ngoài; lớp ngoài; lớn hơn; bề trên; cấp trên; bề mặt; cao cấp; thượng; thượng nguồn; phía thượng lưu; lúc đầu; thời kỳ đầu; thời xưa; nửa đầu; mười ngày đầu tháng; thượng tuần; phần đầu; tập đầu; phần trước; thượng cú; phần trên; mặt trên; nửa thân trên; ghế danh dự; vị trí trang trọng; ghế chủ tọa; phòng trong; phòng khách; phía bên phải sân khấu; tthiên hoàng; đức vua; bệ hạ; người bề trên; người có địa vị cao; chính quyền; nhà chức trách; giới cầm quyền; bà chủ; phu nhân; vợ người khác; kinh đô; kyoto và vùng lân cận; phía bắc kyoto; phía bắc; vùng gần kinh đô; thứ bậc cao; đẳng cấp cao; người lớn tuổi hơn; bậc tiền bối; chủ nhân; người đứng đầu; sự nâng cao độ âm thanh; kỹ thuật tăng nửa cung; việc nâng âm; chất lượng cao; hạng nhất; quyển thượng; tập một; thanh thượng; lời đề tặng trên quà cáp; về mặt; xét về; trên phương diện; xét; không những; sau khi; dựa trên; là kết quả của; để; nhằm mục đích",
+            "THƯỢNG"
+          ],
+          [
+            "場",
+            "ば",
+            "địa điểm; nơi; chốn",
+            "TRÀNG"
+          ],
+          [
+            "客",
+            "きゃく",
+            "người khách; khách",
+            "KHÁCH"
+          ],
+          [
+            "特",
+            "とく",
+            "Đặc biệt",
+            "ĐẶC"
+          ]
+        ]
+      },
+      {
+        "jp": "ことばは変化していくものだ。しかし、使い方が正しいかどうか、気にせずにことばを使うのは問題だ。この機会に、一度自分のことばの使い方を確認してみよう。",
+        "vi": "Ngôn ngữ là thứ vốn dĩ luôn biến đổi theo thời gian. Tuy nhiên, việc dùng từ mà không thèm để tâm xem cách dùng có đúng hay không mới là vấn đề. Nhân cơ hội này, chúng ta hãy thử kiểm tra lại một lần cách dùng từ của bản thân mình xem sao.",
+        "vocab": [
+          [
+            "変化する",
+            "へんかする",
+            "thay đổi"
+          ],
+          [
+            "気にする",
+            "きにする",
+            "bận tâm, để ý"
+          ],
+          [
+            "この機会に",
+            "このきかいに",
+            "nhân cơ hội này"
+          ],
+          [
+            "確認する",
+            "かくにんする",
+            "xác nhận, kiểm tra lại"
+          ]
+        ],
+        "words": [
+          [
+            "この機会に",
+            "このきかいに",
+            "nhân cơ hội này",
+            "CƠ CỐI"
+          ],
+          [
+            "変化する",
+            "へんかする",
+            "thay đổi",
+            "BIẾN HÓA"
+          ],
+          [
+            "気にする",
+            "きにする",
+            "bận tâm, để ý",
+            "KHÍ"
+          ],
+          [
+            "確認する",
+            "かくにんする",
+            "xác nhận, kiểm tra lại",
+            "XÁC NHẬN"
+          ],
+          [
+            "使い方",
+            "つかいかた",
+            "cách dùng; cách sử dụng",
+            "SỬ PHƯƠNG"
+          ],
+          [
+            "変化し",
+            "へんかし",
+            "biến; biến đổi; biến hóa; đổi đời; thay (変化する)",
+            "BIẾN HÓA"
+          ],
+          [
+            "正しい",
+            "ただしい",
+            "chính; chỉnh; đúng; chính xác; chính đáng; đúng lý; chân thật; đúng đắn",
+            "CHÁNH"
+          ],
+          [
+            "確認し",
+            "かくにんし",
+            "xác nhận; kiểm tra (確認する)",
+            "XÁC NHẬN"
+          ],
+          [
+            "一度",
+            "いちど",
+            "khi nào đó; lần nào đó; một khi; một lần",
+            "NHẤT ĐỘ"
+          ],
+          [
+            "使う",
+            "つかう",
+            "dụng; sử dụng; dùng; xài",
+            "SỬ"
+          ],
+          [
+            "問題",
+            "もんだい",
+            "vấn đề",
+            "VẤN ĐỀ"
+          ],
+          [
+            "機会",
+            "きかい",
+            "cơ hội; dịp",
+            "KI HỘI"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "気",
+            "き",
+            "cách nghĩ; ý đồ; tâm tư; quan niệm; chú ý; lưu tâm; hô hấp; thở; khí; không khí; khí lớn; khí thể; khí chưng từ nước; khí vị; hơi; lòng luyến mộ; tình ý; suy nghĩ; tư lự; tâm lí; tâm tình; tình tự; cảm giác; cảm thụ; cảm tình; tính cách; lề thói; tính trời sinh; khí độ; tinh thần; tâm thần; khí chất; có vẻ; trông như; dường như; dấu hiệu; dấu vết; một chút; mùi hương tỏa ra; hương vị; sự hiện diện; trạng thái tâm trí; cảm nhận; thời tiết; khí hậu; bệnh tật; ốm đau; dấu hiệu chuyển dạ; bắt đầu sinh con; hơi hơi; mơ hồ; có vẻ như; trông có vẻ; bản chất; dáng vẻ; xu hướng",
+            "KHÍ"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      {
+        "q": "調査によって、どんなことがわかりましたか。",
+        "options": [
+          "敬語を使う人が増えていること",
+          "「ことばの使い方が乱れている」と感じている日本人が多いこと",
+          "日本人が漢字を忘れたこと",
+          "食事の場でのマナーが良くなったこと"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 1: 「『ことばの使い方が乱れている』と感じている日本人が多いことがわかった。」"
+      },
+      {
+        "q": "お客さんに「受付でお聞きしてください」と言う代わりに、本来どう言うべきですか。",
+        "options": [
+          "受付でお聞きしましょう。",
+          "受付でお聞きになってください。",
+          "受付で聞いてくれますか。",
+          "受付で召し上がってください。"
+        ],
+        "answer": 1,
+        "explanation": "Đoạn 2: 「本来なら、『受付でお聞きになってください』と言うべきである。」"
+      },
+      {
+        "q": "何が問題だと書いてありますか。",
+        "options": [
+          "ことばが少しずつ変化していくこと",
+          "新しいことばが作られること",
+          "使い方が正しいかどうか、気にせずにことばを使うこと",
+          "敬語が難しすぎること"
+        ],
+        "answer": 2,
+        "explanation": "Đoạn 3: 「使い方が正しいかどうか、気にせずにことばを使うのは問題だ。」"
       }
     ]
   }

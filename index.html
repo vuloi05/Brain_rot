@@ -21,18 +21,18 @@
     </div>
 
     <nav class="level-tabs" aria-label="Chọn cấp độ JLPT">
-      <button class="level-btn active" data-level="5">N5 <span class="lvl-count">79</span></button>
-      <button class="level-btn" data-level="4">N4 <span class="lvl-count">166</span></button>
-      <button class="level-btn" data-level="3">N3 <span class="lvl-count">367</span></button>
+      <button class="level-btn active" data-level="5">N5 <span class="lvl-count">80</span></button>
+      <button class="level-btn" data-level="4">N4 <span class="lvl-count">168</span></button>
+      <button class="level-btn" data-level="3">N3 <span class="lvl-count">371</span></button>
       <button class="level-btn" data-level="2">N2 <span class="lvl-count">367</span></button>
-      <button class="level-btn" data-level="1">N1 <span class="lvl-count">1232</span></button>
+      <button class="level-btn" data-level="1">N1 <span class="lvl-count">1244</span></button>
     </nav>
 
     <div class="view-tabs" role="tablist" aria-label="Chế độ làm việc">
       <button class="view-btn active" data-view="atelier" role="tab" aria-selected="true">Xưởng chữ</button>
       <button class="view-btn" data-view="reader" role="tab" aria-selected="false">Đọc sâu</button>
       <button class="view-btn" data-view="forge" role="tab" aria-selected="false">Xưởng câu &amp; Nghe</button>
-      <button class="view-btn" data-view="exams" role="tab" aria-selected="false">Kho đề thi</button>
+      <button class="view-btn" data-view="exams" role="tab" aria-selected="false">Đề thi &amp; Giáo trình</button>
       <button class="view-btn" data-view="dojo" role="tab" aria-selected="false">
         Ôn tập mù <span class="due-pill" id="dueCountBadge">0</span>
       </button>
@@ -79,8 +79,11 @@
         />
         <label class="global-search-toggle">
           <input type="checkbox" id="globalSearchToggle" />
-          <span>Tìm cả 2.211 chữ (N5–N1)</span>
+          <span>Tìm cả 2.230 chữ (N5–N1)</span>
         </label>
+        <select id="atelierTextbookSelect" class="textbook-select" aria-label="Lọc theo giáo trình">
+          <option value="">Lọc theo cấp JLPT đang chọn</option>
+        </select>
       </div>
 
       <div class="filter-row" role="group" aria-label="Lọc trạng thái học">
@@ -320,6 +323,7 @@
       </div>
       <div class="filter-row" role="group" aria-label="Lọc trạng thái bài đọc">
         <button class="filter-chip reader-filter active" data-rfilter="all">Tất cả</button>
+        <button class="filter-chip reader-filter" data-rfilter="chukyu">Giáo trình (10)</button>
         <button class="filter-chip reader-filter" data-rfilter="unread">Chưa đọc</button>
         <button class="filter-chip reader-filter" data-rfilter="done">Đã hoàn thành</button>
       </div>
@@ -369,6 +373,17 @@
             <button class="btn-ghost-sm" id="readerSpeakBtn">Đọc thành tiếng</button>
             <button class="btn-ghost-sm" id="readerResetBtn">Đọc lại từ đoạn 1</button>
           </div>
+        </div>
+
+        <div class="exam-audio-bar hidden" id="readerAudioBar">
+          <audio id="readerAudioEl" preload="metadata"></audio>
+          <button type="button" class="btn-primary-sm" id="readerTrackSlowBtn">CD Chậm</button>
+          <button type="button" class="btn-ghost-sm" id="readerTrackNatBtn">CD Tự nhiên</button>
+          <button type="button" class="btn-ghost-sm" id="readerAudioPlayBtn">Nghe Audio</button>
+          <button type="button" class="btn-ghost-sm" id="readerBack5Btn">−5s</button>
+          <button type="button" class="btn-ghost-sm" id="readerFwd5Btn">+5s</button>
+          <input type="range" id="readerAudioSeek" min="0" max="100" value="0" class="audio-seek" aria-label="Tua âm thanh bài đọc" />
+          <span class="mono audio-time" id="readerAudioTime">00:00 / 00:00</span>
         </div>
 
         <div class="reader-tip-bar">
@@ -458,13 +473,17 @@
     </aside>
   </section>
 
-  <!-- MAIN VIEW 3: JLPT EXAMS & CHOUKAI STUDIO (420 files from de_thi/) -->
+  <!-- MAIN VIEW 3: JLPT EXAMS & TEXTBOOKS STUDIO (de_thi/ & sach_pdf/) -->
   <section class="workspace hidden" id="viewExams">
     <aside class="panel panel-left">
       <div class="search-box">
-        <input type="search" id="examSearchInput" placeholder="Tìm năm thi (ví dụ: 2024, 12-2023)..." autocomplete="off" />
+        <div class="forge-mode-toggle" role="tablist" aria-label="Chọn nguồn tài liệu">
+          <button type="button" class="exam-mode-btn active" data-emode="exams">1. Đề thi JLPT</button>
+          <button type="button" class="exam-mode-btn" data-emode="textbook">2. Sách 中級へ行こう</button>
+        </div>
+        <input type="search" id="examSearchInput" placeholder="Tìm năm thi (ví dụ: 2024, 12-2023)..." autocomplete="off" style="margin-top:8px;" />
       </div>
-      <div class="filter-row" role="group" aria-label="Lọc trạng thái đề thi">
+      <div class="filter-row" id="examFilterRow" role="group" aria-label="Lọc trạng thái đề thi">
         <button class="filter-chip exam-filter active" data-efilter="all">Tất cả</button>
         <button class="filter-chip exam-filter" data-efilter="todo">Chưa giải</button>
         <button class="filter-chip exam-filter" data-efilter="done">Đã giải</button>
@@ -482,8 +501,14 @@
         <div class="exam-file-tabs" id="examFileTabs"></div>
       </div>
 
+      <div class="tb-section-bar hidden" id="tbSectionBar"></div>
+
       <div class="exam-audio-bar hidden" id="examAudioBar">
         <audio id="examAudioEl" preload="metadata"></audio>
+        <div class="tb-track-pair hidden" id="tbTrackPairRow">
+          <button type="button" class="btn-primary-sm" id="tbTrackSlowBtn">CD Chậm</button>
+          <button type="button" class="btn-ghost-sm" id="tbTrackNatBtn">CD Tự nhiên</button>
+        </div>
         <button class="btn-primary-sm" id="examPlayPauseBtn">Nghe Audio</button>
         <button class="btn-ghost-sm" id="examBack5Btn">−5s</button>
         <button class="btn-ghost-sm" id="examFwd5Btn">+5s</button>
@@ -501,17 +526,27 @@
       </div>
 
       <div class="exam-doc-frame-wrap" id="examDocWrap">
-        <div class="exam-empty-doc" id="examEmptyDoc">Chọn kỳ thi và bấm nút tài liệu (Đề thi / Script Nghe / Đáp án) để hiển thị tại đây.</div>
-        <iframe id="examPdfFrame" class="exam-pdf-frame hidden" title="Trình xem đề thi PDF"></iframe>
+        <div class="exam-empty-doc" id="examEmptyDoc">Chọn kỳ thi hoặc bài học bên trái để hiển thị tài liệu tại đây.</div>
+        <iframe id="examPdfFrame" class="exam-pdf-frame hidden" title="Trình xem tài liệu PDF"></iframe>
         <img id="examImgViewer" class="exam-img-viewer hidden" alt="Ảnh đáp án đề thi" />
+        <div class="tb-interactive-pane hidden" id="tbInteractivePane"></div>
       </div>
     </section>
 
     <aside class="panel panel-right">
+      <div class="anatomy-section hidden" id="tbLessonKanjiSection">
+        <div class="section-head">
+          <h2>Kanji của Bài học này</h2>
+          <button type="button" class="btn-primary-sm" id="tbOpenAtelierBtn">Luyện ở Xưởng chữ →</button>
+        </div>
+        <div class="sub-hint" id="tbLessonKanjiMeta" style="margin-bottom:8px;">Liên thông tiến độ N5–N1</div>
+        <div class="related-chips" id="tbLessonKanjiChips"></div>
+      </div>
+
       <div class="anatomy-section">
         <div class="section-head">
           <h2>Tra cứu &amp; Bóc tách Kanji nhanh</h2>
-          <span class="sub-hint">Khi gặp chữ khó trong đề</span>
+          <span class="sub-hint">Khi gặp chữ khó trong bài</span>
         </div>
         <input type="search" id="examQuickKanjiInput" class="exam-kanji-input" placeholder="Dán từ/chữ Kanji hoặc gõ Hán-Việt..." autocomplete="off" />
         <div id="examQuickKanjiResults" class="exam-quick-results">
@@ -521,12 +556,12 @@
 
       <div class="anatomy-section">
         <div class="section-head">
-          <h2>Phiếu làm bài &amp; Ghi chú kỳ thi</h2>
+          <h2>Phiếu làm bài &amp; Ghi chú</h2>
           <span class="sub-hint" id="examNoteSaveHint">Tự lưu ổ đĩa</span>
         </div>
-        <textarea id="examNoteInput" rows="10" placeholder="Ghi lại đáp án bạn chọn (1-4), câu sai cần rút kinh nghiệm hoặc từ vựng mới gặp trong đề này..."></textarea>
+        <textarea id="examNoteInput" rows="9" placeholder="Ghi lại đáp án bạn chọn, bài tập viết câu ngắn / Sakubun hoặc từ mới gặp trong bài..."></textarea>
         <div class="exam-done-row">
-          <button class="btn-primary" id="examToggleDoneBtn">Đánh dấu đã giải xong đề này</button>
+          <button class="btn-primary" id="examToggleDoneBtn">Đánh dấu đã hoàn thành</button>
           <a class="btn-ghost-sm hidden" id="examOpenNewTabLink" target="_blank" rel="noopener">Mở file ở tab mới</a>
         </div>
       </div>
@@ -676,6 +711,7 @@
           <select id="dojoScopeSelect">
             <option value="due">Hàng đợi cần ôn hôm nay (SRS Due)</option>
             <option value="learned">Ôn lại toàn bộ chữ đã học</option>
+            <option value="chukyu">Giáo trình 中級へ行こう (169 chữ)</option>
             <option value="leech">Chữ hay quên / điểm yếu</option>
             <option value="level">Chữ chưa thuộc ở cấp đang chọn</option>
           </select>
@@ -802,7 +838,7 @@
         </div>
         <div class="metric-box">
           <div class="metric-label">Số chữ đã thuộc / Đang học</div>
-          <div class="metric-value mono" id="statMasteredTotal">0 / 2211</div>
+          <div class="metric-value mono" id="statMasteredTotal">0 / 2230</div>
           <div class="metric-sub" id="statDueToday">0 chữ cần ôn hôm nay</div>
         </div>
       </div>

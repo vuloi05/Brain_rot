@@ -4,7 +4,7 @@
   const STORAGE_KEY = 'bokuseki_progress_v1';
   const BATCH_SIZE = 120;
   const LEVEL_LIST = [5, 4, 3, 2, 1];
-  const LEVEL_COUNTS = { 5: 79, 4: 166, 3: 367, 2: 367, 1: 1232 };
+  const LEVEL_COUNTS = { 5: 80, 4: 168, 3: 371, 2: 367, 1: 1244 };
   const PART_COLORS_LIGHT = ['#1D4E68', '#C83E2B', '#2D6A4F', '#9C6615', '#6D4C7D', '#3D6B7E'];
   const PART_COLORS_DARK = ['#5BA4C8', '#E5624F', '#52B788', '#DDA15E', '#B388EB', '#70C1B3'];
 
@@ -26,6 +26,9 @@
     levelCache: {}, // { 5: [...], ... }
     componentsIndex: {},
     kanjiLookup: {}, // { '休': { l: 5, hv: 'HƯU', vi: '...' }, ... }
+    textbookLoaded: false,
+    textbookData: null,
+    atelierTextbookFilter: '', // '' | 'all' | '1'..'10'
     currentLevel: 5,
     currentView: 'atelier', // 'atelier' | 'reader' | 'exams' | 'dojo' | 'neuro'
     currentMode: 'anatomy', // 'anatomy' | 'guided' | 'blind' | 'typing'
@@ -71,12 +74,15 @@
     readerLookupTimer: null,
     readerLookupSeq: 0,
     readerQuestionTimers: [],
-    // Exam Studio (de_thi)
+    // Exam Studio & Textbooks (de_thi & sach_pdf)
     examsLoaded: false,
     examCatalog: [],
+    examMode: 'exams', // 'exams' | 'textbook'
     examFilter: 'all',
     examSearch: '',
     currentExam: null,
+    currentTextbookLesson: null,
+    tbInteractiveOpen: false,
     examNoteTimer: null,
     // Module 4: Sentence Forge & Blind Dictation
     sentencesLoaded: false,
@@ -467,13 +473,56 @@
     ]);
     state.componentsIndex = await compRes.json();
     state.kanjiLookup = await lookupRes.json();
+
+    const dynCounts = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
+    Object.values(state.kanjiLookup).forEach((m) => {
+      if (dynCounts[m.l] !== undefined) dynCounts[m.l] += 1;
+    });
+    LEVEL_LIST.forEach((lvl) => {
+      LEVEL_COUNTS[lvl] = dynCounts[lvl];
+      const badge = document.querySelector(`.level-btn[data-level="${lvl}"] .lvl-count`);
+      if (badge) badge.textContent = String(dynCounts[lvl]);
+    });
+  }
+
+  async function ensureTextbookLoaded() {
+    if (state.textbookLoaded) return state.textbookData;
+    try {
+      const res = await fetch('data/textbooks.json');
+      if (res.ok) {
+        state.textbookData = await res.json();
+        const sel = $('atelierTextbookSelect');
+        if (sel && sel.options.length <= 1 && state.textbookData?.lessons) {
+          const allOpt = document.createElement('option');
+          allOpt.value = 'all';
+          allOpt.textContent = `中級へ行こう — Tất cả (${state.textbookData.allKanji.length} chữ)`;
+          sel.appendChild(allOpt);
+          state.textbookData.lessons.forEach((ls) => {
+            const opt = document.createElement('option');
+            opt.value = String(ls.lessonNum);
+            opt.textContent = `中級へ行こう · Bài ${ls.lessonNum}: ${ls.titleJp} (${ls.kanjiChars.length} chữ)`;
+            sel.appendChild(opt);
+          });
+        }
+      }
+    } catch (_) {
+      state.textbookData = null;
+    }
+    state.textbookLoaded = true;
+    return state.textbookData;
   }
 
   async function jumpToKanji(ch) {
     const info = state.kanjiLookup[ch];
     if (!info) return;
+    if (state.atelierTextbookFilter) {
+      state.atelierTextbookFilter = '';
+      if ($('atelierTextbookSelect')) $('atelierTextbookSelect').value = '';
+    }
     if (info.l !== state.currentLevel) {
       await selectLevel(info.l, false);
+    } else {
+      applyFilterAndRender();
     }
     const list = await loadLevel(info.l);
     const found = list.find((k) => k.c === ch);
@@ -1198,13 +1247,52 @@
     return false;
   }
 
+  async function getTextbookKanjiEntries(filterVal) {
+    const tb = await ensureTextbookLoaded();
+    if (!tb || !tb.lessons) return [];
+    let chars = [];
+    if (filterVal === 'all') {
+      chars = tb.allKanji || [];
+    } else {
+      const lesson = tb.lessons.find((l) => String(l.lessonNum) === String(filterVal));
+      chars = lesson ? lesson.kanjiChars : [];
+    }
+    const needed = new Set(chars.map((c) => state.kanjiLookup[c]?.l).filter(Boolean));
+    await Promise.all([...needed].map((l) => loadLevel(l)));
+
+    const entries = [];
+    const seen = new Set();
+    for (const ch of chars) {
+      if (seen.has(ch)) continue;
+      seen.add(ch);
+      const lvl = state.kanjiLookup[ch]?.l;
+      const found = (state.levelCache[lvl] || []).find((k) => k.c === ch);
+      if (found) entries.push(found);
+    }
+    return entries;
+  }
+
+  async function applyTextbookFilter(filterVal, pickFirst = true) {
+    state.atelierTextbookFilter = filterVal;
+    if ($('atelierTextbookSelect')) $('atelierTextbookSelect').value = filterVal;
+    if (!filterVal) {
+      applyFilterAndRender();
+      return;
+    }
+    state.textbookEntries = await getTextbookKanjiEntries(filterVal);
+    applyFilterAndRender();
+    if (pickFirst && state.filteredList.length) {
+      selectKanji(state.filteredList[0]);
+    }
+  }
+
   function applyFilterAndRender() {
     const q = state.searchQuery.trim();
     const normQ = stripVietnamese(q);
     const kanaQ = /^[a-zA-Z\u3040-\u30ff]+$/.test(q) ? romajiToHiragana(q) : '';
 
     if (state.globalSearch && q) {
-      // Search across all 2,211 entries in kanjiLookup
+      // Search across all entries in kanjiLookup
       const hits = [];
       for (const [ch, meta] of Object.entries(state.kanjiLookup)) {
         const compMatch = state.componentsIndex[q]?.chars?.includes(ch);
@@ -1224,15 +1312,21 @@
       return;
     }
 
-    const levelList = state.levelCache[state.currentLevel] || [];
-    state.filteredList = levelList.filter((entry) => {
+    const baseList = state.atelierTextbookFilter
+      ? (state.textbookEntries || [])
+      : (state.levelCache[state.currentLevel] || []);
+
+    state.filteredList = baseList.filter((entry) => {
       if (state.filterStatus !== 'all' && getKanjiStatus(entry.c) !== state.filterStatus) {
         return false;
       }
       return matchesQuery(entry, q, normQ, kanaQ);
     });
 
-    $('listMetaText').textContent = `N${state.currentLevel}: ${state.filteredList.length} / ${levelList.length} chữ`;
+    const prefix = state.atelierTextbookFilter
+      ? (state.atelierTextbookFilter === 'all' ? '中級へ行こう' : `Bài ${state.atelierTextbookFilter}`)
+      : `N${state.currentLevel}`;
+    $('listMetaText').textContent = `${prefix}: ${state.filteredList.length} / ${baseList.length} chữ`;
     renderKanjiList('reset');
   }
 
@@ -1268,7 +1362,7 @@
         btn.classList.add('active');
       }
       const status = getKanjiStatus(item.c);
-      const lvlBadge = item._isLookup ? `N${item.l} · ` : '';
+      const lvlBadge = (item._isLookup || state.atelierTextbookFilter) ? `N${item.l} · ` : '';
       btn.innerHTML = `
         <span class="kanji-item-glyph">${item.c}</span>
         <span class="kanji-item-body">
@@ -1297,6 +1391,10 @@
 
   async function selectLevel(level, pickFirst = true) {
     state.currentLevel = level;
+    if (pickFirst && state.atelierTextbookFilter) {
+      state.atelierTextbookFilter = '';
+      if ($('atelierTextbookSelect')) $('atelierTextbookSelect').value = '';
+    }
     qsa('.level-btn').forEach((b) => b.classList.toggle('active', Number(b.dataset.level) === level));
     const list = await loadLevel(level);
     applyFilterAndRender();
@@ -1304,10 +1402,10 @@
       const target = state.filteredList.find((x) => !x._isLookup) || list[0];
       selectKanji(target);
     }
-    if (state.readingsLoaded) {
+    if (state.readingsLoaded && state.readerFilter !== 'chukyu') {
       renderReaderList(true);
     }
-    if (state.examsLoaded) {
+    if (state.examsLoaded && state.examMode === 'exams') {
       renderExamList(true);
     }
     if (state.sentencesLoaded) {
@@ -1441,14 +1539,23 @@
 
   function renderReaderList(autoPick = false) {
     const container = $('readerList');
-    const allForLevel = getAllReadings().filter((r) => r.level === state.currentLevel);
-    const filtered = allForLevel.filter((r) => state.readerFilter === 'all' || getReadingStatus(r) === state.readerFilter);
+    const allReadings = getAllReadings();
+    const isChukyuMode = state.readerFilter === 'chukyu';
+    const basePool = isChukyuMode
+      ? allReadings.filter((r) => r.textbook === 'chukyu-e-ikou-2')
+      : allReadings.filter((r) => r.level === state.currentLevel);
 
-    $('readerListMeta').textContent = `N${state.currentLevel}: ${filtered.length} / ${allForLevel.length} bài đọc`;
+    const filtered = isChukyuMode
+      ? basePool
+      : basePool.filter((r) => state.readerFilter === 'all' || getReadingStatus(r) === state.readerFilter);
+
+    $('readerListMeta').textContent = isChukyuMode
+      ? `中級へ行こう: ${filtered.length} bài đọc`
+      : `N${state.currentLevel}: ${filtered.length} / ${basePool.length} bài đọc`;
     container.innerHTML = '';
 
     if (!filtered.length) {
-      container.innerHTML = '<div class="rk-empty">Không có bài đọc khớp bộ lọc. Bạn có thể bấm "+ Dán bài đọc mới" ở trên.</div>';
+      container.innerHTML = '<div class="rk-empty">Không có bài đọc khớp bộ lọc. Bạn có thể bấm "+ Dán bài đọc mới" hoặc chọn tab "Giáo trình (10)".</div>';
       return;
     }
 
@@ -1458,8 +1565,9 @@
       btn.className = 'kanji-item';
       if (state.currentReading && state.currentReading.id === r.id) btn.classList.add('active');
       const done = getReadingStatus(r) === 'done';
+      const badgeText = r.textbook ? `B${r.lessonNum}` : `N${r.level}`;
       btn.innerHTML = `
-        <span class="kanji-item-glyph" style="font-size:15px;">N${r.level}</span>
+        <span class="kanji-item-glyph" style="font-size:15px;">${badgeText}</span>
         <span class="kanji-item-body">
           <div class="kanji-item-hv">${r.title}</div>
           <div class="kanji-item-vi">${r.paragraphs.length} đoạn · ${r.category || 'Đọc sâu'}</div>
@@ -1470,7 +1578,8 @@
       container.appendChild(btn);
     });
 
-    if (autoPick || !state.currentReading || state.currentReading.level !== state.currentLevel) {
+    const stillInFiltered = state.currentReading && filtered.some((r) => r.id === state.currentReading.id);
+    if (autoPick || !stillInFiltered) {
       selectReading(filtered[0]);
     }
   }
@@ -1757,6 +1866,24 @@
     });
   }
 
+  function setAudioTrackSource(audioEl, url, playBtn, seekEl, timeEl, autoPlay = false) {
+    audioEl.pause();
+    if (!url) {
+      audioEl.removeAttribute('src');
+      return;
+    }
+    audioEl.src = encodeUrlPath(url);
+    playBtn.textContent = autoPlay ? 'Tạm dừng' : 'Nghe Audio';
+    timeEl.textContent = '00:00 / 00:00';
+    seekEl.value = '0';
+    if (autoPlay) audioEl.play().catch(() => {});
+  }
+
+  function configureDualTrackButtons(slowBtn, natBtn, activeTrack) {
+    slowBtn.className = activeTrack === 'slow' ? 'btn-primary-sm' : 'btn-ghost-sm';
+    natBtn.className = activeTrack === 'nat' ? 'btn-primary-sm' : 'btn-ghost-sm';
+  }
+
   function selectReading(reading) {
     state.currentReading = reading;
     state.readerUnlockedIdx = 0;
@@ -1766,6 +1893,19 @@
     state.readerLookupSeq += 1;
     state.readerQuestionTimers.forEach(clearInterval);
     state.readerQuestionTimers = [];
+
+    const rBar = $('readerAudioBar');
+    const rAudio = $('readerAudioEl');
+    rAudio.pause();
+    if (reading.audioSlow || reading.audioNatural) {
+      rBar.classList.remove('hidden');
+      const initUrl = reading.audioSlow || reading.audioNatural;
+      configureDualTrackButtons($('readerTrackSlowBtn'), $('readerTrackNatBtn'), reading.audioSlow ? 'slow' : 'nat');
+      setAudioTrackSource(rAudio, initUrl, $('readerAudioPlayBtn'), $('readerAudioSeek'), $('readerAudioTime'), false);
+    } else {
+      rBar.classList.add('hidden');
+      setAudioTrackSource(rAudio, '', $('readerAudioPlayBtn'), $('readerAudioSeek'), $('readerAudioTime'), false);
+    }
 
     $('readerQuickLookupInput').value = '';
     $('rwEmptyHint').classList.remove('hidden');
@@ -2484,6 +2624,8 @@
     const imgViewer = $('examImgViewer');
     const emptyDoc = $('examEmptyDoc');
     const newTabLink = $('examOpenNewTabLink');
+    $('tbInteractivePane').classList.add('hidden');
+    state.tbInteractiveOpen = false;
     $('examGuardBanner').classList.toggle('hidden', !isGuard);
 
     if (!fileItem) {
@@ -2510,8 +2652,51 @@
     }
   }
 
+  function openPdfAtPage(fileUrl, pageNum, isGuard) {
+    const pdfFrame = $('examPdfFrame');
+    const imgViewer = $('examImgViewer');
+    const emptyDoc = $('examEmptyDoc');
+    const newTabLink = $('examOpenNewTabLink');
+
+    $('tbInteractivePane').classList.add('hidden');
+    state.tbInteractiveOpen = false;
+    $('examGuardBanner').classList.toggle('hidden', !isGuard);
+    emptyDoc.classList.add('hidden');
+    imgViewer.classList.add('hidden');
+
+    const encodedUrl = encodeUrlPath(fileUrl);
+    const targetSrc = pageNum ? `${encodedUrl}#page=${pageNum}` : encodedUrl;
+    newTabLink.href = targetSrc;
+    newTabLink.classList.remove('hidden');
+
+    // Reset frame briefly so Chromium PDF Viewer always scrolls to #page=N
+    pdfFrame.classList.remove('hidden');
+    pdfFrame.src = 'about:blank';
+    setTimeout(() => {
+      pdfFrame.src = targetSrc;
+    }, 30);
+  }
+
+  function getActiveExamDocId() {
+    if (state.examMode === 'textbook') {
+      return state.currentTextbookLesson ? state.currentTextbookLesson.id : 'chukyu-guide';
+    }
+    return state.currentExam ? state.currentExam.id : null;
+  }
+
+  function syncExamNotesPanel(docId, doneLabel = 'Đánh dấu đã giải xong đề này', undoneLabel = 'Đã giải xong (Bấm để bỏ đánh dấu)') {
+    const saved = (docId && state.progress.examNotes && state.progress.examNotes[docId]) || {};
+    $('examNoteInput').value = saved.note || '';
+    $('examNoteSaveHint').textContent = 'Tự lưu ổ đĩa';
+    $('examToggleDoneBtn').textContent = saved.done ? undoneLabel : doneLabel;
+  }
+
   function selectExam(exam) {
     state.currentExam = exam;
+    $('tbSectionBar').classList.add('hidden');
+    $('tbLessonKanjiSection').classList.add('hidden');
+    $('tbTrackPairRow').classList.add('hidden');
+
     qsa('#examList .kanji-item').forEach((el) => {
       el.classList.toggle('active', el.querySelector('.kanji-item-hv')?.textContent === exam.title);
     });
@@ -2519,7 +2704,6 @@
     $('examCurrentTitle').textContent = exam.title;
     $('examCurrentSub').textContent = `Cấp độ JLPT N${exam.level} · Đang tải từ thư mục de_thi/ cục bộ`;
 
-    // Build document switch buttons
     const tabsEl = $('examFileTabs');
     tabsEl.innerHTML = '';
     const docButtons = [];
@@ -2543,27 +2727,284 @@
 
     openExamDoc(docButtons[0]?.file || null, docButtons[0]?.guard || false);
 
-    // Setup Audio Player
     const audioBar = $('examAudioBar');
     const audioEl = $('examAudioEl');
     audioEl.pause();
     if (exam.audioFiles.length) {
       audioBar.classList.remove('hidden');
-      audioEl.src = encodeUrlPath(exam.audioFiles[0].url);
+      setAudioTrackSource(audioEl, exam.audioFiles[0].url, $('examPlayPauseBtn'), $('examAudioSeek'), $('examAudioTime'), false);
       audioEl.playbackRate = Number($('examSpeedSelect').value) || 1;
-      $('examPlayPauseBtn').textContent = 'Nghe Audio';
-      $('examAudioTime').textContent = '00:00 / 00:00';
-      $('examAudioSeek').value = '0';
     } else {
       audioBar.classList.add('hidden');
-      audioEl.removeAttribute('src');
+      setAudioTrackSource(audioEl, '', $('examPlayPauseBtn'), $('examAudioSeek'), $('examAudioTime'), false);
     }
 
-    // Load saved exam note & done status
-    const saved = (state.progress.examNotes && state.progress.examNotes[exam.id]) || {};
-    $('examNoteInput').value = saved.note || '';
-    $('examNoteSaveHint').textContent = 'Tự lưu ổ đĩa';
-    $('examToggleDoneBtn').textContent = saved.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
+    syncExamNotesPanel(exam.id);
+  }
+
+  // --- Textbook Studio Mode (sach_pdf/Chukyu_e_ikou) ---
+  async function switchExamMode(mode) {
+    state.examMode = mode;
+    qsa('.exam-mode-btn').forEach((b) => b.classList.toggle('active', b.dataset.emode === mode));
+    const isTb = mode === 'textbook';
+    $('examSearchInput').classList.toggle('hidden', isTb);
+    $('examFilterRow').classList.toggle('hidden', isTb);
+    $('tbSectionBar').classList.toggle('hidden', !isTb || !state.currentTextbookLesson);
+    $('tbLessonKanjiSection').classList.toggle('hidden', !isTb || !state.currentTextbookLesson);
+    $('tbTrackPairRow').classList.toggle('hidden', !isTb || !state.currentTextbookLesson);
+
+    if (isTb) {
+      await ensureTextbookLoaded();
+      renderTextbookList(true);
+    } else {
+      $('tbInteractivePane').classList.add('hidden');
+      state.tbInteractiveOpen = false;
+      renderExamList(true);
+    }
+  }
+
+  function renderTextbookList(autoPick = false) {
+    const container = $('examList');
+    const tb = state.textbookData;
+    if (!tb || !tb.lessons) {
+      $('examListMeta').textContent = 'Chưa nạp dữ liệu sách';
+      container.innerHTML = '<div class="rk-empty">Không tìm thấy data/textbooks.json.</div>';
+      return;
+    }
+
+    $('examListMeta').textContent = `${tb.lessons.length} Bài học · 55 Ngữ pháp · 169 Kanji`;
+    container.innerHTML = '';
+
+    tb.lessons.forEach((ls) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'kanji-item';
+      btn.dataset.lessonId = ls.id;
+      if (state.currentTextbookLesson && state.currentTextbookLesson.id === ls.id) btn.classList.add('active');
+      const done = isExamDone(ls.id);
+      btn.innerHTML = `
+        <span class="kanji-item-glyph" style="font-size:14px;">B${ls.lessonNum}</span>
+        <span class="kanji-item-body">
+          <div class="kanji-item-hv">${ls.titleJp}</div>
+          <div class="kanji-item-vi">${ls.titleVi} · ${ls.kanjiChars.length} Kanji</div>
+        </span>
+        <span class="kanji-item-dot ${done ? 'mastered' : ''}"></span>
+      `;
+      btn.addEventListener('click', () => selectTextbookLesson(ls));
+      container.appendChild(btn);
+    });
+
+    // Teacher guide item at the bottom
+    const guideBtn = document.createElement('button');
+    guideBtn.type = 'button';
+    guideBtn.className = 'kanji-item';
+    guideBtn.dataset.lessonId = 'chukyu-guide';
+    if (!state.currentTextbookLesson && state.examMode === 'textbook') guideBtn.classList.add('active');
+    const guideDone = isExamDone('chukyu-guide');
+    guideBtn.innerHTML = `
+      <span class="kanji-item-glyph" style="font-size:13px;">GV</span>
+      <span class="kanji-item-body">
+        <div class="kanji-item-hv">教師用ガイド (Sách GV)</div>
+        <div class="kanji-item-vi">30 trang hướng dẫn giảng dạy &amp; bảng từ</div>
+      </span>
+      <span class="kanji-item-dot ${guideDone ? 'mastered' : ''}"></span>
+    `;
+    guideBtn.addEventListener('click', () => selectTeacherGuide());
+    container.appendChild(guideBtn);
+
+    if (autoPick) {
+      selectTextbookLesson(state.currentTextbookLesson || tb.lessons[0]);
+    }
+  }
+
+  function renderTextbookInteractivePane(ls) {
+    const pane = $('tbInteractivePane');
+    const answersList = [];
+    const htmlCloze = ls.listeningCloze
+      .replace(/[\{\uff5b]([^\}\uff5d]+)[\}\uff5d]/g, (_, raw) => {
+        const idx = answersList.length;
+        const alts = raw.split(/[|｜]/).map((s) => s.trim()).filter(Boolean);
+        answersList.push(alts);
+        return `<input type="text" class="cloze-input" data-cloze-idx="${idx}" placeholder="( ${idx + 1} )" autocomplete="off" spellcheck="false" />`;
+      })
+      .replace(/\n/g, '<br />');
+
+    const grammarCardsHtml = ls.grammar.map((g, i) => `
+      <div class="grammar-card">
+        <div class="grammar-pat">${i + 1}. ${g.pattern}</div>
+        <div class="grammar-desc">${g.descVi}</div>
+        <div class="grammar-ex"><strong>Ví dụ:</strong> ${g.exampleJp}<br /><span>→ ${g.exampleVi}</span></div>
+      </div>
+    `).join('');
+
+    pane.innerHTML = `
+      <h2 class="tb-block-title">🎧 Phiếu nghe điền từ: 聴解タスクシート (Bài ${ls.lessonNum}: ${ls.titleJp})</h2>
+      <p class="sub-hint" style="margin:0 0 10px;">Bật Audio <strong>CD Chậm</strong> hoặc <strong>CD Tự nhiên</strong> ở thanh trên rồi nghe và điền từ vào chỗ trống (có thể gõ Kanji, Kana hoặc Romaji):</p>
+      <div class="cloze-passage" id="tbClozePassage">${htmlCloze}</div>
+      <div class="forge-actions" style="margin-bottom:18px;">
+        <button type="button" class="btn-primary" id="tbClozeCheckBtn">Kiểm tra đáp án nghe</button>
+        <button type="button" class="btn-ghost-sm" id="tbClozeRevealBtn">Mở đáp án điền</button>
+        <button type="button" class="btn-ghost-sm" id="tbClozeClearBtn">Xóa làm lại</button>
+        <span class="mono sub-hint" id="tbClozeScore"></span>
+      </div>
+
+      <h2 class="tb-block-title" style="margin-top:20px;">📘 Ngữ pháp trọng tâm Bài ${ls.lessonNum} (${ls.grammar.length} mẫu câu)</h2>
+      <div class="grammar-cards">${grammarCardsHtml}</div>
+    `;
+
+    $('tbClozeCheckBtn').addEventListener('click', () => {
+      const inputs = Array.from(pane.querySelectorAll('.cloze-input'));
+      let okCount = 0;
+      inputs.forEach((inp, idx) => {
+        const userNorm = normalizeJpForDiff(convertDictationInput(inp.value));
+        const validNorms = answersList[idx].map((a) => normalizeJpForDiff(a));
+        const matched = userNorm.length > 0 && validNorms.includes(userNorm);
+        inp.classList.toggle('ok', matched);
+        inp.classList.toggle('wrong', !matched);
+        if (matched) okCount += 1;
+      });
+      playWoodTap(okCount === inputs.length);
+      $('tbClozeScore').textContent = `Đúng ${okCount} / ${inputs.length} ô`;
+    });
+
+    $('tbClozeRevealBtn').addEventListener('click', () => {
+      const inputs = Array.from(pane.querySelectorAll('.cloze-input'));
+      inputs.forEach((inp, idx) => {
+        inp.value = answersList[idx][0];
+        inp.classList.remove('wrong');
+        inp.classList.add('ok');
+      });
+      $('tbClozeScore').textContent = 'Đã hiển thị toàn bộ đáp án chuẩn từ sách';
+    });
+
+    $('tbClozeClearBtn').addEventListener('click', () => {
+      pane.querySelectorAll('.cloze-input').forEach((inp) => {
+        inp.value = '';
+        inp.classList.remove('ok', 'wrong');
+      });
+      $('tbClozeScore').textContent = '';
+    });
+  }
+
+  function renderTextbookLessonKanji(ls) {
+    $('tbLessonKanjiSection').classList.remove('hidden');
+    const doneCnt = ls.kanjiChars.filter((c) => {
+      const st = getKanjiStatus(c);
+      return st === 'mastered' || st === 'learning';
+    }).length;
+    $('tbLessonKanjiMeta').textContent = `${doneCnt} / ${ls.kanjiChars.length} chữ đã luyện · Đồng bộ 2 chiều N5–N1`;
+
+    const chips = $('tbLessonKanjiChips');
+    chips.innerHTML = '';
+    ls.kanjiChars.forEach((ch) => {
+      const meta = state.kanjiLookup[ch];
+      if (!meta) return;
+      const st = getKanjiStatus(ch);
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'related-chip';
+      if (st === 'mastered') chip.style.borderColor = 'var(--accent-moss)';
+      else if (st === 'due') chip.style.borderColor = 'var(--accent-vermilion)';
+      chip.innerHTML = `<span class="related-chip-glyph">${ch}</span><span>${meta.hv}</span><span class="related-chip-lvl">N${meta.l}</span>`;
+      chip.title = `${meta.hv} — ${meta.vi} (N${meta.l}) — Bấm để bóc tách bên dưới`;
+      chip.addEventListener('click', () => {
+        $('examQuickKanjiInput').value = ch;
+        renderExamQuickKanji(ch);
+      });
+      chips.appendChild(chip);
+    });
+  }
+
+  function selectTextbookLesson(ls) {
+    state.currentTextbookLesson = ls;
+    state.tbInteractiveOpen = false;
+    qsa('#examList .kanji-item').forEach((el) => {
+      el.classList.toggle('active', el.dataset.lessonId === ls.id);
+    });
+
+    $('examFileTabs').innerHTML = '';
+    $('examCurrentTitle').textContent = `Bài ${ls.lessonNum}: ${ls.titleJp} (${ls.titleVi})`;
+    $('examCurrentSub').textContent = `Giáo trình 中級へ行こう · N${ls.level} · ${ls.kanjiChars.length} Kanji · ${ls.grammar.length} mẫu ngữ pháp`;
+
+    // Build instant page-jump toolbar
+    const secBar = $('tbSectionBar');
+    secBar.classList.remove('hidden');
+    secBar.innerHTML = '';
+    const sections = [
+      { key: 'honbun', label: `📖 Bài đọc (Tr.${ls.pages.honbun})`, page: ls.pages.honbun, guard: false },
+      { key: 'grammar', label: `📘 Ngữ pháp TV (Tr.${ls.pages.grammar})`, page: ls.pages.grammar, guard: false },
+      { key: 'listening', label: `🎧 Phiếu nghe (Tr.${ls.pages.listening})`, page: ls.pages.listening, guard: false },
+      { key: 'kanji', label: `漢 Kanji bài (Tr.${ls.pages.kanji})`, page: ls.pages.kanji, guard: false },
+      { key: 'vocabVi', label: `🇻🇳 Từ vựng TV (Tr.${ls.pages.vocabVi})`, page: ls.pages.vocabVi, guard: false },
+      { key: 'answer', label: `✅ Đáp án (Tr.${ls.pages.answer})`, page: ls.pages.answer, guard: true },
+    ];
+
+    sections.forEach((sec, idx) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = `tb-sec-btn${sec.guard ? ' guard' : ''}${idx === 0 ? ' active' : ''}`;
+      b.textContent = sec.label;
+      b.addEventListener('click', () => {
+        secBar.querySelectorAll('.tb-sec-btn').forEach((x) => x.classList.remove('active'));
+        b.classList.add('active');
+        openPdfAtPage(state.textbookData.pdfUrl, sec.page, sec.guard);
+      });
+      secBar.appendChild(b);
+    });
+
+    const toggleInterBtn = document.createElement('button');
+    toggleInterBtn.type = 'button';
+    toggleInterBtn.id = 'tbToggleInteractiveBtn';
+    toggleInterBtn.className = 'tb-sec-btn interactive';
+    toggleInterBtn.textContent = '🎧 Nghe điền từ & Ngữ pháp';
+    toggleInterBtn.addEventListener('click', () => {
+      const willOpen = !state.tbInteractiveOpen;
+      state.tbInteractiveOpen = willOpen;
+      secBar.querySelectorAll('.tb-sec-btn').forEach((x) => x.classList.remove('active'));
+      toggleInterBtn.classList.toggle('active', willOpen);
+      if (willOpen) {
+        $('examPdfFrame').classList.add('hidden');
+        $('examImgViewer').classList.add('hidden');
+        $('examEmptyDoc').classList.add('hidden');
+        $('examGuardBanner').classList.add('hidden');
+        renderTextbookInteractivePane(ls);
+        $('tbInteractivePane').classList.remove('hidden');
+      } else {
+        const firstBtn = secBar.querySelector('.tb-sec-btn');
+        if (firstBtn) firstBtn.classList.add('active');
+        openPdfAtPage(state.textbookData.pdfUrl, ls.pages.honbun, false);
+      }
+    });
+    secBar.appendChild(toggleInterBtn);
+
+    // Load PDF directly to Lesson Honbun page
+    openPdfAtPage(state.textbookData.pdfUrl, ls.pages.honbun, false);
+
+    // Setup Dual-speed Audio Bar (Slow & Natural)
+    $('examAudioBar').classList.remove('hidden');
+    $('tbTrackPairRow').classList.remove('hidden');
+    configureDualTrackButtons($('tbTrackSlowBtn'), $('tbTrackNatBtn'), 'slow');
+    const audioEl = $('examAudioEl');
+    setAudioTrackSource(audioEl, ls.audioSlow, $('examPlayPauseBtn'), $('examAudioSeek'), $('examAudioTime'), false);
+    audioEl.playbackRate = Number($('examSpeedSelect').value) || 1;
+
+    renderTextbookLessonKanji(ls);
+    syncExamNotesPanel(ls.id, 'Đánh dấu đã học xong bài này', 'Đã học xong (Bấm để bỏ đánh dấu)');
+  }
+
+  function selectTeacherGuide() {
+    state.currentTextbookLesson = null;
+    $('tbSectionBar').classList.add('hidden');
+    $('tbLessonKanjiSection').classList.add('hidden');
+    $('tbTrackPairRow').classList.add('hidden');
+    $('examAudioBar').classList.add('hidden');
+    qsa('#examList .kanji-item').forEach((el) => {
+      el.classList.toggle('active', el.dataset.lessonId === 'chukyu-guide');
+    });
+    $('examCurrentTitle').textContent = '教師用ガイド — Sách Hướng dẫn Giáo viên';
+    $('examCurrentSub').textContent = '30 trang mục tiêu từng bài, lưu ý ngữ pháp & bảng từ xuất hiện';
+    openPdfAtPage(state.textbookData.guidePdfUrl, 1, false);
+    syncExamNotesPanel('chukyu-guide', 'Đánh dấu đã xem xong hướng dẫn', 'Đã xem xong');
   }
 
   async function renderExamQuickKanji(query) {
@@ -2587,7 +3028,7 @@
 
     container.innerHTML = '';
     if (!chars.length) {
-      container.innerHTML = '<span class="sub-hint">Không tìm thấy chữ Kanji khớp trong bộ 2.211 chữ N5–N1.</span>';
+      container.innerHTML = '<span class="sub-hint">Không tìm thấy chữ Kanji khớp trong bộ 2.230 chữ N5–N1.</span>';
       return;
     }
 
@@ -2646,6 +3087,24 @@
         $('dojoCard').classList.add('hidden');
         $('dojoSummaryCard').classList.add('hidden');
         $('dojoEmptyState').innerHTML = '<p>Bạn chưa có chữ Kanji nào trong sổ tiến độ. Hãy luyện viết ở tab <strong>Xưởng chữ</strong> trước nhé.</p>';
+        return;
+      }
+    } else if (scope === 'chukyu') {
+      const tb = await ensureTextbookLoaded();
+      const chukyuList = (tb && tb.allKanji) || [];
+      const now = Date.now();
+      chars = chukyuList
+        .filter((ch) => state.kanjiLookup[ch] && getKanjiStatus(ch) !== 'mastered')
+        .sort((a, b) => {
+          const da = state.progress.kanji[a]?.due ? new Date(state.progress.kanji[a].due).getTime() : now + 86400000;
+          const db = state.progress.kanji[b]?.due ? new Date(state.progress.kanji[b].due).getTime() : now + 86400000;
+          return da - db;
+        });
+      if (!chars.length) {
+        $('dojoEmptyState').classList.remove('hidden');
+        $('dojoCard').classList.add('hidden');
+        $('dojoSummaryCard').classList.add('hidden');
+        $('dojoEmptyState').innerHTML = '<p>Chúc mừng! Toàn bộ 169 chữ Kanji trong giáo trình <strong>中級へ行こう</strong> đều đã đạt mức Thuộc sâu.</p>';
         return;
       }
     } else if (scope === 'leech') {
@@ -2950,7 +3409,8 @@
       }
     }
 
-    $('statMasteredTotal').textContent = `${masteredSum} / 2211`;
+    const totalKanjiDb = Object.keys(state.kanjiLookup).length || 2230;
+    $('statMasteredTotal').textContent = `${masteredSum} / ${totalKanjiDb}`;
     $('statDueToday').textContent = `${getDueKanjiChars().length} chữ cần ôn hôm nay`;
 
     const bars = $('jlptProgressBars');
@@ -2982,8 +3442,9 @@
     const modBox = $('neuroModuleSummary');
     if (modBox) {
       const kanjiCount = Object.keys(state.progress.kanji || {}).length;
+      const totalKanjiDb = Object.keys(state.kanjiLookup).length || 2230;
       const readingsDoneIds = Object.keys(state.progress.readingsDone || {});
-      const readingsTotal = (state.readingsLoaded && state.readings.length) || 25;
+      const readingsTotal = (state.readingsLoaded && state.readings.length) || 35;
       const customCount = (state.progress.customReadings || []).length;
 
       const sDoneEntries = Object.values(state.progress.sentencesDone || {});
@@ -2992,26 +3453,27 @@
       const sentTotal = (state.sentencesLoaded && state.sentences.length) || 45;
 
       const examNotesMap = state.progress.examNotes || {};
-      const examsDoneCount = Object.values(examNotesMap).filter((x) => x.done).length;
+      const examsDoneCount = Object.entries(examNotesMap).filter(([id, x]) => !id.startsWith('chukyu-') && x.done).length;
+      const chukyuDoneCount = Object.entries(examNotesMap).filter(([id, x]) => /^chukyu-\d+$/.test(id) && x.done).length;
       const examNotesCount = Object.values(examNotesMap).filter((x) => (x.note || '').trim()).length;
       const examTotal = (state.examsLoaded && state.examCatalog.length) || 125;
 
       modBox.innerHTML = `
         <div class="neuro-mod-item">
-          <div class="neuro-mod-head"><span>1. Xưởng chữ (Kanji N5–N1)</span><span class="mono">${kanjiCount} / 2211 chữ đã chạm</span></div>
+          <div class="neuro-mod-head"><span>1. Xưởng chữ (Kanji N5–N1)</span><span class="mono">${kanjiCount} / ${totalKanjiDb} chữ đã chạm</span></div>
           <div class="neuro-mod-sub">Gồm các chữ bạn đã vẽ nét, tự nhớ mù hoặc đưa vào hàng đợi SRS.</div>
         </div>
         <div class="neuro-mod-item">
-          <div class="neuro-mod-head"><span>2. Đọc sâu (Anti-Skimming)</span><span class="mono">${readingsDoneIds.length} / ${readingsTotal} bài${customCount ? ` (+${customCount} bài tự dán)` : ''}</span></div>
-          <div class="neuro-mod-sub">Hoàn thành đọc phân đoạn kèm câu hỏi hiểu sâu và tóm tắt truy xuất.</div>
+          <div class="neuro-mod-head"><span>2. Đọc sâu (JLPT &amp; Giáo trình)</span><span class="mono">${readingsDoneIds.length} / ${readingsTotal} bài${customCount ? ` (+${customCount} bài tự dán)` : ''}</span></div>
+          <div class="neuro-mod-sub">25 bài JLPT N5–N1 + 10 bài giáo trình 中級へ行こう kèm audio CD.</div>
         </div>
         <div class="neuro-mod-item">
           <div class="neuro-mod-head"><span>3. Xưởng câu &amp; Nghe chép tĩnh</span><span class="mono">${forgeDone} ghép (★) · ${dictDone} nghe chép / ${sentTotal} câu</span></div>
           <div class="neuro-mod-sub">Lắp ghép 4 mảnh ngữ pháp chuẩn JLPT và nghe chép từng ký tự Kana.</div>
         </div>
         <div class="neuro-mod-item">
-          <div class="neuro-mod-head"><span>4. Kho đề thi JLPT (2010–2026)</span><span class="mono">${examsDoneCount} / ${examTotal} kỳ thi · ${examNotesCount} ghi chú</span></div>
-          <div class="neuro-mod-sub">Đề thi PDF thật, Audio nghe tua ±5s, Script đối chiếu và sổ ghi chú phòng thi.</div>
+          <div class="neuro-mod-head"><span>4. Kho đề thi &amp; Sách giáo trình</span><span class="mono">${examsDoneCount} / ${examTotal} đề · ${chukyuDoneCount} / 10 bài sách · ${examNotesCount} ghi chú</span></div>
+          <div class="neuro-mod-sub">Đề thi thật (2010–2026) và giáo trình 中級へ行こう nhảy trang &amp; nghe điền từ.</div>
         </div>
       `;
     }
@@ -3204,6 +3666,63 @@
     btn.setAttribute('aria-pressed', String(enabled));
   }
 
+  function bindAudioPlayerControls({ audioEl, otherAudioEl, otherPlayBtn, playBtn, backBtn, fwdBtn, seekEl, timeEl }) {
+    playBtn.addEventListener('click', () => {
+      if (!audioEl.src) return;
+      if (audioEl.paused) {
+        if (otherAudioEl && !otherAudioEl.paused) {
+          otherAudioEl.pause();
+          if (otherPlayBtn) otherPlayBtn.textContent = 'Nghe tiếp';
+        }
+        audioEl.play().catch(() => {});
+        playBtn.textContent = 'Tạm dừng';
+      } else {
+        audioEl.pause();
+        playBtn.textContent = 'Nghe tiếp';
+      }
+    });
+    backBtn.addEventListener('click', () => {
+      if (audioEl.src) audioEl.currentTime = Math.max(0, audioEl.currentTime - 5);
+    });
+    fwdBtn.addEventListener('click', () => {
+      if (audioEl.src && audioEl.duration) audioEl.currentTime = Math.min(audioEl.duration, audioEl.currentTime + 5);
+    });
+    seekEl.addEventListener('input', (e) => {
+      if (audioEl.duration) {
+        audioEl.currentTime = (Number(e.target.value) / 100) * audioEl.duration;
+      }
+    });
+    audioEl.addEventListener('timeupdate', () => {
+      const dur = audioEl.duration || 0;
+      const cur = audioEl.currentTime || 0;
+      timeEl.textContent = `${formatMMSS(Math.floor(cur))} / ${formatMMSS(Math.floor(dur))}`;
+      if (dur > 0) seekEl.value = String((cur / dur) * 100);
+    });
+    audioEl.addEventListener('ended', () => {
+      playBtn.textContent = 'Nghe lại';
+    });
+  }
+
+  function bindDualTrackControls({ slowBtn, natBtn, audioEl, otherAudioEl, otherPlayBtn, playBtn, seekEl, timeEl, getTrackUrls, getPlaybackRate }) {
+    [
+      { btn: slowBtn, track: 'slow' },
+      { btn: natBtn, track: 'nat' },
+    ].forEach(({ btn, track }) => {
+      btn.addEventListener('click', () => {
+        const urls = getTrackUrls();
+        const url = urls && urls[track];
+        if (!url) return;
+        if (otherAudioEl && !otherAudioEl.paused) {
+          otherAudioEl.pause();
+          if (otherPlayBtn) otherPlayBtn.textContent = 'Nghe tiếp';
+        }
+        configureDualTrackButtons(slowBtn, natBtn, track);
+        setAudioTrackSource(audioEl, url, playBtn, seekEl, timeEl, true);
+        if (getPlaybackRate) audioEl.playbackRate = getPlaybackRate();
+      });
+    });
+  }
+
   // --- Event Binding ---
   function bindEvents() {
     qsa('.level-btn').forEach((btn) => {
@@ -3234,6 +3753,10 @@
     $('globalSearchToggle').addEventListener('change', (e) => {
       state.globalSearch = e.target.checked;
       applyFilterAndRender();
+    });
+
+    $('atelierTextbookSelect').addEventListener('change', (e) => {
+      applyTextbookFilter(e.target.value, true);
     });
 
     $('prevKanjiBtn').addEventListener('click', () => navigateKanji(-1));
@@ -3530,6 +4053,10 @@
       $('customReadingTitle').value = '';
       $('customReadingBody').value = '';
       $('customReadingForm').classList.add('hidden');
+      if (state.readerFilter === 'chukyu') {
+        state.readerFilter = 'all';
+        qsa('.reader-filter').forEach((c) => c.classList.toggle('active', c.dataset.rfilter === 'all'));
+      }
       selectLevel(lvl, false).then(() => {
         renderReaderList(false);
         selectReading(custom);
@@ -3575,6 +4102,30 @@
       speakJapaneseText(fullText, 0.86);
     });
 
+    const readerAudioEl = $('readerAudioEl');
+    const examAudioEl = $('examAudioEl');
+    bindDualTrackControls({
+      slowBtn: $('readerTrackSlowBtn'),
+      natBtn: $('readerTrackNatBtn'),
+      audioEl: readerAudioEl,
+      otherAudioEl: examAudioEl,
+      otherPlayBtn: $('examPlayPauseBtn'),
+      playBtn: $('readerAudioPlayBtn'),
+      seekEl: $('readerAudioSeek'),
+      timeEl: $('readerAudioTime'),
+      getTrackUrls: () => (state.currentReading ? { slow: state.currentReading.audioSlow, nat: state.currentReading.audioNatural } : null),
+    });
+    bindAudioPlayerControls({
+      audioEl: readerAudioEl,
+      otherAudioEl: examAudioEl,
+      otherPlayBtn: $('examPlayPauseBtn'),
+      playBtn: $('readerAudioPlayBtn'),
+      backBtn: $('readerBack5Btn'),
+      fwdBtn: $('readerFwd5Btn'),
+      seekEl: $('readerAudioSeek'),
+      timeEl: $('readerAudioTime'),
+    });
+
     $('readerResetBtn').addEventListener('click', () => {
       if (!state.currentReading) return;
       selectReading(state.currentReading);
@@ -3602,7 +4153,11 @@
       setTimeout(() => { $('rkAddSrsBtn').textContent = 'Đưa vào ôn SRS'; }, 1400);
     });
 
-    // Exam Studio events
+    // Exam Studio & Textbook events
+    qsa('.exam-mode-btn').forEach((btn) => {
+      btn.addEventListener('click', () => switchExamMode(btn.dataset.emode));
+    });
+
     qsa('.exam-filter').forEach((btn) => {
       btn.addEventListener('click', () => {
         state.examFilter = btn.dataset.efilter;
@@ -3613,42 +4168,42 @@
 
     $('examSearchInput').addEventListener('input', (e) => {
       state.examSearch = e.target.value;
-      renderExamList(true);
+      if (state.examMode === 'textbook') renderTextbookList(true);
+      else renderExamList(true);
     });
 
-    const audioEl = $('examAudioEl');
-    $('examPlayPauseBtn').addEventListener('click', () => {
-      if (!audioEl.src) return;
-      if (audioEl.paused) {
-        audioEl.play();
-        $('examPlayPauseBtn').textContent = 'Tạm dừng';
-      } else {
-        audioEl.pause();
-        $('examPlayPauseBtn').textContent = 'Nghe tiếp';
-      }
+    bindDualTrackControls({
+      slowBtn: $('tbTrackSlowBtn'),
+      natBtn: $('tbTrackNatBtn'),
+      audioEl: examAudioEl,
+      otherAudioEl: readerAudioEl,
+      otherPlayBtn: $('readerAudioPlayBtn'),
+      playBtn: $('examPlayPauseBtn'),
+      seekEl: $('examAudioSeek'),
+      timeEl: $('examAudioTime'),
+      getTrackUrls: () => (state.currentTextbookLesson ? { slow: state.currentTextbookLesson.audioSlow, nat: state.currentTextbookLesson.audioNatural } : null),
+      getPlaybackRate: () => Number($('examSpeedSelect').value) || 1,
     });
-    $('examBack5Btn').addEventListener('click', () => {
-      if (audioEl.src) audioEl.currentTime = Math.max(0, audioEl.currentTime - 5);
-    });
-    $('examFwd5Btn').addEventListener('click', () => {
-      if (audioEl.src && audioEl.duration) audioEl.currentTime = Math.min(audioEl.duration, audioEl.currentTime + 5);
+    bindAudioPlayerControls({
+      audioEl: examAudioEl,
+      otherAudioEl: readerAudioEl,
+      otherPlayBtn: $('readerAudioPlayBtn'),
+      playBtn: $('examPlayPauseBtn'),
+      backBtn: $('examBack5Btn'),
+      fwdBtn: $('examFwd5Btn'),
+      seekEl: $('examAudioSeek'),
+      timeEl: $('examAudioTime'),
     });
     $('examSpeedSelect').addEventListener('change', (e) => {
-      audioEl.playbackRate = Number(e.target.value) || 1;
+      examAudioEl.playbackRate = Number(e.target.value) || 1;
     });
-    $('examAudioSeek').addEventListener('input', (e) => {
-      if (audioEl.duration) {
-        audioEl.currentTime = (Number(e.target.value) / 100) * audioEl.duration;
-      }
-    });
-    audioEl.addEventListener('timeupdate', () => {
-      const dur = audioEl.duration || 0;
-      const cur = audioEl.currentTime || 0;
-      $('examAudioTime').textContent = `${formatMMSS(Math.floor(cur))} / ${formatMMSS(Math.floor(dur))}`;
-      if (dur > 0) $('examAudioSeek').value = String((cur / dur) * 100);
-    });
-    audioEl.addEventListener('ended', () => {
-      $('examPlayPauseBtn').textContent = 'Nghe lại';
+
+    $('tbOpenAtelierBtn').addEventListener('click', async () => {
+      if (!state.currentTextbookLesson) return;
+      const key = String(state.currentTextbookLesson.lessonNum);
+      $('atelierTextbookSelect').value = key;
+      await applyTextbookFilter(key, true);
+      switchView('atelier');
     });
 
     $('examQuickKanjiInput').addEventListener('input', (e) => {
@@ -3656,8 +4211,8 @@
     });
 
     $('examNoteInput').addEventListener('input', (e) => {
-      if (!state.currentExam) return;
-      const id = state.currentExam.id;
+      const id = getActiveExamDocId();
+      if (!id) return;
       state.progress.examNotes = state.progress.examNotes || {};
       const prev = state.progress.examNotes[id] || { done: false, note: '' };
       prev.note = e.target.value;
@@ -3671,16 +4226,24 @@
     });
 
     $('examToggleDoneBtn').addEventListener('click', () => {
-      if (!state.currentExam) return;
-      const id = state.currentExam.id;
+      const id = getActiveExamDocId();
+      if (!id) return;
       state.progress.examNotes = state.progress.examNotes || {};
       const prev = state.progress.examNotes[id] || { done: false, note: '' };
       prev.done = !prev.done;
       prev.updatedAt = new Date().toISOString();
       state.progress.examNotes[id] = prev;
       scheduleSaveProgress(true);
-      $('examToggleDoneBtn').textContent = prev.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
-      renderExamList(false);
+      if (state.examMode === 'textbook') {
+        const isGuide = id === 'chukyu-guide';
+        $('examToggleDoneBtn').textContent = prev.done
+          ? (isGuide ? 'Đã xem xong' : 'Đã học xong (Bấm để bỏ đánh dấu)')
+          : (isGuide ? 'Đánh dấu đã xem xong hướng dẫn' : 'Đánh dấu đã học xong bài này');
+        renderTextbookList(false);
+      } else {
+        $('examToggleDoneBtn').textContent = prev.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
+        renderExamList(false);
+      }
     });
 
     // Module 4: Sentence Forge & Blind Dictation events
@@ -3769,7 +4332,7 @@
   // --- Bootstrap ---
   async function init() {
     bindEvents();
-    await Promise.all([loadProgress(), ensureMetaIndexes()]);
+    await Promise.all([loadProgress(), ensureMetaIndexes(), ensureTextbookLoaded()]);
     applyTheme(state.progress.settings.theme || 'hanshi');
     applySoundSetting(Boolean(state.progress.settings.soundEnabled));
     const defMin = state.progress.settings.focusDurationMin || 15;

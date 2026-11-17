@@ -335,9 +335,11 @@ def main():
     by_level = {5: [], 4: [], 3: [], 2: [], 1: []}
     comp_to_kanji = collections.defaultdict(list)
     kanji_level_lookup = {}
+    jlpt_old_to_new = {4: 5, 3: 4, 2: 3, 1: 1}
+    extra_level_overrides = {'的': 4, '無': 4}
 
     for ch, meta in kd.items():
-        lvl = meta.get('jlpt_new')
+        lvl = meta.get('jlpt_new') or extra_level_overrides.get(ch) or jlpt_old_to_new.get(meta.get('jlpt_old'))
         if lvl not in by_level:
             continue
         if ch not in kvg_map:
@@ -423,10 +425,12 @@ def main():
 
     print(f'TOTAL KANJI BUILT: {total}')
 
-    # Clean up temporary cache so repository stays light for GitHub
-    if os.path.exists(CACHE_DIR):
-        shutil.rmtree(CACHE_DIR)
-        print('Cleaned up scripts/.cache/')
+    # Clean up downloaded archive sources so repository stays light
+    for fname in SOURCES:
+        fpath = os.path.join(CACHE_DIR, fname)
+        if os.path.exists(fpath):
+            os.remove(fpath)
+    print('Cleaned up temporary dataset sources in scripts/.cache/')
 
 
 if __name__ == '__main__':
