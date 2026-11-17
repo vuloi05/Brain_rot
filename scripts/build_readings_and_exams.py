@@ -1532,18 +1532,22 @@ def detect_level(folder_path, filename):
 
 def detect_period(folder_path, filename):
     """Extract (year, month, label) from folder or file name for chronological sorting."""
-    text = filename + ' ' + folder_path
-    # Match patterns like "7-2024", "12-2021", "07.2025", "12.2025", "2012年12月", "2023年7月"
-    m = re.search(r'(\d{1,2})\s*[-./]\s*(20\d{2}|19\d{2})', text)
+    # Remove JLPT level prefixes like N5-, N4- so "N5-2013" is never misread as month 5
+    raw_text = filename + ' ' + folder_path
+    text = re.sub(r'N[1-5](?=[^0-9]|$)', ' ', raw_text, flags=re.IGNORECASE)
+
+    # Match month/year patterns like "7-2024", "12-2021", "07.2025", "12.2025"
+    m = re.search(r'(?<!\d)(0?7|12)\s*[-./]\s*(20\d{2}|19\d{2})', text)
     if m:
         mo, yr = int(m.group(1)), int(m.group(2))
-        if 1 <= mo <= 12:
-            return yr, mo, f'T{mo}/{yr}'
-    m2 = re.search(r'(20\d{2}|19\d{2})\s*[年\-./]\s*(\d{1,2})', text)
+        return yr, mo, f'T{mo}/{yr}'
+
+    # Match Japanese year-month patterns like "2012年12月", "2013年7月"
+    m2 = re.search(r'(20\d{2}|19\d{2})\s*[年\-./]\s*(0?7|12)(?:月|(?=\D|$))', text)
     if m2:
         yr, mo = int(m2.group(1)), int(m2.group(2))
-        if 1 <= mo <= 12:
-            return yr, mo, f'T{mo}/{yr}'
+        return yr, mo, f'T{mo}/{yr}'
+
     # Year range or single year like "2010-2011" or "2018" or "1995~2009"
     m_range = re.search(r'(20\d{2}|19\d{2})\s*[-~～]\s*(20\d{2})', text)
     if m_range:
