@@ -71,6 +71,18 @@
     examSearch: '',
     currentExam: null,
     examNoteTimer: null,
+    // Module 4: Sentence Forge & Blind Dictation
+    sentencesLoaded: false,
+    sentences: [],
+    forgeMode: 'forge', // 'forge' | 'dictation'
+    forgeFilter: 'all',
+    currentSentence: null,
+    forgeSlots: [null, null, null, null],
+    forgeShuffled: [],
+    forgeHintTimer: null,
+    dictHintTimer: null,
+    forgeSelectedKanji: '',
+    dictRevealed: false,
     // Progress object persisted to data/user-progress.json
     progress: createDefaultProgress(),
   };
@@ -99,6 +111,7 @@
       kanji: {},
       readingsDone: {},
       customReadings: [],
+      sentencesDone: {},
       examNotes: {},
       sessionLogs: [],
     };
@@ -301,6 +314,7 @@
         kanji: loaded.kanji || {},
         readingsDone: loaded.readingsDone || {},
         customReadings: loaded.customReadings || [],
+        sentencesDone: loaded.sentencesDone || {},
         examNotes: loaded.examNotes || {},
         sessionLogs: loaded.sessionLogs || [],
       };
@@ -1289,6 +1303,9 @@
     if (state.examsLoaded) {
       renderExamList(true);
     }
+    if (state.sentencesLoaded) {
+      renderForgeList(true);
+    }
   }
 
   async function getFullKanjiEntry(ch) {
@@ -1354,12 +1371,15 @@
 
     $('viewAtelier').classList.toggle('hidden', view !== 'atelier');
     $('viewReader').classList.toggle('hidden', view !== 'reader');
+    $('viewForge').classList.toggle('hidden', view !== 'forge');
     $('viewExams').classList.toggle('hidden', view !== 'exams');
     $('viewDojo').classList.toggle('hidden', view !== 'dojo');
     $('viewNeuro').classList.toggle('hidden', view !== 'neuro');
 
     if (view === 'reader') {
       ensureReadingsLoaded().then(() => renderReaderList(!state.currentReading));
+    } else if (view === 'forge') {
+      ensureSentencesLoaded().then(() => renderForgeList(!state.currentSentence));
     } else if (view === 'exams') {
       ensureExamsLoaded().then(() => renderExamList(!state.currentExam));
     } else if (view === 'neuro') {
@@ -1722,19 +1742,16 @@
     $('readerDoneBadge').textContent = saved ? 'Đã hoàn thành bài đọc này' : 'Chưa hoàn thành';
   }
 
-  async function inspectReaderKanji(ch) {
-    state.readerSelectedKanji = ch;
-    qsa('.inline-kanji').forEach((el) => el.classList.toggle('selected', el.textContent === ch));
-
+  async function renderMiniKanjiInspector(ch, prefix) {
     const entry = await getFullKanjiEntry(ch);
     if (!entry) return;
 
-    $('rkEmptyHint').classList.add('hidden');
-    $('rkBody').classList.remove('hidden');
-    $('rkLevelTag').classList.remove('hidden');
-    $('rkLevelTag').textContent = `N${entry.l} · ${entry.s} nét`;
+    $(`${prefix}EmptyHint`).classList.add('hidden');
+    $(`${prefix}Body`).classList.remove('hidden');
+    $(`${prefix}LevelTag`).classList.remove('hidden');
+    $(`${prefix}LevelTag`).textContent = `N${entry.l} · ${entry.s} nét`;
 
-    const svg = $('rkMiniSvg');
+    const svg = $(`${prefix}MiniSvg`);
     svg.innerHTML = '';
     entry.strokes.forEach((d) => {
       const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -1743,12 +1760,12 @@
       svg.appendChild(p);
     });
 
-    $('rkHv').textContent = `${entry.c} — ${entry.hv}`;
-    $('rkVi').textContent = entry.vi.slice(0, 4).join(' · ') || entry.en.slice(0, 3).join(' · ');
-    $('rkReadings').textContent = `On: ${entry.on.join(', ') || '—'} | Kun: ${entry.kun.join(', ') || '—'}`;
-    $('rkRadical').textContent = `Bộ thủ: ${entry.rad || '—'}`;
+    $(`${prefix}Hv`).textContent = `${entry.c} — ${entry.hv}`;
+    $(`${prefix}Vi`).textContent = entry.vi.slice(0, 4).join(' · ') || entry.en.slice(0, 3).join(' · ');
+    $(`${prefix}Readings`).textContent = `On: ${entry.on.join(', ') || '—'} | Kun: ${entry.kun.join(', ') || '—'}`;
+    $(`${prefix}Radical`).textContent = `Bộ thủ: ${entry.rad || '—'}`;
 
-    const partsBox = $('rkParts');
+    const partsBox = $(`${prefix}Parts`);
     partsBox.innerHTML = '';
     entry.parts.filter((p) => p.depth === 1).forEach((p) => {
       const line = document.createElement('div');
@@ -1756,6 +1773,359 @@
       line.textContent = `• ${p.el} (${p.hv || 'Bộ phận'}): ${p.vi || ''}`;
       partsBox.appendChild(line);
     });
+  }
+
+  async function inspectReaderKanji(ch) {
+    state.readerSelectedKanji = ch;
+    qsa('.inline-kanji').forEach((el) => el.classList.toggle('selected', el.textContent === ch));
+    await renderMiniKanjiInspector(ch, 'rk');
+  }
+
+  // =======================================================================
+  // MODULE 4: SENTENCE FORGE & BLIND DICTATION
+  // =======================================================================
+  async function ensureSentencesLoaded() {
+    if (state.sentencesLoaded) return;
+    const res = await fetch('data/sentences.json');
+    state.sentences = await res.json();
+    state.sentencesLoaded = true;
+  }
+
+  function isSentenceDone(s) {
+    const rec = state.progress.sentencesDone && state.progress.sentencesDone[s.id];
+    if (!rec) return false;
+    return state.forgeMode === 'forge' ? Boolean(rec.forge) : Boolean(rec.dictation);
+  }
+
+  function renderForgeList(autoPick = false) {
+    const container = $('forgeList');
+    const allForLevel = state.sentences.filter((s) => s.level === state.currentLevel);
+    const filtered = allForLevel.filter((s) => {
+      if (state.forgeFilter === 'done') return isSentenceDone(s);
+      if (state.forgeFilter === 'todo') return !isSentenceDone(s);
+      return true;
+    });
+
+    $('forgeListMeta').textContent = `N${state.currentLevel}: ${filtered.length} / ${allForLevel.length} câu`;
+    container.innerHTML = '';
+
+    if (!filtered.length) {
+      container.innerHTML = '<div class="rk-empty">Không có câu khớp bộ lọc hiện tại.</div>';
+      return;
+    }
+
+    filtered.forEach((s, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'kanji-item';
+      if (state.currentSentence && state.currentSentence.id === s.id) btn.classList.add('active');
+      const done = isSentenceDone(s);
+      const titleText = state.forgeMode === 'dictation' && !done
+        ? `Câu nghe chép #${idx + 1} (${s.kana.length} ký tự)`
+        : (s.prefix || s.chunks[0]).slice(0, 16) + '...';
+      btn.innerHTML = `
+        <span class="kanji-item-glyph" style="font-size:14px;">#${idx + 1}</span>
+        <span class="kanji-item-body">
+          <div class="kanji-item-hv">${titleText}</div>
+          <div class="kanji-item-vi">${s.source.replace('Đề JLPT ', '')}</div>
+        </span>
+        <span class="kanji-item-dot ${done ? 'mastered' : ''}"></span>
+      `;
+      btn.addEventListener('click', () => selectSentence(s));
+      container.appendChild(btn);
+    });
+
+    if (autoPick || !state.currentSentence || state.currentSentence.level !== state.currentLevel) {
+      selectSentence(filtered[0]);
+    }
+  }
+
+  function shuffleIndices() {
+    const arr = [0, 1, 2, 3];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    if (arr.every((v, i) => v === i)) [arr[0], arr[1]] = [arr[1], arr[0]];
+    return arr;
+  }
+
+  function startDelayedHint(btn, timerKey, labelAfter, onUnlock) {
+    clearInterval(state[timerKey]);
+    let sec = 3;
+    btn.disabled = true;
+    btn.textContent = `${labelAfter} (${sec}s)`;
+    state[timerKey] = setInterval(() => {
+      sec -= 1;
+      if (sec <= 0) {
+        clearInterval(state[timerKey]);
+        btn.disabled = false;
+        btn.textContent = labelAfter;
+        if (onUnlock) onUnlock();
+      } else {
+        btn.textContent = `${labelAfter} (${sec}s)`;
+      }
+    }, 1000);
+  }
+
+  function selectSentence(s) {
+    state.currentSentence = s;
+    state.forgeSlots = [null, null, null, null];
+    state.forgeShuffled = shuffleIndices();
+    state.dictRevealed = isSentenceDone(s);
+
+    renderForgeList(false);
+    $('forgeLevelTag').textContent = `JLPT N${s.level}`;
+    $('forgeSourceTag').textContent = s.source;
+
+    const isDict = state.forgeMode === 'dictation';
+    $('forgeStage').classList.toggle('hidden', isDict);
+    $('dictationStage').classList.toggle('hidden', !isDict);
+
+    if (isDict) {
+      $('dictInput').value = '';
+      $('dictKanaPreview').textContent = '';
+      $('dictResultBox').classList.add('hidden');
+      $('dictHintText').classList.add('hidden');
+      startDelayedHint($('dictHintBtn'), 'dictHintTimer', 'Gợi ý nghĩa & độ dài');
+    } else {
+      $('forgeResultBox').classList.add('hidden');
+      $('forgeHintText').classList.add('hidden');
+      startDelayedHint($('forgeHintBtn'), 'forgeHintTimer', 'Xem nghĩa tiếng Việt');
+      renderForgeBuilder();
+    }
+
+    renderForgeKanjiPanel();
+  }
+
+  function renderForgeBuilder(checked = false) {
+    const s = state.currentSentence;
+    if (!s) return;
+
+    const box = $('forgeSentenceBox');
+    box.innerHTML = '';
+    if (s.prefix) box.appendChild(buildInteractiveJpFragment(s.prefix));
+
+    state.forgeSlots.forEach((chunkIdx, slotPos) => {
+      const slotBtn = document.createElement('button');
+      slotBtn.type = 'button';
+      slotBtn.className = 'forge-slot';
+      if (slotPos === s.starIdx) slotBtn.classList.add('star');
+      if (chunkIdx !== null) {
+        slotBtn.classList.add('filled');
+        slotBtn.textContent = s.chunks[chunkIdx];
+        if (checked) {
+          slotBtn.classList.add(chunkIdx === slotPos ? 'correct' : 'wrong');
+        }
+      } else {
+        slotBtn.textContent = slotPos === s.starIdx ? '★' : `Ô ${slotPos + 1}`;
+      }
+      slotBtn.addEventListener('click', () => {
+        if (chunkIdx !== null) {
+          state.forgeSlots[slotPos] = null;
+          $('forgeResultBox').classList.add('hidden');
+          renderForgeBuilder(false);
+        }
+      });
+      box.appendChild(slotBtn);
+    });
+
+    if (s.suffix) box.appendChild(buildInteractiveJpFragment(s.suffix));
+
+    const tray = $('forgeTray');
+    tray.innerHTML = '';
+    const used = new Set(state.forgeSlots.filter((v) => v !== null));
+    state.forgeShuffled.forEach((chunkIdx) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'forge-chunk-btn';
+      if (used.has(chunkIdx)) b.classList.add('used');
+      b.textContent = s.chunks[chunkIdx];
+      b.addEventListener('click', () => {
+        const emptySlot = state.forgeSlots.indexOf(null);
+        if (emptySlot === -1) return;
+        state.forgeSlots[emptySlot] = chunkIdx;
+        renderForgeBuilder(false);
+      });
+      tray.appendChild(b);
+    });
+  }
+
+  function checkSentenceForge() {
+    const s = state.currentSentence;
+    if (!s) return;
+    const resEl = $('forgeResultBox');
+    resEl.classList.remove('hidden', 'ok', 'warn');
+
+    if (state.forgeSlots.some((v) => v === null)) {
+      resEl.classList.add('warn');
+      resEl.textContent = 'Hãy lắp đủ cả 4 mảnh vào 4 ô trống trước khi kiểm tra.';
+      return;
+    }
+
+    const allRight = state.forgeSlots.every((v, i) => v === i);
+    renderForgeBuilder(true);
+    playWoodTap(allRight);
+
+    if (allRight) {
+      resEl.classList.add('ok');
+      state.progress.sentencesDone = state.progress.sentencesDone || {};
+      const prev = state.progress.sentencesDone[s.id] || {};
+      prev.forge = true;
+      prev.updatedAt = new Date().toISOString();
+      state.progress.sentencesDone[s.id] = prev;
+      scheduleSaveProgress(true);
+      renderForgeList(false);
+      speakJapaneseText(s.fullJp, 0.88);
+    } else {
+      resEl.classList.add('warn');
+    }
+
+    resEl.innerHTML = `
+      <div><strong>${allRight ? 'Chính xác tuyệt đối!' : 'Chưa đúng trật tự câu.'}</strong> Bấm vào ô sai để trả mảnh về khay.</div>
+      ${allRight ? `<div style="margin-top:6px;"><strong>Câu chuẩn:</strong> ${s.fullJp}</div>
+      <div><strong>Nghĩa:</strong> ${s.vi}</div>
+      <div style="margin-top:4px;color:var(--ink-secondary);"><strong>Ngữ pháp:</strong> ${s.grammarNote}</div>` : ''}
+    `;
+  }
+
+  function normalizeJpForDiff(str) {
+    return toHiragana((str || '').replace(/[\s。、「」『』？！!?.,]/g, ''));
+  }
+
+  function convertDictationInput(raw) {
+    const trimmed = (raw || '').trim();
+    if (!trimmed) return '';
+    // If input contains pure ASCII romaji words, convert token-by-token so "n ni" becomes "んに"
+    if (/^[a-zA-Z0-9\s'\-.,!?]+$/.test(trimmed)) {
+      return trimmed.split(/\s+/).map((tok) => romajiToHiragana(tok)).join('');
+    }
+    return trimmed;
+  }
+
+  function buildCharDiffHtml(expected, actual) {
+    const a = Array.from(expected);
+    const b = Array.from(actual);
+    const m = a.length;
+    const n = b.length;
+    const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+    for (let i = m - 1; i >= 0; i--) {
+      for (let j = n - 1; j >= 0; j--) {
+        dp[i][j] = a[i] === b[j] ? 1 + dp[i + 1][j + 1] : Math.max(dp[i + 1][j], dp[i][j + 1]);
+      }
+    }
+    let i = 0;
+    let j = 0;
+    let matches = 0;
+    let html = '';
+    while (i < m) {
+      if (j < n && a[i] === b[j]) {
+        html += `<span class="diff-ok">${a[i]}</span>`;
+        matches += 1;
+        i += 1;
+        j += 1;
+      } else if (j < n && (i >= m || dp[i][j + 1] >= dp[i + 1][j])) {
+        j += 1;
+      } else {
+        html += `<span class="diff-miss">${a[i]}</span>`;
+        i += 1;
+      }
+    }
+    return { html, accuracy: m ? Math.round((matches / m) * 100) : 0 };
+  }
+
+  function checkBlindDictation() {
+    const s = state.currentSentence;
+    if (!s) return;
+    const raw = $('dictInput').value.trim();
+    if (!raw) return;
+
+    const converted = convertDictationInput(raw);
+    const normUser = normalizeJpForDiff(converted);
+    const normKana = normalizeJpForDiff(s.kana);
+    const normFull = normalizeJpForDiff(s.fullJp);
+
+    // Compare against kana if user entered hiragana/romaji, else best of fullJp vs kana
+    const diffKana = buildCharDiffHtml(normKana, normUser);
+    const diffFull = buildCharDiffHtml(normFull, normUser);
+    const best = diffFull.accuracy > diffKana.accuracy ? diffFull : diffKana;
+
+    state.dictRevealed = true;
+    const passed = best.accuracy >= 80;
+    playWoodTap(passed);
+
+    const resEl = $('dictResultBox');
+    resEl.classList.remove('hidden', 'ok', 'warn');
+    resEl.classList.add(passed ? 'ok' : 'warn');
+    $('dictDiffStrip').innerHTML = `${best.html} <span class="mono" style="font-size:13px;margin-left:8px;">(${best.accuracy}% khớp)</span>`;
+    $('dictOriginalPanel').innerHTML = `
+      <div><strong>Câu gốc:</strong> ${s.fullJp}</div>
+      <div><strong>Kana:</strong> ${s.kana}</div>
+      <div><strong>Nghĩa:</strong> ${s.vi}</div>
+      <div style="color:var(--ink-secondary);"><strong>Ngữ pháp:</strong> ${s.grammarNote}</div>
+    `;
+
+    if (passed) {
+      state.progress.sentencesDone = state.progress.sentencesDone || {};
+      const prev = state.progress.sentencesDone[s.id] || {};
+      prev.dictation = true;
+      prev.updatedAt = new Date().toISOString();
+      state.progress.sentencesDone[s.id] = prev;
+      scheduleSaveProgress(true);
+      renderForgeList(false);
+    }
+
+    renderForgeKanjiPanel();
+  }
+
+  function renderForgeKanjiPanel() {
+    const s = state.currentSentence;
+    if (!s) return;
+    const locked = state.forgeMode === 'dictation' && !state.dictRevealed;
+    $('forgeKanjiLockBanner').classList.toggle('hidden', !locked);
+    $('forgeKanjiChips').classList.toggle('hidden', locked);
+
+    if (locked) {
+      $('forgeKanjiCount').textContent = 'Đang ẩn';
+      $('fkEmptyHint').classList.remove('hidden');
+      $('fkBody').classList.add('hidden');
+      $('fkLevelTag').classList.add('hidden');
+      return;
+    }
+
+    const kanjiChars = extractKanjiChars(s.fullJp);
+    $('forgeKanjiCount').textContent = `${kanjiChars.length} chữ`;
+    const chipsEl = $('forgeKanjiChips');
+    chipsEl.innerHTML = '';
+    kanjiChars.forEach((ch) => {
+      const meta = state.kanjiLookup[ch];
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'related-chip';
+      chip.innerHTML = `<span class="related-chip-glyph">${ch}</span><span>${meta.hv}</span><span class="related-chip-lvl">N${meta.l}</span>`;
+      chip.addEventListener('click', () => inspectForgeKanji(ch));
+      chipsEl.appendChild(chip);
+    });
+
+    if (kanjiChars.length) {
+      inspectForgeKanji(kanjiChars[0]);
+    } else {
+      $('fkEmptyHint').classList.remove('hidden');
+      $('fkBody').classList.add('hidden');
+    }
+  }
+
+  async function inspectForgeKanji(ch) {
+    state.forgeSelectedKanji = ch;
+    await renderMiniKanjiInspector(ch, 'fk');
+  }
+
+  function navigateSentence(delta) {
+    const list = state.sentences.filter((s) => s.level === state.currentLevel);
+    if (!list.length || !state.currentSentence) return;
+    const idx = list.findIndex((s) => s.id === state.currentSentence.id);
+    const nextIdx = Math.max(0, Math.min(list.length - 1, (idx === -1 ? 0 : idx) + delta));
+    selectSentence(list[nextIdx]);
   }
 
   // =======================================================================
@@ -2650,6 +3020,73 @@
       scheduleSaveProgress(true);
       $('examToggleDoneBtn').textContent = prev.done ? 'Đã giải xong (Bấm để bỏ đánh dấu)' : 'Đánh dấu đã giải xong đề này';
       renderExamList(false);
+    });
+
+    // Module 4: Sentence Forge & Blind Dictation events
+    qsa('.forge-mode-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.forgeMode = btn.dataset.fmode;
+        qsa('.forge-mode-btn').forEach((b) => b.classList.toggle('active', b === btn));
+        if (state.currentSentence) selectSentence(state.currentSentence);
+      });
+    });
+
+    qsa('.forge-filter').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.forgeFilter = btn.dataset.ffilter;
+        qsa('.forge-filter').forEach((b) => b.classList.toggle('active', b === btn));
+        renderForgeList(true);
+      });
+    });
+
+    $('forgePrevBtn').addEventListener('click', () => navigateSentence(-1));
+    $('forgeNextBtn').addEventListener('click', () => navigateSentence(1));
+
+    $('forgeHintBtn').addEventListener('click', () => {
+      if (!state.currentSentence) return;
+      $('forgeHintText').textContent = `Nghĩa: ${state.currentSentence.vi}`;
+      $('forgeHintText').classList.remove('hidden');
+    });
+    $('forgeCheckBtn').addEventListener('click', checkSentenceForge);
+    $('forgeResetBtn').addEventListener('click', () => {
+      if (!state.currentSentence) return;
+      state.forgeSlots = [null, null, null, null];
+      $('forgeResultBox').classList.add('hidden');
+      renderForgeBuilder(false);
+    });
+    $('forgeSpeakBtn').addEventListener('click', () => {
+      if (state.currentSentence) speakJapaneseText(state.currentSentence.fullJp, 0.88);
+    });
+
+    $('dictSpeakNormalBtn').addEventListener('click', () => {
+      if (state.currentSentence) speakJapaneseText(state.currentSentence.fullJp, 1.0);
+    });
+    $('dictSpeakSlowBtn').addEventListener('click', () => {
+      if (state.currentSentence) speakJapaneseText(state.currentSentence.fullJp, 0.72);
+    });
+    $('dictHintBtn').addEventListener('click', () => {
+      if (!state.currentSentence) return;
+      $('dictHintText').textContent = `Nghĩa: ${state.currentSentence.vi} (${state.currentSentence.kana.length} ký tự Kana)`;
+      $('dictHintText').classList.remove('hidden');
+    });
+    $('dictInput').addEventListener('input', (e) => {
+      const converted = convertDictationInput(e.target.value);
+      $('dictKanaPreview').textContent = converted ? `Kana: ${converted}` : '';
+    });
+    $('dictCheckBtn').addEventListener('click', checkBlindDictation);
+    $('dictClearBtn').addEventListener('click', () => {
+      $('dictInput').value = '';
+      $('dictKanaPreview').textContent = '';
+      $('dictResultBox').classList.add('hidden');
+    });
+    $('fkOpenAtelierBtn').addEventListener('click', () => {
+      if (state.forgeSelectedKanji) jumpToKanji(state.forgeSelectedKanji);
+    });
+    $('fkAddSrsBtn').addEventListener('click', () => {
+      if (!state.forgeSelectedKanji) return;
+      enqueueKanjiForSrs(state.forgeSelectedKanji);
+      $('fkAddSrsBtn').textContent = 'Đã đưa vào SRS!';
+      setTimeout(() => { $('fkAddSrsBtn').textContent = 'Đưa vào ôn SRS'; }, 1400);
     });
 
     // Keyboard shortcuts [ and ] to move between Kanji when not typing

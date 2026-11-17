@@ -51,6 +51,7 @@ function createDefaultProgress() {
     kanji: {},
     readingsDone: {},
     customReadings: [],
+    sentencesDone: {},
     examNotes: {},
     sessionLogs: [],
   };

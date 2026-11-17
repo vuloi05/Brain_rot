@@ -31,6 +31,7 @@
     <div class="view-tabs" role="tablist" aria-label="Chế độ làm việc">
       <button class="view-btn active" data-view="atelier" role="tab" aria-selected="true">Xưởng chữ</button>
       <button class="view-btn" data-view="reader" role="tab" aria-selected="false">Đọc sâu</button>
+      <button class="view-btn" data-view="forge" role="tab" aria-selected="false">Xưởng câu &amp; Nghe</button>
       <button class="view-btn" data-view="exams" role="tab" aria-selected="false">Kho đề thi</button>
       <button class="view-btn" data-view="dojo" role="tab" aria-selected="false">
         Ôn tập mù <span class="due-pill" id="dueCountBadge">0</span>
@@ -509,7 +510,134 @@
     </aside>
   </section>
 
-  <!-- MAIN VIEW 4: BLIND RECALL DOJO (Focused SRS Review Queue) -->
+  <!-- MAIN VIEW 4: SENTENCE FORGE & BLIND DICTATION (Module 4) -->
+  <section class="workspace hidden" id="viewForge">
+    <aside class="panel panel-left">
+      <div class="search-box">
+        <div class="forge-mode-toggle" role="tablist" aria-label="Chọn chế độ Xưởng câu">
+          <button type="button" class="forge-mode-btn active" data-fmode="forge">1. Lắp ghép câu (★)</button>
+          <button type="button" class="forge-mode-btn" data-fmode="dictation">2. Nghe chép tĩnh</button>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="Lọc trạng thái câu">
+        <button type="button" class="filter-chip forge-filter active" data-ffilter="all">Tất cả</button>
+        <button type="button" class="filter-chip forge-filter" data-ffilter="todo">Chưa luyện</button>
+        <button type="button" class="filter-chip forge-filter" data-ffilter="done">Đã hoàn thành</button>
+      </div>
+      <div class="list-meta" id="forgeListMeta">0 câu</div>
+      <div class="kanji-list" id="forgeList"></div>
+    </aside>
+
+    <section class="panel panel-center forge-center">
+      <div class="center-header">
+        <div class="reader-meta-line">
+          <span class="prompt-jlpt-tag" id="forgeLevelTag">JLPT N5</span>
+          <span class="sub-hint" id="forgeSourceTag">Đề JLPT</span>
+        </div>
+        <div class="kanji-nav-arrows">
+          <button type="button" class="btn-ghost-sm" id="forgePrevBtn">← Câu trước</button>
+          <button type="button" class="btn-ghost-sm" id="forgeNextBtn">Câu sau →</button>
+        </div>
+      </div>
+
+      <!-- Mode 1: Sentence Forge (4-slot ★ assembly) -->
+      <div class="forge-card" id="forgeStage">
+        <div class="forge-guide">
+          Lắp đúng thứ tự cả 4 mảnh ngữ pháp (tránh đoán mò 1/4 như làm trắc nghiệm thông thường). Bấm vào mảnh dưới khay để điền vào khe trống.
+        </div>
+
+        <div class="forge-sentence-box" id="forgeSentenceBox"></div>
+
+        <div class="forge-hint-row">
+          <button type="button" class="btn-friction" id="forgeHintBtn" disabled>Xem nghĩa tiếng Việt (3s)</button>
+          <span class="sub-hint hidden" id="forgeHintText"></span>
+        </div>
+
+        <div class="forge-tray" id="forgeTray" aria-label="Các mảnh ghép"></div>
+
+        <div class="forge-actions">
+          <button type="button" class="btn-primary" id="forgeCheckBtn">Kiểm tra cấu trúc</button>
+          <button type="button" class="btn-ghost-sm" id="forgeResetBtn">Xếp lại</button>
+          <button type="button" class="btn-ghost-sm" id="forgeSpeakBtn">Phát âm câu</button>
+        </div>
+
+        <div class="forge-result-box hidden" id="forgeResultBox"></div>
+      </div>
+
+      <!-- Mode 2: Blind Dictation (Audio -> Kana/Romaji + Diff) -->
+      <div class="forge-card hidden" id="dictationStage">
+        <div class="forge-guide">
+          Nghe câu tiếng Nhật không phụ đề để rèn trí nhớ âm thanh, rồi tự gõ lại toàn bộ câu (có thể gõ <strong>Romaji</strong>, hệ thống tự chuyển sang Hiragana).
+        </div>
+
+        <div class="dict-audio-controls">
+          <button type="button" class="btn-primary" id="dictSpeakNormalBtn">▶ Nghe tốc độ chuẩn (1.0x)</button>
+          <button type="button" class="btn-ghost" id="dictSpeakSlowBtn">Nghe chậm (0.72x)</button>
+          <button type="button" class="btn-friction" id="dictHintBtn" disabled>Gợi ý nghĩa &amp; độ dài (3s)</button>
+        </div>
+
+        <div class="sub-hint hidden" id="dictHintText" style="margin-bottom:10px;"></div>
+
+        <div class="field-group">
+          <label for="dictInput">Chép lại câu bạn nghe được (tiếng Nhật hoặc Romaji)</label>
+          <textarea id="dictInput" rows="3" placeholder="Ví dụ: watashi wa isshuukan ni nikai..." autocomplete="off" spellcheck="false"></textarea>
+          <div class="dict-kana-preview" id="dictKanaPreview"></div>
+        </div>
+
+        <div class="forge-actions">
+          <button type="button" class="btn-primary" id="dictCheckBtn">Kiểm tra chính tả</button>
+          <button type="button" class="btn-ghost-sm" id="dictClearBtn">Xóa viết lại</button>
+        </div>
+
+        <div class="forge-result-box hidden" id="dictResultBox">
+          <div class="sub-label">Đối chiếu từng ký tự (Xanh: khớp · Đỏ: thiếu/sai):</div>
+          <div class="dict-diff-strip" id="dictDiffStrip"></div>
+          <div class="dict-original-panel" id="dictOriginalPanel"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel panel-right">
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Kanji trong câu này</h2>
+          <span class="mono sub-hint" id="forgeKanjiCount">0 chữ</span>
+        </div>
+        <div class="rk-empty hidden" id="forgeKanjiLockBanner">
+          Đang ẩn danh sách Kanji ở chế độ Nghe chép tĩnh. Hãy kiểm tra chính tả xong để mở khóa phân tích chữ Hán.
+        </div>
+        <div class="related-chips" id="forgeKanjiChips"></div>
+      </div>
+
+      <div class="anatomy-section" id="forgeKanjiInspector">
+        <div class="section-head">
+          <h2>Giải phẫu chữ đang chọn</h2>
+          <span class="prompt-jlpt-tag hidden" id="fkLevelTag">N5</span>
+        </div>
+        <div class="rk-empty" id="fkEmptyHint">
+          Bấm vào một chữ Kanji trong câu hoặc danh sách bên trên để soi âm Hán-Việt, bộ thủ và nét viết.
+        </div>
+        <div class="rk-body hidden" id="fkBody">
+          <div class="rk-top-row">
+            <svg id="fkMiniSvg" class="rk-mini-svg" viewBox="0 0 109 109"></svg>
+            <div class="rk-info">
+              <div class="rk-hv" id="fkHv">NHẬT</div>
+              <div class="rk-vi" id="fkVi">Mặt Trời, ngày</div>
+              <div class="rk-readings mono" id="fkReadings">On: ニチ | Kun: ひ</div>
+              <div class="sub-hint" id="fkRadical">Bộ thủ: ...</div>
+            </div>
+          </div>
+          <div class="rk-parts" id="fkParts"></div>
+          <div class="rk-actions">
+            <button type="button" class="btn-primary-sm" id="fkOpenAtelierBtn">Mở trong Xưởng viết</button>
+            <button type="button" class="btn-ghost-sm" id="fkAddSrsBtn">Đưa vào ôn SRS</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- MAIN VIEW 5: BLIND RECALL DOJO (Focused SRS Review Queue) -->
   <section class="dojo-view hidden" id="viewDojo">
     <div class="dojo-container">
       <div class="dojo-header">
