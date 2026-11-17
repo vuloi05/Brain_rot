@@ -1,0 +1,4502 @@
+{
+  "お客様": {
+    "r": "おきゃくさま",
+    "m": "khách hàng",
+    "hv": "KHÁCH DẠNG"
+  },
+  "パン屋": {
+    "r": "パンや",
+    "m": "tiệm bánh mì",
+    "hv": "ỐC"
+  },
+  "一": {
+    "r": "いち",
+    "m": "một; sự bắt đầu; lúc khởi đầu; khởi điểm; đầu tiên; ban đầu; sự trùng khớp; sự đồng ý; sự thống nhất; sự phù hợp; sự tuân thủ; tính nhất quán; sự hài hòa; nhất; tốt nhất; số một",
+    "hv": "NHẤT"
+  },
+  "一つ": {
+    "r": "ひとつ",
+    "m": "một phần",
+    "hv": "NHẤT"
+  },
+  "一人": {
+    "r": "ひとり",
+    "m": "một người",
+    "hv": "NHẤT NHÂN"
+  },
+  "一年": {
+    "r": "いちねん",
+    "m": "một năm",
+    "hv": "NHẤT NIÊN"
+  },
+  "一度": {
+    "r": "いちど",
+    "m": "khi nào đó; lần nào đó; một khi; một lần",
+    "hv": "NHẤT ĐỘ"
+  },
+  "一日": {
+    "r": "いちにち",
+    "m": "một ngày (いちにち); ngày mồng 1 (ついたち)",
+    "hv": "NHẤT NHẬT"
+  },
+  "一緒に": {
+    "r": "いっしょに",
+    "m": "cùng; cùng nhau; hợp thành một",
+    "hv": "NHẤT TỰ"
+  },
+  "一言": {
+    "r": "ひとこと",
+    "m": "một lời; vài lời; đôi lời; một lời; đôi lời; vài lời ngắn gọn",
+    "hv": "NHẤT NGÔN"
+  },
+  "万人": {
+    "r": "ばんにん",
+    "m": "rất đông người; quần chúng",
+    "hv": "VẠN NHÂN"
+  },
+  "上": {
+    "r": "うえ",
+    "m": "trên; phía trên; phía cao hơn; bên ngoài; lớp ngoài; lớn hơn; bề trên; cấp trên; bề mặt; cao cấp; thượng; thượng nguồn; phía thượng lưu; lúc đầu; thời kỳ đầu; thời xưa; nửa đầu; mười ngày đầu tháng; thượng tuần; phần đầu; tập đầu; phần trước; thượng cú; phần trên; mặt trên; nửa thân trên; ghế danh dự; vị trí trang trọng; ghế chủ tọa; phòng trong; phòng khách; phía bên phải sân khấu; tthiên hoàng; đức vua; bệ hạ; người bề trên; người có địa vị cao; chính quyền; nhà chức trách; giới cầm quyền; bà chủ; phu nhân; vợ người khác; kinh đô; kyoto và vùng lân cận; phía bắc kyoto; phía bắc; vùng gần kinh đô; thứ bậc cao; đẳng cấp cao; người lớn tuổi hơn; bậc tiền bối; chủ nhân; người đứng đầu; sự nâng cao độ âm thanh; kỹ thuật tăng nửa cung; việc nâng âm; chất lượng cao; hạng nhất; quyển thượng; tập một; thanh thượng; lời đề tặng trên quà cáp; về mặt; xét về; trên phương diện; xét; không những; sau khi; dựa trên; là kết quả của; để; nhằm mục đích",
+    "hv": "THƯỢNG"
+  },
+  "上手": {
+    "r": "じょうず",
+    "m": "giỏi, khéo",
+    "hv": "THƯỢNG THỦ"
+  },
+  "上田": {
+    "r": "じょうでん",
+    "m": "gạo cao giải quyết; gạo rất phì nhiêu giải quyết; ueda; họ của người nhật; thành phố ở phía đông tỉnh nagano; nhật bản",
+    "hv": "THƯỢNG ĐIỀN"
+  },
+  "下": {
+    "r": "した",
+    "m": "dưới; phía dưới; bên dưới; phần dưới; phần sau; tập sau; dưới một trạng thái hoặc điều kiện nhất định; trong một phạm vi nhất định; hướng đi xuống; phần tiếp theo; thứ hạng thấp; mức độ thấp; địa vị xã hội thấp; dưới ảnh hưởng của; dưới sự kiểm soát của; thuộc thẩm quyền của; dưới quyền chỉ huy của; cấp dưới của; hậu tố tôn kính dùng sau chức danh của người có địa vị cao; hậu tố dùng sau tên trong thư từ để thể hiện sự tôn trọng; di chuyển từ trên xuống dưới; đi xuống; rơi; đi từ thủ đô về các tỉnh; đi về phía nam; ban cho; ban tặng; treo lơ lửng; rủ xuống; được treo; giảm; hạ xuống; lùi lại; rút lui; nghỉ hưu; di chuyển về phía nam; gốc; chân; bên cạnh ai đó; cùng với ai đó; gần ai đó; dưới sự cai trị của ai đó; dưới sự giám sát của ai đó; dưới một quy định; trong tình trạng; chỉ với một",
+    "hv": "HẠ"
+  },
+  "不可欠": {
+    "r": "ふかけつ",
+    "m": "không thể thiếu",
+    "hv": "BẤT KHIẾM"
+  },
+  "不安": {
+    "r": "ふあん",
+    "m": "bất an, lo lắng",
+    "hv": "BẤT AN"
+  },
+  "世の中": {
+    "r": "よのなか",
+    "m": "xã hội; thế giới; các thời",
+    "hv": "THẾ TRUNG"
+  },
+  "世界": {
+    "r": "せかい",
+    "m": "thế giới; xã hội; vũ trụ; giới",
+    "hv": "THẾ GIỚI"
+  },
+  "世間": {
+    "r": "せけん",
+    "m": "thiên hạ, xã hội",
+    "hv": "THẾ GIAN"
+  },
+  "中": {
+    "r": "なか",
+    "m": "bên trong",
+    "hv": "TRUNG"
+  },
+  "中心": {
+    "r": "ちゅうしん",
+    "m": "trung tâm, vùng lõi",
+    "hv": "TRUNG TÂM"
+  },
+  "丸暗記": {
+    "r": "まるあんき",
+    "m": "sự thuộc lòng không nghĩ gì đến nghĩa; sự học vẹt",
+    "hv": "HOÀN ÁM KÍ"
+  },
+  "主体的": {
+    "r": "しゅたいてき",
+    "m": "chủ thể, tự chủ",
+    "hv": "CHỦ THỂ ĐÍCH"
+  },
+  "主張": {
+    "r": "しゅちょう",
+    "m": "chủ trương, lập luận",
+    "hv": "CHỦ TRƯƠNG"
+  },
+  "予約": {
+    "r": "よやく",
+    "m": "đặt trước",
+    "hv": "DƯ ƯỚC"
+  },
+  "事柄": {
+    "r": "ことがら",
+    "m": "sự việc; việc; vấn đề; chủ đề; tình hình",
+    "hv": "SỰ BÍNH"
+  },
+  "事業": {
+    "r": "じぎょう",
+    "m": "công cuộc; sự nghiệp; dự án; công tác; nhiệm vụ phải làm",
+    "hv": "SỰ NGHIỆP"
+  },
+  "二つ": {
+    "r": "ふたつ",
+    "m": "hai phần",
+    "hv": "NHỊ"
+  },
+  "交換": {
+    "r": "こうかん",
+    "m": "trao đổi",
+    "hv": "GIAO HOÁN"
+  },
+  "人": {
+    "r": "ひと",
+    "m": "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+    "hv": "NHÂN"
+  },
+  "人々": {
+    "r": "ひとびと",
+    "m": "con nhỏ; mỗi người; mọi người; con người",
+    "hv": "NHÂN"
+  },
+  "人口": {
+    "r": "じんこう",
+    "m": "dân số",
+    "hv": "NHÂN KHẨU"
+  },
+  "人材": {
+    "r": "じんざい",
+    "m": "nhân tài",
+    "hv": "NHÂN TÀI"
+  },
+  "人生": {
+    "r": "じんせい",
+    "m": "bản mạng; bản mệnh; đời người; nhân mạng; nhân sinh; cuộc sống; cuộc đời; nhân tình",
+    "hv": "NHÂN SANH"
+  },
+  "人間": {
+    "r": "にんげん",
+    "m": "con người",
+    "hv": "NHÂN GIAN"
+  },
+  "今": {
+    "r": "いま",
+    "m": "bây giờ",
+    "hv": "KIM"
+  },
+  "今や": {
+    "r": "いまや",
+    "m": "bây giờ",
+    "hv": "KIM"
+  },
+  "今回": {
+    "r": "こんかい",
+    "m": "kỳ này; lần này",
+    "hv": "KIM HỒI"
+  },
+  "今年": {
+    "r": "ことし",
+    "m": "năm nay",
+    "hv": "KIM NIÊN"
+  },
+  "今日": {
+    "r": "きょう",
+    "m": "ngày nay",
+    "hv": "KIM NHẬT"
+  },
+  "今日は": {
+    "r": "こんにちは",
+    "m": "xin chào",
+    "hv": "KIM NHẬT"
+  },
+  "仕事": {
+    "r": "しごと",
+    "m": "công việc; sự làm việc; sự tác nghiệp; sự thực hiện; sự làm; sự hành động; sự bày trò; sự giở thủ đoạn; thành tựu; thành quả; kết quả; công việc may vá; việc may vá; công; công của lực",
+    "hv": "SĨ SỰ"
+  },
+  "他人": {
+    "r": "たにん",
+    "m": "khách; người khác; người không có quan hệ; người ngoài; người lạ; tha nhân",
+    "hv": "THA NHÂN"
+  },
+  "付け": {
+    "r": "つけ",
+    "m": "đính kèm; hóa đơn bán hàng; hóa đơn",
+    "hv": "PHÓ"
+  },
+  "以上": {
+    "r": "いじょう",
+    "m": "hơn; nhiều hơn; cao hơn; trên; lớn hơn hoặc bằng",
+    "hv": "DĨ THƯỢNG"
+  },
+  "以前": {
+    "r": "いぜん",
+    "m": "cách đây; dạo trước; hồi trước; lúc trước; thuở trước; trước đây; ngày trước; trước kia",
+    "hv": "DĨ TIỀN"
+  },
+  "以外": {
+    "r": "いがい",
+    "m": "ngoài ra; ngoài; ngoại trừ",
+    "hv": "DĨ NGOẠI"
+  },
+  "以来": {
+    "r": "いらい",
+    "m": "kể từ đó; từ đó; sau đó",
+    "hv": "DĨ LAI"
+  },
+  "以降": {
+    "r": "いこう",
+    "m": "sau đó; từ sau đó; từ sau khi",
+    "hv": "DĨ HÀNG"
+  },
+  "企業": {
+    "r": "きぎょう",
+    "m": "doanh nghiệp",
+    "hv": "XÍ NGHIỆP"
+  },
+  "会う": {
+    "r": "あう",
+    "m": "gặp; hội ngộ",
+    "hv": "HỘI"
+  },
+  "会社": {
+    "r": "かいしゃ",
+    "m": "công ty",
+    "hv": "HỘI XÃ"
+  },
+  "会社員": {
+    "r": "かいしゃいん",
+    "m": "nhân viên công ty",
+    "hv": "HỘI XÃ VIÊN"
+  },
+  "会話": {
+    "r": "かいわ",
+    "m": "hội thoại",
+    "hv": "HỘI THOẠI"
+  },
+  "会議": {
+    "r": "かいぎ",
+    "m": "buổi họp; hiệp hội; hội đồng bộ trưởng; hội nghị; hội thảo; họp; mít-ting; cuộc họp; hội phí; khóa họp; phiên họp",
+    "hv": "HỘI NGHỊ"
+  },
+  "伝え": {
+    "r": "つたえ",
+    "m": "sự truyền đạt; sự truyền miệng; truyền thuyết; truyền thống",
+    "hv": "TRUYỀN"
+  },
+  "伝わ": {
+    "r": "つたわ",
+    "m": "đi cùng; đi theo; tiếp tục (伝う)",
+    "hv": "TRUYỀN"
+  },
+  "伝統": {
+    "r": "でんとう",
+    "m": "truyền thống",
+    "hv": "TRUYỀN THỐNG"
+  },
+  "伝統的": {
+    "r": "でんとうてき",
+    "m": "truyền thống",
+    "hv": "TRUYỀN THỐNG ĐÍCH"
+  },
+  "住ん": {
+    "r": "すん",
+    "m": "có thể giải quyết; có thể đối phó được; cư trú; ở; trả nợ; trả xong; trú; trú ngụ (住む)",
+    "hv": "TRỤ"
+  },
+  "体": {
+    "r": "からだ",
+    "m": "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+    "hv": "THỂ"
+  },
+  "体験": {
+    "r": "たいけん",
+    "m": "sự trải nghiệm; kinh nghiệm trải qua",
+    "hv": "THỂ NGHIỆM"
+  },
+  "何": {
+    "r": "なに",
+    "m": "cái gì",
+    "hv": "HÀ"
+  },
+  "何か": {
+    "r": "なにか",
+    "m": "cái gì đó",
+    "hv": "HÀ"
+  },
+  "何だ": {
+    "r": "なんだ",
+    "m": "cái gì",
+    "hv": "HÀ"
+  },
+  "何と": {
+    "r": "なんと",
+    "m": "cái gì; như thế nào",
+    "hv": "HÀ"
+  },
+  "何も": {
+    "r": "なにも",
+    "m": "không có gì",
+    "hv": "HÀ"
+  },
+  "何事": {
+    "r": "なにごと",
+    "m": "cái gì",
+    "hv": "HÀ SỰ"
+  },
+  "何分": {
+    "r": "なにぶん",
+    "m": "mấy phút; một chút gì đó; phần nào đó; dù thế nào đi nữa; một ít; một chút; một phần nào đó; làm ơn; xin hãy; kính mong; rất mong; dù sao thì; vì; bởi vì; xét cho cùng",
+    "hv": "HÀ PHÂN"
+  },
+  "何回": {
+    "r": "なんかい",
+    "m": "bao lần",
+    "hv": "HÀ HỒI"
+  },
+  "作り": {
+    "r": "つくり",
+    "m": "đồ hoá trang; son phấn; sự hoá trang; cách sắp trang; cấu tạo; bản chất; tính chất; kết cấu; cấu trúc; công trình kiến trúc; công trình xây dựng; cơ thể vóc người; dạng người",
+    "hv": "TÁC"
+  },
+  "作ります": {
+    "r": "つくります",
+    "m": "làm, nấu",
+    "hv": "TÁC"
+  },
+  "作り出す": {
+    "r": "つくりだす",
+    "m": "sản xuất; chế tạo; sáng tạo ra",
+    "hv": "TÁC XUẤT"
+  },
+  "作る": {
+    "r": "つくる",
+    "m": "chế biến; làm; tạo; sáng tác; xây dựng; nấu",
+    "hv": "TÁC"
+  },
+  "作家": {
+    "r": "さっか",
+    "m": "người sáng tạo ra các tác phẩm nghệ thuật; tác giả; nhà văn; tiểu thuyết gia; họa sĩ",
+    "hv": "TÁC GIA"
+  },
+  "作業": {
+    "r": "さぎょう",
+    "m": "thao tác",
+    "hv": "TÁC NGHIỆP"
+  },
+  "使い": {
+    "r": "つかい",
+    "m": "cách sử dụng; việc sử dụng; người sử dụng; sử dụng",
+    "hv": "SỬ"
+  },
+  "使え": {
+    "r": "つかえ",
+    "m": "để hữu ích; để có ích (使える)",
+    "hv": "SỬ"
+  },
+  "使わ": {
+    "r": "つかわ",
+    "m": "dụng; sử dụng; dùng; xài (使う)",
+    "hv": "SỬ"
+  },
+  "例": {
+    "r": "れい",
+    "m": "ví dụ; thông lệ; thường lệ; tiền lệ; chuyện đã xảy ra; luôn luôn; thường xuyên; tấm gương; khuôn mẫu",
+    "hv": "LỆ"
+  },
+  "例えば": {
+    "r": "たとえば",
+    "m": "chẳng hạn như; thí dụ; tỷ dụ; ví dụ",
+    "hv": "LỆ"
+  },
+  "価値": {
+    "r": "かち",
+    "m": "giá trị",
+    "hv": "GIÁ TRỊ"
+  },
+  "価値観": {
+    "r": "かちかん",
+    "m": "giá trị quan",
+    "hv": "GIÁ TRỊ QUAN"
+  },
+  "便利": {
+    "r": "べんり",
+    "m": "tiện lợi",
+    "hv": "TIỆN LỢI"
+  },
+  "信用": {
+    "r": "しんよう",
+    "m": "tin tưởng",
+    "hv": "TÍN DỤNG"
+  },
+  "個人": {
+    "r": "こじん",
+    "m": "cá nhân; cá thể; mang tính cá nhân; riêng tư; riêng; kho tư nhân; tư gia",
+    "hv": "CÁ NHÂN"
+  },
+  "偏ら": {
+    "r": "かたよら",
+    "m": "nghiêng; lệch; không cân bằng; không công bằng; 片寄る (偏る)",
+    "hv": "THIÊN"
+  },
+  "健康食品": {
+    "r": "けんこうしょくひん",
+    "m": "thức ăn bảo vệ sức khỏe; thực phẩm lành mạnh",
+    "hv": "KIỆN KHANG THỰC PHẨM"
+  },
+  "側面": {
+    "r": "そくめん",
+    "m": "mặt bên; một bên; một mặt; hông; sườn",
+    "hv": "TRẮC DIỆN"
+  },
+  "偶然": {
+    "r": "ぐうぜん",
+    "m": "ngẫu nhiên",
+    "hv": "NGẪU NHIÊN"
+  },
+  "傘": {
+    "r": "かさ",
+    "m": "cái ô; dù; ô",
+    "hv": "TÁN"
+  },
+  "働き": {
+    "r": "はたらき",
+    "m": "công việc; việc làm; sự đảm nhiệm chức năng; sự hoạt động",
+    "hv": "ĐỘNG"
+  },
+  "優秀": {
+    "r": "ゆうしゅう",
+    "m": "ưu tú, xuất sắc",
+    "hv": "ƯU TÚ"
+  },
+  "先": {
+    "r": "さき",
+    "m": "đầu mút; điểm đầu; tương lai; trước đây",
+    "hv": "TIÊN"
+  },
+  "先日": {
+    "r": "せんじつ",
+    "m": "mấy hôm trước",
+    "hv": "TIÊN NHẬT"
+  },
+  "先月": {
+    "r": "せんげつ",
+    "m": "tháng trước",
+    "hv": "TIÊN NGUYỆT"
+  },
+  "先生": {
+    "r": "せんせい",
+    "m": "thầy/cô giáo",
+    "hv": "TIÊN SANH"
+  },
+  "先週": {
+    "r": "せんしゅう",
+    "m": "tuần trước",
+    "hv": "TIÊN CHU"
+  },
+  "入っ": {
+    "r": "いっっ",
+    "m": "đi vào; vào; bước vào; đi vô; vô (入る)",
+    "hv": "NHẬP"
+  },
+  "入って": {
+    "r": "はいって",
+    "m": "vào (học)",
+    "hv": "NHẬP"
+  },
+  "入り": {
+    "r": "いり",
+    "m": "vào; sự thiết đặt mặt trời); thính giả; khả năng; thu nhập; bắt đầu",
+    "hv": "NHẬP"
+  },
+  "入る": {
+    "r": "はいる",
+    "m": "đi vào; vào; bước vào; đi vô; vô",
+    "hv": "NHẬP"
+  },
+  "入れ": {
+    "r": "いれ",
+    "m": "cho vào; bỏ vào; pha",
+    "hv": "NHẬP"
+  },
+  "全体像": {
+    "r": "ぜんたいぞう",
+    "m": "bức tranh toàn cảnh",
+    "hv": "TOÀN THỂ TƯỢNG"
+  },
+  "全然": {
+    "r": "ぜんぜん",
+    "m": "hoàn toàn không",
+    "hv": "TOÀN NHIÊN"
+  },
+  "八": {
+    "r": "はち",
+    "m": "tám; thứ tám",
+    "hv": "BÁT"
+  },
+  "公園": {
+    "r": "こうえん",
+    "m": "công viên",
+    "hv": "CÔNG VIÊN"
+  },
+  "公正": {
+    "r": "こうせい",
+    "m": "công bằng",
+    "hv": "CÔNG CHÁNH"
+  },
+  "六つ": {
+    "r": "むっつ",
+    "m": "sáu cái/quả",
+    "hv": "LỤC"
+  },
+  "共通点": {
+    "r": "きょうつうてん",
+    "m": "điểm chung",
+    "hv": "CỘNG THÔNG ĐIỂM"
+  },
+  "具体的": {
+    "r": "ぐたいてき",
+    "m": "cụ thể",
+    "hv": "CỤ THỂ ĐÍCH"
+  },
+  "再編成": {
+    "r": "さいへんせい",
+    "m": "tái tổ chức, sắp xếp lại",
+    "hv": "TÁI BIÊN THÀNH"
+  },
+  "写真": {
+    "r": "しゃしん",
+    "m": "bức ảnh",
+    "hv": "TẢ CHÂN"
+  },
+  "冷蔵庫": {
+    "r": "れいぞうこ",
+    "m": "kho ướp lạnh; tủ lạnh",
+    "hv": "LÃNH TÀNG KHỐ"
+  },
+  "出し": {
+    "r": "だし",
+    "m": "cung cấp; nước luộc thịt; cái cớ; lời xin lỗi; sự giả vờ; người bị lừa gạt; đối diện người đàn ông",
+    "hv": "XUẤT"
+  },
+  "出る": {
+    "r": "でる",
+    "m": "đi ra; ngoi; xuất hiện; đi ra khỏi",
+    "hv": "XUẤT"
+  },
+  "出張": {
+    "r": "しゅっちょう",
+    "m": "chuyến đi kinh doanh; việc đi công tác",
+    "hv": "XUẤT TRƯƠNG"
+  },
+  "出発": {
+    "r": "しゅっぱつ",
+    "m": "sự xuất phát; sự khởi hành; xuất phát; khởi hành; bắt đầu một việc gì đó",
+    "hv": "XUẤT PHÁT"
+  },
+  "出自": {
+    "r": "しゅつじ",
+    "m": "nơi sinh; xuống; những máu - hàng; bề ngoài self ai đó",
+    "hv": "XUẤT TỰ"
+  },
+  "切れ": {
+    "r": "きれ",
+    "m": "mảnh; miếng; miếng cắt; miếng chặt ra; miếng bổ ra; hết; cạn; quá hạn; hết hạn; mẩu; lát",
+    "hv": "THIẾT"
+  },
+  "初めて": {
+    "r": "はじめて",
+    "m": "lần đầu tiên",
+    "hv": "SƠ"
+  },
+  "判別": {
+    "r": "はんべつ",
+    "m": "sự phân biệt",
+    "hv": "PHÁN BIỆT"
+  },
+  "判明": {
+    "r": "はんめい",
+    "m": "sự phân biệt rõ ràng",
+    "hv": "PHÁN MINH"
+  },
+  "別": {
+    "r": "べつ",
+    "m": "đặc biệt; trừ ra; ngoài ra; phân biệt; riêng biệt; riêng; sự đặc biệt; sự phân biệt; sự khác biệt; sự khác nhau; khác; cái khác; ngoại lệ; phi thường; wake; tước hiệu cha truyền con nối cổ xưa dành cho hậu duệ hoàng gia cai trị các vùng địa phương",
+    "hv": "BIỆT"
+  },
+  "利用": {
+    "r": "りよう",
+    "m": "sự lợi dụng; sự áp dụng; sự sử dụng",
+    "hv": "LỢI DỤNG"
+  },
+  "前": {
+    "r": "まえ",
+    "m": "đằng trước; phần đầu; phần trước; trước đây",
+    "hv": "TIỀN"
+  },
+  "割引券": {
+    "r": "わりびきけん",
+    "m": "phiếu giảm giá",
+    "hv": "CÁT DẪN KHOÁN"
+  },
+  "創造的": {
+    "r": "そうぞうてき",
+    "m": "có tính sáng tạo",
+    "hv": "SANG TẠO ĐÍCH"
+  },
+  "力": {
+    "r": "ちから",
+    "m": "lực; sức; sức mạnh",
+    "hv": "LỰC"
+  },
+  "努力": {
+    "r": "どりょく",
+    "m": "nỗ lực",
+    "hv": "NỖ LỰC"
+  },
+  "効果": {
+    "r": "こうか",
+    "m": "hiệu quả, tác dụng",
+    "hv": "HIỆU QUẢ"
+  },
+  "効果的": {
+    "r": "こうかてき",
+    "m": "có hiệu quả",
+    "hv": "HIỆU QUẢ ĐÍCH"
+  },
+  "勉強": {
+    "r": "べんきょう",
+    "m": "học tập",
+    "hv": "MIỄN CƯỠNG"
+  },
+  "動か": {
+    "r": "うごか",
+    "m": "bị lay động; di chuyển; chạy; hoạt động; nhúc nhích; biến đổi; chuyển động; thay đổi (動く)",
+    "hv": "ĐỘNG"
+  },
+  "動き": {
+    "r": "うごき",
+    "m": "sự chuyển động; sự hoạt động; sự biến động",
+    "hv": "ĐỘNG"
+  },
+  "動作": {
+    "r": "どうさ",
+    "m": "động tác",
+    "hv": "ĐỘNG TÁC"
+  },
+  "動物園": {
+    "r": "どうぶつえん",
+    "m": "vườn bách thú.sở thú",
+    "hv": "ĐỘNG VẬT VIÊN"
+  },
+  "募集": {
+    "r": "ぼしゅう",
+    "m": "tuyển mộ, chiêu mộ",
+    "hv": "MỘ TẬP"
+  },
+  "勧め": {
+    "r": "すすめ",
+    "m": "khuyến cáo; lời khuyên; sự động viên",
+    "hv": "KHUYẾN"
+  },
+  "勧誘": {
+    "r": "かんゆう",
+    "m": "sự khuyên bảo; khuyên bảo; sự khuyến dụ; khuyến dụ; xúi dục; sự dụ dỗ; dụ dỗ; rủ; rủ rê",
+    "hv": "KHUYẾN DỤ"
+  },
+  "包ま": {
+    "r": "つつま",
+    "m": "chít; choàng; trùm; ủ; ủ ấp; đùm; đùm bọc; giấu giếm; gói ghém; gói vào; bọc vào; vây quanh; bao bọc; chìm (包む)",
+    "hv": "BAO"
+  },
+  "包ん": {
+    "r": "つつん",
+    "m": "chít; choàng; trùm; ủ; ủ ấp; đùm; đùm bọc; giấu giếm; gói ghém; gói vào; bọc vào; vây quanh; bao bọc; chìm (包む)",
+    "hv": "BAO"
+  },
+  "北山": {
+    "r": "きたやま",
+    "m": "ngọn đồi phía bắc",
+    "hv": "BẮC SAN"
+  },
+  "午前中": {
+    "r": "ごぜんちゅう",
+    "m": "cả buổi sáng; suốt buổi sáng; suốt sáng; trong vòng buổi sáng; vào buổi sáng",
+    "hv": "NGỌ TIỀN TRUNG"
+  },
+  "午後": {
+    "r": "ごご",
+    "m": "buổi chiều",
+    "hv": "NGỌ HẬU"
+  },
+  "半年前": {
+    "r": "はんとしまえ",
+    "m": "nửa năm trước",
+    "hv": "BÁN NIÊN TIỀN"
+  },
+  "卒業": {
+    "r": "そつぎょう",
+    "m": "tốt nghiệp",
+    "hv": "TỐT NGHIỆP"
+  },
+  "卒業式": {
+    "r": "そつぎょうしき",
+    "m": "lễ tốt nghiệp",
+    "hv": "TỐT NGHIỆP THỨC"
+  },
+  "協力": {
+    "r": "きょうりょく",
+    "m": "hợp tác",
+    "hv": "HIỆP LỰC"
+  },
+  "南中": {
+    "r": "なんちゅう",
+    "m": "sự đi ngang qua kinh tuyến",
+    "hv": "NAM TRUNG"
+  },
+  "単に": {
+    "r": "たんに",
+    "m": "một cách đơn thuần",
+    "hv": "ĐƠN"
+  },
+  "印刷": {
+    "r": "いんさつ",
+    "m": "dấu; sự in ấn",
+    "hv": "ẤN XOÁT"
+  },
+  "印象": {
+    "r": "いんしょう",
+    "m": "ấn tượng",
+    "hv": "ẤN TƯỢNG"
+  },
+  "危険": {
+    "r": "きけん",
+    "m": "nguy hiểm",
+    "hv": "NGUY HIỂM"
+  },
+  "原因": {
+    "r": "げんいん",
+    "m": "căn do; căn duyên; ngọn nguồn; nguyên do; nguyên nhân",
+    "hv": "NGUYÊN NHÂN"
+  },
+  "厭世的": {
+    "r": "えんせいてき",
+    "m": "bi quan; yếm thế",
+    "hv": "YẾM THẾ ĐÍCH"
+  },
+  "参加": {
+    "r": "さんか",
+    "m": "sự tham gia; sự tham dự",
+    "hv": "THAM GIA"
+  },
+  "友": {
+    "r": "とも",
+    "m": "sự đi chơi cùng bạn bè",
+    "hv": "HỮU"
+  },
+  "友だち": {
+    "r": "ともだち",
+    "m": "bạn bè",
+    "hv": "HỮU"
+  },
+  "友人": {
+    "r": "ゆうじん",
+    "m": "bạn thân; thân hữu",
+    "hv": "HỮU NHÂN"
+  },
+  "友達": {
+    "r": "ともだち",
+    "m": "bạn; bạn bè; bè bạn; người bạn",
+    "hv": "HỮU ĐẠT"
+  },
+  "反面": {
+    "r": "はんめん",
+    "m": "mặt khác; mặt trái; phản diện",
+    "hv": "PHẢN DIỆN"
+  },
+  "取っ": {
+    "r": "とっ",
+    "m": "tiền tố nhấn mạnh",
+    "hv": "THỦ"
+  },
+  "取り": {
+    "r": "とり",
+    "m": "lấy; thu thập; sưu tầm; võ sĩ nhận bổng lộc bằng gạo; lễ vật bánh giầy làm từ lượng gạo nhất định; người nhận mức lương nhất định; kỹ nữ hạng thấp nhận mức phí nhất định",
+    "hv": "THỦ"
+  },
+  "取り替えて": {
+    "r": "とりかえて",
+    "m": "đổi lấy",
+    "hv": "THỦ THẾ"
+  },
+  "取り組ん": {
+    "r": "とりくん",
+    "m": "dốc sức làm; vật nhau; đấu với (取り組む)",
+    "hv": "THỦ TỔ"
+  },
+  "取り込ま": {
+    "r": "とりこま",
+    "m": "dối trá; lừa dối; thu nhận; tiếp nhận (取り込む)",
+    "hv": "THỦ"
+  },
+  "取れ": {
+    "r": "とれ",
+    "m": "có thể sản sinh ra; có thể thu hoạch được; được giải thích là...; có thể giải thích là; rơi; thu lại; trừ đi; bỏ đi; dừng lại (取れる)",
+    "hv": "THỦ"
+  },
+  "受動的": {
+    "r": "じゅどうてき",
+    "m": "thụ động",
+    "hv": "THỤ ĐỘNG ĐÍCH"
+  },
+  "口": {
+    "r": "くち",
+    "m": "cửa; miệng; chỗ cho vào; chỗ ra vào; mồm; mỏ; lời nói",
+    "hv": "KHẨU"
+  },
+  "古い": {
+    "r": "ふるい",
+    "m": "cũ",
+    "hv": "CỔ"
+  },
+  "右側": {
+    "r": "みぎがわ",
+    "m": "bên phải",
+    "hv": "HỮU TRẮC"
+  },
+  "合う": {
+    "r": "あう",
+    "m": "ăn khớp; hợp; đúng; chính xác; làm...cùng nhau; phù hợp; vừa vặn; vừa; hợp lại; hợp nhất; đoàn kết; hài hòa; trùng khớp; thống nhất; nhất quán; có lãi; xứng đáng với công sức bỏ ra; làm cùng nhau; làm cho nhau; kết nối; gặp nhau; điều chỉnh cho phù hợp với người khác; hòa nhập; chồng lên nhau; đan xen",
+    "hv": "HỢP"
+  },
+  "合っ": {
+    "r": "あっ",
+    "m": "ăn khớp; hợp; đúng; chính xác; làm...cùng nhau; phù hợp; vừa vặn; vừa; hợp lại; hợp nhất; đoàn kết; hài hòa; trùng khớp; thống nhất; nhất quán; có lãi; xứng đáng với công sức bỏ ra; làm cùng nhau; làm cho nhau; kết nối; gặp nhau; điều chỉnh cho phù hợp với người khác; hòa nhập; chồng lên nhau; đan xen (合う)",
+    "hv": "HỢP"
+  },
+  "同じ": {
+    "r": "おなじ",
+    "m": "bằng nhau; sự giống nhau; sự giống; giống nhau; cùng; giống",
+    "hv": "ĐỒNG"
+  },
+  "同時に": {
+    "r": "どうじに",
+    "m": "đồng thời; cùng lúc đó",
+    "hv": "ĐỒNG THÌ"
+  },
+  "同義": {
+    "r": "どうぎ",
+    "m": "cùng ý nghĩa đó",
+    "hv": "ĐỒNG NGHĨA"
+  },
+  "吐き出す": {
+    "r": "はきだす",
+    "m": "nôn ra; ợ ra; xuất ra",
+    "hv": "THỔ XUẤT"
+  },
+  "向か": {
+    "r": "むか",
+    "m": "đối diện với; quay mặt về phía; hướng đến; dành cho; để cho; thích hợp; phù hợp (向く)",
+    "hv": "HƯỚNG"
+  },
+  "否定": {
+    "r": "ひてい",
+    "m": "sự phủ định; sự bác bỏ",
+    "hv": "PHỦ ĐỊNH"
+  },
+  "否定的": {
+    "r": "ひていてき",
+    "m": "phủ định; mâu thuẫn",
+    "hv": "PHỦ ĐỊNH ĐÍCH"
+  },
+  "呼び": {
+    "r": "よび",
+    "m": "gọi là; được gọi là; khuôn khổ ấn định; kích thước danh định",
+    "hv": "HÔ"
+  },
+  "呼ん": {
+    "r": "よん",
+    "m": "gọi; mời; kêu tên; hô hào; hú; thu hút (呼ぶ)",
+    "hv": "HÔ"
+  },
+  "問い合わせ": {
+    "r": "といあわせ",
+    "m": "nơi hướng dẫn; phòng hướng dẫn",
+    "hv": "VẤN HỢP"
+  },
+  "問う": {
+    "r": "とう",
+    "m": "cật vấn; câu hỏi; hỏi; hỏi thăm; vấn",
+    "hv": "VẤN"
+  },
+  "問わ": {
+    "r": "とわ",
+    "m": "cật vấn; câu hỏi; hỏi; hỏi thăm; vấn (問う)",
+    "hv": "VẤN"
+  },
+  "問題": {
+    "r": "もんだい",
+    "m": "vấn đề",
+    "hv": "VẤN ĐỀ"
+  },
+  "喫茶店": {
+    "r": "きっさてん",
+    "m": "quán cà phê; quán trà; quán nước; tiệm giải khát; quán giải khát",
+    "hv": "KHIẾT TRÀ ĐIẾM"
+  },
+  "営み": {
+    "r": "いとなみ",
+    "m": "công việc; việc làm; công việc mưu sinh; sự làm việc; sự làm",
+    "hv": "DOANH"
+  },
+  "四人": {
+    "r": "よにん",
+    "m": "bốn người",
+    "hv": "TỨ NHÂN"
+  },
+  "四時": {
+    "r": "よじ",
+    "m": "4 giờ",
+    "hv": "TỨ THÌ"
+  },
+  "回": {
+    "r": "かい",
+    "m": "lần",
+    "hv": "HỒI"
+  },
+  "回収": {
+    "r": "かいしゅう",
+    "m": "thu hồi",
+    "hv": "HỒI THU"
+  },
+  "困っ": {
+    "r": "こまっ",
+    "m": "bối rối; khó khăn; lúng túng (困る)",
+    "hv": "KHỐN"
+  },
+  "困り": {
+    "r": "こまり",
+    "m": "bối rối; khó khăn; lúng túng (困る)",
+    "hv": "KHỐN"
+  },
+  "囲ま": {
+    "r": "かこま",
+    "m": "bao quanh; vây quanh; bao bọc; vây hãm (囲む)",
+    "hv": "VI"
+  },
+  "図書館": {
+    "r": "としょかん",
+    "m": "thư viện",
+    "hv": "ĐỒ THƯ QUÁN"
+  },
+  "国": {
+    "r": "くに",
+    "m": "đất nước, quê hương",
+    "hv": "QUỐC"
+  },
+  "土曜日": {
+    "r": "どようび",
+    "m": "ngày thứ bẩy; thứ bảy",
+    "hv": "THỔ DIỆU NHẬT"
+  },
+  "基礎的": {
+    "r": "きそてき",
+    "m": "cơ sở; nền tảng",
+    "hv": "CƠ SỞ ĐÍCH"
+  },
+  "場合": {
+    "r": "ばあい",
+    "m": "trường hợp; tình huống; hoàn cảnh; tình trạng; dịp; lúc; thời điểm; khi; về trường hợp của; đối với",
+    "hv": "TRÀNG HỢP"
+  },
+  "場所": {
+    "r": "ばしょ",
+    "m": "địa điểm",
+    "hv": "TRÀNG SỞ"
+  },
+  "場面": {
+    "r": "ばめん",
+    "m": "khung cảnh",
+    "hv": "TRÀNG DIỆN"
+  },
+  "増やす": {
+    "r": "ふやす",
+    "m": "làm tăng lên; làm hơn",
+    "hv": "TĂNG"
+  },
+  "増加": {
+    "r": "ぞうか",
+    "m": "sự gia tăng",
+    "hv": "TĂNG GIA"
+  },
+  "声": {
+    "r": "こえ",
+    "m": "tiếng; giọng nói; lời nói; thanh điệu của chữ hán hoặc từ tiếng nhật; dấu thanh dùng ở góc chữ để chỉ cao độ; ngữ điệu; cao độ; cường độ phát âm",
+    "hv": "THANH"
+  },
+  "売れ": {
+    "r": "うれ",
+    "m": "bán ra; bán chạy; bán tốt; bán được; nổi danh; nổi tiếng (売れる)",
+    "hv": "MẠI"
+  },
+  "変え": {
+    "r": "かえ",
+    "m": "thay đổi",
+    "hv": "BIẾN"
+  },
+  "変な": {
+    "r": "へんな",
+    "m": "kỳ lạ",
+    "hv": "BIẾN"
+  },
+  "変わり": {
+    "r": "かわり",
+    "m": "sự thay đổi; thay đổi; đổi khác; biến động",
+    "hv": "BIẾN"
+  },
+  "変化": {
+    "r": "へんか",
+    "m": "sự thay đổi",
+    "hv": "BIẾN HÓA"
+  },
+  "変化し": {
+    "r": "へんかし",
+    "m": "biến; biến đổi; biến hóa; đổi đời; thay (変化する)",
+    "hv": "BIẾN HÓA"
+  },
+  "変更": {
+    "r": "へんこう",
+    "m": "sự biến đổi; sự cải biến; sự thay đổi",
+    "hv": "BIẾN CANH"
+  },
+  "夏休み": {
+    "r": "なつやすみ",
+    "m": "kỳ nghỉ hè",
+    "hv": "HẠ HƯU"
+  },
+  "夕方": {
+    "r": "ゆうがた",
+    "m": "chiều tối",
+    "hv": "TỊCH PHƯƠNG"
+  },
+  "多い": {
+    "r": "おおい",
+    "m": "đông, nhiều",
+    "hv": "ĐA"
+  },
+  "多く": {
+    "r": "おおく",
+    "m": "nhiều; đa số; phần lớn; thường",
+    "hv": "ĐA"
+  },
+  "多大": {
+    "r": "ただい",
+    "m": "sự to lớn; sự nhiều; to lớn; cực nhiều",
+    "hv": "ĐA ĐẠI"
+  },
+  "夜": {
+    "r": "よる",
+    "m": "ban tối; buổi tối; đêm; tối; ban đêm",
+    "hv": "DẠ"
+  },
+  "夢": {
+    "r": "ゆめ",
+    "m": "chiêm bao; giấc mơ; ước mơ; mơ",
+    "hv": "MỘNG"
+  },
+  "大き": {
+    "r": "おおき",
+    "m": "lớn; to",
+    "hv": "ĐẠI"
+  },
+  "大きい": {
+    "r": "おおきい",
+    "m": "bự; to lớn; to; lớn",
+    "hv": "ĐẠI"
+  },
+  "大きか": {
+    "r": "おおきか",
+    "m": "theo một cách lớn; trên quy mô lớn (大きく)",
+    "hv": "ĐẠI"
+  },
+  "大丈夫": {
+    "r": "だいじょうぶ",
+    "m": "ổn, không sao",
+    "hv": "ĐẠI TRƯỢNG PHU"
+  },
+  "大切": {
+    "r": "たいせつ",
+    "m": "quan trọng; sự quan trọng; thái miếng to; lát thịt hoặc cá lớn; màn cuối của buổi biểu diễn trong ngày; hồi cuối của vở kịch thứ hai; vở kịch ngắn một hồi sau vở kịch chính; tiết mục cuối của buổi diễn; màn trình diễn tập thể của toàn bộ dàn diễn viên; kết thúc của một sự việc; phần kết; đoạn kết",
+    "hv": "ĐẠI THIẾT"
+  },
+  "大変": {
+    "r": "たいへん",
+    "m": "chết rồi; không xong rồi; kinh khủng quá.v.v..; kinh khủng; ghê gớm; mệt mỏi; khó khăn; vất vả; quá; vô cùng; rất",
+    "hv": "ĐẠI BIẾN"
+  },
+  "大好き": {
+    "r": "だいすき",
+    "m": "rất thích",
+    "hv": "ĐẠI HẢO"
+  },
+  "大学": {
+    "r": "だいがく",
+    "m": "đại học",
+    "hv": "ĐẠI HỌC"
+  },
+  "大量": {
+    "r": "たいりょう",
+    "m": "số lượng lớn",
+    "hv": "ĐẠI LƯỢNG"
+  },
+  "天気": {
+    "r": "てんき",
+    "m": "thời tiết",
+    "hv": "THIÊN KHÍ"
+  },
+  "夫婦": {
+    "r": "ふうふ",
+    "m": "vợ chồng",
+    "hv": "PHU PHỤ"
+  },
+  "女": {
+    "r": "おんな",
+    "m": "phụ nữ; con gái; cô gái; đàn bà; nữ; nữ giới; phái nữ; quý bà; sao nữ; dùng sau tên hoặc bút danh của phụ nữ; vợ; nhân tình; bạn đời; cái; mái; giống cái; vật nhỏ hơn hoặc có tính nữ hơn trong một cặp",
+    "hv": "NỮ"
+  },
+  "女の人": {
+    "r": "おんなのひと",
+    "m": "phụ nữ; đàn bà; nữ",
+    "hv": "NỮ NHÂN"
+  },
+  "好き": {
+    "r": "すき",
+    "m": "sự thích; yêu; quý; mến; thích; ưa; chuộng; người yêu thích; người say mê; được lòng; có duyên; thu hút; hấp dẫn",
+    "hv": "HẢO"
+  },
+  "妹": {
+    "r": "いもうと",
+    "m": "em gái",
+    "hv": "MUỘI"
+  },
+  "始まり": {
+    "r": "はじまり",
+    "m": "bắt đầu; cái bắt đầu; sự bắt đầu",
+    "hv": "THỦY"
+  },
+  "始め": {
+    "r": "はじめ",
+    "m": "lúc đầu; đầu tiên; 開始",
+    "hv": "THỦY"
+  },
+  "姿勢": {
+    "r": "しせい",
+    "m": "tư thế, thái độ",
+    "hv": "TƯ THẾ"
+  },
+  "婦人": {
+    "r": "ふじん",
+    "m": "người phụ nữ; quý bà",
+    "hv": "PHỤ NHÂN"
+  },
+  "嫌": {
+    "r": "いや",
+    "m": "không thích; ghét; khó chịu; không đâu; ôi không",
+    "hv": "HIỀM"
+  },
+  "子ども": {
+    "r": "こども",
+    "m": "trẻ em; trẻ con",
+    "hv": "TỬ"
+  },
+  "子供": {
+    "r": "こども",
+    "m": "bé con; bé thơ; con; con nhỏ; con nít; con trẻ; đứa trẻ; hài đồng; thơ ấu; trẻ con; con cái; trẻ em; trẻ nhỏ",
+    "hv": "TỬ CUNG"
+  },
+  "存在": {
+    "r": "そんざい",
+    "m": "sự tồn tại",
+    "hv": "TỒN TẠI"
+  },
+  "季節": {
+    "r": "きせつ",
+    "m": "mùa; thời vụ; thời tiết",
+    "hv": "QUÝ TIẾT"
+  },
+  "学ぶ": {
+    "r": "まなぶ",
+    "m": "học; lĩnh hội; bắt chước; mô phỏng",
+    "hv": "HỌC"
+  },
+  "学問": {
+    "r": "がくもん",
+    "m": "học vấn",
+    "hv": "HỌC VẤN"
+  },
+  "学校": {
+    "r": "がっこう",
+    "m": "trường học",
+    "hv": "HỌC GIÁO"
+  },
+  "学生": {
+    "r": "がくせい",
+    "m": "học sinh, sinh viên",
+    "hv": "HỌC SANH"
+  },
+  "守り": {
+    "r": "まもり",
+    "m": "thủ; canh gác; bảo vệ; người canh gác; người bảo vệ; trông trẻ; giữ trẻ; người trông trẻ; bảo mẫu",
+    "hv": "THỦ"
+  },
+  "守る": {
+    "r": "まもる",
+    "m": "bảo vệ; giữ; tuân giữ; tuân theo; duy trì; giữ gìn; nghe theo",
+    "hv": "THỦ"
+  },
+  "安く": {
+    "r": "やすく",
+    "m": "rẻ",
+    "hv": "AN"
+  },
+  "安全": {
+    "r": "あんぜん",
+    "m": "an toàn",
+    "hv": "AN TOÀN"
+  },
+  "安定": {
+    "r": "あんてい",
+    "m": "ổn định",
+    "hv": "AN ĐỊNH"
+  },
+  "安易": {
+    "r": "あんい",
+    "m": "dễ dãi, hời hợt",
+    "hv": "AN DỊCH"
+  },
+  "実は": {
+    "r": "じつは",
+    "m": "kỳ thực; nói thực là; trên thực tế; thực ra; thật ra",
+    "hv": "THỰC"
+  },
+  "実行": {
+    "r": "じっこう",
+    "m": "thực hiện",
+    "hv": "THỰC HÀNH"
+  },
+  "実験": {
+    "r": "じっけん",
+    "m": "thí nghiệm",
+    "hv": "THỰC NGHIỆM"
+  },
+  "客観的": {
+    "r": "きゃっかんてき",
+    "m": "khách quan",
+    "hv": "KHÁCH QUAN ĐÍCH"
+  },
+  "家": {
+    "r": "いえ",
+    "m": "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+    "hv": "GIA"
+  },
+  "家族": {
+    "r": "かぞく",
+    "m": "gia đình",
+    "hv": "GIA TỘC"
+  },
+  "家柄": {
+    "r": "いえがら",
+    "m": "gia đình; gia tộc",
+    "hv": "GIA BÍNH"
+  },
+  "寄せ": {
+    "r": "よせ",
+    "m": "thế cờ vào lúc sắp kết thúc ván cờ; sự kết thúc trò chơi",
+    "hv": "KÍ"
+  },
+  "寝る": {
+    "r": "ねる",
+    "m": "đặt lưng; đặt mình; nằm; ngả lưng; ngủ",
+    "hv": "TẨM"
+  },
+  "対し": {
+    "r": "たいし",
+    "m": "đối với; dành cho; đối mặt; đối xử; thành đôi; tương ứng; đối xứng; xứng tầm (対す)",
+    "hv": "ĐỐI"
+  },
+  "対話": {
+    "r": "たいわ",
+    "m": "đối thoại",
+    "hv": "ĐỐI THOẠI"
+  },
+  "専門家": {
+    "r": "せんもんか",
+    "m": "chuyên gia",
+    "hv": "CHUYÊN MÔN GIA"
+  },
+  "小さい": {
+    "r": "ちいさい",
+    "m": "bé; bé bỏng; bé nhỏ; nhỏ; nhỏ bé; tí; tí hon",
+    "hv": "TIỂU"
+  },
+  "少し": {
+    "r": "すこし",
+    "m": "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+    "hv": "THIỂU"
+  },
+  "屋": {
+    "r": "や",
+    "m": "tòa nhà để ở; nhà ở; nhà cửa; mái nhà; chỉ người hoặc cửa hàng buôn bán thứ gì đó; chỉ người nào đó có đặc điểm tính cách nào đó; chỉ người chuyên về lĩnh vực nào đó hoặc có kỹ năng nổi bật; dùng làm tên hiệu của các gia đình kinh doanh buôn bán; dùng làm tên hiệu của diễn viên; bút danh của nhà văn; v.v.",
+    "hv": "ỐC"
+  },
+  "履か": {
+    "r": "はか",
+    "m": "đi; xỏ (giầy (履く)",
+    "hv": "LÍ"
+  },
+  "履かなくなった": {
+    "r": "はかなくなった",
+    "m": "không đi (giày) nữa",
+    "hv": "LÝ"
+  },
+  "山": {
+    "r": "やま",
+    "m": "núi; ngọn núi; sơn",
+    "hv": "SAN"
+  },
+  "山野": {
+    "r": "さんや",
+    "m": "đồi và ruộng; nông thôn; núi rừng và đồng nội; đồi núi và đồng bằng; thiên nhiên",
+    "hv": "SAN DÃ"
+  },
+  "左側": {
+    "r": "ひだりがわ",
+    "m": "bên trái",
+    "hv": "TẢ TRẮC"
+  },
+  "左右": {
+    "r": "さゆう",
+    "m": "phải trái; bên phải và bên trái; sự trên dưới; tả hữu; chuyện này chuyện nọ; việc này việc kia; đủ thứ chuyện; có xu hướng; hay; dễ; thường hay; dù sao thì; dù thế nào đi nữa; nói chung là; lời ra tiếng vào; điều tiếng; lùm xùm; có vấn đề; làm cái này cái nọ; loay hoay đủ thứ",
+    "hv": "TẢ HỮU"
+  },
+  "差別": {
+    "r": "さべつ",
+    "m": "phân biệt đối xử",
+    "hv": "SOA BIỆT"
+  },
+  "市": {
+    "r": "し",
+    "m": "thành phố; chợ; phiên chợ; nơi mua bán hàng hóa; nơi tụ họp; nơi tập trung đông người; thành thị; khu vực đô thị",
+    "hv": "THỊ"
+  },
+  "布団": {
+    "r": "ふとん",
+    "m": "chăn đệm",
+    "hv": "BỐ ĐOÀN"
+  },
+  "帰っ": {
+    "r": "かえっ",
+    "m": "về; chạy về (帰る)",
+    "hv": "QUY"
+  },
+  "帰ら": {
+    "r": "かえら",
+    "m": "về; chạy về (帰る)",
+    "hv": "QUY"
+  },
+  "帰り": {
+    "r": "かえり",
+    "m": "sự trở về; sự về",
+    "hv": "QUY"
+  },
+  "帰りました": {
+    "r": "かえりました",
+    "m": "đã trở về",
+    "hv": "QUY"
+  },
+  "常識": {
+    "r": "じょうしき",
+    "m": "thường thức, lẽ thường",
+    "hv": "THƯỜNG THỨC"
+  },
+  "平気": {
+    "r": "へいき",
+    "m": "thản nhiên, bình thản",
+    "hv": "BÌNH KHÍ"
+  },
+  "広い": {
+    "r": "ひろい",
+    "m": "rộng; rộng rãi; rộng lớn",
+    "hv": "QUẢNG"
+  },
+  "店": {
+    "r": "みせ",
+    "m": "cửa hàng, quán",
+    "hv": "ĐIẾM"
+  },
+  "度外視": {
+    "r": "どがいし",
+    "m": "không hề quan tâm; bỏ mặc",
+    "hv": "ĐỘ NGOẠI THỊ"
+  },
+  "座っ": {
+    "r": "すわっ",
+    "m": "ngồi; ngồi xuống (座る)",
+    "hv": "TỌA"
+  },
+  "庭": {
+    "r": "にわ",
+    "m": "sân; sân vườn",
+    "hv": "ĐÌNH"
+  },
+  "引っ越し": {
+    "r": "ひっこし",
+    "m": "chuyển nhà",
+    "hv": "DẪN VIỆT"
+  },
+  "弟": {
+    "r": "おとうと",
+    "m": "em trai; đệ; em gái; em; con út; em út; đệ tử; đồ đệ; môn đệ; tiểu đệ",
+    "hv": "ĐỆ"
+  },
+  "強い": {
+    "r": "つよい",
+    "m": "khỏe; mạnh; khoẻ; bền; tốt; bướng bỉnh; ngoan cố; cứng đầu; không chịu khuất phục; cứng; dai; khô; bị sượng; mạnh mẽ; dữ dội; mãnh liệt; cứng nhắc; trang trọng; thô lỗ; gay gắt",
+    "hv": "CƯỜNG"
+  },
+  "強いて": {
+    "r": "しいて",
+    "m": "khăng khăng; nhấn mạnh",
+    "hv": "CƯỜNG"
+  },
+  "弾く": {
+    "r": "ひく",
+    "m": "chơi; đàn; gảy",
+    "hv": "ĐÀN"
+  },
+  "弾け": {
+    "r": "ひけ",
+    "m": "nổ mở; để chia ra từng phần mở; để bật ra (弾ける)",
+    "hv": "ĐÀN"
+  },
+  "当たり前": {
+    "r": "あたりまえ",
+    "m": "dĩ nhiên; đương nhiên; rõ ràng; thông thường; hợp lý; thông dụng; bình thường; sự đương nhiên; sự rõ ràng; sự thông thường; sự hợp lý",
+    "hv": "ĐƯƠNG TIỀN"
+  },
+  "当然": {
+    "r": "とうぜん",
+    "m": "đương nhiên",
+    "hv": "ĐƯƠNG NHIÊN"
+  },
+  "当社": {
+    "r": "とうしゃ",
+    "m": "công ty này; công ty của tôi; đền thờ này; đền thờ của chúng tôi",
+    "hv": "ĐƯƠNG XÃ"
+  },
+  "影響": {
+    "r": "えいきょう",
+    "m": "ảnh hưởng",
+    "hv": "ẢNH HƯỞNG"
+  },
+  "彼女": {
+    "r": "かのじょ",
+    "m": "chị ta; cô ả; cô ta; cô ấy; cô gái ấy; cô bé ấy; người phụ nữ ấy; người đàn bà ấy; bà ấy; mụ ấy",
+    "hv": "BỈ NỮ"
+  },
+  "待ち": {
+    "r": "まち",
+    "m": "đợi; thời gian đợi",
+    "hv": "ĐÃI"
+  },
+  "待っ": {
+    "r": "まっ",
+    "m": "chờ; chờ đợi; đợi; đợi chờ; mong chờ; mong đợi; mong mỏi; trông đợi (待つ)",
+    "hv": "ĐÃI"
+  },
+  "後": {
+    "r": "あと",
+    "m": "sau đó; sau khi; kể từ đó; trong tương lai",
+    "hv": "HẬU"
+  },
+  "心": {
+    "r": "こころ",
+    "m": "trái tim",
+    "hv": "TÂM"
+  },
+  "心配": {
+    "r": "しんぱい",
+    "m": "lo lắng",
+    "hv": "TÂM PHỐI"
+  },
+  "必ず": {
+    "r": "かならず",
+    "m": "nhất định; tất cả; nhất quyết",
+    "hv": "TẤT"
+  },
+  "必然的": {
+    "r": "ひつぜんてき",
+    "m": "tất yếu",
+    "hv": "TẤT NHIÊN ĐÍCH"
+  },
+  "必要": {
+    "r": "ひつよう",
+    "m": "cấp thiết; cần thiết",
+    "hv": "TẤT YẾU"
+  },
+  "忘れ": {
+    "r": "わすれ",
+    "m": "bỏ lại; đãng; quên bẵng; quên; lãng quên; vong (忘れる)",
+    "hv": "VONG"
+  },
+  "怖い": {
+    "r": "こわい",
+    "m": "hãi hùng; sợ; đáng sợ",
+    "hv": "PHỐ"
+  },
+  "思い": {
+    "r": "おもい",
+    "m": "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+    "hv": "TƯ"
+  },
+  "思い出し": {
+    "r": "おもいだし",
+    "m": "nhìn lại; nhớ; nhớ về; nhớ ra; nghĩ về; liên tưởng tới; liên tưởng đến (思い出す)",
+    "hv": "TƯ XUẤT"
+  },
+  "思い出しました": {
+    "r": "おもいだしました",
+    "m": "nhớ lại",
+    "hv": "TƯ XUẤT"
+  },
+  "思い知ら": {
+    "r": "おもいしら",
+    "m": "nhận ra; nhận thức rõ; hiểu rõ; thấm thía; thấu hiểu; thức tỉnh; tỉnh ngộ (思い知る)",
+    "hv": "TƯ TRI"
+  },
+  "思い込む": {
+    "r": "おもいこむ",
+    "m": "tin đinh ninh, mặc định",
+    "hv": "TƯ"
+  },
+  "思い込ん": {
+    "r": "おもいこん",
+    "m": "nghĩ rằng; cho rằng; tin rằng (思い込む)",
+    "hv": "TƯ"
+  },
+  "思う": {
+    "r": "おもう",
+    "m": "nghĩ; cho rằng; tưởng; cảm thấy",
+    "hv": "TƯ"
+  },
+  "思え": {
+    "r": "おもえ",
+    "m": "thể hiện cảm xúc cá nhân khi người khác nghĩ vậy mà mình lại không nghĩ vậy (思える)",
+    "hv": "TƯ"
+  },
+  "思わ": {
+    "r": "おもわ",
+    "m": "nghĩ; cho rằng; tưởng; cảm thấy (思う)",
+    "hv": "TƯ"
+  },
+  "思考": {
+    "r": "しこう",
+    "m": "tư duy, suy nghĩ",
+    "hv": "TƯ KHẢO"
+  },
+  "性": {
+    "r": "せい",
+    "m": "giới tính; giống; tính; bản chất",
+    "hv": "TÍNH"
+  },
+  "性格": {
+    "r": "せいかく",
+    "m": "tính cách",
+    "hv": "TÍNH CÁCH"
+  },
+  "恥ずかしい": {
+    "r": "はずかしい",
+    "m": "xấu hổ, ngượng",
+    "hv": "SỈ"
+  },
+  "恥ずかしか": {
+    "r": "はずかしか",
+    "m": "ê mặt; e ngại; ngượng; ngượng ngùng; thẹn; tủi thẹn; xấu hổ (恥ずかしい)",
+    "hv": "SỈ"
+  },
+  "悩ん": {
+    "r": "なやん",
+    "m": "khổ đau; lo lắng; buồn phiền; lo buồn; lo phiền; ưu tư (悩む)",
+    "hv": "NÃO"
+  },
+  "悩んで": {
+    "r": "なやんで",
+    "m": "lo lắng, phiền muộn",
+    "hv": "NÃO"
+  },
+  "悪く": {
+    "r": "わるく",
+    "m": "xấu; không tốt; kém; khó chịu; hỏng; xin lỗi; đáng ghét; đáng hận; căm ghét; đáng nể; tuyệt vời; khéo léo; đáng yêu; khó coi; xấu xí; đáng xấu hổ; ngượng ngùng; áy náy; không đúng mực; khó; khó khăn; vất vả khi làm (悪い)",
+    "hv": "ÁC"
+  },
+  "悲鳴": {
+    "r": "ひめい",
+    "m": "tiếng kêu than",
+    "hv": "BI MINH"
+  },
+  "情報": {
+    "r": "じょうほう",
+    "m": "thông tin",
+    "hv": "TÌNH BÁO"
+  },
+  "情報化社会": {
+    "r": "じょうほうかしゃかい",
+    "m": "xã hội thông tin",
+    "hv": "TÌNH BÁO HÓA XÃ HỘI"
+  },
+  "情報社会": {
+    "r": "じょうほうしゃかい",
+    "m": "xã hội thông tin",
+    "hv": "TÌNH BÁO XÃ CỐI"
+  },
+  "惑わ": {
+    "r": "まどわ",
+    "m": "lúng túng; bối rối (惑う)",
+    "hv": "HOẶC"
+  },
+  "意味": {
+    "r": "いみ",
+    "m": "ý nghĩa",
+    "hv": "Ý VỊ"
+  },
+  "意外": {
+    "r": "いがい",
+    "m": "ngạc nhiên; không như đã tính; ngoài dự tính; ngoài dự kiến; hay hơn tưởng tượng; hay hơn... tưởng; nằm ngoài sức tưởng tượng; của trời cho; từ trên trời rơi xuống",
+    "hv": "Ý NGOẠI"
+  },
+  "意見": {
+    "r": "いけん",
+    "m": "kiến; ý; ý kiến",
+    "hv": "Ý KIẾN"
+  },
+  "愛護": {
+    "r": "あいご",
+    "m": "sự bảo vệ; sự chăm sóc cẩn thận; nhẹ nhàng",
+    "hv": "ÁI HỘ"
+  },
+  "感じ": {
+    "r": "かんじ",
+    "m": "tri giác; cảm giác",
+    "hv": "CẢM"
+  },
+  "感動": {
+    "r": "かんどう",
+    "m": "sự cảm động; cảm động; sự xúc động; xúc động",
+    "hv": "CẢM ĐỘNG"
+  },
+  "慣れ": {
+    "r": "なれ",
+    "m": "kinh nghiệm; thực hành",
+    "hv": "QUÁN"
+  },
+  "慣れて": {
+    "r": "なれて",
+    "m": "quen dần",
+    "hv": "QUÁN"
+  },
+  "懐かしい": {
+    "r": "なつかしい",
+    "m": "hoài niệm, thân thương",
+    "hv": "HOÀI"
+  },
+  "懸命": {
+    "r": "けんめい",
+    "m": "hết sức, miệt mài",
+    "hv": "HUYỀN MỆNH"
+  },
+  "成功": {
+    "r": "せいこう",
+    "m": "thành công",
+    "hv": "THÀNH CÔNG"
+  },
+  "戦略": {
+    "r": "せんりゃく",
+    "m": "chiến lược",
+    "hv": "CHIẾN LƯỢC"
+  },
+  "戸惑い": {
+    "r": "とまどい",
+    "m": "sự lúng túng, bỡ ngỡ",
+    "hv": "HỘ HOẶC"
+  },
+  "戻っ": {
+    "r": "もどっ",
+    "m": "quay lại; trở lại; hồi lại; trái với; đi ngược lại với; vi phạm; bị bóp méo; bị vặn vẹo; bị biến dạng (戻る)",
+    "hv": "LỆ"
+  },
+  "所": {
+    "r": "ところ",
+    "m": "nơi; chỗ; vùng nổi tiếng về một sản phẩm nào đó; trung tâm; khu vực; nơi hoặc bộ phận xảy ra hành động; đối tượng của hành động; nơi đáng để làm gì đó; điểm đáng làm gì đó; những người thuộc một tầng lớp hoặc địa vị nhất định; địa điểm; điểm; cơ sở; văn phòng; trụ sở; cơ quan; viện; điều được...; cái được...; những gì..; đơn vị đếm địa điểm",
+    "hv": "SỞ"
+  },
+  "手に入る": {
+    "r": "てにはいる",
+    "m": "sở hữu; có trong tay; có thể mua",
+    "hv": "THỦ NHẬP"
+  },
+  "手軽": {
+    "r": "てがる",
+    "m": "nhẹ nhàng; đơn giản; sự nhẹ nhàng; sự đơn giản; sự dễ dàng",
+    "hv": "THỦ KHINH"
+  },
+  "払っ": {
+    "r": "はらっ",
+    "m": "biểu thị; lấy đi; phủi đi; quét đi; trả; trả tiền (払う)",
+    "hv": "PHẤT"
+  },
+  "批判": {
+    "r": "ひはん",
+    "m": "phê phán, phản biện",
+    "hv": "PHÊ PHÁN"
+  },
+  "技能": {
+    "r": "ぎのう",
+    "m": "kỹ năng",
+    "hv": "KĨ NĂNG"
+  },
+  "把握": {
+    "r": "はあく",
+    "m": "nắm bắt",
+    "hv": "BẢ ÁC"
+  },
+  "押し入れ": {
+    "r": "おしいれ",
+    "m": "tủ tường",
+    "hv": "ÁP NHẬP"
+  },
+  "抽象的": {
+    "r": "ちゅうしょうてき",
+    "m": "trừu tượng",
+    "hv": "TRỪU TƯỢNG ĐÍCH"
+  },
+  "持ち": {
+    "r": "もち",
+    "m": "sự cầm nắm; sự chịu; sự đảm nhiệm; sự duy trì; sự mang",
+    "hv": "TRÌ"
+  },
+  "持っ": {
+    "r": "もっ",
+    "m": "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+    "hv": "TRÌ"
+  },
+  "持って": {
+    "r": "もって",
+    "m": "mang theo",
+    "hv": "TRÌ"
+  },
+  "持つ": {
+    "r": "もつ",
+    "m": "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách",
+    "hv": "TRÌ"
+  },
+  "挑戦": {
+    "r": "ちょうせん",
+    "m": "thách thức; sự thách thức",
+    "hv": "THIÊU CHIẾN"
+  },
+  "捨て": {
+    "r": "すて",
+    "m": "bỏ; từ bỏ; chẳng đoái hoài; liệng; ném; ném đi; vất; vứt; vứt bỏ (捨てる)",
+    "hv": "XÁ"
+  },
+  "掃除": {
+    "r": "そうじ",
+    "m": "dọn dẹp",
+    "hv": "TẢO TRỪ"
+  },
+  "授業": {
+    "r": "じゅぎょう",
+    "m": "buổi học; giờ học; sự giảng bài; sự lên lớp",
+    "hv": "THỤ NGHIỆP"
+  },
+  "揺ら": {
+    "r": "ゆら",
+    "m": "rung; lắc; đu đưa; lúc lắc (揺る)",
+    "hv": "DAO"
+  },
+  "撤廃": {
+    "r": "てっぱい",
+    "m": "bãi bỏ, xóa bỏ",
+    "hv": "TRIỆT PHẾ"
+  },
+  "撮っ": {
+    "r": "とっ",
+    "m": "chụp; làm (撮る)",
+    "hv": "TOÁT"
+  },
+  "撮り": {
+    "r": "とり",
+    "m": "việc chụp; chụp; quay",
+    "hv": "TOÁT"
+  },
+  "撮りたい": {
+    "r": "とりたい",
+    "m": "muốn chụp",
+    "hv": "TOÁT"
+  },
+  "支配": {
+    "r": "しはい",
+    "m": "chi phối",
+    "hv": "CHI PHỐI"
+  },
+  "放送": {
+    "r": "ほうそう",
+    "m": "sự phát thanh; sự loan truyền",
+    "hv": "PHÓNG TỐNG"
+  },
+  "政治": {
+    "r": "せいじ",
+    "m": "chánh trị; chính trị",
+    "hv": "CHÁNH TRÌ"
+  },
+  "政策": {
+    "r": "せいさく",
+    "m": "chính sách",
+    "hv": "CHÁNH SÁCH"
+  },
+  "故障": {
+    "r": "こしょう",
+    "m": "sự cố; sự hỏng; hỏng; trục trặc; hỏng hóc; sai; lỗi",
+    "hv": "CỐ CHƯỚNG"
+  },
+  "散歩": {
+    "r": "さんぽ",
+    "m": "đi dạo",
+    "hv": "TÁN BỘ"
+  },
+  "数": {
+    "r": "かず",
+    "m": "số; chữ số; thường xuyên; hay; nhiều lần; luôn luôn",
+    "hv": "SỔ"
+  },
+  "文化": {
+    "r": "ぶんか",
+    "m": "văn hóa",
+    "hv": "VĂN HÓA"
+  },
+  "文字": {
+    "r": "もじ",
+    "m": "chữ; chữ cái; văn tự; con chữ",
+    "hv": "VĂN TỰ"
+  },
+  "文章": {
+    "r": "ぶんしょう",
+    "m": "bài văn, đoạn văn",
+    "hv": "VĂN CHƯƠNG"
+  },
+  "料理": {
+    "r": "りょうり",
+    "m": "bữa ăn; sự nấu ăn; món ăn",
+    "hv": "LIỆU LÍ"
+  },
+  "新しい": {
+    "r": "あたらしい",
+    "m": "mới, tươi",
+    "hv": "TÂN"
+  },
+  "新た": {
+    "r": "あらた",
+    "m": "sự tươi; sự mới; tươi; mới; mới mẻ",
+    "hv": "TÂN"
+  },
+  "新聞": {
+    "r": "しんぶん",
+    "m": "tờ báo",
+    "hv": "TÂN VĂN"
+  },
+  "方": {
+    "r": "かた",
+    "m": "phương diện; phương hướng; phía; phương; hậu tố số nhiều dùng cho người một cách kính trọng; khoảng; tầm; vào lúc; một phía; người thuộc về một phía cụ thể; người phụ trách một nhiệm vụ hoặc vai trò cụ thể; xấp xỉ; trạng thái; diện mạo; tình trạng; tình hình; dáng vẻ; hình dáng; hình thức; vẻ ngoài chỉnh tề; phương pháp; phương thức; cách thức; lý do; hoàn cảnh; câu chuyện; phong cách; thiết kế; vẻ ngoài; hậu tố kính ngữ dùng cho người; tên hoặc chức danh; hậu tố lịch sự thêm vào danh từ hoặc tính từ để bày tỏ lòng biết ơn hoặc sự đồng cảm; hướng; ngay lúc; trong khi; khi; cách thức hành động; cách làm; ngài; quý khách; người đó; vùng lân cận; nơi gần đây; bờ biển; bãi biển; ven biển; hậu tố chỉ hướng hoặc khu vực chung; hậu tố chỉ thời gian hoặc giai đoạn xấp xỉ; về một phía nhất định; cách thức di chuyển; trạng thái của hành động; sự giải quyết; kết cục; sự kết thúc của một vấn đề; thời điểm; thời kỳ; mùa; vị; người; phương tiện; một bên của một cặp; một nhóm người; lĩnh vực; khía cạnh; mối quan hệ; việc thực hiện; chuyển cho; gửi tại nhà của; người thuộc về một phía; người phụ trách một nhiệm vụ; nhân viên; điều phối viên; đại khái; về phía",
+    "hv": "PHƯƠNG"
+  },
+  "方向": {
+    "r": "ほうこう",
+    "m": "hướng; phía; phương hướng; phương trời",
+    "hv": "PHƯƠNG HƯỚNG"
+  },
+  "方式": {
+    "r": "ほうしき",
+    "m": "cách thức; đường lối; phương thức",
+    "hv": "PHƯƠNG THỨC"
+  },
+  "方法": {
+    "r": "ほうほう",
+    "m": "phương pháp",
+    "hv": "PHƯƠNG PHÁP"
+  },
+  "日": {
+    "r": "ひ",
+    "m": "mặt trời; ngày; đơn vị đếm ngày",
+    "hv": "NHẬT"
+  },
+  "日曜日": {
+    "r": "にちようび",
+    "m": "Chủ nhật",
+    "hv": "NHẬT DIỆU NHẬT"
+  },
+  "日本": {
+    "r": "にほん",
+    "m": "nhật bản",
+    "hv": "NHẬT BỔN"
+  },
+  "日本語": {
+    "r": "にほんご",
+    "m": "tiếng Nhật",
+    "hv": "NHẬT BỔN NGỮ"
+  },
+  "早く": {
+    "r": "はやく",
+    "m": "sớm; nhanh chóng; sự sớm; sự nhanh chóng",
+    "hv": "TẢO"
+  },
+  "昆虫": {
+    "r": "こんちゅう",
+    "m": "côn trùng",
+    "hv": "CÔN TRÙNG"
+  },
+  "昆虫学": {
+    "r": "こんちゅうがく",
+    "m": "côn trùng học",
+    "hv": "CÔN TRÙNG HỌC"
+  },
+  "明るい": {
+    "r": "あかるい",
+    "m": "tươi sáng; vui vẻ; sáng sủa; 法律に明るい:am hiểu pháp luật; xinh tươi",
+    "hv": "MINH"
+  },
+  "映像": {
+    "r": "えいぞう",
+    "m": "hình ảnh video",
+    "hv": "ÁNH TƯỢNG"
+  },
+  "映画": {
+    "r": "えいが",
+    "m": "điện ảnh; phim",
+    "hv": "ÁNH HỌA"
+  },
+  "昨日": {
+    "r": "きのう",
+    "m": "hôm qua",
+    "hv": "TẠC NHẬT"
+  },
+  "昼": {
+    "r": "ひる",
+    "m": "ban trưa; buổi trưa; ban ngày; trưa",
+    "hv": "TRÚ"
+  },
+  "昼休み": {
+    "r": "ひるやすみ",
+    "m": "giờ nghỉ trưa",
+    "hv": "TRÚ HƯU"
+  },
+  "昼間": {
+    "r": "ひるま",
+    "m": "ban ngày",
+    "hv": "TRÚ GIAN"
+  },
+  "時": {
+    "r": "とき",
+    "m": "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+    "hv": "THÌ"
+  },
+  "時代": {
+    "r": "じだい",
+    "m": "thời đại; thời kỳ",
+    "hv": "THÌ ĐẠI"
+  },
+  "時間": {
+    "r": "じかん",
+    "m": "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+    "hv": "THÌ GIAN"
+  },
+  "晩": {
+    "r": "ばん",
+    "m": "buổi tối; đêm; muộn; tối",
+    "hv": "VÃN"
+  },
+  "普段": {
+    "r": "ふだん",
+    "m": "bình thường; thông thường; thường thường; đều đặn; thường xuyên",
+    "hv": "PHỔ ĐOẠN"
+  },
+  "普通": {
+    "r": "ふつう",
+    "m": "nôm na; sự thông thường; sự phổ thông; tầm thường; thông thường; phổ thông; thường; vừa",
+    "hv": "PHỔ THÔNG"
+  },
+  "景色": {
+    "r": "けしき",
+    "m": "phong cảnh",
+    "hv": "CẢNH SẮC"
+  },
+  "暮らし": {
+    "r": "くらし",
+    "m": "cuộc sống; việc sinh sống; sinh kế",
+    "hv": "MỘ"
+  },
+  "曜日": {
+    "r": "ようび",
+    "m": "ngày trong tuần",
+    "hv": "DIỆU NHẬT"
+  },
+  "書か": {
+    "r": "かか",
+    "m": "viết; sáng tác; viết lách (書く)",
+    "hv": "THƯ"
+  },
+  "書き": {
+    "r": "かき",
+    "m": "viết; sáng tác; viết lách (書く)",
+    "hv": "THƯ"
+  },
+  "書く": {
+    "r": "かく",
+    "m": "viết; sáng tác; viết lách",
+    "hv": "THƯ"
+  },
+  "書籍": {
+    "r": "しょせき",
+    "m": "sách vở; thư tịch; cuốn sách; sách; tài liệu",
+    "hv": "THƯ TỊCH"
+  },
+  "替え": {
+    "r": "かえ",
+    "m": "thay đổi; sự thay đổi; người thay thế",
+    "hv": "THẾ"
+  },
+  "最も": {
+    "r": "もっとも",
+    "m": "vô cùng; cực kỳ; cực độ; nhất; hết sức",
+    "hv": "TỐI"
+  },
+  "最初": {
+    "r": "さいしょ",
+    "m": "ban đầu",
+    "hv": "TỐI SƠ"
+  },
+  "最後": {
+    "r": "さいご",
+    "m": "bét; chót; cuối cùng; rút cục; rút cuộc; sau chót; sau cùng; sau hết",
+    "hv": "TỐI HẬU"
+  },
+  "最新": {
+    "r": "さいしん",
+    "m": "mới nhất",
+    "hv": "TỐI TÂN"
+  },
+  "最近": {
+    "r": "さいきん",
+    "m": "gần đây",
+    "hv": "TỐI CẬN"
+  },
+  "最高": {
+    "r": "さいこう",
+    "m": "cái cao nhất; cái đẹp nhất; cái tốt nhất; cái tuyệt vời; cao nhất; đẹp nhất; tốt nhất; đắt nhất; tối cao; tuyệt vời",
+    "hv": "TỐI CAO"
+  },
+  "月": {
+    "r": "つき",
+    "m": "mặt trăng; thái âm; tháng; trăng; vầng trăng",
+    "hv": "NGUYỆT"
+  },
+  "月間": {
+    "r": "げっかん",
+    "m": "một tháng; ví dụ: tháng an toàn giao thông (交通安全月間）",
+    "hv": "NGUYỆT GIAN"
+  },
+  "朝": {
+    "r": "あさ",
+    "m": "ban sáng; buổi sáng; sáng",
+    "hv": "TRIÊU"
+  },
+  "木": {
+    "r": "き",
+    "m": "cây cối; cây; gỗ; mộc; cây bụi",
+    "hv": "MỘC"
+  },
+  "木々": {
+    "r": "きぎ",
+    "m": "nhiều cây; mỗi cây; tất cả các loại cây",
+    "hv": "MỘC"
+  },
+  "木の下": {
+    "r": "このした",
+    "m": "dưới cái cây",
+    "hv": "MỘC HẠ"
+  },
+  "木曜日": {
+    "r": "もくようび",
+    "m": "thứ Năm",
+    "hv": "MỘC DIỆU NHẬT"
+  },
+  "本": {
+    "r": "ほん",
+    "m": "sách",
+    "hv": "BỔN"
+  },
+  "本人": {
+    "r": "ほんにん",
+    "m": "anh ta; cô ta; ông ta; bà ta; người đó; bản thân; người ủy thác",
+    "hv": "BỔN NHÂN"
+  },
+  "本当": {
+    "r": "ほんとう",
+    "m": "sự thật; thật; thật sự; thiệt",
+    "hv": "BỔN ĐƯƠNG"
+  },
+  "本格的": {
+    "r": "ほんかくてき",
+    "m": "mang tính chính thức",
+    "hv": "BỔN CÁCH ĐÍCH"
+  },
+  "条件": {
+    "r": "じょうけん",
+    "m": "điều kiện; điều khoản",
+    "hv": "ĐIỀU KIỆN"
+  },
+  "来る": {
+    "r": "くる",
+    "m": "đến; tới; sắp tới; tới đây; vào ngày; đang đến gần; trở nên vô dụng; cũ kỹ; già yếu; lẩm cẩm; phải lòng; say mê; si mê; đã và đang; tiếp diễn cho đến nay; duy trì tới tận bây giờ",
+    "hv": "LAI"
+  },
+  "来週": {
+    "r": "らいしゅう",
+    "m": "tuần lễ sau; tuần sau",
+    "hv": "LAI CHU"
+  },
+  "東京": {
+    "r": "とうきょう",
+    "m": "tokyo nhật bản); lạc dương; kinh đô của nhà hậu hán; đối lập với trường an là kinh đô của nhà tiền hán; khai phong; kinh đô của nhà bắc tống; liêu dương; tên gọi khác của thành phố này dưới thời nhà liêu và nhà kim; long nguyên phủ; tên gọi khác của kinh đô vương quốc bột hải dưới thời nhà đường; tokyo; thủ đô của nhật bản",
+    "hv": "ĐÔNG KINH"
+  },
+  "枯れ木": {
+    "r": "かれき",
+    "m": "cây khô; cây chết",
+    "hv": "KHÔ MỘC"
+  },
+  "根": {
+    "r": "ね",
+    "m": "rễ",
+    "hv": "CĂN"
+  },
+  "根本": {
+    "r": "こんぽん",
+    "m": "căn bản",
+    "hv": "CĂN BỔN"
+  },
+  "根本的": {
+    "r": "こんぽんてき",
+    "m": "một cách căn bản",
+    "hv": "CĂN BỔN ĐÍCH"
+  },
+  "桜": {
+    "r": "さくら",
+    "m": "anh đào",
+    "hv": "ANH"
+  },
+  "森": {
+    "r": "もり",
+    "m": "khu rừng",
+    "hv": "SÂM"
+  },
+  "森林": {
+    "r": "しんりん",
+    "m": "rừng rậm",
+    "hv": "SÂM LÂM"
+  },
+  "検討": {
+    "r": "けんとう",
+    "m": "cân nhắc, xem xét",
+    "hv": "KIỂM THẢO"
+  },
+  "検討し": {
+    "r": "けんとうし",
+    "m": "bàn; kiểm thảo (検討する)",
+    "hv": "KIỂM THẢO"
+  },
+  "極まりない": {
+    "r": "きわまりない",
+    "m": "vô cùng; trong cực trị; bao la",
+    "hv": "CỰC"
+  },
+  "極め": {
+    "r": "きめ",
+    "m": "việc nhận định giá trị của; điểm cuối cùng thúc đẩy tiến về phía trước",
+    "hv": "CỰC"
+  },
+  "楽しく": {
+    "r": "たのしく",
+    "m": "dí dỏm; khoái ý; sướng; vui sướng; vui vẻ; vui nhộn; vui tính; vui; khoái lạc; sung sướng (楽しい)",
+    "hv": "LẠC"
+  },
+  "楽しみ": {
+    "r": "たのしみ",
+    "m": "mong chờ, háo hức",
+    "hv": "LẠC"
+  },
+  "楽器": {
+    "r": "がっき",
+    "m": "nhạc cụ; nhạc khí",
+    "hv": "LẠC KHÍ"
+  },
+  "構築": {
+    "r": "こうちく",
+    "m": "sự xây dựng",
+    "hv": "CẤU TRÚC"
+  },
+  "様": {
+    "r": "よう",
+    "m": "cách thức; có vẻ; như thể; như là; để",
+    "hv": "DẠNG"
+  },
+  "様子": {
+    "r": "ようす",
+    "m": "tình hình; trạng thái; tình trạng; dáng vẻ; diện mạo; cách ăn mặc; thái độ; cử chỉ; nét mặt; điềm báo; dấu hiệu; sự tình; nguyên do; ẩn ý; làm bộ làm tịch; ra vẻ; làm duyên làm dáng",
+    "hv": "DẠNG TỬ"
+  },
+  "欠点": {
+    "r": "けってん",
+    "m": "nhược điểm",
+    "hv": "KHIẾM ĐIỂM"
+  },
+  "欲し": {
+    "r": "ほっし",
+    "m": "mong muốn; khát khao (欲す)",
+    "hv": "DỤC"
+  },
+  "歌": {
+    "r": "うた",
+    "m": "bài hát",
+    "hv": "CA"
+  },
+  "歌手": {
+    "r": "かしゅ",
+    "m": "ca kỹ; ca nhi; ca sĩ",
+    "hv": "CA THỦ"
+  },
+  "正しい": {
+    "r": "ただしい",
+    "m": "chính; chỉnh; đúng; chính xác; chính đáng; đúng lý; chân thật; đúng đắn",
+    "hv": "CHÁNH"
+  },
+  "正座": {
+    "r": "せいざ",
+    "m": "sự ngồi ngay ngắn; kiểu ngồi chính toạ; chỗ ngồi danh dự; ghế danh dự; hàng ghế đầu",
+    "hv": "CHÁNH TỌA"
+  },
+  "正確": {
+    "r": "せいかく",
+    "m": "chính xác",
+    "hv": "CHÁNH XÁC"
+  },
+  "正解": {
+    "r": "せいかい",
+    "m": "đáp án đúng",
+    "hv": "CHÁNH GIẢI"
+  },
+  "母": {
+    "r": "はは",
+    "m": "mẹ; u; bầm",
+    "hv": "MẪU"
+  },
+  "毎日": {
+    "r": "まいにち",
+    "m": "hàng ngày; mỗi ngày; mọi ngày; ngày ngày; thường ngày",
+    "hv": "MỖI NHẬT"
+  },
+  "毎月": {
+    "r": "まいつき",
+    "m": "hàng tháng; mỗi tháng; mọi tháng",
+    "hv": "MỖI NGUYỆT"
+  },
+  "毎朝": {
+    "r": "まいあさ",
+    "m": "hàng sáng; mỗi sáng",
+    "hv": "MỖI TRIÊU"
+  },
+  "民族": {
+    "r": "みんぞく",
+    "m": "dân tộc; sắc tộc; nhóm sắc tộc",
+    "hv": "DÂN TỘC"
+  },
+  "気": {
+    "r": "き",
+    "m": "cách nghĩ; ý đồ; tâm tư; quan niệm; chú ý; lưu tâm; hô hấp; thở; khí; không khí; khí lớn; khí thể; khí chưng từ nước; khí vị; hơi; lòng luyến mộ; tình ý; suy nghĩ; tư lự; tâm lí; tâm tình; tình tự; cảm giác; cảm thụ; cảm tình; tính cách; lề thói; tính trời sinh; khí độ; tinh thần; tâm thần; khí chất; có vẻ; trông như; dường như; dấu hiệu; dấu vết; một chút; mùi hương tỏa ra; hương vị; sự hiện diện; trạng thái tâm trí; cảm nhận; thời tiết; khí hậu; bệnh tật; ốm đau; dấu hiệu chuyển dạ; bắt đầu sinh con; hơi hơi; mơ hồ; có vẻ như; trông có vẻ; bản chất; dáng vẻ; xu hướng",
+    "hv": "KHÍ"
+  },
+  "気分": {
+    "r": "きぶん",
+    "m": "tâm tình; tâm tư; tinh thần",
+    "hv": "KHÍ PHÂN"
+  },
+  "気持ち": {
+    "r": "きもち",
+    "m": "cảm giác; cảm tình; tâm địa; tính tình; tâm tính; tấm lòng; tâm trạng",
+    "hv": "KHÍ TRÌ"
+  },
+  "汚れ": {
+    "r": "よごれ",
+    "m": "bẩn; vệt bẩn; sự ô uế; sự dơ bẩn; sự đồi bại; sự mất đi vẻ thanh khiết; sự ô nhục; vết nhơ; sự làm nhục danh dự; sự uế tạp; sự không sạch sẽ",
+    "hv": "Ô"
+  },
+  "汚れて": {
+    "r": "よごれて",
+    "m": "bị bẩn",
+    "hv": "Ô"
+  },
+  "決め": {
+    "r": "きめ",
+    "m": "thỏa thuận; quy định; sự sắp xếp; quyết định",
+    "hv": "QUYẾT"
+  },
+  "決定的": {
+    "r": "けっていてき",
+    "m": "mang tính quyết định",
+    "hv": "QUYẾT ĐỊNH ĐÍCH"
+  },
+  "沿って": {
+    "r": "そって",
+    "m": "dọc theo; men theo",
+    "hv": "DUYÊN"
+  },
+  "注ぐ": {
+    "r": "そそぐ",
+    "m": "chuốc; rót; dội; trút; tưới",
+    "hv": "CHÚ"
+  },
+  "注意": {
+    "r": "ちゅうい",
+    "m": "chú ý",
+    "hv": "CHÚ Ý"
+  },
+  "洋服": {
+    "r": "ようふく",
+    "m": "quần áo kiểu Âu",
+    "hv": "DƯƠNG PHỤC"
+  },
+  "洗えて": {
+    "r": "あらえて",
+    "m": "có thể giặt rửa",
+    "hv": "TẨY"
+  },
+  "活力": {
+    "r": "かつりょく",
+    "m": "sức sống, sinh khí",
+    "hv": "HOẠT LỰC"
+  },
+  "活動": {
+    "r": "かつどう",
+    "m": "hoạt động; sự hoạt động",
+    "hv": "HOẠT ĐỘNG"
+  },
+  "流れ": {
+    "r": "ながれ",
+    "m": "dòng chảy; chu trình; quá trình; mạch; luồng",
+    "hv": "LƯU"
+  },
+  "流行": {
+    "r": "りゅうこう",
+    "m": "thịnh hành, xu hướng",
+    "hv": "LƯU HÀNH"
+  },
+  "流行っ": {
+    "r": "はやっ",
+    "m": "thịnh hành; đang lưu hành; đang mốt; lây lan; tràn lan; lan rộng; lan truyền; thịnh vượng; phát đạt (流行る)",
+    "hv": "LƯU HÀNH"
+  },
+  "海": {
+    "r": "うみ",
+    "m": "biển",
+    "hv": "HẢI"
+  },
+  "消し": {
+    "r": "けし",
+    "m": "dập; tắt; xóa; loại bỏ; làm biến mất; khử; phi tang; phủ nhận; bác bỏ; giết; trừ khử; thủ tiêu; giảm dần rồi dừng nhạc nền; dọn dẹp đạo cụ; chê bai; kinh hãi; hồn vía lên mây (消す)",
+    "hv": "TIÊU"
+  },
+  "深め": {
+    "r": "ふかめ",
+    "m": "làm cao hơn; làm tăng thêm; làm sâu thêm; làm sâu sắc thêm (深める)",
+    "hv": "THÂM"
+  },
+  "減っ": {
+    "r": "へっ",
+    "m": "giảm; suy giảm; giảm bớt; bị mòn; bị hao mòn; đói; đói bụng; suy yếu; kiệt sức (減る)",
+    "hv": "GIẢM"
+  },
+  "減って": {
+    "r": "へって",
+    "m": "giảm đi",
+    "hv": "GIẢM"
+  },
+  "温ま": {
+    "r": "あたたま",
+    "m": "ấm lên; trở nên ấm áp; nóng lên (温む)",
+    "hv": "ÔN"
+  },
+  "温度": {
+    "r": "おんど",
+    "m": "nhiệt độ",
+    "hv": "ÔN ĐỘ"
+  },
+  "演劇": {
+    "r": "えんげき",
+    "m": "kịch nghệ",
+    "hv": "DIỄN KỊCH"
+  },
+  "漢字": {
+    "r": "かんじ",
+    "m": "chữ Hán (Kanji)",
+    "hv": "HÁN TỰ"
+  },
+  "澄ま": {
+    "r": "すま",
+    "m": "trong sạch; sáng; trong trẻo (澄む)",
+    "hv": "TRỪNG"
+  },
+  "点": {
+    "r": "てん",
+    "m": "điểm",
+    "hv": "ĐIỂM"
+  },
+  "点検": {
+    "r": "てんけん",
+    "m": "kiểm định, rà soát lại",
+    "hv": "ĐIỂM KIỂM"
+  },
+  "焦り": {
+    "r": "あせり",
+    "m": "sự sốt ruột, nôn nóng",
+    "hv": "TIÊU"
+  },
+  "熱": {
+    "r": "ねつ",
+    "m": "nhiệt độ; nhiệt tình; sức bật; sự say sưa; phát sốt; sốt; nhiệt; hơi nóng; cơn sốt",
+    "hv": "NHIỆT"
+  },
+  "熱い": {
+    "r": "あつい",
+    "m": "nóng; nóng bỏng; nhiệt tình",
+    "hv": "NHIỆT"
+  },
+  "熱心": {
+    "r": "ねっしん",
+    "m": "nhiệt tâm, say sưa",
+    "hv": "NHIỆT TÂM"
+  },
+  "父": {
+    "r": "ちち",
+    "m": "bố; cha; gia phụ; phụ thân; thân phụ; thầy; người cha",
+    "hv": "PHỤ"
+  },
+  "物": {
+    "r": "もの",
+    "m": "đồ vật; vật",
+    "hv": "VẬT"
+  },
+  "物差し": {
+    "r": "ものさし",
+    "m": "thước đo; thước",
+    "hv": "VẬT SOA"
+  },
+  "物質": {
+    "r": "ぶっしつ",
+    "m": "vật chất",
+    "hv": "VẬT CHẤT"
+  },
+  "特徴": {
+    "r": "とくちょう",
+    "m": "đặc trưng",
+    "hv": "ĐẶC TRƯNG"
+  },
+  "状態": {
+    "r": "じょうたい",
+    "m": "trạng thái",
+    "hv": "TRẠNG THÁI"
+  },
+  "状況": {
+    "r": "じょうきょう",
+    "m": "bối cảnh; tình huống; tình trạng; hoàn cảnh; trạng huống",
+    "hv": "TRẠNG HUỐNG"
+  },
+  "独創的": {
+    "r": "どくそうてき",
+    "m": "độc đáo, sáng tạo",
+    "hv": "ĐỘC SANG ĐÍCH"
+  },
+  "独特": {
+    "r": "どくとく",
+    "m": "độc đáo, đặc trưng",
+    "hv": "ĐỘC ĐẶC"
+  },
+  "獲得": {
+    "r": "かくとく",
+    "m": "sự thu được; sự nhận được; sự kiếm được; sự thu nhận",
+    "hv": "HOẠCH ĐẮC"
+  },
+  "理念": {
+    "r": "りねん",
+    "m": "lý niệm, lý tưởng",
+    "hv": "LÍ NIỆM"
+  },
+  "理由": {
+    "r": "りゆう",
+    "m": "nguyên do; nguyên nhân; lý do; lời biện hộ; cái cớ",
+    "hv": "LÍ DO"
+  },
+  "理解": {
+    "r": "りかい",
+    "m": "sự hiểu; sự lĩnh hội; sự tiếp thu; sự nắm được; sự lý giải; sự hiểu biết",
+    "hv": "LÍ GIẢI"
+  },
+  "環境": {
+    "r": "かんきょう",
+    "m": "môi trường",
+    "hv": "HOÀN CẢNH"
+  },
+  "甘か": {
+    "r": "あまか",
+    "m": "ngon ngọt; ngọt; ngọt ngào; dễ chịu; trạng thái rẻ; ngọt bùi (甘い)",
+    "hv": "CAM"
+  },
+  "生き": {
+    "r": "いき",
+    "m": "mát mẻ; stet",
+    "hv": "SANH"
+  },
+  "生き方": {
+    "r": "いきかた",
+    "m": "cách sống; kiểu sống; phong cách sống; phong sách sống",
+    "hv": "SANH PHƯƠNG"
+  },
+  "生き生き": {
+    "r": "いきいき",
+    "m": "chói; chói lọi; sặc sỡ; mạnh mẽ; đầy sức sống; sống động; sinh động; sâu sắc; đầy hình ảnh",
+    "hv": "SANH SANH"
+  },
+  "生まれ": {
+    "r": "うまれ",
+    "m": "sự ra đời; nơi sinh; nơi ra đời",
+    "hv": "SANH"
+  },
+  "生活": {
+    "r": "せいかつ",
+    "m": "sinh hoạt, cuộc sống",
+    "hv": "SANH HOẠT"
+  },
+  "生鮮": {
+    "r": "せいせん",
+    "m": "làm tươi",
+    "hv": "SANH TIÊN"
+  },
+  "田舎": {
+    "r": "いなか",
+    "m": "nông thôn, quê",
+    "hv": "ĐIỀN XÁ"
+  },
+  "男": {
+    "r": "おとこ",
+    "m": "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+    "hv": "NAM"
+  },
+  "町": {
+    "r": "まち",
+    "m": "thị trấn; con phố",
+    "hv": "ĐINH"
+  },
+  "町内": {
+    "r": "ちょうない",
+    "m": "trong phố; trong khu vực; trong vùng",
+    "hv": "ĐINH NỘI"
+  },
+  "町民": {
+    "r": "ちょうみん",
+    "m": "dân trong thị trấn; dân trong thành phố",
+    "hv": "ĐINH DÂN"
+  },
+  "画面": {
+    "r": "がめん",
+    "m": "màn hình; màn ảnh",
+    "hv": "HỌA DIỆN"
+  },
+  "畑": {
+    "r": "はたけ",
+    "m": "ruộng; ruộng nương",
+    "hv": ""
+  },
+  "留学生": {
+    "r": "りゅうがくせい",
+    "m": "du học sinh",
+    "hv": "LƯU HỌC SANH"
+  },
+  "番組": {
+    "r": "ばんぐみ",
+    "m": "chương trình tivi; kênh",
+    "hv": "PHIÊN TỔ"
+  },
+  "異なる": {
+    "r": "ことなる",
+    "m": "dị chất; khác; khác với",
+    "hv": "DỊ"
+  },
+  "疑い": {
+    "r": "うたがい",
+    "m": "sự nghi ngờ",
+    "hv": "NGHI"
+  },
+  "疑う": {
+    "r": "うたがう",
+    "m": "hiềm; hồ nghi; nghi ngờ; thắc mắc",
+    "hv": "NGHI"
+  },
+  "疑っ": {
+    "r": "うたがっ",
+    "m": "hiềm; hồ nghi; nghi ngờ; thắc mắc (疑う)",
+    "hv": "NGHI"
+  },
+  "疑問": {
+    "r": "ぎもん",
+    "m": "nghi vấn",
+    "hv": "NGHI VẤN"
+  },
+  "疲れ": {
+    "r": "つかれ",
+    "m": "sự mệt mỏi; sự uể oải; sự kiệt sức",
+    "hv": "BÌ"
+  },
+  "痛み": {
+    "r": "いたみ",
+    "m": "nỗi đau",
+    "hv": "THỐNG"
+  },
+  "発揮": {
+    "r": "はっき",
+    "m": "phát huy",
+    "hv": "PHÁT HUY"
+  },
+  "登場人物": {
+    "r": "とうじょうじんぶつ",
+    "m": "nhân vật",
+    "hv": "ĐĂNG TRÀNG NHÂN VẬT"
+  },
+  "目": {
+    "r": "め",
+    "m": "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+    "hv": "MỤC"
+  },
+  "直し": {
+    "r": "なおし",
+    "m": "sự sửa chữa",
+    "hv": "TRỰC"
+  },
+  "直前": {
+    "r": "ちょくぜん",
+    "m": "ngay trước khi",
+    "hv": "TRỰC TIỀN"
+  },
+  "直接": {
+    "r": "ちょくせつ",
+    "m": "trực tiếp",
+    "hv": "TRỰC TIẾP"
+  },
+  "眠く": {
+    "r": "ねむく",
+    "m": "buồn ngủ (眠い)",
+    "hv": "MIÊN"
+  },
+  "眠り": {
+    "r": "ねむり",
+    "m": "ngủ; giấc ngủ",
+    "hv": "MIÊN"
+  },
+  "眠る": {
+    "r": "ねむる",
+    "m": "giấc; ngủ; thiếp",
+    "hv": "MIÊN"
+  },
+  "着き": {
+    "r": "つき",
+    "m": "đến; tới; vào; giương cung; lên dây cung (着く)",
+    "hv": "TRỨ"
+  },
+  "着物": {
+    "r": "きもの",
+    "m": "áo kimono; kimono; quần áo; trang phục; đồ mặc",
+    "hv": "TRỨ VẬT"
+  },
+  "瞬間": {
+    "r": "しゅんかん",
+    "m": "khoảnh khắc",
+    "hv": "THUẤN GIAN"
+  },
+  "知ら": {
+    "r": "しら",
+    "m": "biết; hay tin; nhận ra (知る)",
+    "hv": "TRI"
+  },
+  "知り": {
+    "r": "しり",
+    "m": "biết; hay tin; nhận ra (知る)",
+    "hv": "TRI"
+  },
+  "知る": {
+    "r": "しる",
+    "m": "biết; hay tin; nhận ra",
+    "hv": "TRI"
+  },
+  "知識": {
+    "r": "ちしき",
+    "m": "kiến thức",
+    "hv": "TRI THỨC"
+  },
+  "短い": {
+    "r": "みじかい",
+    "m": "ngắn",
+    "hv": "ĐOẢN"
+  },
+  "短く": {
+    "r": "みじかく",
+    "m": "cụt; hụt; ngắn (短い)",
+    "hv": "ĐOẢN"
+  },
+  "確か": {
+    "r": "たしか",
+    "m": "chắc là; hình như là; nếu không nhầm",
+    "hv": "XÁC"
+  },
+  "確認し": {
+    "r": "かくにんし",
+    "m": "xác nhận; kiểm tra (確認する)",
+    "hv": "XÁC NHẬN"
+  },
+  "示す": {
+    "r": "しめす",
+    "m": "biểu hiện ra; chỉ ra; cho thấy; xuất trình; đưa cho xem",
+    "hv": "KÌ"
+  },
+  "社": {
+    "r": "しゃ",
+    "m": "đền thờ",
+    "hv": "XÃ"
+  },
+  "社会": {
+    "r": "しゃかい",
+    "m": "xã hội",
+    "hv": "XÃ HỘI"
+  },
+  "祖母": {
+    "r": "そぼ",
+    "m": "bà",
+    "hv": "TỔ MẪU"
+  },
+  "祖父": {
+    "r": "そふ",
+    "m": "ông; ông già",
+    "hv": "TỔ PHỤ"
+  },
+  "神経": {
+    "r": "しんけい",
+    "m": "thần kinh",
+    "hv": "THẦN KINH"
+  },
+  "私": {
+    "r": "わたし",
+    "m": "tôi",
+    "hv": "TƯ"
+  },
+  "私たち": {
+    "r": "わたしたち",
+    "m": "chúng tôi",
+    "hv": "TƯ"
+  },
+  "移り": {
+    "r": "うつり",
+    "m": "việc di chuyển; việc chuyển nhà; việc di dời; việc bắt lửa; việc lửa cháy lan",
+    "hv": "DI"
+  },
+  "移動": {
+    "r": "いどう",
+    "m": "di chuyển",
+    "hv": "DI ĐỘNG"
+  },
+  "積ん": {
+    "r": "つん",
+    "m": "chất; xếp; chồng chất; đống (積む)",
+    "hv": "TÍCH"
+  },
+  "積極的": {
+    "r": "せっきょくてき",
+    "m": "tích cực",
+    "hv": "TÍCH CỰC ĐÍCH"
+  },
+  "積極的な": {
+    "r": "せっきょくてきな",
+    "m": "suy nghĩ tích cực; lạc quan",
+    "hv": "TÍCH CỰC ĐÍCH"
+  },
+  "空気": {
+    "r": "くうき",
+    "m": "không khí; khí",
+    "hv": "KHÔNG KHÍ"
+  },
+  "突き": {
+    "r": "つき",
+    "m": "nhát đâm; cú đâm; chọc; mổ; hích; xỉa; bới",
+    "hv": "ĐỘT"
+  },
+  "窓口": {
+    "r": "まどぐち",
+    "m": "cửa bán vé",
+    "hv": "SONG KHẨU"
+  },
+  "立て": {
+    "r": "たて",
+    "m": "gắn nó với số bò; số ngựa gắn vào ô tô; số thuyền; ... để chỉ ra rằng nó chỉ được tạo thành từ số đó; thể hiện cho số lượng công trình; hạng mục; loại; v.v; đứng; được dựng lên; yến tiệc; cuộc vui; chiêu đãi; bao đãi; trả tiền cho người khác; lý lẽ; lẽ phải; trình tự sự việc; quy định; nội quy; luật lệ; hàng đầu; chính; ngôi sao; chủ chốt; vừa mới; mới xong; ván thua liên tiếp; trận thua liên tiếp; hiệp; vòng; ván",
+    "hv": "LẬP"
+  },
+  "競争": {
+    "r": "きょうそう",
+    "m": "cạnh tranh",
+    "hv": "CẠNH TRANH"
+  },
+  "笑っ": {
+    "r": "わらっ",
+    "m": "cười; mỉm cười; 微笑する (笑う)",
+    "hv": "TIẾU"
+  },
+  "笑わ": {
+    "r": "わらわ",
+    "m": "cười; mỉm cười; 微笑する (笑う)",
+    "hv": "TIẾU"
+  },
+  "筆者": {
+    "r": "ひっしゃ",
+    "m": "phóng viên; kí giả",
+    "hv": "BÚT GIẢ"
+  },
+  "等しく": {
+    "r": "ひとしく",
+    "m": "bằng nhau; đồng đều; tương tự; giống nhau",
+    "hv": "ĐẲNG"
+  },
+  "簡単": {
+    "r": "かんたん",
+    "m": "đơn giản; dễ dàng; dễ",
+    "hv": "GIẢN ĐƠN"
+  },
+  "紙": {
+    "r": "かみ",
+    "m": "giấy",
+    "hv": "CHỈ"
+  },
+  "紡ぎ": {
+    "r": "つむぎ",
+    "m": "kéo sợi (紡ぐ)",
+    "hv": "PHƯỞNG"
+  },
+  "細菌": {
+    "r": "さいきん",
+    "m": "vi khuẩn",
+    "hv": "TẾ KHUẨN"
+  },
+  "細部": {
+    "r": "さいぶ",
+    "m": "chi tiết",
+    "hv": "TẾ BỘ"
+  },
+  "紹介": {
+    "r": "しょうかい",
+    "m": "sự giới thiệu; giới thiệu",
+    "hv": "THIỆU GIỚI"
+  },
+  "組み込む": {
+    "r": "くみこむ",
+    "m": "ghép vào; ghép; lắp ghép; cho vào; cho",
+    "hv": "TỔ"
+  },
+  "組織": {
+    "r": "そしき",
+    "m": "tổ chức",
+    "hv": "TỔ CHỨC"
+  },
+  "経験": {
+    "r": "けいけん",
+    "m": "kinh nghiệm",
+    "hv": "KINH NGHIỆM"
+  },
+  "絵本": {
+    "r": "えほん",
+    "m": "sách tranh; truyện tranh",
+    "hv": "HỘI BỔN"
+  },
+  "絶対": {
+    "r": "ぜったい",
+    "m": "sự tuyệt đối; tuyệt đối",
+    "hv": "TUYỆT ĐỐI"
+  },
+  "続け": {
+    "r": "つづけ",
+    "m": "còn; lằng nhằng; liên tục; tiếp tục (続ける)",
+    "hv": "TỤC"
+  },
+  "練習": {
+    "r": "れんしゅう",
+    "m": "luyện tập",
+    "hv": "LUYỆN TẬP"
+  },
+  "繊細": {
+    "r": "せんさい",
+    "m": "tinh tế, nhạy bén",
+    "hv": "TIÊM TẾ"
+  },
+  "美しい": {
+    "r": "うつくしい",
+    "m": "đẹp đẽ; đẹp; ưa nhìn; có duyên; xinh; diễm; mỹ; mỹ lệ; thích mắt; tươi đẹp; xinh đẹp; uyển",
+    "hv": "MĨ"
+  },
+  "美術館": {
+    "r": "びじゅつかん",
+    "m": "bảo tàng mỹ thuật",
+    "hv": "MĨ THUẬT QUÁN"
+  },
+  "習い": {
+    "r": "ならい",
+    "m": "học",
+    "hv": "TẬP"
+  },
+  "考え": {
+    "r": "かんがえ",
+    "m": "suy nghĩ; ý kiến; ý tưởng; dự định",
+    "hv": "KHẢO"
+  },
+  "者": {
+    "r": "もの",
+    "m": "người; kẻ",
+    "hv": "GIẢ"
+  },
+  "耳": {
+    "r": "みみ",
+    "m": "cái tai; tai",
+    "hv": "NHĨ"
+  },
+  "聞いて": {
+    "r": "きいて",
+    "m": "lắng nghe",
+    "hv": "VĂN"
+  },
+  "聞か": {
+    "r": "きか",
+    "m": "nghe; hỏi (聞く)",
+    "hv": "VĂN"
+  },
+  "聞き": {
+    "r": "きき",
+    "m": "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+    "hv": "VĂN"
+  },
+  "聞く": {
+    "r": "きく",
+    "m": "nghe; hỏi",
+    "hv": "VĂN"
+  },
+  "聞け": {
+    "r": "きけ",
+    "m": "kể; nghe (聞ける)",
+    "hv": "VĂN"
+  },
+  "育つ": {
+    "r": "そだつ",
+    "m": "lớn lên; khôn lớn; phát triển",
+    "hv": "DỤC"
+  },
+  "育成": {
+    "r": "いくせい",
+    "m": "đào tạo, nuôi dưỡng",
+    "hv": "DỤC THÀNH"
+  },
+  "能動的": {
+    "r": "のうどうてき",
+    "m": "chủ động",
+    "hv": "NĂNG ĐỘNG ĐÍCH"
+  },
+  "腐っ": {
+    "r": "くさっ",
+    "m": "buồn chán; hư; suy đồi; thiu thối; thối; thối rữa; thiu; hỏng; ung; mục nát (腐る)",
+    "hv": "HỦ"
+  },
+  "自ら": {
+    "r": "みずから",
+    "m": "tự mình",
+    "hv": "TỰ"
+  },
+  "自分": {
+    "r": "じぶん",
+    "m": "bản thân mình; tự mình",
+    "hv": "TỰ PHÂN"
+  },
+  "自分自身": {
+    "r": "じぶんじしん",
+    "m": "bản thân",
+    "hv": "TỰ PHÂN TỰ THÂN"
+  },
+  "自宅": {
+    "r": "じたく",
+    "m": "nhà mình; nhà",
+    "hv": "TỰ TRẠCH"
+  },
+  "自由": {
+    "r": "じゆう",
+    "m": "tự do",
+    "hv": "TỰ DO"
+  },
+  "舞台": {
+    "r": "ぶたい",
+    "m": "sân khấu",
+    "hv": "VŨ THAI"
+  },
+  "良い": {
+    "r": "よい",
+    "m": "hay; khỏe; tốt; đẹp",
+    "hv": "LƯƠNG"
+  },
+  "色": {
+    "r": "いろ",
+    "m": "màu; mầu; sắc; màu sắc; sắc thái; khuynh hướng; đặc điểm; vẻ; tông màu; sắc mặt; vẻ mặt; thần sắc; nhan sắc; vẻ đẹp; sức quyến rũ của phụ nữ; sắc dục; dục vọng; chuyện chăn gối; dáng vẻ; trạng thái; tình hình; bầu không khí",
+    "hv": "SẮC"
+  },
+  "花": {
+    "r": "はな",
+    "m": "bông hoa; đóa hoa; hoa; huê",
+    "hv": "HOA"
+  },
+  "芸能": {
+    "r": "げいのう",
+    "m": "nghệ thuật",
+    "hv": "VÂN NĂNG"
+  },
+  "若い": {
+    "r": "わかい",
+    "m": "bé; bé bỏng; choai choai; chưa có kinh nghiệm; non nớt; 未熟; ít tuổi; nhỏ; 若い番号:số nhỏ; nhỏ tuổi; non trẻ; trẻ tuổi; trẻ; trẻ trung",
+    "hv": "NHƯỢC"
+  },
+  "茶": {
+    "r": "ちゃ",
+    "m": "chè; trà",
+    "hv": "TRÀ"
+  },
+  "落ち": {
+    "r": "おち",
+    "m": "điểm nút; điểm mấu chốt",
+    "hv": "LẠC"
+  },
+  "落ち葉": {
+    "r": "おちば",
+    "m": "lá rụng",
+    "hv": "LẠC DIỆP"
+  },
+  "落語": {
+    "r": "らくご",
+    "m": "truyện cười; truyện vui",
+    "hv": "LẠC NGỮ"
+  },
+  "落語家": {
+    "r": "らくごか",
+    "m": "người kể những câu chuyện hài hước",
+    "hv": "LẠC NGỮ GIA"
+  },
+  "著者": {
+    "r": "ちょしゃ",
+    "m": "tác giả",
+    "hv": "TRỨ GIẢ"
+  },
+  "虫": {
+    "r": "むし",
+    "m": "con sâu; côn trùng; sâu; sâu bọ; trùng",
+    "hv": "TRÙNG"
+  },
+  "行い": {
+    "r": "おこない",
+    "m": "chứng nhượng; thực hiện; tiến hành",
+    "hv": "HÀNH"
+  },
+  "行き": {
+    "r": "いき",
+    "m": "sự đi lại",
+    "hv": "HÀNH"
+  },
+  "行く": {
+    "r": "いく",
+    "m": "đi",
+    "hv": "HÀNH"
+  },
+  "行わ": {
+    "r": "おこなわ",
+    "m": "cử hành; tổ chức; thực hiện; tiến hành; làm (行う)",
+    "hv": "HÀNH"
+  },
+  "行為": {
+    "r": "こうい",
+    "m": "hành vi; hành động",
+    "hv": "HÀNH VI"
+  },
+  "衣料品": {
+    "r": "いりょうひん",
+    "m": "sản phẩm may mặc",
+    "hv": "Y LIÊU PHẨM"
+  },
+  "表す": {
+    "r": "あらわす",
+    "m": "biểu thị; biểu hiện; lộ rõ; xuất hiện",
+    "hv": "BIỂU"
+  },
+  "表現力": {
+    "r": "ひょうげんりょく",
+    "m": "năng lực biểu đạt",
+    "hv": "BIỂU HIỆN LỰC"
+  },
+  "表面": {
+    "r": "ひょうめん",
+    "m": "bề mặt",
+    "hv": "BIỂU DIỆN"
+  },
+  "衰退": {
+    "r": "すいたい",
+    "m": "suy tàn",
+    "hv": "SUY THỐI"
+  },
+  "裏": {
+    "r": "うら",
+    "m": "đảo ngược; trái; sau; mặt trái; mặt sau; mặt đối diện; bên trong; nội bộ; phần bên trong; trong trạng thái; giữa lúc; đằng sau hậu trường; nội thất; trong vòng",
+    "hv": "LÍ"
+  },
+  "複数": {
+    "r": "ふくすう",
+    "m": "phức số; số nhiều",
+    "hv": "PHỨC SỔ"
+  },
+  "要素": {
+    "r": "ようそ",
+    "m": "yếu tố; nhân tố; phần tử",
+    "hv": "YẾU TỐ"
+  },
+  "見え": {
+    "r": "みえ",
+    "m": "hiện ra; màn hình; sự xuất hiện; tính kiêu căng; mê hoặc; sự hấp dẫn",
+    "hv": "KIẾN"
+  },
+  "見せ": {
+    "r": "みせ",
+    "m": "cho xem; cho thấy; chứng tỏ; bày tỏ (見せる)",
+    "hv": "KIẾN"
+  },
+  "見に行く": {
+    "r": "みにいく",
+    "m": "đi ngắm",
+    "hv": "KIẾN HÀNH"
+  },
+  "見ら": {
+    "r": "みら",
+    "m": "coi; ngắm; ngó; nhìn thấy; nhìn xem; nhìn; xem; nhòm; nhòm ngó (見る)",
+    "hv": "KIẾN"
+  },
+  "見る": {
+    "r": "みる",
+    "m": "coi; ngắm; ngó; nhìn thấy; nhìn xem; nhìn; xem; nhòm; nhòm ngó",
+    "hv": "KIẾN"
+  },
+  "見れ": {
+    "r": "みれ",
+    "m": "có thể nhìn; có thể xem (見れる)",
+    "hv": "KIẾN"
+  },
+  "見出し": {
+    "r": "みだし",
+    "m": "đầu đề",
+    "hv": "KIẾN XUẤT"
+  },
+  "見方": {
+    "r": "みかた",
+    "m": "cách nhìn; cách quan sát; quan điểm",
+    "hv": "KIẾN PHƯƠNG"
+  },
+  "規定": {
+    "r": "きてい",
+    "m": "điều luật; qui chế; qui định; qui ước; quy định; quy tắc; thể lệ",
+    "hv": "QUY ĐỊNH"
+  },
+  "視点": {
+    "r": "してん",
+    "m": "góc nhìn, quan điểm",
+    "hv": "THỊ ĐIỂM"
+  },
+  "覚え": {
+    "r": "おぼえ",
+    "m": "ghi nhớ; nhớ; kinh nghiệm; tự tin",
+    "hv": "GIÁC"
+  },
+  "親": {
+    "r": "おや",
+    "m": "bố mẹ",
+    "hv": "THÂN"
+  },
+  "観察": {
+    "r": "かんさつ",
+    "m": "quan sát",
+    "hv": "QUAN SÁT"
+  },
+  "解決": {
+    "r": "かいけつ",
+    "m": "giải quyết",
+    "hv": "GIẢI QUYẾT"
+  },
+  "解決方法": {
+    "r": "かいけつほうほう",
+    "m": "phương pháp giải quyết",
+    "hv": "GIẢI QUYẾT PHƯƠNG PHÁP"
+  },
+  "触れる": {
+    "r": "ふれる",
+    "m": "chạm; tiếp xúc; mó; mó máy; rờ; sờ; sờ mó; vi phạm; phạm",
+    "hv": "XÚC"
+  },
+  "言う": {
+    "r": "いう",
+    "m": "nói",
+    "hv": "NGÔN"
+  },
+  "言え": {
+    "r": "いえ",
+    "m": "có thể nói (言える)",
+    "hv": "NGÔN"
+  },
+  "言葉": {
+    "r": "ことば",
+    "m": "câu nói; ngôn ngữ; tiếng nói; lời ăn tiếng nói; từ ngữ; lời nói; lời",
+    "hv": "NGÔN DIỆP"
+  },
+  "計画": {
+    "r": "けいかく",
+    "m": "kế hoạch",
+    "hv": "KẾ HỌA"
+  },
+  "設定": {
+    "r": "せってい",
+    "m": "sự cài đặt; sự thiết lập; sự thành lập",
+    "hv": "THIẾT ĐỊNH"
+  },
+  "評価": {
+    "r": "ひょうか",
+    "m": "đánh giá",
+    "hv": "BÌNH GIÁ"
+  },
+  "評判": {
+    "r": "ひょうばん",
+    "m": "bình luận; có tiếng; sự bình luận; lời bình luận; sự có tiếng; tin vỉa hè",
+    "hv": "BÌNH PHÁN"
+  },
+  "話": {
+    "r": "はなし",
+    "m": "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+    "hv": "THOẠI"
+  },
+  "話し": {
+    "r": "はなし",
+    "m": "nói; lời nói; tán gẫu; câu chuyện; cuộc nói chuyện",
+    "hv": "THOẠI"
+  },
+  "話して": {
+    "r": "はなして",
+    "m": "đang nói chuyện",
+    "hv": "THOẠI"
+  },
+  "話し方": {
+    "r": "はなしかた",
+    "m": "cách nói chuyện",
+    "hv": "THOẠI PHƯƠNG"
+  },
+  "話す": {
+    "r": "はなす",
+    "m": "bàn tán; chuyện; chuyện trò; kể lại; thuật lại; nói lại; mở miệng; nói; nói chuyện; thốt",
+    "hv": "THOẠI"
+  },
+  "話せ": {
+    "r": "はなせ",
+    "m": "để đang hiểu; nói chuyện (話せる)",
+    "hv": "THOẠI"
+  },
+  "誕生日": {
+    "r": "たんじょうび",
+    "m": "ngày sinh; ngày sinh nhật",
+    "hv": "ĐẢN SANH NHẬT"
+  },
+  "語っ": {
+    "r": "かたっ",
+    "m": "kể chuyện; kể lại; thuật lại (語る)",
+    "hv": "NGỮ"
+  },
+  "語り": {
+    "r": "かたり",
+    "m": "nói chuyện; câu chuyện; trần thuật",
+    "hv": "NGỮ"
+  },
+  "誤り": {
+    "r": "あやまり",
+    "m": "lỗi lầm; nhầm; nhầm lẫn; lỗi",
+    "hv": "NGỘ"
+  },
+  "説明会": {
+    "r": "せつめいかい",
+    "m": "buổi họp để trình bày giải thích",
+    "hv": "THUYẾT MINH HỘI"
+  },
+  "読み": {
+    "r": "よみ",
+    "m": "sự đọc",
+    "hv": "ĐỘC"
+  },
+  "読む": {
+    "r": "よむ",
+    "m": "đọc",
+    "hv": "ĐỘC"
+  },
+  "読書": {
+    "r": "どくしょ",
+    "m": "đọc sách",
+    "hv": "ĐỘC THƯ"
+  },
+  "誰": {
+    "r": "だれ",
+    "m": "ai",
+    "hv": "THÙY"
+  },
+  "誰も": {
+    "r": "だれも",
+    "m": "ai cũng; dù là ai cũng",
+    "hv": "THÙY"
+  },
+  "調べ": {
+    "r": "しらべ",
+    "m": "cuộc điều tra; sự nghiên cứu; sự điều tra",
+    "hv": "ĐIỀU"
+  },
+  "調査": {
+    "r": "ちょうさ",
+    "m": "sự điều tra; bản điều tra; cuộc điều tra; khảo sát; điều tra",
+    "hv": "ĐIỀU TRA"
+  },
+  "調理": {
+    "r": "ちょうり",
+    "m": "sự nấu ăn; chế biến",
+    "hv": "ĐIỀU LÍ"
+  },
+  "豊か": {
+    "r": "ゆたか",
+    "m": "phong phú; dư dả; giàu có; sự phong phú; sự dư dật; sự giàu có",
+    "hv": "PHONG"
+  },
+  "買い": {
+    "r": "かい",
+    "m": "sự mua; việc mua; mua sắm",
+    "hv": "MÃI"
+  },
+  "買いに": {
+    "r": "かいに",
+    "m": "đi để mua",
+    "hv": "MÃI"
+  },
+  "買っ": {
+    "r": "かっ",
+    "m": "mua; sắm; chuốc lấy; gặp phải; đánh giá cao (買う)",
+    "hv": "MÃI"
+  },
+  "買って": {
+    "r": "かって",
+    "m": "mua",
+    "hv": "MÃI"
+  },
+  "買わ": {
+    "r": "かわ",
+    "m": "mua; sắm; chuốc lấy; gặp phải; đánh giá cao (買う)",
+    "hv": "MÃI"
+  },
+  "購入": {
+    "r": "こうにゅう",
+    "m": "việc mua",
+    "hv": "CẤU NHẬP"
+  },
+  "赤ちゃん": {
+    "r": "あかちゃん",
+    "m": "cách gọi các cháu bé; trẻ con; em bé; con nhỏ; sơ sinh; trẻ sơ sinh",
+    "hv": "XÍCH"
+  },
+  "走っ": {
+    "r": "はしっ",
+    "m": "chạy; tẩu (走る)",
+    "hv": "TẨU"
+  },
+  "走る": {
+    "r": "はしる",
+    "m": "chạy; tẩu",
+    "hv": "TẨU"
+  },
+  "起き": {
+    "r": "おき",
+    "m": "dấy; đứng dậy; ngồi dậy; bình phục; nhen nhúm; thức; thức dậy; dậy; xảy ra (起きる)",
+    "hv": "KHỞI"
+  },
+  "起きて": {
+    "r": "おきて",
+    "m": "thức dậy",
+    "hv": "KHỈ"
+  },
+  "超え": {
+    "r": "こえ",
+    "m": "bứt phá; vượt qua; vượt quá; quá (超える)",
+    "hv": "SIÊU"
+  },
+  "距離": {
+    "r": "きょり",
+    "m": "khoảng cách",
+    "hv": "CỰ LI"
+  },
+  "踊り": {
+    "r": "おどり",
+    "m": "sự nhảy múa; múa",
+    "hv": "DŨNG"
+  },
+  "躍起": {
+    "r": "やっき",
+    "m": "sự liều lĩnh tuyệt vọng; sự tuyệt vọng; điên cuồng; điên rồ",
+    "hv": "DƯỢC KHỞI"
+  },
+  "身近": {
+    "r": "みぢか",
+    "m": "gần gũi",
+    "hv": "THÂN CẬN"
+  },
+  "車": {
+    "r": "くるま",
+    "m": "bánh xe; mô tô; ô tô; xe; xe cộ; xe hơi; xe chở hàng; xe ô-tô",
+    "hv": "XA"
+  },
+  "転職": {
+    "r": "てんしょく",
+    "m": "sự đổi nghề; sự chuyển việc",
+    "hv": "CHUYỂN CHỨC"
+  },
+  "軽く": {
+    "r": "かるく",
+    "m": "nhẹ (軽い)",
+    "hv": "KHINH"
+  },
+  "農業": {
+    "r": "のうぎょう",
+    "m": "nông nghiệp",
+    "hv": "NÔNG NGHIỆP"
+  },
+  "近い": {
+    "r": "ちかい",
+    "m": "cận; gần; cạnh; kề sát; ngay cạnh; ngay sát; giống như; gần như; tương tự; thân thiết; mật thiết; thân cận; gần gũi",
+    "hv": "CẬN"
+  },
+  "近く": {
+    "r": "ちかく",
+    "m": "gần",
+    "hv": "CẬN"
+  },
+  "近代的": {
+    "r": "きんだいてき",
+    "m": "hiện đại",
+    "hv": "CẬN ĐẠI ĐÍCH"
+  },
+  "近所": {
+    "r": "きんじょ",
+    "m": "hàng xóm, vùng lân cận",
+    "hv": "CẬN SỞ"
+  },
+  "返し": {
+    "r": "かえし",
+    "m": "đảo ngược; trả lại; trả lại quà tặng; đưa lại; trở lại.",
+    "hv": "PHẢN"
+  },
+  "迷う": {
+    "r": "まよう",
+    "m": "bị lúng túng; không hiểu; lạc đường; mê hoặc",
+    "hv": "MÊ"
+  },
+  "退屈": {
+    "r": "たいくつ",
+    "m": "buồn chán",
+    "hv": "THỐI KHUẤT"
+  },
+  "送っ": {
+    "r": "おくっ",
+    "m": "gửi; truyền; tiễn biệt; tiễn chân; tiễn đưa (送る)",
+    "hv": "TỐNG"
+  },
+  "逆に": {
+    "r": "ぎゃくに",
+    "m": "ngược lại",
+    "hv": "NGHỊCH"
+  },
+  "逆効果": {
+    "r": "ぎゃくこうか",
+    "m": "phản tác dụng",
+    "hv": "NGHỊCH HIỆU QUẢ"
+  },
+  "通し": {
+    "r": "とおし",
+    "m": "suốt; thông suốt; liên tục; không ngừng; ròng rã; suốt cả",
+    "hv": "THÔNG"
+  },
+  "通じ": {
+    "r": "つうじ",
+    "m": "sự thông qua; sự sơ tán; sự bài tiết phân",
+    "hv": "THÔNG"
+  },
+  "通ら": {
+    "r": "とうら",
+    "m": "chạy; có thể hiểu được; đi ngang qua; đi qua; qua; được chấp nhận; được coi; thông; vượt qua (通る)",
+    "hv": "THÔNG"
+  },
+  "通常": {
+    "r": "つうじょう",
+    "m": "bình thường; luân thường; thông lệ; thông thường; thường thường; thường; 通常` in vietnamese is `thông thường`",
+    "hv": "THÔNG THƯỜNG"
+  },
+  "週末": {
+    "r": "しゅうまつ",
+    "m": "cuối tuần; kì nghỉ cuối tuần",
+    "hv": "CHU MẠT"
+  },
+  "週間": {
+    "r": "しゅうかん",
+    "m": "hàng tuần; tuần lễ",
+    "hv": "CHU GIAN"
+  },
+  "進ま": {
+    "r": "すすま",
+    "m": "tiến lên; tiến triển; tiến bộ; trở nên hoang tàn; trở nên thô bạo; mất bình tĩnh; trở nên tiêu điều; trở nên thô kệch; mất đi sự tinh tế; sa sút; trở nên dữ dội; trở nên mãnh liệt; chìm đắm; nghiện ngập; mải mê; suy tàn; yếu đi; mất đi sức sống; xa lánh; giữ khoảng cách; đối xử lạnh nhạt; hành hạ; ngược đãi; làm khổ; làm theo ý thích; làm một cách say sưa; trân trọng; yêu thương; thưởng thức; dịu đi; ngớt; tạnh; ghét bỏ; lạnh nhạt; bỏ bê (進む)",
+    "hv": "TIẾN"
+  },
+  "進め": {
+    "r": "すすめ",
+    "m": "thúc đẩy; xúc tiến; đẩy nhanh (進める)",
+    "hv": "TIẾN"
+  },
+  "遅れ": {
+    "r": "おくれ",
+    "m": "sự muộn; sự chậm trễ",
+    "hv": "TRÌ"
+  },
+  "遊ぶ": {
+    "r": "あそぶ",
+    "m": "nô đùa; vui đùa; chơi; trở nên thô bạo; mất đi sự điềm tĩnh; trở nên hoang tàn; trở nên tiêu điều; trở nên cẩu thả; sa sút do thiếu tập trung; trở nên dữ dội; gào thét; thổi mạnh; lắng xuống; dịu đi; mất đà; làm theo ý muốn; vui chơi; đùa giỡn; dạo chơi; tự tiêu khiển; làm theo ý thích; tận hưởng bản thân; làm gì đó một cách mãnh liệt; làm gì đó một cách dữ dội; chơi đùa; tận hưởng; lười biếng; rong chơi",
+    "hv": "DU"
+  },
+  "運動": {
+    "r": "うんどう",
+    "m": "vận động",
+    "hv": "VẬN ĐỘNG"
+  },
+  "運転": {
+    "r": "うんてん",
+    "m": "lái xe",
+    "hv": "VẬN CHUYỂN"
+  },
+  "道": {
+    "r": "みち",
+    "m": "con đường",
+    "hv": "ĐẠO"
+  },
+  "違い": {
+    "r": "ちがい",
+    "m": "sự khác nhau; trật",
+    "hv": "VI"
+  },
+  "違います": {
+    "r": "ちがいます",
+    "m": "khác nhau",
+    "hv": "VY"
+  },
+  "違う": {
+    "r": "ちがう",
+    "m": "khác; khác nhau; không giống; trái ngược; không phù hợp; lầm lẫn; sai",
+    "hv": "VI"
+  },
+  "遠か": {
+    "r": "とおか",
+    "m": "nơi xa; phía xa; đằng xa (遠く)",
+    "hv": "VIỄN"
+  },
+  "遠慮": {
+    "r": "えんりょ",
+    "m": "e ngại, giữ ý",
+    "hv": "VIỄN LỰ"
+  },
+  "選ん": {
+    "r": "えらん",
+    "m": "bầu; chấm; chọn; chọn lựa; kén; lựa chọn; tuyển; tuyển chọn (選ぶ)",
+    "hv": "TUYỂN"
+  },
+  "選抜": {
+    "r": "せんばつ",
+    "m": "sự chọn lọc; sự lựa chọn; nhặt ngoài",
+    "hv": "TUYỂN BẠT"
+  },
+  "郵便局": {
+    "r": "ゆうびんきょく",
+    "m": "bưu điện",
+    "hv": "BƯU TIỆN CỤC"
+  },
+  "都会": {
+    "r": "とかい",
+    "m": "thành thị",
+    "hv": "ĐÔ HỘI"
+  },
+  "都合": {
+    "r": "つごう",
+    "m": "sự thuận tiện; sự thuận lợi; tình huống; hoàn cảnh; điều kiện",
+    "hv": "ĐÔ HỢP"
+  },
+  "都市": {
+    "r": "とし",
+    "m": "đô thị; thành; thành phố; thành thị; thị thành",
+    "hv": "ĐÔ THỊ"
+  },
+  "酒": {
+    "r": "さけ",
+    "m": "rượu; rượu cuốc lủi; rượu sake của nhật; liên quan đến rượu; thuộc về rượu; có cồn; đồ uống có cồn",
+    "hv": "TỬU"
+  },
+  "重要": {
+    "r": "じゅうよう",
+    "m": "quan trọng",
+    "hv": "TRỌNG YẾU"
+  },
+  "重要な": {
+    "r": "じゅうような",
+    "m": "cần; hệ trọng; lợi hại; mấu chốt; trọng yếu",
+    "hv": "TRỌNG YẾU"
+  },
+  "鈍っ": {
+    "r": "にぶっ",
+    "m": "cùn đi; không sắc; trở nên yếu (鈍る)",
+    "hv": "ĐỘN"
+  },
+  "鈍る": {
+    "r": "にぶる",
+    "m": "trở nên cùn mòn",
+    "hv": "ĐỘN"
+  },
+  "銀行": {
+    "r": "ぎんこう",
+    "m": "ngân hàng",
+    "hv": "NGÂN HÀNH"
+  },
+  "鍛え": {
+    "r": "きたえ",
+    "m": "khổ luyện; tập luyện; rèn giũa; rèn; đào tạo; kỷ luật",
+    "hv": "ĐOÁN"
+  },
+  "鍛えて": {
+    "r": "きたえて",
+    "m": "rèn giũa, tôi luyện",
+    "hv": "ĐOÀN"
+  },
+  "長い": {
+    "r": "ながい",
+    "m": "bao lâu; dài; lâu",
+    "hv": "TRƯỜNG"
+  },
+  "長く": {
+    "r": "ながく",
+    "m": "bao lâu; dài; lâu (長い)",
+    "hv": "TRƯỜNG"
+  },
+  "長所": {
+    "r": "ちょうしょ",
+    "m": "ưu điểm",
+    "hv": "TRƯỜNG SỞ"
+  },
+  "長閑": {
+    "r": "のどか",
+    "m": "thanh bình; yên tĩnh",
+    "hv": "TRƯỜNG NHÀN"
+  },
+  "開く": {
+    "r": "ひらく",
+    "m": "mở; mở cửa",
+    "hv": "KHAI"
+  },
+  "間": {
+    "r": "あいだ",
+    "m": "ở giữa; giữa; trong lúc; trong; nhịp ngắt; khoảng ngắt; không gian; khoảng trống",
+    "hv": "GIAN"
+  },
+  "間違い": {
+    "r": "まちがい",
+    "m": "sai lầm",
+    "hv": "GIAN VI"
+  },
+  "関心": {
+    "r": "かんしん",
+    "m": "sự quan tâm; quan tâm; tân tư",
+    "hv": "QUAN TÂM"
+  },
+  "降ら": {
+    "r": "ふら",
+    "m": "rơi; có nhiều (降る)",
+    "hv": "HÀNG"
+  },
+  "限り": {
+    "r": "かぎり",
+    "m": "giới hạn; hạn chế; hạn; điểm dừng; chỗ nghỉ; sự tạm dừng; kết thúc; điểm kết thúc; ngày giao hàng; tháng quyết toán; phần cuối của một buổi biểu diễn; hồi cuối; cảnh cuối của một vở kịch; tiết mục cuối cùng trong ngày; người biểu diễn cuối cùng; tên gọi tắt của vở kịch noh cuối cùng trong ngày; tên gọi tắt của vở kịch kyogen cuối cùng trong chương trình; nước đi cắt đứt sự liên kết giữa các quân cờ của đối phương; đơn vị đếm các lát cắt dày",
+    "hv": "HẠN"
+  },
+  "階": {
+    "r": "かい",
+    "m": "lầu; tầng; cầu thang; bậc thang; nấc thang; địa vị xã hội; thân thế; cấp bậc; dòng dõi; nhân cách; tính cách; phẩm giá; cầu thang nối từ sân vào nhà",
+    "hv": "GIAI"
+  },
+  "階層": {
+    "r": "かいそう",
+    "m": "giai tầng; tầng lớp",
+    "hv": "GIAI TẰNG"
+  },
+  "集まって": {
+    "r": "あつまって",
+    "m": "tụ tập",
+    "hv": "TẬP"
+  },
+  "難しい": {
+    "r": "むずかしい",
+    "m": "khó; khó khăn",
+    "hv": "NAN"
+  },
+  "難しさ": {
+    "r": "むずかしさ",
+    "m": "khó khăn",
+    "hv": "NAN"
+  },
+  "雨": {
+    "r": "あめ",
+    "m": "cơn mưa; mưa; trận mưa",
+    "hv": "VŨ"
+  },
+  "雰囲気": {
+    "r": "ふんいき",
+    "m": "bầu không khí",
+    "hv": "PHÂN VI KHÍ"
+  },
+  "電気": {
+    "r": "でんき",
+    "m": "điện khí; điện; đèn điện; điện lực",
+    "hv": "ĐIỆN KHÍ"
+  },
+  "電源": {
+    "r": "でんげん",
+    "m": "nguồn điện; nút power; nguồn cấp",
+    "hv": "ĐIỆN NGUYÊN"
+  },
+  "電話": {
+    "r": "でんわ",
+    "m": "điện thoại",
+    "hv": "ĐIỆN THOẠI"
+  },
+  "青色": {
+    "r": "あおいろ",
+    "m": "màu xanh da trời; màu xanh lơ",
+    "hv": "THANH SẮC"
+  },
+  "静か": {
+    "r": "しずか",
+    "m": "yên tĩnh; yên lặng; điềm tĩnh",
+    "hv": "TĨNH"
+  },
+  "静かに": {
+    "r": "しずかに",
+    "m": "yên lặng, chăm chú",
+    "hv": "TĨNH"
+  },
+  "非常": {
+    "r": "ひじょう",
+    "m": "vô cùng, rất",
+    "hv": "PHI THƯỜNG"
+  },
+  "非常に": {
+    "r": "ひじょうに",
+    "m": "khẩn cấp; cấp bách; bức thiết; phi thường; cực kỳ; đặc biệt; rất; tuyệt vời",
+    "hv": "PHI THƯỜNG"
+  },
+  "面白い": {
+    "r": "おもしろい",
+    "m": "dí dỏm; thú vị; hay; vui tính",
+    "hv": "DIỆN BẠCH"
+  },
+  "面白く": {
+    "r": "おもしろく",
+    "m": "dí dỏm; thú vị; hay; vui tính (面白い)",
+    "hv": "DIỆN BẠCH"
+  },
+  "革命": {
+    "r": "かくめい",
+    "m": "cách mạng",
+    "hv": "CÁCH MỆNH"
+  },
+  "靴": {
+    "r": "くつ",
+    "m": "giày",
+    "hv": "NGOA"
+  },
+  "靴屋": {
+    "r": "くつや",
+    "m": "cửa hàng giày dép; nhà sản xuất giày dép",
+    "hv": "NGOA ỐC"
+  },
+  "音": {
+    "r": "おと",
+    "m": "âm thanh",
+    "hv": "ÂM"
+  },
+  "音楽": {
+    "r": "おんがく",
+    "m": "âm nhạc",
+    "hv": "ÂM LẠC"
+  },
+  "音楽番組": {
+    "r": "おんがくばんぐみ",
+    "m": "chương trình âm nhạc",
+    "hv": "ÂM LẠC BA TỔ"
+  },
+  "頑張っ": {
+    "r": "がんばっ",
+    "m": "cố; cố gắng; nỗ lực (頑張る)",
+    "hv": "NGOAN TRƯƠNG"
+  },
+  "頑張って": {
+    "r": "がんばって",
+    "m": "cố gắng",
+    "hv": "NGOAN TRƯƠNG"
+  },
+  "頑張り": {
+    "r": "がんばり",
+    "m": "tính ngoan cường; sự chịu đựng",
+    "hv": "NGOAN TRƯƠNG"
+  },
+  "頭": {
+    "r": "あたま",
+    "m": "đầu",
+    "hv": "ĐẦU"
+  },
+  "頼ん": {
+    "r": "たのん",
+    "m": "cậy; khất; năn nỉ; nhờ; trông; trông cậy; yêu cầu; đề nghị; nhờ cậy (頼む)",
+    "hv": "LẠI"
+  },
+  "頼んで": {
+    "r": "たのんで",
+    "m": "nhờ vả",
+    "hv": "LẠI"
+  },
+  "願い": {
+    "r": "ねがい",
+    "m": "yêu cầu; nguyện cầu; mong ước",
+    "hv": "NGUYỆN"
+  },
+  "風呂": {
+    "r": "ふろ",
+    "m": "bể tắm; bồn tắm",
+    "hv": "PHONG LỮ"
+  },
+  "風邪": {
+    "r": "かぜ",
+    "m": "bị cảm",
+    "hv": "PHONG TÀ"
+  },
+  "飛ん": {
+    "r": "とん",
+    "m": "bay nhảy; bay tán loạn; bay lả tả; bay; cất cánh bay; bay liệng; cắt đứt; chạy; cưỡi gió; không liên tiếp; bỏ cách; nhảy; nhảy qua; nhót; truyền bá; truyền; vượt cấp (飛ぶ)",
+    "hv": "PHI"
+  },
+  "食べ": {
+    "r": "たべ",
+    "m": "ăn (食べる)",
+    "hv": "THỰC"
+  },
+  "食べて": {
+    "r": "たべて",
+    "m": "ăn",
+    "hv": "THỰC"
+  },
+  "食べながら": {
+    "r": "たべながら",
+    "m": "vừa ăn vừa...",
+    "hv": "THỰC"
+  },
+  "食べ物": {
+    "r": "たべもの",
+    "m": "đồ ăn",
+    "hv": "THỰC VẬT"
+  },
+  "食事": {
+    "r": "しょくじ",
+    "m": "bữa ăn; bữa cơm; buổi ăn; dùng bữa",
+    "hv": "THỰC SỰ"
+  },
+  "食品": {
+    "r": "しょくひん",
+    "m": "đồ ăn; thực phẩm",
+    "hv": "THỰC PHẨM"
+  },
+  "飯": {
+    "r": "めし",
+    "m": "cơm",
+    "hv": "PHẠN"
+  },
+  "飲ま": {
+    "r": "のま",
+    "m": "húp; uống (飲む)",
+    "hv": "ẨM"
+  },
+  "飲ん": {
+    "r": "のん",
+    "m": "húp; uống (飲む)",
+    "hv": "ẨM"
+  },
+  "飾ら": {
+    "r": "かざら",
+    "m": "tô điểm; trang; trang hoàng; trang trí (飾る)",
+    "hv": "SỨC"
+  },
+  "香り": {
+    "r": "かおり",
+    "m": "mùi hương",
+    "hv": "HƯƠNG"
+  },
+  "駅": {
+    "r": "えき",
+    "m": "nhà ga",
+    "hv": "DỊCH"
+  },
+  "駅前": {
+    "r": "えきまえ",
+    "m": "trước nhà ga",
+    "hv": "DỊCH TIỀN"
+  },
+  "高木": {
+    "r": "こうぼく",
+    "m": "cây đại mộc; takagi; họ người nhật; cây thân gỗ cao; cây đại thụ",
+    "hv": "CAO MỘC"
+  },
+  "高校生": {
+    "r": "こうこうせい",
+    "m": "học sinh cấp ba; học sinh trung học",
+    "hv": "CAO GIÁO SANH"
+  },
+  "鳥": {
+    "r": "とり",
+    "m": "loài chim",
+    "hv": "ĐIỂU"
+  },
+  "鳴き": {
+    "r": "なき",
+    "m": "kêu; hót; hú; rống (鳴く)",
+    "hv": "MINH"
+  },
+  "一週間": {
+    "r": "いっしゅうかん",
+    "m": "Cả tuần",
+    "hv": "NHẤT CHU GIAN"
+  },
+  "中西": {
+    "r": "なかにし",
+    "m": "Trung Tây",
+    "hv": "TRUNG TÂY"
+  },
+  "九時": {
+    "r": "くじ",
+    "m": "Chín giờ",
+    "hv": "CỬU THÌ"
+  },
+  "二人以上": {
+    "r": "ふたりいじょう",
+    "m": "Từ hai người trở lên",
+    "hv": "NHỊ NHÂN DĨ THƯỚNG"
+  },
+  "二時間": {
+    "r": "にじかん",
+    "m": "Hai giờ",
+    "hv": "NHỊ THÌ GIAN"
+  },
+  "五時": {
+    "r": "ごじ",
+    "m": "Năm giờ",
+    "hv": "NGŨ THÌ"
+  },
+  "人以上": {
+    "r": "ひといじょう",
+    "m": "Trên  người",
+    "hv": "NHÂN DĨ THƯỚNG"
+  },
+  "今か": {
+    "r": "いまか",
+    "m": "Bây giờ ư?",
+    "hv": "KIM"
+  },
+  "似た": {
+    "r": "にた",
+    "m": "Tương tự",
+    "hv": "TỰ"
+  },
+  "何役": {
+    "r": "なにやく",
+    "m": "Vai gì?",
+    "hv": "HÀ DỊCH"
+  },
+  "作れ": {
+    "r": "つくれ",
+    "m": "Làm đi.",
+    "hv": "TÁC"
+  },
+  "信じ": {
+    "r": "しんじ",
+    "m": "Tin tưởng",
+    "hv": "TÍN"
+  },
+  "偶然的": {
+    "r": "ぐうぜんてき",
+    "m": "Ngẫu nhiên",
+    "hv": "NGẪU NHIÊN"
+  },
+  "先月発売": {
+    "r": "せんげつはつばい",
+    "m": "Ra mắt tháng trước",
+    "hv": "TIÊN NGUYỆT PHÁT MẠI"
+  },
+  "再点検": {
+    "r": "さいてんけん",
+    "m": "Kiểm tra lại",
+    "hv": "TÁI ĐIỂM KIỂM"
+  },
+  "出か": {
+    "r": "でか",
+    "m": "Ra ngoài à?",
+    "hv": "XUẤT"
+  },
+  "出し方": {
+    "r": "だしかた",
+    "m": "Cách đưa ra",
+    "hv": "XUẤT PHƯƠNG"
+  },
+  "出そ": {
+    "r": "だそ",
+    "m": "Ra nào.",
+    "hv": "XUẤT"
+  },
+  "出た": {
+    "r": "でた",
+    "m": "Được rồi",
+    "hv": "XUẤT"
+  },
+  "出て": {
+    "r": "でて",
+    "m": "Ra ngoài.",
+    "hv": "XUẤT"
+  },
+  "前川": {
+    "r": "まえかわ",
+    "m": "Maekawa",
+    "hv": "TIỀN XUYÊN"
+  },
+  "勉め": {
+    "r": "つとめ",
+    "m": "Cố gắng",
+    "hv": "MIỄN"
+  },
+  "動け": {
+    "r": "うごけ",
+    "m": "Chèo đi thôi, chèo đi",
+    "hv": "ĐỘNG"
+  },
+  "北中": {
+    "r": "きたなか",
+    "m": "Bắc Trung Bộ",
+    "hv": "BẮC TRUNG"
+  },
+  "単純に": {
+    "r": "たんじゅんに",
+    "m": "Vào máy tôi.",
+    "hv": "ĐAN THUẦN"
+  },
+  "可能な": {
+    "r": "かのうな",
+    "m": "Có thể",
+    "hv": "NĂNG"
+  },
+  "合え": {
+    "r": "あえ",
+    "m": "Gặp",
+    "hv": "CÁP"
+  },
+  "固定的": {
+    "r": "こていてき",
+    "m": "Cố định",
+    "hv": "CỐ ĐỊNH"
+  },
+  "変わ": {
+    "r": "かわ",
+    "m": "Thay đổi",
+    "hv": "BIẾN"
+  },
+  "大きす": {
+    "r": "おおきす",
+    "m": "Quá to",
+    "hv": "ĐẠI"
+  },
+  "始ま": {
+    "r": "はじま",
+    "m": "Bắt đầu",
+    "hv": "THUỶ"
+  },
+  "嫌な": {
+    "r": "いやな",
+    "m": "Khó chịu",
+    "hv": "HIỀM"
+  },
+  "安定的": {
+    "r": "あんていてき",
+    "m": "Ổn định",
+    "hv": "AN ĐỊNH"
+  },
+  "客様": {
+    "r": "きゃくさま",
+    "m": "Khách hàng",
+    "hv": "KHÁCH DẠNG"
+  },
+  "寝よ": {
+    "r": "ねよ",
+    "m": "Ngủ đi.",
+    "hv": "TẨM"
+  },
+  "居な": {
+    "r": "いな",
+    "m": "Ở lại",
+    "hv": "CƯ"
+  },
+  "年前": {
+    "r": "ねんまえ",
+    "m": "năm trước",
+    "hv": "NIÊN TIỀN"
+  },
+  "弾い": {
+    "r": "ひい",
+    "m": "Chơi",
+    "hv": "ĐÀN"
+  },
+  "怖さ": {
+    "r": "こわさ",
+    "m": "Sự sợ hãi",
+    "hv": "BỐ"
+  },
+  "思い出せ": {
+    "r": "おもいだせ",
+    "m": "Anh phải biết chứ.",
+    "hv": "TƯ XUẤT"
+  },
+  "思った": {
+    "r": "おもった",
+    "m": "Tôi đã nghĩ",
+    "hv": "TƯ"
+  },
+  "思って": {
+    "r": "おもって",
+    "m": "Nghĩ rằng",
+    "hv": "TƯ"
+  },
+  "成功例": {
+    "r": "せいこうれい",
+    "m": "Ví dụ thành công",
+    "hv": "THÀNH CÔNG LỆ"
+  },
+  "時間前": {
+    "r": "じかんまえ",
+    "m": "giờ trước",
+    "hv": "THÌ GIAN TIỀN"
+  },
+  "書い": {
+    "r": "かい",
+    "m": "Viết",
+    "hv": "THƯ"
+  },
+  "最低限必要": {
+    "r": "さいていげんひつよう",
+    "m": "Yêu cầu tối thiểu",
+    "hv": "TỐI ĐÊ HẠN TẤT YÊU"
+  },
+  "木村": {
+    "r": "きむら",
+    "m": "Kimura",
+    "hv": "MỘC THÔN"
+  },
+  "来た": {
+    "r": "きた",
+    "m": "Anh ta đến rồi.",
+    "hv": "LAI"
+  },
+  "来て": {
+    "r": "きて",
+    "m": "- Cố duy trì nhé.",
+    "hv": "LAI"
+  },
+  "来ま": {
+    "r": "きま",
+    "m": "Đến đây",
+    "hv": "LAI"
+  },
+  "森田": {
+    "r": "もりた",
+    "m": "Morita",
+    "hv": "SÂM ĐIỀN"
+  },
+  "楽し": {
+    "r": "たのし",
+    "m": "Vui vẻ",
+    "hv": "LẠC"
+  },
+  "歩い": {
+    "r": "あるい",
+    "m": "Đi bộ",
+    "hv": "BỘ"
+  },
+  "気づ": {
+    "r": "きづ",
+    "m": "Nhận thấy",
+    "hv": "KHÍ"
+  },
+  "決ま": {
+    "r": "きま",
+    "m": "Quyết định",
+    "hv": "QUYẾT"
+  },
+  "洗え": {
+    "r": "あらえ",
+    "m": "Tắm rửa đi!",
+    "hv": "TẨY"
+  },
+  "浅": {
+    "r": "せん",
+    "m": "Nông",
+    "hv": "THIỂN"
+  },
+  "演じ": {
+    "r": "えんじ",
+    "m": "Diễn",
+    "hv": "DIỄN"
+  },
+  "燃や": {
+    "r": "もや",
+    "m": "Đốt",
+    "hv": "NHIÊN"
+  },
+  "甘さ": {
+    "r": "あまさ",
+    "m": "Độ ngọt",
+    "hv": "CAM"
+  },
+  "生じ": {
+    "r": "しょうじ",
+    "m": "Phát sinh",
+    "hv": "SANH"
+  },
+  "眠れ": {
+    "r": "ねむれ",
+    "m": "Thôi đi ngủ thôi. Đi ngủ nào.",
+    "hv": "MIÊN"
+  },
+  "着た": {
+    "r": "きた",
+    "m": "Đã mặc",
+    "hv": "TRƯỚC"
+  },
+  "着て": {
+    "r": "きて",
+    "m": "Cho nên...",
+    "hv": "TRƯỚC"
+  },
+  "知って": {
+    "r": "しって",
+    "m": "Biết rồi",
+    "hv": "TRI"
+  },
+  "私一人": {
+    "r": "わたしひとり",
+    "m": "Chỉ có một mình tôi",
+    "hv": "TƯ NHẤT NHÂN"
+  },
+  "終わ": {
+    "r": "おわ",
+    "m": "Kết thúc",
+    "hv": "CHUNG"
+  },
+  "組織全体": {
+    "r": "そしきぜんたい",
+    "m": "Toàn bộ tổ chức",
+    "hv": "TỔ CHỨC TOÀN THỂ"
+  },
+  "組織内": {
+    "r": "そしきない",
+    "m": "Trong tổ chức",
+    "hv": "TỔ CHỨC NỘI"
+  },
+  "繋": {
+    "r": "つな",
+    "m": "Kết nối",
+    "hv": ""
+  },
+  "置い": {
+    "r": "おい",
+    "m": "Đặt",
+    "hv": "TRÍ"
+  },
+  "聞い": {
+    "r": "きい",
+    "m": "Nghe",
+    "hv": "VĂN"
+  },
+  "聞こ": {
+    "r": "きこ",
+    "m": "Nghe thấy",
+    "hv": "VĂN"
+  },
+  "聴い": {
+    "r": "きい",
+    "m": "Nghe",
+    "hv": "THÍNH"
+  },
+  "良さそ": {
+    "r": "よさそ",
+    "m": "Có vẻ ổn.",
+    "hv": "LƯƠNG"
+  },
+  "行った": {
+    "r": "いった",
+    "m": "Đã đi",
+    "hv": "HÀNG"
+  },
+  "行って": {
+    "r": "いって",
+    "m": "Anh làm được mà.",
+    "hv": "HÀNG"
+  },
+  "見い": {
+    "r": "みい",
+    "m": "Tìm thấy",
+    "hv": "HIỆN"
+  },
+  "見た": {
+    "r": "みた",
+    "m": "Thấy chưa.",
+    "hv": "HIỆN"
+  },
+  "見つ": {
+    "r": "みつ",
+    "m": "Tìm thấy",
+    "hv": "HIỆN"
+  },
+  "見て": {
+    "r": "みて",
+    "m": "Anh thấy chứ?",
+    "hv": "HIỆN"
+  },
+  "見ま": {
+    "r": "みま",
+    "m": "Nhìn",
+    "hv": "HIỆN"
+  },
+  "見出そ": {
+    "r": "みだそ",
+    "m": "Hãy tìm ra",
+    "hv": "HIỆN XUẤT"
+  },
+  "親し": {
+    "r": "したし",
+    "m": "Thân thiết",
+    "hv": "THÂN"
+  },
+  "言って": {
+    "r": "いって",
+    "m": "Anh có thể...",
+    "hv": "NGÔN"
+  },
+  "読んだ": {
+    "r": "よんだ",
+    "m": "Đã đọc",
+    "hv": "ĐẬU"
+  },
+  "読んで": {
+    "r": "よんで",
+    "m": "Chú đọc cái này đi.",
+    "hv": "ĐẬU"
+  },
+  "買え": {
+    "r": "かえ",
+    "m": "Mua đi",
+    "hv": "MÃI"
+  },
+  "起こ": {
+    "r": "おこ",
+    "m": "Đánh thức",
+    "hv": "KHỈ"
+  },
+  "違うか": {
+    "r": "ちがうか",
+    "m": "Có lẽ cô sẽ không đồng tình.",
+    "hv": "VY"
+  },
+  "閉ざ": {
+    "r": "とざ",
+    "m": "Đóng",
+    "hv": "BẾ"
+  },
+  "開い": {
+    "r": "ひらい",
+    "m": "Mở",
+    "hv": "KHAI"
+  },
+  "防い": {
+    "r": "ふせい",
+    "m": "Ngăn chặn",
+    "hv": "PHÒNG"
+  },
+  "集ま": {
+    "r": "あつま",
+    "m": "Tập hợp",
+    "hv": "TẬP"
+  },
+  "離せ": {
+    "r": "はなせ",
+    "m": "- Làm ơn.",
+    "hv": "LY"
+  },
+  "食べた": {
+    "r": "たべた",
+    "m": "- Thế mà hắn lại ăn luôn.",
+    "hv": "THỰC"
+  },
+  "駅周辺": {
+    "r": "えきしゅうへん",
+    "m": "khu nhà ga",
+    "hv": "DỊCH CHU BIÊN"
+  }
+}

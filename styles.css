@@ -1218,6 +1218,7 @@ body.monk-mode .save-badge {
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .dojo-queue-controls select {
@@ -1632,10 +1633,51 @@ body.monk-mode .save-badge {
 .para-jp {
   font-family: var(--font-kanji);
   font-size: 19px;
-  line-height: 2.0;
+  line-height: 2.35;
   color: var(--ink-primary);
   white-space: pre-line;
   margin-bottom: 10px;
+}
+
+.ruby-word {
+  ruby-position: over;
+  ruby-align: center;
+  cursor: pointer;
+  padding: 1px 2px;
+  border-radius: 3px;
+  border-bottom: 1px dotted rgba(29, 78, 104, 0.35);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.ruby-word:hover {
+  background: rgba(29, 78, 104, 0.12);
+}
+
+.ruby-word.srs-due {
+  border-bottom: 2px solid var(--accent-vermilion);
+}
+
+.ruby-word.selected {
+  background: rgba(29, 78, 104, 0.18);
+  border-bottom: 2px solid var(--accent-indigo);
+}
+
+.ruby-rt {
+  font-family: var(--font-sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--accent-indigo);
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+.ruby-word.revealed .ruby-rt,
+.ruby-word.selected .ruby-rt,
+.para-jp.show-all-ruby .ruby-rt {
+  opacity: 1;
 }
 
 .inline-kanji {
@@ -1857,6 +1899,85 @@ body.monk-mode .save-badge {
   flex-wrap: wrap;
 }
 
+.reader-word-card {
+  margin-top: 8px;
+  padding: 11px 12px;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
+}
+
+.rw-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.rw-word {
+  font-family: var(--font-kanji);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.3;
+}
+
+.rw-reading {
+  font-family: var(--font-kanji);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-indigo);
+  margin-top: 2px;
+}
+
+.rw-hv {
+  font-size: 11.5px;
+  color: var(--ink-secondary);
+  margin-top: 4px;
+}
+
+.rw-meaning {
+  font-size: 13.5px;
+  color: var(--ink-primary);
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+.rw-kanji-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 9px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.rw-kanji-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  font-size: 12px;
+  cursor: pointer;
+  color: var(--ink-primary);
+}
+
+.rw-kanji-pill:hover,
+.rw-kanji-pill.active {
+  border-color: var(--accent-indigo);
+  background: rgba(29, 78, 104, 0.14);
+  color: var(--accent-indigo);
+}
+
+.rw-kanji-pill-glyph {
+  font-family: var(--font-kanji);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* =========================================================================
    EXAM & CHOUKAI STUDIO (#viewExams)
    ========================================================================= */
@@ -2043,18 +2164,21 @@ body.monk-mode .save-badge {
   border: 1px solid var(--border-hairline);
 }
 
-.forge-mode-btn {
+.forge-mode-btn,
+.dojo-mode-btn {
   border: none;
   background: transparent;
-  padding: 6px 6px;
+  padding: 6px 8px;
   border-radius: 4px;
   font-size: 12px;
   font-weight: 500;
   color: var(--ink-secondary);
   cursor: pointer;
+  white-space: nowrap;
 }
 
-.forge-mode-btn.active {
+.forge-mode-btn.active,
+.dojo-mode-btn.active {
   background: var(--accent-indigo);
   color: #ffffff;
 }
@@ -2252,6 +2376,225 @@ body.monk-mode .save-badge {
   flex-direction: column;
   gap: 4px;
   font-size: 13px;
+}
+
+/* =========================================================================
+   MODULE 5 COMPLETED: DOJO TYPING MODE, SUMMARY & NEURO ANALYTICS
+   ========================================================================= */
+.dojo-typing-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.dojo-typing-glyph {
+  width: 170px;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-kanji);
+  font-size: 108px;
+  line-height: 1;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  color: var(--ink-primary);
+  flex-shrink: 0;
+}
+
+.dojo-typing-form {
+  flex: 1;
+  min-width: 260px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dojo-srs-shared {
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.dojo-summary-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.dojo-summary-pill {
+  padding: 8px 12px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.neuro-extra-row {
+  margin-top: 16px;
+}
+
+.neuro-module-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.neuro-mod-item {
+  padding: 10px 12px;
+  background: var(--bg-panel);
+  border-radius: 6px;
+  border: 1px solid var(--border-hairline);
+}
+
+.neuro-mod-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.neuro-mod-sub {
+  font-size: 12px;
+  color: var(--ink-secondary);
+}
+
+.srs-forecast-chart {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  align-items: end;
+  height: 170px;
+  padding: 14px 10px 8px;
+  background: var(--bg-panel);
+  border-radius: 6px;
+}
+
+.srs-f-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 4px;
+}
+
+.srs-f-count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink-primary);
+}
+
+.srs-f-bar-wrap {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.srs-f-bar {
+  width: 72%;
+  min-height: 3px;
+  border-radius: 4px 4px 2px 2px;
+  background: var(--accent-indigo);
+  transition: height 0.25s ease;
+}
+
+.srs-f-col.today .srs-f-bar {
+  background: var(--accent-vermilion);
+}
+
+.srs-f-label {
+  font-size: 10.5px;
+  color: var(--ink-secondary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.learned-kanji-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.learned-kanji-tile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  padding: 8px 9px;
+  border: 1px solid var(--border-hairline);
+  background: var(--bg-panel);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.learned-kanji-tile:hover {
+  border-color: var(--accent-indigo);
+  background: var(--bg-hover);
+}
+
+.learned-kanji-glyph {
+  font-family: var(--font-kanji);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink-primary);
+}
+
+.learned-kanji-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.learned-kanji-hv {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-indigo);
+}
+
+.learned-kanji-sub {
+  font-size: 11px;
+  color: var(--ink-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.neuro-notes-archive {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.neuro-note-entry {
+  padding: 9px 11px;
+  background: var(--bg-panel);
+  border-left: 3px solid var(--accent-indigo);
+  border-radius: 4px;
+  font-size: 12.5px;
+}
+
+.neuro-note-entry.exam {
+  border-left-color: var(--accent-ochre);
+}
+
+.neuro-note-title {
+  font-weight: 600;
+  margin-bottom: 3px;
 }
 
 /* Responsive */

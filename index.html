@@ -372,7 +372,7 @@
         </div>
 
         <div class="reader-tip-bar">
-          Mẹo chống đọc lướt: Các đoạn bên dưới được làm mờ. Hãy đọc kỹ từng đoạn, bấm vào <strong>chữ Kanji bất kỳ</strong> để giải phẫu ngay bên phải, và chạm/di chuột giữ vào thẻ từ vựng 0,5s khi thật sự cần xem cách đọc.
+          Mẹo chống đọc lướt: Bấm trực tiếp vào <strong>bất kỳ từ Kanji nào</strong> trong câu để bật <strong>Furigana trên đầu chữ</strong> + nghe phát âm; <strong>bôi đen cụm từ/câu</strong> bất kỳ để dịch nghĩa tức thì bên phải; hoặc bấm <strong>Hiện Furigana đoạn này</strong> sau khi đã thử đọc chay.
         </div>
 
         <div class="reader-paragraphs" id="readerParagraphs"></div>
@@ -399,12 +399,27 @@
     </section>
 
     <aside class="panel panel-right">
-      <div class="anatomy-section">
+      <div class="anatomy-section" id="readerWordInspector">
         <div class="section-head">
-          <h2>Kanji xuất hiện trong bài</h2>
-          <span class="mono sub-hint" id="readerKanjiCount">0 chữ</span>
+          <h2>Tra cứu Từ / Cụm từ đang chọn</h2>
+          <span class="sub-hint" id="rwSourceHint">Từ điển cục bộ + dịch nhanh</span>
         </div>
-        <div class="related-chips" id="readerKanjiChips"></div>
+        <input type="search" id="readerQuickLookupInput" class="exam-kanji-input" placeholder="Bấm từ trong bài, bôi đen cụm từ, hoặc gõ từ cần tra..." autocomplete="off" />
+        <div class="rk-empty" id="rwEmptyHint">
+          Bấm vào bất kỳ từ nào trong đoạn văn (ví dụ <span class="mono">日曜日</span>) để xem cách đọc + nghĩa tiếng Việt, hoặc <strong>bôi đen cả cụm từ</strong> bất kỳ để dịch nhanh.
+        </div>
+        <div class="reader-word-card hidden" id="rwBody">
+          <div class="rw-head-row">
+            <div>
+              <div class="rw-word" id="rwWord">日曜日</div>
+              <div class="rw-reading" id="rwReading">にちようび</div>
+            </div>
+            <button type="button" class="btn-ghost-sm" id="rwSpeakBtn">Nghe đọc</button>
+          </div>
+          <div class="rw-hv mono hidden" id="rwHv">NHẬT DIỆU NHẬT</div>
+          <div class="rw-meaning" id="rwMeaning">Chủ nhật</div>
+          <div class="rw-kanji-pills hidden" id="rwKanjiPills"></div>
+        </div>
       </div>
 
       <div class="anatomy-section" id="readerKanjiInspector">
@@ -413,7 +428,7 @@
           <span class="prompt-jlpt-tag hidden" id="rkLevelTag">N5</span>
         </div>
         <div class="rk-empty" id="rkEmptyHint">
-          Bấm vào một chữ Kanji ngay trong đoạn văn hoặc danh sách bên trên để soi âm Hán-Việt, bộ thủ và nét viết.
+          Bấm vào một chữ Kanji ngay trong đoạn văn hoặc danh sách bên dưới để soi âm Hán-Việt, bộ thủ và nét viết.
         </div>
         <div class="rk-body hidden" id="rkBody">
           <div class="rk-top-row">
@@ -431,6 +446,14 @@
             <button class="btn-ghost-sm" id="rkAddSrsBtn">Đưa vào ôn SRS</button>
           </div>
         </div>
+      </div>
+
+      <div class="anatomy-section">
+        <div class="section-head">
+          <h2>Kanji xuất hiện trong bài</h2>
+          <span class="mono sub-hint" id="readerKanjiCount">0 chữ</span>
+        </div>
+        <div class="related-chips" id="readerKanjiChips"></div>
       </div>
     </aside>
   </section>
@@ -643,21 +666,29 @@
       <div class="dojo-header">
         <div>
           <h1>Đấu trường Truy xuất Mù (Blind Recall Dojo)</h1>
-          <p>Không gợi ý mặt chữ, không trắc nghiệm. Ép vỏ não trước trán tự dựng lại từng nét chữ từ âm Hán-Việt và nghĩa.</p>
+          <p>Không gợi ý mặt chữ, không trắc nghiệm. Tự dựng lại từng nét chữ hoặc truy xuất nhanh Âm Hán-Việt &amp; Cách đọc để củng cố trí nhớ dài hạn (SM-2).</p>
         </div>
         <div class="dojo-queue-controls">
+          <div class="forge-mode-toggle" role="tablist" aria-label="Chế độ ôn tập Dojo">
+            <button type="button" class="dojo-mode-btn active" data-dmode="write">1. Viết tay mù</button>
+            <button type="button" class="dojo-mode-btn" data-dmode="typing">2. Gõ truy xuất nhanh</button>
+          </div>
           <select id="dojoScopeSelect">
             <option value="due">Hàng đợi cần ôn hôm nay (SRS Due)</option>
+            <option value="learned">Ôn lại toàn bộ chữ đã học</option>
+            <option value="leech">Chữ hay quên / điểm yếu</option>
             <option value="level">Chữ chưa thuộc ở cấp đang chọn</option>
           </select>
-          <button class="btn-primary" id="dojoStartBtn">Bắt đầu lượt ôn</button>
+          <button type="button" class="btn-primary" id="dojoStartBtn">Bắt đầu lượt ôn</button>
         </div>
       </div>
 
       <div class="dojo-stage" id="dojoStage">
         <div class="dojo-empty" id="dojoEmptyState">
-          <p>Chọn phạm vi ôn tập rồi bấm <strong>Bắt đầu lượt ôn</strong>, hoặc hoàn thành luyện viết thêm chữ mới ở Xưởng chữ để đưa vào lịch ôn SRS.</p>
+          <p>Chọn chế độ và phạm vi ôn tập rồi bấm <strong>Bắt đầu lượt ôn</strong>, hoặc hoàn thành luyện viết thêm chữ mới ở Xưởng chữ để đưa vào lịch ôn SRS.</p>
         </div>
+
+        <div class="dojo-card hidden" id="dojoSummaryCard"></div>
 
         <div class="dojo-card hidden" id="dojoCard">
           <div class="dojo-card-meta">
@@ -665,13 +696,14 @@
             <span class="prompt-jlpt-tag" id="dojoLevelTag">JLPT N5</span>
           </div>
 
-          <div class="dojo-prompt">
+          <div class="dojo-prompt" id="dojoPrompt">
             <div class="dojo-hv" id="dojoHv">HƯU</div>
             <div class="dojo-vi" id="dojoVi">nghỉ ngơi · thôi, dừng</div>
             <div class="dojo-readings mono" id="dojoReadings">On: キュウ | Kun: やす.む</div>
           </div>
 
-          <div class="dojo-board-wrap">
+          <!-- Mode 1: Blind Handwriting -->
+          <div class="dojo-board-wrap" id="dojoBoardWrap">
             <div class="masume-frame dojo-frame" id="dojoMasumeFrame">
               <svg class="masume-grid" viewBox="0 0 109 109" aria-hidden="true">
                 <line x1="54.5" y1="0" x2="54.5" y2="109" class="grid-axis" />
@@ -688,18 +720,55 @@
             <div class="dojo-side-actions">
               <div class="board-feedback" id="dojoFeedback">Tự hình dung hình dáng chữ trong đầu và viết nét đầu tiên.</div>
               <div class="dojo-btn-row">
-                <button class="btn-ghost-sm" id="dojoUndoBtn">Hoàn tác nét</button>
-                <button class="btn-ghost-sm" id="dojoClearBtn">Xóa viết lại</button>
-                <button class="btn-friction" id="dojoHintBtn" disabled>Gợi ý 1 nét (3s)</button>
-                <button class="btn-ghost-sm" id="dojoRevealBtn">Mở đáp án</button>
+                <button type="button" class="btn-ghost-sm" id="dojoUndoBtn">Hoàn tác nét</button>
+                <button type="button" class="btn-ghost-sm" id="dojoClearBtn">Xóa viết lại</button>
+                <button type="button" class="btn-friction" id="dojoHintBtn" disabled>Gợi ý 1 nét (3s)</button>
+                <button type="button" class="btn-ghost-sm" id="dojoRevealBtn">Mở đáp án</button>
               </div>
               <div class="dojo-mnemonic-preview" id="dojoMnemonicPreview"></div>
-              <div class="dojo-srs-row">
-                <button class="srs-btn srs-again" data-dojo-q="1">1. Quên</button>
-                <button class="srs-btn srs-hard" data-dojo-q="2">2. Khó</button>
-                <button class="srs-btn srs-good" data-dojo-q="3">3. Nhớ tốt</button>
-                <button class="srs-btn srs-easy" data-dojo-q="4">4. Khắc cốt</button>
+            </div>
+          </div>
+
+          <!-- Mode 2: Fast Active Recall Typing -->
+          <div class="dojo-typing-wrap hidden" id="dojoTypingWrap">
+            <div class="dojo-typing-glyph" id="dojoTypingGlyph">日</div>
+            <form class="dojo-typing-form" id="dojoTypingForm">
+              <div class="field-group">
+                <label for="dojoInputHv">Âm Hán-Việt (không dấu hoặc có dấu)</label>
+                <input type="text" id="dojoInputHv" placeholder="Ví dụ: NHAT hoặc HUU" autocomplete="off" />
               </div>
+              <div class="field-group">
+                <label for="dojoInputRead">Cách đọc On / Kun (Romaji tự chuyển Kana) <span class="kana-preview" id="dojoKanaPreview"></span></label>
+                <input type="text" id="dojoInputRead" placeholder="Ví dụ: nichi hoặc yasumu" autocomplete="off" />
+              </div>
+              <div class="dojo-btn-row">
+                <button type="submit" class="btn-primary" id="dojoTypingCheckBtn">Kiểm tra đáp án</button>
+                <button type="button" class="btn-ghost-sm" id="dojoTypingRevealBtn">Mở đáp án</button>
+              </div>
+              <div class="typing-result hidden" id="dojoTypingResult"></div>
+            </form>
+          </div>
+
+          <!-- Shared SRS Rating Bar -->
+          <div class="dojo-srs-shared">
+            <div class="sub-label">Đánh giá mức độ ghi nhớ để lên lịch ôn tiếp (SM-2)</div>
+            <div class="dojo-srs-row">
+              <button type="button" class="srs-btn srs-again" data-dojo-q="1">
+                <span class="srs-title">1. Quên</span>
+                <span class="srs-next" data-dojo-next="1">Ôn ngay</span>
+              </button>
+              <button type="button" class="srs-btn srs-hard" data-dojo-q="2">
+                <span class="srs-title">2. Khó</span>
+                <span class="srs-next" data-dojo-next="2">1 ngày</span>
+              </button>
+              <button type="button" class="srs-btn srs-good" data-dojo-q="3">
+                <span class="srs-title">3. Nhớ tốt</span>
+                <span class="srs-next" data-dojo-next="3">3 ngày</span>
+              </button>
+              <button type="button" class="srs-btn srs-easy" data-dojo-q="4">
+                <span class="srs-title">4. Khắc cốt</span>
+                <span class="srs-next" data-dojo-next="4">7 ngày</span>
+              </button>
             </div>
           </div>
         </div>
@@ -712,7 +781,7 @@
     <div class="neuro-container">
       <header class="neuro-header">
         <h1>Hồ sơ Phục hồi Tập trung &amp; Đồng bộ GitHub</h1>
-        <p>Đo lường độ bền chú ý thực chất thay vì điểm ảo, và lưu trữ toàn bộ lịch sử học trực tiếp vào file JSON để đồng bộ giữa các máy tính qua GitHub.</p>
+        <p>Đo lường độ bền chú ý thực chất thay vì điểm ảo, tổng hợp tiến độ đa kỹ năng và lưu trữ toàn bộ lịch sử học trực tiếp vào file JSON để đồng bộ giữa các máy tính qua GitHub.</p>
       </header>
 
       <div class="metrics-grid">
@@ -763,6 +832,33 @@
               <input type="file" id="importJsonInput" accept="application/json,.json" hidden />
             </label>
           </div>
+        </div>
+      </div>
+
+      <div class="neuro-two-col neuro-extra-row">
+        <div class="neuro-card">
+          <h2>Tổng hợp Tiến độ Đa Module</h2>
+          <div class="neuro-module-list" id="neuroModuleSummary"></div>
+        </div>
+
+        <div class="neuro-card">
+          <h2>Dự báo Khối lượng Ôn tập 7 Ngày tới (SRS Forecast)</h2>
+          <div class="srs-forecast-chart" id="srsForecastChart"></div>
+        </div>
+      </div>
+
+      <div class="neuro-two-col neuro-extra-row">
+        <div class="neuro-card">
+          <div class="section-head">
+            <h2>Sổ tay Kanji bạn đã học</h2>
+            <span class="mono sub-hint" id="learnedKanjiCount">0 chữ</span>
+          </div>
+          <div class="learned-kanji-grid" id="learnedKanjiRoster"></div>
+        </div>
+
+        <div class="neuro-card">
+          <h2>Nhật ký Tóm tắt Đọc sâu &amp; Ghi chú Phòng thi</h2>
+          <div class="neuro-notes-archive" id="neuroNotesArchive"></div>
         </div>
       </div>
     </div>

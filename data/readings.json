@@ -30,6 +30,74 @@
             "かって",
             "mua"
           ]
+        ],
+        "words": [
+          [
+            "パン屋",
+            "パンや",
+            "tiệm bánh mì",
+            "ỐC"
+          ],
+          [
+            "小さい",
+            "ちいさい",
+            "bé; bé bỏng; bé nhỏ; nhỏ; nhỏ bé; tí; tí hon",
+            "TIỂU"
+          ],
+          [
+            "日曜日",
+            "にちようび",
+            "Chủ nhật",
+            "NHẬT DIỆU NHẬT"
+          ],
+          [
+            "買って",
+            "かって",
+            "mua",
+            "MÃI"
+          ],
+          [
+            "起きて",
+            "おきて",
+            "thức dậy",
+            "KHỈ"
+          ],
+          [
+            "九時",
+            "くじ",
+            "Chín giờ",
+            "CỬU THÌ"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "買い",
+            "かい",
+            "sự mua; việc mua; mua sắm",
+            "MÃI"
+          ],
+          [
+            "起き",
+            "おき",
+            "dấy; đứng dậy; ngồi dậy; bình phục; nhen nhúm; thức; thức dậy; dậy; xảy ra (起きる)",
+            "KHỞI"
+          ],
+          [
+            "屋",
+            "や",
+            "tòa nhà để ở; nhà ở; nhà cửa; mái nhà; chỉ người hoặc cửa hàng buôn bán thứ gì đó; chỉ người nào đó có đặc điểm tính cách nào đó; chỉ người chuyên về lĩnh vực nào đó hoặc có kỹ năng nổi bật; dùng làm tên hiệu của các gia đình kinh doanh buôn bán; dùng làm tên hiệu của diễn viên; bút danh của nhà văn; v.v.",
+            "ỐC"
+          ],
+          [
+            "朝",
+            "あさ",
+            "ban sáng; buổi sáng; sáng",
+            "TRIÊU"
+          ]
         ]
       },
       {
@@ -56,6 +124,68 @@
             "てんき",
             "thời tiết"
           ]
+        ],
+        "words": [
+          [
+            "食べながら",
+            "たべながら",
+            "vừa ăn vừa...",
+            "THỰC"
+          ],
+          [
+            "日本語",
+            "にほんご",
+            "tiếng Nhật",
+            "NHẬT BỔN NGỮ"
+          ],
+          [
+            "天気",
+            "てんき",
+            "thời tiết",
+            "THIÊN KHÍ"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "読み",
+            "よみ",
+            "sự đọc",
+            "ĐỘC"
+          ],
+          [
+            "食べ",
+            "たべ",
+            "ăn (食べる)",
+            "THỰC"
+          ],
+          [
+            "駅前",
+            "えきまえ",
+            "trước nhà ga",
+            "DỊCH TIỀN"
+          ],
+          [
+            "前",
+            "まえ",
+            "đằng trước; phần đầu; phần trước; trước đây",
+            "TIỀN"
+          ],
+          [
+            "本",
+            "ほん",
+            "sách",
+            "BỔN"
+          ],
+          [
+            "駅",
+            "えき",
+            "nhà ga",
+            "DỊCH"
+          ]
         ]
       },
       {
@@ -81,6 +211,56 @@
             "漢字",
             "かんじ",
             "chữ Hán (Kanji)"
+          ]
+        ],
+        "words": [
+          [
+            "二時間",
+            "にじかん",
+            "Hai giờ",
+            "NHỊ THÌ GIAN"
+          ],
+          [
+            "図書館",
+            "としょかん",
+            "thư viện",
+            "ĐỒ THƯ QUÁN"
+          ],
+          [
+            "行って",
+            "いって",
+            "Anh làm được mà.",
+            "HÀNG"
+          ],
+          [
+            "一日",
+            "いちにち",
+            "một ngày (いちにち); ngày mồng 1 (ついたち)",
+            "NHẤT NHẬT"
+          ],
+          [
+            "午後",
+            "ごご",
+            "buổi chiều",
+            "NGỌ HẬU"
+          ],
+          [
+            "漢字",
+            "かんじ",
+            "chữ Hán (Kanji)",
+            "HÁN TỰ"
+          ],
+          [
+            "電話",
+            "でんわ",
+            "điện thoại",
+            "ĐIỆN THOẠI"
+          ],
+          [
+            "友",
+            "とも",
+            "sự đi chơi cùng bạn bè",
+            "HỮU"
           ]
         ]
       }
@@ -141,6 +321,62 @@
             "はなして",
             "đang nói chuyện"
           ]
+        ],
+        "words": [
+          [
+            "話して",
+            "はなして",
+            "đang nói chuyện",
+            "THOẠI"
+          ],
+          [
+            "大学",
+            "だいがく",
+            "đại học",
+            "ĐẠI HỌC"
+          ],
+          [
+            "学生",
+            "がくせい",
+            "học sinh, sinh viên",
+            "HỌC SANH"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "話し",
+            "はなし",
+            "nói; lời nói; tán gẫu; câu chuyện; cuộc nói chuyện",
+            "THOẠI"
+          ],
+          [
+            "友",
+            "とも",
+            "sự đi chơi cùng bạn bè",
+            "HỮU"
+          ],
+          [
+            "女",
+            "おんな",
+            "phụ nữ; con gái; cô gái; đàn bà; nữ; nữ giới; phái nữ; quý bà; sao nữ; dùng sau tên hoặc bút danh của phụ nữ; vợ; nhân tình; bạn đời; cái; mái; giống cái; vật nhỏ hơn hoặc có tính nữ hơn trong một cặp",
+            "NỮ"
+          ],
+          [
+            "妹",
+            "いもうと",
+            "em gái",
+            "MUỘI"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
+          ]
         ]
       },
       {
@@ -162,6 +398,62 @@
             "よにん",
             "bốn người"
           ]
+        ],
+        "words": [
+          [
+            "入って",
+            "はいって",
+            "vào (học)",
+            "NHẬP"
+          ],
+          [
+            "今年",
+            "ことし",
+            "năm nay",
+            "KIM NIÊN"
+          ],
+          [
+            "入り",
+            "いり",
+            "vào; sự thiết đặt mặt trời); thính giả; khả năng; thu nhập; bắt đầu",
+            "NHẬP"
+          ],
+          [
+            "四人",
+            "よにん",
+            "bốn người",
+            "TỨ NHÂN"
+          ],
+          [
+            "大学",
+            "だいがく",
+            "đại học",
+            "ĐẠI HỌC"
+          ],
+          [
+            "学生",
+            "がくせい",
+            "học sinh, sinh viên",
+            "HỌC SANH"
+          ],
+          [
+            "女",
+            "おんな",
+            "phụ nữ; con gái; cô gái; đàn bà; nữ; nữ giới; phái nữ; quý bà; sao nữ; dùng sau tên hoặc bút danh của phụ nữ; vợ; nhân tình; bạn đời; cái; mái; giống cái; vật nhỏ hơn hoặc có tính nữ hơn trong một cặp",
+            "NỮ"
+          ],
+          [
+            "妹",
+            "いもうと",
+            "em gái",
+            "MUỘI"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
+          ]
         ]
       },
       {
@@ -177,6 +469,26 @@
             "めがね",
             "めがね",
             "kính mắt"
+          ]
+        ],
+        "words": [
+          [
+            "短い",
+            "みじかい",
+            "ngắn",
+            "ĐOẢN"
+          ],
+          [
+            "女",
+            "おんな",
+            "phụ nữ; con gái; cô gái; đàn bà; nữ; nữ giới; phái nữ; quý bà; sao nữ; dùng sau tên hoặc bút danh của phụ nữ; vợ; nhân tình; bạn đời; cái; mái; giống cái; vật nhỏ hơn hoặc có tính nữ hơn trong một cặp",
+            "NỮ"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
           ]
         ]
       }
@@ -221,6 +533,50 @@
             "きいて",
             "lắng nghe"
           ]
+        ],
+        "words": [
+          [
+            "日本語",
+            "にほんご",
+            "tiếng Nhật",
+            "NHẬT BỔN NGỮ"
+          ],
+          [
+            "聞いて",
+            "きいて",
+            "lắng nghe",
+            "VĂN"
+          ],
+          [
+            "静かに",
+            "しずかに",
+            "yên lặng, chăm chú",
+            "TĨNH"
+          ],
+          [
+            "学生",
+            "がくせい",
+            "học sinh, sinh viên",
+            "HỌC SANH"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "静か",
+            "しずか",
+            "yên tĩnh; yên lặng; điềm tĩnh",
+            "TĨNH"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
+          ]
         ]
       },
       {
@@ -247,6 +603,74 @@
             "はじめて",
             "lần đầu tiên"
           ]
+        ],
+        "words": [
+          [
+            "初めて",
+            "はじめて",
+            "lần đầu tiên",
+            "SƠ"
+          ],
+          [
+            "日本語",
+            "にほんご",
+            "tiếng Nhật",
+            "NHẬT BỔN NGỮ"
+          ],
+          [
+            "入り",
+            "いり",
+            "vào; sự thiết đặt mặt trời); thính giả; khả năng; thu nhập; bắt đầu",
+            "NHẬP"
+          ],
+          [
+            "勉強",
+            "べんきょう",
+            "học tập",
+            "MIỄN CƯỠNG"
+          ],
+          [
+            "学校",
+            "がっこう",
+            "trường học",
+            "HỌC GIÁO"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "昨日",
+            "きのう",
+            "hôm qua",
+            "TẠC NHẬT"
+          ],
+          [
+            "来ま",
+            "きま",
+            "Đến đây",
+            "LAI"
+          ],
+          [
+            "一",
+            "いち",
+            "một; sự bắt đầu; lúc khởi đầu; khởi điểm; đầu tiên; ban đầu; sự trùng khớp; sự đồng ý; sự thống nhất; sự phù hợp; sự tuân thủ; tính nhất quán; sự hài hòa; nhất; tốt nhất; số một",
+            "NHẤT"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "月",
+            "つき",
+            "mặt trăng; thái âm; tháng; trăng; vầng trăng",
+            "NGUYỆT"
+          ]
         ]
       },
       {
@@ -267,6 +691,38 @@
             "多い",
             "おおい",
             "nhiều"
+          ]
+        ],
+        "words": [
+          [
+            "一年",
+            "いちねん",
+            "một năm",
+            "NHẤT NIÊN"
+          ],
+          [
+            "勉強",
+            "べんきょう",
+            "học tập",
+            "MIỄN CƯỠNG"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "生活",
+            "せいかつ",
+            "sinh hoạt, cuộc sống",
+            "SANH HOẠT"
           ]
         ]
       }
@@ -327,6 +783,68 @@
             "つくります",
             "làm, nấu"
           ]
+        ],
+        "words": [
+          [
+            "帰りました",
+            "かえりました",
+            "đã trở về",
+            "QUY"
+          ],
+          [
+            "作ります",
+            "つくります",
+            "làm, nấu",
+            "TÁC"
+          ],
+          [
+            "今日は",
+            "こんにちは",
+            "xin chào",
+            "KIM NHẬT"
+          ],
+          [
+            "木曜日",
+            "もくようび",
+            "thứ Năm",
+            "MỘC DIỆU NHẬT"
+          ],
+          [
+            "五時",
+            "ごじ",
+            "Năm giờ",
+            "NGŨ THÌ"
+          ],
+          [
+            "会社",
+            "かいしゃ",
+            "công ty",
+            "HỘI XÃ"
+          ],
+          [
+            "作り",
+            "つくり",
+            "đồ hoá trang; son phấn; sự hoá trang; cách sắp trang; cấu tạo; bản chất; tính chất; kết cấu; cấu trúc; công trình kiến trúc; công trình xây dựng; cơ thể vóc người; dạng người",
+            "TÁC"
+          ],
+          [
+            "帰り",
+            "かえり",
+            "sự trở về; sự về",
+            "QUY"
+          ],
+          [
+            "晩",
+            "ばん",
+            "buổi tối; đêm; muộn; tối",
+            "VÃN"
+          ],
+          [
+            "母",
+            "はは",
+            "mẹ; u; bầm",
+            "MẪU"
+          ]
         ]
       },
       {
@@ -348,6 +866,38 @@
             "かいに",
             "đi để mua"
           ]
+        ],
+        "words": [
+          [
+            "買いに",
+            "かいに",
+            "đi để mua",
+            "MÃI"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "買い",
+            "かい",
+            "sự mua; việc mua; mua sắm",
+            "MÃI"
+          ],
+          [
+            "近く",
+            "ちかく",
+            "gần",
+            "CẬN"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ]
         ]
       },
       {
@@ -368,6 +918,56 @@
             "食べて",
             "たべて",
             "ăn"
+          ]
+        ],
+        "words": [
+          [
+            "新しい",
+            "あたらしい",
+            "mới, tươi",
+            "TÂN"
+          ],
+          [
+            "食べて",
+            "たべて",
+            "ăn",
+            "THỰC"
+          ],
+          [
+            "六つ",
+            "むっつ",
+            "sáu cái/quả",
+            "LỤC"
+          ],
+          [
+            "帰っ",
+            "かえっ",
+            "về; chạy về (帰る)",
+            "QUY"
+          ],
+          [
+            "買い",
+            "かい",
+            "sự mua; việc mua; mua sắm",
+            "MÃI"
+          ],
+          [
+            "食べ",
+            "たべ",
+            "ăn (食べる)",
+            "THỰC"
+          ],
+          [
+            "家",
+            "いえ",
+            "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+            "GIA"
+          ],
+          [
+            "母",
+            "はは",
+            "mẹ; u; bầm",
+            "MẪU"
           ]
         ]
       }
@@ -417,6 +1017,62 @@
             "おおい",
             "đông, nhiều"
           ]
+        ],
+        "words": [
+          [
+            "会社員",
+            "かいしゃいん",
+            "nhân viên công ty",
+            "HỘI XÃ VIÊN"
+          ],
+          [
+            "昼休み",
+            "ひるやすみ",
+            "giờ nghỉ trưa",
+            "TRÚ HƯU"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "多く",
+            "おおく",
+            "nhiều; đa số; phần lớn; thường",
+            "ĐA"
+          ],
+          [
+            "木村",
+            "きむら",
+            "Kimura",
+            "MỘC THÔN"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ]
         ]
       },
       {
@@ -432,6 +1088,38 @@
             "一つ",
             "ひとつ",
             "một phần"
+          ]
+        ],
+        "words": [
+          [
+            "女の人",
+            "おんなのひと",
+            "phụ nữ; đàn bà; nữ",
+            "NỮ NHÂN"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "二つ",
+            "ふたつ",
+            "hai phần",
+            "NHỊ"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
           ]
         ]
       },
@@ -453,6 +1141,80 @@
             "持って",
             "もって",
             "mang theo"
+          ]
+        ],
+        "words": [
+          [
+            "友だち",
+            "ともだち",
+            "bạn bè",
+            "HỮU"
+          ],
+          [
+            "女の人",
+            "おんなのひと",
+            "phụ nữ; đàn bà; nữ",
+            "NỮ NHÂN"
+          ],
+          [
+            "持って",
+            "もって",
+            "mang theo",
+            "TRÌ"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "今か",
+            "いまか",
+            "Bây giờ ư?",
+            "KIM"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "来て",
+            "きて",
+            "- Cố duy trì nhé.",
+            "LAI"
+          ],
+          [
+            "来ま",
+            "きま",
+            "Đến đây",
+            "LAI"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "友",
+            "とも",
+            "sự đi chơi cùng bạn bè",
+            "HỮU"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
           ]
         ]
       }
@@ -502,6 +1264,68 @@
             "とりたい",
             "muốn chụp"
           ]
+        ],
+        "words": [
+          [
+            "撮りたい",
+            "とりたい",
+            "muốn chụp",
+            "TOÁT"
+          ],
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "持って",
+            "もって",
+            "mang theo",
+            "TRÌ"
+          ],
+          [
+            "写真",
+            "しゃしん",
+            "bức ảnh",
+            "TẢ CHÂN"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "撮り",
+            "とり",
+            "việc chụp; chụp; quay",
+            "TOÁT"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "来る",
+            "くる",
+            "đến; tới; sắp tới; tới đây; vào ngày; đang đến gần; trở nên vô dụng; cũ kỹ; già yếu; lẩm cẩm; phải lòng; say mê; si mê; đã và đang; tiếp diễn cho đến nay; duy trì tới tận bây giờ",
+            "LAI"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -528,6 +1352,86 @@
             "ちがいます",
             "khác nhau"
           ]
+        ],
+        "words": [
+          [
+            "違います",
+            "ちがいます",
+            "khác nhau",
+            "VY"
+          ],
+          [
+            "面白い",
+            "おもしろい",
+            "dí dỏm; thú vị; hay; vui tính",
+            "DIỆN BẠCH"
+          ],
+          [
+            "全然",
+            "ぜんぜん",
+            "hoàn toàn không",
+            "TOÀN NHIÊN"
+          ],
+          [
+            "写真",
+            "しゃしん",
+            "bức ảnh",
+            "TẢ CHÂN"
+          ],
+          [
+            "好き",
+            "すき",
+            "sự thích; yêu; quý; mến; thích; ưa; chuộng; người yêu thích; người say mê; được lòng; có duyên; thu hút; hấp dẫn",
+            "HẢO"
+          ],
+          [
+            "撮っ",
+            "とっ",
+            "chụp; làm (撮る)",
+            "TOÁT"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "景色",
+            "けしき",
+            "phong cảnh",
+            "CẢNH SẮC"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "違い",
+            "ちがい",
+            "sự khác nhau; trật",
+            "VI"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -549,6 +1453,92 @@
             "みにいく",
             "đi ngắm"
           ]
+        ],
+        "words": [
+          [
+            "見に行く",
+            "みにいく",
+            "đi ngắm",
+            "KIẾN HÀNH"
+          ],
+          [
+            "初めて",
+            "はじめて",
+            "lần đầu tiên",
+            "SƠ"
+          ],
+          [
+            "思って",
+            "おもって",
+            "Nghĩ rằng",
+            "TƯ"
+          ],
+          [
+            "写真",
+            "しゃしん",
+            "bức ảnh",
+            "TẢ CHÂN"
+          ],
+          [
+            "撮り",
+            "とり",
+            "việc chụp; chụp; quay",
+            "TOÁT"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "見て",
+            "みて",
+            "Anh thấy chứ?",
+            "HIỆN"
+          ],
+          [
+            "見ま",
+            "みま",
+            "Nhìn",
+            "HIỆN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "時",
+            "とき",
+            "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+            "THÌ"
+          ],
+          [
+            "海",
+            "うみ",
+            "biển",
+            "HẢI"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -569,6 +1559,80 @@
             "楽しみ",
             "たのしみ",
             "mong chờ, háo hức"
+          ]
+        ],
+        "words": [
+          [
+            "夏休み",
+            "なつやすみ",
+            "kỳ nghỉ hè",
+            "HẠ HƯU"
+          ],
+          [
+            "楽しみ",
+            "たのしみ",
+            "mong chờ, háo hức",
+            "LẠC"
+          ],
+          [
+            "何と",
+            "なんと",
+            "cái gì; như thế nào",
+            "HÀ"
+          ],
+          [
+            "写真",
+            "しゃしん",
+            "bức ảnh",
+            "TẢ CHÂN"
+          ],
+          [
+            "家族",
+            "かぞく",
+            "gia đình",
+            "GIA TỘC"
+          ],
+          [
+            "帰っ",
+            "かえっ",
+            "về; chạy về (帰る)",
+            "QUY"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "撮っ",
+            "とっ",
+            "chụp; làm (撮る)",
+            "TOÁT"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "見せ",
+            "みせ",
+            "cho xem; cho thấy; chứng tỏ; bày tỏ (見せる)",
+            "KIẾN"
+          ],
+          [
+            "言う",
+            "いう",
+            "nói",
+            "NGÔN"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
           ]
         ]
       }
@@ -634,6 +1698,176 @@
             "さんぽ",
             "đi dạo"
           ]
+        ],
+        "words": [
+          [
+            "引っ越し",
+            "ひっこし",
+            "chuyển nhà",
+            "DẪN VIỆT"
+          ],
+          [
+            "一緒に",
+            "いっしょに",
+            "cùng; cùng nhau; hợp thành một",
+            "NHẤT TỰ"
+          ],
+          [
+            "半年前",
+            "はんとしまえ",
+            "nửa năm trước",
+            "BÁN NIÊN TIỀN"
+          ],
+          [
+            "喫茶店",
+            "きっさてん",
+            "quán cà phê; quán trà; quán nước; tiệm giải khát; quán giải khát",
+            "KHIẾT TRÀ ĐIẾM"
+          ],
+          [
+            "楽しみ",
+            "たのしみ",
+            "mong chờ, háo hức",
+            "LẠC"
+          ],
+          [
+            "一人",
+            "ひとり",
+            "một người",
+            "NHẤT NHÂN"
+          ],
+          [
+            "会社",
+            "かいしゃ",
+            "công ty",
+            "HỘI XÃ"
+          ],
+          [
+            "住ん",
+            "すん",
+            "có thể giải quyết; có thể đối phó được; cư trú; ở; trả nợ; trả xong; trú; trú ngụ (住む)",
+            "TRỤ"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "出て",
+            "でて",
+            "Ra ngoài.",
+            "XUẤT"
+          ],
+          [
+            "卒業",
+            "そつぎょう",
+            "tốt nghiệp",
+            "TỐT NGHIỆP"
+          ],
+          [
+            "大学",
+            "だいがく",
+            "đại học",
+            "ĐẠI HỌC"
+          ],
+          [
+            "季節",
+            "きせつ",
+            "mùa; thời vụ; thời tiết",
+            "QUÝ TIẾT"
+          ],
+          [
+            "家族",
+            "かぞく",
+            "gia đình",
+            "GIA TỘC"
+          ],
+          [
+            "広い",
+            "ひろい",
+            "rộng; rộng rãi; rộng lớn",
+            "QUẢNG"
+          ],
+          [
+            "散歩",
+            "さんぽ",
+            "đi dạo",
+            "TÁN BỘ"
+          ],
+          [
+            "行く",
+            "いく",
+            "đi",
+            "HÀNH"
+          ],
+          [
+            "見た",
+            "みた",
+            "Thấy chưa.",
+            "HIỆN"
+          ],
+          [
+            "近所",
+            "きんじょ",
+            "hàng xóm, vùng lân cận",
+            "CẬN SỞ"
+          ],
+          [
+            "週末",
+            "しゅうまつ",
+            "cuối tuần; kì nghỉ cuối tuần",
+            "CHU MẠT"
+          ],
+          [
+            "遠か",
+            "とおか",
+            "nơi xa; phía xa; đằng xa (遠く)",
+            "VIỄN"
+          ],
+          [
+            "飲ん",
+            "のん",
+            "húp; uống (飲む)",
+            "ẨM"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "家",
+            "いえ",
+            "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+            "GIA"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "花",
+            "はな",
+            "bông hoa; đóa hoa; hoa; huê",
+            "HOA"
+          ],
+          [
+            "茶",
+            "ちゃ",
+            "chè; trà",
+            "TRÀ"
+          ]
         ]
       },
       {
@@ -665,6 +1899,92 @@
             "じょうず",
             "giỏi, khéo"
           ]
+        ],
+        "words": [
+          [
+            "木の下",
+            "このした",
+            "dưới cái cây",
+            "MỘC HẠ"
+          ],
+          [
+            "上手",
+            "じょうず",
+            "giỏi, khéo",
+            "THƯỢNG THỦ"
+          ],
+          [
+            "先週",
+            "せんしゅう",
+            "tuần trước",
+            "TIÊN CHU"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "放送",
+            "ほうそう",
+            "sự phát thanh; sự loan truyền",
+            "PHÓNG TỐNG"
+          ],
+          [
+            "散歩",
+            "さんぽ",
+            "đi dạo",
+            "TÁN BỘ"
+          ],
+          [
+            "最初",
+            "さいしょ",
+            "ban đầu",
+            "TỐI SƠ"
+          ],
+          [
+            "練習",
+            "れんしゅう",
+            "luyện tập",
+            "LUYỆN TẬP"
+          ],
+          [
+            "聞こ",
+            "きこ",
+            "Nghe thấy",
+            "VĂN"
+          ],
+          [
+            "音楽",
+            "おんがく",
+            "âm nhạc",
+            "ÂM LẠC"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
+          ],
+          [
+            "音",
+            "おと",
+            "âm thanh",
+            "ÂM"
+          ]
         ]
       },
       {
@@ -686,6 +2006,146 @@
             "えんりょ",
             "e ngại, giữ ý"
           ]
+        ],
+        "words": [
+          [
+            "思い出しました",
+            "おもいだしました",
+            "nhớ lại",
+            "TƯ XUẤT"
+          ],
+          [
+            "思い出し",
+            "おもいだし",
+            "nhìn lại; nhớ; nhớ về; nhớ ra; nghĩ về; liên tưởng tới; liên tưởng đến (思い出す)",
+            "TƯ XUẤT"
+          ],
+          [
+            "大きい",
+            "おおきい",
+            "bự; to lớn; to; lớn",
+            "ĐẠI"
+          ],
+          [
+            "子ども",
+            "こども",
+            "trẻ em; trẻ con",
+            "TỬ"
+          ],
+          [
+            "良さそ",
+            "よさそ",
+            "Có vẻ ổn.",
+            "LƯƠNG"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "出し",
+            "だし",
+            "cung cấp; nước luộc thịt; cái cớ; lời xin lỗi; sự giả vờ; người bị lừa gạt; đối diện người đàn ông",
+            "XUẤT"
+          ],
+          [
+            "卒業",
+            "そつぎょう",
+            "tốt nghiệp",
+            "TỐT NGHIỆP"
+          ],
+          [
+            "大学",
+            "だいがく",
+            "đại học",
+            "ĐẠI HỌC"
+          ],
+          [
+            "弾い",
+            "ひい",
+            "Chơi",
+            "ĐÀN"
+          ],
+          [
+            "弾け",
+            "ひけ",
+            "nổ mở; để chia ra từng phần mở; để bật ra (弾ける)",
+            "ĐÀN"
+          ],
+          [
+            "思わ",
+            "おもわ",
+            "nghĩ; cho rằng; tưởng; cảm thấy (思う)",
+            "TƯ"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "近所",
+            "きんじょ",
+            "hàng xóm, vùng lân cận",
+            "CẬN SỞ"
+          ],
+          [
+            "遠慮",
+            "えんりょ",
+            "e ngại, giữ ý",
+            "VIỄN LỰ"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "家",
+            "いえ",
+            "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+            "GIA"
+          ],
+          [
+            "男",
+            "おとこ",
+            "đàn ông; người đàn ông; nam; trai; nam giới; phái nam",
+            "NAM"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "誰",
+            "だれ",
+            "ai",
+            "THÙY"
+          ],
+          [
+            "音",
+            "おと",
+            "âm thanh",
+            "ÂM"
+          ]
         ]
       },
       {
@@ -706,6 +2166,122 @@
             "場所",
             "ばしょ",
             "địa điểm"
+          ]
+        ],
+        "words": [
+          [
+            "恥ずかしい",
+            "はずかしい",
+            "xấu hổ, ngượng",
+            "SỈ"
+          ],
+          [
+            "恥ずかしか",
+            "はずかしか",
+            "ê mặt; e ngại; ngượng; ngượng ngùng; thẹn; tủi thẹn; xấu hổ (恥ずかしい)",
+            "SỈ"
+          ],
+          [
+            "慣れて",
+            "なれて",
+            "quen dần",
+            "QUÁN"
+          ],
+          [
+            "気持ち",
+            "きもち",
+            "cảm giác; cảm tình; tâm địa; tính tình; tâm tính; tấm lòng; tâm trạng",
+            "KHÍ TRÌ"
+          ],
+          [
+            "行って",
+            "いって",
+            "Anh làm được mà.",
+            "HÀNG"
+          ],
+          [
+            "今日",
+            "きょう",
+            "ngày nay",
+            "KIM NHẬT"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "場所",
+            "ばしょ",
+            "địa điểm",
+            "TRÀNG SỞ"
+          ],
+          [
+            "弾い",
+            "ひい",
+            "Chơi",
+            "ĐÀN"
+          ],
+          [
+            "弾く",
+            "ひく",
+            "chơi; đàn; gảy",
+            "ĐÀN"
+          ],
+          [
+            "弾け",
+            "ひけ",
+            "nổ mở; để chia ra từng phần mở; để bật ra (弾ける)",
+            "ĐÀN"
+          ],
+          [
+            "慣れ",
+            "なれ",
+            "kinh nghiệm; thực hành",
+            "QUÁN"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "最初",
+            "さいしょ",
+            "ban đầu",
+            "TỐI SƠ"
+          ],
+          [
+            "見つ",
+            "みつ",
+            "Tìm thấy",
+            "HIỆN"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "所",
+            "ところ",
+            "nơi; chỗ; vùng nổi tiếng về một sản phẩm nào đó; trung tâm; khu vực; nơi hoặc bộ phận xảy ra hành động; đối tượng của hành động; nơi đáng để làm gì đó; điểm đáng làm gì đó; những người thuộc một tầng lớp hoặc địa vị nhất định; địa điểm; điểm; cơ sở; văn phòng; trụ sở; cơ quan; viện; điều được...; cái được...; những gì..; đơn vị đếm địa điểm",
+            "SỞ"
+          ],
+          [
+            "気",
+            "き",
+            "cách nghĩ; ý đồ; tâm tư; quan niệm; chú ý; lưu tâm; hô hấp; thở; khí; không khí; khí lớn; khí thể; khí chưng từ nước; khí vị; hơi; lòng luyến mộ; tình ý; suy nghĩ; tư lự; tâm lí; tâm tình; tình tự; cảm giác; cảm thụ; cảm tình; tính cách; lề thói; tính trời sinh; khí độ; tinh thần; tâm thần; khí chất; có vẻ; trông như; dường như; dấu hiệu; dấu vết; một chút; mùi hương tỏa ra; hương vị; sự hiện diện; trạng thái tâm trí; cảm nhận; thời tiết; khí hậu; bệnh tật; ốm đau; dấu hiệu chuyển dạ; bắt đầu sinh con; hơi hơi; mơ hồ; có vẻ như; trông có vẻ; bản chất; dáng vẻ; xu hướng",
+            "KHÍ"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
           ]
         ]
       }
@@ -772,6 +2348,44 @@
             "ぶんしょう",
             "bài văn, đoạn văn"
           ]
+        ],
+        "words": [
+          [
+            "卒業式",
+            "そつぎょうしき",
+            "lễ tốt nghiệp",
+            "TỐT NGHIỆP THỨC"
+          ],
+          [
+            "中西",
+            "なかにし",
+            "Trung Tây",
+            "TRUNG TÂY"
+          ],
+          [
+            "先生",
+            "せんせい",
+            "thầy/cô giáo",
+            "TIÊN SANH"
+          ],
+          [
+            "文章",
+            "ぶんしょう",
+            "bài văn, đoạn văn",
+            "VĂN CHƯƠNG"
+          ],
+          [
+            "書い",
+            "かい",
+            "Viết",
+            "THƯ"
+          ],
+          [
+            "送っ",
+            "おくっ",
+            "gửi; truyền; tiễn biệt; tiễn chân; tiễn đưa (送る)",
+            "TỐNG"
+          ]
         ]
       },
       {
@@ -792,6 +2406,80 @@
             "頼んで",
             "たのんで",
             "nhờ vả"
+          ]
+        ],
+        "words": [
+          [
+            "言って",
+            "いって",
+            "Anh có thể...",
+            "NGÔN"
+          ],
+          [
+            "頼んで",
+            "たのんで",
+            "nhờ vả",
+            "LẠI"
+          ],
+          [
+            "中西",
+            "なかにし",
+            "Trung Tây",
+            "TRUNG TÂY"
+          ],
+          [
+            "先生",
+            "せんせい",
+            "thầy/cô giáo",
+            "TIÊN SANH"
+          ],
+          [
+            "前川",
+            "まえかわ",
+            "Maekawa",
+            "TIỀN XUYÊN"
+          ],
+          [
+            "心配",
+            "しんぱい",
+            "lo lắng",
+            "TÂM PHỐI"
+          ],
+          [
+            "練習",
+            "れんしゅう",
+            "luyện tập",
+            "LUYỆN TẬP"
+          ],
+          [
+            "見ま",
+            "みま",
+            "Nhìn",
+            "HIỆN"
+          ],
+          [
+            "話せ",
+            "はなせ",
+            "để đang hiểu; nói chuyện (話せる)",
+            "THOẠI"
+          ],
+          [
+            "頼ん",
+            "たのん",
+            "cậy; khất; năn nỉ; nhờ; trông; trông cậy; yêu cầu; đề nghị; nhờ cậy (頼む)",
+            "LẠI"
+          ],
+          [
+            "高木",
+            "こうぼく",
+            "cây đại mộc; takagi; họ người nhật; cây thân gỗ cao; cây đại thụ",
+            "CAO MỘC"
+          ],
+          [
+            "前",
+            "まえ",
+            "đằng trước; phần đầu; phần trước; trước đây",
+            "TIỀN"
           ]
         ]
       }
@@ -836,6 +2524,110 @@
             "とりかえて",
             "đổi lấy"
           ]
+        ],
+        "words": [
+          [
+            "取り替えて",
+            "とりかえて",
+            "đổi lấy",
+            "THỦ THẾ"
+          ],
+          [
+            "お客様",
+            "おきゃくさま",
+            "khách hàng",
+            "KHÁCH DẠNG"
+          ],
+          [
+            "午前中",
+            "ごぜんちゅう",
+            "cả buổi sáng; suốt buổi sáng; suốt sáng; trong vòng buổi sáng; vào buổi sáng",
+            "NGỌ TIỀN TRUNG"
+          ],
+          [
+            "新しい",
+            "あたらしい",
+            "mới, tươi",
+            "TÂN"
+          ],
+          [
+            "上田",
+            "じょうでん",
+            "gạo cao giải quyết; gạo rất phì nhiêu giải quyết; ueda; họ của người nhật; thành phố ở phía đông tỉnh nagano; nhật bản",
+            "THƯỢNG ĐIỀN"
+          ],
+          [
+            "取り",
+            "とり",
+            "lấy; thu thập; sưu tầm; võ sĩ nhận bổng lộc bằng gạo; lễ vật bánh giầy làm từ lượng gạo nhất định; người nhận mức lương nhất định; kỹ nữ hạng thấp nhận mức phí nhất định",
+            "THỦ"
+          ],
+          [
+            "客様",
+            "きゃくさま",
+            "Khách hàng",
+            "KHÁCH DẠNG"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "替え",
+            "かえ",
+            "thay đổi; sự thay đổi; người thay thế",
+            "THẾ"
+          ],
+          [
+            "来た",
+            "きた",
+            "Anh ta đến rồi.",
+            "LAI"
+          ],
+          [
+            "来ま",
+            "きま",
+            "Đến đây",
+            "LAI"
+          ],
+          [
+            "洋服",
+            "ようふく",
+            "quần áo kiểu Âu",
+            "DƯƠNG PHỤC"
+          ],
+          [
+            "置い",
+            "おい",
+            "Đặt",
+            "TRÍ"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "日",
+            "ひ",
+            "mặt trời; ngày; đơn vị đếm ngày",
+            "NHẬT"
+          ],
+          [
+            "時",
+            "とき",
+            "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+            "THÌ"
+          ],
+          [
+            "様",
+            "よう",
+            "cách thức; có vẻ; như thể; như là; để",
+            "DẠNG"
+          ]
         ]
       },
       {
@@ -851,6 +2643,62 @@
             "大丈夫",
             "だいじょうぶ",
             "ổn, không sao"
+          ]
+        ],
+        "words": [
+          [
+            "大丈夫",
+            "だいじょうぶ",
+            "ổn, không sao",
+            "ĐẠI TRƯỢNG PHU"
+          ],
+          [
+            "新しい",
+            "あたらしい",
+            "mới, tươi",
+            "TÂN"
+          ],
+          [
+            "汚れて",
+            "よごれて",
+            "bị bẩn",
+            "Ô"
+          ],
+          [
+            "山野",
+            "さんや",
+            "đồi và ruộng; nông thôn; núi rừng và đồng nội; đồi núi và đồng bằng; thiên nhiên",
+            "SAN DÃ"
+          ],
+          [
+            "汚れ",
+            "よごれ",
+            "bẩn; vệt bẩn; sự ô uế; sự dơ bẩn; sự đồi bại; sự mất đi vẻ thanh khiết; sự ô nhục; vết nhơ; sự làm nhục danh dự; sự uế tạp; sự không sạch sẽ",
+            "Ô"
+          ],
+          [
+            "買っ",
+            "かっ",
+            "mua; sắm; chuốc lấy; gặp phải; đánh giá cao (買う)",
+            "MÃI"
+          ],
+          [
+            "願い",
+            "ねがい",
+            "yêu cầu; nguyện cầu; mong ước",
+            "NGUYỆN"
+          ],
+          [
+            "日",
+            "ひ",
+            "mặt trời; ngày; đơn vị đếm ngày",
+            "NHẬT"
+          ],
+          [
+            "月",
+            "つき",
+            "mặt trăng; thái âm; tháng; trăng; vầng trăng",
+            "NGUYỆT"
           ]
         ]
       },
@@ -877,6 +2725,104 @@
             "洗えて",
             "あらえて",
             "có thể giặt rửa"
+          ]
+        ],
+        "words": [
+          [
+            "赤ちゃん",
+            "あかちゃん",
+            "cách gọi các cháu bé; trẻ con; em bé; con nhỏ; sơ sinh; trẻ sơ sinh",
+            "XÍCH"
+          ],
+          [
+            "大丈夫",
+            "だいじょうぶ",
+            "ổn, không sao",
+            "ĐẠI TRƯỢNG PHU"
+          ],
+          [
+            "大好き",
+            "だいすき",
+            "rất thích",
+            "ĐẠI HẢO"
+          ],
+          [
+            "洗えて",
+            "あらえて",
+            "có thể giặt rửa",
+            "TẨY"
+          ],
+          [
+            "会社",
+            "かいしゃ",
+            "công ty",
+            "HỘI XÃ"
+          ],
+          [
+            "何回",
+            "なんかい",
+            "bao lần",
+            "HÀ HỒI"
+          ],
+          [
+            "作り",
+            "つくり",
+            "đồ hoá trang; son phấn; sự hoá trang; cách sắp trang; cấu tạo; bản chất; tính chất; kết cấu; cấu trúc; công trình kiến trúc; công trình xây dựng; cơ thể vóc người; dạng người",
+            "TÁC"
+          ],
+          [
+            "便利",
+            "べんり",
+            "tiện lợi",
+            "TIỆN LỢI"
+          ],
+          [
+            "入れ",
+            "いれ",
+            "cho vào; bỏ vào; pha",
+            "NHẬP"
+          ],
+          [
+            "困り",
+            "こまり",
+            "bối rối; khó khăn; lúng túng (困る)",
+            "KHỐN"
+          ],
+          [
+            "新聞",
+            "しんぶん",
+            "tờ báo",
+            "TÂN VĂN"
+          ],
+          [
+            "洗え",
+            "あらえ",
+            "Tắm rửa đi!",
+            "TẨY"
+          ],
+          [
+            "遊ぶ",
+            "あそぶ",
+            "nô đùa; vui đùa; chơi; trở nên thô bạo; mất đi sự điềm tĩnh; trở nên hoang tàn; trở nên tiêu điều; trở nên cẩu thả; sa sút do thiếu tập trung; trở nên dữ dội; gào thét; thổi mạnh; lắng xuống; dịu đi; mất đà; làm theo ý muốn; vui chơi; đùa giỡn; dạo chơi; tự tiêu khiển; làm theo ý thích; tận hưởng bản thân; làm gì đó một cách mãnh liệt; làm gì đó một cách dữ dội; chơi đùa; tận hưởng; lười biếng; rong chơi",
+            "DU"
+          ],
+          [
+            "口",
+            "くち",
+            "cửa; miệng; chỗ cho vào; chỗ ra vào; mồm; mỏ; lời nói",
+            "KHẨU"
+          ],
+          [
+            "紙",
+            "かみ",
+            "giấy",
+            "CHỈ"
+          ],
+          [
+            "親",
+            "おや",
+            "bố mẹ",
+            "THÂN"
           ]
         ]
       }
@@ -932,6 +2878,80 @@
             "えき",
             "nhà ga"
           ]
+        ],
+        "words": [
+          [
+            "女の人",
+            "おんなのひと",
+            "phụ nữ; đàn bà; nữ",
+            "NỮ NHÂN"
+          ],
+          [
+            "予約",
+            "よやく",
+            "đặt trước",
+            "DƯ ƯỚC"
+          ],
+          [
+            "森田",
+            "もりた",
+            "Morita",
+            "SÂM ĐIỀN"
+          ],
+          [
+            "行き",
+            "いき",
+            "sự đi lại",
+            "HÀNH"
+          ],
+          [
+            "話し",
+            "はなし",
+            "nói; lời nói; tán gẫu; câu chuyện; cuộc nói chuyện",
+            "THOẠI"
+          ],
+          [
+            "電話",
+            "でんわ",
+            "điện thoại",
+            "ĐIỆN THOẠI"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "前",
+            "まえ",
+            "đằng trước; phần đầu; phần trước; trước đây",
+            "TIỀN"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "時",
+            "とき",
+            "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+            "THÌ"
+          ],
+          [
+            "駅",
+            "えき",
+            "nhà ga",
+            "DỊCH"
+          ]
         ]
       },
       {
@@ -958,6 +2978,74 @@
             "ゆうびんきょく",
             "bưu điện"
           ]
+        ],
+        "words": [
+          [
+            "女の人",
+            "おんなのひと",
+            "phụ nữ; đàn bà; nữ",
+            "NỮ NHÂN"
+          ],
+          [
+            "郵便局",
+            "ゆうびんきょく",
+            "bưu điện",
+            "BƯU TIỆN CỤC"
+          ],
+          [
+            "左側",
+            "ひだりがわ",
+            "bên trái",
+            "TẢ TRẮC"
+          ],
+          [
+            "来る",
+            "くる",
+            "đến; tới; sắp tới; tới đây; vào ngày; đang đến gần; trở nên vô dụng; cũ kỹ; già yếu; lẩm cẩm; phải lòng; say mê; si mê; đã và đang; tiếp diễn cho đến nay; duy trì tới tận bây giờ",
+            "LAI"
+          ],
+          [
+            "見え",
+            "みえ",
+            "hiện ra; màn hình; sự xuất hiện; tính kiêu căng; mê hoặc; sự hấp dẫn",
+            "KIẾN"
+          ],
+          [
+            "銀行",
+            "ぎんこう",
+            "ngân hàng",
+            "NGÂN HÀNH"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "前",
+            "まえ",
+            "đằng trước; phần đầu; phần trước; trước đây",
+            "TIỀN"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "道",
+            "みち",
+            "con đường",
+            "ĐẠO"
+          ],
+          [
+            "階",
+            "かい",
+            "lầu; tầng; cầu thang; bậc thang; nấc thang; địa vị xã hội; thân thế; cấp bậc; dòng dõi; nhân cách; tính cách; phẩm giá; cầu thang nối từ sân vào nhà",
+            "GIAI"
+          ]
         ]
       },
       {
@@ -968,6 +3056,38 @@
             "右側",
             "みぎがわ",
             "bên phải"
+          ]
+        ],
+        "words": [
+          [
+            "女の人",
+            "おんなのひと",
+            "phụ nữ; đàn bà; nữ",
+            "NỮ NHÂN"
+          ],
+          [
+            "右側",
+            "みぎがわ",
+            "bên phải",
+            "HỮU TRẮC"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "道",
+            "みち",
+            "con đường",
+            "ĐẠO"
           ]
         ]
       }
@@ -1017,6 +3137,104 @@
             "おんがくばんぐみ",
             "chương trình âm nhạc"
           ]
+        ],
+        "words": [
+          [
+            "懐かしい",
+            "なつかしい",
+            "hoài niệm, thân thương",
+            "HOÀI"
+          ],
+          [
+            "押し入れ",
+            "おしいれ",
+            "tủ tường",
+            "ÁP NHẬP"
+          ],
+          [
+            "音楽番組",
+            "おんがくばんぐみ",
+            "chương trình âm nhạc",
+            "ÂM LẠC BA TỔ"
+          ],
+          [
+            "大好き",
+            "だいすき",
+            "rất thích",
+            "ĐẠI HẢO"
+          ],
+          [
+            "高校生",
+            "こうこうせい",
+            "học sinh cấp ba; học sinh trung học",
+            "CAO GIÁO SANH"
+          ],
+          [
+            "先日",
+            "せんじつ",
+            "mấy hôm trước",
+            "TIÊN NHẬT"
+          ],
+          [
+            "入れ",
+            "いれ",
+            "cho vào; bỏ vào; pha",
+            "NHẬP"
+          ],
+          [
+            "出て",
+            "でて",
+            "Ra ngoài.",
+            "XUẤT"
+          ],
+          [
+            "古い",
+            "ふるい",
+            "cũ",
+            "CỔ"
+          ],
+          [
+            "流れ",
+            "ながれ",
+            "dòng chảy; chu trình; quá trình; mạch; luồng",
+            "LƯU"
+          ],
+          [
+            "番組",
+            "ばんぐみ",
+            "chương trình tivi; kênh",
+            "PHIÊN TỔ"
+          ],
+          [
+            "続け",
+            "つづけ",
+            "còn; lằng nhằng; liên tục; tiếp tục (続ける)",
+            "TỤC"
+          ],
+          [
+            "聞き",
+            "きき",
+            "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+            "VĂN"
+          ],
+          [
+            "声",
+            "こえ",
+            "tiếng; giọng nói; lời nói; thanh điệu của chữ hán hoặc từ tiếng nhật; dấu thanh dùng ở góc chữ để chỉ cao độ; ngữ điệu; cao độ; cường độ phát âm",
+            "THANH"
+          ],
+          [
+            "父",
+            "ちち",
+            "bố; cha; gia phụ; phụ thân; thân phụ; thầy; người cha",
+            "PHỤ"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -1043,6 +3261,74 @@
             "べんり",
             "tiện lợi"
           ]
+        ],
+        "words": [
+          [
+            "便利",
+            "べんり",
+            "tiện lợi",
+            "TIỆN LỢI"
+          ],
+          [
+            "勉強",
+            "べんきょう",
+            "học tập",
+            "MIỄN CƯỠNG"
+          ],
+          [
+            "情報",
+            "じょうほう",
+            "thông tin",
+            "TÌNH BÁO"
+          ],
+          [
+            "最新",
+            "さいしん",
+            "mới nhất",
+            "TỐI TÂN"
+          ],
+          [
+            "知る",
+            "しる",
+            "biết; hay tin; nhận ra",
+            "TRI"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "身近",
+            "みぢか",
+            "gần gũi",
+            "THÂN CẬN"
+          ],
+          [
+            "音楽",
+            "おんがく",
+            "âm nhạc",
+            "ÂM LẠC"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -1058,6 +3344,80 @@
             "当然",
             "とうぜん",
             "đương nhiên"
+          ]
+        ],
+        "words": [
+          [
+            "減って",
+            "へって",
+            "giảm đi",
+            "GIẢM"
+          ],
+          [
+            "好き",
+            "すき",
+            "sự thích; yêu; quý; mến; thích; ưa; chuộng; người yêu thích; người say mê; được lòng; có duyên; thu hút; hấp dẫn",
+            "HẢO"
+          ],
+          [
+            "当然",
+            "とうぜん",
+            "đương nhiên",
+            "ĐƯƠNG NHIÊN"
+          ],
+          [
+            "減っ",
+            "へっ",
+            "giảm; suy giảm; giảm bớt; bị mòn; bị hao mòn; đói; đói bụng; suy yếu; kiệt sức (減る)",
+            "GIẢM"
+          ],
+          [
+            "知り",
+            "しり",
+            "biết; hay tin; nhận ra (知る)",
+            "TRI"
+          ],
+          [
+            "聞き",
+            "きき",
+            "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+            "VĂN"
+          ],
+          [
+            "聞く",
+            "きく",
+            "nghe; hỏi",
+            "VĂN"
+          ],
+          [
+            "聞け",
+            "きけ",
+            "kể; nghe (聞ける)",
+            "VĂN"
+          ],
+          [
+            "見ら",
+            "みら",
+            "coi; ngắm; ngó; nhìn thấy; nhìn xem; nhìn; xem; nhòm; nhòm ngó (見る)",
+            "KIẾN"
+          ],
+          [
+            "音楽",
+            "おんがく",
+            "âm nhạc",
+            "ÂM LẠC"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
           ]
         ]
       },
@@ -1079,6 +3439,122 @@
             "掃除",
             "そうじ",
             "dọn dẹp"
+          ]
+        ],
+        "words": [
+          [
+            "手に入る",
+            "てにはいる",
+            "sở hữu; có trong tay; có thể mua",
+            "THỦ NHẬP"
+          ],
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "仕事",
+            "しごと",
+            "công việc; sự làm việc; sự tác nghiệp; sự thực hiện; sự làm; sự hành động; sự bày trò; sự giở thủ đoạn; thành tựu; thành quả; kết quả; công việc may vá; việc may vá; công; công của lực",
+            "SĨ SỰ"
+          ],
+          [
+            "作業",
+            "さぎょう",
+            "thao tác",
+            "TÁC NGHIỆP"
+          ],
+          [
+            "情報",
+            "じょうほう",
+            "thông tin",
+            "TÌNH BÁO"
+          ],
+          [
+            "掃除",
+            "そうじ",
+            "dọn dẹp",
+            "TẢO TRỪ"
+          ],
+          [
+            "料理",
+            "りょうり",
+            "bữa ăn; sự nấu ăn; món ăn",
+            "LIỆU LÍ"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "聞こ",
+            "きこ",
+            "Nghe thấy",
+            "VĂN"
+          ],
+          [
+            "運転",
+            "うんてん",
+            "lái xe",
+            "VẬN CHUYỂN"
+          ],
+          [
+            "離せ",
+            "はなせ",
+            "- Làm ơn.",
+            "LY"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
+          ],
+          [
+            "畑",
+            "はたけ",
+            "ruộng; ruộng nương",
+            ""
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "耳",
+            "みみ",
+            "cái tai; tai",
+            "NHĨ"
+          ],
+          [
+            "車",
+            "くるま",
+            "bánh xe; mô tô; ô tô; xe; xe cộ; xe hơi; xe chở hàng; xe ô-tô",
+            "XA"
           ]
         ]
       }
@@ -1150,6 +3626,164 @@
             "ぜんぜん",
             "hoàn toàn không"
           ]
+        ],
+        "words": [
+          [
+            "悩んで",
+            "なやんで",
+            "lo lắng, phiền muộn",
+            "NÃO"
+          ],
+          [
+            "時間前",
+            "じかんまえ",
+            "giờ trước",
+            "THÌ GIAN TIỀN"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "全然",
+            "ぜんぜん",
+            "hoàn toàn không",
+            "TOÀN NHIÊN"
+          ],
+          [
+            "変わ",
+            "かわ",
+            "Thay đổi",
+            "BIẾN"
+          ],
+          [
+            "寝る",
+            "ねる",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ",
+            "TẨM"
+          ],
+          [
+            "布団",
+            "ふとん",
+            "chăn đệm",
+            "BỐ ĐOÀN"
+          ],
+          [
+            "悩ん",
+            "なやん",
+            "khổ đau; lo lắng; buồn phiền; lo buồn; lo phiền; ưu tư (悩む)",
+            "NÃO"
+          ],
+          [
+            "昼間",
+            "ひるま",
+            "ban ngày",
+            "TRÚ GIAN"
+          ],
+          [
+            "時間",
+            "じかん",
+            "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+            "THÌ GIAN"
+          ],
+          [
+            "最近",
+            "さいきん",
+            "gần đây",
+            "TỐI CẬN"
+          ],
+          [
+            "決ま",
+            "きま",
+            "Quyết định",
+            "QUYẾT"
+          ],
+          [
+            "疲れ",
+            "つかれ",
+            "sự mệt mỏi; sự uể oải; sự kiệt sức",
+            "BÌ"
+          ],
+          [
+            "眠く",
+            "ねむく",
+            "buồn ngủ (眠い)",
+            "MIÊN"
+          ],
+          [
+            "眠る",
+            "ねむる",
+            "giấc; ngủ; thiếp",
+            "MIÊN"
+          ],
+          [
+            "眠れ",
+            "ねむれ",
+            "Thôi đi ngủ thôi. Đi ngủ nào.",
+            "MIÊN"
+          ],
+          [
+            "短く",
+            "みじかく",
+            "cụt; hụt; ngắn (短い)",
+            "ĐOẢN"
+          ],
+          [
+            "続け",
+            "つづけ",
+            "còn; lằng nhằng; liên tục; tiếp tục (続ける)",
+            "TỤC"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "走る",
+            "はしる",
+            "chạy; tẩu",
+            "TẨU"
+          ],
+          [
+            "起き",
+            "おき",
+            "dấy; đứng dậy; ngồi dậy; bình phục; nhen nhúm; thức; thức dậy; dậy; xảy ra (起きる)",
+            "KHỞI"
+          ],
+          [
+            "週間",
+            "しゅうかん",
+            "hàng tuần; tuần lễ",
+            "CHU GIAN"
+          ],
+          [
+            "運動",
+            "うんどう",
+            "vận động",
+            "VẬN ĐỘNG"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "朝",
+            "あさ",
+            "ban sáng; buổi sáng; sáng",
+            "TRIÊU"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ]
         ]
       },
       {
@@ -1181,6 +3815,152 @@
             "ひょうめん",
             "bề mặt"
           ]
+        ],
+        "words": [
+          [
+            "例えば",
+            "たとえば",
+            "chẳng hạn như; thí dụ; tỷ dụ; ví dụ",
+            "LỆ"
+          ],
+          [
+            "時間前",
+            "じかんまえ",
+            "giờ trước",
+            "THÌ GIAN TIỀN"
+          ],
+          [
+            "中心",
+            "ちゅうしん",
+            "trung tâm, vùng lõi",
+            "TRUNG TÂM"
+          ],
+          [
+            "作る",
+            "つくる",
+            "chế biến; làm; tạo; sáng tác; xây dựng; nấu",
+            "TÁC"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "出そ",
+            "だそ",
+            "Ra nào.",
+            "XUẤT"
+          ],
+          [
+            "出て",
+            "でて",
+            "Ra ngoài.",
+            "XUẤT"
+          ],
+          [
+            "変化",
+            "へんか",
+            "sự thay đổi",
+            "BIẾN HÓA"
+          ],
+          [
+            "寝る",
+            "ねる",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ",
+            "TẨM"
+          ],
+          [
+            "温ま",
+            "あたたま",
+            "ấm lên; trở nên ấm áp; nóng lên (温む)",
+            "ÔN"
+          ],
+          [
+            "温度",
+            "おんど",
+            "nhiệt độ",
+            "ÔN ĐỘ"
+          ],
+          [
+            "状態",
+            "じょうたい",
+            "trạng thái",
+            "TRẠNG THÁI"
+          ],
+          [
+            "眠り",
+            "ねむり",
+            "ngủ; giấc ngủ",
+            "MIÊN"
+          ],
+          [
+            "眠れ",
+            "ねむれ",
+            "Thôi đi ngủ thôi. Đi ngủ nào.",
+            "MIÊN"
+          ],
+          [
+            "表面",
+            "ひょうめん",
+            "bề mặt",
+            "BIỂU DIỆN"
+          ],
+          [
+            "調べ",
+            "しらべ",
+            "cuộc điều tra; sự nghiên cứu; sự điều tra",
+            "ĐIỀU"
+          ],
+          [
+            "走っ",
+            "はしっ",
+            "chạy; tẩu (走る)",
+            "TẨU"
+          ],
+          [
+            "軽く",
+            "かるく",
+            "nhẹ (軽い)",
+            "KHINH"
+          ],
+          [
+            "重要",
+            "じゅうよう",
+            "quan trọng",
+            "TRỌNG YẾU"
+          ],
+          [
+            "風呂",
+            "ふろ",
+            "bể tắm; bồn tắm",
+            "PHONG LỮ"
+          ],
+          [
+            "下",
+            "した",
+            "dưới; phía dưới; bên dưới; phần dưới; phần sau; tập sau; dưới một trạng thái hoặc điều kiện nhất định; trong một phạm vi nhất định; hướng đi xuống; phần tiếp theo; thứ hạng thấp; mức độ thấp; địa vị xã hội thấp; dưới ảnh hưởng của; dưới sự kiểm soát của; thuộc thẩm quyền của; dưới quyền chỉ huy của; cấp dưới của; hậu tố tôn kính dùng sau chức danh của người có địa vị cao; hậu tố dùng sau tên trong thư từ để thể hiện sự tôn trọng; di chuyển từ trên xuống dưới; đi xuống; rơi; đi từ thủ đô về các tỉnh; đi về phía nam; ban cho; ban tặng; treo lơ lửng; rủ xuống; được treo; giảm; hạ xuống; lùi lại; rút lui; nghỉ hưu; di chuyển về phía nam; gốc; chân; bên cạnh ai đó; cùng với ai đó; gần ai đó; dưới sự cai trị của ai đó; dưới sự giám sát của ai đó; dưới một quy định; trong tình trạng; chỉ với một",
+            "HẠ"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "熱",
+            "ねつ",
+            "nhiệt độ; nhiệt tình; sức bật; sự say sưa; phát sốt; sốt; nhiệt; hơi nóng; cơn sốt",
+            "NHIỆT"
+          ]
         ]
       },
       {
@@ -1207,6 +3987,98 @@
             "まちがい",
             "sai lầm"
           ]
+        ],
+        "words": [
+          [
+            "逆効果",
+            "ぎゃくこうか",
+            "phản tác dụng",
+            "NGHỊCH HIỆU QUẢ"
+          ],
+          [
+            "間違い",
+            "まちがい",
+            "sai lầm",
+            "GIAN VI"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "寝る",
+            "ねる",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ",
+            "TẨM"
+          ],
+          [
+            "書い",
+            "かい",
+            "Viết",
+            "THƯ"
+          ],
+          [
+            "注意",
+            "ちゅうい",
+            "chú ý",
+            "CHÚ Ý"
+          ],
+          [
+            "温ま",
+            "あたたま",
+            "ấm lên; trở nên ấm áp; nóng lên (温む)",
+            "ÔN"
+          ],
+          [
+            "熱い",
+            "あつい",
+            "nóng; nóng bỏng; nhiệt tình",
+            "NHIỆT"
+          ],
+          [
+            "直前",
+            "ちょくぜん",
+            "ngay trước khi",
+            "TRỰC TIỀN"
+          ],
+          [
+            "眠く",
+            "ねむく",
+            "buồn ngủ (眠い)",
+            "MIÊN"
+          ],
+          [
+            "運動",
+            "うんどう",
+            "vận động",
+            "VẬN ĐỘNG"
+          ],
+          [
+            "風呂",
+            "ふろ",
+            "bể tắm; bồn tắm",
+            "PHONG LỮ"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "頭",
+            "あたま",
+            "đầu",
+            "ĐẦU"
+          ]
         ]
       },
       {
@@ -1222,6 +4094,122 @@
             "方法",
             "ほうほう",
             "phương pháp"
+          ]
+        ],
+        "words": [
+          [
+            "頑張って",
+            "がんばって",
+            "cố gắng",
+            "NGOAN TRƯƠNG"
+          ],
+          [
+            "思って",
+            "おもって",
+            "Nghĩ rằng",
+            "TƯ"
+          ],
+          [
+            "知って",
+            "しって",
+            "Biết rồi",
+            "TRI"
+          ],
+          [
+            "頑張っ",
+            "がんばっ",
+            "cố; cố gắng; nỗ lực (頑張る)",
+            "NGOAN TRƯƠNG"
+          ],
+          [
+            "一人",
+            "ひとり",
+            "một người",
+            "NHẤT NHÂN"
+          ],
+          [
+            "以外",
+            "いがい",
+            "ngoài ra; ngoài; ngoại trừ",
+            "DĨ NGOẠI"
+          ],
+          [
+            "入っ",
+            "いっっ",
+            "đi vào; vào; bước vào; đi vô; vô (入る)",
+            "NHẬP"
+          ],
+          [
+            "好き",
+            "すき",
+            "sự thích; yêu; quý; mến; thích; ưa; chuộng; người yêu thích; người say mê; được lòng; có duyên; thu hút; hấp dẫn",
+            "HẢO"
+          ],
+          [
+            "実は",
+            "じつは",
+            "kỳ thực; nói thực là; trên thực tế; thực ra; thật ra",
+            "THỰC"
+          ],
+          [
+            "寝よ",
+            "ねよ",
+            "Ngủ đi.",
+            "TẨM"
+          ],
+          [
+            "少し",
+            "すこし",
+            "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+            "THIỂU"
+          ],
+          [
+            "怖い",
+            "こわい",
+            "hãi hùng; sợ; đáng sợ",
+            "PHỐ"
+          ],
+          [
+            "思う",
+            "おもう",
+            "nghĩ; cho rằng; tưởng; cảm thấy",
+            "TƯ"
+          ],
+          [
+            "方法",
+            "ほうほう",
+            "phương pháp",
+            "PHƯƠNG PHÁP"
+          ],
+          [
+            "眠る",
+            "ねむる",
+            "giấc; ngủ; thiếp",
+            "MIÊN"
+          ],
+          [
+            "走る",
+            "はしる",
+            "chạy; tẩu",
+            "TẨU"
+          ],
+          [
+            "運動",
+            "うんどう",
+            "vận động",
+            "VẬN ĐỘNG"
+          ],
+          [
+            "風呂",
+            "ふろ",
+            "bể tắm; bồn tắm",
+            "PHONG LỮ"
+          ],
+          [
+            "夜",
+            "よる",
+            "ban tối; buổi tối; đêm; tối; ban đêm",
+            "DẠ"
           ]
         ]
       }
@@ -1298,6 +4286,110 @@
             "ぼしゅう",
             "tuyển mộ, chiêu mộ"
           ]
+        ],
+        "words": [
+          [
+            "引っ越し",
+            "ひっこし",
+            "chuyển nhà",
+            "DẪN VIỆT"
+          ],
+          [
+            "私たち",
+            "わたしたち",
+            "chúng tôi",
+            "TƯ"
+          ],
+          [
+            "説明会",
+            "せつめいかい",
+            "buổi họp để trình bày giải thích",
+            "THUYẾT MINH HỘI"
+          ],
+          [
+            "人口",
+            "じんこう",
+            "dân số",
+            "NHÂN KHẨU"
+          ],
+          [
+            "先日",
+            "せんじつ",
+            "mấy hôm trước",
+            "TIÊN NHẬT"
+          ],
+          [
+            "募集",
+            "ぼしゅう",
+            "tuyển mộ, chiêu mộ",
+            "MỘ TẬP"
+          ],
+          [
+            "参加",
+            "さんか",
+            "sự tham gia; sự tham dự",
+            "THAM GIA"
+          ],
+          [
+            "夫婦",
+            "ふうふ",
+            "vợ chồng",
+            "PHU PHỤ"
+          ],
+          [
+            "始め",
+            "はじめ",
+            "lúc đầu; đầu tiên; 開始",
+            "THỦY"
+          ],
+          [
+            "東京",
+            "とうきょう",
+            "tokyo nhật bản); lạc dương; kinh đô của nhà hậu hán; đối lập với trường an là kinh đô của nhà tiền hán; khai phong; kinh đô của nhà bắc tống; liêu dương; tên gọi khác của thành phố này dưới thời nhà liêu và nhà kim; long nguyên phủ; tên gọi khác của kinh đô vương quốc bột hải dưới thời nhà đường; tokyo; thủ đô của nhật bản",
+            "ĐÔNG KINH"
+          ],
+          [
+            "減っ",
+            "へっ",
+            "giảm; suy giảm; giảm bớt; bị mòn; bị hao mòn; đói; đói bụng; suy yếu; kiệt sức (減る)",
+            "GIẢM"
+          ],
+          [
+            "田舎",
+            "いなか",
+            "nông thôn, quê",
+            "ĐIỀN XÁ"
+          ],
+          [
+            "町民",
+            "ちょうみん",
+            "dân trong thị trấn; dân trong thành phố",
+            "ĐINH DÂN"
+          ],
+          [
+            "農業",
+            "のうぎょう",
+            "nông nghiệp",
+            "NÔNG NGHIỆP"
+          ],
+          [
+            "開い",
+            "ひらい",
+            "Mở",
+            "KHAI"
+          ],
+          [
+            "夢",
+            "ゆめ",
+            "chiêm bao; giấc mơ; ước mơ; mơ",
+            "MỘNG"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ]
         ]
       },
       {
@@ -1318,6 +4410,104 @@
             "生活",
             "せいかつ",
             "sinh hoạt, cuộc sống"
+          ]
+        ],
+        "words": [
+          [
+            "引っ越し",
+            "ひっこし",
+            "chuyển nhà",
+            "DẪN VIỆT"
+          ],
+          [
+            "人以上",
+            "ひといじょう",
+            "Trên  người",
+            "NHÂN DĨ THƯỚNG"
+          ],
+          [
+            "共通点",
+            "きょうつうてん",
+            "điểm chung",
+            "CỘNG THÔNG ĐIỂM"
+          ],
+          [
+            "楽しく",
+            "たのしく",
+            "dí dỏm; khoái ý; sướng; vui sướng; vui vẻ; vui nhộn; vui tính; vui; khoái lạc; sung sướng (楽しい)",
+            "LẠC"
+          ],
+          [
+            "住ん",
+            "すん",
+            "có thể giải quyết; có thể đối phó được; cư trú; ở; trả nợ; trả xong; trú; trú ngụ (住む)",
+            "TRỤ"
+          ],
+          [
+            "多く",
+            "おおく",
+            "nhiều; đa số; phần lớn; thường",
+            "ĐA"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "来ま",
+            "きま",
+            "Đến đây",
+            "LAI"
+          ],
+          [
+            "毎日",
+            "まいにち",
+            "hàng ngày; mỗi ngày; mọi ngày; ngày ngày; thường ngày",
+            "MỖI NHẬT"
+          ],
+          [
+            "生活",
+            "せいかつ",
+            "sinh hoạt, cuộc sống",
+            "SANH HOẠT"
+          ],
+          [
+            "田舎",
+            "いなか",
+            "nông thôn, quê",
+            "ĐIỀN XÁ"
+          ],
+          [
+            "移り",
+            "うつり",
+            "việc di chuyển; việc chuyển nhà; việc di dời; việc bắt lửa; việc lửa cháy lan",
+            "DI"
+          ],
+          [
+            "退屈",
+            "たいくつ",
+            "buồn chán",
+            "THỐI KHUẤT"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "例",
+            "れい",
+            "ví dụ; thông lệ; thường lệ; tiền lệ; chuyện đã xảy ra; luôn luôn; thường xuyên; tấm gương; khuôn mẫu",
+            "LỆ"
+          ],
+          [
+            "嫌",
+            "いや",
+            "không thích; ghét; khó chịu; không đâu; ôi không",
+            "HIỀM"
           ]
         ]
       },
@@ -1340,6 +4530,116 @@
             "けんとう",
             "cân nhắc, xem xét"
           ]
+        ],
+        "words": [
+          [
+            "検討し",
+            "けんとうし",
+            "bàn; kiểm thảo (検討する)",
+            "KIỂM THẢO"
+          ],
+          [
+            "知って",
+            "しって",
+            "Biết rồi",
+            "TRI"
+          ],
+          [
+            "言って",
+            "いって",
+            "Anh có thể...",
+            "NGÔN"
+          ],
+          [
+            "説明会",
+            "せつめいかい",
+            "buổi họp để trình bày giải thích",
+            "THUYẾT MINH HỘI"
+          ],
+          [
+            "大変",
+            "たいへん",
+            "chết rồi; không xong rồi; kinh khủng quá.v.v..; kinh khủng; ghê gớm; mệt mỏi; khó khăn; vất vả; quá; vô cùng; rất",
+            "ĐẠI BIẾN"
+          ],
+          [
+            "意外",
+            "いがい",
+            "ngạc nhiên; không như đã tính; ngoài dự tính; ngoài dự kiến; hay hơn tưởng tượng; hay hơn... tưởng; nằm ngoài sức tưởng tượng; của trời cho; từ trên trời rơi xuống",
+            "Ý NGOẠI"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "戻っ",
+            "もどっ",
+            "quay lại; trở lại; hồi lại; trái với; đi ngược lại với; vi phạm; bị bóp méo; bị vặn vẹo; bị biến dạng (戻る)",
+            "LỆ"
+          ],
+          [
+            "掃除",
+            "そうじ",
+            "dọn dẹp",
+            "TẢO TRỪ"
+          ],
+          [
+            "来た",
+            "きた",
+            "Anh ta đến rồi.",
+            "LAI"
+          ],
+          [
+            "検討",
+            "けんとう",
+            "cân nhắc, xem xét",
+            "KIỂM THẢO"
+          ],
+          [
+            "毎月",
+            "まいつき",
+            "hàng tháng; mỗi tháng; mọi tháng",
+            "MỖI NGUYỆT"
+          ],
+          [
+            "町内",
+            "ちょうない",
+            "trong phố; trong khu vực; trong vùng",
+            "ĐINH NỘI"
+          ],
+          [
+            "経験",
+            "けいけん",
+            "kinh nghiệm",
+            "KINH NGHIỆM"
+          ],
+          [
+            "農業",
+            "のうぎょう",
+            "nông nghiệp",
+            "NÔNG NGHIỆP"
+          ],
+          [
+            "都会",
+            "とかい",
+            "thành thị",
+            "ĐÔ HỘI"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "例",
+            "れい",
+            "ví dụ; thông lệ; thường lệ; tiền lệ; chuyện đã xảy ra; luôn luôn; thường xuyên; tấm gương; khuôn mẫu",
+            "LỆ"
+          ]
         ]
       },
       {
@@ -1360,6 +4660,86 @@
             "実行",
             "じっこう",
             "thực hiện"
+          ]
+        ],
+        "words": [
+          [
+            "成功例",
+            "せいこうれい",
+            "Ví dụ thành công",
+            "THÀNH CÔNG LỆ"
+          ],
+          [
+            "私たち",
+            "わたしたち",
+            "chúng tôi",
+            "TƯ"
+          ],
+          [
+            "頑張り",
+            "がんばり",
+            "tính ngoan cường; sự chịu đựng",
+            "NGOAN TRƯƠNG"
+          ],
+          [
+            "実行",
+            "じっこう",
+            "thực hiện",
+            "THỰC HÀNH"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "成功",
+            "せいこう",
+            "thành công",
+            "THÀNH CÔNG"
+          ],
+          [
+            "甘か",
+            "あまか",
+            "ngon ngọt; ngọt; ngọt ngào; dễ chịu; trạng thái rẻ; ngọt bùi (甘い)",
+            "CAM"
+          ],
+          [
+            "立て",
+            "たて",
+            "gắn nó với số bò; số ngựa gắn vào ô tô; số thuyền; ... để chỉ ra rằng nó chỉ được tạo thành từ số đó; thể hiện cho số lượng công trình; hạng mục; loại; v.v; đứng; được dựng lên; yến tiệc; cuộc vui; chiêu đãi; bao đãi; trả tiền cho người khác; lý lẽ; lẽ phải; trình tự sự việc; quy định; nội quy; luật lệ; hàng đầu; chính; ngôi sao; chủ chốt; vừa mới; mới xong; ván thua liên tiếp; trận thua liên tiếp; hiệp; vòng; ván",
+            "LẬP"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "見て",
+            "みて",
+            "Anh thấy chứ?",
+            "HIỆN"
+          ],
+          [
+            "計画",
+            "けいかく",
+            "kế hoạch",
+            "KẾ HỌA"
+          ],
+          [
+            "調べ",
+            "しらべ",
+            "cuộc điều tra; sự nghiên cứu; sự điều tra",
+            "ĐIỀU"
+          ],
+          [
+            "夢",
+            "ゆめ",
+            "chiêm bao; giấc mơ; ước mơ; mơ",
+            "MỘNG"
           ]
         ]
       }
@@ -1420,6 +4800,86 @@
             "たべもの",
             "đồ ăn"
           ]
+        ],
+        "words": [
+          [
+            "食べ物",
+            "たべもの",
+            "đồ ăn",
+            "THỰC VẬT"
+          ],
+          [
+            "人間",
+            "にんげん",
+            "con người",
+            "NHÂN GIAN"
+          ],
+          [
+            "取っ",
+            "とっ",
+            "tiền tố nhấn mạnh",
+            "THỦ"
+          ],
+          [
+            "向か",
+            "むか",
+            "đối diện với; quay mặt về phía; hướng đến; dành cho; để cho; thích hợp; phù hợp (向く)",
+            "HƯỚNG"
+          ],
+          [
+            "平気",
+            "へいき",
+            "thản nhiên, bình thản",
+            "BÌNH KHÍ"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "見ま",
+            "みま",
+            "Nhìn",
+            "HIỆN"
+          ],
+          [
+            "飛ん",
+            "とん",
+            "bay nhảy; bay tán loạn; bay lả tả; bay; cất cánh bay; bay liệng; cắt đứt; chạy; cưỡi gió; không liên tiếp; bỏ cách; nhảy; nhảy qua; nhót; truyền bá; truyền; vượt cấp (飛ぶ)",
+            "PHI"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "嫌",
+            "いや",
+            "không thích; ghét; khó chịu; không đâu; ôi không",
+            "HIỀM"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ],
+          [
+            "鳥",
+            "とり",
+            "loài chim",
+            "ĐIỂU"
+          ]
         ]
       },
       {
@@ -1445,6 +4905,134 @@
             "解決",
             "かいけつ",
             "giải quyết"
+          ]
+        ],
+        "words": [
+          [
+            "解決方法",
+            "かいけつほうほう",
+            "phương pháp giải quyết",
+            "GIẢI QUYẾT PHƯƠNG PHÁP"
+          ],
+          [
+            "集まって",
+            "あつまって",
+            "tụ tập",
+            "TẬP"
+          ],
+          [
+            "非常に",
+            "ひじょうに",
+            "khẩn cấp; cấp bách; bức thiết; phi thường; cực kỳ; đặc biệt; rất; tuyệt vời",
+            "PHI THƯỜNG"
+          ],
+          [
+            "公園",
+            "こうえん",
+            "công viên",
+            "CÔNG VIÊN"
+          ],
+          [
+            "問題",
+            "もんだい",
+            "vấn đề",
+            "VẤN ĐỀ"
+          ],
+          [
+            "困っ",
+            "こまっ",
+            "bối rối; khó khăn; lúng túng (困る)",
+            "KHỐN"
+          ],
+          [
+            "夕方",
+            "ゆうがた",
+            "chiều tối",
+            "TỊCH PHƯƠNG"
+          ],
+          [
+            "多い",
+            "おおい",
+            "đông, nhiều",
+            "ĐA"
+          ],
+          [
+            "寝る",
+            "ねる",
+            "đặt lưng; đặt mình; nằm; ngả lưng; ngủ",
+            "TẨM"
+          ],
+          [
+            "怖さ",
+            "こわさ",
+            "Sự sợ hãi",
+            "BỐ"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "毎日",
+            "まいにち",
+            "hàng ngày; mỗi ngày; mọi ngày; ngày ngày; thường ngày",
+            "MỖI NHẬT"
+          ],
+          [
+            "解決",
+            "かいけつ",
+            "giải quyết",
+            "GIẢI QUYẾT"
+          ],
+          [
+            "集ま",
+            "あつま",
+            "Tập hợp",
+            "TẬP"
+          ],
+          [
+            "非常",
+            "ひじょう",
+            "vô cùng, rất",
+            "PHI THƯỜNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "声",
+            "こえ",
+            "tiếng; giọng nói; lời nói; thanh điệu của chữ hán hoặc từ tiếng nhật; dấu thanh dùng ở góc chữ để chỉ cao độ; ngữ điệu; cao độ; cường độ phát âm",
+            "THANH"
+          ],
+          [
+            "数",
+            "かず",
+            "số; chữ số; thường xuyên; hay; nhiều lần; luôn luôn",
+            "SỔ"
+          ],
+          [
+            "木",
+            "き",
+            "cây cối; cây; gỗ; mộc; cây bụi",
+            "MỘC"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
           ]
         ]
       },
@@ -1482,6 +5070,116 @@
             "いどう",
             "di chuyển"
           ]
+        ],
+        "words": [
+          [
+            "専門家",
+            "せんもんか",
+            "chuyên gia",
+            "CHUYÊN MÔN GIA"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "利用",
+            "りよう",
+            "sự lợi dụng; sự áp dụng; sự sử dụng",
+            "LỢI DỤNG"
+          ],
+          [
+            "協力",
+            "きょうりょく",
+            "hợp tác",
+            "HIỆP LỰC"
+          ],
+          [
+            "危険",
+            "きけん",
+            "nguy hiểm",
+            "NGUY HIỂM"
+          ],
+          [
+            "問題",
+            "もんだい",
+            "vấn đề",
+            "VẤN ĐỀ"
+          ],
+          [
+            "場所",
+            "ばしょ",
+            "địa điểm",
+            "TRÀNG SỞ"
+          ],
+          [
+            "安全",
+            "あんぜん",
+            "an toàn",
+            "AN TOÀN"
+          ],
+          [
+            "実験",
+            "じっけん",
+            "thí nghiệm",
+            "THỰC NGHIỆM"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "成功",
+            "せいこう",
+            "thành công",
+            "THÀNH CÔNG"
+          ],
+          [
+            "状態",
+            "じょうたい",
+            "trạng thái",
+            "TRẠNG THÁI"
+          ],
+          [
+            "移動",
+            "いどう",
+            "di chuyển",
+            "DI ĐỘNG"
+          ],
+          [
+            "違い",
+            "ちがい",
+            "sự khác nhau; trật",
+            "VI"
+          ],
+          [
+            "集ま",
+            "あつま",
+            "Tập hợp",
+            "TẬP"
+          ],
+          [
+            "鳴き",
+            "なき",
+            "kêu; hót; hú; rống (鳴く)",
+            "MINH"
+          ],
+          [
+            "方",
+            "かた",
+            "phương diện; phương hướng; phía; phương; hậu tố số nhiều dùng cho người một cách kính trọng; khoảng; tầm; vào lúc; một phía; người thuộc về một phía cụ thể; người phụ trách một nhiệm vụ hoặc vai trò cụ thể; xấp xỉ; trạng thái; diện mạo; tình trạng; tình hình; dáng vẻ; hình dáng; hình thức; vẻ ngoài chỉnh tề; phương pháp; phương thức; cách thức; lý do; hoàn cảnh; câu chuyện; phong cách; thiết kế; vẻ ngoài; hậu tố kính ngữ dùng cho người; tên hoặc chức danh; hậu tố lịch sự thêm vào danh từ hoặc tính từ để bày tỏ lòng biết ơn hoặc sự đồng cảm; hướng; ngay lúc; trong khi; khi; cách thức hành động; cách làm; ngài; quý khách; người đó; vùng lân cận; nơi gần đây; bờ biển; bãi biển; ven biển; hậu tố chỉ hướng hoặc khu vực chung; hậu tố chỉ thời gian hoặc giai đoạn xấp xỉ; về một phía nhất định; cách thức di chuyển; trạng thái của hành động; sự giải quyết; kết cục; sự kết thúc của một vấn đề; thời điểm; thời kỳ; mùa; vị; người; phương tiện; một bên của một cặp; một nhóm người; lĩnh vực; khía cạnh; mối quan hệ; việc thực hiện; chuyển cho; gửi tại nhà của; người thuộc về một phía; người phụ trách một nhiệm vụ; nhân viên; điều phối viên; đại khái; về phía",
+            "PHƯƠNG"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ]
         ]
       },
       {
@@ -1497,6 +5195,92 @@
             "方法",
             "ほうほう",
             "phương pháp"
+          ]
+        ],
+        "words": [
+          [
+            "解決方法",
+            "かいけつほうほう",
+            "phương pháp giải quyết",
+            "GIẢI QUYẾT PHƯƠNG PHÁP"
+          ],
+          [
+            "使え",
+            "つかえ",
+            "để hữu ích; để có ích (使える)",
+            "SỬ"
+          ],
+          [
+            "合っ",
+            "あっ",
+            "ăn khớp; hợp; đúng; chính xác; làm...cùng nhau; phù hợp; vừa vặn; vừa; hợp lại; hợp nhất; đoàn kết; hài hòa; trùng khớp; thống nhất; nhất quán; có lãi; xứng đáng với công sức bỏ ra; làm cùng nhau; làm cho nhau; kết nối; gặp nhau; điều chỉnh cho phù hợp với người khác; hòa nhập; chồng lên nhau; đan xen (合う)",
+            "HỢP"
+          ],
+          [
+            "同じ",
+            "おなじ",
+            "bằng nhau; sự giống nhau; sự giống; giống nhau; cùng; giống",
+            "ĐỒNG"
+          ],
+          [
+            "問題",
+            "もんだい",
+            "vấn đề",
+            "VẤN ĐỀ"
+          ],
+          [
+            "場所",
+            "ばしょ",
+            "địa điểm",
+            "TRÀNG SỞ"
+          ],
+          [
+            "大き",
+            "おおき",
+            "lớn; to",
+            "ĐẠI"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "方法",
+            "ほうほう",
+            "phương pháp",
+            "PHƯƠNG PHÁP"
+          ],
+          [
+            "見つ",
+            "みつ",
+            "Tìm thấy",
+            "HIỆN"
+          ],
+          [
+            "集ま",
+            "あつま",
+            "Tập hợp",
+            "TẬP"
+          ],
+          [
+            "森",
+            "もり",
+            "khu rừng",
+            "SÂM"
+          ],
+          [
+            "町",
+            "まち",
+            "thị trấn; con phố",
+            "ĐINH"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
           ]
         ]
       }
@@ -1552,6 +5336,68 @@
             "くつ",
             "giày"
           ]
+        ],
+        "words": [
+          [
+            "履かなくなった",
+            "はかなくなった",
+            "không đi (giày) nữa",
+            "LÝ"
+          ],
+          [
+            "思って",
+            "おもって",
+            "Nghĩ rằng",
+            "TƯ"
+          ],
+          [
+            "古い",
+            "ふるい",
+            "cũ",
+            "CỔ"
+          ],
+          [
+            "履か",
+            "はか",
+            "đi; xỏ (giầy (履く)",
+            "LÍ"
+          ],
+          [
+            "捨て",
+            "すて",
+            "bỏ; từ bỏ; chẳng đoái hoài; liệng; ném; ném đi; vất; vứt; vứt bỏ (捨てる)",
+            "XÁ"
+          ],
+          [
+            "見た",
+            "みた",
+            "Thấy chưa.",
+            "HIỆN"
+          ],
+          [
+            "靴屋",
+            "くつや",
+            "cửa hàng giày dép; nhà sản xuất giày dép",
+            "NGOA ỐC"
+          ],
+          [
+            "家",
+            "いえ",
+            "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+            "GIA"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "靴",
+            "くつ",
+            "giày",
+            "NGOA"
+          ]
         ]
       },
       {
@@ -1578,6 +5424,98 @@
             "かんきょう",
             "môi trường"
           ]
+        ],
+        "words": [
+          [
+            "割引券",
+            "わりびきけん",
+            "phiếu giảm giá",
+            "CÁT DẪN KHOÁN"
+          ],
+          [
+            "交換",
+            "こうかん",
+            "trao đổi",
+            "GIAO HOÁN"
+          ],
+          [
+            "作る",
+            "つくる",
+            "chế biến; làm; tạo; sáng tác; xây dựng; nấu",
+            "TÁC"
+          ],
+          [
+            "使え",
+            "つかえ",
+            "để hữu ích; để có ích (使える)",
+            "SỬ"
+          ],
+          [
+            "出る",
+            "でる",
+            "đi ra; ngoi; xuất hiện; đi ra khỏi",
+            "XUẤT"
+          ],
+          [
+            "利用",
+            "りよう",
+            "sự lợi dụng; sự áp dụng; sự sử dụng",
+            "LỢI DỤNG"
+          ],
+          [
+            "回収",
+            "かいしゅう",
+            "thu hồi",
+            "HỒI THU"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "書か",
+            "かか",
+            "viết; sáng tác; viết lách (書く)",
+            "THƯ"
+          ],
+          [
+            "燃や",
+            "もや",
+            "Đốt",
+            "NHIÊN"
+          ],
+          [
+            "環境",
+            "かんきょう",
+            "môi trường",
+            "HOÀN CẢNH"
+          ],
+          [
+            "電気",
+            "でんき",
+            "điện khí; điện; đèn điện; điện lực",
+            "ĐIỆN KHÍ"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "熱",
+            "ねつ",
+            "nhiệt độ; nhiệt tình; sức bật; sự say sưa; phát sốt; sốt; nhiệt; hơi nóng; cơn sốt",
+            "NHIỆT"
+          ],
+          [
+            "靴",
+            "くつ",
+            "giày",
+            "NGOA"
+          ]
         ]
       },
       {
@@ -1593,6 +5531,92 @@
             "安く",
             "やすく",
             "rẻ"
+          ]
+        ],
+        "words": [
+          [
+            "大きい",
+            "おおきい",
+            "bự; to lớn; to; lớn",
+            "ĐẠI"
+          ],
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "新しい",
+            "あたらしい",
+            "mới, tươi",
+            "TÂN"
+          ],
+          [
+            "私一人",
+            "わたしひとり",
+            "Chỉ có một mình tôi",
+            "TƯ NHẤT NHÂN"
+          ],
+          [
+            "古い",
+            "ふるい",
+            "cũ",
+            "CỔ"
+          ],
+          [
+            "安く",
+            "やすく",
+            "rẻ",
+            "AN"
+          ],
+          [
+            "影響",
+            "えいきょう",
+            "ảnh hưởng",
+            "ẢNH HƯỞNG"
+          ],
+          [
+            "思う",
+            "おもう",
+            "nghĩ; cho rằng; tưởng; cảm thấy",
+            "TƯ"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "捨て",
+            "すて",
+            "bỏ; từ bỏ; chẳng đoái hoài; liệng; ném; ném đi; vất; vứt; vứt bỏ (捨てる)",
+            "XÁ"
+          ],
+          [
+            "環境",
+            "かんきょう",
+            "môi trường",
+            "HOÀN CẢNH"
+          ],
+          [
+            "買え",
+            "かえ",
+            "Mua đi",
+            "MÃI"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "靴",
+            "くつ",
+            "giày",
+            "NGOA"
           ]
         ]
       }
@@ -1642,6 +5666,50 @@
             "こうか",
             "hiệu quả, tác dụng"
           ]
+        ],
+        "words": [
+          [
+            "効果",
+            "こうか",
+            "hiệu quả, tác dụng",
+            "HIỆU QUẢ"
+          ],
+          [
+            "包ま",
+            "つつま",
+            "chít; choàng; trùm; ủ; ủ ấp; đùm; đùm bọc; giấu giếm; gói ghém; gói vào; bọc vào; vây quanh; bao bọc; chìm (包む)",
+            "BAO"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "物質",
+            "ぶっしつ",
+            "vật chất",
+            "VẬT CHẤT"
+          ],
+          [
+            "独特",
+            "どくとく",
+            "độc đáo, đặc trưng",
+            "ĐỘC ĐẶC"
+          ],
+          [
+            "香り",
+            "かおり",
+            "mùi hương",
+            "HƯƠNG"
+          ],
+          [
+            "森",
+            "もり",
+            "khu rừng",
+            "SÂM"
+          ]
         ]
       },
       {
@@ -1677,6 +5745,176 @@
             "森林",
             "しんりん",
             "rừng rậm"
+          ]
+        ],
+        "words": [
+          [
+            "作り出す",
+            "つくりだす",
+            "sản xuất; chế tạo; sáng tạo ra",
+            "TÁC XUẤT"
+          ],
+          [
+            "枯れ木",
+            "かれき",
+            "cây khô; cây chết",
+            "KHÔ MỘC"
+          ],
+          [
+            "私たち",
+            "わたしたち",
+            "chúng tôi",
+            "TƯ"
+          ],
+          [
+            "落ち葉",
+            "おちば",
+            "lá rụng",
+            "LẠC DIỆP"
+          ],
+          [
+            "人間",
+            "にんげん",
+            "con người",
+            "NHÂN GIAN"
+          ],
+          [
+            "働き",
+            "はたらき",
+            "công việc; việc làm; sự đảm nhiệm chức năng; sự hoạt động",
+            "ĐỘNG"
+          ],
+          [
+            "入る",
+            "はいる",
+            "đi vào; vào; bước vào; đi vô; vô",
+            "NHẬP"
+          ],
+          [
+            "効果",
+            "こうか",
+            "hiệu quả, tác dụng",
+            "HIỆU QUẢ"
+          ],
+          [
+            "動け",
+            "うごけ",
+            "Chèo đi thôi, chèo đi",
+            "ĐỘNG"
+          ],
+          [
+            "増加",
+            "ぞうか",
+            "sự gia tăng",
+            "TĂNG GIA"
+          ],
+          [
+            "嫌な",
+            "いやな",
+            "Khó chịu",
+            "HIỀM"
+          ],
+          [
+            "守る",
+            "まもる",
+            "bảo vệ; giữ; tuân giữ; tuân theo; duy trì; giữ gìn; nghe theo",
+            "THỦ"
+          ],
+          [
+            "安定",
+            "あんてい",
+            "ổn định",
+            "AN ĐỊNH"
+          ],
+          [
+            "持っ",
+            "もっ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách (持つ)",
+            "TRÌ"
+          ],
+          [
+            "木々",
+            "きぎ",
+            "nhiều cây; mỗi cây; tất cả các loại cây",
+            "MỘC"
+          ],
+          [
+            "森林",
+            "しんりん",
+            "rừng rậm",
+            "SÂM LÂM"
+          ],
+          [
+            "気分",
+            "きぶん",
+            "tâm tình; tâm tư; tinh thần",
+            "KHÍ PHÂN"
+          ],
+          [
+            "消し",
+            "けし",
+            "dập; tắt; xóa; loại bỏ; làm biến mất; khử; phi tang; phủ nhận; bác bỏ; giết; trừ khử; thủ tiêu; giảm dần rồi dừng nhạc nền; dọn dẹp đạo cụ; chê bai; kinh hãi; hồn vía lên mây (消す)",
+            "TIÊU"
+          ],
+          [
+            "物質",
+            "ぶっしつ",
+            "vật chất",
+            "VẬT CHẤT"
+          ],
+          [
+            "生じ",
+            "しょうじ",
+            "Phát sinh",
+            "SANH"
+          ],
+          [
+            "神経",
+            "しんけい",
+            "thần kinh",
+            "THẦN KINH"
+          ],
+          [
+            "細菌",
+            "さいきん",
+            "vi khuẩn",
+            "TẾ KHUẨN"
+          ],
+          [
+            "腐っ",
+            "くさっ",
+            "buồn chán; hư; suy đồi; thiu thối; thối; thối rữa; thiu; hỏng; ung; mục nát (腐る)",
+            "HỦ"
+          ],
+          [
+            "自ら",
+            "みずから",
+            "tự mình",
+            "TỰ"
+          ],
+          [
+            "防い",
+            "ふせい",
+            "Ngăn chặn",
+            "PHÒNG"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "木",
+            "き",
+            "cây cối; cây; gỗ; mộc; cây bụi",
+            "MỘC"
+          ],
+          [
+            "虫",
+            "むし",
+            "con sâu; côn trùng; sâu; sâu bọ; trùng",
+            "TRÙNG"
           ]
         ]
       }
@@ -1726,6 +5964,110 @@
             "にぶる",
             "trở nên cùn mòn"
           ]
+        ],
+        "words": [
+          [
+            "思い込む",
+            "おもいこむ",
+            "tin đinh ninh, mặc định",
+            "TƯ"
+          ],
+          [
+            "思い込ん",
+            "おもいこん",
+            "nghĩ rằng; cho rằng; tin rằng (思い込む)",
+            "TƯ"
+          ],
+          [
+            "正しい",
+            "ただしい",
+            "chính; chỉnh; đúng; chính xác; chính đáng; đúng lý; chân thật; đúng đắn",
+            "CHÁNH"
+          ],
+          [
+            "一人",
+            "ひとり",
+            "một người",
+            "NHẤT NHÂN"
+          ],
+          [
+            "作家",
+            "さっか",
+            "người sáng tạo ra các tác phẩm nghệ thuật; tác giả; nhà văn; tiểu thuyết gia; họa sĩ",
+            "TÁC GIA"
+          ],
+          [
+            "危険",
+            "きけん",
+            "nguy hiểm",
+            "NGUY HIỂM"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "著者",
+            "ちょしゃ",
+            "tác giả",
+            "TRỨ GIẢ"
+          ],
+          [
+            "読む",
+            "よむ",
+            "đọc",
+            "ĐỘC"
+          ],
+          [
+            "鈍っ",
+            "にぶっ",
+            "cùn đi; không sắc; trở nên yếu (鈍る)",
+            "ĐỘN"
+          ],
+          [
+            "鈍る",
+            "にぶる",
+            "trở nên cùn mòn",
+            "ĐỘN"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "力",
+            "ちから",
+            "lực; sức; sức mạnh",
+            "LỰC"
+          ],
+          [
+            "本",
+            "ほん",
+            "sách",
+            "BỔN"
+          ],
+          [
+            "頭",
+            "あたま",
+            "đầu",
+            "ĐẦU"
+          ]
         ]
       },
       {
@@ -1757,6 +6099,146 @@
             "してん",
             "góc nhìn, quan điểm"
           ]
+        ],
+        "words": [
+          [
+            "読んで",
+            "よんで",
+            "Chú đọc cái này đi.",
+            "ĐẬU"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "主張",
+            "しゅちょう",
+            "chủ trương, lập luận",
+            "CHỦ TRƯƠNG"
+          ],
+          [
+            "偏ら",
+            "かたよら",
+            "nghiêng; lệch; không cân bằng; không công bằng; 片寄る (偏る)",
+            "THIÊN"
+          ],
+          [
+            "大切",
+            "たいせつ",
+            "quan trọng; sự quan trọng; thái miếng to; lát thịt hoặc cá lớn; màn cuối của buổi biểu diễn trong ngày; hồi cuối của vở kịch thứ hai; vở kịch ngắn một hồi sau vở kịch chính; tiết mục cuối của buổi diễn; màn trình diễn tập thể của toàn bộ dàn diễn viên; kết thúc của một sự việc; phần kết; đoạn kết",
+            "ĐẠI THIẾT"
+          ],
+          [
+            "姿勢",
+            "しせい",
+            "tư thế, thái độ",
+            "TƯ THẾ"
+          ],
+          [
+            "対し",
+            "たいし",
+            "đối với; dành cho; đối mặt; đối xử; thành đôi; tương ứng; đối xứng; xứng tầm (対す)",
+            "ĐỐI"
+          ],
+          [
+            "少し",
+            "すこし",
+            "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+            "THIỂU"
+          ],
+          [
+            "思考",
+            "しこう",
+            "tư duy, suy nghĩ",
+            "TƯ KHẢO"
+          ],
+          [
+            "持ち",
+            "もち",
+            "sự cầm nắm; sự chịu; sự đảm nhiệm; sự duy trì; sự mang",
+            "TRÌ"
+          ],
+          [
+            "書か",
+            "かか",
+            "viết; sáng tác; viết lách (書く)",
+            "THƯ"
+          ],
+          [
+            "本当",
+            "ほんとう",
+            "sự thật; thật; thật sự; thiệt",
+            "BỔN ĐƯƠNG"
+          ],
+          [
+            "疑問",
+            "ぎもん",
+            "nghi vấn",
+            "NGHI VẤN"
+          ],
+          [
+            "置い",
+            "おい",
+            "Đặt",
+            "TRÍ"
+          ],
+          [
+            "育つ",
+            "そだつ",
+            "lớn lên; khôn lớn; phát triển",
+            "DỤC"
+          ],
+          [
+            "良い",
+            "よい",
+            "hay; khỏe; tốt; đẹp",
+            "LƯƠNG"
+          ],
+          [
+            "著者",
+            "ちょしゃ",
+            "tác giả",
+            "TRỨ GIẢ"
+          ],
+          [
+            "見方",
+            "みかた",
+            "cách nhìn; cách quan sát; quan điểm",
+            "KIẾN PHƯƠNG"
+          ],
+          [
+            "視点",
+            "してん",
+            "góc nhìn, quan điểm",
+            "THỊ ĐIỂM"
+          ],
+          [
+            "読む",
+            "よむ",
+            "đọc",
+            "ĐỘC"
+          ],
+          [
+            "距離",
+            "きょり",
+            "khoảng cách",
+            "CỰ LI"
+          ],
+          [
+            "別",
+            "べつ",
+            "đặc biệt; trừ ra; ngoài ra; phân biệt; riêng biệt; riêng; sự đặc biệt; sự phân biệt; sự khác biệt; sự khác nhau; khác; cái khác; ngoại lệ; phi thường; wake; tước hiệu cha truyền con nối cổ xưa dành cho hậu duệ hoàng gia cai trị các vùng địa phương",
+            "BIỆT"
+          ],
+          [
+            "本",
+            "ほん",
+            "sách",
+            "BỔN"
+          ]
         ]
       },
       {
@@ -1782,6 +6264,104 @@
             "経験",
             "けいけん",
             "kinh nghiệm"
+          ]
+        ],
+        "words": [
+          [
+            "自分自身",
+            "じぶんじしん",
+            "bản thân",
+            "TỰ PHÂN TỰ THÂN"
+          ],
+          [
+            "丸暗記",
+            "まるあんき",
+            "sự thuộc lòng không nghĩ gì đến nghĩa; sự học vẹt",
+            "HOÀN ÁM KÍ"
+          ],
+          [
+            "異なる",
+            "ことなる",
+            "dị chất; khác; khác với",
+            "DỊ"
+          ],
+          [
+            "触れる",
+            "ふれる",
+            "chạm; tiếp xúc; mó; mó máy; rờ; sờ; sờ mó; vi phạm; phạm",
+            "XÚC"
+          ],
+          [
+            "作業",
+            "さぎょう",
+            "thao tác",
+            "TÁC NGHIỆP"
+          ],
+          [
+            "単に",
+            "たんに",
+            "một cách đơn thuần",
+            "ĐƠN"
+          ],
+          [
+            "営み",
+            "いとなみ",
+            "công việc; việc làm; công việc mưu sinh; sự làm việc; sự làm",
+            "DOANH"
+          ],
+          [
+            "対話",
+            "たいわ",
+            "đối thoại",
+            "ĐỐI THOẠI"
+          ],
+          [
+            "意見",
+            "いけん",
+            "kiến; ý; ý kiến",
+            "Ý KIẾN"
+          ],
+          [
+            "深め",
+            "ふかめ",
+            "làm cao hơn; làm tăng thêm; làm sâu thêm; làm sâu sắc thêm (深める)",
+            "THÂM"
+          ],
+          [
+            "知識",
+            "ちしき",
+            "kiến thức",
+            "TRI THỨC"
+          ],
+          [
+            "経験",
+            "けいけん",
+            "kinh nghiệm",
+            "KINH NGHIỆM"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "著者",
+            "ちょしゃ",
+            "tác giả",
+            "TRỨ GIẢ"
+          ],
+          [
+            "読書",
+            "どくしょ",
+            "đọc sách",
+            "ĐỘC THƯ"
+          ],
+          [
+            "通じ",
+            "つうじ",
+            "sự thông qua; sự sơ tán; sự bài tiết phân",
+            "THÔNG"
           ]
         ]
       }
@@ -1858,6 +6438,176 @@
             "きけん",
             "nguy hiểm"
           ]
+        ],
+        "words": [
+          [
+            "極まりない",
+            "きわまりない",
+            "vô cùng; trong cực trị; bao la",
+            "CỰC"
+          ],
+          [
+            "同時に",
+            "どうじに",
+            "đồng thời; cùng lúc đó",
+            "ĐỒNG THÌ"
+          ],
+          [
+            "固定的",
+            "こていてき",
+            "Cố định",
+            "CỐ ĐỊNH"
+          ],
+          [
+            "安定的",
+            "あんていてき",
+            "Ổn định",
+            "AN ĐỊNH"
+          ],
+          [
+            "組織内",
+            "そしきない",
+            "Trong tổ chức",
+            "TỔ CHỨC NỘI"
+          ],
+          [
+            "行って",
+            "いって",
+            "Anh làm được mà.",
+            "HÀNG"
+          ],
+          [
+            "難しさ",
+            "むずかしさ",
+            "khó khăn",
+            "NAN"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "一度",
+            "いちど",
+            "khi nào đó; lần nào đó; một khi; một lần",
+            "NHẤT ĐỘ"
+          ],
+          [
+            "動き",
+            "うごき",
+            "sự chuyển động; sự hoạt động; sự biến động",
+            "ĐỘNG"
+          ],
+          [
+            "危険",
+            "きけん",
+            "nguy hiểm",
+            "NGUY HIỂM"
+          ],
+          [
+            "同じ",
+            "おなじ",
+            "bằng nhau; sự giống nhau; sự giống; giống nhau; cùng; giống",
+            "ĐỒNG"
+          ],
+          [
+            "変え",
+            "かえ",
+            "thay đổi",
+            "BIẾN"
+          ],
+          [
+            "安定",
+            "あんてい",
+            "ổn định",
+            "AN ĐỊNH"
+          ],
+          [
+            "方向",
+            "ほうこう",
+            "hướng; phía; phương hướng; phương trời",
+            "PHƯƠNG HƯỚNG"
+          ],
+          [
+            "欠点",
+            "けってん",
+            "nhược điểm",
+            "KHIẾM ĐIỂM"
+          ],
+          [
+            "気づ",
+            "きづ",
+            "Nhận thấy",
+            "KHÍ"
+          ],
+          [
+            "活動",
+            "かつどう",
+            "hoạt động; sự hoạt động",
+            "HOẠT ĐỘNG"
+          ],
+          [
+            "状態",
+            "じょうたい",
+            "trạng thái",
+            "TRẠNG THÁI"
+          ],
+          [
+            "組織",
+            "そしき",
+            "tổ chức",
+            "TỔ CHỨC"
+          ],
+          [
+            "見れ",
+            "みれ",
+            "có thể nhìn; có thể xem (見れる)",
+            "KIẾN"
+          ],
+          [
+            "見方",
+            "みかた",
+            "cách nhìn; cách quan sát; quan điểm",
+            "KIẾN PHƯƠNG"
+          ],
+          [
+            "誰も",
+            "だれも",
+            "ai cũng; dù là ai cũng",
+            "THÙY"
+          ],
+          [
+            "起こ",
+            "おこ",
+            "Đánh thức",
+            "KHỈ"
+          ],
+          [
+            "長く",
+            "ながく",
+            "bao lâu; dài; lâu (長い)",
+            "TRƯỜNG"
+          ],
+          [
+            "長所",
+            "ちょうしょ",
+            "ưu điểm",
+            "TRƯỜNG SỞ"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "根",
+            "ね",
+            "rễ",
+            "CĂN"
+          ]
         ]
       },
       {
@@ -1883,6 +6633,158 @@
             "価値観",
             "かちかん",
             "giá trị quan"
+          ]
+        ],
+        "words": [
+          [
+            "価値観",
+            "かちかん",
+            "giá trị quan",
+            "GIÁ TRỊ QUAN"
+          ],
+          [
+            "等しく",
+            "ひとしく",
+            "bằng nhau; đồng đều; tương tự; giống nhau",
+            "ĐẲNG"
+          ],
+          [
+            "雰囲気",
+            "ふんいき",
+            "bầu không khí",
+            "PHÂN VI KHÍ"
+          ],
+          [
+            "人々",
+            "ひとびと",
+            "con nhỏ; mỗi người; mọi người; con người",
+            "NHÂN"
+          ],
+          [
+            "企業",
+            "きぎょう",
+            "doanh nghiệp",
+            "XÍ NGHIỆP"
+          ],
+          [
+            "原因",
+            "げんいん",
+            "căn do; căn duyên; ngọn nguồn; nguyên do; nguyên nhân",
+            "NGUYÊN NHÂN"
+          ],
+          [
+            "囲ま",
+            "かこま",
+            "bao quanh; vây quanh; bao bọc; vây hãm (囲む)",
+            "VI"
+          ],
+          [
+            "変え",
+            "かえ",
+            "thay đổi",
+            "BIẾN"
+          ],
+          [
+            "慣れ",
+            "なれ",
+            "kinh nghiệm; thực hành",
+            "QUÁN"
+          ],
+          [
+            "持つ",
+            "もつ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách",
+            "TRÌ"
+          ],
+          [
+            "支配",
+            "しはい",
+            "chi phối",
+            "CHI PHỐI"
+          ],
+          [
+            "文化",
+            "ぶんか",
+            "văn hóa",
+            "VĂN HÓA"
+          ],
+          [
+            "本人",
+            "ほんにん",
+            "anh ta; cô ta; ông ta; bà ta; người đó; bản thân; người ủy thác",
+            "BỔN NHÂN"
+          ],
+          [
+            "気づ",
+            "きづ",
+            "Nhận thấy",
+            "KHÍ"
+          ],
+          [
+            "独特",
+            "どくとく",
+            "độc đáo, đặc trưng",
+            "ĐỘC ĐẶC"
+          ],
+          [
+            "空気",
+            "くうき",
+            "không khí; khí",
+            "KHÔNG KHÍ"
+          ],
+          [
+            "組織",
+            "そしき",
+            "tổ chức",
+            "TỔ CHỨC"
+          ],
+          [
+            "見方",
+            "みかた",
+            "cách nhìn; cách quan sát; quan điểm",
+            "KIẾN PHƯƠNG"
+          ],
+          [
+            "親し",
+            "したし",
+            "Thân thiết",
+            "THÂN"
+          ],
+          [
+            "言葉",
+            "ことば",
+            "câu nói; ngôn ngữ; tiếng nói; lời ăn tiếng nói; từ ngữ; lời nói; lời",
+            "NGÔN DIỆP"
+          ],
+          [
+            "起こ",
+            "おこ",
+            "Đánh thức",
+            "KHỈ"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "気",
+            "き",
+            "cách nghĩ; ý đồ; tâm tư; quan niệm; chú ý; lưu tâm; hô hấp; thở; khí; không khí; khí lớn; khí thể; khí chưng từ nước; khí vị; hơi; lòng luyến mộ; tình ý; suy nghĩ; tư lự; tâm lí; tâm tình; tình tự; cảm giác; cảm thụ; cảm tình; tính cách; lề thói; tính trời sinh; khí độ; tinh thần; tâm thần; khí chất; có vẻ; trông như; dường như; dấu hiệu; dấu vết; một chút; mùi hương tỏa ra; hương vị; sự hiện diện; trạng thái tâm trí; cảm nhận; thời tiết; khí hậu; bệnh tật; ốm đau; dấu hiệu chuyển dạ; bắt đầu sinh con; hơi hơi; mơ hồ; có vẻ như; trông có vẻ; bản chất; dáng vẻ; xu hướng",
+            "KHÍ"
+          ],
+          [
+            "間",
+            "あいだ",
+            "ở giữa; giữa; trong lúc; trong; nhịp ngắt; khoảng ngắt; không gian; khoảng trống",
+            "GIAN"
           ]
         ]
       },
@@ -1914,6 +6816,176 @@
             "発揮",
             "はっき",
             "phát huy"
+          ]
+        ],
+        "words": [
+          [
+            "組織全体",
+            "そしきぜんたい",
+            "Toàn bộ tổ chức",
+            "TỔ CHỨC TOÀN THỂ"
+          ],
+          [
+            "全体像",
+            "ぜんたいぞう",
+            "bức tranh toàn cảnh",
+            "TOÀN THỂ TƯỢNG"
+          ],
+          [
+            "正しい",
+            "ただしい",
+            "chính; chỉnh; đúng; chính xác; chính đáng; đúng lý; chân thật; đúng đắn",
+            "CHÁNH"
+          ],
+          [
+            "事業",
+            "じぎょう",
+            "công cuộc; sự nghiệp; dự án; công tác; nhiệm vụ phải làm",
+            "SỰ NGHIỆP"
+          ],
+          [
+            "付け",
+            "つけ",
+            "đính kèm; hóa đơn bán hàng; hóa đơn",
+            "PHÓ"
+          ],
+          [
+            "価値",
+            "かち",
+            "giá trị",
+            "GIÁ TRỊ"
+          ],
+          [
+            "動け",
+            "うごけ",
+            "Chèo đi thôi, chèo đi",
+            "ĐỘNG"
+          ],
+          [
+            "包ん",
+            "つつん",
+            "chít; choàng; trùm; ủ; ủ ấp; đùm; đùm bọc; giấu giếm; gói ghém; gói vào; bọc vào; vây quanh; bao bọc; chìm (包む)",
+            "BAO"
+          ],
+          [
+            "変え",
+            "かえ",
+            "thay đổi",
+            "BIẾN"
+          ],
+          [
+            "惑わ",
+            "まどわ",
+            "lúng túng; bối rối (惑う)",
+            "HOẶC"
+          ],
+          [
+            "戦略",
+            "せんりゃく",
+            "chiến lược",
+            "CHIẾN LƯỢC"
+          ],
+          [
+            "把握",
+            "はあく",
+            "nắm bắt",
+            "BẢ ÁC"
+          ],
+          [
+            "方向",
+            "ほうこう",
+            "hướng; phía; phương hướng; phương trời",
+            "PHƯƠNG HƯỚNG"
+          ],
+          [
+            "時代",
+            "じだい",
+            "thời đại; thời kỳ",
+            "THÌ ĐẠI"
+          ],
+          [
+            "最高",
+            "さいこう",
+            "cái cao nhất; cái đẹp nhất; cái tốt nhất; cái tuyệt vời; cao nhất; đẹp nhất; tốt nhất; đắt nhất; tối cao; tuyệt vời",
+            "TỐI CAO"
+          ],
+          [
+            "正確",
+            "せいかく",
+            "chính xác",
+            "CHÁNH XÁC"
+          ],
+          [
+            "状況",
+            "じょうきょう",
+            "bối cảnh; tình huống; tình trạng; hoàn cảnh; trạng huống",
+            "TRẠNG HUỐNG"
+          ],
+          [
+            "発揮",
+            "はっき",
+            "phát huy",
+            "PHÁT HUY"
+          ],
+          [
+            "示す",
+            "しめす",
+            "biểu hiện ra; chỉ ra; cho thấy; xuất trình; đưa cho xem",
+            "KÌ"
+          ],
+          [
+            "組織",
+            "そしき",
+            "tổ chức",
+            "TỔ CHỨC"
+          ],
+          [
+            "行い",
+            "おこない",
+            "chứng nhượng; thực hiện; tiến hành",
+            "HÀNH"
+          ],
+          [
+            "見た",
+            "みた",
+            "Thấy chưa.",
+            "HIỆN"
+          ],
+          [
+            "見る",
+            "みる",
+            "coi; ngắm; ngó; nhìn thấy; nhìn xem; nhìn; xem; nhòm; nhòm ngó",
+            "KIẾN"
+          ],
+          [
+            "逆に",
+            "ぎゃくに",
+            "ngược lại",
+            "NGHỊCH"
+          ],
+          [
+            "上",
+            "うえ",
+            "trên; phía trên; phía cao hơn; bên ngoài; lớp ngoài; lớn hơn; bề trên; cấp trên; bề mặt; cao cấp; thượng; thượng nguồn; phía thượng lưu; lúc đầu; thời kỳ đầu; thời xưa; nửa đầu; mười ngày đầu tháng; thượng tuần; phần đầu; tập đầu; phần trước; thượng cú; phần trên; mặt trên; nửa thân trên; ghế danh dự; vị trí trang trọng; ghế chủ tọa; phòng trong; phòng khách; phía bên phải sân khấu; tthiên hoàng; đức vua; bệ hạ; người bề trên; người có địa vị cao; chính quyền; nhà chức trách; giới cầm quyền; bà chủ; phu nhân; vợ người khác; kinh đô; kyoto và vùng lân cận; phía bắc kyoto; phía bắc; vùng gần kinh đô; thứ bậc cao; đẳng cấp cao; người lớn tuổi hơn; bậc tiền bối; chủ nhân; người đứng đầu; sự nâng cao độ âm thanh; kỹ thuật tăng nửa cung; việc nâng âm; chất lượng cao; hạng nhất; quyển thượng; tập một; thanh thượng; lời đề tặng trên quà cáp; về mặt; xét về; trên phương diện; xét; không những; sau khi; dựa trên; là kết quả của; để; nhằm mục đích",
+            "THƯỢNG"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "力",
+            "ちから",
+            "lực; sức; sức mạnh",
+            "LỰC"
+          ],
+          [
+            "気",
+            "き",
+            "cách nghĩ; ý đồ; tâm tư; quan niệm; chú ý; lưu tâm; hô hấp; thở; khí; không khí; khí lớn; khí thể; khí chưng từ nước; khí vị; hơi; lòng luyến mộ; tình ý; suy nghĩ; tư lự; tâm lí; tâm tình; tình tự; cảm giác; cảm thụ; cảm tình; tính cách; lề thói; tính trời sinh; khí độ; tinh thần; tâm thần; khí chất; có vẻ; trông như; dường như; dấu hiệu; dấu vết; một chút; mùi hương tỏa ra; hương vị; sự hiện diện; trạng thái tâm trí; cảm nhận; thời tiết; khí hậu; bệnh tật; ốm đau; dấu hiệu chuyển dạ; bắt đầu sinh con; hơi hơi; mơ hồ; có vẻ như; trông có vẻ; bản chất; dáng vẻ; xu hướng",
+            "KHÍ"
           ]
         ]
       }
@@ -1985,6 +7057,164 @@
             "えんげき",
             "kịch nghệ"
           ]
+        ],
+        "words": [
+          [
+            "伝統的",
+            "でんとうてき",
+            "truyền thống",
+            "TRUYỀN THỐNG ĐÍCH"
+          ],
+          [
+            "留学生",
+            "りゅうがくせい",
+            "du học sinh",
+            "LƯU HỌC SANH"
+          ],
+          [
+            "落語家",
+            "らくごか",
+            "người kể những câu chuyện hài hước",
+            "LẠC NGỮ GIA"
+          ],
+          [
+            "面白く",
+            "おもしろく",
+            "dí dỏm; thú vị; hay; vui tính (面白い)",
+            "DIỆN BẠCH"
+          ],
+          [
+            "一つ",
+            "ひとつ",
+            "một phần",
+            "NHẤT"
+          ],
+          [
+            "一人",
+            "ひとり",
+            "một người",
+            "NHẤT NHÂN"
+          ],
+          [
+            "今回",
+            "こんかい",
+            "kỳ này; lần này",
+            "KIM HỒI"
+          ],
+          [
+            "伝統",
+            "でんとう",
+            "truyền thống",
+            "TRUYỀN THỐNG"
+          ],
+          [
+            "体験",
+            "たいけん",
+            "sự trải nghiệm; kinh nghiệm trải qua",
+            "THỂ NGHIỆM"
+          ],
+          [
+            "何役",
+            "なにやく",
+            "Vai gì?",
+            "HÀ DỊCH"
+          ],
+          [
+            "文化",
+            "ぶんか",
+            "văn hóa",
+            "VĂN HÓA"
+          ],
+          [
+            "日本",
+            "にほん",
+            "nhật bản",
+            "NHẬT BỔN"
+          ],
+          [
+            "正座",
+            "せいざ",
+            "sự ngồi ngay ngắn; kiểu ngồi chính toạ; chỗ ngồi danh dự; ghế danh dự; hàng ghế đầu",
+            "CHÁNH TỌA"
+          ],
+          [
+            "演じ",
+            "えんじ",
+            "Diễn",
+            "DIỄN"
+          ],
+          [
+            "演劇",
+            "えんげき",
+            "kịch nghệ",
+            "DIỄN KỊCH"
+          ],
+          [
+            "着た",
+            "きた",
+            "Đã mặc",
+            "TRƯỚC"
+          ],
+          [
+            "着物",
+            "きもの",
+            "áo kimono; kimono; quần áo; trang phục; đồ mặc",
+            "TRỨ VẬT"
+          ],
+          [
+            "聞か",
+            "きか",
+            "nghe; hỏi (聞く)",
+            "VĂN"
+          ],
+          [
+            "舞台",
+            "ぶたい",
+            "sân khấu",
+            "VŨ THAI"
+          ],
+          [
+            "芸能",
+            "げいのう",
+            "nghệ thuật",
+            "VÂN NĂNG"
+          ],
+          [
+            "落語",
+            "らくご",
+            "truyện cười; truyện vui",
+            "LẠC NGỮ"
+          ],
+          [
+            "行わ",
+            "おこなわ",
+            "cử hành; tổ chức; thực hiện; tiến hành; làm (行う)",
+            "HÀNH"
+          ],
+          [
+            "語っ",
+            "かたっ",
+            "kể chuyện; kể lại; thuật lại (語る)",
+            "NGỮ"
+          ],
+          [
+            "国",
+            "くに",
+            "đất nước, quê hương",
+            "QUỐC"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
+          ]
         ]
       },
       {
@@ -2000,6 +7230,116 @@
             "不安",
             "ふあん",
             "bất an, lo lắng"
+          ]
+        ],
+        "words": [
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "知って",
+            "しって",
+            "Biết rồi",
+            "TRI"
+          ],
+          [
+            "読んだ",
+            "よんだ",
+            "Đã đọc",
+            "ĐẬU"
+          ],
+          [
+            "面白い",
+            "おもしろい",
+            "dí dỏm; thú vị; hay; vui tính",
+            "DIỆN BẠCH"
+          ],
+          [
+            "不安",
+            "ふあん",
+            "bất an, lo lắng",
+            "BẤT AN"
+          ],
+          [
+            "以前",
+            "いぜん",
+            "cách đây; dạo trước; hồi trước; lúc trước; thuở trước; trước đây; ngày trước; trước kia",
+            "DĨ TIỀN"
+          ],
+          [
+            "体験",
+            "たいけん",
+            "sự trải nghiệm; kinh nghiệm trải qua",
+            "THỂ NGHIỆM"
+          ],
+          [
+            "取れ",
+            "とれ",
+            "có thể sản sinh ra; có thể thu hoạch được; được giải thích là...; có thể giải thích là; rơi; thu lại; trừ đi; bỏ đi; dừng lại (取れる)",
+            "THỦ"
+          ],
+          [
+            "実は",
+            "じつは",
+            "kỳ thực; nói thực là; trên thực tế; thực ra; thật ra",
+            "THỰC"
+          ],
+          [
+            "思え",
+            "おもえ",
+            "thể hiện cảm xúc cá nhân khi người khác nghĩ vậy mà mình lại không nghĩ vậy (思える)",
+            "TƯ"
+          ],
+          [
+            "授業",
+            "じゅぎょう",
+            "buổi học; giờ học; sự giảng bài; sự lên lớp",
+            "THỤ NGHIỆP"
+          ],
+          [
+            "文化",
+            "ぶんか",
+            "văn hóa",
+            "VĂN HÓA"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "聞き",
+            "きき",
+            "điều nghe được; âm thanh nghe được; tin đồn; việc nếm",
+            "VĂN"
+          ],
+          [
+            "落語",
+            "らくご",
+            "truyện cười; truyện vui",
+            "LẠC NGỮ"
+          ],
+          [
+            "退屈",
+            "たいくつ",
+            "buồn chán",
+            "THỐI KHUẤT"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
           ]
         ]
       },
@@ -2027,6 +7367,212 @@
             "いどう",
             "di chuyển"
           ]
+        ],
+        "words": [
+          [
+            "二人以上",
+            "ふたりいじょう",
+            "Từ hai người trở lên",
+            "NHỊ NHÂN DĨ THƯỚNG"
+          ],
+          [
+            "出し方",
+            "だしかた",
+            "Cách đưa ra",
+            "XUẤT PHƯƠNG"
+          ],
+          [
+            "落語家",
+            "らくごか",
+            "người kể những câu chuyện hài hước",
+            "LẠC NGỮ GIA"
+          ],
+          [
+            "話し方",
+            "はなしかた",
+            "cách nói chuyện",
+            "THOẠI PHƯƠNG"
+          ],
+          [
+            "面白く",
+            "おもしろく",
+            "dí dỏm; thú vị; hay; vui tính (面白い)",
+            "DIỆN BẠCH"
+          ],
+          [
+            "食べて",
+            "たべて",
+            "ăn",
+            "THỰC"
+          ],
+          [
+            "一人",
+            "ひとり",
+            "một người",
+            "NHẤT NHÂN"
+          ],
+          [
+            "会話",
+            "かいわ",
+            "hội thoại",
+            "HỘI THOẠI"
+          ],
+          [
+            "何か",
+            "なにか",
+            "cái gì đó",
+            "HÀ"
+          ],
+          [
+            "動作",
+            "どうさ",
+            "động tác",
+            "ĐỘNG TÁC"
+          ],
+          [
+            "場面",
+            "ばめん",
+            "khung cảnh",
+            "TRÀNG DIỆN"
+          ],
+          [
+            "変え",
+            "かえ",
+            "thay đổi",
+            "BIẾN"
+          ],
+          [
+            "子供",
+            "こども",
+            "bé con; bé thơ; con; con nhỏ; con nít; con trẻ; đứa trẻ; hài đồng; thơ ấu; trẻ con; con cái; trẻ em; trẻ nhỏ",
+            "TỬ CUNG"
+          ],
+          [
+            "座っ",
+            "すわっ",
+            "ngồi; ngồi xuống (座る)",
+            "TỌA"
+          ],
+          [
+            "揺ら",
+            "ゆら",
+            "rung; lắc; đu đưa; lúc lắc (揺る)",
+            "DAO"
+          ],
+          [
+            "本当",
+            "ほんとう",
+            "sự thật; thật; thật sự; thiệt",
+            "BỔN ĐƯƠNG"
+          ],
+          [
+            "様子",
+            "ようす",
+            "tình hình; trạng thái; tình trạng; dáng vẻ; diện mạo; cách ăn mặc; thái độ; cử chỉ; nét mặt; điềm báo; dấu hiệu; sự tình; nguyên do; ẩn ý; làm bộ làm tịch; ra vẻ; làm duyên làm dáng",
+            "DẠNG TỬ"
+          ],
+          [
+            "歩い",
+            "あるい",
+            "Đi bộ",
+            "BỘ"
+          ],
+          [
+            "演じ",
+            "えんじ",
+            "Diễn",
+            "DIỄN"
+          ],
+          [
+            "移動",
+            "いどう",
+            "di chuyển",
+            "DI ĐỘNG"
+          ],
+          [
+            "笑っ",
+            "わらっ",
+            "cười; mỉm cười; 微笑する (笑う)",
+            "TIẾU"
+          ],
+          [
+            "聞い",
+            "きい",
+            "Nghe",
+            "VĂN"
+          ],
+          [
+            "落語",
+            "らくご",
+            "truyện cười; truyện vui",
+            "LẠC NGỮ"
+          ],
+          [
+            "表す",
+            "あらわす",
+            "biểu thị; biểu hiện; lộ rõ; xuất hiện",
+            "BIỂU"
+          ],
+          [
+            "見せ",
+            "みせ",
+            "cho xem; cho thấy; chứng tỏ; bày tỏ (見せる)",
+            "KIẾN"
+          ],
+          [
+            "進め",
+            "すすめ",
+            "thúc đẩy; xúc tiến; đẩy nhanh (進める)",
+            "TIẾN"
+          ],
+          [
+            "食事",
+            "しょくじ",
+            "bữa ăn; bữa cơm; buổi ăn; dùng bữa",
+            "THỰC SỰ"
+          ],
+          [
+            "体",
+            "からだ",
+            "cơ thể; thân thể; khối; sức khoẻ; vẻ ngoài; trạng thái; tình trạng; diện mạo bên ngoài; vẻ; bộ dạng; sự giả vờ; hình thức bên ngoài; có vẻ; trạng thái như là; giống như; chẳng hạn như",
+            "THỂ"
+          ],
+          [
+            "声",
+            "こえ",
+            "tiếng; giọng nói; lời nói; thanh điệu của chữ hán hoặc từ tiếng nhật; dấu thanh dùng ở góc chữ để chỉ cao độ; ngữ điệu; cao độ; cường độ phát âm",
+            "THANH"
+          ],
+          [
+            "家",
+            "いえ",
+            "nhà; nhà cửa; gia đình; gia tộc; chỗ ở; hộ gia đình; các thành viên trong gia đình; tước hiệu tôn xưng cho quan chức cao cấp hoặc gia tộc",
+            "GIA"
+          ],
+          [
+            "店",
+            "みせ",
+            "cửa hàng, quán",
+            "ĐIẾM"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "親",
+            "おや",
+            "bố mẹ",
+            "THÂN"
+          ],
+          [
+            "間",
+            "あいだ",
+            "ở giữa; giữa; trong lúc; trong; nhịp ngắt; khoảng ngắt; không gian; khoảng trống",
+            "GIAN"
+          ]
         ]
       },
       {
@@ -2052,6 +7598,182 @@
             "表現力",
             "ひょうげんりょく",
             "năng lực biểu đạt"
+          ]
+        ],
+        "words": [
+          [
+            "生き生き",
+            "いきいき",
+            "chói; chói lọi; sặc sỡ; mạnh mẽ; đầy sức sống; sống động; sinh động; sâu sắc; đầy hình ảnh",
+            "SANH SANH"
+          ],
+          [
+            "登場人物",
+            "とうじょうじんぶつ",
+            "nhân vật",
+            "ĐĂNG TRÀNG NHÂN VẬT"
+          ],
+          [
+            "同時に",
+            "どうじに",
+            "đồng thời; cùng lúc đó",
+            "ĐỒNG THÌ"
+          ],
+          [
+            "暮らし",
+            "くらし",
+            "cuộc sống; việc sinh sống; sinh kế",
+            "MỘ"
+          ],
+          [
+            "落語家",
+            "らくごか",
+            "người kể những câu chuyện hài hước",
+            "LẠC NGỮ GIA"
+          ],
+          [
+            "表現力",
+            "ひょうげんりょく",
+            "năng lực biểu đạt",
+            "BIỂU HIỆN LỰC"
+          ],
+          [
+            "伝え",
+            "つたえ",
+            "sự truyền đạt; sự truyền miệng; truyền thuyết; truyền thống",
+            "TRUYỀN"
+          ],
+          [
+            "体験",
+            "たいけん",
+            "sự trải nghiệm; kinh nghiệm trải qua",
+            "THỂ NGHIỆM"
+          ],
+          [
+            "動作",
+            "どうさ",
+            "động tác",
+            "ĐỘNG TÁC"
+          ],
+          [
+            "印象",
+            "いんしょう",
+            "ấn tượng",
+            "ẤN TƯỢNG"
+          ],
+          [
+            "変わ",
+            "かわ",
+            "Thay đổi",
+            "BIẾN"
+          ],
+          [
+            "性格",
+            "せいかく",
+            "tính cách",
+            "TÍNH CÁCH"
+          ],
+          [
+            "感じ",
+            "かんじ",
+            "tri giác; cảm giác",
+            "CẢM"
+          ],
+          [
+            "感動",
+            "かんどう",
+            "sự cảm động; cảm động; sự xúc động; xúc động",
+            "CẢM ĐỘNG"
+          ],
+          [
+            "文化",
+            "ぶんか",
+            "văn hóa",
+            "VĂN HÓA"
+          ],
+          [
+            "映像",
+            "えいぞう",
+            "hình ảnh video",
+            "ÁNH TƯỢNG"
+          ],
+          [
+            "楽し",
+            "たのし",
+            "Vui vẻ",
+            "LẠC"
+          ],
+          [
+            "理解",
+            "りかい",
+            "sự hiểu; sự lĩnh hội; sự tiếp thu; sự nắm được; sự lý giải; sự hiểu biết",
+            "LÍ GIẢI"
+          ],
+          [
+            "笑わ",
+            "わらわ",
+            "cười; mỉm cười; 微笑する (笑う)",
+            "TIẾU"
+          ],
+          [
+            "細部",
+            "さいぶ",
+            "chi tiết",
+            "TẾ BỘ"
+          ],
+          [
+            "終わ",
+            "おわ",
+            "Kết thúc",
+            "CHUNG"
+          ],
+          [
+            "落語",
+            "らくご",
+            "truyện cười; truyện vui",
+            "LẠC NGỮ"
+          ],
+          [
+            "語り",
+            "かたり",
+            "nói chuyện; câu chuyện; trần thuật",
+            "NGỮ"
+          ],
+          [
+            "踊り",
+            "おどり",
+            "sự nhảy múa; múa",
+            "DŨNG"
+          ],
+          [
+            "通し",
+            "とおし",
+            "suốt; thông suốt; liên tục; không ngừng; ròng rã; suốt cả",
+            "THÔNG"
+          ],
+          [
+            "音楽",
+            "おんがく",
+            "âm nhạc",
+            "ÂM LẠC"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "話",
+            "はなし",
+            "câu chuyện; sự nói chuyện; sự hội thoại; nói chuyện; trò chuyện; đàm thoại; chương; hồi; truyện kể; từ ngữ; ngôn ngữ; lời nói",
+            "THOẠI"
           ]
         ]
       }
@@ -2117,6 +7839,92 @@
             "いくせい",
             "đào tạo, nuôi dưỡng"
           ]
+        ],
+        "words": [
+          [
+            "根本的",
+            "こんぽんてき",
+            "một cách căn bản",
+            "CĂN BỔN ĐÍCH"
+          ],
+          [
+            "重要な",
+            "じゅうような",
+            "cần; hệ trọng; lợi hại; mấu chốt; trọng yếu",
+            "TRỌNG YẾU"
+          ],
+          [
+            "人材",
+            "じんざい",
+            "nhân tài",
+            "NHÂN TÀI"
+          ],
+          [
+            "方式",
+            "ほうしき",
+            "cách thức; đường lối; phương thức",
+            "PHƯƠNG THỨC"
+          ],
+          [
+            "時間",
+            "じかん",
+            "giờ đồng hồ; giờ giấc; thì giờ; thời buổi; thời điểm; thời giờ; tiếng đồng hồ; thời gian; giờ",
+            "THÌ GIAN"
+          ],
+          [
+            "最も",
+            "もっとも",
+            "vô cùng; cực kỳ; cực độ; nhất; hết sức",
+            "TỐI"
+          ],
+          [
+            "根本",
+            "こんぽん",
+            "căn bản",
+            "CĂN BỔN"
+          ],
+          [
+            "活力",
+            "かつりょく",
+            "sức sống, sinh khí",
+            "HOẠT LỰC"
+          ],
+          [
+            "社会",
+            "しゃかい",
+            "xã hội",
+            "XÃ HỘI"
+          ],
+          [
+            "育成",
+            "いくせい",
+            "đào tạo, nuôi dưỡng",
+            "DỤC THÀNH"
+          ],
+          [
+            "要素",
+            "ようそ",
+            "yếu tố; nhân tố; phần tử",
+            "YẾU TỐ"
+          ],
+          [
+            "規定",
+            "きてい",
+            "điều luật; qui chế; qui định; qui ước; quy định; quy tắc; thể lệ",
+            "QUY ĐỊNH"
+          ],
+          [
+            "評価",
+            "ひょうか",
+            "đánh giá",
+            "BÌNH GIÁ"
+          ],
+          [
+            "選抜",
+            "せんばつ",
+            "sự chọn lọc; sự lựa chọn; nhặt ngoài",
+            "TUYỂN BẠT"
+          ]
         ]
       },
       {
@@ -2147,6 +7955,158 @@
             "努力",
             "どりょく",
             "nỗ lực"
+          ]
+        ],
+        "words": [
+          [
+            "組み込む",
+            "くみこむ",
+            "ghép vào; ghép; lắp ghép; cho vào; cho",
+            "TỔ"
+          ],
+          [
+            "人材",
+            "じんざい",
+            "nhân tài",
+            "NHÂN TÀI"
+          ],
+          [
+            "優秀",
+            "ゆうしゅう",
+            "ưu tú, xuất sắc",
+            "ƯU TÚ"
+          ],
+          [
+            "公正",
+            "こうせい",
+            "công bằng",
+            "CÔNG CHÁNH"
+          ],
+          [
+            "努力",
+            "どりょく",
+            "nỗ lực",
+            "NỖ LỰC"
+          ],
+          [
+            "多大",
+            "ただい",
+            "sự to lớn; sự nhiều; to lớn; cực nhiều",
+            "ĐA ĐẠI"
+          ],
+          [
+            "強い",
+            "つよい",
+            "khỏe; mạnh; khoẻ; bền; tốt; bướng bỉnh; ngoan cố; cứng đầu; không chịu khuất phục; cứng; dai; khô; bị sượng; mạnh mẽ; dữ dội; mãnh liệt; cứng nhắc; trang trọng; thô lỗ; gay gắt",
+            "CƯỜNG"
+          ],
+          [
+            "必ず",
+            "かならず",
+            "nhất định; tất cả; nhất quyết",
+            "TẤT"
+          ],
+          [
+            "払っ",
+            "はらっ",
+            "biểu thị; lấy đi; phủi đi; quét đi; trả; trả tiền (払う)",
+            "PHẤT"
+          ],
+          [
+            "時代",
+            "じだい",
+            "thời đại; thời kỳ",
+            "THÌ ĐẠI"
+          ],
+          [
+            "注ぐ",
+            "そそぐ",
+            "chuốc; rót; dội; trút; tưới",
+            "CHÚ"
+          ],
+          [
+            "獲得",
+            "かくとく",
+            "sự thu được; sự nhận được; sự kiếm được; sự thu nhận",
+            "HOẠCH ĐẮC"
+          ],
+          [
+            "社会",
+            "しゃかい",
+            "xã hội",
+            "XÃ HỘI"
+          ],
+          [
+            "競争",
+            "きょうそう",
+            "cạnh tranh",
+            "CẠNH TRANH"
+          ],
+          [
+            "組織",
+            "そしき",
+            "tổ chức",
+            "TỔ CHỨC"
+          ],
+          [
+            "育成",
+            "いくせい",
+            "đào tạo, nuôi dưỡng",
+            "DỤC THÀNH"
+          ],
+          [
+            "衰退",
+            "すいたい",
+            "suy tàn",
+            "SUY THỐI"
+          ],
+          [
+            "見れ",
+            "みれ",
+            "có thể nhìn; có thể xem (見れる)",
+            "KIẾN"
+          ],
+          [
+            "評価",
+            "ひょうか",
+            "đánh giá",
+            "BÌNH GIÁ"
+          ],
+          [
+            "躍起",
+            "やっき",
+            "sự liều lĩnh tuyệt vọng; sự tuyệt vọng; điên cuồng; điên rồ",
+            "DƯỢC KHỞI"
+          ],
+          [
+            "通ら",
+            "とうら",
+            "chạy; có thể hiểu được; đi ngang qua; đi qua; qua; được chấp nhận; được coi; thông; vượt qua (通る)",
+            "THÔNG"
+          ],
+          [
+            "長い",
+            "ながい",
+            "bao lâu; dài; lâu",
+            "TRƯỜNG"
+          ],
+          [
+            "関心",
+            "かんしん",
+            "sự quan tâm; quan tâm; tân tư",
+            "QUAN TÂM"
+          ],
+          [
+            "点",
+            "てん",
+            "điểm",
+            "ĐIỂM"
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
           ]
         ]
       }
@@ -2191,6 +8151,86 @@
             "ひめい",
             "tiếng kêu than"
           ]
+        ],
+        "words": [
+          [
+            "情報化社会",
+            "じょうほうかしゃかい",
+            "xã hội thông tin",
+            "TÌNH BÁO HÓA XÃ HỘI"
+          ],
+          [
+            "情報社会",
+            "じょうほうしゃかい",
+            "xã hội thông tin",
+            "TÌNH BÁO XÃ CỐI"
+          ],
+          [
+            "言って",
+            "いって",
+            "Anh có thể...",
+            "NGÔN"
+          ],
+          [
+            "出て",
+            "でて",
+            "Ra ngoài.",
+            "XUẤT"
+          ],
+          [
+            "多く",
+            "おおく",
+            "nhiều; đa số; phần lớn; thường",
+            "ĐA"
+          ],
+          [
+            "悲鳴",
+            "ひめい",
+            "tiếng kêu than",
+            "BI MINH"
+          ],
+          [
+            "情報",
+            "じょうほう",
+            "thông tin",
+            "TÌNH BÁO"
+          ],
+          [
+            "懸命",
+            "けんめい",
+            "hết sức, miệt mài",
+            "HUYỀN MỆNH"
+          ],
+          [
+            "本当",
+            "ほんとう",
+            "sự thật; thật; thật sự; thiệt",
+            "BỔN ĐƯƠNG"
+          ],
+          [
+            "生き",
+            "いき",
+            "mát mẻ; stet",
+            "SANH"
+          ],
+          [
+            "選ん",
+            "えらん",
+            "bầu; chấm; chọn; chọn lựa; kén; lựa chọn; tuyển; tuyển chọn (選ぶ)",
+            "TUYỂN"
+          ],
+          [
+            "中",
+            "なか",
+            "bên trong",
+            "TRUNG"
+          ],
+          [
+            "何",
+            "なに",
+            "cái gì",
+            "HÀ"
+          ]
         ]
       },
       {
@@ -2221,6 +8261,98 @@
             "特徴",
             "とくちょう",
             "đặc trưng"
+          ]
+        ],
+        "words": [
+          [
+            "情報化社会",
+            "じょうほうかしゃかい",
+            "xã hội thông tin",
+            "TÌNH BÁO HÓA XÃ HỘI"
+          ],
+          [
+            "流行っ",
+            "はやっ",
+            "thịnh hành; đang lưu hành; đang mốt; lây lan; tràn lan; lan rộng; lan truyền; thịnh vượng; phát đạt (流行る)",
+            "LƯU HÀNH"
+          ],
+          [
+            "世間",
+            "せけん",
+            "thiên hạ, xã hội",
+            "THẾ GIAN"
+          ],
+          [
+            "人間",
+            "にんげん",
+            "con người",
+            "NHÂN GIAN"
+          ],
+          [
+            "動か",
+            "うごか",
+            "bị lay động; di chuyển; chạy; hoạt động; nhúc nhích; biến đổi; chuyển động; thay đổi (動く)",
+            "ĐỘNG"
+          ],
+          [
+            "情報",
+            "じょうほう",
+            "thông tin",
+            "TÌNH BÁO"
+          ],
+          [
+            "流行",
+            "りゅうこう",
+            "thịnh hành, xu hướng",
+            "LƯU HÀNH"
+          ],
+          [
+            "焦り",
+            "あせり",
+            "sự sốt ruột, nôn nóng",
+            "TIÊU"
+          ],
+          [
+            "熱心",
+            "ねっしん",
+            "nhiệt tâm, say sưa",
+            "NHIỆT TÂM"
+          ],
+          [
+            "特徴",
+            "とくちょう",
+            "đặc trưng",
+            "ĐẶC TRƯNG"
+          ],
+          [
+            "知ら",
+            "しら",
+            "biết; hay tin; nhận ra (知る)",
+            "TRI"
+          ],
+          [
+            "突き",
+            "つき",
+            "nhát đâm; cú đâm; chọc; mổ; hích; xỉa; bới",
+            "ĐỘT"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "遅れ",
+            "おくれ",
+            "sự muộn; sự chậm trễ",
+            "TRÌ"
+          ],
+          [
+            "今",
+            "いま",
+            "bây giờ",
+            "KIM"
           ]
         ]
       }
@@ -2270,6 +8402,104 @@
             "かんさつ",
             "quan sát"
           ]
+        ],
+        "words": [
+          [
+            "自分自身",
+            "じぶんじしん",
+            "bản thân",
+            "TỰ PHÂN TỰ THÂN"
+          ],
+          [
+            "具体的",
+            "ぐたいてき",
+            "cụ thể",
+            "CỤ THỂ ĐÍCH"
+          ],
+          [
+            "変化し",
+            "へんかし",
+            "biến; biến đổi; biến hóa; đổi đời; thay (変化する)",
+            "BIẾN HÓA"
+          ],
+          [
+            "客観的",
+            "きゃっかんてき",
+            "khách quan",
+            "KHÁCH QUAN ĐÍCH"
+          ],
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "抽象的",
+            "ちゅうしょうてき",
+            "trừu tượng",
+            "TRỪU TƯỢNG ĐÍCH"
+          ],
+          [
+            "存在",
+            "そんざい",
+            "sự tồn tại",
+            "TỒN TẠI"
+          ],
+          [
+            "文字",
+            "もじ",
+            "chữ; chữ cái; văn tự; con chữ",
+            "VĂN TỰ"
+          ],
+          [
+            "直接",
+            "ちょくせつ",
+            "trực tiếp",
+            "TRỰC TIẾP"
+          ],
+          [
+            "瞬間",
+            "しゅんかん",
+            "khoảnh khắc",
+            "THUẤN GIAN"
+          ],
+          [
+            "筆者",
+            "ひっしゃ",
+            "phóng viên; kí giả",
+            "BÚT GIẢ"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "見た",
+            "みた",
+            "Thấy chưa.",
+            "HIỆN"
+          ],
+          [
+            "観察",
+            "かんさつ",
+            "quan sát",
+            "QUAN SÁT"
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
+          ]
         ]
       },
       {
@@ -2295,6 +8525,128 @@
             "瞬間",
             "しゅんかん",
             "khoảnh khắc"
+          ]
+        ],
+        "words": [
+          [
+            "思い知ら",
+            "おもいしら",
+            "nhận ra; nhận thức rõ; hiểu rõ; thấm thía; thấu hiểu; thức tỉnh; tỉnh ngộ (思い知る)",
+            "TƯ TRI"
+          ],
+          [
+            "必然的",
+            "ひつぜんてき",
+            "tất yếu",
+            "TẤT NHIÊN ĐÍCH"
+          ],
+          [
+            "思った",
+            "おもった",
+            "Tôi đã nghĩ",
+            "TƯ"
+          ],
+          [
+            "作業",
+            "さぎょう",
+            "thao tác",
+            "TÁC NGHIỆP"
+          ],
+          [
+            "呼び",
+            "よび",
+            "gọi là; được gọi là; khuôn khổ ấn định; kích thước danh định",
+            "HÔ"
+          ],
+          [
+            "批判",
+            "ひはん",
+            "phê phán, phản biện",
+            "PHÊ PHÁN"
+          ],
+          [
+            "文章",
+            "ぶんしょう",
+            "bài văn, đoạn văn",
+            "VĂN CHƯƠNG"
+          ],
+          [
+            "書い",
+            "かい",
+            "Viết",
+            "THƯ"
+          ],
+          [
+            "書き",
+            "かき",
+            "viết; sáng tác; viết lách (書く)",
+            "THƯ"
+          ],
+          [
+            "書く",
+            "かく",
+            "viết; sáng tác; viết lách",
+            "THƯ"
+          ],
+          [
+            "甘さ",
+            "あまさ",
+            "Độ ngọt",
+            "CAM"
+          ],
+          [
+            "瞬間",
+            "しゅんかん",
+            "khoảnh khắc",
+            "THUẤN GIAN"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "観察",
+            "かんさつ",
+            "quan sát",
+            "QUAN SÁT"
+          ],
+          [
+            "読み",
+            "よみ",
+            "sự đọc",
+            "ĐỘC"
+          ],
+          [
+            "読む",
+            "よむ",
+            "đọc",
+            "ĐỘC"
+          ],
+          [
+            "起こ",
+            "おこ",
+            "Đánh thức",
+            "KHỈ"
+          ],
+          [
+            "進め",
+            "すすめ",
+            "thúc đẩy; xúc tiến; đẩy nhanh (進める)",
+            "TIẾN"
+          ],
+          [
+            "浅",
+            "せん",
+            "Nông",
+            "THIỂN"
           ]
         ]
       }
@@ -2344,6 +8696,104 @@
             "のうどうてき",
             "chủ động"
           ]
+        ],
+        "words": [
+          [
+            "受動的",
+            "じゅどうてき",
+            "thụ động",
+            "THỤ ĐỘNG ĐÍCH"
+          ],
+          [
+            "始まり",
+            "はじまり",
+            "bắt đầu; cái bắt đầu; sự bắt đầu",
+            "THỦY"
+          ],
+          [
+            "強いて",
+            "しいて",
+            "khăng khăng; nhấn mạnh",
+            "CƯỜNG"
+          ],
+          [
+            "能動的",
+            "のうどうてき",
+            "chủ động",
+            "NĂNG ĐỘNG ĐÍCH"
+          ],
+          [
+            "側面",
+            "そくめん",
+            "mặt bên; một bên; một mặt; hông; sườn",
+            "TRẮC DIỆN"
+          ],
+          [
+            "勉め",
+            "つとめ",
+            "Cố gắng",
+            "MIỄN"
+          ],
+          [
+            "勉強",
+            "べんきょう",
+            "học tập",
+            "MIỄN CƯỠNG"
+          ],
+          [
+            "問う",
+            "とう",
+            "cật vấn; câu hỏi; hỏi; hỏi thăm; vấn",
+            "VẤN"
+          ],
+          [
+            "学ぶ",
+            "まなぶ",
+            "học; lĩnh hội; bắt chước; mô phỏng",
+            "HỌC"
+          ],
+          [
+            "学問",
+            "がくもん",
+            "học vấn",
+            "HỌC VẤN"
+          ],
+          [
+            "実は",
+            "じつは",
+            "kỳ thực; nói thực là; trên thực tế; thực ra; thật ra",
+            "THỰC"
+          ],
+          [
+            "常識",
+            "じょうしき",
+            "thường thức, lẽ thường",
+            "THƯỜNG THỨC"
+          ],
+          [
+            "持つ",
+            "もつ",
+            "cầm; nắm; mang; chịu; đảm nhiệm; có; duy trì; khiêng; vác; xách",
+            "TRÌ"
+          ],
+          [
+            "極め",
+            "きめ",
+            "việc nhận định giá trị của; điểm cuối cùng thúc đẩy tiến về phía trước",
+            "CỰC"
+          ],
+          [
+            "疑っ",
+            "うたがっ",
+            "hiềm; hồ nghi; nghi ngờ; thắc mắc (疑う)",
+            "NGHI"
+          ],
+          [
+            "行為",
+            "こうい",
+            "hành vi; hành động",
+            "HÀNH VI"
+          ]
         ]
       },
       {
@@ -2370,6 +8820,176 @@
             "どくそうてき",
             "độc đáo, sáng tạo"
           ]
+        ],
+        "words": [
+          [
+            "吐き出す",
+            "はきだす",
+            "nôn ra; ợ ra; xuất ra",
+            "THỔ XUẤT"
+          ],
+          [
+            "自分自身",
+            "じぶんじしん",
+            "bản thân",
+            "TỰ PHÂN TỰ THÂN"
+          ],
+          [
+            "主体的",
+            "しゅたいてき",
+            "chủ thể, tự chủ",
+            "CHỦ THỂ ĐÍCH"
+          ],
+          [
+            "再編成",
+            "さいへんせい",
+            "tái tổ chức, sắp xếp lại",
+            "TÁI BIÊN THÀNH"
+          ],
+          [
+            "単純に",
+            "たんじゅんに",
+            "Vào máy tôi.",
+            "ĐAN THUẦN"
+          ],
+          [
+            "増やす",
+            "ふやす",
+            "làm tăng lên; làm hơn",
+            "TĂNG"
+          ],
+          [
+            "変わり",
+            "かわり",
+            "sự thay đổi; thay đổi; đổi khác; biến động",
+            "BIẾN"
+          ],
+          [
+            "物差し",
+            "ものさし",
+            "thước đo; thước",
+            "VẬT SOA"
+          ],
+          [
+            "独創的",
+            "どくそうてき",
+            "độc đáo, sáng tạo",
+            "ĐỘC SANG ĐÍCH"
+          ],
+          [
+            "見出そ",
+            "みだそ",
+            "Hãy tìm ra",
+            "HIỆN XUẤT"
+          ],
+          [
+            "問う",
+            "とう",
+            "cật vấn; câu hỏi; hỏi; hỏi thăm; vấn",
+            "VẤN"
+          ],
+          [
+            "変わ",
+            "かわ",
+            "Thay đổi",
+            "BIẾN"
+          ],
+          [
+            "学ぶ",
+            "まなぶ",
+            "học; lĩnh hội; bắt chước; mô phỏng",
+            "HỌC"
+          ],
+          [
+            "学問",
+            "がくもん",
+            "học vấn",
+            "HỌC VẤN"
+          ],
+          [
+            "少し",
+            "すこし",
+            "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+            "THIỂU"
+          ],
+          [
+            "常識",
+            "じょうしき",
+            "thường thức, lẽ thường",
+            "THƯỜNG THỨC"
+          ],
+          [
+            "正解",
+            "せいかい",
+            "đáp án đúng",
+            "CHÁNH GIẢI"
+          ],
+          [
+            "疑い",
+            "うたがい",
+            "sự nghi ngờ",
+            "NGHI"
+          ],
+          [
+            "知識",
+            "ちしき",
+            "kiến thức",
+            "TRI THỨC"
+          ],
+          [
+            "自ら",
+            "みずから",
+            "tự mình",
+            "TỰ"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "行為",
+            "こうい",
+            "hành vi; hành động",
+            "HÀNH VI"
+          ],
+          [
+            "見方",
+            "みかた",
+            "cách nhìn; cách quan sát; quan điểm",
+            "KIẾN PHƯƠNG"
+          ],
+          [
+            "覚え",
+            "おぼえ",
+            "ghi nhớ; nhớ; kinh nghiệm; tự tin",
+            "GIÁC"
+          ],
+          [
+            "言え",
+            "いえ",
+            "có thể nói (言える)",
+            "NGÔN"
+          ],
+          [
+            "通し",
+            "とおし",
+            "suốt; thông suốt; liên tục; không ngừng; ròng rã; suốt cả",
+            "THÔNG"
+          ],
+          [
+            "限り",
+            "かぎり",
+            "giới hạn; hạn chế; hạn; điểm dừng; chỗ nghỉ; sự tạm dừng; kết thúc; điểm kết thúc; ngày giao hàng; tháng quyết toán; phần cuối của một buổi biểu diễn; hồi cuối; cảnh cuối của một vở kịch; tiết mục cuối cùng trong ngày; người biểu diễn cuối cùng; tên gọi tắt của vở kịch noh cuối cùng trong ngày; tên gọi tắt của vở kịch kyogen cuối cùng trong chương trình; nước đi cắt đứt sự liên kết giữa các quân cờ của đối phương; đơn vị đếm các lát cắt dày",
+            "HẠN"
+          ],
+          [
+            "別",
+            "べつ",
+            "đặc biệt; trừ ra; ngoài ra; phân biệt; riêng biệt; riêng; sự đặc biệt; sự phân biệt; sự khác biệt; sự khác nhau; khác; cái khác; ngoại lệ; phi thường; wake; tước hiệu cha truyền con nối cổ xưa dành cho hậu duệ hoàng gia cai trị các vùng địa phương",
+            "BIỆT"
+          ]
         ]
       },
       {
@@ -2395,6 +9015,254 @@
             "積極的",
             "せっきょくてき",
             "tích cực"
+          ]
+        ],
+        "words": [
+          [
+            "取り込ま",
+            "とりこま",
+            "dối trá; lừa dối; thu nhận; tiếp nhận (取り込む)",
+            "THỦ"
+          ],
+          [
+            "当たり前",
+            "あたりまえ",
+            "dĩ nhiên; đương nhiên; rõ ràng; thông thường; hợp lý; thông dụng; bình thường; sự đương nhiên; sự rõ ràng; sự thông thường; sự hợp lý",
+            "ĐƯƠNG TIỀN"
+          ],
+          [
+            "積極的な",
+            "せっきょくてきな",
+            "suy nghĩ tích cực; lạc quan",
+            "TÍCH CỰC ĐÍCH"
+          ],
+          [
+            "世の中",
+            "よのなか",
+            "xã hội; thế giới; các thời",
+            "THẾ TRUNG"
+          ],
+          [
+            "創造的",
+            "そうぞうてき",
+            "có tính sáng tạo",
+            "SANG TẠO ĐÍCH"
+          ],
+          [
+            "厭世的",
+            "えんせいてき",
+            "bi quan; yếm thế",
+            "YẾM THẾ ĐÍCH"
+          ],
+          [
+            "否定的",
+            "ひていてき",
+            "phủ định; mâu thuẫn",
+            "PHỦ ĐỊNH ĐÍCH"
+          ],
+          [
+            "思って",
+            "おもって",
+            "Nghĩ rằng",
+            "TƯ"
+          ],
+          [
+            "生き方",
+            "いきかた",
+            "cách sống; kiểu sống; phong cách sống; phong sách sống",
+            "SANH PHƯƠNG"
+          ],
+          [
+            "積極的",
+            "せっきょくてき",
+            "tích cực",
+            "TÍCH CỰC ĐÍCH"
+          ],
+          [
+            "見出し",
+            "みだし",
+            "đầu đề",
+            "KIẾN XUẤT"
+          ],
+          [
+            "面白い",
+            "おもしろい",
+            "dí dỏm; thú vị; hay; vui tính",
+            "DIỆN BẠCH"
+          ],
+          [
+            "一言",
+            "ひとこと",
+            "một lời; vài lời; đôi lời; một lời; đôi lời; vài lời ngắn gọn",
+            "NHẤT NGÔN"
+          ],
+          [
+            "世界",
+            "せかい",
+            "thế giới; xã hội; vũ trụ; giới",
+            "THẾ GIỚI"
+          ],
+          [
+            "事柄",
+            "ことがら",
+            "sự việc; việc; vấn đề; chủ đề; tình hình",
+            "SỰ BÍNH"
+          ],
+          [
+            "何事",
+            "なにごと",
+            "cái gì",
+            "HÀ SỰ"
+          ],
+          [
+            "使わ",
+            "つかわ",
+            "dụng; sử dụng; dùng; xài (使う)",
+            "SỬ"
+          ],
+          [
+            "信じ",
+            "しんじ",
+            "Tin tưởng",
+            "TÍN"
+          ],
+          [
+            "信用",
+            "しんよう",
+            "tin tưởng",
+            "TÍN DỤNG"
+          ],
+          [
+            "同義",
+            "どうぎ",
+            "cùng ý nghĩa đó",
+            "ĐỒNG NGHĨA"
+          ],
+          [
+            "営み",
+            "いとなみ",
+            "công việc; việc làm; công việc mưu sinh; sự làm việc; sự làm",
+            "DOANH"
+          ],
+          [
+            "安易",
+            "あんい",
+            "dễ dãi, hời hợt",
+            "AN DỊCH"
+          ],
+          [
+            "少し",
+            "すこし",
+            "chút đỉnh; chút ít; hơi; hơi hơi; một chút; một ít; một tí; tí; tí ti; tí tị",
+            "THIỂU"
+          ],
+          [
+            "常識",
+            "じょうしき",
+            "thường thức, lẽ thường",
+            "THƯỜNG THỨC"
+          ],
+          [
+            "必要",
+            "ひつよう",
+            "cấp thiết; cần thiết",
+            "TẤT YẾU"
+          ],
+          [
+            "意味",
+            "いみ",
+            "ý nghĩa",
+            "Ý VỊ"
+          ],
+          [
+            "普通",
+            "ふつう",
+            "nôm na; sự thông thường; sự phổ thông; tầm thường; thông thường; phổ thông; thường; vừa",
+            "PHỔ THÔNG"
+          ],
+          [
+            "生き",
+            "いき",
+            "mát mẻ; stet",
+            "SANH"
+          ],
+          [
+            "疑う",
+            "うたがう",
+            "hiềm; hồ nghi; nghi ngờ; thắc mắc",
+            "NGHI"
+          ],
+          [
+            "疑っ",
+            "うたがっ",
+            "hiềm; hồ nghi; nghi ngờ; thắc mắc (疑う)",
+            "NGHI"
+          ],
+          [
+            "紡ぎ",
+            "つむぎ",
+            "kéo sợi (紡ぐ)",
+            "PHƯỞNG"
+          ],
+          [
+            "言え",
+            "いえ",
+            "có thể nói (言える)",
+            "NGÔN"
+          ],
+          [
+            "言葉",
+            "ことば",
+            "câu nói; ngôn ngữ; tiếng nói; lời ăn tiếng nói; từ ngữ; lời nói; lời",
+            "NGÔN DIỆP"
+          ],
+          [
+            "豊か",
+            "ゆたか",
+            "phong phú; dư dả; giàu có; sự phong phú; sự dư dật; sự giàu có",
+            "PHONG"
+          ],
+          [
+            "通常",
+            "つうじょう",
+            "bình thường; luân thường; thông lệ; thông thường; thường thường; thường; 通常` in vietnamese is `thông thường`",
+            "THÔNG THƯỜNG"
+          ],
+          [
+            "閉ざ",
+            "とざ",
+            "Đóng",
+            "BẾ"
+          ],
+          [
+            "人",
+            "ひと",
+            "con người; nhân loại; người; người khác; người ta; tôi; vợ gọi chồng; nhân vật; tính cách; người phụ trách; người thực hiện hành động; đơn vị đếm người; nhân tạo; bậc thứ ba trong hệ thống phân loại ba cấp; người thuộc quốc tịch; vùng miền hoặc nghề nghiệp nhất định",
+            "NHÂN"
+          ],
+          [
+            "時",
+            "とき",
+            "giờ phút; giây phút; lúc đó; lúc; khi; thời gian; mùa; thời cơ; cơ hội; thời đại; thời kỳ; thời điểm; có khi; có lúc; thời gian thích hợp; thời điểm thích hợp; giai đoạn phù hợp",
+            "THÌ"
+          ],
+          [
+            "目",
+            "め",
+            "con mắt; mắt; nhãn cầu; nhìn; ra hiệu bằng mắt; mục; đề mục; danh sách; mục lục; bộ; điểm trọng yếu; mục tiêu chính; người lãnh đạo; người đứng đầu; thủ lĩnh; giao điểm trên bàn cờ vây; sakan; đơn vị đếm điểm trong cờ vây",
+            "MỤC"
+          ],
+          [
+            "私",
+            "わたし",
+            "tôi",
+            "TƯ"
+          ],
+          [
+            "繋",
+            "つな",
+            "Kết nối",
+            ""
           ]
         ]
       }
@@ -2455,6 +9323,98 @@
             "ふかけつ",
             "không thể thiếu"
           ]
+        ],
+        "words": [
+          [
+            "不可欠",
+            "ふかけつ",
+            "không thể thiếu",
+            "BẤT KHIẾM"
+          ],
+          [
+            "戸惑い",
+            "とまどい",
+            "sự lúng túng, bỡ ngỡ",
+            "HỘ HOẶC"
+          ],
+          [
+            "他人",
+            "たにん",
+            "khách; người khác; người không có quan hệ; người ngoài; người lạ; tha nhân",
+            "THA NHÂN"
+          ],
+          [
+            "伝わ",
+            "つたわ",
+            "đi cùng; đi theo; tiếp tục (伝う)",
+            "TRUYỀN"
+          ],
+          [
+            "出発",
+            "しゅっぱつ",
+            "sự xuất phát; sự khởi hành; xuất phát; khởi hành; bắt đầu một việc gì đó",
+            "XUẤT PHÁT"
+          ],
+          [
+            "合う",
+            "あう",
+            "ăn khớp; hợp; đúng; chính xác; làm...cùng nhau; phù hợp; vừa vặn; vừa; hợp lại; hợp nhất; đoàn kết; hài hòa; trùng khớp; thống nhất; nhất quán; có lãi; xứng đáng với công sức bỏ ra; làm cùng nhau; làm cho nhau; kết nối; gặp nhau; điều chỉnh cho phù hợp với người khác; hòa nhập; chồng lên nhau; đan xen",
+            "HỢP"
+          ],
+          [
+            "合え",
+            "あえ",
+            "Gặp",
+            "CÁP"
+          ],
+          [
+            "対話",
+            "たいわ",
+            "đối thoại",
+            "ĐỐI THOẠI"
+          ],
+          [
+            "痛み",
+            "いたみ",
+            "nỗi đau",
+            "THỐNG"
+          ],
+          [
+            "繊細",
+            "せんさい",
+            "tinh tế, nhạy bén",
+            "TIÊM TẾ"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "語り",
+            "かたり",
+            "nói chuyện; câu chuyện; trần thuật",
+            "NGỮ"
+          ],
+          [
+            "違い",
+            "ちがい",
+            "sự khác nhau; trật",
+            "VI"
+          ],
+          [
+            "開く",
+            "ひらく",
+            "mở; mở cửa",
+            "KHAI"
+          ],
+          [
+            "心",
+            "こころ",
+            "trái tim",
+            "TÂM"
+          ]
         ]
       },
       {
@@ -2475,6 +9435,92 @@
             "点検",
             "てんけん",
             "kiểm định, rà soát lại"
+          ]
+        ],
+        "words": [
+          [
+            "再点検",
+            "さいてんけん",
+            "Kiểm tra lại",
+            "TÁI ĐIỂM KIỂM"
+          ],
+          [
+            "異なる",
+            "ことなる",
+            "dị chất; khác; khác với",
+            "DỊ"
+          ],
+          [
+            "鍛えて",
+            "きたえて",
+            "rèn giũa, tôi luyện",
+            "ĐOÀN"
+          ],
+          [
+            "他人",
+            "たにん",
+            "khách; người khác; người không có quan hệ; người ngoài; người lạ; tha nhân",
+            "THA NHÂN"
+          ],
+          [
+            "対話",
+            "たいわ",
+            "đối thoại",
+            "ĐỐI THOẠI"
+          ],
+          [
+            "思い",
+            "おもい",
+            "cảm thấy; suy nghĩ; tình cảm; tình yêu; ước muốn",
+            "TƯ"
+          ],
+          [
+            "思考",
+            "しこう",
+            "tư duy, suy nghĩ",
+            "TƯ KHẢO"
+          ],
+          [
+            "澄ま",
+            "すま",
+            "trong sạch; sáng; trong trẻo (澄む)",
+            "TRỪNG"
+          ],
+          [
+            "点検",
+            "てんけん",
+            "kiểm định, rà soát lại",
+            "ĐIỂM KIỂM"
+          ],
+          [
+            "熱い",
+            "あつい",
+            "nóng; nóng bỏng; nhiệt tình",
+            "NHIỆT"
+          ],
+          [
+            "考え",
+            "かんがえ",
+            "suy nghĩ; ý kiến; ý tưởng; dự định",
+            "KHẢO"
+          ],
+          [
+            "鍛え",
+            "きたえ",
+            "khổ luyện; tập luyện; rèn giũa; rèn; đào tạo; kỷ luật",
+            "ĐOÁN"
+          ],
+          [
+            "口",
+            "くち",
+            "cửa; miệng; chỗ cho vào; chỗ ra vào; mồm; mỏ; lời nói",
+            "KHẨU"
+          ],
+          [
+            "耳",
+            "みみ",
+            "cái tai; tai",
+            "NHĨ"
           ]
         ]
       }
@@ -2529,6 +9575,212 @@
             "ぎのう",
             "kỹ năng"
           ]
+        ],
+        "words": [
+          [
+            "最低限必要",
+            "さいていげんひつよう",
+            "Yêu cầu tối thiểu",
+            "TỐI ĐÊ HẠN TẤT YÊU"
+          ],
+          [
+            "偶然的",
+            "ぐうぜんてき",
+            "Ngẫu nhiên",
+            "NGẪU NHIÊN"
+          ],
+          [
+            "基礎的",
+            "きそてき",
+            "cơ sở; nền tảng",
+            "CƠ SỞ ĐÍCH"
+          ],
+          [
+            "度外視",
+            "どがいし",
+            "không hề quan tâm; bỏ mặc",
+            "ĐỘ NGOẠI THỊ"
+          ],
+          [
+            "生き方",
+            "いきかた",
+            "cách sống; kiểu sống; phong cách sống; phong sách sống",
+            "SANH PHƯƠNG"
+          ],
+          [
+            "生まれ",
+            "うまれ",
+            "sự ra đời; nơi sinh; nơi ra đời",
+            "SANH"
+          ],
+          [
+            "言って",
+            "いって",
+            "Anh có thể...",
+            "NGÔN"
+          ],
+          [
+            "近代的",
+            "きんだいてき",
+            "hiện đại",
+            "CẬN ĐẠI ĐÍCH"
+          ],
+          [
+            "人生",
+            "じんせい",
+            "bản mạng; bản mệnh; đời người; nhân mạng; nhân sinh; cuộc sống; cuộc đời; nhân tình",
+            "NHÂN SANH"
+          ],
+          [
+            "価値",
+            "かち",
+            "giá trị",
+            "GIÁ TRỊ"
+          ],
+          [
+            "個人",
+            "こじん",
+            "cá nhân; cá thể; mang tính cá nhân; riêng tư; riêng; kho tư nhân; tư gia",
+            "CÁ NHÂN"
+          ],
+          [
+            "偶然",
+            "ぐうぜん",
+            "ngẫu nhiên",
+            "NGẪU NHIÊN"
+          ],
+          [
+            "出自",
+            "しゅつじ",
+            "nơi sinh; xuống; những máu - hàng; bề ngoài self ai đó",
+            "XUẤT TỰ"
+          ],
+          [
+            "同じ",
+            "おなじ",
+            "bằng nhau; sự giống nhau; sự giống; giống nhau; cùng; giống",
+            "ĐỒNG"
+          ],
+          [
+            "否定",
+            "ひてい",
+            "sự phủ định; sự bác bỏ",
+            "PHỦ ĐỊNH"
+          ],
+          [
+            "場所",
+            "ばしょ",
+            "địa điểm",
+            "TRÀNG SỞ"
+          ],
+          [
+            "学ぶ",
+            "まなぶ",
+            "học; lĩnh hội; bắt chước; mô phỏng",
+            "HỌC"
+          ],
+          [
+            "学校",
+            "がっこう",
+            "trường học",
+            "HỌC GIÁO"
+          ],
+          [
+            "家柄",
+            "いえがら",
+            "gia đình; gia tộc",
+            "GIA BÍNH"
+          ],
+          [
+            "差別",
+            "さべつ",
+            "phân biệt đối xử",
+            "SOA BIỆT"
+          ],
+          [
+            "技能",
+            "ぎのう",
+            "kỹ năng",
+            "KĨ NĂNG"
+          ],
+          [
+            "条件",
+            "じょうけん",
+            "điều kiện; điều khoản",
+            "ĐIỀU KIỆN"
+          ],
+          [
+            "構築",
+            "こうちく",
+            "sự xây dựng",
+            "CẤU TRÚC"
+          ],
+          [
+            "民族",
+            "みんぞく",
+            "dân tộc; sắc tộc; nhóm sắc tộc",
+            "DÂN TỘC"
+          ],
+          [
+            "決ま",
+            "きま",
+            "Quyết định",
+            "QUYẾT"
+          ],
+          [
+            "生き",
+            "いき",
+            "mát mẻ; stet",
+            "SANH"
+          ],
+          [
+            "知識",
+            "ちしき",
+            "kiến thức",
+            "TRI THỨC"
+          ],
+          [
+            "社会",
+            "しゃかい",
+            "xã hội",
+            "XÃ HỘI"
+          ],
+          [
+            "落ち",
+            "おち",
+            "điểm nút; điểm mấu chốt",
+            "LẠC"
+          ],
+          [
+            "階層",
+            "かいそう",
+            "giai tầng; tầng lớp",
+            "GIAI TẰNG"
+          ],
+          [
+            "革命",
+            "かくめい",
+            "cách mạng",
+            "CÁCH MỆNH"
+          ],
+          [
+            "何",
+            "なに",
+            "cái gì",
+            "HÀ"
+          ],
+          [
+            "後",
+            "あと",
+            "sau đó; sau khi; kể từ đó; trong tương lai",
+            "HẬU"
+          ],
+          [
+            "性",
+            "せい",
+            "giới tính; giống; tính; bản chất",
+            "TÍNH"
+          ]
         ]
       },
       {
@@ -2555,6 +9807,116 @@
             "せいさく",
             "chính sách"
           ]
+        ],
+        "words": [
+          [
+            "取り組ん",
+            "とりくん",
+            "dốc sức làm; vật nhau; đấu với (取り組む)",
+            "THỦ TỔ"
+          ],
+          [
+            "子ども",
+            "こども",
+            "trẻ em; trẻ con",
+            "TỬ"
+          ],
+          [
+            "世界",
+            "せかい",
+            "thế giới; xã hội; vũ trụ; giới",
+            "THẾ GIỚI"
+          ],
+          [
+            "偶然",
+            "ぐうぜん",
+            "ngẫu nhiên",
+            "NGẪU NHIÊN"
+          ],
+          [
+            "出自",
+            "しゅつじ",
+            "nơi sinh; xuống; những máu - hàng; bề ngoài self ai đó",
+            "XUẤT TỰ"
+          ],
+          [
+            "参加",
+            "さんか",
+            "sự tham gia; sự tham dự",
+            "THAM GIA"
+          ],
+          [
+            "婦人",
+            "ふじん",
+            "người phụ nữ; quý bà",
+            "PHỤ NHÂN"
+          ],
+          [
+            "左右",
+            "さゆう",
+            "phải trái; bên phải và bên trái; sự trên dưới; tả hữu; chuyện này chuyện nọ; việc này việc kia; đủ thứ chuyện; có xu hướng; hay; dễ; thường hay; dù sao thì; dù thế nào đi nữa; nói chung là; lời ra tiếng vào; điều tiếng; lùm xùm; có vấn đề; làm cái này cái nọ; loay hoay đủ thứ",
+            "TẢ HỮU"
+          ],
+          [
+            "差別",
+            "さべつ",
+            "phân biệt đối xử",
+            "SOA BIỆT"
+          ],
+          [
+            "愛護",
+            "あいご",
+            "sự bảo vệ; sự chăm sóc cẩn thận; nhẹ nhàng",
+            "ÁI HỘ"
+          ],
+          [
+            "撤廃",
+            "てっぱい",
+            "bãi bỏ, xóa bỏ",
+            "TRIỆT PHẾ"
+          ],
+          [
+            "政治",
+            "せいじ",
+            "chánh trị; chính trị",
+            "CHÁNH TRÌ"
+          ],
+          [
+            "政策",
+            "せいさく",
+            "chính sách",
+            "CHÁNH SÁCH"
+          ],
+          [
+            "条件",
+            "じょうけん",
+            "điều kiện; điều khoản",
+            "ĐIỀU KIỆN"
+          ],
+          [
+            "理念",
+            "りねん",
+            "lý niệm, lý tưởng",
+            "LÍ NIỆM"
+          ],
+          [
+            "自由",
+            "じゆう",
+            "tự do",
+            "TỰ DO"
+          ],
+          [
+            "言え",
+            "いえ",
+            "có thể nói (言える)",
+            "NGÔN"
+          ],
+          [
+            "何",
+            "なに",
+            "cái gì",
+            "HÀ"
+          ]
         ]
       },
       {
@@ -2575,6 +9937,110 @@
             "意味",
             "いみ",
             "ý nghĩa"
+          ]
+        ],
+        "words": [
+          [
+            "決定的",
+            "けっていてき",
+            "mang tính quyết định",
+            "QUYẾT ĐỊNH ĐÍCH"
+          ],
+          [
+            "何も",
+            "なにも",
+            "không có gì",
+            "HÀ"
+          ],
+          [
+            "問わ",
+            "とわ",
+            "cật vấn; câu hỏi; hỏi; hỏi thăm; vấn (問う)",
+            "VẤN"
+          ],
+          [
+            "存在",
+            "そんざい",
+            "sự tồn tại",
+            "TỒN TẠI"
+          ],
+          [
+            "必要",
+            "ひつよう",
+            "cấp thiết; cần thiết",
+            "TẤT YẾU"
+          ],
+          [
+            "意味",
+            "いみ",
+            "ý nghĩa",
+            "Ý VỊ"
+          ],
+          [
+            "時代",
+            "じだい",
+            "thời đại; thời kỳ",
+            "THÌ ĐẠI"
+          ],
+          [
+            "決ま",
+            "きま",
+            "Quyết định",
+            "QUYẾT"
+          ],
+          [
+            "理由",
+            "りゆう",
+            "nguyên do; nguyên nhân; lý do; lời biện hộ; cái cớ",
+            "LÍ DO"
+          ],
+          [
+            "生き",
+            "いき",
+            "mát mẻ; stet",
+            "SANH"
+          ],
+          [
+            "自分",
+            "じぶん",
+            "bản thân mình; tự mình",
+            "TỰ PHÂN"
+          ],
+          [
+            "見い",
+            "みい",
+            "Tìm thấy",
+            "HIỆN"
+          ],
+          [
+            "見え",
+            "みえ",
+            "hiện ra; màn hình; sự xuất hiện; tính kiêu căng; mê hoặc; sự hấp dẫn",
+            "KIẾN"
+          ],
+          [
+            "言え",
+            "いえ",
+            "có thể nói (言える)",
+            "NGÔN"
+          ],
+          [
+            "返し",
+            "かえし",
+            "đảo ngược; trả lại; trả lại quà tặng; đưa lại; trở lại.",
+            "PHẢN"
+          ],
+          [
+            "何",
+            "なに",
+            "cái gì",
+            "HÀ"
+          ],
+          [
+            "裏",
+            "うら",
+            "đảo ngược; trái; sau; mặt trái; mặt sau; mặt đối diện; bên trong; nội bộ; phần bên trong; trong trạng thái; giữa lúc; đằng sau hậu trường; nội thất; trong vòng",
+            "LÍ"
           ]
         ]
       }

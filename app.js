@@ -51,18 +51,25 @@
     detoxSkipToday: false,
     detoxInterval: null,
     // Dojo queue
+    dojoMode: 'write', // 'write' | 'typing'
     dojoQueue: [],
     dojoIndex: 0,
     dojoCurrent: null,
+    dojoResults: [],
     dojoFrictionTimer: null,
     // Module 3: Deep Reader
     readingsLoaded: false,
     readings: [],
+    vocabDict: {},
     readerFilter: 'all',
     currentReading: null,
     readerUnlockedIdx: 0,
     readerAllUnlocked: false,
+    readerParaShowAll: {},
     readerSelectedKanji: '',
+    readerSelectedWord: '',
+    readerLookupTimer: null,
+    readerLookupSeq: 0,
     readerQuestionTimers: [],
     // Exam Studio (de_thi)
     examsLoaded: false,
@@ -1325,23 +1332,32 @@
     renderKanjiList('dots');
   }
 
-  // --- Mode 4: Active Recall Typing Check ---
+  // --- Mode 4: Active Recall Typing Check (Shared helper for Atelier & Dojo) ---
+  function evaluateKanjiRecallTyping(entry, hvRaw, readRaw) {
+    const hvInput = stripVietnamese(hvRaw).trim();
+    const readInputRaw = (readRaw || '').trim();
+    const readKana = cleanReadingToken(
+      /^[a-zA-Z\s'-]+$/.test(readInputRaw) ? romajiToHiragana(readInputRaw) : readInputRaw
+    );
+
+    const validHvs = [stripVietnamese(entry.hv), ...(entry.hvAll || []).map(stripVietnamese)].filter(Boolean);
+    const hvOk = hvInput.length > 0 && validHvs.includes(hvInput);
+
+    const validReadings = [...entry.on, ...entry.kun].map(cleanReadingToken).filter(Boolean);
+    const readOk = readKana.length > 0 && validReadings.some((r) => r === readKana || r.startsWith(readKana));
+    return { hvOk, readOk, readKana };
+  }
+
   function handleTypingSubmit(e) {
     e.preventDefault();
     const entry = state.currentKanji;
     if (!entry) return;
 
-    const hvInput = stripVietnamese($('inputHanViet').value).trim();
-    const readInputRaw = $('inputReading').value.trim();
-    const readKana = cleanReadingToken(
-      /^[a-zA-Z\s'-]+$/.test(readInputRaw) ? romajiToHiragana(readInputRaw) : readInputRaw
+    const { hvOk, readOk, readKana } = evaluateKanjiRecallTyping(
+      entry,
+      $('inputHanViet').value,
+      $('inputReading').value
     );
-
-    const validHvs = [stripVietnamese(entry.hv), ...entry.hvAll.map(stripVietnamese)].filter(Boolean);
-    const hvOk = hvInput.length > 0 && validHvs.includes(hvInput);
-
-    const validReadings = [...entry.on, ...entry.kun].map(cleanReadingToken).filter(Boolean);
-    const readOk = readKana.length > 0 && validReadings.some((r) => r === readKana || r.startsWith(readKana));
 
     const resEl = $('typingResult');
     resEl.classList.remove('hidden', 'ok', 'warn');
@@ -1385,6 +1401,13 @@
     } else if (view === 'neuro') {
       renderNeuroDashboard();
       refreshGitStatus();
+      Promise.all([
+        ensureReadingsLoaded().catch(() => {}),
+        ensureSentencesLoaded().catch(() => {}),
+        ensureExamsLoaded().catch(() => {}),
+      ]).then(() => {
+        if (state.currentView === 'neuro') renderNeuroDashboard();
+      });
     }
   }
 
@@ -1393,8 +1416,18 @@
   // =======================================================================
   async function ensureReadingsLoaded() {
     if (state.readingsLoaded) return;
-    const res = await fetch('data/readings.json');
-    state.readings = await res.json();
+    const [rRes, vRes] = await Promise.all([
+      fetch('data/readings.json'),
+      fetch('data/vocab-dict.json').catch(() => null),
+    ]);
+    state.readings = await rRes.json();
+    if (vRes && vRes.ok) {
+      try {
+        state.vocabDict = await vRes.json();
+      } catch (_) {
+        state.vocabDict = {};
+      }
+    }
     state.readingsLoaded = true;
   }
 
@@ -1454,35 +1487,292 @@
     return out;
   }
 
-  function buildInteractiveJpFragment(text) {
+  function buildKanjiFallbackText(word) {
+    const parts = [];
+    for (const ch of word || '') {
+      const m = state.kanjiLookup[ch];
+      if (m && m.vi) parts.push(`${ch} (${m.vi.split(',')[0].trim()})`);
+    }
+    return parts.join(' + ');
+  }
+
+  function buildWordHanViet(word) {
+    const parts = [];
+    for (const ch of word || '') {
+      const m = state.kanjiLookup[ch];
+      if (m && m.hv) parts.push(m.hv);
+    }
+    return parts.join(' ');
+  }
+
+  function buildInteractiveJpFragment(text, para = null) {
+    // Kept for simple fragments (like Forge); inside Deep Reader pass para to render ruby words
     const frag = document.createDocumentFragment();
-    for (const ch of text) {
-      if (state.kanjiLookup[ch]) {
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'inline-kanji';
-        if (getKanjiStatus(ch) === 'due') btn.classList.add('srs-due');
-        if (state.readerSelectedKanji === ch) btn.classList.add('selected');
-        btn.textContent = ch;
-        btn.title = `Bấm giải phẫu chữ ${ch} (${state.kanjiLookup[ch].hv})`;
-        btn.addEventListener('click', () => inspectReaderKanji(ch));
-        frag.appendChild(btn);
-      } else {
-        frag.appendChild(document.createTextNode(ch));
+    if (!para) {
+      for (const ch of text) {
+        if (state.kanjiLookup[ch]) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'inline-kanji';
+          if (getKanjiStatus(ch) === 'due') btn.classList.add('srs-due');
+          if (state.readerSelectedKanji === ch) btn.classList.add('selected');
+          btn.textContent = ch;
+          btn.title = `Bấm giải phẫu chữ ${ch} (${state.kanjiLookup[ch].hv})`;
+          btn.addEventListener('click', () => inspectReaderKanji(ch));
+          frag.appendChild(btn);
+        } else {
+          frag.appendChild(document.createTextNode(ch));
+        }
+      }
+      return frag;
+    }
+
+    const wordMap = new Map();
+    if (state.vocabDict) {
+      for (const [w, info] of Object.entries(state.vocabDict)) {
+        if (text.includes(w)) {
+          wordMap.set(w, {
+            r: info.r || '',
+            m: info.m || '',
+            hv: info.hv || buildWordHanViet(w),
+          });
+        }
       }
     }
+    if (Array.isArray(para.words)) {
+      para.words.forEach(([w, r, m, hv]) => {
+        if (w && text.includes(w)) {
+          wordMap.set(w, { r: r || '', m: m || '', hv: hv || buildWordHanViet(w) });
+        }
+      });
+    }
+    if (Array.isArray(para.vocab)) {
+      para.vocab.forEach(([w, r, m]) => {
+        if (w && text.includes(w) && /[\u4e00-\u9faf々]/.test(w)) {
+          const prev = wordMap.get(w) || {};
+          wordMap.set(w, {
+            r: r || prev.r || '',
+            m: m || prev.m || '',
+            hv: prev.hv || buildWordHanViet(w),
+          });
+        }
+      });
+    }
+
+    const keys = Array.from(wordMap.keys()).sort((a, b) => b.length - a.length);
+    let plainBuf = '';
+    const flushPlain = () => {
+      if (plainBuf) {
+        frag.appendChild(document.createTextNode(plainBuf));
+        plainBuf = '';
+      }
+    };
+
+    const appendRubyNode = (word, info) => {
+      flushPlain();
+      const ruby = document.createElement('ruby');
+      ruby.className = 'ruby-word';
+      ruby.dataset.word = word;
+      if (state.readerSelectedWord === word) ruby.classList.add('selected');
+      const kanjis = extractKanjiChars(word);
+      if (kanjis.some((ch) => getKanjiStatus(ch) === 'due')) {
+        ruby.classList.add('srs-due');
+      }
+      ruby.title = 'Bấm để hiện Furigana, nghe đọc & xem nghĩa';
+      ruby.appendChild(document.createTextNode(word));
+
+      const rt = document.createElement('rt');
+      rt.className = 'ruby-rt';
+      rt.textContent = info.r || '';
+      ruby.appendChild(rt);
+
+      ruby.addEventListener('click', () => {
+        const sel = window.getSelection ? window.getSelection() : null;
+        if (sel && !sel.isCollapsed && sel.toString().trim().length > word.length) {
+          return;
+        }
+        ruby.classList.add('revealed');
+        speakJapaneseText(word, 0.9);
+        inspectReaderWord(word, info);
+      });
+      frag.appendChild(ruby);
+    };
+
+    let i = 0;
+    while (i < text.length) {
+      let matchedWord = null;
+      for (let k = 0; k < keys.length; k++) {
+        if (text.startsWith(keys[k], i)) {
+          matchedWord = keys[k];
+          break;
+        }
+      }
+      if (matchedWord) {
+        appendRubyNode(matchedWord, wordMap.get(matchedWord));
+        i += matchedWord.length;
+      } else {
+        const ch = text[i];
+        if (state.kanjiLookup[ch]) {
+          const meta = state.kanjiLookup[ch];
+          const dictInfo = state.vocabDict[ch];
+          appendRubyNode(ch, {
+            r: (dictInfo && dictInfo.r) || meta.hv || '',
+            m: (dictInfo && dictInfo.m) || meta.vi || '',
+            hv: (dictInfo && dictInfo.hv) || meta.hv || '',
+          });
+        } else {
+          plainBuf += ch;
+        }
+        i += 1;
+      }
+    }
+    flushPlain();
     return frag;
+  }
+
+  function showReaderWordPanel({ word, reading, meaning, hv, sourceLabel }) {
+    state.readerSelectedWord = word;
+    qsa('#readerParagraphs .ruby-word').forEach((el) => {
+      el.classList.toggle('selected', el.dataset.word === word);
+    });
+
+    $('rwEmptyHint').classList.add('hidden');
+    $('rwBody').classList.remove('hidden');
+    $('rwWord').textContent = word;
+    $('rwReading').textContent = reading || '—';
+    $('rwMeaning').textContent = meaning || '—';
+    $('rwSourceHint').textContent = sourceLabel || 'Từ điển cục bộ';
+
+    const hvEl = $('rwHv');
+    if (hv) {
+      hvEl.textContent = `Hán-Việt: ${hv}`;
+      hvEl.classList.remove('hidden');
+    } else {
+      hvEl.classList.add('hidden');
+    }
+
+    const pillsBox = $('rwKanjiPills');
+    pillsBox.innerHTML = '';
+    const kanjis = extractKanjiChars(word);
+    if (kanjis.length) {
+      pillsBox.classList.remove('hidden');
+      kanjis.forEach((ch) => {
+        const meta = state.kanjiLookup[ch];
+        const pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'rw-kanji-pill';
+        if (state.readerSelectedKanji === ch) pill.classList.add('active');
+        pill.dataset.kanji = ch;
+        pill.innerHTML = `<span class="rw-kanji-pill-glyph">${ch}</span><span>${meta.hv}</span>`;
+        pill.addEventListener('click', () => inspectReaderKanji(ch));
+        pillsBox.appendChild(pill);
+      });
+      if (!kanjis.includes(state.readerSelectedKanji)) {
+        inspectReaderKanji(kanjis[0]);
+      }
+    } else {
+      pillsBox.classList.add('hidden');
+    }
+  }
+
+  function inspectReaderWord(word, info) {
+    showReaderWordPanel({
+      word,
+      reading: info.r || '',
+      meaning: info.m || buildKanjiFallbackText(word),
+      hv: info.hv || buildWordHanViet(word),
+      sourceLabel: 'Từ điển cục bộ',
+    });
+  }
+
+  async function lookupAndInspectReaderText(rawText) {
+    const clean = (rawText || '').trim().replace(/\s+/g, '');
+    if (!clean) {
+      $('rwEmptyHint').classList.remove('hidden');
+      $('rwBody').classList.add('hidden');
+      $('rwSourceHint').textContent = 'Từ điển cục bộ + dịch nhanh';
+      return;
+    }
+
+    const localEntry = state.vocabDict[clean];
+    if (localEntry) {
+      showReaderWordPanel({
+        word: clean,
+        reading: localEntry.r,
+        meaning: localEntry.m,
+        hv: localEntry.hv || buildWordHanViet(clean),
+        sourceLabel: 'Từ điển cục bộ',
+      });
+      return;
+    }
+
+    const seq = ++state.readerLookupSeq;
+    showReaderWordPanel({
+      word: clean,
+      reading: 'Đang lấy cách đọc...',
+      meaning: 'Đang tra cứu nghĩa & dịch câu...',
+      hv: buildWordHanViet(clean),
+      sourceLabel: 'Đang tra cứu...',
+    });
+
+    if (!state.hasServerApi) {
+      showReaderWordPanel({
+        word: clean,
+        reading: '',
+        meaning: buildKanjiFallbackText(clean) || 'Chế độ ngoại tuyến (không có server tra cứu)',
+        hv: buildWordHanViet(clean),
+        sourceLabel: 'Ngoại tuyến',
+      });
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/lookup?text=${encodeURIComponent(clean)}`);
+      if (seq !== state.readerLookupSeq) return;
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.ok) {
+          if (data.isSingleWord && data.reading && data.meaning && !data.meaning.includes('Chưa có bản dịch')) {
+            state.vocabDict[clean] = { r: data.reading, m: data.meaning, hv: data.hv || '' };
+          }
+          showReaderWordPanel({
+            word: data.text || clean,
+            reading: data.reading || '',
+            meaning: data.meaning || buildKanjiFallbackText(clean),
+            hv: data.hv || buildWordHanViet(clean),
+            sourceLabel: data.source === 'local' ? 'Từ điển cục bộ' : 'Dịch nhanh + Mazii',
+          });
+          return;
+        }
+      }
+    } catch (_) {}
+
+    if (seq !== state.readerLookupSeq) return;
+    showReaderWordPanel({
+      word: clean,
+      reading: '',
+      meaning: buildKanjiFallbackText(clean) || 'Không thể tra cứu trực tuyến lúc này.',
+      hv: buildWordHanViet(clean),
+      sourceLabel: 'Dự phòng cục bộ',
+    });
   }
 
   function selectReading(reading) {
     state.currentReading = reading;
     state.readerUnlockedIdx = 0;
     state.readerAllUnlocked = false;
+    state.readerParaShowAll = {};
+    state.readerSelectedWord = '';
+    state.readerLookupSeq += 1;
     state.readerQuestionTimers.forEach(clearInterval);
     state.readerQuestionTimers = [];
 
-    qsa('#readerList .kanji-item').forEach((el, idx) => {
-      // active state synced below via title match or re-render
+    $('readerQuickLookupInput').value = '';
+    $('rwEmptyHint').classList.remove('hidden');
+    $('rwBody').classList.add('hidden');
+    $('rwSourceHint').textContent = 'Từ điển cục bộ + dịch nhanh';
+
+    qsa('#readerList .kanji-item').forEach((el) => {
       el.classList.toggle('active', el.querySelector('.kanji-item-hv')?.textContent === reading.title);
     });
 
@@ -1538,7 +1828,8 @@
 
       const jpDiv = document.createElement('div');
       jpDiv.className = 'para-jp';
-      jpDiv.appendChild(buildInteractiveJpFragment(para.jp));
+      if (state.readerParaShowAll[idx]) jpDiv.classList.add('show-all-ruby');
+      jpDiv.appendChild(buildInteractiveJpFragment(para.jp, para));
       card.appendChild(jpDiv);
 
       if (para.vocab && para.vocab.length) {
@@ -1572,16 +1863,20 @@
         card.appendChild(vRow);
       }
 
-      if (para.vi) {
-        const viDiv = document.createElement('div');
-        viDiv.className = 'para-vi hidden';
-        viDiv.textContent = para.vi;
+      if (!isLocked) {
+        let viDiv = null;
+        if (para.vi) {
+          viDiv = document.createElement('div');
+          viDiv.className = 'para-vi hidden';
+          viDiv.textContent = para.vi;
+        }
 
         const actions = document.createElement('div');
         actions.className = 'para-actions';
 
         const leftBtns = document.createElement('div');
         leftBtns.style.display = 'flex';
+        leftBtns.style.flexWrap = 'wrap';
         leftBtns.style.gap = '6px';
 
         const speakBtn = document.createElement('button');
@@ -1591,15 +1886,30 @@
         speakBtn.addEventListener('click', () => speakJapaneseText(para.jp, 0.88));
         leftBtns.appendChild(speakBtn);
 
-        const transBtn = document.createElement('button');
-        transBtn.type = 'button';
-        transBtn.className = 'btn-ghost-sm';
-        transBtn.textContent = 'Xem dịch đối chiếu';
-        transBtn.addEventListener('click', () => {
-          viDiv.classList.toggle('hidden');
-          transBtn.textContent = viDiv.classList.contains('hidden') ? 'Xem dịch đối chiếu' : 'Ẩn dịch';
+        const furiganaBtn = document.createElement('button');
+        furiganaBtn.type = 'button';
+        furiganaBtn.className = 'btn-ghost-sm';
+        furiganaBtn.textContent = state.readerParaShowAll[idx] ? 'Ẩn Furigana' : 'Hiện Furigana đoạn này';
+        furiganaBtn.addEventListener('click', () => {
+          const next = !state.readerParaShowAll[idx];
+          state.readerParaShowAll[idx] = next;
+          jpDiv.classList.toggle('show-all-ruby', next);
+          furiganaBtn.textContent = next ? 'Ẩn Furigana' : 'Hiện Furigana đoạn này';
         });
-        leftBtns.appendChild(transBtn);
+        leftBtns.appendChild(furiganaBtn);
+
+        if (viDiv) {
+          const transBtn = document.createElement('button');
+          transBtn.type = 'button';
+          transBtn.className = 'btn-ghost-sm';
+          transBtn.textContent = 'Xem dịch đối chiếu';
+          transBtn.addEventListener('click', () => {
+            viDiv.classList.toggle('hidden');
+            transBtn.textContent = viDiv.classList.contains('hidden') ? 'Xem dịch đối chiếu' : 'Ẩn dịch';
+          });
+          leftBtns.appendChild(transBtn);
+        }
+
         actions.appendChild(leftBtns);
 
         if (isCurrent) {
@@ -1607,7 +1917,9 @@
           nextBtn.type = 'button';
           nextBtn.className = 'btn-primary-sm';
           const isLast = idx === reading.paragraphs.length - 1;
-          nextBtn.textContent = isLast ? 'Mở câu hỏi hiểu sâu →' : 'Đã hiểu đoạn này → Mở đoạn tiếp';
+          nextBtn.textContent = isLast
+            ? (reading.questions && reading.questions.length ? 'Mở câu hỏi hiểu sâu →' : 'Hoàn tất đọc đoạn → Tóm tắt')
+            : 'Đã hiểu đoạn này → Mở đoạn tiếp';
           nextBtn.addEventListener('click', () => {
             if (isLast) {
               state.readerAllUnlocked = true;
@@ -1622,31 +1934,7 @@
         }
 
         card.appendChild(actions);
-        card.appendChild(viDiv);
-      } else if (isCurrent) {
-        const actions = document.createElement('div');
-        actions.className = 'para-actions';
-        const speakBtn = document.createElement('button');
-        speakBtn.type = 'button';
-        speakBtn.className = 'btn-ghost-sm';
-        speakBtn.textContent = 'Nghe đoạn này';
-        speakBtn.addEventListener('click', () => speakJapaneseText(para.jp, 0.88));
-        actions.appendChild(speakBtn);
-
-        const nextBtn = document.createElement('button');
-        nextBtn.type = 'button';
-        nextBtn.className = 'btn-primary-sm';
-        const isLast = idx === reading.paragraphs.length - 1;
-        nextBtn.textContent = isLast ? 'Hoàn tất đọc đoạn → Tóm tắt' : 'Đã hiểu đoạn này → Mở đoạn tiếp';
-        nextBtn.addEventListener('click', () => {
-          if (isLast) state.readerAllUnlocked = true;
-          else state.readerUnlockedIdx += 1;
-          renderReadingParagraphs();
-          renderReadingQuestions();
-          renderReadingSummaryBox();
-        });
-        actions.appendChild(nextBtn);
-        card.appendChild(actions);
+        if (viDiv) card.appendChild(viDiv);
       }
 
       container.appendChild(card);
@@ -1777,7 +2065,9 @@
 
   async function inspectReaderKanji(ch) {
     state.readerSelectedKanji = ch;
-    qsa('.inline-kanji').forEach((el) => el.classList.toggle('selected', el.textContent === ch));
+    qsa('#rwKanjiPills .rw-kanji-pill').forEach((el) => {
+      el.classList.toggle('active', el.dataset.kanji === ch);
+    });
     await renderMiniKanjiInspector(ch, 'rk');
   }
 
@@ -2337,7 +2627,37 @@
       if (!chars.length) {
         $('dojoEmptyState').classList.remove('hidden');
         $('dojoCard').classList.add('hidden');
-        $('dojoEmptyState').innerHTML = '<p>Hôm nay bạn không có chữ nào đến hạn ôn SRS. Hãy chọn <strong>"Chữ chưa thuộc ở cấp đang chọn"</strong> hoặc luyện thêm chữ mới ở Xưởng chữ.</p>';
+        $('dojoSummaryCard').classList.add('hidden');
+        $('dojoEmptyState').innerHTML = '<p>Hôm nay bạn không có chữ nào đến hạn ôn SRS. Hãy chọn <strong>"Ôn lại toàn bộ chữ đã học"</strong> hoặc <strong>"Chữ chưa thuộc ở cấp đang chọn"</strong>.</p>';
+        return;
+      }
+    } else if (scope === 'learned') {
+      const now = Date.now();
+      chars = Object.entries(state.progress.kanji)
+        .filter(([ch]) => Boolean(state.kanjiLookup[ch]))
+        .sort((a, b) => {
+          const da = a[1].due ? new Date(a[1].due).getTime() : now;
+          const db = b[1].due ? new Date(b[1].due).getTime() : now;
+          return da - db;
+        })
+        .map(([ch]) => ch);
+      if (!chars.length) {
+        $('dojoEmptyState').classList.remove('hidden');
+        $('dojoCard').classList.add('hidden');
+        $('dojoSummaryCard').classList.add('hidden');
+        $('dojoEmptyState').innerHTML = '<p>Bạn chưa có chữ Kanji nào trong sổ tiến độ. Hãy luyện viết ở tab <strong>Xưởng chữ</strong> trước nhé.</p>';
+        return;
+      }
+    } else if (scope === 'leech') {
+      chars = Object.entries(state.progress.kanji)
+        .filter(([ch, rec]) => Boolean(state.kanjiLookup[ch]) && ((rec.ease || 2.5) < 2.35 || (rec.interval || 0) < 3))
+        .sort((a, b) => (a[1].ease || 2.5) - (b[1].ease || 2.5))
+        .map(([ch]) => ch);
+      if (!chars.length) {
+        $('dojoEmptyState').classList.remove('hidden');
+        $('dojoCard').classList.add('hidden');
+        $('dojoSummaryCard').classList.add('hidden');
+        $('dojoEmptyState').innerHTML = '<p>Chưa có chữ nào thuộc nhóm điểm yếu (hay quên / chu kỳ ngắn). Rất tốt!</p>';
         return;
       }
     } else {
@@ -2359,6 +2679,8 @@
 
     state.dojoQueue = entries;
     state.dojoIndex = 0;
+    state.dojoResults = [];
+    $('dojoSummaryCard').classList.add('hidden');
     if (!entries.length) {
       $('dojoEmptyState').classList.remove('hidden');
       $('dojoCard').classList.add('hidden');
@@ -2369,43 +2691,131 @@
     showDojoCard();
   }
 
+  function renderDojoSummary() {
+    $('dojoCard').classList.add('hidden');
+    $('dojoEmptyState').classList.add('hidden');
+    const summaryEl = $('dojoSummaryCard');
+    summaryEl.classList.remove('hidden');
+
+    const total = state.dojoResults.length;
+    const goodCount = state.dojoResults.filter((r) => r.quality >= 3).length;
+    const hardCount = state.dojoResults.filter((r) => r.quality <= 2).length;
+
+    summaryEl.innerHTML = `
+      <div class="section-head">
+        <h2>Hoàn thành lượt ôn tập mù!</h2>
+        <span class="mono sub-hint">${total} chữ đã đánh giá</span>
+      </div>
+      <div class="dojo-summary-stats">
+        <div class="dojo-summary-pill"><strong>Nhớ tốt / Khắc cốt:</strong> <span style="color:var(--accent-moss);">${goodCount}</span></div>
+        <div class="dojo-summary-pill"><strong>Cần rèn lại (Quên / Khó):</strong> <span style="color:var(--accent-vermilion);">${hardCount}</span></div>
+      </div>
+      <div class="sub-label">Bấm vào từng chữ bên dưới nếu muốn xem lại nét viết trong Xưởng chữ:</div>
+      <div class="related-chips" id="dojoSummaryChips" style="margin-top:8px;"></div>
+    `;
+    const chipsBox = $('dojoSummaryChips');
+    state.dojoResults.forEach((r) => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'related-chip';
+      if (r.quality <= 2) chip.style.borderColor = 'var(--accent-vermilion)';
+      chip.innerHTML = `<span class="related-chip-glyph">${r.c}</span><span>${r.hv}</span><span class="related-chip-lvl">${r.quality <= 2 ? 'Ôn lại' : 'Đạt'}</span>`;
+      chip.addEventListener('click', () => jumpToKanji(r.c));
+      chipsBox.appendChild(chip);
+    });
+  }
+
   function showDojoCard() {
     const entry = state.dojoQueue[state.dojoIndex];
     if (!entry) {
-      $('dojoEmptyState').classList.remove('hidden');
-      $('dojoCard').classList.add('hidden');
-      $('dojoEmptyState').innerHTML = '<p>Bạn đã hoàn thành toàn bộ lượt ôn tập mù này. Tiến độ đã được lưu vào <code>data/user-progress.json</code>.</p>';
+      renderDojoSummary();
       return;
     }
 
     state.dojoCurrent = entry;
     $('dojoProgressText').textContent = `Thẻ ${state.dojoIndex + 1} / ${state.dojoQueue.length}`;
     $('dojoLevelTag').textContent = `JLPT N${entry.l} · ${entry.s} nét`;
-    $('dojoHv').textContent = entry.hv;
+
+    [1, 2, 3, 4].forEach((q) => {
+      const el = document.querySelector(`[data-dojo-next="${q}"]`);
+      if (el) el.textContent = previewNextInterval(entry.c, q);
+    });
+
+    const isTyping = state.dojoMode === 'typing';
+    $('dojoBoardWrap').classList.toggle('hidden', isTyping);
+    $('dojoTypingWrap').classList.toggle('hidden', !isTyping);
+
+    if (isTyping) {
+      $('dojoHv').textContent = 'Truy xuất từ mặt chữ Kanji';
+      $('dojoVi').textContent = 'Nhìn mặt chữ bên dưới và gõ lại Âm Hán-Việt + Cách đọc On/Kun';
+      $('dojoReadings').textContent = '';
+      $('dojoTypingGlyph').textContent = entry.c;
+      $('dojoInputHv').value = '';
+      $('dojoInputRead').value = '';
+      $('dojoKanaPreview').textContent = '';
+      $('dojoTypingResult').classList.add('hidden');
+      $('dojoInputHv').focus();
+    } else {
+      $('dojoHv').textContent = entry.hv;
+      $('dojoVi').textContent = entry.vi.slice(0, 4).join(' · ') || entry.en.slice(0, 3).join(' · ');
+      $('dojoReadings').textContent = `On: ${entry.on.join(', ') || '—'}   |   Kun: ${entry.kun.join(', ') || '—'}`;
+      const note = state.progress.kanji[entry.c]?.note;
+      $('dojoMnemonicPreview').textContent = note ? `Ghi chú chiết tự của bạn: ${note}` : 'Chưa có ghi chú chiết tự cá nhân cho chữ này.';
+      $('dojoFeedback').textContent = 'Tự hình dung hình dáng chữ trong đầu và viết nét đầu tiên.';
+      $('dojoFeedback').className = 'board-feedback';
+
+      dojoController.setKanji(entry, { hideAll: true, showGhost: false });
+
+      clearInterval(state.dojoFrictionTimer);
+      const btn = $('dojoHintBtn');
+      let secs = 3;
+      btn.disabled = true;
+      btn.textContent = `Gợi ý 1 nét (${secs}s)`;
+      state.dojoFrictionTimer = setInterval(() => {
+        secs -= 1;
+        if (secs <= 0) {
+          clearInterval(state.dojoFrictionTimer);
+          btn.disabled = false;
+          btn.textContent = 'Gợi ý 1 nét';
+        } else {
+          btn.textContent = `Gợi ý 1 nét (${secs}s)`;
+        }
+      }, 1000);
+    }
+  }
+
+  function revealDojoTypingInfo(entry) {
+    $('dojoHv').textContent = `${entry.c} — ${entry.hv}`;
     $('dojoVi').textContent = entry.vi.slice(0, 4).join(' · ') || entry.en.slice(0, 3).join(' · ');
     $('dojoReadings').textContent = `On: ${entry.on.join(', ') || '—'}   |   Kun: ${entry.kun.join(', ') || '—'}`;
-    const note = state.progress.kanji[entry.c]?.note;
-    $('dojoMnemonicPreview').textContent = note ? `Ghi chú chiết tự của bạn: ${note}` : 'Chưa có ghi chú chiết tự cá nhân cho chữ này.';
-    $('dojoFeedback').textContent = 'Tự hình dung hình dáng chữ trong đầu và viết nét đầu tiên.';
-    $('dojoFeedback').className = 'board-feedback';
+  }
 
-    dojoController.setKanji(entry, { hideAll: true, showGhost: false });
+  function checkDojoTyping(e) {
+    if (e) e.preventDefault();
+    const entry = state.dojoCurrent;
+    if (!entry) return;
+    const { hvOk, readOk, readKana } = evaluateKanjiRecallTyping(
+      entry,
+      $('dojoInputHv').value,
+      $('dojoInputRead').value
+    );
+    revealDojoTypingInfo(entry);
 
-    clearInterval(state.dojoFrictionTimer);
-    const btn = $('dojoHintBtn');
-    let secs = 3;
-    btn.disabled = true;
-    btn.textContent = `Gợi ý 1 nét (${secs}s)`;
-    state.dojoFrictionTimer = setInterval(() => {
-      secs -= 1;
-      if (secs <= 0) {
-        clearInterval(state.dojoFrictionTimer);
-        btn.disabled = false;
-        btn.textContent = 'Gợi ý 1 nét';
-      } else {
-        btn.textContent = `Gợi ý 1 nét (${secs}s)`;
-      }
-    }, 1000);
+    const resEl = $('dojoTypingResult');
+    resEl.classList.remove('hidden', 'ok', 'warn');
+    if (hvOk && readOk) {
+      playWoodTap(true);
+      resEl.classList.add('ok');
+      resEl.textContent = `Chính xác! ${entry.c} — ${entry.hv} | On: ${entry.on.join(', ') || '—'} | Kun: ${entry.kun.join(', ') || '—'}. Hãy chọn mức đánh giá SRS bên dưới.`;
+      speakJapanese(entry);
+    } else {
+      playWoodTap(false);
+      resEl.classList.add('warn');
+      const parts = [];
+      if (!hvOk) parts.push(`Hán-Việt đúng: ${entry.hv}`);
+      if (!readOk) parts.push(`Kana chưa khớp (${readKana || 'trống'})`);
+      resEl.textContent = `${parts.join(' · ')}. Đã mở đáp án ở trên, hãy chấm mức độ nhớ bên dưới.`;
+    }
   }
 
   // --- Detox Breathing Gate & Monk Focus Timer ---
@@ -2563,6 +2973,165 @@
       `;
       bars.appendChild(row);
     });
+
+    renderNeuroExtendedAnalytics();
+  }
+
+  function renderNeuroExtendedAnalytics() {
+    // 1. Multi-module summary
+    const modBox = $('neuroModuleSummary');
+    if (modBox) {
+      const kanjiCount = Object.keys(state.progress.kanji || {}).length;
+      const readingsDoneIds = Object.keys(state.progress.readingsDone || {});
+      const readingsTotal = (state.readingsLoaded && state.readings.length) || 25;
+      const customCount = (state.progress.customReadings || []).length;
+
+      const sDoneEntries = Object.values(state.progress.sentencesDone || {});
+      const forgeDone = sDoneEntries.filter((x) => x.forge).length;
+      const dictDone = sDoneEntries.filter((x) => x.dictation).length;
+      const sentTotal = (state.sentencesLoaded && state.sentences.length) || 45;
+
+      const examNotesMap = state.progress.examNotes || {};
+      const examsDoneCount = Object.values(examNotesMap).filter((x) => x.done).length;
+      const examNotesCount = Object.values(examNotesMap).filter((x) => (x.note || '').trim()).length;
+      const examTotal = (state.examsLoaded && state.examCatalog.length) || 125;
+
+      modBox.innerHTML = `
+        <div class="neuro-mod-item">
+          <div class="neuro-mod-head"><span>1. Xưởng chữ (Kanji N5–N1)</span><span class="mono">${kanjiCount} / 2211 chữ đã chạm</span></div>
+          <div class="neuro-mod-sub">Gồm các chữ bạn đã vẽ nét, tự nhớ mù hoặc đưa vào hàng đợi SRS.</div>
+        </div>
+        <div class="neuro-mod-item">
+          <div class="neuro-mod-head"><span>2. Đọc sâu (Anti-Skimming)</span><span class="mono">${readingsDoneIds.length} / ${readingsTotal} bài${customCount ? ` (+${customCount} bài tự dán)` : ''}</span></div>
+          <div class="neuro-mod-sub">Hoàn thành đọc phân đoạn kèm câu hỏi hiểu sâu và tóm tắt truy xuất.</div>
+        </div>
+        <div class="neuro-mod-item">
+          <div class="neuro-mod-head"><span>3. Xưởng câu &amp; Nghe chép tĩnh</span><span class="mono">${forgeDone} ghép (★) · ${dictDone} nghe chép / ${sentTotal} câu</span></div>
+          <div class="neuro-mod-sub">Lắp ghép 4 mảnh ngữ pháp chuẩn JLPT và nghe chép từng ký tự Kana.</div>
+        </div>
+        <div class="neuro-mod-item">
+          <div class="neuro-mod-head"><span>4. Kho đề thi JLPT (2010–2026)</span><span class="mono">${examsDoneCount} / ${examTotal} kỳ thi · ${examNotesCount} ghi chú</span></div>
+          <div class="neuro-mod-sub">Đề thi PDF thật, Audio nghe tua ±5s, Script đối chiếu và sổ ghi chú phòng thi.</div>
+        </div>
+      `;
+    }
+
+    // 2. 7-Day SRS Forecast
+    const forecastEl = $('srsForecastChart');
+    if (forecastEl) {
+      const startOfToday = new Date();
+      startOfToday.setHours(0, 0, 0, 0);
+      const dayMs = 24 * 60 * 60 * 1000;
+      const buckets = [0, 0, 0, 0, 0, 0, 0];
+
+      Object.values(state.progress.kanji || {}).forEach((rec) => {
+        if (!rec.due) return;
+        const dueMs = new Date(rec.due).getTime();
+        if (dueMs <= Date.now()) {
+          buckets[0] += 1;
+          return;
+        }
+        const diffDays = Math.floor((dueMs - startOfToday.getTime()) / dayMs);
+        if (diffDays >= 0 && diffDays < 7) buckets[diffDays] += 1;
+      });
+
+      const maxVal = Math.max(1, ...buckets);
+      const labels = ['Hôm nay', 'Ngày mai', '+2 ngày', '+3 ngày', '+4 ngày', '+5 ngày', '+6 ngày'];
+      forecastEl.innerHTML = '';
+      buckets.forEach((cnt, idx) => {
+        const pct = cnt > 0 ? Math.max(14, Math.round((cnt / maxVal) * 100)) : 4;
+        const col = document.createElement('div');
+        col.className = `srs-f-col${idx === 0 ? ' today' : ''}`;
+        col.innerHTML = `
+          <span class="srs-f-count">${cnt}</span>
+          <div class="srs-f-bar-wrap"><div class="srs-f-bar" style="height:${pct}%"></div></div>
+          <span class="srs-f-label">${labels[idx]}</span>
+        `;
+        forecastEl.appendChild(col);
+      });
+    }
+
+    // 3. Learned Kanji Roster
+    const rosterEl = $('learnedKanjiRoster');
+    const countLabel = $('learnedKanjiCount');
+    if (rosterEl) {
+      const learnedEntries = Object.entries(state.progress.kanji || {})
+        .filter(([ch]) => Boolean(state.kanjiLookup[ch]))
+        .sort((a, b) => {
+          const sa = getKanjiStatus(a[0]) === 'due' ? 0 : 1;
+          const sb = getKanjiStatus(b[0]) === 'due' ? 0 : 1;
+          if (sa !== sb) return sa - sb;
+          return (a[1].interval || 0) - (b[1].interval || 0);
+        });
+      if (countLabel) countLabel.textContent = `${learnedEntries.length} chữ`;
+      rosterEl.innerHTML = '';
+
+      if (!learnedEntries.length) {
+        rosterEl.innerHTML = '<div class="rk-empty">Chưa có chữ nào được lưu. Hãy luyện viết trong Xưởng chữ để bắt đầu xây dựng sổ tay Kanji.</div>';
+      } else {
+        learnedEntries.forEach(([ch, rec]) => {
+          const meta = state.kanjiLookup[ch];
+          const st = getKanjiStatus(ch);
+          const stLabel = st === 'due' ? 'Cần ôn ngay' : st === 'mastered' ? `Thuộc (${rec.interval}d)` : `${rec.writePasses || 0} lần viết`;
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'learned-kanji-tile';
+          btn.title = rec.note ? `Ghi chú: ${rec.note}` : 'Bấm để mở lại trong Xưởng chữ';
+          btn.innerHTML = `
+            <span class="learned-kanji-glyph">${ch}</span>
+            <span class="learned-kanji-meta">
+              <div class="learned-kanji-hv">${meta.hv} <span class="related-chip-lvl">N${meta.l}</span></div>
+              <div class="learned-kanji-sub">${stLabel}${rec.note ? ' · Có ghi chú' : ''}</div>
+            </span>
+          `;
+          btn.addEventListener('click', () => jumpToKanji(ch));
+          rosterEl.appendChild(btn);
+        });
+      }
+    }
+
+    // 4. Deep Reading Summaries & Exam Notes Archive
+    const archiveEl = $('neuroNotesArchive');
+    if (archiveEl) {
+      const items = [];
+      const allReadings = getAllReadings();
+      Object.entries(state.progress.readingsDone || {}).forEach(([id, info]) => {
+        const found = allReadings.find((r) => r.id === id);
+        const title = found ? found.title : `Bài đọc ${id}`;
+        const summary = (info.summary || '').trim() || '(Đã hoàn thành bài đọc — chưa nhập tóm tắt)';
+        items.push({ kind: 'reading', title, text: summary });
+      });
+
+      Object.entries(state.progress.examNotes || {}).forEach(([id, info]) => {
+        const note = (info.note || '').trim();
+        if (!note && !info.done) return;
+        const found = state.examCatalog.find((ex) => ex.id === id);
+        const title = found ? found.title : `Đề thi ${id}`;
+        items.push({
+          kind: 'exam',
+          title: `${title}${info.done ? ' (Đã giải xong)' : ''}`,
+          text: note || '(Đã đánh dấu giải xong đề này)',
+        });
+      });
+
+      archiveEl.innerHTML = '';
+      if (!items.length) {
+        archiveEl.innerHTML = '<div class="rk-empty">Chưa có tóm tắt bài đọc hoặc ghi chú phòng thi nào. Các ghi chú bạn viết ở tab <strong>Đọc sâu</strong> và <strong>Kho đề thi</strong> sẽ tập hợp tại đây.</div>';
+      } else {
+        items.forEach((it) => {
+          const div = document.createElement('div');
+          div.className = `neuro-note-entry${it.kind === 'exam' ? ' exam' : ''}`;
+          const tEl = document.createElement('div');
+          tEl.className = 'neuro-note-title';
+          tEl.textContent = it.title;
+          const bEl = document.createElement('div');
+          bEl.textContent = it.text;
+          div.appendChild(tEl);
+          div.appendChild(bEl);
+          archiveEl.appendChild(div);
+        });
+      }
+    }
   }
 
   async function refreshGitStatus() {
@@ -2753,6 +3322,15 @@
     });
 
     // Dojo
+    qsa('.dojo-mode-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        state.dojoMode = btn.dataset.dmode;
+        qsa('.dojo-mode-btn').forEach((b) => b.classList.toggle('active', b === btn));
+        if (state.dojoCurrent && !$('dojoCard').classList.contains('hidden')) {
+          showDojoCard();
+        }
+      });
+    });
     $('dojoStartBtn').addEventListener('click', startDojoQueue);
     $('dojoUndoBtn').addEventListener('click', () => dojoController.undo());
     $('dojoClearBtn').addEventListener('click', () => dojoController.clear());
@@ -2763,10 +3341,30 @@
       $('dojoFeedback').textContent = `Đáp án: ${state.dojoCurrent.c} (${state.dojoCurrent.hv}) — ${state.dojoCurrent.s} nét. Hãy tự đánh giá mức độ nhớ bên dưới.`;
       $('dojoFeedback').className = 'board-feedback';
     });
+    $('dojoInputRead').addEventListener('input', (e) => {
+      const val = e.target.value;
+      $('dojoKanaPreview').textContent = /^[a-zA-Z\s'-]+$/.test(val) ? romajiToHiragana(val) : val;
+    });
+    $('dojoTypingForm').addEventListener('submit', checkDojoTyping);
+    $('dojoTypingRevealBtn').addEventListener('click', () => {
+      if (!state.dojoCurrent) return;
+      const e = state.dojoCurrent;
+      revealDojoTypingInfo(e);
+      const resEl = $('dojoTypingResult');
+      resEl.classList.remove('hidden', 'ok', 'warn');
+      resEl.textContent = `Đáp án: ${e.c} (${e.hv}) | On: ${e.on.join(', ') || '—'} | Kun: ${e.kun.join(', ') || '—'}`;
+    });
     qsa('[data-dojo-q]').forEach((btn) => {
       btn.addEventListener('click', () => {
         if (!state.dojoCurrent) return;
-        recordSrsGrade(state.dojoCurrent.c, Number(btn.dataset.dojoQ));
+        const quality = Number(btn.dataset.dojoQ);
+        state.dojoResults.push({
+          c: state.dojoCurrent.c,
+          hv: state.dojoCurrent.hv,
+          l: state.dojoCurrent.l,
+          quality,
+        });
+        recordSrsGrade(state.dojoCurrent.c, quality);
         state.dojoIndex += 1;
         showDojoCard();
       });
@@ -2876,7 +3474,7 @@
     $('cancelCustomReadingBtn').addEventListener('click', () => {
       $('customReadingForm').classList.add('hidden');
     });
-    $('customReadingForm').addEventListener('submit', (e) => {
+    $('customReadingForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       const title = $('customReadingTitle').value.trim();
       const lvl = Number($('customReadingLevel').value) || 5;
@@ -2884,13 +3482,46 @@
       if (!title || !body) return;
       const rawBlocks = body.split(/\n\s*\n/).map((s) => s.trim()).filter(Boolean);
       const blocks = rawBlocks.length > 1 ? rawBlocks : body.split(/\n+/).map((s) => s.trim()).filter(Boolean);
+
+      const submitBtn = $('customReadingForm').querySelector('button[type="submit"]');
+      const origLabel = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Đang dịch & phân tích Kanji...';
+
+      let paragraphs = blocks.map((jp) => ({ jp, vi: '', vocab: [], words: [] }));
+      try {
+        if (state.hasServerApi) {
+          const res = await fetch('/api/lookup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ paragraphs: blocks }),
+          });
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.ok && Array.isArray(data.results) && data.results.length) {
+              paragraphs = data.results.map((item) => ({
+                jp: item.jp,
+                vi: item.vi || '',
+                vocab: [],
+                words: Array.isArray(item.words) ? item.words : [],
+              }));
+            }
+          }
+        }
+      } catch (_) {
+        // Offline / lookup failed: save raw Japanese text so user is never blocked
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = origLabel;
+      }
+
       const custom = {
         id: `custom-${Date.now()}`,
         level: lvl,
         title,
         source: 'Bài đọc tự nhập (Cá nhân)',
         category: 'Tự nhập',
-        paragraphs: blocks.map((jp) => ({ jp, vi: '', vocab: [] })),
+        paragraphs,
         questions: [],
       };
       state.progress.customReadings = state.progress.customReadings || [];
@@ -2903,6 +3534,36 @@
         renderReaderList(false);
         selectReading(custom);
       });
+    });
+
+    $('rwSpeakBtn').addEventListener('click', () => {
+      if (state.readerSelectedWord) speakJapaneseText(state.readerSelectedWord, 0.9);
+    });
+
+    $('readerQuickLookupInput').addEventListener('input', (e) => {
+      clearTimeout(state.readerLookupTimer);
+      const val = e.target.value;
+      state.readerLookupTimer = setTimeout(() => {
+        lookupAndInspectReaderText(val);
+      }, 350);
+    });
+
+    $('readerQuickLookupInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        clearTimeout(state.readerLookupTimer);
+        lookupAndInspectReaderText(e.target.value);
+      }
+    });
+
+    $('readerParagraphs').addEventListener('mouseup', () => {
+      const selObj = window.getSelection ? window.getSelection() : null;
+      if (!selObj || selObj.isCollapsed) return;
+      const raw = (selObj.toString() || '').trim().replace(/\s+/g, '');
+      if (raw && raw.length <= 120 && /[\u3040-\u30ff\u4e00-\u9faf]/.test(raw)) {
+        $('readerQuickLookupInput').value = raw;
+        lookupAndInspectReaderText(raw);
+      }
     });
 
     $('readerSpeakBtn').addEventListener('click', () => {
