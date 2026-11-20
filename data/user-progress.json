@@ -1,7 +1,7 @@
 {
   "version": 1,
   "createdAt": "2026-11-16T22:05:00.000Z",
-  "updatedAt": "2026-11-17T16:32:37.126Z",
+  "updatedAt": "2026-11-20T01:51:46.341Z",
   "settings": {
     "theme": "hanshi",
     "defaultLevel": 5,
@@ -10,24 +10,24 @@
     "soundEnabled": false,
     "enLevel": "A1",
     "enGlobal10k": true,
-    "enStatusFilter": "today",
+    "enStatusFilter": "all",
     "enRootFilter": "",
-    "enLastWord": "event",
+    "enLastWord": "message",
     "jpDailyNewLimit": 10,
-    "jpDailyNewDate": "2026-11-17",
+    "jpDailyNewDate": "2026-11-20",
     "jpDailyNewCount": 0,
     "enDailyNewLimit": 15,
-    "enDailyNewDate": "2026-11-17",
-    "enDailyNewCount": 15
+    "enDailyNewDate": "2026-11-20",
+    "enDailyNewCount": 0
   },
   "stats": {
     "totalFocusSeconds": 0,
     "completedSessions": 0,
     "longestCleanSessionSec": 0,
     "tabSwitchCount": 0,
-    "totalStrokesDrawn": 78,
+    "totalStrokesDrawn": 88,
     "blindRecallSuccessCount": 12,
-    "blindRecallTotalCount": 16
+    "blindRecallTotalCount": 17
   },
   "kanji": {
     "日": {
@@ -174,8 +174,8 @@
       "reps": 1,
       "interval": 1,
       "ease": 2.5,
-      "writePasses": 1,
-      "blindPasses": 1,
+      "writePasses": 3,
+      "blindPasses": 2,
       "note": "",
       "due": "2026-11-17T16:02:39.245Z",
       "lastReviewedAt": "2026-11-16T16:02:39.245Z"
@@ -267,7 +267,7 @@
       "interval": 1,
       "ease": 2.5,
       "writePasses": 0,
-      "blindPasses": 1,
+      "blindPasses": 2,
       "note": "",
       "due": "2026-11-18T15:26:18.161Z",
       "lastReviewedAt": "2026-11-17T15:26:18.161Z"
@@ -287,7 +287,7 @@
       "interval": 1,
       "ease": 2.36,
       "writePasses": 0,
-      "blindPasses": 1,
+      "blindPasses": 2,
       "note": "",
       "due": "2026-11-18T15:26:45.756Z",
       "lastReviewedAt": "2026-11-17T15:26:45.756Z"
@@ -297,7 +297,7 @@
       "interval": 1,
       "ease": 2.36,
       "writePasses": 0,
-      "blindPasses": 1,
+      "blindPasses": 2,
       "note": "",
       "due": "2026-11-18T15:27:05.202Z",
       "lastReviewedAt": "2026-11-17T15:27:05.202Z"
@@ -307,7 +307,7 @@
       "interval": 1,
       "ease": 2.36,
       "writePasses": 0,
-      "blindPasses": 2,
+      "blindPasses": 3,
       "note": "",
       "due": "2026-11-18T15:27:21.456Z",
       "lastReviewedAt": "2026-11-17T15:27:21.456Z"
@@ -317,7 +317,7 @@
       "interval": 1,
       "ease": 2.36,
       "writePasses": 0,
-      "blindPasses": 0,
+      "blindPasses": 1,
       "note": "",
       "due": "2026-11-18T16:30:37.331Z",
       "lastReviewedAt": "2026-11-17T16:30:37.331Z"
@@ -327,7 +327,7 @@
       "interval": 1,
       "ease": 2.5,
       "writePasses": 0,
-      "blindPasses": 0,
+      "blindPasses": 1,
       "note": "",
       "due": "2026-11-18T16:30:54.094Z",
       "lastReviewedAt": "2026-11-17T16:30:54.094Z"
@@ -337,7 +337,7 @@
       "interval": 1,
       "ease": 2.5,
       "writePasses": 0,
-      "blindPasses": 0,
+      "blindPasses": 1,
       "note": "",
       "due": "2026-11-18T16:30:56.291Z",
       "lastReviewedAt": "2026-11-17T16:30:56.291Z"
@@ -347,7 +347,7 @@
       "interval": 1,
       "ease": 2.5,
       "writePasses": 0,
-      "blindPasses": 0,
+      "blindPasses": 1,
       "note": "",
       "due": "2026-11-18T16:31:08.428Z",
       "lastReviewedAt": "2026-11-17T16:31:08.428Z"
@@ -361,10 +361,113 @@
       "note": "",
       "due": "2026-11-18T16:31:32.426Z",
       "lastReviewedAt": "2026-11-17T16:31:32.426Z"
+    },
+    "final": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.307Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.307Z"
+    },
+    "respect": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.307Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.307Z"
+    },
+    "move": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.307Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.307Z"
+    },
+    "sense": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.307Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.307Z"
+    },
+    "grade": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "station": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "build": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "fine": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "genuine": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "simple": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-21T01:51:46.308Z",
+      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
     }
   },
   "readingsDone": {},
   "customReadings": [],
+  "enReadingsDone": {},
+  "enReadingNotes": {},
+  "enCustomReadings": [],
   "sentencesDone": {
     "s-n5-01": {
       "dictation": true,
