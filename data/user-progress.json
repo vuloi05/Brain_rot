@@ -1,23 +1,23 @@
 {
   "version": 1,
   "createdAt": "2026-11-16T22:05:00.000Z",
-  "updatedAt": "2026-11-20T01:51:46.341Z",
+  "updatedAt": "2026-11-21T02:19:51.721Z",
   "settings": {
     "theme": "hanshi",
     "defaultLevel": 5,
     "focusDurationMin": 15,
     "requireDetoxGate": true,
     "soundEnabled": false,
-    "enLevel": "A1",
-    "enGlobal10k": true,
+    "enLevel": "B2",
+    "enGlobal10k": false,
     "enStatusFilter": "all",
     "enRootFilter": "",
-    "enLastWord": "message",
+    "enLastWord": "extract",
     "jpDailyNewLimit": 10,
-    "jpDailyNewDate": "2026-11-20",
-    "jpDailyNewCount": 0,
+    "jpDailyNewDate": "2026-11-21",
+    "jpDailyNewCount": 10,
     "enDailyNewLimit": 15,
-    "enDailyNewDate": "2026-11-20",
+    "enDailyNewDate": "2026-11-21",
     "enDailyNewCount": 0
   },
   "stats": {
@@ -25,190 +25,290 @@
     "completedSessions": 0,
     "longestCleanSessionSec": 0,
     "tabSwitchCount": 0,
-    "totalStrokesDrawn": 88,
-    "blindRecallSuccessCount": 12,
-    "blindRecallTotalCount": 17
+    "totalStrokesDrawn": 115,
+    "blindRecallSuccessCount": 16,
+    "blindRecallTotalCount": 22
   },
   "kanji": {
     "日": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
+      "ease": 2.62,
+      "writePasses": 3,
+      "blindPasses": 3,
+      "note": "",
+      "due": "2026-11-24T02:17:45.890Z",
+      "lastReviewedAt": "2026-11-21T02:17:45.890Z"
+    },
+    "一": {
+      "reps": 2,
+      "interval": 3,
+      "ease": 2.62,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-24T02:17:50.797Z",
+      "lastReviewedAt": "2026-11-21T02:17:50.797Z"
+    },
+    "人": {
+      "reps": 2,
+      "interval": 3,
+      "ease": 2.62,
+      "writePasses": 1,
+      "blindPasses": 1,
+      "note": "",
+      "due": "2026-11-24T02:18:06.084Z",
+      "lastReviewedAt": "2026-11-21T02:18:06.084Z"
+    },
+    "年": {
+      "reps": 2,
+      "interval": 3,
+      "ease": 2.5,
+      "writePasses": 2,
+      "blindPasses": 2,
+      "note": "",
+      "due": "2026-11-24T02:18:16.209Z",
+      "lastReviewedAt": "2026-11-21T02:18:16.209Z"
+    },
+    "大": {
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 2,
       "blindPasses": 2,
       "note": "",
-      "due": "2026-11-20T15:55:34.775Z",
-      "lastReviewedAt": "2026-11-16T15:55:34.775Z"
-    },
-    "一": {
-      "reps": 1,
-      "interval": 4,
-      "ease": 2.62,
-      "writePasses": 0,
-      "blindPasses": 0,
-      "note": "",
-      "due": "2026-11-20T15:55:45.443Z",
-      "lastReviewedAt": "2026-11-16T15:55:45.443Z"
-    },
-    "人": {
-      "reps": 1,
-      "interval": 4,
-      "ease": 2.62,
-      "writePasses": 0,
-      "blindPasses": 0,
-      "note": "",
-      "due": "2026-11-20T15:55:48.113Z",
-      "lastReviewedAt": "2026-11-16T15:55:48.113Z"
-    },
-    "年": {
-      "reps": 1,
-      "interval": 1,
-      "ease": 2.5,
-      "writePasses": 1,
-      "blindPasses": 1,
-      "note": "",
-      "due": "2026-11-17T15:56:23.423Z",
-      "lastReviewedAt": "2026-11-16T15:56:23.423Z"
-    },
-    "大": {
-      "reps": 1,
-      "interval": 4,
-      "ease": 2.62,
-      "writePasses": 1,
-      "blindPasses": 1,
-      "note": "",
-      "due": "2026-11-20T15:56:35.193Z",
-      "lastReviewedAt": "2026-11-16T15:56:35.193Z"
+      "due": "2026-11-24T02:18:22.580Z",
+      "lastReviewedAt": "2026-11-21T02:18:22.580Z"
     },
     "十": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:56:41.543Z",
-      "lastReviewedAt": "2026-11-16T15:56:41.543Z"
+      "due": "2026-11-24T02:18:33.287Z",
+      "lastReviewedAt": "2026-11-21T02:18:33.287Z"
     },
     "二": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 0,
       "blindPasses": 0,
       "note": "",
-      "due": "2026-11-20T15:56:44.895Z",
-      "lastReviewedAt": "2026-11-16T15:56:44.895Z"
+      "due": "2026-11-24T02:18:35.616Z",
+      "lastReviewedAt": "2026-11-21T02:18:35.616Z"
     },
     "本": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
-      "writePasses": 1,
-      "blindPasses": 1,
+      "writePasses": 3,
+      "blindPasses": 2,
       "note": "",
-      "due": "2026-11-20T15:56:55.937Z",
-      "lastReviewedAt": "2026-11-16T15:56:55.937Z"
+      "due": "2026-11-24T02:19:08.387Z",
+      "lastReviewedAt": "2026-11-21T02:19:08.387Z"
     },
     "中": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:57:04.289Z",
-      "lastReviewedAt": "2026-11-16T15:57:04.289Z"
+      "due": "2026-11-24T02:19:15.967Z",
+      "lastReviewedAt": "2026-11-21T02:19:15.967Z"
     },
     "出": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:57:21.831Z",
-      "lastReviewedAt": "2026-11-16T15:57:21.831Z"
+      "due": "2026-11-24T02:19:17.572Z",
+      "lastReviewedAt": "2026-11-21T02:19:17.572Z"
     },
     "三": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:57:33.931Z",
-      "lastReviewedAt": "2026-11-16T15:57:33.931Z"
+      "due": "2026-11-24T02:19:18.636Z",
+      "lastReviewedAt": "2026-11-21T02:19:18.636Z"
     },
     "見": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:57:47.253Z",
-      "lastReviewedAt": "2026-11-16T15:57:47.253Z"
+      "due": "2026-11-24T02:19:19.870Z",
+      "lastReviewedAt": "2026-11-21T02:19:19.870Z"
     },
     "月": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T15:57:53.131Z",
-      "lastReviewedAt": "2026-11-16T15:57:53.131Z"
+      "due": "2026-11-24T02:19:24.089Z",
+      "lastReviewedAt": "2026-11-21T02:19:24.089Z"
     },
     "生": {
-      "reps": 1,
-      "interval": 1,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.5,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-17T15:58:09.963Z",
-      "lastReviewedAt": "2026-11-16T15:58:09.963Z"
+      "due": "2026-11-24T02:19:26.840Z",
+      "lastReviewedAt": "2026-11-21T02:19:26.840Z"
     },
     "五": {
-      "reps": 1,
-      "interval": 1,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.5,
       "writePasses": 3,
       "blindPasses": 2,
       "note": "",
-      "due": "2026-11-17T16:02:39.245Z",
-      "lastReviewedAt": "2026-11-16T16:02:39.245Z"
+      "due": "2026-11-24T02:19:29.040Z",
+      "lastReviewedAt": "2026-11-21T02:19:29.040Z"
     },
     "上": {
-      "reps": 1,
-      "interval": 1,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.5,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-17T16:03:14.646Z",
-      "lastReviewedAt": "2026-11-16T16:03:14.646Z"
+      "due": "2026-11-24T02:19:30.096Z",
+      "lastReviewedAt": "2026-11-21T02:19:30.096Z"
     },
     "四": {
-      "reps": 1,
-      "interval": 4,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.62,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-20T16:03:22.923Z",
-      "lastReviewedAt": "2026-11-16T16:03:22.923Z"
+      "due": "2026-11-24T02:19:31.008Z",
+      "lastReviewedAt": "2026-11-21T02:19:31.008Z"
     },
     "金": {
-      "reps": 1,
-      "interval": 1,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.5,
       "writePasses": 1,
       "blindPasses": 1,
       "note": "",
-      "due": "2026-11-17T16:03:33.929Z",
-      "lastReviewedAt": "2026-11-16T16:03:33.929Z"
+      "due": "2026-11-24T02:19:32.259Z",
+      "lastReviewedAt": "2026-11-21T02:19:32.259Z"
+    },
+    "九": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:33.140Z",
+      "lastReviewedAt": "2026-11-21T02:19:33.140Z"
+    },
+    "入": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:38.164Z",
+      "lastReviewedAt": "2026-11-21T02:19:38.164Z"
+    },
+    "学": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:46.049Z",
+      "lastReviewedAt": "2026-11-21T02:19:46.049Z"
+    },
+    "円": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:47.336Z",
+      "lastReviewedAt": "2026-11-21T02:19:47.336Z"
+    },
+    "子": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:47.912Z",
+      "lastReviewedAt": "2026-11-21T02:19:47.912Z"
+    },
+    "八": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:48.384Z",
+      "lastReviewedAt": "2026-11-21T02:19:48.384Z"
+    },
+    "六": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:48.744Z",
+      "lastReviewedAt": "2026-11-21T02:19:48.744Z"
+    },
+    "下": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:49.088Z",
+      "lastReviewedAt": "2026-11-21T02:19:49.088Z"
+    },
+    "気": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:50.468Z",
+      "lastReviewedAt": "2026-11-21T02:19:50.468Z"
+    },
+    "小": {
+      "reps": 1,
+      "interval": 1,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 0,
+      "note": "",
+      "due": "2026-11-22T02:19:51.716Z",
+      "lastReviewedAt": "2026-11-21T02:19:51.716Z"
     }
   },
   "enVocab": {
@@ -443,14 +543,14 @@
       "lastReviewedAt": "2026-11-20T01:51:46.308Z"
     },
     "genuine": {
-      "reps": 1,
-      "interval": 1,
+      "reps": 2,
+      "interval": 3,
       "ease": 2.5,
       "writePasses": 0,
-      "blindPasses": 1,
+      "blindPasses": 2,
       "note": "",
-      "due": "2026-11-21T01:51:46.308Z",
-      "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+      "due": "2026-11-23T09:43:02.069Z",
+      "lastReviewedAt": "2026-11-20T09:43:02.069Z"
     },
     "simple": {
       "reps": 1,
@@ -461,6 +561,14 @@
       "note": "",
       "due": "2026-11-21T01:51:46.308Z",
       "lastReviewedAt": "2026-11-20T01:51:46.308Z"
+    },
+    "extract": {
+      "reps": 0,
+      "interval": 0,
+      "ease": 2.5,
+      "writePasses": 0,
+      "blindPasses": 2,
+      "note": ""
     }
   },
   "readingsDone": {},
