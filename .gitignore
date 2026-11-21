@@ -3,6 +3,10 @@ scripts/.cache/
 skills/
 de_thi/
 sach_pdf/
+tai_lieu_tieng_nhat/
+tai_lieu_tieng_anh/
 *.tmp
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc

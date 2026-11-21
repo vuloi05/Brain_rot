@@ -1,0 +1,312 @@
+{
+  "id": "mimi-kara-n3-goi",
+  "title": "耳から覚える 日本語能力試験 語彙トレーニング N3",
+  "shortTitle": "耳から N3",
+  "subtitle": "880 từ cốt lõi (12 Unit · 3 Step) + 22 Column (~520 từ) · 18 Luyện I · 9 Đề JLPT II (180 câu)",
+  "pdfUrl": "tai_lieu_tieng_nhat/Mimi_Kara_Oboeru/Mimi_Kara_Oboeru_N3-Goi.pdf",
+  "totalPages": 236,
+  "pageOffset": 1,
+  "refPages": {
+    "cover": 1,
+    "intro": 3,
+    "introBookPage": 2,
+    "toc": 5,
+    "tocBookPage": 4,
+    "index": 207,
+    "indexBookPage": 206,
+    "answersCover": 225
+  },
+  "units": [
+    {
+      "id": "mimi-n3-u01",
+      "unitNum": 1,
+      "step": 1,
+      "titleJp": "名詞 A",
+      "titleVi": "Danh từ A",
+      "wordRange": "#1–120",
+      "wordCount": 120,
+      "cdRange": "CD 02–09",
+      "vocabBookPage": 8,
+      "vocabPage": 9,
+      "columns": [
+        { "id": "c1", "label": "C1 あいさつ (Chào hỏi)", "bookPage": 15, "page": 16 },
+        { "id": "c2", "label": "C2 家族の呼び方 (Xưng hô gia đình)", "bookPage": 17, "page": 18 },
+        { "id": "c3", "label": "C3 人を表す言葉 (Người theo độ tuổi)", "bookPage": 21, "page": 22 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (1–71)", "bookPage": 18, "page": 19 },
+        { "label": "✍️ Luyện I (72–120)", "bookPage": 28, "page": 29 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (1–120)", "bookPage": 30, "page": 31 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 01", "page": 226 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u02",
+      "unitNum": 2,
+      "step": 1,
+      "titleJp": "動詞 A",
+      "titleVi": "Động từ A + まとめ 連用名詞",
+      "wordRange": "#121–258",
+      "wordCount": 138,
+      "cdRange": "CD 10–17 (trừ まとめ)",
+      "vocabBookPage": 32,
+      "vocabPage": 33,
+      "columns": [
+        { "id": "c4", "label": "C4 学校 (Trường học)", "bookPage": 37, "page": 38 },
+        { "id": "c5", "label": "C5 職業を表す言葉 (Nghề nghiệp)", "bookPage": 39, "page": 40 },
+        { "id": "c6", "label": "C6 助数詞・順番 (Lượng từ & Thứ tự)", "bookPage": 47, "page": 48 },
+        { "id": "c7", "label": "C7 体の部分の言葉 (Bộ phận cơ thể)", "bookPage": 49, "page": 50 },
+        { "id": "matome-1", "label": "まとめ 連用名詞 (#221–258)", "bookPage": 54, "page": 55 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (121–170)", "bookPage": 40, "page": 41 },
+        { "label": "✍️ Luyện I (171–220)", "bookPage": 50, "page": 51 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (121–220)", "bookPage": 52, "page": 53 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 02", "page": 227 },
+        { "label": "✅ Đáp án tiếp & Đề II", "page": 228 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u03",
+      "unitNum": 3,
+      "step": 1,
+      "titleJp": "形容詞 A",
+      "titleVi": "Tính từ A + まとめ イ形+まる/める",
+      "wordRange": "#259–310",
+      "wordCount": 52,
+      "cdRange": "CD 18–21 (trừ まとめ)",
+      "vocabBookPage": 58,
+      "vocabPage": 59,
+      "columns": [
+        { "id": "c8", "label": "C8 数字・計算 (Số đếm & Tính toán)", "bookPage": 65, "page": 66 },
+        { "id": "matome-2", "label": "まとめ イ形容詞+まる/める (#299–310)", "bookPage": 68, "page": 69 },
+        { "id": "c9", "label": "C9 教科・科目 (Môn học)", "bookPage": 69, "page": 70 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (259–298)", "bookPage": 66, "page": 67 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Tính từ A·B)", "bookPage": 130, "page": 131 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 228 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 232 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u04",
+      "unitNum": 4,
+      "step": 2,
+      "titleJp": "名詞 B",
+      "titleVi": "Danh từ B",
+      "wordRange": "#311–410",
+      "wordCount": 100,
+      "cdRange": "CD 22–28",
+      "vocabBookPage": 70,
+      "vocabPage": 71,
+      "columns": [],
+      "practice1": [
+        { "label": "✍️ Luyện I (311–370)", "bookPage": 78, "page": 79 },
+        { "label": "✍️ Luyện I (371–410)", "bookPage": 86, "page": 87 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (311–410)", "bookPage": 88, "page": 89 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 04", "page": 229 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u05",
+      "unitNum": 5,
+      "step": 2,
+      "titleJp": "動詞 B",
+      "titleVi": "Động từ B",
+      "wordRange": "#411–510",
+      "wordCount": 100,
+      "cdRange": "CD 29–36",
+      "vocabBookPage": 90,
+      "vocabPage": 91,
+      "columns": [
+        { "id": "c10", "label": "C10 単位 (Đơn vị đo)", "bookPage": 95, "page": 96 },
+        { "id": "c11", "label": "C11 ～中「ちゅう」と「じゅう」", "bookPage": 97, "page": 98 },
+        { "id": "c12", "label": "C12 駅・列車 (Nhà ga & Tàu hỏa)", "bookPage": 105, "page": 106 },
+        { "id": "c13", "label": "C13 お金に関係する言葉 (Tiền bạc)", "bookPage": 107, "page": 108 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (411–460)", "bookPage": 98, "page": 99 },
+        { "label": "✍️ Luyện I (461–510)", "bookPage": 108, "page": 109 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (411–510)", "bookPage": 110, "page": 111 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 05", "page": 230 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u06",
+      "unitNum": 6,
+      "step": 2,
+      "titleJp": "カタカナ A",
+      "titleVi": "Katakana A",
+      "wordRange": "#511–550",
+      "wordCount": 40,
+      "cdRange": "Không có CD gốc",
+      "vocabBookPage": 112,
+      "vocabPage": 113,
+      "columns": [
+        { "id": "c14", "label": "C14 パソコン (Máy tính)", "bookPage": 117, "page": 118 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (511–550)", "bookPage": 118, "page": 119 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Katakana A·B)", "bookPage": 190, "page": 191 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 231 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 235 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u07",
+      "unitNum": 7,
+      "step": 2,
+      "titleJp": "形容詞 B",
+      "titleVi": "Tính từ B",
+      "wordRange": "#551–590",
+      "wordCount": 40,
+      "cdRange": "CD 37–40",
+      "vocabBookPage": 120,
+      "vocabPage": 121,
+      "columns": [
+        { "id": "c15", "label": "C15 公共の施設 (Công trình công cộng)", "bookPage": 127, "page": 128 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (551–590)", "bookPage": 128, "page": 129 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Tính từ A·B)", "bookPage": 130, "page": 131 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 231 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 232 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u08",
+      "unitNum": 8,
+      "step": 2,
+      "titleJp": "副詞 A",
+      "titleVi": "Phó từ A",
+      "wordRange": "#591–635",
+      "wordCount": 45,
+      "cdRange": "CD 41–44",
+      "vocabBookPage": 132,
+      "vocabPage": 133,
+      "columns": [
+        { "id": "c16", "label": "C16 時の表現 (Diễn đạt thời gian)", "bookPage": 139, "page": 140 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (591–635)", "bookPage": 140, "page": 141 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Phó/Liên từ A·B)", "bookPage": 204, "page": 205 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 232 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 236 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u09",
+      "unitNum": 9,
+      "step": 3,
+      "titleJp": "名詞 C",
+      "titleVi": "Danh từ C",
+      "wordRange": "#636–715",
+      "wordCount": 80,
+      "cdRange": "CD 45–50",
+      "vocabBookPage": 142,
+      "vocabPage": 143,
+      "columns": [
+        { "id": "c17", "label": "C17 ジャンル (Thể loại)", "bookPage": 147, "page": 148 },
+        { "id": "c18", "label": "C18 郵便 (Bưu điện)", "bookPage": 155, "page": 156 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (636–675)", "bookPage": 148, "page": 149 },
+        { "label": "✍️ Luyện I (676–715)", "bookPage": 156, "page": 157 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (636–715)", "bookPage": 158, "page": 159 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 09", "page": 232 },
+        { "label": "✅ Đáp án tiếp & Đề II", "page": 233 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u10",
+      "unitNum": 10,
+      "step": 3,
+      "titleJp": "動詞 C",
+      "titleVi": "Động từ C",
+      "wordRange": "#716–795",
+      "wordCount": 80,
+      "cdRange": "CD 51–58",
+      "vocabBookPage": 160,
+      "vocabPage": 161,
+      "columns": [
+        { "id": "c19", "label": "C19 位置を表す言葉 (Vị trí)", "bookPage": 167, "page": 168 },
+        { "id": "c20", "label": "C20 衣食住「衣」 (Trang phục)", "bookPage": 177, "page": 178 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (716–753)", "bookPage": 168, "page": 169 },
+        { "label": "✍️ Luyện I (754–795)", "bookPage": 178, "page": 179 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (716–795)", "bookPage": 180, "page": 181 },
+      "answers": [
+        { "label": "✅ Đáp án Unit 10", "page": 233 },
+        { "label": "✅ Đáp án tiếp & Đề II", "page": 234 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u11",
+      "unitNum": 11,
+      "step": 3,
+      "titleJp": "カタカナ B",
+      "titleVi": "Katakana B + まとめ 料理の動詞",
+      "wordRange": "#796–845",
+      "wordCount": 50,
+      "cdRange": "Không có CD gốc",
+      "vocabBookPage": 182,
+      "vocabPage": 183,
+      "columns": [
+        { "id": "matome-3", "label": "まとめ 料理の動詞 (#836–845)", "bookPage": 192, "page": 193 },
+        { "id": "c21", "label": "C21 衣食住「食」 (Ẩm thực)", "bookPage": 193, "page": 194 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (796–835)", "bookPage": 188, "page": 189 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Katakana A·B)", "bookPage": 190, "page": 191 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 234 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 235 }
+      ]
+    },
+    {
+      "id": "mimi-n3-u12",
+      "unitNum": 12,
+      "step": 3,
+      "titleJp": "副詞 B・連体詞・接続詞",
+      "titleVi": "Phó từ B · Liên thể từ · Liên từ",
+      "wordRange": "#846–880",
+      "wordCount": 35,
+      "cdRange": "CD 59–62",
+      "vocabBookPage": 194,
+      "vocabPage": 195,
+      "columns": [
+        { "id": "c22", "label": "C22 衣食住「住」 (Nhà ở)", "bookPage": 201, "page": 202 }
+      ],
+      "practice1": [
+        { "label": "✍️ Luyện I (846–880)", "bookPage": 202, "page": 203 }
+      ],
+      "practice2": { "label": "🎯 Đề JLPT II (Phó/Liên từ A·B)", "bookPage": 204, "page": 205 },
+      "answers": [
+        { "label": "✅ Đáp án Luyện I", "page": 235 },
+        { "label": "✅ Đáp án Đề II (A·B)", "page": 236 }
+      ]
+    }
+  ]
+}

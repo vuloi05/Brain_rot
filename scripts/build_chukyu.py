@@ -20,8 +20,8 @@ LESSONS = [
             'lesson': 13, 'honbun': 14, 'grammar': 16,
             'listening': 23, 'kanji': 154, 'vocabVi': 213, 'answer': 196,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/01.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/02.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/01.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/02.mp3',
         'paragraphs': [
             {
                 'jp': 'ファストフードのメニューで代表的な物といえば、ハンバーガーやフライドポテトなどです。最近は牛丼、スープなど、種類が増えています。ある発表によると、日本人は1年間に3兆円もファストフードにお金を使っています。理由は値段が安くて手軽に利用できること、時間がかからないこと、それにファストフードの店は明るくて入りやすいことなどです。',
@@ -84,8 +84,8 @@ LESSONS = [
             'lesson': 25, 'honbun': 26, 'grammar': 28,
             'listening': 35, 'kanji': 157, 'vocabVi': 215, 'answer': 197,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/03.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/04.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/03.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/04.mp3',
         'paragraphs': [
             {
                 'jp': '大きい地震が起きたら、どうすればいいのでしょうか。まず、テーブルや机の下に入ってください。次に、ストーブやガスコンロの火がついていたら、消しましょう。揺れがおさまったら、閉まっているドアや窓を開けてください。地震の後で、開けようとしても、開かない場合がありますから。地震が起きた時、もしビルの中にいたら、エレベーターは使わないでください。一番大切なのは慌てないことです。',
@@ -149,8 +149,8 @@ LESSONS = [
             'lesson': 36, 'honbun': 36, 'grammar': 38,
             'listening': 47, 'kanji': 160, 'vocabVi': 217, 'answer': 198,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/05.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/06.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/05.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/06.mp3',
         'paragraphs': [
             {
                 'jp': '最近、携帯電話やスマートフォン（スマホ）で話している子どもをよく見ませんか。ある調査によると、小学生の36.6%、中学生の51.9%が携帯電話・スマホを持っているそうです。また、自分専用のパソコンやタブレットを持っている子どもも多いです。町で大人が着るようなブランドの服を着ている子どもを見かけたこともあるでしょう。これらはどれもお金がかかる物ばかりです。',
@@ -208,8 +208,8 @@ LESSONS = [
             'lesson': 49, 'honbun': 50, 'grammar': 52,
             'listening': 60, 'kanji': 163, 'vocabVi': 219, 'answer': 199,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/07.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/08.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/07.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/08.mp3',
         'paragraphs': [
             {
                 'jp': '日本を訪れる外国人旅行者の数は年々多くなってきました。実際に、来日した海外の人は日本にどんなイメージを持ったのでしょうか。',
@@ -272,8 +272,8 @@ LESSONS = [
             'lesson': 63, 'honbun': 64, 'grammar': 66,
             'listening': 75, 'kanji': 166, 'vocabVi': 223, 'answer': 200,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/09.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/10.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/09.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/10.mp3',
         'paragraphs': [
             {
                 'jp': 'あなたは毎晩よく寝られますか。夜なかなか寝られなかったり、夜中に何回も目が覚めたりして、医者に相談する人が多くなっています。また、夜遅くまで活動することや、通勤時間の長さなどが原因で睡眠時間が減少し、体の不調を訴える人も増えています。',
@@ -337,8 +337,8 @@ LESSONS = [
             'lesson': 77, 'honbun': 78, 'grammar': 80,
             'listening': 87, 'kanji': 169, 'vocabVi': 225, 'answer': 201,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/11.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/12.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/11.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/12.mp3',
         'paragraphs': [
             {
                 'jp': '世界で広く使われている物の中に、日本人が発明した物がたくさんある。病院の胃カメラ、毎日の生活でよく使われている乾電池、シャープペンシル、サインペン、せんすなどだ。インスタントコーヒーもその一つだ。',
@@ -401,8 +401,8 @@ LESSONS = [
             'lesson': 89, 'honbun': 90, 'grammar': 92,
             'listening': 102, 'kanji': 172, 'vocabVi': 227, 'answer': 202,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/13.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/14.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/13.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/14.mp3',
         'paragraphs': [
             {
                 'jp': '最近、地球の温暖化や砂漠化が問題になってきている。それで、自分たちが住む地球を守ろうという意識が生まれている。',
@@ -460,8 +460,8 @@ LESSONS = [
             'lesson': 105, 'honbun': 106, 'grammar': 108,
             'listening': 116, 'kanji': 175, 'vocabVi': 231, 'answer': 203,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/15.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/16.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/15.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/16.mp3',
         'paragraphs': [
             {
                 'jp': '日本人は相手の話を聞いているあいだ、何回もうなずいたり、「はい、ええ」とか「うん、うん」と言ったりする。これをあいづちという。これは「あなたの話を聞いていますよ。」ということを伝える合図だ。だから、うなずいたり、「うん、うん」と言っていても、相手の話に100%賛成しているわけではない。',
@@ -518,8 +518,8 @@ LESSONS = [
             'lesson': 119, 'honbun': 120, 'grammar': 122,
             'listening': 132, 'kanji': 178, 'vocabVi': 233, 'answer': 204,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/17.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/18.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/17.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/18.mp3',
         'paragraphs': [
             {
                 'jp': '以前女性の職場と言われていた所で、男性も働くようになった。それにともなって、女性の仕事を表す「看護婦」や「保母」のような職業の名称は、「看護師」や「保育士」に変わった。反対に、男性が多かった建築の仕事とか運転手や車掌という仕事を女性もするようになった。つまり、職業は男女の区別が少なくなってきているのだ。',
@@ -582,8 +582,8 @@ LESSONS = [
             'lesson': 135, 'honbun': 136, 'grammar': 138,
             'listening': 146, 'kanji': 181, 'vocabVi': 237, 'answer': 207,
         },
-        'audioSlow': 'sach_pdf/Chukyu_e_ikou/audio/19.mp3',
-        'audioNatural': 'sach_pdf/Chukyu_e_ikou/audio/20.mp3',
+        'audioSlow': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/19.mp3',
+        'audioNatural': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/20.mp3',
         'paragraphs': [
             {
                 'jp': '最近のある調査によって、「ことばの使い方が乱れている」と感じている日本人が多いことがわかった。',
@@ -667,8 +667,8 @@ def main():
         'id': 'chukyu-e-ikou-2',
         'title': '中級へ行こう 日本語の文型と表現55 (第2版)',
         'subtitle': 'Giáo trình Sơ–Trung cấp N4 → N3 · 10 Bài · 55 Mẫu câu · 169 Kanji',
-        'pdfUrl': 'sach_pdf/Chukyu_e_ikou/（第二版）中級へ行こう.pdf',
-        'guidePdfUrl': 'sach_pdf/Chukyu_e_ikou/audio/教師用ガイド.pdf',
+        'pdfUrl': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/（第二版）中級へ行こう.pdf',
+        'guidePdfUrl': 'tai_lieu_tieng_nhat/Chukyu_e_ikou/audio/教師用ガイド.pdf',
         'allKanji': all_kanji,
         'lessons': LESSONS,
     }

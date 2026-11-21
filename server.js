@@ -7,12 +7,19 @@ const { execFile } = require('child_process');
 const PORT = Number(process.env.PORT) || 3456;
 const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
-const PROGRESS_FILE = path.join(DATA_DIR, 'user-progress.json');
+const PROGRESS_FILE = process.env.BOKUSEKI_PROGRESS_FILE
+  ? path.resolve(process.env.BOKUSEKI_PROGRESS_FILE)
+  : path.join(DATA_DIR, 'user-progress.json');
 const VOCAB_DICT_FILE = path.join(DATA_DIR, 'vocab-dict.json');
 const KANJI_LOOKUP_FILE = path.join(DATA_DIR, 'kanji-lookup.json');
+const EN_VOCAB_FILE = path.join(DATA_DIR, 'en-vocab.json');
+const EN_DICT_API_BASE = (process.env.BOKUSEKI_EN_DICT_BASE || 'https://api.dictionaryapi.dev/api/v2/entries/en').replace(/\/+$/, '');
+const EN_GT_API_BASE = (process.env.BOKUSEKI_EN_GT_BASE || 'https://translate.googleapis.com/translate_a/single').replace(/\/+$/, '');
+const EN_MM_API_BASE = (process.env.BOKUSEKI_EN_MM_BASE || 'https://api.mymemory.translated.net/get').replace(/\/+$/, '');
 
 let vocabDictCache = null;
 let kanjiLookupCache = null;
+let enVocabMapCache = null;
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -44,6 +51,17 @@ function createDefaultProgress() {
       focusDurationMin: 15,
       requireDetoxGate: true,
       soundEnabled: false,
+      enLevel: 'A1',
+      enGlobal10k: false,
+      enStatusFilter: 'today',
+      enRootFilter: '',
+      enLastWord: '',
+      enDailyNewLimit: 10,
+      enDailyNewDate: '',
+      enDailyNewCount: 0,
+      jpDailyNewLimit: 10,
+      jpDailyNewDate: '',
+      jpDailyNewCount: 0,
     },
     stats: {
       totalFocusSeconds: 0,
@@ -55,8 +73,12 @@ function createDefaultProgress() {
       blindRecallTotalCount: 0,
     },
     kanji: {},
+    enVocab: {},
     readingsDone: {},
     customReadings: [],
+    enReadingsDone: {},
+    enReadingNotes: {},
+    enCustomReadings: [],
     sentencesDone: {},
     examNotes: {},
     sessionLogs: [],
@@ -64,8 +86,9 @@ function createDefaultProgress() {
 }
 
 function ensureProgressFile() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
+  const progressDir = path.dirname(PROGRESS_FILE);
+  if (!fs.existsSync(progressDir)) {
+    fs.mkdirSync(progressDir, { recursive: true });
   }
   if (!fs.existsSync(PROGRESS_FILE)) {
     const initial = createDefaultProgress();
@@ -73,10 +96,22 @@ function ensureProgressFile() {
   }
 }
 
+function isPlainObject(v) {
+  return typeof v === 'object' && v !== null && !Array.isArray(v);
+}
+
 function readProgress() {
   ensureProgressFile();
   const raw = fs.readFileSync(PROGRESS_FILE, 'utf-8');
-  return JSON.parse(raw);
+  const parsed = JSON.parse(raw);
+  const defaults = createDefaultProgress();
+  if (!isPlainObject(parsed)) return defaults;
+  return {
+    ...defaults,
+    ...parsed,
+    settings: { ...defaults.settings, ...(isPlainObject(parsed.settings) ? parsed.settings : {}) },
+    stats: { ...defaults.stats, ...(isPlainObject(parsed.stats) ? parsed.stats : {}) },
+  };
 }
 
 function writeProgress(data) {
@@ -97,6 +132,7 @@ function sendJson(res, statusCode, body) {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'no-store',
+    'X-Content-Type-Options': 'nosniff',
   });
   res.end(json);
 }
@@ -105,18 +141,86 @@ function readBody(req, maxBytes = 5 * 1024 * 1024) {
   return new Promise((resolve, reject) => {
     const chunks = [];
     let size = 0;
+    let settled = false;
+    const contentLen = Number(req.headers['content-length']);
+    if (Number.isFinite(contentLen) && contentLen > maxBytes) {
+      settled = true;
+      const err = new Error('Payload too large');
+      err.statusCode = 413;
+      reject(err);
+      return;
+    }
     req.on('data', (chunk) => {
+      if (settled) return;
       size += chunk.length;
       if (size > maxBytes) {
-        reject(new Error('Payload too large'));
-        req.destroy();
+        settled = true;
+        chunks.length = 0;
+        const err = new Error('Payload too large');
+        err.statusCode = 413;
+        reject(err);
         return;
       }
       chunks.push(chunk);
     });
-    req.on('end', () => resolve(Buffer.concat(chunks).toString('utf-8')));
-    req.on('error', reject);
+    req.on('end', () => {
+      if (!settled) {
+        settled = true;
+        resolve(Buffer.concat(chunks).toString('utf-8'));
+      }
+    });
+    req.on('error', (err) => {
+      if (!settled) {
+        settled = true;
+        reject(err);
+      }
+    });
   });
+}
+
+function parseJsonBody(raw, allowEmpty = false) {
+  if (!raw || !raw.trim()) {
+    if (allowEmpty) return {};
+    const err = new Error('Empty JSON body');
+    err.statusCode = 400;
+    throw err;
+  }
+  try {
+    return JSON.parse(raw);
+  } catch (_) {
+    const err = new Error('Invalid JSON body');
+    err.statusCode = 400;
+    throw err;
+  }
+}
+
+function validateProgressPayload(parsed) {
+  if (!isPlainObject(parsed)) {
+    return 'Invalid progress payload: expected JSON object';
+  }
+  const objKeys = [
+    'settings',
+    'stats',
+    'kanji',
+    'enVocab',
+    'readingsDone',
+    'enReadingsDone',
+    'enReadingNotes',
+    'sentencesDone',
+    'examNotes',
+  ];
+  for (const k of objKeys) {
+    if (parsed[k] !== undefined && !isPlainObject(parsed[k])) {
+      return `Invalid progress field "${k}": expected object`;
+    }
+  }
+  const arrKeys = ['customReadings', 'enCustomReadings', 'sessionLogs'];
+  for (const k of arrKeys) {
+    if (parsed[k] !== undefined && !Array.isArray(parsed[k])) {
+      return `Invalid progress field "${k}": expected array`;
+    }
+  }
+  return null;
 }
 
 function runGit(args) {
@@ -182,7 +286,17 @@ async function handleGitSave(doPush, commitMessage) {
     return { ok: false, error: addRes.stderr || 'Không thể git add data/user-progress.json' };
   }
 
-  const msg = (commitMessage || '').trim() || `chore(progress): cap nhat tien do Kanji ${new Date().toISOString().slice(0, 16).replace('T', ' ')}`;
+  let progressSummary = '';
+  try {
+    const prog = readProgress();
+    const kCount = Object.keys(prog.kanji || {}).length;
+    const enCount = Object.keys(prog.enVocab || {}).length;
+    const enReadCount = Object.keys(prog.enReadingsDone || {}).length;
+    progressSummary = ` [JP: ${kCount} kanji | EN: ${enCount} vocab | EN-Read: ${enReadCount}]`;
+  } catch (_) {}
+
+  const safeMsg = typeof commitMessage === 'string' ? commitMessage.trim() : '';
+  const msg = safeMsg || `chore(progress): dong bo tien do${progressSummary} ${new Date().toISOString().slice(0, 16).replace('T', ' ')}`;
   const diffRes = await runGit(['diff', '--cached', '--quiet']);
   let committed = false;
 
@@ -228,28 +342,73 @@ async function handleGitSave(doPush, commitMessage) {
   };
 }
 
+function isBlockedRelativePath(rel) {
+  const segments = String(rel || '').split(/[\\/]+/).filter(Boolean).map((s) => s.toLowerCase());
+  return (
+    segments.includes('.git')
+    || segments.includes('.agents')
+    || segments.includes('node_modules')
+    || (segments[0] === 'scripts' && segments.includes('.cache'))
+  );
+}
+
 function serveStatic(req, res) {
   const reqPath = req.url || '/';
-  const cleanPath = reqPath === '/' ? '/index.html' : reqPath.split('?')[0];
-  const decoded = decodeURIComponent(cleanPath);
-  const absPath = path.normalize(path.join(ROOT_DIR, decoded));
+  const rawPath = reqPath.split('?')[0] || '/';
+  const cleanPath = rawPath === '/' ? '/index.html' : rawPath;
 
-  if (!absPath.startsWith(ROOT_DIR)) {
-    res.writeHead(403);
+  let decoded;
+  try {
+    decoded = decodeURIComponent(cleanPath);
+  } catch (_) {
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+    res.end('Bad Request');
+    return;
+  }
+
+  if (decoded.includes('\0')) {
+    res.writeHead(400, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+    res.end('Bad Request');
+    return;
+  }
+
+  const absPath = path.normalize(path.join(ROOT_DIR, decoded));
+  const rel = path.relative(ROOT_DIR, absPath);
+
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
     res.end('Forbidden');
     return;
   }
 
-  if (absPath.includes(`${path.sep}.git`) || absPath.includes(`${path.sep}scripts${path.sep}.cache`)) {
-    res.writeHead(403);
+  if (isBlockedRelativePath(rel)) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
     res.end('Forbidden');
     return;
   }
 
   fs.stat(absPath, (err, stat) => {
     if (err || !stat.isFile()) {
-      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
       res.end('Not found');
+      return;
+    }
+
+    let realRoot;
+    let realFile;
+    try {
+      realRoot = fs.realpathSync(ROOT_DIR);
+      realFile = fs.realpathSync(absPath);
+    } catch (_) {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+      res.end('Not found');
+      return;
+    }
+
+    const realRel = path.relative(realRoot, realFile);
+    if (!realRel || realRel.startsWith('..') || path.isAbsolute(realRel) || isBlockedRelativePath(realRel)) {
+      res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8', 'X-Content-Type-Options': 'nosniff' });
+      res.end('Forbidden');
       return;
     }
 
@@ -262,14 +421,14 @@ function serveStatic(req, res) {
     if (range) {
       const m = /^bytes=(\d*)-(\d*)$/.exec(range);
       if (!m) {
-        res.writeHead(416, { 'Content-Range': `bytes */${total}` });
+        res.writeHead(416, { 'Content-Range': `bytes */${total}`, 'X-Content-Type-Options': 'nosniff' });
         res.end();
         return;
       }
       const start = m[1] ? parseInt(m[1], 10) : Math.max(0, total - parseInt(m[2], 10));
       const end = m[1] && m[2] ? Math.min(total - 1, parseInt(m[2], 10)) : total - 1;
       if (Number.isNaN(start) || Number.isNaN(end) || start > end || start >= total) {
-        res.writeHead(416, { 'Content-Range': `bytes */${total}` });
+        res.writeHead(416, { 'Content-Range': `bytes */${total}`, 'X-Content-Type-Options': 'nosniff' });
         res.end();
         return;
       }
@@ -279,9 +438,10 @@ function serveStatic(req, res) {
         'Content-Length': end - start + 1,
         'Content-Type': mime,
         'Cache-Control': cacheControl,
+        'X-Content-Type-Options': 'nosniff',
       });
       if (req.method === 'HEAD') return res.end();
-      fs.createReadStream(absPath, { start, end }).pipe(res);
+      fs.createReadStream(realFile, { start, end }).pipe(res);
       return;
     }
 
@@ -290,9 +450,10 @@ function serveStatic(req, res) {
       'Content-Length': total,
       'Accept-Ranges': 'bytes',
       'Cache-Control': cacheControl,
+      'X-Content-Type-Options': 'nosniff',
     });
     if (req.method === 'HEAD') return res.end();
-    fs.createReadStream(absPath).pipe(res);
+    fs.createReadStream(realFile).pipe(res);
   });
 }
 
@@ -407,25 +568,82 @@ function candidateBaseForms(word) {
 
 function httpRequestJson(urlStr, options = {}, bodyObj = null, timeoutMs = 3500) {
   return new Promise((resolve) => {
-    const parsed = new URL(urlStr);
+    let parsed;
+    try {
+      parsed = new URL(urlStr);
+    } catch (_) {
+      return resolve(null);
+    }
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') {
+      return resolve(null);
+    }
+    const signal = options && options.signal ? options.signal : null;
+    if (signal && signal.aborted) {
+      return resolve(null);
+    }
+
+    const isHttp = parsed.protocol === 'http:';
+    const transport = isHttp ? http : https;
     const reqOpts = {
       hostname: parsed.hostname,
-      port: parsed.port || 443,
+      port: parsed.port || (isHttp ? 80 : 443),
       path: parsed.pathname + parsed.search,
       method: options.method || 'GET',
       headers: options.headers || {},
     };
+    const MAX_RESP_BYTES = 1024 * 1024;
     let settled = false;
+    let req = null;
+    let wallTimer = null;
+    const onAbort = () => {
+      try {
+        if (req) req.destroy();
+      } catch (_) {}
+      finish(null);
+    };
     const finish = (val) => {
       if (!settled) {
         settled = true;
+        if (wallTimer) {
+          clearTimeout(wallTimer);
+          wallTimer = null;
+        }
+        if (signal) {
+          try {
+            signal.removeEventListener('abort', onAbort);
+          } catch (_) {}
+        }
         resolve(val);
       }
     };
-    const req = https.request(reqOpts, (res) => {
+    if (signal) {
+      signal.addEventListener('abort', onAbort, { once: true });
+    }
+    wallTimer = setTimeout(() => {
+      try {
+        if (req) req.destroy();
+      } catch (_) {}
+      finish(null);
+    }, timeoutMs);
+    if (typeof wallTimer.unref === 'function') wallTimer.unref();
+
+    req = transport.request(reqOpts, (res) => {
       const chunks = [];
-      res.on('data', (c) => chunks.push(c));
+      let totalBytes = 0;
+      res.on('data', (c) => {
+        if (settled) return;
+        totalBytes += c.length;
+        if (totalBytes > MAX_RESP_BYTES) {
+          try {
+            req.destroy();
+          } catch (_) {}
+          finish(null);
+          return;
+        }
+        chunks.push(c);
+      });
       res.on('end', () => {
+        if (settled) return;
         try {
           const text = Buffer.concat(chunks).toString('utf-8');
           finish(res.statusCode >= 200 && res.statusCode < 300 ? JSON.parse(text) : null);
@@ -433,9 +651,13 @@ function httpRequestJson(urlStr, options = {}, bodyObj = null, timeoutMs = 3500)
           finish(null);
         }
       });
+      res.on('error', () => finish(null));
+      res.on('aborted', () => finish(null));
     });
     req.setTimeout(timeoutMs, () => {
-      req.destroy();
+      try {
+        req.destroy();
+      } catch (_) {}
       finish(null);
     });
     req.on('error', () => finish(null));
@@ -447,7 +669,7 @@ function httpRequestJson(urlStr, options = {}, bodyObj = null, timeoutMs = 3500)
 }
 
 function stripHtmlTags(str) {
-  return (str || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  return String(str == null ? '' : str).replace(/<[^>]*>?/g, '').replace(/\s+/g, ' ').trim();
 }
 
 async function queryMaziiWord(text) {
@@ -594,11 +816,264 @@ async function lookupJapaneseText(rawText) {
   return payload;
 }
 
-const server = http.createServer(async (req, res) => {
-  const parsedUrl = new URL(req.url || '/', `http://127.0.0.1:${PORT}`);
-  const urlPath = parsedUrl.pathname;
+const enLookupCache = new Map();
+
+function loadEnVocabMap() {
+  if (enVocabMapCache) return enVocabMapCache;
+  const map = new Map();
+  try {
+    const items = JSON.parse(fs.readFileSync(EN_VOCAB_FILE, 'utf-8'));
+    if (Array.isArray(items)) {
+      for (const item of items) {
+        if (item && item.w) {
+          map.set(String(item.w).trim().toLowerCase(), item);
+        }
+      }
+    }
+  } catch (_) {}
+  enVocabMapCache = map;
+  return enVocabMapCache;
+}
+
+function findLocalEnVocabEntry(word) {
+  const map = loadEnVocabMap();
+  if (map.has(word)) return map.get(word);
+
+  const normalized = word.replace(/\u2019/g, "'");
+  const clean = normalized.replace(/'s$/i, '').replace(/'$/i, '');
+  if (clean && map.has(clean)) return map.get(clean);
+
+  const base = clean || normalized;
+  const candidates = [];
+  // -ies -> -y, -es, -s
+  if (base.endsWith('ies') && base.length > 4) candidates.push(`${base.slice(0, -3)}y`);
+  if (base.endsWith('es') && base.length > 3) candidates.push(base.slice(0, -2));
+  if (base.endsWith('s') && base.length > 2 && !base.endsWith('ss')) candidates.push(base.slice(0, -1));
+
+  // -ied -> -y, doubled consonant + ed, -ed, -ed -> -e, -d
+  if (base.endsWith('ied') && base.length > 4) candidates.push(`${base.slice(0, -3)}y`);
+  if (base.endsWith('ed') && base.length > 4) {
+    const stem = base.slice(0, -2);
+    if (stem.length >= 2 && stem[stem.length - 1] === stem[stem.length - 2]) {
+      candidates.push(stem.slice(0, -1));
+    }
+    candidates.push(stem);
+    candidates.push(`${stem}e`);
+  }
+  if (base.endsWith('d') && base.length > 3) candidates.push(base.slice(0, -1));
+
+  // doubled consonant + ing, -ing, -ing -> -e
+  if (base.endsWith('ing') && base.length >= 5) {
+    const stem = base.slice(0, -3);
+    if (stem.length >= 2 && stem[stem.length - 1] === stem[stem.length - 2]) {
+      candidates.push(stem.slice(0, -1));
+    }
+    candidates.push(stem);
+    candidates.push(`${stem}e`);
+  }
+
+  // -ily -> -y, -ly, -ly -> -le
+  if (base.endsWith('ily') && base.length > 4) candidates.push(`${base.slice(0, -3)}y`);
+  if (base.endsWith('ly') && base.length > 4) {
+    const stem = base.slice(0, -2);
+    candidates.push(stem);
+    candidates.push(`${stem}le`);
+  }
+
+  for (const cand of candidates) {
+    if (map.has(cand)) return map.get(cand);
+  }
+  return null;
+}
+
+async function queryGoogleTranslateEnVi(word, timeoutMs, signal) {
+  const sep = EN_GT_API_BASE.includes('?') ? '&' : '?';
+  const gUrl = `${EN_GT_API_BASE}${sep}client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(word)}`;
+  const gRes = await httpRequestJson(gUrl, { method: 'GET', signal }, null, timeoutMs);
+  if (Array.isArray(gRes) && Array.isArray(gRes[0])) {
+    const joined = stripHtmlTags(gRes[0].map((seg) => (Array.isArray(seg) ? seg[0] || '' : '')).join(''));
+    if (joined && joined.toLowerCase() !== word.toLowerCase()) return joined;
+  }
+  return '';
+}
+
+async function queryMyMemoryEnVi(word, timeoutMs, signal) {
+  const sep = EN_MM_API_BASE.includes('?') ? '&' : '?';
+  const mmUrl = `${EN_MM_API_BASE}${sep}q=${encodeURIComponent(word)}&langpair=en|vi`;
+  const mmRes = await httpRequestJson(mmUrl, { method: 'GET', signal }, null, timeoutMs);
+  const mmText = mmRes?.responseData?.translatedText ? stripHtmlTags(String(mmRes.responseData.translatedText)) : '';
+  return mmText && !mmText.toUpperCase().includes('MYMEMORY WARNING') && mmText.toLowerCase() !== word.toLowerCase()
+    ? mmText
+    : '';
+}
+
+async function translateEnglishToVi(word, externalSignal = null) {
+  if (externalSignal && externalSignal.aborted) return '';
+  const ac = new AbortController();
+  const onExternalAbort = () => ac.abort();
+  if (externalSignal) {
+    externalSignal.addEventListener('abort', onExternalAbort, { once: true });
+  }
 
   try {
+    return await new Promise((resolve) => {
+      let settled = false;
+      let remaining = 2;
+      const done = (val) => {
+        if (!settled) {
+          settled = true;
+          ac.abort();
+          resolve(val || '');
+        }
+      };
+
+      const gPromise = queryGoogleTranslateEnVi(word, 2500, ac.signal);
+      const mmPromise = queryMyMemoryEnVi(word, 2500, ac.signal);
+
+      const handleProvider = (p) => {
+        p.then(
+          (val) => {
+            if (val) {
+              done(val);
+            } else {
+              remaining -= 1;
+              if (remaining <= 0) done('');
+            }
+          },
+          () => {
+            remaining -= 1;
+            if (remaining <= 0) done('');
+          }
+        );
+      };
+
+      handleProvider(gPromise);
+      handleProvider(mmPromise);
+    });
+  } finally {
+    if (externalSignal) {
+      try {
+        externalSignal.removeEventListener('abort', onExternalAbort);
+      } catch (_) {}
+    }
+  }
+}
+
+async function lookupEnglishWord(rawWord) {
+  const rawStr = String(rawWord == null ? '' : rawWord).trim();
+  if (!rawStr || /[\x00-\x1f<>]/.test(rawStr)) {
+    return { ok: false, error: 'Từ Tiếng Anh không hợp lệ' };
+  }
+  const word = rawStr.toLowerCase().replace(/[^a-z'-]/g, '');
+  if (!word || !/[a-z]/.test(word) || word.length > 64) {
+    return { ok: false, error: 'Từ Tiếng Anh không hợp lệ' };
+  }
+
+  const localHit = findLocalEnVocabEntry(word);
+  if (localHit) {
+    return {
+      ok: true,
+      found: true,
+      offline: false,
+      word,
+      ...(localHit.w !== word ? { baseWord: localHit.w } : {}),
+      ipa: localHit.ipa || `/${word}/`,
+      pos: localHit.pos || 'word',
+      vi: localHit.vi || '',
+      enDef: localHit.enDef || '',
+      exampleEn: localHit.exampleEn || '',
+    };
+  }
+
+  if (enLookupCache.has(word)) return enLookupCache.get(word);
+
+  const dictUrl = `${EN_DICT_API_BASE}/${encodeURIComponent(word)}`;
+  const ac = new AbortController();
+  let deadlineTimer = null;
+  const deadlinePromise = new Promise((resolve) => {
+    deadlineTimer = setTimeout(() => {
+      ac.abort();
+      resolve([null, '']);
+    }, 3200);
+    if (typeof deadlineTimer.unref === 'function') deadlineTimer.unref();
+  });
+
+  let dictRes = null;
+  let viResRaw = '';
+  try {
+    [dictRes, viResRaw] = await Promise.race([
+      Promise.all([
+        httpRequestJson(dictUrl, { method: 'GET', signal: ac.signal }, null, 2500),
+        translateEnglishToVi(word, ac.signal),
+      ]),
+      deadlinePromise,
+    ]);
+  } finally {
+    if (deadlineTimer) clearTimeout(deadlineTimer);
+    ac.abort();
+  }
+  const viRes = stripHtmlTags(viResRaw);
+
+  let ipa = '';
+  let pos = '';
+  let enDef = '';
+  let exampleEn = '';
+  const hasDict = Array.isArray(dictRes) && Boolean(dictRes[0]);
+
+  if (hasDict) {
+    const entry = dictRes[0];
+    ipa = stripHtmlTags(entry.phonetic || '');
+    if (!ipa && Array.isArray(entry.phonetics)) {
+      const hitPhon = entry.phonetics.find((p) => p && p.text);
+      if (hitPhon) ipa = stripHtmlTags(String(hitPhon.text));
+    }
+    if (Array.isArray(entry.meanings) && entry.meanings[0]) {
+      const m0 = entry.meanings[0];
+      pos = stripHtmlTags(m0.partOfSpeech || '');
+      const defs = Array.isArray(m0.definitions) ? m0.definitions : [];
+      if (defs[0] && defs[0].definition) enDef = stripHtmlTags(String(defs[0].definition));
+      for (const m of entry.meanings) {
+        const hitEx = (m.definitions || []).find((d) => d && d.example);
+        if (hitEx) {
+          exampleEn = stripHtmlTags(String(hitEx.example));
+          break;
+        }
+      }
+    }
+  }
+
+  const hasVi = Boolean(viRes);
+  const found = hasDict || hasVi;
+  const offline = !hasDict && !hasVi;
+
+  const payload = {
+    ok: true,
+    found,
+    offline,
+    word,
+    ipa: ipa || `/${word}/`,
+    pos: pos || 'word',
+    vi: viRes || enDef || 'Chưa có nghĩa trực tuyến',
+    enDef: enDef || '',
+    exampleEn,
+  };
+  if (found) {
+    if (enLookupCache.size > 400) enLookupCache.clear();
+    enLookupCache.set(word, payload);
+  }
+  return payload;
+}
+
+const server = http.createServer(async (req, res) => {
+  try {
+    let parsedUrl;
+    try {
+      parsedUrl = new URL(req.url || '/', `http://127.0.0.1:${PORT}`);
+    } catch (_) {
+      return sendJson(res, 400, { ok: false, error: 'Invalid request URL' });
+    }
+    const urlPath = parsedUrl.pathname;
+
     if (urlPath === '/api/progress' && req.method === 'GET') {
       const progress = readProgress();
       return sendJson(res, 200, progress);
@@ -606,7 +1081,11 @@ const server = http.createServer(async (req, res) => {
 
     if (urlPath === '/api/progress' && req.method === 'POST') {
       const raw = await readBody(req);
-      const parsed = JSON.parse(raw);
+      const parsed = parseJsonBody(raw, false);
+      const validationErr = validateProgressPayload(parsed);
+      if (validationErr) {
+        return sendJson(res, 400, { ok: false, error: validationErr });
+      }
       const saved = writeProgress(parsed);
       return sendJson(res, 200, { ok: true, updatedAt: saved.updatedAt });
     }
@@ -618,9 +1097,19 @@ const server = http.createServer(async (req, res) => {
       return sendJson(res, 200, result);
     }
 
+    if (urlPath === '/api/en-lookup' && req.method === 'GET') {
+      const w = (parsedUrl.searchParams.get('word') || '').trim();
+      if (!w) return sendJson(res, 400, { ok: false, error: 'Thiếu tham số word' });
+      const result = await lookupEnglishWord(w);
+      return sendJson(res, result.ok ? 200 : 400, result);
+    }
+
     if (urlPath === '/api/lookup' && req.method === 'POST') {
       const raw = await readBody(req);
-      const body = raw ? JSON.parse(raw) : {};
+      const body = parseJsonBody(raw, true);
+      if (!isPlainObject(body)) {
+        return sendJson(res, 400, { ok: false, error: 'Invalid lookup payload: expected object' });
+      }
       const paragraphs = Array.isArray(body.paragraphs) ? body.paragraphs.slice(0, 40) : [];
       const dict = loadVocabDict();
       const results = [];
@@ -652,7 +1141,13 @@ const server = http.createServer(async (req, res) => {
 
     if (urlPath === '/api/git-save' && req.method === 'POST') {
       const raw = await readBody(req);
-      const body = raw ? JSON.parse(raw) : {};
+      const body = parseJsonBody(raw, true);
+      if (!isPlainObject(body)) {
+        return sendJson(res, 400, { ok: false, error: 'Invalid git-save payload: expected object' });
+      }
+      if (body.message !== undefined && typeof body.message !== 'string') {
+        return sendJson(res, 400, { ok: false, error: 'Invalid git-save field "message": expected string' });
+      }
       const result = await handleGitSave(Boolean(body.push), body.message);
       return sendJson(res, result.ok ? 200 : 400, result);
     }
@@ -661,10 +1156,44 @@ const server = http.createServer(async (req, res) => {
       return serveStatic(req, res);
     }
 
-    res.writeHead(405);
+    res.writeHead(405, { 'X-Content-Type-Options': 'nosniff' });
     res.end('Method not allowed');
   } catch (err) {
-    sendJson(res, 500, { ok: false, error: err.message || 'Internal Server Error' });
+    const status = Number(err && err.statusCode) || 500;
+    if (status === 413) {
+      // Drain incoming oversized payload without buffering so client TCP write does not trigger RST (WinError 10053),
+      // while bounding drain time/bytes to protect against unbounded streams.
+      let drainedBytes = 0;
+      const onDrainData = (chunk) => {
+        drainedBytes += chunk.length;
+        if (drainedBytes > 20 * 1024 * 1024) {
+          req.removeListener('data', onDrainData);
+          try {
+            req.destroy();
+          } catch (_) {}
+        }
+      };
+      req.on('data', onDrainData);
+      req.resume();
+      const drainTimer = setTimeout(() => {
+        req.removeListener('data', onDrainData);
+        try {
+          req.destroy();
+        } catch (_) {}
+      }, 2000);
+      if (typeof drainTimer.unref === 'function') drainTimer.unref();
+      req.once('end', () => {
+        clearTimeout(drainTimer);
+        req.removeListener('data', onDrainData);
+      });
+      req.socket?.once('close', () => {
+        clearTimeout(drainTimer);
+        req.removeListener('data', onDrainData);
+      });
+    }
+    if (!res.headersSent) {
+      sendJson(res, status, { ok: false, error: err.message || 'Internal Server Error' });
+    }
   }
 });
 

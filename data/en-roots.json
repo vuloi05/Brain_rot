@@ -1,0 +1,1124 @@
+{
+  "roots": [
+    {
+      "id": "spect",
+      "root": "spect / spic",
+      "origin": "Latin",
+      "meaningVi": "nhìn, quan sát, xem xét",
+      "meaningEn": "look, see, observe",
+      "stems": [
+        "spect",
+        "spic",
+        "spec",
+        "spis"
+      ],
+      "examples": [
+        "respect",
+        "inspect",
+        "perspective",
+        "suspicious"
+      ]
+    },
+    {
+      "id": "struct",
+      "root": "struct",
+      "origin": "Latin",
+      "meaningVi": "xây dựng, xếp chồng, cấu trúc",
+      "meaningEn": "build, arrange",
+      "stems": [
+        "struct",
+        "stru"
+      ],
+      "examples": [
+        "structure",
+        "construct",
+        "instruct",
+        "infrastructure"
+      ]
+    },
+    {
+      "id": "dict",
+      "root": "dict / dic",
+      "origin": "Latin",
+      "meaningVi": "nói, tuyên bố, chỉ định",
+      "meaningEn": "say, speak, declare",
+      "stems": [
+        "dict",
+        "dic"
+      ],
+      "examples": [
+        "predict",
+        "dictionary",
+        "contradict",
+        "verdict"
+      ]
+    },
+    {
+      "id": "port",
+      "root": "port",
+      "origin": "Latin",
+      "meaningVi": "mang, chở, vận chuyển, cửa khẩu",
+      "meaningEn": "carry, bring",
+      "stems": [
+        "port"
+      ],
+      "examples": [
+        "transport",
+        "import",
+        "export",
+        "support"
+      ]
+    },
+    {
+      "id": "tract",
+      "root": "tract",
+      "origin": "Latin",
+      "meaningVi": "kéo, lôi cuốn, rút ra",
+      "meaningEn": "pull, drag, draw",
+      "stems": [
+        "tract"
+      ],
+      "examples": [
+        "attract",
+        "contract",
+        "extract",
+        "abstract"
+      ]
+    },
+    {
+      "id": "scrib",
+      "root": "scrib / script",
+      "origin": "Latin",
+      "meaningVi": "viết, ghi chép, khắc họa",
+      "meaningEn": "write, record",
+      "stems": [
+        "scrib",
+        "script"
+      ],
+      "examples": [
+        "describe",
+        "script",
+        "subscribe",
+        "manuscript"
+      ]
+    },
+    {
+      "id": "form",
+      "root": "form",
+      "origin": "Latin",
+      "meaningVi": "hình dạng, định hình, tạo mẫu",
+      "meaningEn": "shape, form",
+      "stems": [
+        "form"
+      ],
+      "examples": [
+        "inform",
+        "transform",
+        "reform",
+        "uniform"
+      ]
+    },
+    {
+      "id": "press",
+      "root": "press",
+      "origin": "Latin",
+      "meaningVi": "ấn, đè, ép, gây áp lực",
+      "meaningEn": "press, push",
+      "stems": [
+        "press"
+      ],
+      "examples": [
+        "express",
+        "impress",
+        "depress",
+        "compress"
+      ]
+    },
+    {
+      "id": "duc",
+      "root": "duc / duct",
+      "origin": "Latin",
+      "meaningVi": "dẫn dắt, hướng dẫn, dẫn truyền",
+      "meaningEn": "lead, bring forward",
+      "stems": [
+        "duc",
+        "duct",
+        "duce"
+      ],
+      "examples": [
+        "educate",
+        "produce",
+        "conduct",
+        "reduce"
+      ]
+    },
+    {
+      "id": "mit",
+      "root": "mit / miss",
+      "origin": "Latin",
+      "meaningVi": "gửi đi, phóng ra, bỏ qua",
+      "meaningEn": "send, let go",
+      "stems": [
+        "mit",
+        "miss",
+        "mise"
+      ],
+      "examples": [
+        "submit",
+        "transmit",
+        "mission",
+        "dismiss"
+      ]
+    },
+    {
+      "id": "ven",
+      "root": "ven / vent",
+      "origin": "Latin",
+      "meaningVi": "đi đến, xuất hiện, xảy ra",
+      "meaningEn": "come, arrive",
+      "stems": [
+        "ven",
+        "vent",
+        "vene"
+      ],
+      "examples": [
+        "event",
+        "prevent",
+        "invent",
+        "convention"
+      ]
+    },
+    {
+      "id": "fer",
+      "root": "fer",
+      "origin": "Latin",
+      "meaningVi": "mang lại, chuyển giao, chịu đựng",
+      "meaningEn": "bear, carry, bring",
+      "stems": [
+        "fer"
+      ],
+      "examples": [
+        "prefer",
+        "transfer",
+        "refer",
+        "offer"
+      ]
+    },
+    {
+      "id": "ject",
+      "root": "jec / ject",
+      "origin": "Latin",
+      "meaningVi": "ném, phóng ra, bác bỏ",
+      "meaningEn": "throw, cast",
+      "stems": [
+        "ject",
+        "jec"
+      ],
+      "examples": [
+        "project",
+        "reject",
+        "inject",
+        "object"
+      ]
+    },
+    {
+      "id": "cap",
+      "root": "cap / cept / ceiv",
+      "origin": "Latin",
+      "meaningVi": "nắm lấy, chứa đựng, tiếp nhận",
+      "meaningEn": "take, seize, hold",
+      "stems": [
+        "cept",
+        "ceiv",
+        "cap",
+        "cip"
+      ],
+      "examples": [
+        "accept",
+        "concept",
+        "receive",
+        "capture"
+      ]
+    },
+    {
+      "id": "vid",
+      "root": "vid / vis",
+      "origin": "Latin",
+      "meaningVi": "nhìn thấy, hình dung, thị giác",
+      "meaningEn": "see, look",
+      "stems": [
+        "vis",
+        "vid",
+        "view"
+      ],
+      "examples": [
+        "vision",
+        "visible",
+        "provide",
+        "evidence"
+      ]
+    },
+    {
+      "id": "aud",
+      "root": "aud / audit",
+      "origin": "Latin",
+      "meaningVi": "nghe, thính giác, khán thính giả",
+      "meaningEn": "hear, listen",
+      "stems": [
+        "audit",
+        "aud"
+      ],
+      "examples": [
+        "audio",
+        "audience",
+        "audition",
+        "inaudible"
+      ]
+    },
+    {
+      "id": "log",
+      "root": "log / logy",
+      "origin": "Greek",
+      "meaningVi": "lời nói, lý lẽ, học thuyết, khoa học",
+      "meaningEn": "word, reason, study",
+      "stems": [
+        "logy",
+        "log",
+        "loqu"
+      ],
+      "examples": [
+        "logic",
+        "biology",
+        "dialogue",
+        "apology"
+      ]
+    },
+    {
+      "id": "graph",
+      "root": "graph / gram",
+      "origin": "Greek",
+      "meaningVi": "viết, vẽ, biểu đồ, ký hiệu",
+      "meaningEn": "write, draw, record",
+      "stems": [
+        "graph",
+        "gram"
+      ],
+      "examples": [
+        "paragraph",
+        "photograph",
+        "diagram",
+        "grammar"
+      ]
+    },
+    {
+      "id": "cred",
+      "root": "cred",
+      "origin": "Latin",
+      "meaningVi": "tin tưởng, tín nhiệm, đáng tin",
+      "meaningEn": "believe, trust",
+      "stems": [
+        "cred"
+      ],
+      "examples": [
+        "credit",
+        "credible",
+        "incredible",
+        "credentials"
+      ]
+    },
+    {
+      "id": "ped",
+      "root": "ped / pod",
+      "origin": "Latin/Greek",
+      "meaningVi": "bàn chân, bước đi, nền tảng",
+      "meaningEn": "foot, step",
+      "stems": [
+        "ped",
+        "pod"
+      ],
+      "examples": [
+        "pedestrian",
+        "expedition",
+        "impede",
+        "podium"
+      ]
+    },
+    {
+      "id": "man",
+      "root": "man / manu",
+      "origin": "Latin",
+      "meaningVi": "bàn tay, làm bằng tay, điều khiển",
+      "meaningEn": "hand",
+      "stems": [
+        "manu",
+        "man"
+      ],
+      "examples": [
+        "manual",
+        "manage",
+        "manufacture",
+        "manipulate"
+      ]
+    },
+    {
+      "id": "fac",
+      "root": "fac / fact / fect",
+      "origin": "Latin",
+      "meaningVi": "làm, tạo tác, chế tạo, ảnh hưởng",
+      "meaningEn": "make, do",
+      "stems": [
+        "fact",
+        "fect",
+        "fic",
+        "fac"
+      ],
+      "examples": [
+        "factory",
+        "effect",
+        "affect",
+        "efficient"
+      ]
+    },
+    {
+      "id": "sta",
+      "root": "sta / sist / stit",
+      "origin": "Latin",
+      "meaningVi": "đứng vững, thiết lập, tồn tại",
+      "meaningEn": "stand, set up",
+      "stems": [
+        "sist",
+        "stit",
+        "stat",
+        "sta"
+      ],
+      "examples": [
+        "assist",
+        "consist",
+        "constitute",
+        "status"
+      ]
+    },
+    {
+      "id": "pon",
+      "root": "pon / pos",
+      "origin": "Latin",
+      "meaningVi": "đặt, bố trí, đề xuất",
+      "meaningEn": "put, place",
+      "stems": [
+        "pos",
+        "pon",
+        "pound"
+      ],
+      "examples": [
+        "position",
+        "compose",
+        "propose",
+        "postpone"
+      ]
+    },
+    {
+      "id": "vert",
+      "root": "vert / vers",
+      "origin": "Latin",
+      "meaningVi": "quay, xoay chuyển, đảo ngược",
+      "meaningEn": "turn, change",
+      "stems": [
+        "vert",
+        "vers"
+      ],
+      "examples": [
+        "convert",
+        "reverse",
+        "diverse",
+        "controversy"
+      ]
+    },
+    {
+      "id": "grad",
+      "root": "grad / gress",
+      "origin": "Latin",
+      "meaningVi": "bước đi, cấp bậc, tiến triển",
+      "meaningEn": "step, degree, go",
+      "stems": [
+        "gress",
+        "grad"
+      ],
+      "examples": [
+        "progress",
+        "graduate",
+        "aggressive",
+        "degrade"
+      ]
+    },
+    {
+      "id": "tend",
+      "root": "tend / tens / tent",
+      "origin": "Latin",
+      "meaningVi": "kéo căng, mở rộng, hướng tới",
+      "meaningEn": "stretch, strain",
+      "stems": [
+        "tend",
+        "tens",
+        "tent"
+      ],
+      "examples": [
+        "extend",
+        "attend",
+        "tension",
+        "intention"
+      ]
+    },
+    {
+      "id": "cur",
+      "root": "cur / curs",
+      "origin": "Latin",
+      "meaningVi": "chạy, dòng chảy, diễn ra",
+      "meaningEn": "run, flow",
+      "stems": [
+        "curs",
+        "curr",
+        "cur"
+      ],
+      "examples": [
+        "current",
+        "occur",
+        "curriculum",
+        "excursion"
+      ]
+    },
+    {
+      "id": "mov",
+      "root": "mov / mot / mob",
+      "origin": "Latin",
+      "meaningVi": "di chuyển, vận động, thúc đẩy",
+      "meaningEn": "move",
+      "stems": [
+        "mov",
+        "mot",
+        "mob"
+      ],
+      "examples": [
+        "move",
+        "promote",
+        "emotion",
+        "mobile"
+      ]
+    },
+    {
+      "id": "ten",
+      "root": "ten / tain / tin",
+      "origin": "Latin",
+      "meaningVi": "giữ chặt, duy trì, chứa đựng",
+      "meaningEn": "hold, keep",
+      "stems": [
+        "tain",
+        "ten",
+        "tin"
+      ],
+      "examples": [
+        "contain",
+        "maintain",
+        "retain",
+        "sustainable"
+      ]
+    },
+    {
+      "id": "plic",
+      "root": "plic / ply / plex",
+      "origin": "Latin",
+      "meaningVi": "gấp, gài, làm phức tạp, áp dụng",
+      "meaningEn": "fold, weave",
+      "stems": [
+        "plic",
+        "ply",
+        "pli",
+        "plex"
+      ],
+      "examples": [
+        "apply",
+        "complex",
+        "explain",
+        "explicit"
+      ]
+    },
+    {
+      "id": "fin",
+      "root": "fin",
+      "origin": "Latin",
+      "meaningVi": "giới hạn, kết thúc, xác định rõ",
+      "meaningEn": "end, limit, boundary",
+      "stems": [
+        "fin"
+      ],
+      "examples": [
+        "finish",
+        "final",
+        "define",
+        "infinite"
+      ]
+    },
+    {
+      "id": "gen",
+      "root": "gen",
+      "origin": "Greek/Latin",
+      "meaningVi": "sinh ra, chủng loại, nguồn gốc",
+      "meaningEn": "birth, kind, produce",
+      "stems": [
+        "gen"
+      ],
+      "examples": [
+        "generate",
+        "general",
+        "genetics",
+        "authentic"
+      ]
+    },
+    {
+      "id": "voc",
+      "root": "voc / vok",
+      "origin": "Latin",
+      "meaningVi": "gọi, lên tiếng, kêu gọi",
+      "meaningEn": "call, voice",
+      "stems": [
+        "voc",
+        "vok"
+      ],
+      "examples": [
+        "voice",
+        "vocabulary",
+        "advocate",
+        "provoke"
+      ]
+    },
+    {
+      "id": "val",
+      "root": "val / vail",
+      "origin": "Latin",
+      "meaningVi": "mạnh mẽ, giá trị, xứng đáng",
+      "meaningEn": "strength, worth",
+      "stems": [
+        "val",
+        "vail"
+      ],
+      "examples": [
+        "value",
+        "valid",
+        "evaluate",
+        "prevail"
+      ]
+    },
+    {
+      "id": "sens",
+      "root": "sens / sent",
+      "origin": "Latin",
+      "meaningVi": "cảm nhận, giác quan, đồng thuận",
+      "meaningEn": "feel, sense, think",
+      "stems": [
+        "sens",
+        "sent"
+      ],
+      "examples": [
+        "sense",
+        "sensitive",
+        "consent",
+        "sentiment"
+      ]
+    }
+  ],
+  "prefixes": [
+    {
+      "text": "un-",
+      "variants": [
+        "un"
+      ],
+      "meaningVi": "không, đảo ngược"
+    },
+    {
+      "text": "re-",
+      "variants": [
+        "re"
+      ],
+      "meaningVi": "lại, lần nữa, quay lại"
+    },
+    {
+      "text": "in-",
+      "variants": [
+        "in",
+        "im",
+        "il",
+        "ir"
+      ],
+      "meaningVi": "vào trong / không (phủ định)"
+    },
+    {
+      "text": "dis-",
+      "variants": [
+        "dis",
+        "di"
+      ],
+      "meaningVi": "tách ra, không, phủ nhận"
+    },
+    {
+      "text": "con-",
+      "variants": [
+        "con",
+        "com",
+        "col",
+        "cor",
+        "co"
+      ],
+      "meaningVi": "cùng nhau, hoàn toàn"
+    },
+    {
+      "text": "pro-",
+      "variants": [
+        "pro"
+      ],
+      "meaningVi": "về phía trước, ủng hộ"
+    },
+    {
+      "text": "pre-",
+      "variants": [
+        "pre"
+      ],
+      "meaningVi": "trước (thời gian/vị trí)"
+    },
+    {
+      "text": "ex-",
+      "variants": [
+        "ex",
+        "ef",
+        "e"
+      ],
+      "meaningVi": "ra ngoài, thoát ra"
+    },
+    {
+      "text": "de-",
+      "variants": [
+        "de"
+      ],
+      "meaningVi": "xuống, giảm đi, tách rời"
+    },
+    {
+      "text": "sub-",
+      "variants": [
+        "sub",
+        "suc",
+        "suf",
+        "sup",
+        "sus"
+      ],
+      "meaningVi": "bên dưới, phụ, thứ cấp"
+    },
+    {
+      "text": "inter-",
+      "variants": [
+        "inter"
+      ],
+      "meaningVi": "giữa, qua lại lẫn nhau"
+    },
+    {
+      "text": "trans-",
+      "variants": [
+        "trans",
+        "tran"
+      ],
+      "meaningVi": "xuyên qua, chuyển sang"
+    },
+    {
+      "text": "ob-",
+      "variants": [
+        "ob",
+        "op",
+        "oc",
+        "of"
+      ],
+      "meaningVi": "đối diện, cản trở, hướng tới"
+    },
+    {
+      "text": "ad-",
+      "variants": [
+        "ad",
+        "ac",
+        "af",
+        "ag",
+        "ap",
+        "ar",
+        "as",
+        "at"
+      ],
+      "meaningVi": "hướng tới, thêm vào"
+    },
+    {
+      "text": "per-",
+      "variants": [
+        "per"
+      ],
+      "meaningVi": "xuyên suốt, hoàn toàn"
+    },
+    {
+      "text": "ab-",
+      "variants": [
+        "ab",
+        "abs"
+      ],
+      "meaningVi": "rời xa, tách khỏi"
+    },
+    {
+      "text": "super-",
+      "variants": [
+        "super"
+      ],
+      "meaningVi": "vượt lên trên, siêu"
+    },
+    {
+      "text": "over-",
+      "variants": [
+        "over"
+      ],
+      "meaningVi": "quá mức, bao trùm"
+    },
+    {
+      "text": "under-",
+      "variants": [
+        "under"
+      ],
+      "meaningVi": "dưới mức, bên dưới"
+    },
+    {
+      "text": "mis-",
+      "variants": [
+        "mis"
+      ],
+      "meaningVi": "sai lầm, lệch lạc"
+    },
+    {
+      "text": "anti-",
+      "variants": [
+        "anti"
+      ],
+      "meaningVi": "chống lại, phản đối"
+    },
+    {
+      "text": "auto-",
+      "variants": [
+        "auto"
+      ],
+      "meaningVi": "tự động, tự thân"
+    },
+    {
+      "text": "bio-",
+      "variants": [
+        "bio"
+      ],
+      "meaningVi": "sự sống, sinh học"
+    },
+    {
+      "text": "circum-",
+      "variants": [
+        "circum"
+      ],
+      "meaningVi": "xung quanh, chu vi"
+    },
+    {
+      "text": "contra-",
+      "variants": [
+        "contra",
+        "counter"
+      ],
+      "meaningVi": "trái ngược, phản bác"
+    },
+    {
+      "text": "dia-",
+      "variants": [
+        "dia"
+      ],
+      "meaningVi": "xuyên qua, giữa hai bên"
+    },
+    {
+      "text": "en-",
+      "variants": [
+        "en",
+        "em"
+      ],
+      "meaningVi": "làm cho, đưa vào trạng thái"
+    },
+    {
+      "text": "fore-",
+      "variants": [
+        "fore"
+      ],
+      "meaningVi": "phía trước, dự báo"
+    },
+    {
+      "text": "infra-",
+      "variants": [
+        "infra"
+      ],
+      "meaningVi": "hạ tầng, bên dưới"
+    },
+    {
+      "text": "intro-",
+      "variants": [
+        "intro",
+        "intra"
+      ],
+      "meaningVi": "hướng vào bên trong"
+    },
+    {
+      "text": "micro-",
+      "variants": [
+        "micro"
+      ],
+      "meaningVi": "siêu nhỏ, vi mô"
+    },
+    {
+      "text": "multi-",
+      "variants": [
+        "multi"
+      ],
+      "meaningVi": "đa, nhiều"
+    },
+    {
+      "text": "non-",
+      "variants": [
+        "non"
+      ],
+      "meaningVi": "không phải, phi"
+    },
+    {
+      "text": "post-",
+      "variants": [
+        "post"
+      ],
+      "meaningVi": "sau, hậu"
+    },
+    {
+      "text": "tele-",
+      "variants": [
+        "tele"
+      ],
+      "meaningVi": "từ xa, viễn thông"
+    }
+  ],
+  "suffixes": [
+    {
+      "text": "-tion",
+      "variants": [
+        "ation",
+        "ition",
+        "tion",
+        "sion",
+        "ion"
+      ],
+      "meaningVi": "danh từ chỉ hành động/kết quả"
+    },
+    {
+      "text": "-ment",
+      "variants": [
+        "ment"
+      ],
+      "meaningVi": "danh từ chỉ kết quả/phương tiện"
+    },
+    {
+      "text": "-ness",
+      "variants": [
+        "ness"
+      ],
+      "meaningVi": "danh từ chỉ tính chất/trạng thái"
+    },
+    {
+      "text": "-ity",
+      "variants": [
+        "ity",
+        "ty"
+      ],
+      "meaningVi": "danh từ chỉ trạng thái/đặc tính"
+    },
+    {
+      "text": "-ance",
+      "variants": [
+        "ance",
+        "ence"
+      ],
+      "meaningVi": "danh từ chỉ trạng thái/hành vi"
+    },
+    {
+      "text": "-er",
+      "variants": [
+        "er",
+        "or"
+      ],
+      "meaningVi": "người hoặc vật thực hiện"
+    },
+    {
+      "text": "-ist",
+      "variants": [
+        "ist"
+      ],
+      "meaningVi": "người theo đuổi/chuyên gia"
+    },
+    {
+      "text": "-ism",
+      "variants": [
+        "ism"
+      ],
+      "meaningVi": "học thuyết, chủ nghĩa, hệ tư tưởng"
+    },
+    {
+      "text": "-able",
+      "variants": [
+        "able",
+        "ible"
+      ],
+      "meaningVi": "tính từ: có thể được, xứng đáng"
+    },
+    {
+      "text": "-ive",
+      "variants": [
+        "ative",
+        "itive",
+        "ive"
+      ],
+      "meaningVi": "tính từ: mang xu hướng/tính chất"
+    },
+    {
+      "text": "-al",
+      "variants": [
+        "al",
+        "ial"
+      ],
+      "meaningVi": "tính từ/danh từ: thuộc về"
+    },
+    {
+      "text": "-ous",
+      "variants": [
+        "eous",
+        "ious",
+        "uous",
+        "ous"
+      ],
+      "meaningVi": "tính từ: đầy, có tính chất"
+    },
+    {
+      "text": "-ful",
+      "variants": [
+        "ful"
+      ],
+      "meaningVi": "tính từ: tràn đầy"
+    },
+    {
+      "text": "-less",
+      "variants": [
+        "less"
+      ],
+      "meaningVi": "tính từ: không có, thiếu"
+    },
+    {
+      "text": "-ic",
+      "variants": [
+        "tic",
+        "ic"
+      ],
+      "meaningVi": "tính từ: liên quan đến"
+    },
+    {
+      "text": "-ize",
+      "variants": [
+        "ize",
+        "ise"
+      ],
+      "meaningVi": "động từ: làm cho trở thành"
+    },
+    {
+      "text": "-ate",
+      "variants": [
+        "ate"
+      ],
+      "meaningVi": "động từ/tính từ: tạo ra, thực hiện"
+    },
+    {
+      "text": "-fy",
+      "variants": [
+        "ify",
+        "fy"
+      ],
+      "meaningVi": "động từ: biến thành, làm cho"
+    },
+    {
+      "text": "-ly",
+      "variants": [
+        "ly"
+      ],
+      "meaningVi": "trạng từ chỉ cách thức"
+    },
+    {
+      "text": "-ent",
+      "variants": [
+        "ant",
+        "ent"
+      ],
+      "meaningVi": "tính từ/danh từ chỉ tác nhân"
+    },
+    {
+      "text": "-ary",
+      "variants": [
+        "ary",
+        "ory"
+      ],
+      "meaningVi": "liên quan đến / nơi chốn"
+    },
+    {
+      "text": "-ure",
+      "variants": [
+        "ture",
+        "ure"
+      ],
+      "meaningVi": "danh từ chỉ quá trình/cấu trúc"
+    },
+    {
+      "text": "-logy",
+      "variants": [
+        "ology",
+        "logy"
+      ],
+      "meaningVi": "khoa học, ngành nghiên cứu"
+    },
+    {
+      "text": "-graphy",
+      "variants": [
+        "ography",
+        "graphy"
+      ],
+      "meaningVi": "nghệ thuật ghi chép/mô tả"
+    },
+    {
+      "text": "-ship",
+      "variants": [
+        "ship"
+      ],
+      "meaningVi": "trạng thái, mối quan hệ, chức vị"
+    },
+    {
+      "text": "-ing",
+      "variants": [
+        "ing"
+      ],
+      "meaningVi": "hành động đang diễn ra / tính chất"
+    },
+    {
+      "text": "-ed",
+      "variants": [
+        "ed"
+      ],
+      "meaningVi": "bị tác động / quá khứ phân từ"
+    },
+    {
+      "text": "-y",
+      "variants": [
+        "y"
+      ],
+      "meaningVi": "danh từ trừu tượng / tính từ"
+    }
+  ]
+}
